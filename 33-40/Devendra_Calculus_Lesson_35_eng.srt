@@ -1,0 +1,794 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+Hello, and welcome to Lesson 35
+你好，欢迎来到第35课
+
+2
+00:00:03,000 --> 00:00:06,000
+of this introduction to calculus with Wolfram U.
+的这个微积分导论与Wolfram U。
+
+3
+00:00:06,000 --> 00:00:10,000
+The topic for this lesson is L’Hospital’s rule.
+本节课的课题是L'医院的规则。
+
+4
+00:00:10,000 --> 00:00:14,000
+Let’s being with a brief overview of the lesson.
+让我们随着对本课的简单概述。
+
+5
+00:00:14,000 --> 00:00:17,000
+Let’s say you have a continuous function like <i>x</i>^2
+假设你有一个连续函数，如<i>x</i>^2。
+
+6
+00:00:17,000 --> 00:00:21,000
+and I ask you to find the limit as <i>x</i> approaches 5.
+我请你找出<i>x</i>接近5时的极限。
+
+7
+00:00:21,000 --> 00:00:23,000
+What you could simply do is to plug in the value 5
+你可以简单地做的是插入值5
+
+8
+00:00:23,000 --> 00:00:27,000
+in the function expression and you’ll get back the correct answer,
+在函数表达式中，你会得到正确的答案。
+
+9
+00:00:27,000 --> 00:00:29,000
+which is of course 25 in this case.
+在这种情况下，当然是25。
+
+10
+00:00:29,000 --> 00:00:33,000
+But if the function has a point discontinuity,
+但如果函数有一个点不连续。
+
+11
+00:00:33,000 --> 00:00:34,000
+then this would not work.
+那么，这将无法工作。
+
+12
+00:00:34,000 --> 00:00:38,000
+For example, over here for <i>g</i>, there is an issue at 1
+例如，在这里，对于<i>g</i>，有一个问题在1
+
+13
+00:00:38,000 --> 00:00:41,000
+because the denominator becomes 0.
+因为分母变成了0。
+
+14
+00:00:41,000 --> 00:00:43,000
+If you try and find the value at 1,
+如果你试着在1处找到这个值。
+
+15
+00:00:43,000 --> 00:00:47,000
+then you get back an indeterminate answer.
+然后你会得到一个不确定的答案。
+
+16
+00:00:47,000 --> 00:00:49,000
+Now of course in this case, what you could do is
+当然，在这种情况下，你可以做的是
+
+17
+00:00:49,000 --> 00:00:53,000
+to simplify the function algebraically like I’ve done over here,
+就像我在这里做的那样，将函数代数化。
+
+18
+00:00:53,000 --> 00:00:55,000
+and then things work just fine.
+然后事情就好办了。
+
+19
+00:00:55,000 --> 00:00:57,000
+If I now plug in <i>x</I> = 1,
+如果我现在插入<i>x</I>=1。
+
+20
+00:00:57,000 --> 00:01:02,000
+I get back the limit of the function <i>g</I> when <i>x</i> goes to 1.
+当<i>x</i>为1时，我取回函数<i>g</I>的极限。
+
+21
+00:01:02,000 --> 00:01:06,000
+But there are functions for which this will not work.
+但有些功能是无法使用的。
+
+22
+00:01:06,000 --> 00:01:11,000
+For example, you have <i>h</i> over here, which is Log[<i>x</i> – 1]/(<i>x</i> – 2),
+例如，你有<i>h</i>在这里，这是Log[<i>x</i> - 1]/(<i>x</i> - 2)。
+
+23
+00:01:11,000 --> 00:01:15,000
+and simplifying <i>h</i> makes no difference.
+和简化<i>h</i>没有区别。
+
+24
+00:01:15,000 --> 00:01:18,000
+The question is what do you do in such a case?
+问题是在这种情况下，你该怎么办？
+
+25
+00:01:18,000 --> 00:01:22,000
+In such a case, you can apply something called L’Hospital’s rule,
+在这种情况下，你可以应用一种叫做L'Hospital规则的东西。
+
+26
+00:01:22,000 --> 00:01:27,000
+and that is the theme for this lesson, L’Hospital’s rule.
+这就是本课的主题，L'Hospital的规则。
+
+27
+00:01:28,000 --> 00:01:31,000
+Okay. Before going on to the rule itself,
+好吧，在谈规则本身之前。
+
+28
+00:01:31,000 --> 00:01:34,000
+let’s talk about so-called indeterminate forms.
+我们来谈谈所谓的不确定形式。
+
+29
+00:01:34,000 --> 00:01:39,000
+Let’s say you have a function <i>f</i> which is Sin[<i>x</i>] and <i>g</i> which is <i>x</i>.
+假设你有一个函数<i>f</i>是Sin[<i>x</i>]，<i>g</i>是<i>x</i>。
+
+30
+00:01:39,000 --> 00:01:44,000
+Now you try and work out the ratio <i>f</I>[0]/<i>g</i>[0],
+现在你试着计算出比值<i>f</I>[0]/<i>g</i>[0]。
+
+31
+00:01:44,000 --> 00:01:47,000
+and you get back an indeterminate.
+而你得到的却是一个不确定的结果。
+
+32
+00:01:47,000 --> 00:01:49,000
+That’s an indeterminacy of the form 0/0
+这就是0/0形式的不确定性。
+
+33
+00:01:49,000 --> 00:01:53,000
+because both the values are 0 at 0.
+因为在0时，两个值都是0。
+
+34
+00:01:53,000 --> 00:01:59,000
+If you take the function <i>h</i> over here, then that’s (2<i>x</i> – 1)/(3<i>x</i> + 2),
+如果你把函数<i>h</i>放在这边，那么就是(2<i>x</i>-1)/(3<i>x</i>+2)。
+
+35
+00:01:59,000 --> 00:02:05,000
+and if you plug in <i>x</i> = ∞, you get back something like ∞/∞,
+如果你插入<i>x</i>=∞，你会得到类似∞/∞的东西。
+
+36
+00:02:05,000 --> 00:02:08,000
+so that’s again an indeterminacy.
+所以这又是一个不确定因素。
+
+37
+00:02:09,000 --> 00:02:12,000
+Next if we take the function <i>y</i> over here,
+接下来如果我们把函数<i>y</i>放在这边。
+
+38
+00:02:12,000 --> 00:02:17,000
+then at 0 you have a 0 times ∞ over here,
+那么在0的时候，你这里有一个0倍的∞。
+
+39
+00:02:17,000 --> 00:02:21,000
+so that’s an indeterminacy of the type 0 times ∞.
+所以这就是0乘以∞的不确定型。
+
+40
+00:02:21,000 --> 00:02:24,000
+When you try and evaluate it, you get back indeterminate.
+当你试着去评价它时，得到的却是不确定的结果。
+
+41
+00:02:24,000 --> 00:02:30,000
+Finally if you take the function <i>z</I>—that’s Csc[<i>x</i>] – Cot[<i>x</i>]—
+最后如果取函数<i>z</I>--那就是Csc[<i>x</i>]--Cot[<i>x</i>]--。
+
+42
+00:02:30,000 --> 00:02:34,000
+and again at 0, you have ∞ – ∞.
+又在0时，你有∞-∞。
+
+43
+00:02:34,000 --> 00:02:35,000
+That’s a problem.
+这是个问题。
+
+44
+00:02:35,000 --> 00:02:39,000
+When you try and evaluate it, you get back indeterminate.
+当你试着去评价它时，得到的却是不确定的结果。
+
+45
+00:02:39,000 --> 00:02:43,000
+The point is that you will have situations in which
+关键是，你会遇到以下情况
+
+46
+00:02:43,000 --> 00:02:46,000
+the system gives you back indeterminate,
+系统给你回不确定的。
+
+47
+00:02:46,000 --> 00:02:49,000
+and then the question is how do you find limits in such cases?
+然后问题是，在这种情况下如何找到极限？
+
+48
+00:02:49,000 --> 00:02:51,000
+As I said earlier on, the way to do that
+就像我前面说的，方法是这样的
+
+49
+00:02:51,000 --> 00:02:55,000
+is to find the limits using L’Hospital’s rule.
+是用L'Hospital规则找极限。
+
+50
+00:02:55,000 --> 00:03:00,000
+L’Hospital’s rule says that if you have a ratio <i>f</i>[<i>x</i>]/<i>g</I>[<i>x</i>]
+L'Hospital的规则说，如果你的比例<i>f</i>[<i>x</i>]/<i>g</I>[<i>x</i>]。
+
+51
+00:03:00,000 --> 00:03:04,000
+and you want to work out the value of that limit as <i>x</I> approaches <i>a</i>,
+当<i>x</I>接近<i>a</i>时，您要计算出该极限的值。
+
+52
+00:03:04,000 --> 00:03:10,000
+then what you do is you simply work out the limit of <i>f</i>'[<i>x</I>]/<i>g</i>'[<i>x</i>]
+那么你要做的就是简单地计算出<i>f</i>'[<i>x</I>]/<i>g</i>'[<i>x</i>]的极限。
+
+53
+00:03:10,000 --> 00:03:15,000
+at that value <i>a</i>—assuming of course that that limit exists.
+在该值<i>a</i>--当然，假设该限制存在。
+
+54
+00:03:15,000 --> 00:03:18,000
+You can reduce a problem to a problem of computing
+你可以把一个问题简化为一个计算问题
+
+55
+00:03:18,000 --> 00:03:22,000
+the limit of a quotient of derivatives.
+导数商的极限。
+
+56
+00:03:22,000 --> 00:03:26,000
+For example, in our function from the introduction,
+例如，在我们从介绍的函数中。
+
+57
+00:03:26,000 --> 00:03:30,000
+you had Log[<i>x</I> – 1]/(<i>x</i> – 2) when <i>x</i> approaches 2,
+当<i>x</i>接近2时，你有Log[<i>x</I> - 1]/(<i>x</i> - 2)。
+
+58
+00:03:30,000 --> 00:03:33,000
+and you see over here that when you actually take
+你看这里，当你真正采取的。
+
+59
+00:03:33,000 --> 00:03:34,000
+the derivative and take the ratio of those two,
+的导数，并取这两者的比值。
+
+60
+00:03:34,000 --> 00:03:35,000
+things are much better.
+事情好多了。
+
+61
+00:03:35,000 --> 00:03:39,000
+You can plug in <i>x</i> = 2, and you get back the answer of 1.
+你可以插入<i>x</i>=2，得到的答案是1。
+
+62
+00:03:39,000 --> 00:03:42,000
+You can confirm the answer with Limit,
+你可以用Limit确认答案。
+
+63
+00:03:42,000 --> 00:03:44,000
+and you do get back the same result, 1.
+而你确实得到了同样的结果，1。
+
+64
+00:03:44,000 --> 00:03:47,000
+L’Hospital’s rule is a very powerful rule which says
+L'Hospital的规则是一个非常强大的规则，它说
+
+65
+00:03:47,000 --> 00:03:51,000
+if you need to find the value of the limit <i>f</i>[<i>x</i>]/<i>g</i>[<i>x</i>],
+如果你需要找到极限值<i>f</i>[<i>x</i>]/<i>g</i>[<i>x</i>]。
+
+66
+00:03:51,000 --> 00:03:54,000
+you simply find the derivatives of the numerator
+你只需找到分子的导数。
+
+67
+00:03:54,000 --> 00:03:58,000
+and denominator separately and then plug in the values if that works.
+和分母分开，如果可以的话，再插上数值。
+
+68
+00:04:00,000 --> 00:04:03,000
+Okay. As an example of 0/0,
+好吧，那就以0/0为例作为一个0/0的例子。
+
+69
+00:04:03,000 --> 00:04:07,000
+let’s go back to our ratio <i>f</I>[<i>x</i>]/<i>g</i>[<i>x</i>], Sin[<i>x</i>]/<i>x</i>.
+让我们回到我们的比率<i>f</I>[<i>x</i>]/<i>g</i>[<i>x</i>]，Sin[<i>x</i>]/<i>x</i>。
+
+70
+00:04:07,000 --> 00:04:11,000
+Now you see over here that individually you have 0/0,
+现在你看到这边，单独地你有0/0。
+
+71
+00:04:11,000 --> 00:04:14,000
+but then if you take derivatives, things get much better
+但如果你做了衍生品，情况就会好很多
+
+72
+00:04:14,000 --> 00:04:19,000
+and you get back Cos[<i>x</i>], which has a nice value at 0,
+然后得到Cos[<i>x</i>]，它在0处有一个不错的值。
+
+73
+00:04:19,000 --> 00:04:21,000
+namely, it has 1.
+即它具有1。
+
+74
+00:04:21,000 --> 00:04:25,000
+The limit of <i>f</i>[<I>x</i>]/<i>g</i>[<i>x</i>], Sin[<i>x</i>]/<i>x</i>, is just 1.
+<i>f</i>[<i>x</i>]/<i>g</i>[<i>x</i>]的极限，Sin[<i>x</i>]/<i>x</i>，只是1。
+
+75
+00:04:25,000 --> 00:04:27,000
+That’s a very nice and important result.
+这是一个很好很重要的结果。
+
+76
+00:04:29,000 --> 00:04:30,000
+Okay. Next.
+好吧，下一个。下一个
+
+77
+00:04:30,000 --> 00:04:34,000
+If you go on to ∞/∞ like with the function <i>h</i>,
+如果你像函数<i>h</i>一样继续∞/∞。
+
+78
+00:04:34,000 --> 00:04:38,000
+then you have (2<i>x</I> – 1)/(3<i>x</i> + 2).
+那么你有(2<i>x</I>-1)/(3<i>x</i>+2)。
+
+79
+00:04:38,000 --> 00:04:41,000
+You work out the limits, and they are both ∞.
+你锻炼出的极限，他们都是∞。
+
+80
+00:04:41,000 --> 00:04:44,000
+But if you could take derivatives and take a quotient,
+但如果你能拿衍生品去做一个商。
+
+81
+00:04:44,000 --> 00:04:46,000
+then you just get back 2/3,
+那么你只要拿回2/3。
+
+82
+00:04:46,000 --> 00:04:50,000
+and so the limit of the function <i>h</i> is just 2/3.
+所以函数<i>h</i>的极限只是2/3。
+
+83
+00:04:52,000 --> 00:04:57,000
+Next, go on to the type 0 * ∞ for the function <i>y</i>[<i>x</i>].
+接下来，继续求函数<i>y</i>[<i>x</i>]的类型0*∞。
+
+84
+00:04:57,000 --> 00:05:01,000
+Now in this case you don’t really have <i>f</i>[<i>x</i>]/<i>g</i>[<i>x</i>],
+现在在这种情况下，你并没有真正的<i>f</i>[<i>x</i>]/<i>g</i>[<i>x</i>]。
+
+85
+00:05:01,000 --> 00:05:07,000
+so you write it as <i>e</i>^(1/<i>x</i>)/(1/<i>x</i>) and take the derivatives.
+所以你把它写成<i>e</i>^(1/<i>x</i>)/(1/<i>x</i>)并取导数。
+
+86
+00:05:07,000 --> 00:05:14,000
+Then if you plug in <i>x</i> = 0, you do get back the answer ∞ from above.
+那么如果你插入<i>x</i>=0，你确实可以从上面得到答案∞。
+
+87
+00:05:14,000 --> 00:05:18,000
+That’s the limit for <i>y</i> at 0 from above.
+这就是<i>y</i>在0处的极限，从上面看。
+
+88
+00:05:18,000 --> 00:05:23,000
+Here’s a plot which shows quite clearly that at 0,
+这里有一张图，可以很清楚地看出，在0。
+
+89
+00:05:23,000 --> 00:05:27,000
+the function does approach ∞ if you go from the right,
+如果你从右边走，函数确实接近∞。
+
+90
+00:05:27,000 --> 00:05:29,000
+if you go from above.
+如果你从上面走。
+
+91
+00:05:30,000 --> 00:05:35,000
+Okay. On to ∞ – ∞ for the function <i>z</I>[<i>x</i>].
+好吧，就说说∞-∞的函数&lt;i&gt;z&lt;/I&gt;[&lt;i&gt;x&lt;/i&gt;]。在∞-∞的函数<i>z</I>[<i>x</i>]。
+
+92
+00:05:35,000 --> 00:05:39,000
+Now in this case, what you do is you first of all simplify.
+现在这种情况下，你要做的就是首先要简化。
+
+93
+00:05:39,000 --> 00:05:43,000
+Write the cosecant as 1/Sin[<i>x</i>] and cotangent as Cos[<i>x</i>]/Sin[<i>x</i>]
+将余割写成1/Sin[<i>x</i>]，余切写成Cos[<i>x</i>]/Sin[<i>x</i>]。
+
+94
+00:05:43,000 --> 00:05:45,000
+and get back a ratio.
+并取回一个比率。
+
+95
+00:05:45,000 --> 00:05:50,000
+If you work out those two limits separately, you get back 0/0,
+如果你把这两个极限分别计算出来，就会得到0/0。
+
+96
+00:05:50,000 --> 00:05:54,000
+but then if you work them out in terms of derivatives,
+但如果你用导数来计算它们。
+
+97
+00:05:54,000 --> 00:05:57,000
+you get back Tan[<i>x</i>], which is just 0 at 0,
+你得到的是Tan[<i>x</i>]，这只是0的0。
+
+98
+00:05:57,000 --> 00:06:00,000
+so the answer for the limit is just 0.
+所以极限的答案只是0。
+
+99
+00:06:01,000 --> 00:06:04,000
+Okay. Now in some cases, you apply L’Hospital’s rule
+好吧，现在在某些情况下在某些情况下，你会运用L'Hospital的规则。
+
+100
+00:06:04,000 --> 00:06:06,000
+more than once to get the answer.
+多次得到答案。
+
+101
+00:06:06,000 --> 00:06:11,000
+For example, here’s a function <i>f</I> defined to be <i>e</i>^<i>x</i>/3<i>x</i>^2.
+例如，这里的函数<i>f</I>定义为<i>e</i>^<i>x</i>/3<i>x</i>^2。
+
+102
+00:06:11,000 --> 00:06:14,000
+If we try and apply L’Hospital’s rule once at ∞,
+如果我们试着在∞处应用一次L'Hospital的规则。
+
+103
+00:06:14,000 --> 00:06:17,000
+then you get back ∞/∞ again.
+然后你又回到∞/∞。
+
+104
+00:06:17,000 --> 00:06:20,000
+That’s again indeterminate, so what you do is
+这又是不确定的，所以你要做的是
+
+105
+00:06:20,000 --> 00:06:23,000
+you apply L’Hospital again, and now things look good
+你再去申请L'Hospital，现在一切都好了
+
+106
+00:06:23,000 --> 00:06:26,000
+because you get back ∞/6, which is ∞,
+因为你得到的回报是∞/6，也就是∞。
+
+107
+00:06:26,000 --> 00:06:28,000
+so the answer for the limit is ∞.
+所以极限的答案是∞。
+
+108
+00:06:28,000 --> 00:06:31,000
+You can apply L’Hospital’s rule repeatedly,
+你可以反复应用L'医院的规则。
+
+109
+00:06:31,000 --> 00:06:33,000
+but of course it’s going to be more time-consuming
+但当然，这将是比较耗时的
+
+110
+00:06:33,000 --> 00:06:35,000
+and more expensive to do so.
+且成本较高。
+
+111
+00:06:36,000 --> 00:06:39,000
+Okay. Now some more indeterminate forms.
+好了，现在再来一些不确定的形式。现在再来一些不确定的形式。
+
+112
+00:06:39,000 --> 00:06:42,000
+We have ∞^0 to begin with.
+我们有∞^0开始。
+
+113
+00:06:42,000 --> 00:06:44,000
+Here’s an example.
+这里有一个例子。
+
+114
+00:06:44,000 --> 00:06:47,000
+Let’s say we have <i>x</i>^(1/<i>x</i>).
+假设我们有<i>x</i>^(1/<i>x</i>)。
+
+115
+00:06:47,000 --> 00:06:53,000
+If you plug in <i>x</i> goes to ∞, you get ∞^0, so that’s an indeterminacy.
+如果你插上<i>x</i>去∞，就会得到∞^0，所以这是一个不确定因素。
+
+116
+00:06:53,000 --> 00:06:56,000
+What you do in this case is you apply a logarithm,
+在这种情况下，你要做的是应用对数。
+
+117
+00:06:56,000 --> 00:06:59,000
+and when you do that, then you get back
+当你这样做，那么你就会得到回
+
+118
+00:06:59,000 --> 00:07:01,000
+something which is going to be much more tractable
+易如反掌的东西
+
+119
+00:07:01,000 --> 00:07:06,000
+because the law of logarithms says this is Log[<i>x</I>]/<i>x</i>.
+因为对数定律说这是Log[<i>x</I>]/<i>x</i>。
+
+120
+00:07:06,000 --> 00:07:12,000
+Then what you do is you plug in the derivatives over here,
+然后你要做的就是把衍生品插在这里。
+
+121
+00:07:12,000 --> 00:07:14,000
+and you get back 1/<i>x</i>.
+而你得到的回报是1/<i>x</i>。
+
+122
+00:07:14,000 --> 00:07:20,000
+When <i>x</i> approaches ∞, the answer is just 0, so Log[<i>y</i>] = 0,
+当<i>x</i>接近∞时，答案刚好是0，所以Log[<i>y</i>]=0。
+
+123
+00:07:20,000 --> 00:07:24,000
+which says that the limit is going to be just 1.
+其中说，极限要只有1。
+
+124
+00:07:24,000 --> 00:07:26,000
+That’s a plot of the function
+那是函数的曲线图
+
+125
+00:07:26,000 --> 00:07:31,000
+showing you it approaches 1 as <i>x</i> approaches ∞.
+当<i>x</i>接近∞时，显示它接近1。
+
+126
+00:07:32,000 --> 00:07:35,000
+As another example, let’s take 0^0.
+再举个例子，我们以0^0为例。
+
+127
+00:07:35,000 --> 00:07:40,000
+When you take <i>x</i>^<i>x</i> and apply 0 to it, you get back 0^0,
+当你把<i>x</i>^<i>x</i>应用于它时，你会得到0^0。
+
+128
+00:07:40,000 --> 00:07:44,000
+but then again, you think of it as being a logarithmic case,
+但你又认为这是一个对数的情况。
+
+129
+00:07:44,000 --> 00:07:49,000
+so apply logarithms and you get back <i>x</i>Log[<i>x</i>] like over here.
+所以应用对数，你会得到<i>x</i>Log[<i>x</i>]，就像这里一样。
+
+130
+00:07:49,000 --> 00:07:53,000
+Then write that as Log[<i>x</i>]/(1/<i>x</i>), apply L’Hospital
+然后写成Log[<i>x</i>]/(1/<i>x</i>)，应用L'Hospital
+
+131
+00:07:53,000 --> 00:07:57,000
+and you get back that when <i>x</i> = 0, the answer is 0,
+而你得到的结果是，当<i>x</i>=0时，答案是0。
+
+132
+00:07:57,000 --> 00:08:02,000
+so the original limit is just going to be <i>e</i>^0 = 1.
+所以原来的极限只是要<i>e</i>^0=1。
+
+133
+00:08:05,000 --> 00:08:08,000
+Finally, let’s take the case where you’ve got 1^∞.
+最后，我们来看看你有1^∞的情况。
+
+134
+00:08:08,000 --> 00:08:13,000
+When you’re at π/2, this function becomes 1—Sin[π/2] is 1—
+当你在π/2时，这个函数就变成了1-Sin[π/2]是1-。
+
+135
+00:08:13,000 --> 00:08:17,000
+raised to Tan[π/2] is ∞, so that’s 1^∞.
+提高到Tan[π/2]是∞，所以是1^∞。
+
+136
+00:08:17,000 --> 00:08:19,000
+Again, you need to to some logarithmic work.
+同样，你需要做一些对数工作。
+
+137
+00:08:19,000 --> 00:08:22,000
+You say let’s take logarithms.
+你说我们就拿对数来说吧。
+
+138
+00:08:22,000 --> 00:08:25,000
+You get Log[Sin[<i>x</i>]^Tan[<i>x</i>]].
+你得到Log[Sin[<i>x</i>]^Tan[<i>x</i>]]。
+
+139
+00:08:25,000 --> 00:08:32,000
+Pull down the Tan[<i>x</i>]—it’s a power—then apply L’Hospital like before.
+拉下Tan[<i>x</i>]--这是一种力量--然后像之前一样应用L'Hospital。
+
+140
+00:08:33,000 --> 00:08:36,000
+You plug in π/2, and things look better.
+你插上π/2，事情就好办了。
+
+141
+00:08:36,000 --> 00:08:41,000
+The answer is 0 for the logarithm, and so the actual limit is 1.
+答案是对数为0，所以实际极限为1。
+
+142
+00:08:42,000 --> 00:08:46,000
+Okay. That brings me to the end of this lesson.
+好了，我的课到此结束。本课到此结束。
+
+143
+00:08:46,000 --> 00:08:49,000
+Basically L’Hospital’s rule is very useful
+基本上L'Hospital的规则是非常有用的。
+
+144
+00:08:49,000 --> 00:08:52,000
+when you have indeterminate forms of the type,
+当你有不确定的类型形式时。
+
+145
+00:08:52,000 --> 00:08:55,000
+let’s say, 0/0 and ∞/∞.
+比方说，0/0和∞/∞。
+
+146
+00:08:55,000 --> 00:08:59,000
+But of course if you’ve got something like 0^∞ or other things,
+不过当然如果你有0^∞之类的东西。
+
+147
+00:08:59,000 --> 00:09:00,000
+you can work too.
+你也可以工作。
+
+148
+00:09:00,000 --> 00:09:02,000
+Let’s say with some algebraic manipulation, you can tackle
+比方说，通过一些代数操作，你可以解决以下问题
+
+149
+00:09:02,000 --> 00:09:07,000
+the case where you have 0 * ∞ and ∞ – ∞.
+的情况下，你有0*∞和∞-∞。
+
+150
+00:09:07,000 --> 00:09:11,000
+If you take logarithms, then you can also tackle the cases
+如果你采取对数，那么你也可以处理以下情况。
+
+151
+00:09:11,000 --> 00:09:15,000
+where you have ∞^0, 0^0 and 1^∞.
+其中你有∞^0，0^0和1^∞。
+
+152
+00:09:15,000 --> 00:09:19,000
+Of course sometimes you need to apply L’Hospital’s rule
+当然有时你需要运用L'Hospital的规则。
+
+153
+00:09:19,000 --> 00:09:23,000
+multiple times to arrive at a suitable answer.
+多次得出一个合适的答案。
+
+154
+00:09:24,000 --> 00:09:26,000
+That’s the end of this lesson.
+这节课就到此为止。
+
+155
+00:09:26,000 --> 00:09:30,000
+The next lesson will talk about slope fields and Euler’s method,
+下节课将讲坡场和欧拉法。
+
+156
+00:09:30,000 --> 00:09:33,000
+but before we do that, do revise L’Hospital’s rule.
+但在这之前，请修改L'医院的规则。
+
+157
+00:09:33,000 --> 00:09:36,000
+It’s a very important rule, a very useful rule,
+这是一个非常重要的规则，一个非常有用的规则。
+
+158
+00:09:36,000 --> 00:09:39,000
+and you surely will benefit a lot from review.
+你一定会从审查中受益匪浅。
+
+159
+00:09:39,000 --> 00:09:41,000
+I’ll stop over here. Thank you very much.
+我在这里停一下谢谢你了

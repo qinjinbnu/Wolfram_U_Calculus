@@ -1,0 +1,829 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+Hello, and welcome to Lesson 37
+你好，欢迎来到第37课
+
+2
+00:00:03,000 --> 00:00:06,000
+of this introduction to calculus with Wolfram U.
+的这个微积分导论与Wolfram U。
+
+3
+00:00:06,000 --> 00:00:11,000
+The topic for this lesson is separable differential equations.
+本节课的课题是可分离微分方程。
+
+4
+00:00:11,000 --> 00:00:15,000
+Let’s begin with a brief overview of the lesson.
+我们先来简单介绍一下本课的内容。
+
+5
+00:00:15,000 --> 00:00:20,000
+The fact is that most differential equations cannot be solved easily.
+事实上，大多数微分方程是不容易解决的。
+
+6
+00:00:20,000 --> 00:00:24,000
+For example, here’s a nonlinear equation.
+例如，这里有一个非线性方程。
+
+7
+00:00:24,000 --> 00:00:28,000
+What I mean by that is that you’ve got <i>y</I>[<i>x</i>]^2 over here,
+我的意思是，你已经得到<i>y</I>[<i>x</i>]^2在这里。
+
+8
+00:00:28,000 --> 00:00:34,000
+and DSolve can solve the equation, but the solution is rather messy
+和DSolve可以解方程，但解法比较乱。
+
+9
+00:00:34,000 --> 00:00:37,000
+and involves these so-called Bessel functions,
+并涉及这些所谓的贝塞尔函数。
+
+10
+00:00:37,000 --> 00:00:40,000
+which occur in the oscillations of drums and elsewhere.
+在鼓和其他地方的振荡中出现的。
+
+11
+00:00:42,000 --> 00:00:45,000
+In contrast to that, there are other equations
+与此相反，还有其他方程
+
+12
+00:00:45,000 --> 00:00:49,000
+where you actually can find a simple solution.
+在这里，你其实可以找到一个简单的解决方案。
+
+13
+00:00:49,000 --> 00:00:53,000
+Here’s an example where the solution is quite simple,
+这里有一个例子，解决方法很简单。
+
+14
+00:00:53,000 --> 00:00:57,000
+and if you look over here, in part it’s because
+如果你看这里，部分原因是由于。
+
+15
+00:00:57,000 --> 00:01:00,000
+the differential equation itself is a bit simpler.
+微分方程本身就比较简单。
+
+16
+00:01:00,000 --> 00:01:06,000
+This is an example of a separable differential equation.
+这是一个可分离微分方程的例子。
+
+17
+00:01:06,000 --> 00:01:09,000
+The theme of this lesson is to talk about
+本节课的主题是谈谈
+
+18
+00:01:09,000 --> 00:01:14,000
+these separable differential equations.
+这些可分离的微分方程。
+
+19
+00:01:14,000 --> 00:01:20,000
+The question is what is a separable differential equation?
+问题是什么是可分离微分方程？
+
+20
+00:01:20,000 --> 00:01:22,000
+Well, a separable differential equation is
+那么，一个可分离的微分方程就是
+
+21
+00:01:22,000 --> 00:01:26,000
+an equation of the form <i>y</i>', the derivative of <i>y</i>,
+形式为<i>y</i>'的方程，即<i>y</i>的导数。
+
+22
+00:01:26,000 --> 00:01:32,000
+equal to some function of <i>x</I> times some function of <i>y</i>.
+等于<i>x</I>乘以<i>y</i>的某个函数。
+
+23
+00:01:33,000 --> 00:01:35,000
+Okay. Now if you look at this,
+好吧，如果你看看这个现在，如果你看看这个。
+
+24
+00:01:35,000 --> 00:01:38,000
+the right-hand side is certainly what you’d call separable.
+右手边肯定是你所说的可分离的。
+
+25
+00:01:38,000 --> 00:01:40,000
+You can separate <i>x</i> and <i>y</i>.
+你可以把<i>x</i>和<i>y</i>分开。
+
+26
+00:01:40,000 --> 00:01:42,000
+The question is how about the left-hand side?
+问题是左手边怎么样？
+
+27
+00:01:42,000 --> 00:01:47,000
+Well, recall that <i>y</i>' is <i>dy</i>/<i>dx</i>,
+好吧，回忆一下，<i>y</i>'就是<i>dy</i>/<i>dx</i>。
+
+28
+00:01:47,000 --> 00:01:52,000
+so we can think of that as a separation for <i>y</i>'.
+所以我们可以把它看作是<i>y</i>'的分离。
+
+29
+00:01:52,000 --> 00:01:56,000
+For example, here is the differential equation
+例如，以下是微分方程
+
+30
+00:01:56,000 --> 00:02:00,000
+that we spoke about in an earlier slide, and if you want to solve it,
+我们在前面的幻灯片中讲到的，如果你想解决它。
+
+31
+00:02:00,000 --> 00:02:03,000
+you replace <i>y</i>' by <i>dy</i>/<i>dx</i>
+您用<i>dy</i>/<i>dx</i>代替<i>y</i>'。
+
+32
+00:02:03,000 --> 00:02:07,000
+and then you separate your variables like over here.
+然后你把你的变量分开，就像这里。
+
+33
+00:02:07,000 --> 00:02:11,000
+You have (1/<i>y</i>)<i>dy</i> = <i>xdx</i> like you do in algebra.
+你有(1/<i>y</i>)<i>dy</i>=<i>xdx</i>，就像在代数中那样。
+
+34
+00:02:11,000 --> 00:02:14,000
+Then you integrate both the sides.
+然后你把两边整合起来。
+
+35
+00:02:14,000 --> 00:02:22,000
+Then you say that this <i>y</i> is <i>e</i>^(<i>C</i> + (<i>x</i>^2/2)),
+那么你说这个<i>y</i>就是<i>e</i>^(<i>C</i>+(<i>x</i>^2/2))。
+
+36
+00:02:22,000 --> 00:02:26,000
+but that’s the same as <i>e</i>^<i>C</i> * <i>e</i>^(<i>x</i>^2/2),
+但这和<i>e</i>^<i>C</i>*<i>e</i>^(<i>x</i>^2/2)一样。
+
+37
+00:02:26,000 --> 00:02:29,000
+and then that itself with <i>e</i>^<i>C</i>
+然后，它本身与<i>e</i>^<i>C</i>。
+
+38
+00:02:29,000 --> 00:02:32,000
+is another constant which we will call <i>K</i>.
+是另一个常数，我们称之为<i>K</i>。
+
+39
+00:02:32,000 --> 00:02:38,000
+The solution is <i>y</i> equal to some constant times <i>e</i>^(<i>x</i>^2/2).
+解为<i>y</i>等于某个常数倍<i>e</i>^(<i>x</i>^2/2)。
+
+40
+00:02:38,000 --> 00:02:44,000
+That is the general solution of the differential equation.
+这就是微分方程的一般解。
+
+41
+00:02:46,000 --> 00:02:49,000
+Okay. On to another example.
+好吧，再举一个例子。在另一个例子。
+
+42
+00:02:49,000 --> 00:02:53,000
+Let’s try and solve the differential equation <i>y</i>' = <i>y</i>.
+让我们试着解微分方程<i>y</i>'=<i>y</i>。
+
+43
+00:02:53,000 --> 00:02:59,000
+In this case, you can think of <i>f</i>[<i>x</I>] = 1 and <i>g</i>[<i>y</i>] = <I>y</i>,
+在这种情况下，你可以认为<i>f</i>[<i>x</I>]=1，<i>g</i>[<i>y</i>]=<I>y</i>。
+
+44
+00:02:59,000 --> 00:03:02,000
+so that’s the separation of the right-hand side.
+所以这就是右侧的分离。
+
+45
+00:03:02,000 --> 00:03:07,000
+Keep in mind that <i>y</i>' is <i>dy</i>/<i>dx</i>, so you separate your variables,
+请记住，<i>y</i>'是<i>dy</i>/<i>dx</i>，所以你要分开你的变量。
+
+46
+00:03:07,000 --> 00:03:10,000
+rearrange and you get <i>dy</I>/<i>y</i> = <i>1dx</i>.
+重新排列后得到<i>dy</I>/<i>y</i>=<i>1dx</i>。
+
+47
+00:03:10,000 --> 00:03:13,000
+Then you integrate both sides.
+然后你把两边整合起来。
+
+48
+00:03:13,000 --> 00:03:15,000
+I haven’t put the constant, but it’s certainly there in the background.
+我没有放常量，但后台肯定是有的。
+
+49
+00:03:15,000 --> 00:03:20,000
+So <i>y</I> is <i>e</i>^(<i>x</i> + <i>C</i>) where <i>C</i> is a constant,
+所以<i>y</I>是<i>e</i>^(<i>x</i>+<i>C</i>)，其中<i>C</i>是一个常数。
+
+50
+00:03:20,000 --> 00:03:23,000
+so you get <i>e</I>^<i>C</i> * <i>e</i>^<i>x</i>.
+所以你得到<i>e</I>^<i>C</i> * <i>e</i>^<i>x</i>。
+
+51
+00:03:23,000 --> 00:03:26,000
+That’s <i>K</i> * <i>e</i>^<i>x</i>.
+那就是<i>K</i> * <i>e</i>^<i>x</i>。
+
+52
+00:03:26,000 --> 00:03:28,000
+You can confirm the answer with DSolveValue,
+你可以用DSolveValue来确认答案。
+
+53
+00:03:28,000 --> 00:03:31,000
+and you get back just the same result.
+而你得到的只是同样的结果。
+
+54
+00:03:32,000 --> 00:03:36,000
+Okay. On to a slightly harder example
+好吧，那就举个稍微难一点的例子吧。再举一个稍微难一点的例子
+
+55
+00:03:36,000 --> 00:03:41,000
+where you have <i>y</i>' = 3<i>x</i>^3/(4<i>y</i> + Sin[<i>y</i>]).
+其中你有<i>y</i>'=3<i>x</i>^3/(4<i>y</i>+Sin[<i>y</i>])。
+
+56
+00:03:41,000 --> 00:03:44,000
+In this case, <i>f</i> is just the numerator,
+在这种情况下，<i>f</i>只是分子。
+
+57
+00:03:44,000 --> 00:03:49,000
+and for <i>g</i>, you can take 1 over the denominator.
+而对于<i>g</i>，可以在分母上取1。
+
+58
+00:03:49,000 --> 00:03:52,000
+That’s the differential equation,
+这就是微分方程。
+
+59
+00:03:52,000 --> 00:03:56,000
+and then you separate the variables and rearrange.
+然后你把变量分开，重新排列。
+
+60
+00:03:56,000 --> 00:04:00,000
+Integrate both the sides separately, and now we see that
+将两边分别整合，现在我们看到的是
+
+61
+00:04:00,000 --> 00:04:06,000
+the solution is going to be 2<i>y</i>^2 – Cos[<i>y</I>] = (3<i>x</i>^4)/4 + <i>C</i>.
+解为2<i>y</i>^2 - Cos[<i>y</I>] = (3<i>x</i>^4)/4 + <i>C</i>。
+
+62
+00:04:06,000 --> 00:04:11,000
+Here is a plot of the solution with ContourPlot.
+下面是用ContourPlot绘制的解决方案。
+
+63
+00:04:12,000 --> 00:04:17,000
+Okay. The question is what happens when there are initial values?
+好吧，问题是当有初始值时，会发生什么？问题是当有初始值时会发生什么？
+
+64
+00:04:17,000 --> 00:04:21,000
+Let’s take the equation <i>y</i>' = <i>x</i> * <i>y</i>
+让我们用公式<i>y</i>'=<i>x</i>*<i>y</i>。
+
+65
+00:04:21,000 --> 00:04:25,000
+with the initial condition <i>y</i>[0] = <i>1</i>.
+与初始条件<i>y</i>[0]=<i>1</i>。
+
+66
+00:04:25,000 --> 00:04:30,000
+That’s an initial value problem with a value of <i>y</i> given at 0.
+这是一个初值问题，在0处给出<i>y</i>的值。
+
+67
+00:04:30,000 --> 00:04:34,000
+The question is can you then find a particular solution
+问题是你能不能找到一个特定的解决方案
+
+68
+00:04:34,000 --> 00:04:37,000
+of this differential equation?
+这个微分方程的?
+
+69
+00:04:37,000 --> 00:04:41,000
+Let’s rearrange the equation as earlier.
+让我们按照前面的公式重新排列。
+
+70
+00:04:41,000 --> 00:04:46,000
+Solve it, so you get <i>y</i> equal to <i>K</i>, where <i>K</i> is a constant,
+解，所以得到<i>y</i>等于<i>K</i>，其中<i>K</i>是一个常数。
+
+71
+00:04:46,000 --> 00:04:49,000
+times <i>e</i>^(<i>x</i>^2/2).
+乘以<i>e</i>^(<i>x</i>^2/2)。
+
+72
+00:04:49,000 --> 00:04:51,000
+Now we plug in the initial values.
+现在我们插入初始值。
+
+73
+00:04:51,000 --> 00:04:57,000
+You get <i>y</i>[0] = 1, so you get 1 = <i>K</i> * <i>e</i>^0, so <i>K</i> = 1.
+得到<i>y</i>[0]=1，所以得到1=<i>K</i>*<i>e</i>^0，所以<i>K</i>=1。
+
+74
+00:04:57,000 --> 00:05:00,000
+The solution is <i>y</i> = <i>e</i>^(<i>x</i>^2/2).
+解为<i>y</i>=<i>e</i>^(<i>x</i>^2/2)。
+
+75
+00:05:00,000 --> 00:05:03,000
+You can confirm that with DSolve.
+你可以用DSolve来确认。
+
+76
+00:05:03,000 --> 00:05:10,000
+You can also check the solution plot by doing a StreamPlot.
+你也可以通过做一个StreamPlot来检查溶液图。
+
+77
+00:05:12,000 --> 00:05:17,000
+Okay. On to some applications, and we’ll take two of them.
+好的，我知道了在一些应用程序， 我们将采取其中的两个。
+
+78
+00:05:17,000 --> 00:05:18,000
+The first one is for current.
+第一个是针对电流。
+
+79
+00:05:18,000 --> 00:05:22,000
+Here’s an equation that describes a circuit
+这里有一个描述电路的公式。
+
+80
+00:05:22,000 --> 00:05:25,000
+in which there’s some charge flowing, some resistance,
+在其中有一些电荷流动，一些电阻。
+
+81
+00:05:25,000 --> 00:05:28,000
+some capacitance and some voltage—that’s supposed to be circuit.
+一些电容和一些电压，这应该是电路。
+
+82
+00:05:28,000 --> 00:05:33,000
+That’s the equation, the differential equation, for the charge <i>q</i>.
+这就是电荷<i>q</i>的方程，微分方程。
+
+83
+00:05:33,000 --> 00:05:38,000
+Now of course if <i>v</I> depends on <i>t</i>, that’s much harder,
+现在当然如果<i>v</I>取决于<i>t</i>，那就更难了。
+
+84
+00:05:38,000 --> 00:05:40,000
+so we’ll assume that <i>v</i> itself is a constant,
+所以我们假设<i>v</i>本身是一个常数。
+
+85
+00:05:40,000 --> 00:05:45,000
+so we’ve got constant resistance, capacitance and voltage.
+所以我们有恒定的电阻、电容和电压。
+
+86
+00:05:45,000 --> 00:05:48,000
+In that situation where <i>v</I> does not depend upon <i>t</i>,
+在这种情况下，<i>v</I>不取决于<i>t</i>。
+
+87
+00:05:48,000 --> 00:05:53,000
+you can solve for <i>q</i>', and then you see that
+你可以解出<i>q</i>'，然后你会看到
+
+88
+00:05:53,000 --> 00:05:55,000
+things are separable over here.
+这里的东西是可以分开的。
+
+89
+00:05:55,000 --> 00:06:00,000
+You separate the equation and get an expression for <i>t</i>
+你分开方程，得到<i>t</i>的表达式。
+
+90
+00:06:00,000 --> 00:06:03,000
+in terms of everything else, but we want to solve for <i>q</i>.
+但我们想求解<i>q</i>。
+
+91
+00:06:03,000 --> 00:06:05,000
+You solve for <i>q</i>.
+你求解<i>q</i>。
+
+92
+00:06:05,000 --> 00:06:10,000
+The Normal here just means you’re ignoring some conditions on <i>q</i>.
+这里的Normal只是意味着你忽略了<i>q</i>上的一些条件。
+
+93
+00:06:10,000 --> 00:06:12,000
+The solution is <i>c</I> times <I>v</i>
+解为<i>c</I>乘以<I>v</i>。
+
+94
+00:06:12,000 --> 00:06:16,000
+minus <i>e</i> raised to that expression over there,
+减去<i>e</i>提高到那边的表达。
+
+95
+00:06:16,000 --> 00:06:22,000
+but if you think about this, it’s really <i>e</i>^(–<i>k</i>/<i>c</i>) * <i>e</i>^(–<i>t</i>/<i>r</i>).
+但如果你仔细想想，其实就是<i>e</i>^(-<i>k</i>/<i>c</i>) * <i>e</i>^(-<i>t</i>/<i>r</i>)。
+
+96
+00:06:22,000 --> 00:06:26,000
+That’s just <i>K</i> * <i>e</i>^–<i>t</i>(<i>c</i> * <i>r</i>).
+那只是<i>K</i> * <i>e</i>^-<i>t</i>(<i>c</i> * <i>r</i>)。
+
+97
+00:06:27,000 --> 00:06:29,000
+One final point.
+最后一点。
+
+98
+00:06:29,000 --> 00:06:33,000
+As the time approaches ∞ as more and more time goes by,
+随着时间的接近∞随着时间的推移越来越多。
+
+99
+00:06:33,000 --> 00:06:39,000
+the value of <i>e</i>^–∞ = 0, so this term, drops out,
+<i>e</i>^-∞的值=0，所以这个项，掉了。
+
+100
+00:06:39,000 --> 00:06:43,000
+and the final solution is that the charge approaches <i>c</i> * <i>v</i>
+而最终的解决方案是，电荷量接近<i>c</i>*<i>v</i>。
+
+101
+00:06:43,000 --> 00:06:46,000
+as <i>t</i> approaches ∞.
+当<i>t</i>接近∞时。
+
+102
+00:06:48,000 --> 00:06:52,000
+A second example is for Newton’s law of cooling.
+第二个例子是针对牛顿冷却定律。
+
+103
+00:06:52,000 --> 00:06:55,000
+Here is a differential equation for the temperature
+下面是一个温度的微分方程。
+
+104
+00:06:55,000 --> 00:07:00,000
+when an object at temperature <i>t</i>0 initially is placed in a medium
+当一个温度<i>t</i>0的物体最初被放置在一个介质中时。
+
+105
+00:07:00,000 --> 00:07:03,000
+where the temperature is held constant at <i>s</i>.
+其中温度在<i>s</i>时保持不变。
+
+106
+00:07:03,000 --> 00:07:06,000
+What happens is that the rate of change of temperature
+发生的情况是，温度的变化率。
+
+107
+00:07:06,000 --> 00:07:10,000
+is proportional to the difference between the current temperature
+与当前温度的差值成正比。
+
+108
+00:07:10,000 --> 00:07:12,000
+and the temperature of the surroundings.
+和周围环境的温度。
+
+109
+00:07:12,000 --> 00:07:15,000
+As time goes by and the difference becomes small,
+随着时间的流逝，差别变得很小。
+
+110
+00:07:15,000 --> 00:07:17,000
+the rate falls down as well.
+率也随之下降。
+
+111
+00:07:17,000 --> 00:07:19,000
+You need to determine <i>k</i>.
+你需要确定<i>k</i>。
+
+112
+00:07:19,000 --> 00:07:25,000
+We’re given the initial condition that the temperature at 0 is <i>t</i>0.
+我们给出的初始条件是0处的温度为<i>t</i>0。
+
+113
+00:07:25,000 --> 00:07:28,000
+Now of course over here we have a separable equation,
+当然，在这里我们有一个可分离的方程。
+
+114
+00:07:28,000 --> 00:07:32,000
+so you separate the variables and you get back
+所以你把变量分开，然后你就会得到
+
+115
+00:07:32,000 --> 00:07:35,000
+an expression for <i>t</i> in terms of temperature,
+用温度表示<i>t</i>的表达式；
+
+116
+00:07:35,000 --> 00:07:37,000
+but you want to solve for temperature,
+但你要解决温度问题。
+
+117
+00:07:37,000 --> 00:07:40,000
+so you do that and you get an answer.
+所以你这样做，你会得到一个答案。
+
+118
+00:07:40,000 --> 00:07:44,000
+Now the point is that <i>e</i>^(<i>c</i> * <i>k</i>) is a constant,
+现在的问题是，<i>e</i>^(<i>c</i>*<i>k</i>)是一个常数。
+
+119
+00:07:44,000 --> 00:07:49,000
+so again you can call that some <i>c</i> and you solve for that constant.
+所以你又可以把它叫做一些<i>c</i>，你就可以求解这个常数。
+
+120
+00:07:49,000 --> 00:07:54,000
+The final solution is that the solution for the temperature at time <i>t</i>
+最后的解是，时间<i>t</i>时的温度的解。
+
+121
+00:07:54,000 --> 00:07:59,000
+is (–<i>s</i> + <i>t</I>0)<i>e</i>^(<i>k</I> * <i>t</i>) + <i>s</i>.
+是(-<i>s</i>+<i>t</I>0)<i>e</i>^(<i>k</I>*<i>t</i>)+<i>s</i>。
+
+122
+00:07:59,000 --> 00:08:02,000
+You can check the answer with DSolve,
+你可以用DSolve检查答案。
+
+123
+00:08:02,000 --> 00:08:05,000
+and you get back the same expression.
+而你得到的是同样的表情。
+
+124
+00:08:06,000 --> 00:08:09,000
+Now the question is how to determine <i>k</i>.
+现在的问题是如何确定<i>k</i>。
+
+125
+00:08:09,000 --> 00:08:15,000
+To find <i>k</i>, what you need is the temperature <i>t</i>1 at some later time τ.
+要找到<i>k</i>，你需要的是以后某个时间τ的温度<i>t</i>1。
+
+126
+00:08:15,000 --> 00:08:18,000
+Suppose we know that temperature.
+假设我们知道，温度。
+
+127
+00:08:18,000 --> 00:08:21,000
+Then we plug the values in into the solution
+然后我们将这些值插入到解决方案中
+
+128
+00:08:21,000 --> 00:08:26,000
+and you solve for <i>k</i>, and that is the expression for <i>k</i>.
+而你解出<i>k</i>，这就是<i>k</i>的表达式。
+
+129
+00:08:27,000 --> 00:08:34,000
+The constant <i>k</i> is Log[(<i>s</i> – <i>t</i>1)/(<i>s</i> – <i>t</i>0)]/τ.
+常数<i>k</i>为Log[(<i>s</i>-<i>t</i>1)/(<i>s</i>-<i>t</i>0)]/τ。
+
+130
+00:08:35,000 --> 00:08:37,000
+As an application, let’s say you have got
+作为一个应用，比如说你已经有了
+
+131
+00:08:37,000 --> 00:08:40,000
+a cup of boiling coffee at 100 ºC.
+一杯100℃的沸腾咖啡。
+
+132
+00:08:40,000 --> 00:08:41,000
+It’s boiling.
+它的沸腾。
+
+133
+00:08:41,000 --> 00:08:45,000
+You put it in a room in which the temperature is 22 ºC.
+你把它放在温度为22℃的房间里。
+
+134
+00:08:45,000 --> 00:08:51,000
+Let’s say an hour later, the temperature of the coffee is 60 ºC.
+假设一个小时后，咖啡的温度是60 ºC。
+
+135
+00:08:51,000 --> 00:08:54,000
+Then what you can do is you can model the coffee temperature
+那么你可以做的是你可以模拟咖啡的温度。
+
+136
+00:08:54,000 --> 00:08:57,000
+by the equation over here where I’ve plugged in the value of <i>k</i>
+由这里的公式，我已经插入了<i>k</i>的值。
+
+137
+00:08:57,000 --> 00:09:00,000
+based on the given information.
+根据给定的信息。
+
+138
+00:09:01,000 --> 00:09:06,000
+That is the starting temperature, that’s the room temperature,
+那是起始温度，那是室温。
+
+139
+00:09:06,000 --> 00:09:11,000
+and you want to model the coffee over a period of time.
+而你想在一段时间内对咖啡进行建模。
+
+140
+00:09:11,000 --> 00:09:15,000
+Let’s see what happens to it over a period of, let’s say, 10 hours.
+让我们看看10小时后会发生什么。
+
+141
+00:09:15,000 --> 00:09:18,000
+You can see that the temperature slowly approaches
+你可以看到，温度慢慢接近
+
+142
+00:09:18,000 --> 00:09:21,000
+the room temperature, which is 22, and in fact,
+的室温，即22，事实上。
+
+143
+00:09:21,000 --> 00:09:25,000
+you can use Limit to check that the answer is actually 22
+你可以用Limit来检查答案实际上是22。
+
+144
+00:09:25,000 --> 00:09:29,000
+when you have let infinitely many hours pass by.
+当你让无限的时间流逝。
+
+145
+00:09:29,000 --> 00:09:35,000
+That’s Newton’s law which models the cooling of objects
+这就是牛顿定律，它是物体冷却的模型。
+
+146
+00:09:35,000 --> 00:09:41,000
+which are placed in a room with a higher temperature
+放在温度较高的房间里。
+
+147
+00:09:41,000 --> 00:09:43,000
+than room temperature.
+比室温。
+
+148
+00:09:43,000 --> 00:09:46,000
+Okay. That brings me to the end of this lesson,
+好了，我的课就到此结束了。本课到此结束。
+
+149
+00:09:46,000 --> 00:09:50,000
+and the main point is that separable equations are,
+而最主要的是，可分离方程是。
+
+150
+00:09:50,000 --> 00:09:53,000
+in general, rather easy to solve.
+一般来说，相当容易解决。
+
+151
+00:09:53,000 --> 00:09:56,000
+The way that you solve them is to note that
+你解决它们的方法是注意以下几点
+
+152
+00:09:56,000 --> 00:10:00,000
+the right-hand side is a function of <i>x</i> times a function of <i>y</i>,
+右边是<i>x</i>乘以<i>y</i>的函数。
+
+153
+00:10:00,000 --> 00:10:05,000
+and then you can replace <i>y</i>' by differentials <i>dy</i> and <i>dx</i>
+然后你可以用差分<i>dy</i>和<i>dx</i>来代替<i>y</i>'。
+
+154
+00:10:05,000 --> 00:10:07,000
+and then solve the equation.
+然后解方程。
+
+155
+00:10:07,000 --> 00:10:12,000
+Now of course you can use that to model the various phenomena.
+现在你当然可以用它来模拟各种现象。
+
+156
+00:10:12,000 --> 00:10:15,000
+For example, you can model the charge in a circuit
+例如，你可以对电路中的电荷进行建模。
+
+157
+00:10:15,000 --> 00:10:18,000
+by a separable differential equation,
+由一个可分离微分方程。
+
+158
+00:10:18,000 --> 00:10:22,000
+or you can model the temperature over time for a hot object
+或者你可以为一个热物体建立温度随时间变化的模型。
+
+159
+00:10:22,000 --> 00:10:24,000
+using separable differential equations.
+使用可分离微分方程。
+
+160
+00:10:26,000 --> 00:10:29,000
+In the next lesson, we’ll talk about how we can make programs
+在下一课中，我们将讨论如何使程序成为
+
+161
+00:10:29,000 --> 00:10:32,000
+that help to solve calculus problems
+帮助解决微积分问题
+
+162
+00:10:32,000 --> 00:10:34,000
+when doing differential equations.
+做微分方程时。
+
+163
+00:10:34,000 --> 00:10:37,000
+But before that, do revise today’s lesson.
+不过在这之前，先把今天的课做一下修改。
+
+164
+00:10:37,000 --> 00:10:41,000
+It’s quite an important topic, separable differential equations.
+这是一个相当重要的话题，可分离微分方程。
+
+165
+00:10:41,000 --> 00:10:43,000
+I’ll see you in the next lesson.
+下节课见。
+
+166
+00:10:43,000 --> 00:10:45,000
+Thank you very much. I’ll stop over here.
+谢谢你了我会在这里停下来。

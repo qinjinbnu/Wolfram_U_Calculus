@@ -1,0 +1,924 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+Hello, and welcome to Lesson 39
+你好，欢迎来到第39课
+
+2
+00:00:03,000 --> 00:00:07,000
+of this introduction to calculus with Wolfram U.
+的这个微积分导论与Wolfram U。
+
+3
+00:00:07,000 --> 00:00:14,000
+The topic for this lesson is part 1 of a sample calculus exam.
+本节课的题目是微积分考试样题的第一部分。
+
+4
+00:00:14,000 --> 00:00:18,000
+Let’s begin with a brief overview of the lesson.
+先来简单介绍一下本课的内容。
+
+5
+00:00:18,000 --> 00:00:21,000
+In this course, we have gone over lots of topics
+在这个课程中，我们已经走过了很多的主题。
+
+6
+00:00:21,000 --> 00:00:26,000
+in both differential calculus and integral calculus.
+在微分微积分和积分微积分中。
+
+7
+00:00:27,000 --> 00:00:31,000
+It’s now time to talk about some exam problems
+现在是时候说说一些考试问题了
+
+8
+00:00:31,000 --> 00:00:34,000
+to apply what you have learned.
+来应用你所学的知识。
+
+9
+00:00:34,000 --> 00:00:37,000
+The questions I’ll take in this lesson
+这节课我要做的题
+
+10
+00:00:37,000 --> 00:00:41,000
+are similar to what you might see on the AP Calculus AB exam,
+与你在AP微积分AB考试中可能看到的相似。
+
+11
+00:00:41,000 --> 00:00:45,000
+but equally well, you might see the questions on other exams
+但同样的，你可能会看到其他考试的题目
+
+12
+00:00:45,000 --> 00:00:48,000
+that you might take anywhere in the world
+走遍天下无敌手
+
+13
+00:00:48,000 --> 00:00:51,000
+at an introductory calculus level.
+在微积分入门水平上；
+
+14
+00:00:52,000 --> 00:00:54,000
+Let’s begin with the first question,
+先说第一个问题。
+
+15
+00:00:54,000 --> 00:00:59,000
+which says find the derivative of this function over here at 2.
+它说，找到这个函数的导数在这里2。
+
+16
+00:00:59,000 --> 00:01:00,000
+There are two steps over here:
+这里有两个台阶。
+
+17
+00:01:00,000 --> 00:01:03,000
+first, find the derivative,
+首先，找到导数。
+
+18
+00:01:03,000 --> 00:01:06,000
+and secondly, plug in <i>x</i> = 2.
+其次，插上<i>x</i>=2。
+
+19
+00:01:06,000 --> 00:01:07,000
+Now to find the derivative,
+现在来找导数。
+
+20
+00:01:07,000 --> 00:01:09,000
+what you do is you apply the quotient rule—
+你要做的是你应用商规则，
+
+21
+00:01:09,000 --> 00:01:11,000
+after all, you have a fraction over there.
+毕竟，你有一个分数在那里。
+
+22
+00:01:11,000 --> 00:01:13,000
+The rule says that
+该规则规定：
+
+23
+00:01:13,000 --> 00:01:19,000
+you find the denominator times the derivative of the numerator
+找出分母乘分子的导数。
+
+24
+00:01:19,000 --> 00:01:21,000
+minus numerator times derivative of the denominator
+分子乘以分母的导数。
+
+25
+00:01:21,000 --> 00:01:24,000
+divided by denominator squared.
+除以分母平方。
+
+26
+00:01:24,000 --> 00:01:27,000
+Then of course you plug in the value 2.
+那你当然要插上数值2。
+
+27
+00:01:27,000 --> 00:01:28,000
+That’s what I’m doing over here.
+这就是我在这里做的。
+
+28
+00:01:28,000 --> 00:01:32,000
+Then you get back the answer, and you can check the answer with D.
+然后拿回答案，你可以用D检查答案。
+
+29
+00:01:32,000 --> 00:01:36,000
+You get back just the same result.
+你得到的只是同样的结果。
+
+30
+00:01:37,000 --> 00:01:40,000
+On to question 2, which says calculate the limit
+关于第2题，其中说计算限值
+
+31
+00:01:40,000 --> 00:01:43,000
+of this function over here at 5.
+这个功能的在这里5。
+
+32
+00:01:43,000 --> 00:01:49,000
+Now each term in the function is continuous at 5.
+现在函数中的每个项在5处连续。
+
+33
+00:01:49,000 --> 00:01:54,000
+The limit laws say that you can simply plug in the value 5
+限定法说，你可以简单地将数值插入5
+
+34
+00:01:54,000 --> 00:01:59,000
+and work out the answer, so the answer is just 610 – 6Log[5].
+并计算出答案，所以答案只有610-6Log[5]。
+
+35
+00:01:59,000 --> 00:02:04,000
+You can check that with Limit and you get back just the same result.
+你可以用Limit检查，得到的结果也是一样的。
+
+36
+00:02:04,000 --> 00:02:07,000
+Here’s a plot which confirms that you actually have
+这里有一个情节，可以证实你其实有。
+
+37
+00:02:07,000 --> 00:02:11,000
+the limiting value at that point.
+该点的极限值。
+
+38
+00:02:12,000 --> 00:02:15,000
+On to number 3, which says calculate the integral
+第3项，说是计算积分。
+
+39
+00:02:15,000 --> 00:02:20,000
+from π to 5 of Cos[<i>x</i>] + 1/<i>x</i>.
+从π到5的Cos[<i>x</i>]+1/<i>x</i>。
+
+40
+00:02:20,000 --> 00:02:23,000
+Now if you apply the fundamental theorem of calculus,
+现在如果运用微积分的基本定理。
+
+41
+00:02:23,000 --> 00:02:27,000
+then you first find the antiderivative, which is Sin[<i>x</i>] + Log[<i>x</i>].
+那么你首先要找到反导数，也就是Sin[<i>x</i>] + Log[<i>x</i>]。
+
+42
+00:02:27,000 --> 00:02:32,000
+You plug in the upper limit and the lower limit and you subtract,
+你插上上限和下限，然后你就会减去。
+
+43
+00:02:32,000 --> 00:02:34,000
+and you get back the answer.
+而你得到的答案。
+
+44
+00:02:34,000 --> 00:02:37,000
+You can confirm the answer with Integrate,
+你可以用Integrate确认答案。
+
+45
+00:02:37,000 --> 00:02:39,000
+which gives you just the same result.
+这给你同样的结果。
+
+46
+00:02:39,000 --> 00:02:43,000
+Here is a plot of the region that we just integrated.
+这是我们刚才整合的区域图。
+
+47
+00:02:45,000 --> 00:02:48,000
+On to number 4, which says find the value of <i>c</i>
+第4题，说的是求<i>c</i>的值。
+
+48
+00:02:48,000 --> 00:02:53,000
+which satisfies the mean value theorem for this function.
+其中满足该函数的均值定理。
+
+49
+00:02:53,000 --> 00:02:58,000
+What you need to do is to work out the value of <i>c</i>
+您需要做的是计算出<i>c</i>的值。
+
+50
+00:02:58,000 --> 00:03:02,000
+for which you get the mean value for the slope,
+你可以得到斜率的平均值。
+
+51
+00:03:02,000 --> 00:03:05,000
+basically, at that point <i>c</i>.
+基本上，在这一点上<i>c</i>。
+
+52
+00:03:05,000 --> 00:03:07,000
+First of all, you work out the slope
+首先，你要计算出斜率。
+
+53
+00:03:07,000 --> 00:03:09,000
+of the line joining the endpoints.
+连接两端点的线。
+
+54
+00:03:10,000 --> 00:03:12,000
+That’s 13.
+这是13个。
+
+55
+00:03:12,000 --> 00:03:14,000
+Solve the equation—
+解方程-
+
+56
+00:03:14,000 --> 00:03:19,000
+derivative of the function equal to 13 in the given range.
+在给定范围内，函数的导数等于13。
+
+57
+00:03:19,000 --> 00:03:23,000
+You get back <i>x</i> as √(7/3).
+你得到的<i>x</i>为√（7/3）。
+
+58
+00:03:23,000 --> 00:03:25,000
+Work out the function value.
+求出函数值。
+
+59
+00:03:25,000 --> 00:03:27,000
+Basically you have a point
+基本上你有一个观点
+
+60
+00:03:27,000 --> 00:03:31,000
+at which the mean value theorem is satisfied,
+在满足均值定理的情况下。
+
+61
+00:03:31,000 --> 00:03:34,000
+and you can check that with a plot over here.
+你可以在这里用情节检查。
+
+62
+00:03:34,000 --> 00:03:36,000
+You see that at that point,
+你看，在这一点上。
+
+63
+00:03:36,000 --> 00:03:39,000
+the tangent line has got the same slope
+切线同斜
+
+64
+00:03:39,000 --> 00:03:42,000
+as the line joining the endpoints.
+作为连接端点的线。
+
+65
+00:03:43,000 --> 00:03:46,000
+On to number 5, which says find the general solution
+到了第5条，说的是找到一般的解。
+
+66
+00:03:46,000 --> 00:03:48,000
+of this differential equation.
+这个微分方程的。
+
+67
+00:03:48,000 --> 00:03:51,000
+Now that’s a separable differential equation
+这是一个可分离的微分方程。
+
+68
+00:03:51,000 --> 00:03:53,000
+because you can separate <i>x</i> and <i>y</i>,
+因为你可以把<i>x</i>和<i>y</i>分开。
+
+69
+00:03:53,000 --> 00:03:56,000
+so what you do is think of <i>y</i>' as being <i>dy</i>/<i>dx</i>
+所以你要做的是把"<i>y</i>"看作是<i>dy</i>/<i>dx</i>。
+
+70
+00:03:56,000 --> 00:04:01,000
+and separate the two sides, and you get back the answer,
+并将两边分开，就能得到答案。
+
+71
+00:04:01,000 --> 00:04:09,000
+which you can rewrite as just Exp[Log[–1 + <i>y</i>^2]] = Exp[3<i>x</i>^2 + <i>c</i>].
+你可以改写为Exp[Log[-1 + <i>y</i>^2]] = Exp[3<i>x</i>^2 + <i>c</i>]。
+
+72
+00:04:09,000 --> 00:04:16,000
+You have a solution over here, which is <i>y</i>^2 – 1 = <i>c</i> * <i>e</i>^3<i>x</i>^2.
+你这边有一个解，就是<i>y</i>^2 - 1 = <i>c</i> * <i>e</i>^3<i>x</i>^2。
+
+73
+00:04:16,000 --> 00:04:21,000
+You can plot that solution for different values of <i>c</i>,
+您可以绘制不同的<i>c</i>值的解决方案。
+
+74
+00:04:21,000 --> 00:04:25,000
+and here you see that there are all the different solutions.
+在这里你可以看到，有所有不同的解决方案。
+
+75
+00:04:25,000 --> 00:04:28,000
+That’s a separable differential equation
+那是一个可分离的微分方程。
+
+76
+00:04:28,000 --> 00:04:31,000
+which you can solve by simple integration.
+你可以通过简单的整合来解决。
+
+77
+00:04:33,000 --> 00:04:38,000
+Next let’s try and find the limit of this function over here at ∞.
+接下来让我们试着在∞这里找到这个函数的极限。
+
+78
+00:04:38,000 --> 00:04:41,000
+Now at ∞, you need to only worry about
+现在在∞，你只需要担心的是
+
+79
+00:04:41,000 --> 00:04:44,000
+the degrees of the numerator and denominator.
+分子和分母的度数。
+
+80
+00:04:44,000 --> 00:04:46,000
+Now in this case, they’re the same.
+现在在这种情况下，他们是一样的。
+
+81
+00:04:46,000 --> 00:04:50,000
+They’re both 3, so you simply need to work with those terms.
+它们都是3，所以你只需要用这些术语来工作。
+
+82
+00:04:50,000 --> 00:04:53,000
+The answer is going to be 10<i>x</i>^3/3<i>x</i>^3.
+答案将是10<i>x</i>^3/3<i>x</i>^3。
+
+83
+00:04:53,000 --> 00:04:55,000
+That gives you just 10/3.
+这让你只有10/3。
+
+84
+00:04:55,000 --> 00:04:58,000
+You can check the answer with Limit,
+你可以用Limit检查答案。
+
+85
+00:04:58,000 --> 00:05:01,000
+and you do get back just the same result.
+而你得到的只是同样的结果。
+
+86
+00:05:01,000 --> 00:05:04,000
+Here is a plot to visualize what’s happening,
+这里有一个剧情，可以直观地看到发生了什么。
+
+87
+00:05:04,000 --> 00:05:08,000
+and you do see that the value approaches 10/3, 3.33,
+你看，价值接近10/3，3.33。
+
+88
+00:05:08,000 --> 00:05:11,000
+as <i>x</i> approaches ∞.
+当<i>x</i>接近∞时。
+
+89
+00:05:12,000 --> 00:05:16,000
+On to number 7, which says use the trapezoidal rule
+第7条，说使用梯形规则
+
+90
+00:05:16,000 --> 00:05:18,000
+to estimate the integral over here.
+来估计这里的积分。
+
+91
+00:05:18,000 --> 00:05:21,000
+Now you are required to use five trapezoids,
+现在要求你使用五个梯形。
+
+92
+00:05:21,000 --> 00:05:25,000
+so what you do is you find the width of each trapezoid
+所以你要做的是找到每个梯形的宽度。
+
+93
+00:05:25,000 --> 00:05:28,000
+by doing upper limit minus lower limit over 5,
+通过做上限减去下限超过5。
+
+94
+00:05:28,000 --> 00:05:32,000
+so you get back 8/5 as the width of each trapezoid.
+所以你得到的8/5是每个梯形的宽度。
+
+95
+00:05:32,000 --> 00:05:36,000
+You then work out the approximate integral
+然后计算出近似积分
+
+96
+00:05:36,000 --> 00:05:40,000
+by adding the areas of these trapezoids.
+通过添加这些梯形的面积。
+
+97
+00:05:40,000 --> 00:05:47,000
+Here is the calculation, and I get back the answer 2314.03.
+下面是计算结果，我得到的答案是2314.03。
+
+98
+00:05:47,000 --> 00:05:49,000
+Compare that with Integrate.
+与Integrate相比。
+
+99
+00:05:49,000 --> 00:05:53,000
+It’s only somewhat close, but not very precise.
+只是有些接近，但不是很精确。
+
+100
+00:05:53,000 --> 00:05:57,000
+Here is a plot which shows the actual area
+下面是一张显示实际面积的图
+
+101
+00:05:57,000 --> 00:06:00,000
+and the trapezoidal approximation.
+和梯形近似。
+
+102
+00:06:00,000 --> 00:06:05,000
+Okay. On to question 8, which says find the equation of the line
+好的，现在进入第8题在第8题中，它说找到线段的方程。
+
+103
+00:06:05,000 --> 00:06:11,000
+tangent to the graph of this function at (1, –2).
+在(1，-2)处与这个函数的图形相切。
+
+104
+00:06:11,000 --> 00:06:15,000
+Now the first step, of course, is to find the slope at that point.
+现在第一步，当然是要找到该点的斜率。
+
+105
+00:06:15,000 --> 00:06:20,000
+You work out the derivative, which is just <i>e</i>^(<i>x</i> – 1) – 3.
+你计算出导数，就是<i>e</i>^(<i>x</i>-1)-3。
+
+106
+00:06:20,000 --> 00:06:26,000
+Plug in <i>x</i> = 1 and you get back the slope as –2.
+插入<i>x</i>=1，得到的斜率为-2。
+
+107
+00:06:26,000 --> 00:06:29,000
+You can check that with D.
+你可以和D一起检查。
+
+108
+00:06:29,000 --> 00:06:33,000
+Basically you work out the derivative and plug in <i>x</i> = 1,
+基本上，你计算出导数并插入<i>x</i>=1。
+
+109
+00:06:33,000 --> 00:06:35,000
+and you do get back the same answer.
+而你确实得到了同样的答案。
+
+110
+00:06:35,000 --> 00:06:39,000
+By the point-slope formula, the equation on the tangent line
+由点斜率公式可知，切线上的方程为
+
+111
+00:06:39,000 --> 00:06:44,000
+is going to be <i>y</i> minus <i>y</i>1 equal to slope times <i>x</i> minus <i>x</i>1.
+将是<i>y</i>减去<i>y</i>1等于斜率乘以<i>x</i>减去<i>x</i>1。
+
+112
+00:06:45,000 --> 00:06:51,000
+Here is a plot which shows that you indeed have the correct solution.
+下面是一张图，可以看出你确实有正确的解法。
+
+113
+00:06:52,000 --> 00:06:56,000
+On to number 9, which says for what value of <i>a</i>
+关于第9条，该条说的是<i>a</i>的值是多少。
+
+114
+00:06:56,000 --> 00:06:59,000
+is this function over here continuous?
+这个函数在这边是连续的吗？
+
+115
+00:06:59,000 --> 00:07:02,000
+Now this is a piecewise function.
+现在这是一个片断函数。
+
+116
+00:07:02,000 --> 00:07:04,000
+There are two pieces.
+有两块。
+
+117
+00:07:04,000 --> 00:07:08,000
+There is the part where <i>x</i> is less than 2 and the remaining part,
+有<i>x</i>小于2的部分，其余部分。
+
+118
+00:07:08,000 --> 00:07:13,000
+and the only question is what happens at 2 itself.
+而唯一的问题是2本身会发生什么。
+
+119
+00:07:13,000 --> 00:07:18,000
+Well, for the function to be continuous, the limit from the left at 2
+好吧，为了使函数连续，从左边的极限在2
+
+120
+00:07:18,000 --> 00:07:21,000
+should be equal to the limit from the right at 2.
+应等于从右边的极限在2。
+
+121
+00:07:21,000 --> 00:07:24,000
+You solve the equation for that,
+你来解这个方程。
+
+122
+00:07:24,000 --> 00:07:27,000
+which is limit as you approach from the left
+左右逢源
+
+123
+00:07:27,000 --> 00:07:29,000
+equal to limit from the right.
+等于从右边的限制。
+
+124
+00:07:29,000 --> 00:07:32,000
+Solve that for <i>a</i>, and you get back <i>a</i> as –1.
+对<i>a</i>进行求解，得到<i>a</i>为-1。
+
+125
+00:07:32,000 --> 00:07:37,000
+If <i>a</i> is –1, then you actually have continuity.
+如果<i>a</i>是-1，那么你实际上有连续性。
+
+126
+00:07:37,000 --> 00:07:39,000
+Here’s a plot which shows you that
+这里有一个剧情，可以告诉你
+
+127
+00:07:39,000 --> 00:07:44,000
+you indeed have no break in the graph when <i>a</i> is –1.
+当<i>a</i>为-1时，你的图形中确实没有断点。
+
+128
+00:07:44,000 --> 00:07:46,000
+You see over here that <i>a</i> is –1.
+你看这边，<i>a</i>是-1。
+
+129
+00:07:46,000 --> 00:07:50,000
+On to number 10, which says find the approximate value
+到了第10条，上面写着求近似值。
+
+130
+00:07:50,000 --> 00:07:55,000
+of this square root to four decimal places.
+这个平方根的小数点后四位。
+
+131
+00:07:55,000 --> 00:08:01,000
+Well, keep in mind that the number given to you is very close to √144,
+好吧，请记住，给你的数字是非常接近√144的。
+
+132
+00:08:01,000 --> 00:08:06,000
+so that’s 12, so you need to work with the function √<i>x</i>
+因此，这是12，所以你需要用函数√<i>x</i>工作
+
+133
+00:08:06,000 --> 00:08:11,000
+as the underlying function at the point (144, 12).
+作为该点的基本函数（144，12）。
+
+134
+00:08:11,000 --> 00:08:16,000
+You first work out the slope at that point.
+你先计算出那个点的坡度。
+
+135
+00:08:17,000 --> 00:08:20,000
+Write the equation of the tangent line,
+写出切线的方程。
+
+136
+00:08:20,000 --> 00:08:23,000
+and then use that to write the approximation,
+然后用它来写近似值。
+
+137
+00:08:23,000 --> 00:08:28,000
+which is going to be 12 plus the difference over here over 24.
+这将是12加上差额 在这里超过24。
+
+138
+00:08:29,000 --> 00:08:33,000
+Let’s check how it compares with the actual value.
+让我们来看看它与实际值的比较。
+
+139
+00:08:33,000 --> 00:08:35,000
+You see over here that you actually have
+你看这里，你实际上有
+
+140
+00:08:35,000 --> 00:08:39,000
+an error which is in the tenth millions.
+误差为千万分之一。
+
+141
+00:08:41,000 --> 00:08:44,000
+Okay. Let’s go on to number 11,
+好的，我们继续看第11条让我们去11号。
+
+142
+00:08:44,000 --> 00:08:48,000
+which says find the volume of the solid,
+其中说找到固体的体积。
+
+143
+00:08:48,000 --> 00:08:56,000
+which you can obtain by rotating this function around the <i>y</i> axis.
+你可以通过围绕<i>y</i>轴旋转这个函数来获得。
+
+144
+00:08:56,000 --> 00:08:58,000
+Then you bound it by the <i>y</i> axis itself
+然后您通过<i>y</i>轴本身进行约束
+
+145
+00:08:58,000 --> 00:09:02,000
+and the line <i>x</i> = 2 and the <i>x</i> axis.
+和线段<i>x</i>=2和<i>x</i>轴。
+
+146
+00:09:02,000 --> 00:09:04,000
+Here’s a plot of the region.
+这是一个区域的图。
+
+147
+00:09:04,000 --> 00:09:09,000
+Now in this case because you’re revolving around the <i>y</i>,
+现在在这种情况下，因为你是围绕着<i>y</i>旋转的。
+
+148
+00:09:09,000 --> 00:09:12,000
+you use the cylindrical shell method.
+你用圆柱壳法。
+
+149
+00:09:12,000 --> 00:09:21,000
+Basically you have cylinders of radii <i>x</i> and height –<i>x</i>^3 + 5<i>x</i>,
+基本上你有半径<i>x</i>和高度-<i>x</i>^3+5<i>x</i>的圆柱体。
+
+150
+00:09:21,000 --> 00:09:24,000
+so that’s the integral to be computed over here.
+所以这边要计算的是积分。
+
+151
+00:09:24,000 --> 00:09:28,000
+There’s 2π<i>r</i> * <i>hdx</i>.
+有2π<i>r</i>*<i>hdx</i>。
+
+152
+00:09:28,000 --> 00:09:32,000
+Work it out with Integrate, and you get back the volume required.
+用Integrate解决，你就能拿回所需的体积。
+
+153
+00:09:34,000 --> 00:09:39,000
+On to number 12, which says find the extrema of this function
+第12题，说要找出这个函数的极值。
+
+154
+00:09:39,000 --> 00:09:44,000
+on the interval [2, 6] using the closed interval method.
+在区间[2，6]上使用闭区间法。
+
+155
+00:09:44,000 --> 00:09:51,000
+Now because you have a polynomial, it’s in fact differentiable,
+现在因为你有一个多项式，所以它其实是可以微分的。
+
+156
+00:09:51,000 --> 00:09:54,000
+so the first step is to find the critical numbers,
+所以第一步就是要找到临界数。
+
+157
+00:09:54,000 --> 00:09:58,000
+and those are the numbers with slope 0.
+而这些都是斜率为0的数字。
+
+158
+00:09:58,000 --> 00:10:03,000
+What you do is you find a derivative, set it equal to 0
+你要做的是找到一个导数，把它设为0。
+
+159
+00:10:03,000 --> 00:10:09,000
+and solve in the given interval for the values of <i>x</i>.
+并在给定区间内求解<i>x</i>的值。
+
+160
+00:10:09,000 --> 00:10:18,000
+We just find one value, <i>x</i> is 3, so you must check at 2, at 3 and at 6.
+我们只要找到一个值，<i>x</i>是3，所以你必须在2处、3处和6处进行检查。
+
+161
+00:10:18,000 --> 00:10:20,000
+Here’s the function.
+这就是功能。
+
+162
+00:10:20,000 --> 00:10:24,000
+Work out the value at those three points, and you see now that
+计算出这三点的价值，你现在看到的是
+
+163
+00:10:24,000 --> 00:10:27,000
+you have a maximum over here and a minimum over there,
+你在这里有一个最大值，在那里有一个最小值。
+
+164
+00:10:27,000 --> 00:10:33,000
+so you have a maximum at (3, –9) and a minimum at (6, –108).
+所以你的最大值在（3，-9），最小值在（6，-108）。
+
+165
+00:10:33,000 --> 00:10:36,000
+You can check that with a plot.
+你可以用情节来检查。
+
+166
+00:10:36,000 --> 00:10:41,000
+You can see you have a maximum at 3 and a minimum at 6.
+你可以看到你的最高点是3，最低点是6。
+
+167
+00:10:41,000 --> 00:10:46,000
+On to number 13, which says find the derivative
+在第13条，它说要找到导数。
+
+168
+00:10:46,000 --> 00:10:48,000
+of this function over here.
+这个功能在这里。
+
+169
+00:10:48,000 --> 00:10:52,000
+Now the function has two terms, so for the first term,
+现在函数有两项，所以对于第一项。
+
+170
+00:10:52,000 --> 00:10:57,000
+you use the product rule, and you get back the first term
+你使用产品规则，你得到的第一个术语是
+
+171
+00:10:57,000 --> 00:10:58,000
+times derivative of second term
+次导数
+
+172
+00:10:58,000 --> 00:11:01,000
+plus second term times derivative of first.
+加上第二项乘以第一项的导数。
+
+173
+00:11:01,000 --> 00:11:06,000
+Then you work out the second-term derivative in the same way.
+然后你用同样的方法计算出二次导数。
+
+174
+00:11:07,000 --> 00:11:12,000
+Get the answer, and then by the difference rule for derivatives,
+得到答案，再由差值法则求导数。
+
+175
+00:11:12,000 --> 00:11:17,000
+you simply subtract them like over here to get back the final result.
+你只需像这里一样减去它们，就能得到最终结果。
+
+176
+00:11:17,000 --> 00:11:20,000
+You can check that with D,
+你可以和D一起检查。
+
+177
+00:11:20,000 --> 00:11:23,000
+and you see that it does just the same thing.
+你看，它也是这样做的。
+
+178
+00:11:23,000 --> 00:11:26,000
+That brings me to the end of the first part
+第一部分就到此结束了
+
+179
+00:11:26,000 --> 00:11:28,000
+of the sample calculus exam.
+的微积分考试样本。
+
+180
+00:11:28,000 --> 00:11:29,000
+Do review it.
+做检讨吧。
+
+181
+00:11:29,000 --> 00:11:31,000
+These are not very difficult questions.
+这些都不是很困难的问题。
+
+182
+00:11:31,000 --> 00:11:34,000
+The next part will have some more challenging questions,
+下一部分会有一些更具挑战性的问题。
+
+183
+00:11:34,000 --> 00:11:35,000
+but by then,
+但到那时。
+
+184
+00:11:35,000 --> 00:11:39,000
+I hope you’ll be ready to take up those more difficult questions.
+我希望你能准备好接受那些更难的问题。
+
+185
+00:11:39,000 --> 00:11:41,000
+Thank you very much. I’ll stop over here.
+谢谢你了我会在这里停下来。
