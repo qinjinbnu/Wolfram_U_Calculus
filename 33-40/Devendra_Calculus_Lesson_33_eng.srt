@@ -1,7 +1,7 @@
-﻿1
+1
 00:00:00,000 --> 00:00:07,000
 Hello, and welcome to Lesson 33 of this introduction to calculus with Wolfram U.
-大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第33课。
+您好，欢迎来到 Wolfram U 的微积分入门课程第 33 课。
 
 2
 00:00:07,000 --> 00:00:12,000
@@ -16,17 +16,17 @@ Let’s begin with a brief overview of the lesson.
 4
 00:00:15,000 --> 00:00:18,000
 In the past, we have talked about polynomials
-在过去，我们曾谈论过多项式。
+在之前的课程中，我们已经谈论了多项式
 
 5
 00:00:18,000 --> 00:00:19,000
 and other kinds of functions.
-等各类功能。
+以及其他各类函数。
 
 6
 00:00:19,000 --> 00:00:23,000
 For example, over here the function <i>f</i> is a polynomial function,
-例如，在这里函数<i>f</i>是一个多项式函数。
+例如，函数<i>f</i>是一个多项式函数。
 
 7
 00:00:23,000 --> 00:00:27,000
@@ -46,17 +46,17 @@ and the function <i>p</i> is a trigonometric function.
 10
 00:00:35,000 --> 00:00:38,000
 Here are the plots of these functions.
-下面是这些函数的图。
+下面是这些函数的对应图像。
 
 11
 00:00:39,000 --> 00:00:42,000
 In this lesson, we’ll go a step forward
-这节课，我们将往前走一步
+这节课，我们将进行更深入的学习，
 
 12
 00:00:42,000 --> 00:00:47,000
 and talk about so-called exponential functions.
-并谈及所谓的指数函数。
+我们会谈及所谓的指数函数。
 
 13
 00:00:48,000 --> 00:00:50,000
@@ -76,7 +76,7 @@ where <i>a</i> is a non-negative value.
 16
 00:00:58,000 --> 00:01:02,000
 Of course what that means depends upon what that <i>x</i> is.
-当然，这意味着什么，要看那个<i>x</i>是什么。
+当然，这个函数的意义取决于<i>x</i>是什么。
 
 17
 00:01:02,000 --> 00:01:06,000
@@ -86,32 +86,32 @@ If <i>x</i> is a positive integer, then all you do is
 18
 00:01:06,000 --> 00:01:09,000
 you multiply the number <i>a</i> by itself <i>x</i> times.
-你把数字<i>a</i>乘以自身<i>x</i>的倍数。
+将数字<i>a</i>乘以自身<i>x</i>的倍数。
 
 19
 00:01:09,000 --> 00:01:14,000
 Here’s 3^4, and that’s just 81.
-这里是3^4，也就是81。
+如计算3^4，就会得到81。
 
 20
 00:01:14,000 --> 00:01:19,000
 But if <i>x</i> is a negative integer, then you take a reciprocal.
-但如果<i>x</i>是一个负整数，那么你就取一个倒数。
+但如果<i>x</i>是一个负整数，那么就取倒数。
 
 21
 00:01:19,000 --> 00:01:23,000
 In this case, you have 3^–4, giving you 1/81.
-在这种情况下，你有3^-4，给你1/81。
+在这种情况下，计算3^-4，会得到1/81。
 
 22
 00:01:23,000 --> 00:01:32,000
 Finally if <i>x</i> is 0, then <I>a</i>^0 is just 1.
-最后如果<i>x</i>是0，那么<I>a</i>^0就是1。
+最后，如果<i>x</i>是0，那么<I>a</i>^0就是1。
 
 23
 00:01:32,000 --> 00:01:34,000
 Of course, we can go beyond that.
-当然，我们可以超越这一点。
+当然，我们可以走得更远一些。
 
 24
 00:01:34,000 --> 00:01:38,000
@@ -121,7 +121,7 @@ If <i>x</i> is a fraction like <i>p</i>/<i>q</i>, then you can either take
 25
 00:01:38,000 --> 00:01:42,000
 a <i>p</i>th power and then a <i>q</i>th root or the other way around,
-a<i>p</i>幂，然后是<i>q</i>根，或者反过来。
+<i>p</i>幂，然后取<i>q</i>根，计算顺序不影响结果。
 
 26
 00:01:42,000 --> 00:01:45,000
@@ -131,12 +131,12 @@ and in the Wolfram Language, we have the Surd function
 27
 00:01:45,000 --> 00:01:48,000
 which does that nicely for you.
-这对你来说是很好的。
+这对你来说非常有帮助。
 
 28
 00:01:48,000 --> 00:01:52,000
 The main point is that these exponential functions grow very fast.
-最主要的是，这些指数函数增长非常快。
+值得注意的是，这些指数函数增长非常快。
 
 29
 00:01:52,000 --> 00:01:57,000
@@ -156,7 +156,7 @@ If <i>a</i> is greater than 1 like 3^<i>x</i>,
 32
 00:02:04,000 --> 00:02:07,000
 then you have a very rapidly growing function.
-那么你有一个非常快速增长的功能。
+那么你会得到一个快速增长的函数。
 
 33
 00:02:07,000 --> 00:02:10,000
@@ -171,57 +171,57 @@ then the function is a decreasing function.
 35
 00:02:13,000 --> 00:02:19,000
 Of course if <i>a</i> is 1, then you only have a constant function.
-当然如果<i>a</i>为1，那么你只有一个常数函数。
+当然如果<i>a</i>为1，那么就只是一个常数函数。
 
 36
 00:02:19,000 --> 00:02:24,000
 So increasing, decreasing, constant.
-所以增加、减少、不变。
+以上即指数函数的增加、减少、不变。
 
 37
 00:02:25,000 --> 00:02:29,000
 The next point is there are several laws of exponents.
-其次是指数的几个规律。
+下一个内容是指数的几个规律。
 
 38
 00:02:29,000 --> 00:02:35,000
 If you have <i>a</I>^(<i>x</i> + <i>y</i>), then that’s the same as <i>a</i>^<i>x</i> * <i>a</i>^<i>y</i>.
-如果你有<i>a</I>^(<i>x</i>+<i>y</i>)，那就等于<i>a</i>^<i>x</i>*<i>a</i>^<i>y</i>。
+如果函数的形式为<i>a</I>^(<i>x</i>+<i>y</i>)，此算式可以转换为<i>a</i>^<i>x</i>*<i>a</i>^<i>y</i>。
 
 39
 00:02:35,000 --> 00:02:39,000
 If you have a difference like <i>a</i>^(<i>x</i> – <i>y</i>),
-如果你有像<i>a</i>^(<i>x</i>-<i>y</i>)这样的差异。
+如果算式的形式出现了差异，形如<i>a</i>^(<i>x</i>-<i>y</i>)
 
 40
 00:02:39,000 --> 00:02:44,000
 then you simply divide to get (<i>a</i>^<i>x</i>)/(<i>a</i>^<i>y</i>).
-然后你只需简单地除以(<i>a</i>^<i>x</i>)/(<i>a</i>^<i>y</i>)。
+那么你只需通过除法处理算式得到(<i>a</i>^<i>x</i>)/(<i>a</i>^<i>y</i>)。
 
 41
 00:02:46,000 --> 00:02:50,000
 If you have (<i>a</i>^<i>x</i>)^<I>y</i>, then you simply multiply the exponents
-如果你有(<i>a</i>^<i>x</i>)^<I>y</i>，那么你只需将指数乘以
+如果算式的形式为(<i>a</i>^<i>x</i>)^<I>y</i>，那么你只需将指数相乘
 
 42
 00:02:50,000 --> 00:02:54,000
 and you get <i>a</i>^(<i>x</i> * <i>y</i>) like over here.
-你会得到<i>a</i>^(<i>x</i>*<i>y</i>)，就像在这里。
+然后你会得到<i>a</i>^(<i>x</i>*<i>y</i>)，正如此处显示的。
 
 43
 00:02:56,000 --> 00:03:00,000
 Finally if you have (<i>a</i> * <i>b</i>)^<i>x</i>,
-最后如果你有(<i>a</i>*<i>b</i>)^<i>x</i>。
+最后，如果算式的形式为(<i>a</i>*<i>b</i>)^<i>x</i>。
 
 44
 00:03:00,000 --> 00:03:05,000
 that’s the same as <i>a</i>^<i>x</i> * <i>b</i>^<i>x</i> like over here.
-这和<i>a</i>^<i>x</i>*<i>b</i>^<i>x</i>一样，就像这里一样。
+其处理方式和<i>a</i>^<i>x</i>*<i>b</i>^<i>x</i>一样，如此所示。
 
 45
 00:03:07,000 --> 00:03:11,000
 Okay. Now let’s talk a little bit about some deeper properties.
-好了，现在我们来谈谈一些更深层次的属性。现在我们来谈谈一些更深层次的属性。
+好了，现在我们来谈谈一些更深层次的属性。
 
 46
 00:03:11,000 --> 00:03:15,000
@@ -236,7 +236,7 @@ which means that there are no breaks in its graph.
 48
 00:03:19,000 --> 00:03:23,000
 The domain of the function is all real numbers,
-函数的域是所有实数。
+指数函数的域是所有实数。
 
 49
 00:03:23,000 --> 00:03:28,000
@@ -246,12 +246,12 @@ and the range is from 0 to ∞.
 50
 00:03:29,000 --> 00:03:32,000
 But of course what happens to the function
-但当然，函数
+当然，让一个指数函数
 
 51
 00:03:32,000 --> 00:03:36,000
 when you approach infinity depends upon the value of <i>a</i>.
-当你接近无穷大时，取决于<i>a</i>的值。
+接近无穷大的结果，取决于<i>a</i>的值。
 
 52
 00:03:36,000 --> 00:03:39,000
@@ -276,7 +276,7 @@ Just the opposite happens if you have a number <i>a</I> between 0 and 1.
 56
 00:03:50,000 --> 00:03:54,000
 Now when you approach ∞, you get a 0;
-现在当你接近∞时，你会得到一个0。
+当你接近∞时，你会得到一个0。
 
 57
 00:03:54,000 --> 00:03:57,000
@@ -286,27 +286,27 @@ when you approach –∞, you get ∞.
 58
 00:03:59,000 --> 00:04:03,000
 Okay. On to the derivatives of these functions.
-好吧，那就说说这些函数的导数吧。关于这些函数的导数。
+好吧，现在来说说这些函数的导数。
 
 59
 00:04:03,000 --> 00:04:06,000
 The point is that the derivative of <i>a</I>^<i>x</i>
-关键是<i>a</I>^<i>x</i>的导数。
+需要注意的是，<i>a</I>^<i>x</i>的导数。
 
 60
 00:04:06,000 --> 00:04:11,000
 is not <i>x</I> * <i>a</i>^(<i>x</i> – 1) as you might think,
-并非如你所想的<i>x</I> * <i>a</i>^(<i>x</i> - 1)。
+并非如你所想的是<i>x</I> * <i>a</i>^(<i>x</i> - 1)。
 
 61
 00:04:11,000 --> 00:04:16,000
 but in fact it is <i>a</i>^<i>x</i> * Log[<i>a</i>].
-但实际上是<i>a</i>^<i>x</i>*Log[<i>a</i>]。
+而实际上是<i>a</i>^<i>x</i>*Log[<i>a</i>]。
 
 62
 00:04:16,000 --> 00:04:19,000
 Here’s the derivative from D.
-这是D的派生。
+这是通过 D 得到的导数。
 
 63
 00:04:19,000 --> 00:04:26,000
@@ -316,12 +316,12 @@ Now the question is in which case does this logarithm term become 1?
 64
 00:04:26,000 --> 00:04:31,000
 That happens when the number <i>a</i> has got a special value called <i>e</i>,
-当数字<i>a</i>有一个叫做<i>e</i>的特殊值时，就会发生这种情况。
+当数字<i>a</i>为一个叫做<i>e</i>的特殊值时，就会发生这种情况。
 
 65
 00:04:31,000 --> 00:04:34,000
 and this <i>e</i> is named in honor of
-而这个<i>e</i>的名字是为了纪念
+这个<i>e</i>的名字是为了纪念
 
 66
 00:04:34,000 --> 00:04:37,000
@@ -336,12 +336,12 @@ If you solve Log[<i>x</i>] = 1 with the Solve function,
 68
 00:04:41,000 --> 00:04:44,000
 you get back that <i>x</i> is actually <i>e</i>.
-你得到的回报是：<i>x</i>实际上是<i>e</i>。
+这时候你得到的<i>x</i>实际上就是<i>e</i>。
 
 69
 00:04:44,000 --> 00:04:48,000
 In the Wolfram Language, we use E for the number
-在Wolfram语言中，我们用E来表示数字。
+在Wolfram语言中，我们用E来表示这个数字。
 
 70
 00:04:48,000 --> 00:04:52,000
@@ -356,12 +356,12 @@ whose derivative is <i>e</I>^<i>x</i>.
 72
 00:04:55,000 --> 00:05:01,000
 The point is that this is the one function whose derivative is itself.
-关键是这是一个函数，其导数就是自己。
+关键在于，这是一个“导数就是本身”的函数。
 
 73
 00:05:01,000 --> 00:05:04,000
 You just get back <i>e</i>^<i>x</i> when you try and differentiate it.
-当你试图区分它时，你只是得到了<i>e</i>^<i>x</i>。
+当你试图对它求导时，你又得到了<i>e</i>^<i>x</i>。
 
 74
 00:05:04,000 --> 00:05:07,000
@@ -381,7 +381,7 @@ How about integrals?
 77
 00:05:13,000 --> 00:05:17,000
 Well, the integral of <i>e</i>^<i>x</i> is, again, <i>e</I>^<i>x</i>, plus of course the <i>C</i>.
-嗯，<i>e</i>^<i>x</i>的积分又是<i>e</I>^<i>x</i>，当然还有<i>C</i>。
+<i>e</i>^<i>x</i>的积分还是是<i>e</I>^<i>x</i>，当然还有+<i>C</i>。
 
 78
 00:05:17,000 --> 00:05:21,000
@@ -396,7 +396,7 @@ then you get back <i>a</i>^<i>x</i>/Log[<i>a</i>].
 80
 00:05:25,000 --> 00:05:30,000
 Okay. Let’s go a step deeper into the number <i>e</i>.
-好吧，让我们再深入了解一下这个数字&lt;i&gt;e&lt;/i&gt;。让我们再深入了解一下这个数字<i>e</i>。
+好吧，让我们再深入了解一下这个数字<i>e</i>。
 
 81
 00:05:30,000 --> 00:05:32,000
@@ -406,7 +406,7 @@ There are many ways to define <i>e</I>.
 82
 00:05:32,000 --> 00:05:36,000
 The simplest one is of course to just say that
-最简单的当然是只说
+最简单的定义只说
 
 83
 00:05:36,000 --> 00:05:40,000
@@ -416,7 +416,7 @@ The simplest one is of course to just say that
 84
 00:05:40,000 --> 00:05:42,000
 but you can also define it using limits.
-但你也可以使用限制来定义它。
+但你也可以使用极限来定义它。
 
 85
 00:05:42,000 --> 00:05:47,000
@@ -436,22 +436,22 @@ So does the other limit over here, which really is the sequence limit.
 88
 00:05:54,000 --> 00:05:58,000
 then ((1 + 1)/<i>n</I>)^<i>n</i> becomes <i>e</i>.
-那么((1+1)/<i>n</I>)^<i>n</i>就变成<i>e</i>。
+((1+1)/<i>n</I>)^<i>n</i>就变成<i>e</i>。
 
 89
 00:05:58,000 --> 00:06:04,000
 Also, the area under the curve 1/<i>x</i> from 1 to <i>a</i>
-另外，从1到<i>a</i>的曲线下面积为1/<i>x</i>。
+另外，试看曲线1/<i>x</i>从1到<i>a</i>的曲线下面积，
 
 90
 00:06:04,000 --> 00:06:07,000
 becomes 1 when <i>a</I> is the number <i>e</i>.
-当<i>a</I>是数字<i>e</i>时，变为1。
+若<i>a</I>是数字<i>e</i>，此面积为1。
 
 91
 00:06:07,000 --> 00:06:10,000
 Finally, you should know that
-最后，你应该知道
+最后，你应该知道的是
 
 92
 00:06:10,000 --> 00:06:15,000
@@ -466,7 +466,7 @@ That’s a very important approximation
 94
 00:06:17,000 --> 00:06:20,000
 well worth memorizing.
-非常值得记忆。
+希望你可以加深记忆
 
 95
 00:06:20,000 --> 00:06:23,000
@@ -476,37 +476,37 @@ The number <i>e</i> is really, really important
 96
 00:06:23,000 --> 00:06:25,000
 in mathematics, science and engineering,
-数学、科学和工程领域；
+无论在数学、科学或是工程领域；
 
 97
 00:06:25,000 --> 00:06:28,000
 and you will come across it all the time
-屡见不鲜
+当你试图将数学应用于实际情况时。
 
 98
 00:06:28,000 --> 00:06:32,000
 when you try and apply mathematics to practical situations.
-当你试图将数学应用于实际情况时。
+你常常能看见这个数字
 
 99
 00:06:34,000 --> 00:06:36,000
 As examples of where it occurs,
-作为发生在哪里的例子。
+我们可以谈论一些已经存在的例子
 
 100
 00:06:36,000 --> 00:06:41,000
 we can talk about exponential growth or decay.
-我们可以谈论指数增长或衰减。
+比如人们常常谈到的指数增长或衰减。
 
 101
 00:06:42,000 --> 00:06:45,000
 Now, for example, you’ve got bacteria,
-比如说，现在，你已经有了细菌。
+比如说，细菌就是很好的例子
 
 102
 00:06:45,000 --> 00:06:47,000
 and initially there are 10 bacteria,
-而最初有10个细菌。
+假设最初有10个细菌。
 
 103
 00:06:47,000 --> 00:06:49,000
@@ -531,7 +531,7 @@ That’s the growth rate.
 107
 00:06:53,000 --> 00:06:55,000
 Here’s a plot showing that we actually have
-这里有一张图，显示我们实际上有。
+这里有一张图，显示我们实际上
 
 108
 00:06:55,000 --> 00:06:58,000
@@ -541,7 +541,7 @@ exponential growth in this case.
 109
 00:06:59,000 --> 00:07:02,000
 But on the other hand, if you have a radioactive material,
-但另一方面，如果你有放射性物质。
+但另一方面，如果换做放射性物质。
 
 110
 00:07:02,000 --> 00:07:05,000
@@ -561,12 +561,12 @@ then you have radioactive decay.
 113
 00:07:12,000 --> 00:07:16,000
 There’s growth and there’s decay, and both of them can be modeled
-有成长，也有衰败，这两种情况都可以用模型来描述
+有成长，也有衰变，这两种情况都可以
 
 114
 00:07:16,000 --> 00:07:19,000
 very nicely using exponential functions.
-很好地利用指数函数。
+用指数函数模型很好地描述
 
 115
 00:07:19,000 --> 00:07:22,000
@@ -576,7 +576,7 @@ To summarize, an exponential function is
 116
 00:07:22,000 --> 00:07:25,000
 a function is of the type <i>a</i>^<i>x</i>.
-一个函数的类型是<i>a</i>^<i>x</i>。
+一个函数形如<i>a</i>^<i>x</i>。
 
 117
 00:07:25,000 --> 00:07:28,000
@@ -591,12 +591,12 @@ If <i>a</I> is less than 1, it is decreasing.
 119
 00:07:33,000 --> 00:07:36,000
 Of course there are many laws of exponents
-当然，指数的规律有很多
+当然，有许多指数定律
 
 120
 00:07:36,000 --> 00:07:38,000
 which are useful in practice.
-这在实践中是有用的。
+在实践中有用
 
 121
 00:07:39,000 --> 00:07:42,000
@@ -616,7 +616,7 @@ but the special number <i>e</i> has a property that <i>e</i>^<i>x</i>
 124
 00:07:52,000 --> 00:07:56,000
 has got integral and derivative both equal <i>e</i>^<i>x</i>
-有积分和导数都等于<i>e</i>^<i>x</i>。
+它的积分和导数都等于<i>e</i>^<i>x</i>。
 
 125
 00:07:56,000 --> 00:08:00,000
@@ -651,22 +651,22 @@ In the next lesson we’ll talk about logarithmic functions,
 131
 00:08:21,000 --> 00:08:23,000
 but before that, do revise today’s lesson.
-但在这之前，要先把今天的课程修改一下。
+但在这之前，要先把今天的课程复习一下。
 
 132
 00:08:23,000 --> 00:08:25,000
 It’s an important lesson.
-这是一个重要的教训。
+这是一堂重要的课。
 
 133
 00:08:25,000 --> 00:08:27,000
 Exponential functions are got all the time,
-指数函数是得到了所有的时间。
+指数函数占据了所有的时间。
 
 134
 00:08:27,000 --> 00:08:29,000
 and you should know them really well.
-而且你应该很了解他们。
+而且你应该非常了解它们。
 
 135
 00:08:29,000 --> 00:08:31,000
