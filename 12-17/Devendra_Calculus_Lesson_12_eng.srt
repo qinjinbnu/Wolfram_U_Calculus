@@ -1,0 +1,495 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 12 of this introduction to calculus with Wolfram U.
+大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第12课。
+
+2
+00:00:06,000 --> 00:00:11,000
+The topic of this lesson is implicit differentiation.
+本节课的主题是隐性分化。
+
+3
+00:00:11,000 --> 00:00:18,000
+Let’s begin with a brief overview of the topic. So far, all of the functions that we have considered
+让我们先对这个话题做一个简单的概述。到目前为止，我们所考虑的所有函数都是
+
+4
+00:00:18,000 --> 00:00:27,000
+are in so-called explicit form. For example, here is a function <i>f</i> which is defined to be <i>x</i>^2 – <i>x</i> + 1.
+是所谓的显式。例如，这里有一个函数<i>f</i>，它被定义为<i>x</i>^2 - <i>x</i>+1。
+
+5
+00:00:27,000 --> 00:00:34,000
+Every time I give you a value of <i>x</i>, you could work out the value of <i>f</i> at that <i>x</i>.
+每当我给你一个<i>x</i>的值时，你可以计算出<i>f</i>在该<i>x</i>的值。
+
+6
+00:00:34,000 --> 00:00:42,000
+That’s an explicit function, but sometimes you have a function that’s defined only implicitly.
+这是一个显式函数，但有时你有一个函数只是隐式定义的。
+
+7
+00:00:42,000 --> 00:00:51,000
+For example, here’s an equation <i>x</i>^2 + <i>y</i>^2 = 4, and surely <i>y</i> is a function of <i>x</i>—it depends on <i>x</i>—
+例如，这里有一个方程<i>x</i>^2+<i>y</i>^2=4，当然<i>y</i>是<i>x</i>的函数--它取决于<i>x</i>--。
+
+8
+00:00:51,000 --> 00:00:59,000
+but it does so in an indirect implicit way. Now of course in this case, you could solve the equation
+但它是以一种间接隐含的方式进行的。现在，当然在这种情况下，你可以解出方程
+
+9
+00:00:59,000 --> 00:01:06,000
+and work out <i>y</i> in terms of <i>x</i> and you get back two solutions, so really, you have two functions of <i>x</i>,
+并用<i>x</i>计算出<i>y</i>，你得到两个解，所以实际上，你有两个<i>x</i>的函数。
+
+10
+00:01:06,000 --> 00:01:12,000
+and then you could plot them. What you see is that you have a circle,
+然后你可以绘制它们。你看到的是你有一个圆。
+
+11
+00:01:12,000 --> 00:01:18,000
+and the first solution is the bottom of the circle and the second solution is the top half,
+而第一种解法是圆的底部，第二种解法是上半部分。
+
+12
+00:01:18,000 --> 00:01:24,000
+so that’s of course why you need two functions rather than one to describe the problem.
+所以这就是为什么你需要两个函数而不是一个函数来描述这个问题。
+
+13
+00:01:24,000 --> 00:01:30,000
+That’s solution of an implicit function, and today is what we will do is to talk about
+这就是一个隐函数的解决方案，今天我们要做的就是讲讲
+
+14
+00:01:30,000 --> 00:01:35,000
+how you can find derivatives implicitly in the Wolfram Language.
+如何在Wolfram语言中找到隐含的衍生工具。
+
+15
+00:01:37,000 --> 00:01:44,000
+Let’s try and do this in one way. For example, you could take the two functions
+让我们试着用一种方法来实现。例如，你可以用两个函数
+
+16
+00:01:44,000 --> 00:01:49,000
+from the earlier page, from the earlier slide, and try to work out their derivatives separately.
+从前面的页面，从前面的幻灯片，并尝试分别计算出它们的导数。
+
+17
+00:01:49,000 --> 00:01:58,000
+You get back two answers. Now notice that each answer is of the form minus <i>x</i> or <i>y</i>—
+你得到两个答案。现在请注意，每个答案都是减去<i>x</i>或<i>y</i>-的形式。
+
+18
+00:01:58,000 --> 00:02:04,000
+so that’s <i>x</i>, that’s <i>y</i> and both answers have a certain pattern to them.
+所以那是<i>x</i>，那是<i>y</i>，两个答案都有一定的规律可循。
+
+19
+00:02:04,000 --> 00:02:09,000
+But then what we’ve got to remember is that this over here is the kind of upper branch,
+但是我们要记住的是，这边是那种上枝。
+
+20
+00:02:09,000 --> 00:02:16,000
+so the derivative for the upper branch comes from here. If you plug in, let’s say, √2 and √2,
+所以上支的导数就来自这里。如果你插上，比方说，√2和√2。
+
+21
+00:02:16,000 --> 00:02:26,000
+that point, then what you get back is a slope of −1 at <i>x</i> = √2 for the upper branch.
+该点，那么你得到的是上支在<i>x</i>=√2处的斜率为-1。
+
+22
+00:02:26,000 --> 00:02:32,000
+You can then plot the line, the tangent line, and the circle, and you see that
+然后你可以画出直线、切线和圆，你会看到
+
+23
+00:02:32,000 --> 00:02:38,000
+that’s the correct solution. But of course this is a very roundabout way of doing things,
+这才是正确的解决办法。但当然这是个很迂回的方法。
+
+24
+00:02:38,000 --> 00:02:45,000
+and what we want to do today is to try and do things in a much more clear-cut, simple way,
+而我们今天要做的，就是尝试用一种更清晰、更简单的方式来做事情。
+
+25
+00:02:45,000 --> 00:02:51,000
+and that’s the notion of implicit differentiation. The idea is very simple.
+这就是隐性差异化的概念。这个概念非常简单。
+
+26
+00:02:51,000 --> 00:02:57,000
+Whenever you find the derivative with respect to <i>x</i>, you work just as before;
+每当你找到关于<i>x</i>的导数时，你的工作就像以前一样。
+
+27
+00:02:57,000 --> 00:03:06,000
+but if you have a <i>y</i> anywhere in your expression, then you also make sure to multiply by <i>dy</i>/<i>dx</i>.
+但如果你的表达式中任何地方有<i>y</i>，那么你也要确保乘以<i>dy</i>/<i>dx</i>。
+
+28
+00:03:06,000 --> 00:03:13,000
+For example, here’s the equation from the earlier slide and you have <i>x</i>^2 + <i>y</i>^2 = 4,
+例如，这是前面幻灯片中的方程，你有<i>x</i>^2 + <i>y</i>^2 = 4。
+
+29
+00:03:13,000 --> 00:03:24,000
+so the derivative of <i>x</i>^2 is 2<i>x</i>, and the derivative of <i>y</i>^2 is not just 2<i>y</i>, but 2<i>y</i> times <i>dy</i>/<i>dx</i>.
+所以<i>x</i>^2的导数是2<i>x</i>，<i>y</i>的导数是^2不仅仅是2<i>y</i>，而是2<i>y</i>乘以<i>dy</i>/<i>dx</i>。
+
+30
+00:03:24,000 --> 00:03:31,000
+That’s just the chain rule. Okay. Once we have done that, then from the equation
+这只是链式规则。好吧，一旦我们完成了这个任务，一旦我们做到了这一点，那么从等式上看
+
+31
+00:03:31,000 --> 00:03:40,000
+you can solve for <i>dy</i>/<i>dx</i> and find the answer is negative <i>x</i> or <i>y</i>, just as we noted earlier.
+你可以解<i>dy</i>/<i>dx</i>，发现答案是负<i>x</i>或<i>y</i>，就像我们前面提到的那样。
+
+32
+00:03:40,000 --> 00:03:46,000
+That’s the technique for doing implicit differentiation, and now I’ll show you how we can do it
+这就是做隐性分化的技术，现在我给大家演示一下，我们如何做到这一点
+
+33
+00:03:46,000 --> 00:03:55,000
+in the Wolfram Language. Let’s take up the circle again. There are two ways to go about it.
+在Wolfram语言中。我们再来看看这个圆圈。有两种方法。
+
+34
+00:03:55,000 --> 00:04:05,000
+In the first method, what you do is you replace <i>y</i> by <i>y</i>[<i>x</i>]. Now the Wolfram Language knows that <i>y</i> is
+在第一种方法中，你要做的是用<i>y</i>[<i>x</i>]代替<i>y</i>。现在Wolfram语言知道<i>y</i>是
+
+35
+00:04:05,000 --> 00:04:14,000
+indeed a function of <i>x</i>, and then you tell D to find the derivative. Then you solve that derivative
+确实是<i>x</i>的函数，然后你告诉D求导数。然后你解这个导数
+
+36
+00:04:14,000 --> 00:04:23,000
+for <i>y</i>'[<i>x</i>]. What you get back is exactly what we guessed earlier on—namely, negative <i>x</i> or <i>y</i>.
+for <i>y</i>'[<i>x</i>].你得到的正是我们之前的猜测--即负的<i>x</i>或<i>y</i>。
+
+37
+00:04:24,000 --> 00:04:31,000
+Okay. Now we can plug in values for both <i>x</i> and <i>y</i>. For example, if you’re at the point (−1, √3)
+好了，现在我们可以把&lt;i&gt;x&lt;/i&gt;和&lt;i&gt;y&lt;/i&gt;的值都插入。现在我们可以插入<i>x</i>和<i>y</i>的值。例如，如果你在(-1, √3)这个点上
+
+38
+00:04:31,000 --> 00:04:41,000
+where the slope is 1/√3, and you can then find a tangent and plot both the tangent and the graph,
+其中斜率为1/√3，然后可以找到一个切线，并将切线和图形都绘制出来。
+
+39
+00:04:41,000 --> 00:04:50,000
+and you see that the answer is correct. That’s the first method. The first method is replace <i>y</i> by <i>y</i>[<i>x</i>].
+你就会发现，答案是正确的。这就是第一种方法。第一种方法是将<i>y</i>替换为<i>y</i>[<i>x</i>]。
+
+40
+00:04:50,000 --> 00:04:58,000
+The second method is slightly different. You start with the equation, but now do not make a replacement.
+第二种方法略有不同。你从方程开始，但现在不做替换。
+
+41
+00:04:58,000 --> 00:05:10,000
+Instead, you tell D that <i>y</i> is no longer a constant, and that’s done with the NonConstants option.
+相反，你告诉 D，<i>y</i>不再是一个常数，这是用 NonConstants 选项完成的。
+
+42
+00:05:10,000 --> 00:05:18,000
+When you do that, you get back an equation for D. You solve it and you get back
+当你这样做的时候，你会得到一个D的方程，你把它解出来，就会得到
+
+43
+00:05:18,000 --> 00:05:24,000
+just the same derivative as before, but now you only have a <i>y</i> instead of <i>y</i>[<i>x</i>].
+只是和之前的导数一样，但现在你只有一个<i>y</i>而不是<i>y</i>[<i>x</i>]。
+
+44
+00:05:24,000 --> 00:05:37,000
+There are two ways: replace <i>x</i>/<i>y</i> or use the NonConstants option. Usually we’ll work with the first way.
+有两种方法：替换<i>x</i>/<i>y</i>或使用NonConstants选项。通常我们会采用第一种方式。
+
+45
+00:05:37,000 --> 00:05:43,000
+That’s a little more natural, but there will be another case where we’ll actually try and use
+这比较自然，但也会有另一种情况，我们会真正尝试使用
+
+46
+00:05:43,000 --> 00:05:48,000
+the second method, but that will be in the exercises for the lesson.
+第二种方法，但这将在本课的练习中。
+
+47
+00:05:49,000 --> 00:05:56,000
+Okay. Having done this preparatory work, we can now find lots of derivatives with this method.
+好了，做完这些准备工作，我们现在就可以用这个方法找到很多衍生品了。
+
+48
+00:05:56,000 --> 00:06:02,000
+For example, here is a famous curve called the Folium of Descartes. That’s the equation
+例如，这里有一条著名的曲线，叫做笛卡尔的对开本。那是一个方程式
+
+49
+00:06:02,000 --> 00:06:11,000
+of the curve. We want to find the derivative, so you replace <i>y</i> by <i>y</i>[<i>x</i>], work out the derivative,
+曲线的导数。我们要求导数，所以你把<i>y</i>换成<i>y</i>[<i>x</i>]，算出导数。
+
+50
+00:06:11,000 --> 00:06:19,000
+solve for it like over here and replace <i>x</i> and <i>y</i> with the values that you want to work with, 2 and 2,
+解决它，就像在这里，并取代<i>x</i>和<i>y</i>的值，你想要的工作，2和2。
+
+51
+00:06:19,000 --> 00:06:27,000
+and you get back the derivative of this curve at (2, 2). Work out the tangent line,
+就可以得到这条曲线在（2，2）处的导数。求出切线。
+
+52
+00:06:27,000 --> 00:06:33,000
+and then you plot the curve and the tangent, and it looks just right.
+然后你绘制曲线和切线，它看起来正好。
+
+53
+00:06:33,000 --> 00:06:39,000
+As another example, let’s take up the ellipse. That’s like a distorted circle,
+再举一个例子，让我们来看看椭圆。这就像一个扭曲的圆。
+
+54
+00:06:39,000 --> 00:06:48,000
+and you want to find the tangent line at the point (1, (−√3/2)). Again, you do the same thing:
+而你想在点（1，（-√3/2））处找到切线。同样，你也要做同样的事情。
+
+55
+00:06:48,000 --> 00:06:58,000
+replace <i>y</i> with <i>y</i>[<i>x</i>], solve the equation, plug in the values, get back the slope, set up the equation
+将<i>y</i>替换为<i>y</i>[<i>x</i>]，解方程，插值，取回斜率，设方程。
+
+56
+00:06:58,000 --> 00:07:09,000
+for tangent and you get back the plot of the ellipse with the tangent line. Okay.
+为切线，然后你会得到椭圆与切线的图。好的。
+
+57
+00:07:09,000 --> 00:07:15,000
+From the ellipse, we go on to the hyperbola. That’s the hyperbola equation. You want to work
+从椭圆出发，我们继续双曲线。这就是双曲线方程。你要做的是
+
+58
+00:07:15,000 --> 00:07:24,000
+at a certain point that’s given to you. Again, replace <i>y</i> with <i>y</i>[<i>x</i>], solve for <i>y</i>'[<i>x</i>],
+在某个给你的点上。再将<i>y</i>换成<i>y</i>[<i>x</i>]，解得<i>y</i>'[<i>x</i>]。
+
+59
+00:07:24,000 --> 00:07:32,000
+plug in the values and you get back the slope. Write down the equation for tangent,
+插上数值，就可以得到斜率。写下切线的方程。
+
+60
+00:07:32,000 --> 00:07:39,000
+and then you plot the tangent and the curve, and you get back this nice picture.
+然后你画出切线和曲线，就得到了这张漂亮的图片。
+
+61
+00:07:39,000 --> 00:07:47,000
+Notice that in all these plots, I’m using the ContourPlot function to plot the curve itself
+请注意，在所有这些图中，我都使用ContourPlot函数来绘制曲线本身。
+
+62
+00:07:47,000 --> 00:07:51,000
+while using the Plot function to plot the tangent line.
+而使用Plot函数绘制切线。
+
+63
+00:07:53,000 --> 00:08:02,000
+Okay. My next example is the so-called cardioid. That’s like a heart-shaped curve,
+好吧，我下一个例子就是所谓的心形。我的下一个例子是所谓的心形。这就像一个心形曲线。
+
+64
+00:08:02,000 --> 00:08:11,000
+which is a pretty difficult equation. Here’s the equation of the curve. Replace <i>y</i> with <i>y</i>[<i>x</i>] as before,
+这是一个相当困难的方程。这是曲线的方程。将<i>y</i>替换为<i>y</i>[<i>x</i>]，如前。
+
+65
+00:08:11,000 --> 00:08:21,000
+find the derivative. It’s 1. Write our tangent equation, and then you plot the tangent of the curve,
+找出导数。这是1.写出我们的切线方程，然后你画出曲线的切线。
+
+66
+00:08:21,000 --> 00:08:24,000
+and you get back this beautiful plot of the cardioid.
+然后你就会得到这个美丽的心形情节。
+
+67
+00:08:24,000 --> 00:08:30,000
+Another example is the so-called devil’s curve. Now it doesn’t matter
+又比如所谓的魔鬼曲线。现在无所谓了
+
+68
+00:08:30,000 --> 00:08:35,000
+how difficult or easy the equation looks. You do just the same thing. You take the equation,
+等式看起来有多难或多简单。你也做同样的事情。你把方程。
+
+69
+00:08:35,000 --> 00:08:42,000
+replace <i>y</i> with <i>y</i>'[<i>x</i>] everywhere. You’ve just seen it before, so now I’ll plug in
+将<i>y</i>替换为<i>y</i>'[<i>x</i>]。刚才大家已经看过了，现在我就插播一下
+
+70
+00:08:42,000 --> 00:08:48,000
+the correct <i>x</i> and <i>y</i> values, and when you do that, you get back the slope.
+正确的<i>x</i>和<i>y</i>值，当你这样做的时候，你就得到了斜率。
+
+71
+00:08:48,000 --> 00:08:59,000
+Write down the equation for tangent, so that’s the <i>y</i>1, if you like, from your work on straight lines;
+把切线的方程写下来，这样就是你在直线上做的<i>y</i>1，如果你喜欢的话。
+
+72
+00:08:59,000 --> 00:09:08,000
+that’s the slope; and that’s <i>x</i> − <i>x</i>1. Okay. You plot the tangent and the curve.
+那就是斜率，那就是<i>x</i>-<i>x</i>1，好，你画出切线和曲线。
+
+73
+00:09:08,000 --> 00:09:15,000
+Notice one thing: the tangent line at this point might actually pass the curve again
+注意一点：此时的切线可能真的会再次通过曲线
+
+74
+00:09:15,000 --> 00:09:19,000
+because the curve in this case is like a loop attached to the location.
+因为在这种情况下，曲线就像一个环形连接到位置。
+
+75
+00:09:21,000 --> 00:09:29,000
+Okay. Another example is the so-called kampyle of Eudoxus. That’s the equation,
+好吧 还有一个例子就是所谓的Eudoxus的Kampyle另一个例子是所谓的Eudoxus的kampyle。这就是等式。
+
+76
+00:09:29,000 --> 00:09:40,000
+but just the same method works: replace <i>y</i> by <i>y</i>[<i>x</i>], solve, replace values and you get back the slope.
+但只是同样的方法：将<i>y</i>替换为<i>y</i>[<i>x</i>]，求解，替换数值，就可以得到斜率。
+
+77
+00:09:40,000 --> 00:09:45,000
+That’s the tangent line over here, and then you plot the tangent line and the curve,
+这就是这边的切线，然后你把切线和曲线画出来。
+
+78
+00:09:45,000 --> 00:09:48,000
+and you get back the correct solution.
+你就会得到正确的解决方案。
+
+79
+00:09:51,000 --> 00:09:57,000
+Having talked about derivatives, let’s now spend just a few minutes talking about multiple derivatives.
+说完了衍生品，现在我们就花几分钟时间来谈谈多种衍生品。
+
+80
+00:09:57,000 --> 00:10:07,000
+Here’s an equation. You want to work out not just the first derivative, but also the second derivative
+这里有一个公式。你不仅要计算出第一导数，还要计算出第二导数。
+
+81
+00:10:07,000 --> 00:10:16,000
+with implicit differentiation. You write the equation down. Replace <i>y</i> by <i>y</i>[<i>x</i>],
+用隐式微分法。你把方程写下来。用<i>y</i>[<i>x</i>]代替<i>y</i>。
+
+82
+00:10:16,000 --> 00:10:28,000
+solve and find the derivative. Then you find the second derivative by putting the two over here
+解并找到导数。然后你把两个导数放在这里，就能找到第二个导数。
+
+83
+00:10:28,000 --> 00:10:31,000
+for the second derivatives, and you get back the second derivative.
+为第二导数，你就能得到第二导数。
+
+84
+00:10:31,000 --> 00:10:40,000
+Unfortunately, the second derivative has the first derivative in it, but then you can use
+不幸的是，第二个导数中有第一个导数，但你可以用
+
+85
+00:10:40,000 --> 00:10:47,000
+the earlier step to plug in values. You plug in the first solution into the second one,
+的步骤来插入数值。你把第一个解决方案插入到第二个解决方案中。
+
+86
+00:10:47,000 --> 00:10:54,000
+and you get back the second derivative now in a much simpler form
+然后你就可以得到第二个导数，现在的形式简单多了
+
+87
+00:10:54,000 --> 00:10:58,000
+where it depends only on <i>x</i> and <i>y</i>.
+其中它只取决于<i>x</i>和<i>y</i>。
+
+88
+00:11:00,000 --> 00:11:05,000
+Okay. That brings me to the end of this lesson. Basically, there are two ways
+好了，我的课到此结束。这就到了本课的最后。基本上，有两种方法
+
+89
+00:11:05,000 --> 00:11:13,000
+to compute the derivatives of implicit functions. In the first one, we express, let’s say,
+来计算隐函数的导数。在第一种情况下，我们表示，比方说。
+
+90
+00:11:13,000 --> 00:11:23,000
+<i>y</i> as a function of <i>x</i>. In the second one, we could use the NonConstants option.
+<i>y</i>作为<i>x</i>的函数。在第二种情况下，我们可以使用NonConstants选项。
+
+91
+00:11:23,000 --> 00:11:30,000
+Now both methods have got their advantages and disadvantages, but overall,
+现在这两种方法都有各自的优点和缺点，但总体来说。
+
+92
+00:11:30,000 --> 00:11:36,000
+the first method is much closer to what you do by hand, and I recommend that
+第一种方法更接近于你的手工操作，我建议采用
+
+93
+00:11:36,000 --> 00:11:44,000
+you follow the first method. Of course we saw lots of interesting curves, and you could plot them
+你按照第一种方法。当然，我们看到了很多有趣的曲线，你可以把它们绘制出来
+
+94
+00:11:44,000 --> 00:11:49,000
+and then actually work out the derivatives, and ContourPlot is a really good function
+然后实际计算出导数，ContourPlot是一个非常好的函数。
+
+95
+00:11:49,000 --> 00:12:01,000
+for plotting these curves. That’s the end of this lesson. The next lesson will talk about rates of change,
+用于绘制这些曲线。这节课到此结束。下一节课将讲变化率。
+
+96
+00:12:01,000 --> 00:12:07,000
+but before doing that, you should definitely review today’s lesson, try lots of examples
+但在做这些之前，你一定要先复习今天的课程，尝试大量的例子
+
+97
+00:12:07,000 --> 00:12:13,000
+and make yourself ready for the next lesson. Of course, we’ll also have a problem session
+并为下节课做好准备。当然，我们也会有一个问题的环节。
+
+98
+00:12:13,000 --> 00:12:17,000
+before we go onto the next lesson. Thank you very much.
+在我们进入下一课之前。谢谢大家
+
+99
+00:12:17,000 --> 00:12:20,000
+I hope you’ve enjoyed the lesson. I’ll stop there.
+我希望你喜欢这堂课。我就到此为止吧
+

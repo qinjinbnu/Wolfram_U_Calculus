@@ -1,0 +1,450 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 14 of this introduction to calculus with Wolfram U.
+大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第14课。
+
+2
+00:00:06,000 --> 00:00:10,000
+The topic for this lesson is related rates.
+本节课的主题是相关率。
+
+3
+00:00:10,000 --> 00:00:16,000
+Let’s begin with a brief overview of the lesson. In most problems, there will be
+首先，我们先来简单介绍一下本课的内容。在大多数问题中，会有
+
+4
+00:00:16,000 --> 00:00:21,000
+more than one thing that is changing in relation to something else. For example,
+不止一个事物，它与其他事物的关系正在发生变化。例如：
+
+5
+00:00:21,000 --> 00:00:27,000
+you might have—of course time varies, but then two other things vary with time.
+你可能会有--当然时间不同，但还有两样东西会随着时间而变化。
+
+6
+00:00:27,000 --> 00:00:35,000
+As a good instance of that, let’s talk about a ladder that’s falling along a side of a wall.
+作为一个很好的例子，让我们来谈谈一个沿着墙的一侧下降的梯子。
+
+7
+00:00:35,000 --> 00:00:43,000
+That’s the ladder. It’s falling along the wall, and there are two things that are changing:
+这就是梯子。沿着墙壁落下，有两样东西在变化。
+
+8
+00:00:43,000 --> 00:00:53,000
+there’s the height of the ladder from the top and the distance from the base of the ladder
+梯子从上到下的高度和梯子从下到上的距离。
+
+9
+00:00:53,000 --> 00:00:58,000
+to the base of the wall. Both of these are changing as the ladder falls.
+到墙的底部。这两种情况都是随着梯子的下降而变化的。
+
+10
+00:00:58,000 --> 00:01:05,000
+Of course, the rate at which the height is dropping and the rate at which
+当然，高度下降的速度和
+
+11
+00:01:05,000 --> 00:01:15,000
+the distance is increasing are related. That’s the theme for today’s lesson: related rates problems.
+的距离越来越大是有关系的。这就是今天课程的主题：相关率问题。
+
+12
+00:01:16,000 --> 00:01:22,000
+Let’s begin with an example, and that’s exactly the one we talked about earlier on of the falling ladder,
+我们先举一个例子，这正是我们前面说的那个坠梯的例子。
+
+13
+00:01:22,000 --> 00:01:29,000
+but now we’ve got numbers in it. We have a ladder that’s 5 feet long, and it’s resting initially
+但现在我们已经有了数字。我们有一个5英尺长的梯子，它最初是静止不动的
+
+14
+00:01:29,000 --> 00:01:36,000
+against a wall, and then it starts to slide down. Let’s say it slides down away from the wall
+靠着墙，然后它开始下滑。比如说，它从墙上滑落下来
+
+15
+00:01:36,000 --> 00:01:48,000
+at a rate of 0.5 ft/s and the bottom of the ladder is 4 feet away from the wall at a certain point.
+以0.5英尺/秒的速度，梯子底部距离墙面4英尺的某一点。
+
+16
+00:01:48,000 --> 00:01:56,000
+The question is how fast is the ladder sliding down at that time instant? The first step
+问题是当时梯子瞬间滑落的速度有多快？第一步
+
+17
+00:01:56,000 --> 00:02:02,000
+in this case is to assign variables to whatever is changing in the problem. There are two things
+在这种情况下，就是给问题中任何变化的东西分配变量。有两件事
+
+18
+00:02:02,000 --> 00:02:07,000
+that are changing. There is the height—<i>y</i>, let’s say—and the distance <i>x</i>.
+变化的。比如说，有高度<i>y</i>和距离<i>x</i>。
+
+19
+00:02:08,000 --> 00:02:14,000
+Next I draw a picture of what’s happening. The picture is over here.
+接下来，我画了一张图，把发生的事情画出来。图画在这里。
+
+20
+00:02:14,000 --> 00:02:22,000
+That’s the distance of the base, that’s the height and that’s the actual ladder over here.
+那是底座的距离，那是高度，那是这边的实际梯子。
+
+21
+00:02:22,000 --> 00:02:29,000
+Okay. Now to find a relationship between <i>x</i>, <i>y</i> and 5 over here, you recall
+好了，现在要找到&lt; i&gt;x&lt;/i&gt;、&lt; i&gt;y&lt;/i&gt;和这边的5之间的关系。现在要找到<i>x</i>，<i>y</i>和5之间的关系，在这里，你记得
+
+22
+00:02:29,000 --> 00:02:37,000
+the Pythagorean theorem from geometry, and that says that <i>x</i>^2 + <i>y</i>^2 = 5^2.
+几何学中的毕达哥拉斯定理，说的是<i>x</i>^2+<i>y</i>^2=5^2。
+
+23
+00:02:37,000 --> 00:02:45,000
+That’s the relationship that we require between <i>x</i> and <i>y</i>. Now because we want to find the rates,
+这就是我们要求的<i>x</i>和<i>y</i>之间的关系。现在因为我们要找率。
+
+24
+00:02:45,000 --> 00:02:55,000
+we differentiate that relation with respect to <i>t</i>. What you get back is 2<i>x</i>[<i>t</i>]<i>x</i>'[<i>t</i>] + 2<i>y</i>[<i>t</i>]<i>y</i>'[<i>t</i>] = 0.
+我们对<i>t</i>的关系进行区分。你得到的是2<i>x</i>[<i>t</i>]<i>x</i>'[<i>t<]。/i>]+2<i>y</i>[<i>t</i>]<i>y</i>'[<i>t</i>]=0。
+
+25
+00:02:55,000 --> 00:03:04,000
+Now keep in mind that <i>x</i> is 4 at that point, <i>x</i>' is 0.5, so you get back an equation which is
+现在请记住，<i>x</i>在这一点上是4，<i>x</i>'是0.5，所以你得到的公式是
+
+26
+00:03:04,000 --> 00:03:11,000
+simpler than the earlier one, but it still ignored <i>y</i>’s. Then you recall the Pythagorean theorem,
+比前面的更简单，但它仍然忽略了<i>y</i>的。然后你就会想起毕达哥拉斯定理。
+
+27
+00:03:11,000 --> 00:03:22,000
+and that lets you find <i>y</i> as being 3. Once we’ve got <i>y</i>, we can plug that back in over here
+这样你就可以找到<i>y</i>是3。一旦我们得到了<i>y</i>，我们就可以把它插回这里了
+
+28
+00:03:22,000 --> 00:03:35,000
+to the earlier equation—that’s this one—and you get back the rate of change of <i>y</i> as being −0.666667.
+到前面的方程--也就是这个方程，你就可以得到<i>y</i>的变化率为-0.666667。
+
+29
+00:03:35,000 --> 00:03:43,000
+The ladder is sliding down the wall at a rate of 0.67 ft/sec approximately. The question is
+梯子以大约0.67英尺/秒的速度从墙上滑落。问题是
+
+30
+00:03:43,000 --> 00:03:52,000
+why is that sign negative? Well, it’s negative because the top of the ladder is actually going down.
+为什么是负号？负号是因为梯子的顶部实际上是向下的。
+
+31
+00:03:53,000 --> 00:04:01,000
+Having solved that one problem, let’s set up a general strategy for solving such problems.
+在解决了这一个问题之后，我们来建立一个解决这类问题的一般策略。
+
+32
+00:04:01,000 --> 00:04:07,000
+First, always try to understand the problem. Make sure you know what you are asked to do.
+首先，一定要试着去了解问题。确保你知道要求你做什么。
+
+33
+00:04:07,000 --> 00:04:15,000
+Next, assign symbols to all variables—<i>x</i>, <i>y</i>, et cetera—in the problem.
+接下来，给问题中的所有变量--< i>x</i>，< i>y</i>，等等分配符号。
+
+34
+00:04:16,000 --> 00:04:22,000
+Now to help yourself understand the problem better, draw a picture. It doesn’t have to be very elegant,
+现在为了帮助自己更好地理解这个问题，画一张图。不一定要很优雅。
+
+35
+00:04:22,000 --> 00:04:29,000
+but it should be just enough for you to understand what you need to do. Next, the creative part:
+但应该刚好够你了解你需要做什么。接下来，是创意部分。
+
+36
+00:04:29,000 --> 00:04:36,000
+find an equation that relates all the variables in the problem. Usually something from geometry
+找到一个方程，将问题中的所有变量联系起来。通常是几何学上的东西
+
+37
+00:04:36,000 --> 00:04:45,000
+is going to help you to do that. Next differentiate the equation with respect to time using the chain rule.
+就是要帮你做到这一点。接下来用链式法则对方程进行关于时间的微分。
+
+38
+00:04:45,000 --> 00:04:52,000
+That’s the key rule for today’s lesson. Now you already know a few variables,
+这就是今天课程的关键规则。现在你已经知道了几个变量。
+
+39
+00:04:52,000 --> 00:04:59,000
+but you need to find any remaining unknown variables before you proceed. Once you have done that,
+但你需要在继续之前找到任何剩余的未知变量。一旦你完成了这些工作，
+
+40
+00:04:59,000 --> 00:05:05,000
+then you substitute all the information that you’ve found out and solve for the true
+然后，你把你找到的所有信息代入，并解出真正的。
+
+41
+00:05:05,000 --> 00:05:12,000
+unknown quantity in the problem. That’s the general strategy for this lesson.
+问题中的未知量。这就是本节课的总体策略。
+
+42
+00:05:12,000 --> 00:05:18,000
+Let’s try and apply it to a few more problems. Here you have a spherical balloon
+让我们试着把它应用到一些更多的问题上。这里你有一个球形的气球
+
+43
+00:05:18,000 --> 00:05:25,000
+that’s being filled at a rate of 50 cm^3/sec. The question is find the rate at which
+以50 cm^3/秒的速度填充。问题是找出
+
+44
+00:05:25,000 --> 00:05:34,000
+the radius is increasing when the diameter is 25 cm. Now in this case, the volume and the radius
+当直径为25厘米时，半径越来越大。现在，在这种情况下，体积和半径为
+
+45
+00:05:34,000 --> 00:05:41,000
+are both functions of time. Here’s a picture. It has the radius and the volume as being
+都是时间的函数。这里有一张图片。它的半径和体积都是：
+
+46
+00:05:41,000 --> 00:05:52,000
+the variables for the problem. Next, you know from geometry that the volume of a sphere is (4/3)π<i>r</i>^3,
+问题的变量。接下来，你从几何学中知道，球体的体积是(4/3)π<i>r</i>^3。
+
+47
+00:05:52,000 --> 00:06:01,000
+so that’s the relation. Next you differentiate that relation, and you get back an equation
+所以这就是关系。接下来你对这个关系进行微分，就会得到一个方程。
+
+48
+00:06:01,000 --> 00:06:12,000
+relating <i>v</I>', <i>r</i> and <i>r</i>'. Of course you need to find what <i>r</i> is at that time <i>t</i>, but you know the diameter
+有关<i>v</I>'，<i>r</i>和<i>r</i>'。当然你需要找到当时<i>r</i>是什么<i>t</i>，但你知道直径为
+
+49
+00:06:12,000 --> 00:06:20,000
+is twice the radius and the diameter is 25, so the radius at that time is 12.5.
+是半径的2倍，直径是25，所以当时的半径是12.5。
+
+50
+00:06:20,000 --> 00:06:25,000
+You plug back all the information that’s known to you, and you find that
+你把所有已知的信息都插回去，然后你会发现
+
+51
+00:06:25,000 --> 00:06:35,000
+the radius is increasing at roughly 0.025 cm/sec.
+半径大约以0.025厘米/秒的速度增加。
+
+52
+00:06:36,000 --> 00:06:44,000
+For the third problem, let’s talk about a watchdog. There is a cat that is walking down a street
+第三个问题，我们来说说看家狗。有一只猫，它正走在一条大街上
+
+53
+00:06:44,000 --> 00:06:53,000
+at 3 feet per second. Now, a dog is sitting and sees this cat and stays focused on it.
+以每秒3英尺的速度。现在，一只狗正坐在那里，看到这只猫，并一直关注着它。
+
+54
+00:06:53,000 --> 00:06:59,000
+It doesn’t actually move, but then the dog is known to be 6 feet from the street
+其实它并没有动，但后来知道狗是六尺见方的。
+
+55
+00:06:59,000 --> 00:07:10,000
+and the cat is 8 feet from that point. The question is how fast is the dog’s head turning?
+而猫距离该点有8英尺。问题是狗的头转得有多快？
+
+56
+00:07:10,000 --> 00:07:19,000
+There are two things that are changing: the dog’s head is turning and the cat is moving away.
+有两件事正在发生变化：狗头在转，猫在走。
+
+57
+00:07:21,000 --> 00:07:24,000
+The question is what do you do over here? Well, you first draw a picture.
+问题是你在这里做什么？嗯，你先画一幅画。
+
+58
+00:07:24,000 --> 00:07:33,000
+That’s the angle of turning of the dog’s head, that’s the distance traveled by the cat down the street
+那是狗头转动的角度，那是猫在街上走过的距离。
+
+59
+00:07:33,000 --> 00:07:40,000
+and this distance over here is given to us to be 6 feet. Now in this case
+这里的距离是6英尺。现在在这种情况下
+
+60
+00:07:40,000 --> 00:07:48,000
+we have a right-angle triangle, so we can use the tangent of θ as the function <i>x</i>[<i>t</i>]/6.
+我们有一个直角三角形，所以我们可以用θ的切线作为函数<i>x</i>[<i>t</i>]/6。
+
+61
+00:07:48,000 --> 00:07:54,000
+Once we have the relation over here, then you can differentiate it and you find that
+当我们有了这边的关系之后，那么你就可以把它区分开来，你就会发现。
+
+62
+00:07:54,000 --> 00:08:02,000
+you have another relation for θ' now, but now you need to know what the secant of θ is.
+你现在有了θ的另一个关系，但现在你需要知道θ的分词是什么。
+
+63
+00:08:02,000 --> 00:08:08,000
+Well, the point is that you have the Pythagorean theorem, so you use that to work out
+重点是你有毕达哥拉斯定理，所以你用它来计算出：
+
+64
+00:08:08,000 --> 00:08:16,000
+the hypotenuse of the triangle at that time. It turns out to be 10. Use that to find the secant
+当时三角形的斜边。结果是10。用它来求正割
+
+65
+00:08:16,000 --> 00:08:20,000
+like we’ve done over here. Once we’ve done that, you can plug in all the values
+就像我们在这里做的那样。一旦我们做了这些，你就可以插入所有的值
+
+66
+00:08:20,000 --> 00:08:27,000
+and work out the rate at which the dog’s head is turning.
+并计算出狗头转动的速度。
+
+67
+00:08:27,000 --> 00:08:35,000
+The dog’s head is rotating at 9/50 radians/sec or about 10.313 degrees/sec.
+狗头以9/50弧度/秒的速度旋转，即约10.313度/秒。
+
+68
+00:08:37,000 --> 00:08:44,000
+Okay. On to the final problem for the lesson. Oil is being poured into an inverted cone
+好了，现在进入本课的最后一道题。到了本课的最后一道题。油被倒入一个倒置的圆锥体中。
+
+69
+00:08:44,000 --> 00:08:55,000
+at a rate of 3 m^3/sec. That’s the rate of change of the volume. Given that the cone’s height is 10 m
+以3米^3/秒的速度。这就是体积的变化率。考虑到圆锥体的高度是10米。
+
+70
+00:08:55,000 --> 00:09:02,000
+and the radius is 5 m, the question is find the rate at which the oil level is rising
+且半径为5米，问题是求油位上升的速度。
+
+71
+00:09:02,000 --> 00:09:14,000
+when the oil is 5 m deep. You’ve got two variables over here: the volume and the height.
+当油深5米时这里有两个变量：体积和高度。
+
+72
+00:09:14,000 --> 00:09:20,000
+That’s the picture for the problem. Now, you know from geometry that the volume of a cone
+这就是这个问题的图片。现在，你从几何学上知道，一个圆锥的体积。
+
+73
+00:09:20,000 --> 00:09:26,000
+is given by (1/3)π<i>r</i>^2<i>h</i>, so that’s the equation for the problem.
+由(1/3)π< i>r</i>^2< i>h</i>给出，所以这就是问题的方程。
+
+74
+00:09:26,000 --> 00:09:37,000
+Notice that you in fact have <i>v</i>, <i>h</i> and <i>r</i>, and in fact you want to work only with <i>v</i> and <i>h</i>,
+请注意，您实际上有<i>v</i>、<i>h</i>和<i>r</i>，实际上您只想用<i>v</i>和<i>h</i>工作。
+
+75
+00:09:37,000 --> 00:09:43,000
+so we need to do a bit more work. Recall that when you studied similar triangles,
+所以我们需要再做一些工作。记得在学习类似三角形的时候。
+
+76
+00:09:43,000 --> 00:09:49,000
+then you could find a relationship between the base and height. In this case,
+那么你就可以找到底座和高度之间的关系。在这种情况下。
+
+77
+00:09:49,000 --> 00:09:57,000
+the radius is going to be half the height in the oil tank because by similarity,
+半径要比油箱里的高度低一半，因为通过相似性。
+
+78
+00:09:57,000 --> 00:10:04,000
+any cone in the tank has a radius equal to half the height because you have the initial ones
+罐中的任何锥体的半径都等于高度的一半，因为你有初始的锥体。
+
+79
+00:10:04,000 --> 00:10:10,000
+and the same ratio. Here’s the volume equation with that relationship.
+和相同的比例。这是有这种关系的体积公式。
+
+80
+00:10:10,000 --> 00:10:26,000
+You differentiate it and plug in values, and you find that oil level is rising at 12/25π m/s.
+你把它区分开来，插上数值，你发现油位以12/25π米/秒的速度上升。
+
+81
+00:10:27,000 --> 00:10:32,000
+Okay. That brings me to the end of the lesson, but our main objective over here
+好了，我的课就到此结束了。这使我到了本课的最后，但我们的主要目标在这里。
+
+82
+00:10:32,000 --> 00:10:40,000
+was to solve problems which involved related rates. What we did was we set up
+是为了解决涉及相关费率的问题。我们所做的是我们建立了
+
+83
+00:10:40,000 --> 00:10:48,000
+a general strategy for these problems. Then we solved a few of them, but in each case,
+这些问题的一般策略。然后我们解决了其中的几个问题，但在每一个问题上。
+
+84
+00:10:48,000 --> 00:10:55,000
+what you need to do is to use the given information and then apply some geometry
+你需要做的是使用给定的信息，然后应用一些几何图形
+
+85
+00:10:55,000 --> 00:11:06,000
+typically to get the equations required for the problem. That’s the end of this topic.
+一般是为了得到问题所需的方程。这个题目就到此为止了。
+
+86
+00:11:06,000 --> 00:11:11,000
+In the next lesson, we’ll talk about linear approximations, but before we do that,
+在下一节课中，我们会讲到线性近似，但在这之前。
+
+87
+00:11:11,000 --> 00:11:17,000
+do review this lesson. This was a pretty advanced application of calculus.
+做复习这节课。这是一节相当高级的微积分应用课。
+
+88
+00:11:17,000 --> 00:11:22,000
+It’s just that we now know calculus so well that we can apply things quite easily,
+只是我们现在对微积分了解得很透彻，可以很容易地应用一些东西。
+
+89
+00:11:22,000 --> 00:11:27,000
+but do review this lesson, look at the exercises and you should be ready for the next one
+但是，复习一下这节课，看看练习，你应该为下一节课做好准备。
+
+90
+00:11:27,000 --> 00:11:31,000
+on linear approximations. I’ll stop over here. Thank you.
+关于线性近似。我在这里停一下谢谢你了
+

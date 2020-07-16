@@ -1,0 +1,420 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 13 of this introduction to calculus with Wolfram U.
+大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第13课。
+
+2
+00:00:07,000 --> 00:00:12,000
+The topic for this lesson is rates of change in the sciences.
+本节课的主题是科学的变化率。
+
+3
+00:00:12,000 --> 00:00:16,000
+Let’s begin with a brief overview of the lesson.
+我们先来简单介绍一下本课的内容。
+
+4
+00:00:16,000 --> 00:00:21,000
+Let’s say you have a particle which moves along a straight line, for example.
+比如说，你有一个沿着直线运动的粒子。
+
+5
+00:00:23,000 --> 00:00:32,000
+The position at time <i>t</i> is given by this function <i>s</i>[<i>t</i>] that’s <i>t</i>^3 + 2<i>t</i> – 2. Now once you have
+时间<i>t</i>的位置由这个函数<i>s</i>[<i>t</i>]给出，即<i>t</i>^3 + 2<i>t</i> - 2。现在一旦你有
+
+6
+00:00:32,000 --> 00:00:36,000
+the position as a function of time, what you can do is to compute the derivative,
+位置作为时间的函数，你可以做的是计算导数。
+
+7
+00:00:36,000 --> 00:00:45,000
+and then that will give you the velocity of the particle at time <i>t</i>. Here’s velocity. That’s 3<i>t</i>^2 + 2.
+然后就可以得到粒子在时间<i>t</i>的速度。这就是速度。就是3<i>t</i>^2+2。
+
+8
+00:00:45,000 --> 00:00:51,000
+Once you have both <i>s</i> and <i>v</i>, you can then work out their values at any time. For example,
+一旦你有了<i>s</i>和<i>v</i>，你就可以随时计算出它们的值。例如：&lt;i&gt;s&lt;/i&gt;和&lt;i&gt;v&lt;/i&gt;，你就可以随时计算出它们的值。
+
+9
+00:00:51,000 --> 00:01:02,000
+at <i>t</i> = 10, the values are 1,018 and 302. Having done that, you can also plot
+在<i>t</i>=10时，数值分别为1,018和302。做完这些后，您还可以绘制
+
+10
+00:01:02,000 --> 00:01:08,000
+the position and velocity as a function of time over a certain period of time—in this case,
+在一定时期内，位置和速度作为时间的函数，在这种情况下。
+
+11
+00:01:08,000 --> 00:01:13,000
+from 0 to 20. In this very simple example, you see that the derivative gives you
+从0到20。在这个非常简单的例子中，你可以看到导数给你的是
+
+12
+00:01:13,000 --> 00:01:21,000
+a nice way of approaching a problem in mechanics. What we’ll do in this lesson is
+一种很好的解决力学问题的方法。这节课我们要做的是
+
+13
+00:01:21,000 --> 00:01:29,000
+to explore the applications of differential calculus in the sciences in various different ways.
+来探讨微分微积分在科学中各种不同方式的应用。
+
+14
+00:01:29,000 --> 00:01:36,000
+Let’s again take up an example in mechanics where you have the position being given
+让我们再举一个力学中的例子，在这个例子中，你有一个位置被赋予了
+
+15
+00:01:36,000 --> 00:01:41,000
+as a function of time like over here. You could work out the velocity of course
+作为时间的函数，就像在这里。当然，你可以计算出速度
+
+16
+00:01:41,000 --> 00:01:48,000
+as the first derivative, but you could also work out the acceleration, which is the second derivative.
+作为第一导数，但你也可以计算出加速度，这是第二导数。
+
+17
+00:01:50,000 --> 00:01:53,000
+Once we have done that, we could ask questions. For example, you could ask
+做完这些，我们就可以提问了。例如，你可以问
+
+18
+00:01:53,000 --> 00:02:03,000
+when is the particle at rest? Well, it’s at rest when the velocity is 0. You could solve that equation
+粒子何时处于静止状态？当速度为0时，它就处于静止状态，你可以解这个等式
+
+19
+00:02:03,000 --> 00:02:14,000
+and find out that the particle is at rest when <i>t</i> is either 2/3 or 2. Then you can plot the position,
+并找出当<i>t</i>为2/3或2时，粒子处于静止状态。然后就可以绘制位置图了。
+
+20
+00:02:14,000 --> 00:02:24,000
+the velocity and the acceleration and get their graphs. You see that the position is given by
+速度和加速度，并得到它们的图形。你可以看到，位置是由
+
+21
+00:02:24,000 --> 00:02:30,000
+the blue graph over here. The velocity is the graph over there, and it clearly intersects
+这里的蓝色图形。速度是那边的图，很明显地与之相交了
+
+22
+00:02:30,000 --> 00:02:41,000
+the time axis at around 2/3 and 2. The acceleration is a linear function of time.
+的时间轴在2/3左右，2。加速度是时间的线性函数。
+
+23
+00:02:42,000 --> 00:02:47,000
+The derivative is a very powerful way of studying problems in mechanics.
+导数是研究力学中问题的一种非常有力的方法。
+
+24
+00:02:48,000 --> 00:02:53,000
+Let’s go on to another example where let’s say you want to talk about the linear density of a rod.
+我们再来看看另一个例子，比如说你想讨论一个杆子的线性密度。
+
+25
+00:02:53,000 --> 00:02:59,000
+Now if you have a rod and, let’s say, it’s got mass <i>m</i> and a certain length,
+现在，如果你有一根杆子，比方说，它有质量<i>m</i>和一定的长度。
+
+26
+00:02:59,000 --> 00:03:05,000
+then the average linear density is simply the mass divided by the length.
+那么平均线密度就是简单的质量除以长度。
+
+27
+00:03:05,000 --> 00:03:12,000
+But of course what could happen is that the mass of the rod depends upon how far down
+但当然，可能发生的情况是，杆子的质量取决于多大程度上的下降。
+
+28
+00:03:12,000 --> 00:03:18,000
+you are on it. Let’s say the mass might be the cube root of the length, and in that case,
+你在上面。比方说，质量可能是长度的立方根，这样的话。
+
+29
+00:03:18,000 --> 00:03:27,000
+you can talk about the linear density at a given length <i>l</i>. That is given by the derivative of the mass
+你可以谈论给定长度<i>l</i>的线性密度。那是由质量的导数给出的
+
+30
+00:03:27,000 --> 00:03:37,000
+with respect to <i>l</i>. In this case, it’s 1/(3³√(<i>l</i>^2)). Then of course you can work out the linear density
+相对于<i>l</i>。在这种情况下，它是1/(3³√(< i>l</i>^2))。当然，你可以计算出线性密度
+
+31
+00:03:37,000 --> 00:03:44,000
+at any given length. In this case, if the length is 10, the answer is about 0.07.
+在任何给定的长度上。在这种情况下，如果长度是10，答案约为0.07。
+
+32
+00:03:44,000 --> 00:03:50,000
+Then you can plot both the mass and the linear density. You see that the mass sort of has
+然后你可以绘制质量和线性密度。你会发现质量有点像
+
+33
+00:03:50,000 --> 00:03:54,000
+constant increase, but the linear density goes down as the length increases
+不断增加，但随着长度的增加，线性密度会下降
+
+34
+00:03:54,000 --> 00:03:58,000
+because of this expression for the derivative.
+因为这个导数的表达式。
+
+35
+00:03:59,000 --> 00:04:06,000
+Okay. Let’s go on now to current. If you have, let’s say, a wire
+好吧，我们现在就来看看电流。我们现在继续说说电流。如果你有，比方说，一个电线，你可以用它来代替。
+
+36
+00:04:06,000 --> 00:04:11,000
+and some current flows through it, then the average current is the charge that flows
+和一些电流流过它，那么平均电流就是流过的电荷。
+
+37
+00:04:11,000 --> 00:04:19,000
+in a certain period of time. But of course the charge itself might depend upon the time <i>t</i>
+在一定时间内。当然，充电本身可能取决于时间<i>t</i>。
+
+38
+00:04:19,000 --> 00:04:28,000
+like over here, and then the current at any given instant will be the derivative of that charge
+就像这里一样，然后在任何一个瞬间的电流将是该电荷的导数。
+
+39
+00:04:28,000 --> 00:04:36,000
+with respect to <i>t</i>. At, let’s say, one second, the current is 4 amperes. Then what you can do is
+相对于<i>t</i>。在，比方说，一秒钟，电流是4安培。那么你可以做的是
+
+40
+00:04:36,000 --> 00:04:44,000
+to plot the charge and the current and get back a plot for both these quantities.
+绘制电荷和电流，并得到这两个量的曲线图。
+
+41
+00:04:46,000 --> 00:04:53,000
+Let’s go on now to chemistry. Now in chemistry, one talks about reactions—chemical reactions.
+现在我们继续讲化学。现在在化学中，人们谈论的是反应--化学反应。
+
+42
+00:04:53,000 --> 00:04:59,000
+What happens there is that one or more reactants would undergo some process
+在那里发生的事情是，一个或多个反应物将经历一些过程。
+
+43
+00:04:59,000 --> 00:05:06,000
+and give you some products.  For example, you might have two reactants <i>A</i> and <i>B</i>
+并给你一些产品。例如，你可能有两个反应物< i>A</i>和< i>B</i>。
+
+44
+00:05:06,000 --> 00:05:16,000
+that give you a product <i>C</i>. One talks about the concentration of any of these in moles per liter.
+赋予你一个产品<i>C</i>。人们谈论其中任何一种的浓度，都是以摩尔/升为单位的。
+
+45
+00:05:16,000 --> 00:05:24,000
+That concentration is of course a function of time as time goes by. For example, <i>A</i> and <i>B</i> might
+当然，随着时间的推移，这种浓度是时间的函数。例如，<i>A</i>和<i>B</i>可能是
+
+46
+00:05:24,000 --> 00:05:35,000
+decrease in quantity and <i>C</i> might go up. In that case, the rate of reaction at an instant is given by
+数量减少，<i>C</i>可能会上升。在这种情况下，某一瞬间的反应速率由以下公式给出。
+
+47
+00:05:35,000 --> 00:05:41,000
+the derivative of the concentration with respect to <i>t</i>. For example, suppose that
+浓度相对于<i>t</i>的导数。例如，假设
+
+48
+00:05:41,000 --> 00:05:48,000
+the concentration of <i>C</I> is given by 3<i>t</i>/(3<i>t</i> + 1). Then the rate of reaction at any given time
+<i>C</I>的浓度由3<i>t</i>/(3<i>t</i>+1)给出。那么在任何给定时间内的反应速率
+
+49
+00:05:48,000 --> 00:05:57,000
+is a derivative, so it’s 3/(1 + 3<i>t</i>)^2. Then what you can do is to plot both these quantities,
+是一个导数，所以它是3/(1+3<i>t</i>)^2。那么你能做的就是把这两个量都画出来。
+
+50
+00:05:57,000 --> 00:06:04,000
+and you see that as time goes by, the concentration will increase, but of course
+随着时间的推移，你会看到，浓度会增加，但当然... ...
+
+51
+00:06:04,000 --> 00:06:09,000
+the rate of reaction will go down as the system approaches a steady state.
+当系统接近稳定状态时，反应速度将下降。
+
+52
+00:06:11,000 --> 00:06:18,000
+Okay. Let’s go on now to biology. In biology, one talks about population models.
+好了，现在我们继续讲生物。我们现在继续说说生物学。在生物学上，人们谈论的是种群模型。
+
+53
+00:06:18,000 --> 00:06:26,000
+For example, the population at time <i>t</i> might be given by 2<i>t</i>^3 + <i>t</i>, and in that case,
+例如，时间<i>t</i>时的人口可能由2<i>t</i>^3+<i>t</i>给出，在这种情况下：
+
+54
+00:06:26,000 --> 00:06:33,000
+the growth rate for that population is the derivative of that population with respect to <i>t</i>.
+该人口的增长率是该人口相对于<i>t</i>的导数。
+
+55
+00:06:33,000 --> 00:06:40,000
+In this case, it’s just 6<i>t</i>^2 + 1. Then of course you can plot both the population and the growth rate
+在这种情况下，只是6<i>t</i>^2+1。那么你当然可以同时绘制人口和增长率的图谱
+
+56
+00:06:40,000 --> 00:06:47,000
+like we’ve done over here. In practice, one might have a slightly different model.
+就像我们在这边做的那样。在实践中，可能会有稍微不同的模式。
+
+57
+00:06:47,000 --> 00:06:53,000
+For example, if you talk about the growth of bacteria, then it might happen that
+例如，如果你说到细菌的生长，那么可能会发生以下情况
+
+58
+00:06:53,000 --> 00:06:57,000
+the population doubles every minute, for example, in which case
+比如说，人口每分钟翻一番，在这种情况下
+
+59
+00:06:57,000 --> 00:07:02,000
+you might get a formula like the initial population times 2^<i>t</i>,
+你可能会得到一个公式，如初始人口乘以2^< i>t</i>。
+
+60
+00:07:02,000 --> 00:07:06,000
+and that’s what is called an exponential function.
+这就是所谓的指数函数。
+
+61
+00:07:08,000 --> 00:07:15,000
+Okay. Finally, let’s go on to economics. In economics, one talks about the cost function.
+好吧，最后，我们来谈谈经济。最后，我们继续说说经济学。在经济学中，人们谈论的是成本函数。
+
+62
+00:07:15,000 --> 00:07:22,000
+Let’s say a company might talk about its cost function, which is a total cost of producing <i>x</i> units.
+比方说，一家公司可能会谈论它的成本函数，即生产<i>x</i>单位的总成本。
+
+63
+00:07:22,000 --> 00:07:28,000
+Here’s a cost function in a particular case. Now if you find the derivative of the cost function,
+这是一个特殊情况下的成本函数。现在如果你找到成本函数的导数。
+
+64
+00:07:28,000 --> 00:07:36,000
+then that’s what is called the marginal cost. The marginal cost, roughly speaking,
+那么这就是所谓的边际成本。边际成本，粗略的说。
+
+65
+00:07:36,000 --> 00:07:45,000
+is the amount of money it costs to produce an extra unit. For example, you might ask
+是生产一个额外单位的成本。例如，你可以问
+
+66
+00:07:45,000 --> 00:07:54,000
+what is the marginal cost and the actual cost of producing the 1,001st unit?
+生产第1,001个单位的边际成本和实际成本是多少？
+
+67
+00:07:54,000 --> 00:08:01,000
+That’s going to be the derivative of the cost at that value, or you could actually find it
+这将是成本在该值的导数，或者你实际上可以找到它
+
+68
+00:08:01,000 --> 00:08:09,000
+by subtracting off the cost in both the cases, so 1,001 – 1,000. You see that they are very close,
+通过减去两种情况下的成本，所以1,001 - 1,000。你看，它们非常接近。
+
+69
+00:08:09,000 --> 00:08:15,000
+but not quite the same. The marginal cost gives you a very good estimate of
+但又不尽相同。边际成本为你提供了一个非常好的估计。
+
+70
+00:08:15,000 --> 00:08:22,000
+the cost to produce an extra unit. Once again, you can plot everything over here,
+生产一个额外单位的成本。再一次，你可以在这里绘制一切。
+
+71
+00:08:22,000 --> 00:08:27,000
+the cost and the marginal cost, to get those two plots.
+成本和边际成本，得到这两块地。
+
+72
+00:08:29,000 --> 00:08:37,000
+Okay. That brings me to the end of this lesson. The main point is that derivatives are used
+好了，我的课到此结束。这节课就到此结束了。主要的一点是，衍生工具是用来
+
+73
+00:08:37,000 --> 00:08:45,000
+universally in the sciences. If you’re a physicist, you might use them to study motion.
+普遍存在于科学领域。如果你是物理学家，你可能会用它们来研究运动。
+
+74
+00:08:47,000 --> 00:08:53,000
+If you’re a chemist, you might use them to study reaction rates, but if you’re a biologist,
+如果你是一个化学家，你可能会用它们来研究反应速率，但如果你是一个生物学家。
+
+75
+00:08:53,000 --> 00:08:59,000
+you might use them to study growth rates. Finally, it’s not just the natural sciences,
+你可以用它们来研究增长率。最后，不仅仅是自然科学。
+
+76
+00:08:59,000 --> 00:09:05,000
+but also the social sciences. In economics, you might use derivatives to find the marginal cost.
+但也是社会科学。在经济学中，你可能会使用衍生工具来寻找边际成本。
+
+77
+00:09:05,000 --> 00:09:11,000
+Of course, there are many more uses of derivatives that we haven’t spoken about in this lesson,
+当然，衍生工具的用途还有很多，我们这节课没有讲到。
+
+78
+00:09:11,000 --> 00:09:19,000
+but you will learn them as time goes by. The key point is that wherever the quantity is changing,
+但随着时间的推移，你会学会它们。关键的一点是，凡是量变。
+
+79
+00:09:19,000 --> 00:09:28,000
+derivatives will play a key role. That brings me to the end of today’s lesson.
+衍生品将发挥关键作用。今天的课程到此结束。
+
+80
+00:09:29,000 --> 00:09:36,000
+The next lesson will talk about related rates, but before we do that, please review today’s lesson,
+下一节课将讲到相关的费率，但在讲之前，请大家先回顾一下今天的课程。
+
+81
+00:09:36,000 --> 00:09:41,000
+go over the exercises and make sure that you understand them really well
+重温练习，确保你真正理解它们
+
+82
+00:09:41,000 --> 00:09:46,000
+because derivatives are very import in sciences, and it’s important that you understand
+因为衍生品在科学上是非常重要的，你必须要了解
+
+83
+00:09:46,000 --> 00:09:51,000
+how they can be used. I’ll stop over here. I hope you have enjoyed listening.
+如何使用它们。我就在这里停一下。希望你听得开心。
+
+84
+00:09:51,000 --> 00:09:52,000
+Thank you.
+谢谢你了
+
