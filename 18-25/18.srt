@@ -81,12 +81,12 @@ and that says that the function is horizontal just at that point. With that back
 17
 00:01:56,000 --> 00:02:02,000
 we can now talk about the increasing and decreasing function test.
-我们可以谈谈 函数增减 的判别法。
+我们可以谈谈 函数增减 的判别法
 
 18
 00:02:02,000 --> 00:02:09,000
 But let’s begin with the mean value theorem, which says that <i>f</i>(<i>b</i>) – <i>f</i>(<i>a</i>) = <i>f</i>'(<i>c</i>)(<i>b</i> – <i>a</i>)
-但我们先从中值定理说起，即<i>f</i>(<i>b</i>)-<i>f</i>。/i>(<i>a</i>)=<i>f</i>'(<i>c</i>)(<i>b</i>-<i>a</i>)
+但我们先从中值定理说起 即<i>f</i>(<i>b</i>)-<i>f</i>。/i>(<i>a</i>)=<i>f</i>'(<i>c</i>)(<i>b</i>-<i>a</i>)
 
 19
 00:02:09,000 --> 00:02:19,000
@@ -111,12 +111,12 @@ then the function is increasing. In just the same way, if the derivative is nega
 23
 00:02:38,000 --> 00:02:45,000
 then the function is decreasing on that interval. These two facts together are called
-这两个事实加在一起叫做的增/减判别法。
+这两个事实加在一起叫做的增/减判别法
 
 24
 00:02:45,000 --> 00:02:57,000
 the increasing/decreasing test. As an example, here is the plot for <i>x</i>^3 and its derivative.
-例如，这是<i>x</i>^3及其导数的图。
+例如 这是<i>x</i>^3及其导数的图
 
 25
 00:02:57,000 --> 00:03:05,000
@@ -126,7 +126,7 @@ You see that the function is increasing everywhere, and if you look at <i>f</i>'
 26
 00:03:05,000 --> 00:03:13,000
 then it is non-negative at all points. The function is increasing everywhere except at 0,
-除了在等于零的地方(原函数是水平的) 其他地方的函数都是递增的。
+除了在等于零的地方(原函数是水平的) 其他地方的函数都是递增的
 
 27
 00:03:13,000 --> 00:03:20,000
@@ -166,17 +166,17 @@ we’ll break the horizontal line up into three parts: the part from –∞ to �
 34
 00:04:04,000 --> 00:04:11,000
 and then 1 to ∞. Now you pick a typical point on each of these intervals. You pick, let’s say, −3
-现在，你在每个区间上选一个普通的点 比如说 在第一个区间下你选择-3
+现在 你在每个区间上选一个普通的点 比如说 在第一个区间下你选择-3
 
 35
 00:04:11,000 --> 00:04:21,000
 in the first case, 0 in the second case and 2 in the third case. –3 lies between –∞ and –2, et cetera.
-第二个区间下是 0 第三个区间下是 2  -3位于-∞和-2之间，依此类推。
+第二个区间下是 0 第三个区间下是 2  -3位于-∞和-2之间 依此类推
 
 36
 00:04:21,000 --> 00:04:26,000
 Work out derivatives, and you find that at the first point, the derivative is positive,
-算出导数你会发现  在第一点 导数是正数。
+算出导数你会发现  在第一点 导数是正数
 
 37
 00:04:26,000 --> 00:04:31,000
@@ -256,7 +256,7 @@ That says that you do not have a local maximum or minimum roughly.
 52
 00:06:11,000 --> 00:06:17,000
 Okay. Now we can talk about the first derivative test, which says that if the first derivative
-现在，我们可以谈谈一阶导数判别法： 如果一阶导数导数
+现在 我们可以谈谈一阶导数判别法： 如果一阶导数导数
 
 53
 00:06:17,000 --> 00:06:26,000
@@ -321,7 +321,7 @@ the slope becomes progressively smaller. It slows down, so to speak, the functio
 65
 00:07:40,000 --> 00:07:45,000
 When the second derivative is positive, the slope progressively gets bigger.
-当第二个导数为正值时 斜率逐渐变大。
+当第二个导数为正值时 斜率逐渐变大
 
 66
 00:07:45,000 --> 00:07:52,000
@@ -376,7 +376,7 @@ It cannot hold any water in it. That’s a nice test for concavity. Another way 
 76
 00:08:52,000 --> 00:09:01,000
 is to look at tangent lines. Here’s a function <i>x</i>^2, and the second derivative is 2, which is positive.
-有一个函数 <i>x</i>^2 二阶导数是 2  是正数。
+有一个函数 <i>x</i>^2 二阶导数是 2  是正数
 
 77
 00:09:01,000 --> 00:09:08,000
@@ -406,7 +406,7 @@ just at that point. In fact, the curve will switch from being concave upward to 
 82
 00:09:33,000 --> 00:09:41,000
 at an inflection point. Here’s an example of such a function where you have an inflection point
-下面是这样一个函数的例子，其中你有一个坐标大约为 1 拐点
+下面是这样一个函数的例子 其中你有一个坐标大约为 1 拐点
 
 83
 00:09:41,000 --> 00:09:48,000
@@ -431,32 +431,32 @@ and hence the inflection points are precisely those where the second derivative
 87
 00:10:07,000 --> 00:10:13,000
 is either 0 or not defined. In the case of this function over here, let’s just check what happens
-对于这个函数，让我们检查一下发生了什么事情
+对于这个函数 让我们检查一下发生了什么事情
 
 88
 00:10:13,000 --> 00:10:18,000
 if you set the second derivative to be 0 and solve for <i>x</i>.
-如果将二阶导数设为 0  并求解<i>x</i>。
+如果将二阶导数设为 0  并求解<i>x</i>
 
 89
 00:10:18,000 --> 00:10:22,000
 You find that at <i>x</i> = 1, you actually have an inflection point.
-你发现在<i>x</i>=1的时候 你其实有一个拐点。
+你发现在<i>x</i>=1的时候 你其实有一个拐点
 
 90
 00:10:24,000 --> 00:10:29,000
 Okay. Finally let’s talk about the second derivative test, which says that
-好吧，最后我们来谈谈二阶导数判别法
+好吧 最后我们来谈谈二阶导数判别法
 
 91
 00:10:29,000 --> 00:10:36,000
 if you have a particular point and the second derivative is positive, then the function has
-如果你有一个特定的点，并且二阶导数为正，那么函数有
+如果你有一个特定的点 并且二阶导数为正 那么函数有
 
 92
 00:10:36,000 --> 00:10:46,000
 a local minimum, and if it’s negative, the second derivative, then you have a local maximum.
-一个局部最小值 如果二阶导数为负 那么你有一个局部最大值。
+一个局部最小值 如果二阶导数为负 那么你有一个局部最大值
 
 93
 00:10:46,000 --> 00:10:53,000
@@ -501,7 +501,7 @@ We learned the first derivative test for finding local maxima and minima.
 101
 00:11:41,000 --> 00:11:48,000
 We talked about the concavity test for figuring out when the function is concave upward or downward,
-我们讲过凹凸判别法 用于判断函数是向上凹还是向下凹。
+我们讲过凹凸判别法 用于判断函数是向上凹还是向下凹
 
 102
 00:11:48,000 --> 00:11:53,000
@@ -511,7 +511,7 @@ and that relies on the second derivative. We spoke about inflection points,
 103
 00:11:53,000 --> 00:12:00,000
 where the curve kind of changes shape. Finally, the second derivative test tells us that
-最后，二阶导数判别法告诉我们
+最后 二阶导数判别法告诉我们
 
 104
 00:12:00,000 --> 00:12:07,000
