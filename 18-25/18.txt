@@ -1,0 +1,539 @@
+1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 18 of this introduction to calculus with Wolfram U.
+大家好 欢迎来到本次与沃尔夫兰大学合作的微积分入门第18课
+
+2
+00:00:07,000 --> 00:00:13,000
+The topic for this lesson is derivatives and the shapes of graphs.
+本节课的主题是导数和图像的形状
+
+3
+00:00:13,000 --> 00:00:19,000
+Let’s begin with an overview of the lesson. In the last lesson we spoke about the mean value theorem, 
+我们先来了解一下本节课的内容 上节课我们讲了中值定理
+
+4
+00:00:19,000 --> 00:00:25,000
+and you might have gotten just a hint as to how powerful this theorem is, but in this lesson, 
+而你可能只是对这个定理的强大有了一个初步印象
+
+5
+00:00:25,000 --> 00:00:32,000
+we’ll actually see that power in action. We’ll actually learn how the derivative of a function 
+但在本课中我们将实际感受到他的魅力 我们将学习如何用函数的导数去画它的图像
+
+6
+00:00:32,000 --> 00:00:39,000
+can be used to sketch its graph. That’s a very beautiful application of all the calculus ideas 
+即使在我们目前所学所有的微积分思想中 这是也是一个非常漂亮的应用 
+
+7
+00:00:39,000 --> 00:00:49,000
+we’ve learned so far. For example, here’s the function <i>f</i>[<i>x</i>] = <i>x</i>^2. That’s the derivative of the function.
+例如 函数<i>f</i>[<i>x</i>]=<i>x</i>^2 下面是函数的 导数（导函数）
+
+8
+00:00:49,000 --> 00:00:56,000
+Now the function itself, of course, is just a parabola in terms of its graph, and the derivative is
+函数本身是一条抛物线 就其图形而言 导数就是一条直线
+
+9
+00:00:56,000 --> 00:01:03,000
+a straight line graph. The point is that starting from this derivative, you can actually plot
+重要的是 根据这个导数 你可以绘制出他的原始函数
+
+10
+00:01:03,000 --> 00:01:09,000
+the original function, and that’s the theme of this lesson. The goal of this lesson is
+这就是本课的主题 本课的目标是
+
+11
+00:01:09,000 --> 00:01:17,000
+to develop a way for sketching such graphs. Let’s begin by building some intuition.
+开发一种绘制这种图像的方法 首先我们建立一些直观的认识
+
+12
+00:01:17,000 --> 00:01:24,000
+Let’s again look at the graphs of <i>x</i>^2 and its derivative. We have the function on the right,
+我们再来看看<i>x</i>^2及其导数 右边是原函数 左边是导数  
+
+13
+00:01:24,000 --> 00:01:31,000
+the derivative on the left. You see that when <i>x</i> is negative, the derivative is negative,
+当<i>x</i>为负值时 导数为负值 这说明函数是递减的
+
+14
+00:01:31,000 --> 00:01:39,000
+and that says that the function is decreasing. When <i>x</i> is positive, the derivative is positive,
+当<i>x</i>为正值时 导数也为正值 而这说明函数是递增的
+
+15
+00:01:39,000 --> 00:01:47,000
+and that says that the function is increasing. Finally, when <i>x</i> is 0, the derivative is 0,
+最后 当<i>x</i>为0时 导数为0
+
+16
+00:01:47,000 --> 00:01:56,000
+and that says that the function is horizontal just at that point. With that background,
+这说明函数就在这一点上是水平的 在这个背景下
+
+17
+00:01:56,000 --> 00:02:02,000
+we can now talk about the increasing and decreasing function test.
+我们可以谈谈 函数增减 的判别法。
+
+18
+00:02:02,000 --> 00:02:09,000
+But let’s begin with the mean value theorem, which says that <i>f</i>(<i>b</i>) – <i>f</i>(<i>a</i>) = <i>f</i>'(<i>c</i>)(<i>b</i> – <i>a</i>)
+但我们先从中值定理说起，即<i>f</i>(<i>b</i>)-<i>f</i>。/i>(<i>a</i>)=<i>f</i>'(<i>c</i>)(<i>b</i>-<i>a</i>)
+
+19
+00:02:09,000 --> 00:02:19,000
+for some value <i>c</i> between <i>a</i> and <i>b</i>. If <i>f</i>'(<i>c</i>) happens to be positive for all <i>c</i>, then assuming that (<i>b</i> – <i>a</i>)
+对于<i>a</i>和<i>b</i>之间的某个值<i>c</i>  如果<i>f</i>'(<i>c</i>)对所有<i>c</i>来说恰好是正值  那么假设(<i>b</i>-<i>a</i>) 是正数
+
+20
+00:02:19,000 --> 00:02:25,000
+is positive—so <i>b</i> is greater than <i>a</i>—then we have <i>f</i>(<i>b</i>) greater than <i>f</i>(<i>a</i>), so the function is
+所以<i>b</i>大于<i>a</i>  那么我们有<i>f</i>(<i>b</i>)大于<i>f</i>(<i>a</i>)
+
+21
+00:02:25,000 --> 00:02:32,000
+increasing on that interval. Using the mean value theorem, we can show that if the derivative is positive,
+所以函数在该区间上增加  根据中值定可以证明  如果导数为正 那么函数是递增的
+
+22
+00:02:32,000 --> 00:02:38,000
+then the function is increasing. In just the same way, if the derivative is negative,
+同理 如果导数为负值 那么函数在该区间上是递减的
+
+23
+00:02:38,000 --> 00:02:45,000
+then the function is decreasing on that interval. These two facts together are called
+这两个事实加在一起叫做的增/减判别法。
+
+24
+00:02:45,000 --> 00:02:57,000
+the increasing/decreasing test. As an example, here is the plot for <i>x</i>^3 and its derivative.
+例如，这是<i>x</i>^3及其导数的图。
+
+25
+00:02:57,000 --> 00:03:05,000
+You see that the function is increasing everywhere, and if you look at <i>f</i>', the derivative,
+你看原函数全区间都在增加  那么导数<i>f</i>'在所有点上都是非负的
+
+26
+00:03:05,000 --> 00:03:13,000
+then it is non-negative at all points. The function is increasing everywhere except at 0,
+除了在等于零的地方(原函数是水平的) 其他地方的函数都是递增的。
+
+27
+00:03:13,000 --> 00:03:20,000
+where it’s horizontal, and that’s what we see from looking at the derivative for the function.
+这就是从函数的导数中得到的
+
+28
+00:03:20,000 --> 00:03:27,000
+The derivative of a function tells you where the function increases or decreases.
+函数的导数告诉你函数在哪里增加或减少
+
+29
+00:03:27,000 --> 00:03:33,000
+Now as an example, here is a cubic function, and you want to find out where it increases or decreases
+举个例子 这是一个三次函数 你想知道它在哪里增加或减少而不绘制函数图像
+
+30
+00:03:33,000 --> 00:03:41,000
+without actually plotting the function. For the first step, let’s find where the derivative is 0,
+首先找到导数为0的点
+
+31
+00:03:41,000 --> 00:03:49,000
+and you find that it’s 0 when <i>x</i> is either –2 or 1. In other words, we now know that
+当<i>x</i>是-2或1时 它是0 换句话说我们知道
+
+32
+00:03:49,000 --> 00:03:55,000
+the graph must be horizontal at those two values of <i>x</i>. What we’ll do is
+原函数图像在这两个值<i>x</i>处必须是水平的 我们要做的是
+
+33
+00:03:55,000 --> 00:04:04,000
+we’ll break the horizontal line up into three parts: the part from –∞ to –2, then from –2 to 1
+把水平线分成三部分： 从 -∞ 到 -2;  从 -2 到 1 ;  从 1 到 ∞ ;
+
+34
+00:04:04,000 --> 00:04:11,000
+and then 1 to ∞. Now you pick a typical point on each of these intervals. You pick, let’s say, −3
+现在，你在每个区间上选一个普通的点 比如说 在第一个区间下你选择-3
+
+35
+00:04:11,000 --> 00:04:21,000
+in the first case, 0 in the second case and 2 in the third case. –3 lies between –∞ and –2, et cetera.
+第二个区间下是0 第三个区间下是 2  -3位于-∞和-2之间，依此类推。
+
+36
+00:04:21,000 --> 00:04:26,000
+Work out derivatives, and you find that at the first point, the derivative is positive,
+算出导数你会发现  在第一点 导数是正数。
+
+37
+00:04:26,000 --> 00:04:31,000
+and so it is at the third point as well, while the second point is negative.
+所以在第三点也是如此  而第二点是负数
+
+38
+00:04:31,000 --> 00:04:40,000
+That says that the function is increasing on the first interval and the third interval,
+这说明函数在第一个区间和第三个区间上是递增的
+
+39
+00:04:40,000 --> 00:04:49,000
+and it’s decreasing on the second interval. Here’s a plot of the derivative and the function.
+而且在第二个区间里 它在减少  这是导数和原函数的图
+
+40
+00:04:49,000 --> 00:04:56,000
+You see over here that the orange graph is the function itself. When the function increases,
+你看这边 橙色的图是函数本身  当函数增加时
+
+41
+00:04:56,000 --> 00:05:04,000
+the derivative is going to be positive. When the function decreases, the derivative dips down
+导数将为正值  当函数减小时 导数就会向下倾斜
+
+42
+00:05:04,000 --> 00:05:09,000
+below the <i>x</i> axis, and then as it increases again, the derivative becomes positive. That says that
+低于<i>x</i>轴 然后当它再次增加时 导数变为正值 这说明
+
+43
+00:05:09,000 --> 00:05:17,000
+the derivative gives you pretty good information about the increasing or decreasing nature of the function.
+导数能提供关于函数增减性质的很多的信息。
+
+44
+00:05:18,000 --> 00:05:24,000
+Okay. How about maxima and minima? Let’s talk about maxima and minima, and look again
+好了 我们来谈谈最大值和最小值 再看一下前面的函数
+
+45
+00:05:24,000 --> 00:05:32,000
+at the earlier function. You see that it’s got a maximum over here at –2 and a minimum at 1,
+这里的最大值是-2  最小值是1
+
+46
+00:05:32,000 --> 00:05:37,000
+and they are both local maxima and minima. What you notice is that when <i>x</i> is –2,
+而且它们都是局部最大值和最小值  你注意到的 当<i>x</i>为-2时
+
+47
+00:05:37,000 --> 00:05:44,000
+the derivative goes from being positive to being negative. It’s positive initially,
+导数从正数变成负数  最初是正数 然后变成负值
+
+48
+00:05:44,000 --> 00:05:49,000
+then becomes negative. Just the opposite happens at the minimum where the derivative is
+在最小值处正好相反  导数为先负后正
+
+49
+00:05:49,000 --> 00:05:56,000
+first negative and then positive. Now if you look at, on the other hand, the graph of <i>x</i>^3,
+另一方面，你看看<i>x</i>^3的图像
+
+50
+00:05:56,000 --> 00:06:03,000
+then you see over here that the derivative does not change signs as it goes through 0.
+导数在经过0的时候没有改变符号
+
+51
+00:06:03,000 --> 00:06:10,000
+That says that you do not have a local maximum or minimum roughly.
+这说明  没有局部最高或最低
+
+52
+00:06:11,000 --> 00:06:17,000
+Okay. Now we can talk about the first derivative test, which says that if the first derivative
+现在，我们可以谈谈一阶导数判别法： 如果一阶导数导数
+
+53
+00:06:17,000 --> 00:06:26,000
+changes from positive to negative at a point, then that point has a local maximum for the function,
+在某点由正变负 那么该点的函数有一个局部最大值
+
+54
+00:06:26,000 --> 00:06:31,000
+and just the opposite happens at a local minimum where the derivative changes
+与此相反 如果导数从负数变成正数 就会有局部最小值
+
+55
+00:06:31,000 --> 00:06:37,000
+from being negative to being positive. On the other hand, if the derivative
+另一方面，如果导数在某一点上不改变符号
+
+56
+00:06:37,000 --> 00:06:41,000
+does not change signs at a point, then the function neither has
+那么函数既没有在该点的局部最大值
+
+57
+00:06:41,000 --> 00:06:50,000
+a local maximum or minimum at that point. As an example, look at the sine function and its derivative.
+也没有最小值  比如 看看正弦函数及其导数
+
+58
+00:06:50,000 --> 00:06:56,000
+It’s just the cosine function. Here’s the sine function, and you see over here that
+这只是余弦函数  这里是正弦函数 你看这里是
+
+59
+00:06:56,000 --> 00:07:04,000
+you have a maximum at π/2 and the derivative goes from being positive to being negative.
+在π/2处有一个最大值  导数从正值变成负值
+
+60
+00:07:06,000 --> 00:07:11,000
+On the other hand, you have a minimum at 3π/2, and the derivative goes
+另一方面  你在3π/2处有一个最小值
+
+61
+00:07:11,000 --> 00:07:19,000
+from being negative to being positive. Okay. That’s about first derivatives.
+导数从负值到正值  这就是一阶导数判别法
+
+62
+00:07:19,000 --> 00:07:26,000
+How about second derivatives? Here is the graph of <i>x</i>^3, and its second derivative is 6<i>x</i>.
+那么二阶导数呢  这里是<i>x</i>^3的图像  它的二次导数是6<i>x</i>
+
+63
+00:07:26,000 --> 00:07:32,000
+You see over here that when the second derivative is negative,
+你看这里  当第二个导数为负数时
+
+64
+00:07:32,000 --> 00:07:39,000
+the slope becomes progressively smaller. It slows down, so to speak, the function.
+斜率逐渐变小  可以说 函数变平缓了
+
+65
+00:07:40,000 --> 00:07:45,000
+When the second derivative is positive, the slope progressively gets bigger.
+当第二个导数为正值时，斜率逐渐变大。
+
+66
+00:07:45,000 --> 00:07:52,000
+You can see that over here. In the first case, you would say that the curve is concave downward,
+你可以看这里  在第一种情况下 你会说曲线是向下凹的
+
+67
+00:07:52,000 --> 00:07:58,000
+and in the second case, you would say it’s concave upward. It’s concave downward over here,
+而在第二种情况下  你会说它是向上凹的  这里是向下凹的
+
+68
+00:07:58,000 --> 00:08:04,000
+and concave upward over there. As another example, let’s look at the sine function
+并在那边向上凹  再举个例子 我们看一下正弦函数
+
+69
+00:08:04,000 --> 00:08:10,000
+and its second derivative. You see over here that it’s concave downward when
+以及它的二阶导数  你看这里 它是向下凹的，当... ...
+
+70
+00:08:10,000 --> 00:08:16,000
+the second derivative is negative and concave upward when the second derivative is positive.
+第二导数为负数，第二导数为正数时向上凹。
+
+71
+00:08:17,000 --> 00:08:22,000
+Now we can put all that together and talk about the concavity test,
+现在我们可以把这些放在一起，谈谈凹凸测试。
+
+72
+00:08:22,000 --> 00:08:29,000
+which says that if the second derivative is positive on an interval,
+其中说，如果第二个导数在区间上为正值。
+
+73
+00:08:29,000 --> 00:08:37,000
+then the graph is concave upward. The short form of that is cup, just like a cup of water.
+那么这个图形是向上凹的。简称杯，就像一杯水。
+
+74
+00:08:37,000 --> 00:08:43,000
+If the second derivative is negative, then the graph is concave downward. That’s like a frown.
+如果第二个导数是负数，那么这个图形是向下凹的。这就像皱眉头一样。
+
+75
+00:08:43,000 --> 00:08:52,000
+It cannot hold any water in it. That’s a nice test for concavity. Another way of looking at it
+它不能容纳任何水在里面。这是一个很好的测试凹陷的方法。另一种说法是
+
+76
+00:08:52,000 --> 00:09:01,000
+is to look at tangent lines. Here’s a function <i>x</i>^2, and the second derivative is 2, which is positive.
+是看切线。这里有一个函数<i>x</i>^2，第二个导数是2，是正数。
+
+77
+00:09:01,000 --> 00:09:08,000
+You see over here that all the tangent lines lie below the graph when you have
+你看这边所有的切线都在图形下方，当你有了
+
+78
+00:09:08,000 --> 00:09:15,000
+a concave upward graph. All the tangent lines lie below in this case, and if it happened to be
+凹向上的图形。在这种情况下，所有的切线都在下面，如果正好是
+
+79
+00:09:15,000 --> 00:09:19,000
+concave downward, then of course all the tangent lines would lie above the curve.
+向下凹，那么所有的切线当然会位于曲线之上。
+
+80
+00:09:22,000 --> 00:09:27,000
+Okay. Now on to inflection points, where you neither have concave upward or concave downward
+好了，现在说说拐点，你既没有向上凹，也没有向下凹。现在说说拐点，在拐点上既没有向上的凹，也没有向下的凹。
+
+81
+00:09:27,000 --> 00:09:33,000
+just at that point. In fact, the curve will switch from being concave upward to being concave downward
+就在这一点上。事实上，曲线将从向上凹的状态转为向下凹的状态。
+
+82
+00:09:33,000 --> 00:09:41,000
+at an inflection point. Here’s an example of such a function where you have an inflection point
+在一个拐点处。下面是这样一个函数的例子，其中你有一个拐点。
+
+83
+00:09:41,000 --> 00:09:48,000
+at 1 roughly. You have concave downward over here and concave upward over there.
+大致在1。你这里往下凹，那里往上凹。
+
+84
+00:09:48,000 --> 00:09:54,000
+Now what’s happening over here is that the slope will reach a maximum or a minimum value
+现在这里发生的事情是，坡度将达到一个最大值或最小值。
+
+85
+00:09:54,000 --> 00:10:01,000
+at a point of this type where you have an inflection point, and so the slope is of course a derivative,
+在这种类型的点上，你有一个拐点，所以斜率当然是一个导数。
+
+86
+00:10:01,000 --> 00:10:07,000
+and hence the inflection points are precisely those where the second derivative
+因此，拐点恰恰是那些第二导数
+
+87
+00:10:07,000 --> 00:10:13,000
+is either 0 or not defined. In the case of this function over here, let’s just check what happens
+要么为0，要么没有定义。对于这个函数，让我们检查一下发生了什么事情
+
+88
+00:10:13,000 --> 00:10:18,000
+if you set the second derivative to be 0 and solve for <i>x</i>.
+如果将二次导数设为0，并求解<i>x</i>。
+
+89
+00:10:18,000 --> 00:10:22,000
+You find that at <i>x</i> = 1, you actually have an inflection point.
+你发现在<i>x</i>=1的时候，你其实有一个拐点。
+
+90
+00:10:24,000 --> 00:10:29,000
+Okay. Finally let’s talk about the second derivative test, which says that
+好吧，最后我们来谈谈第二个导数测试。最后，我们来谈谈第二个导数测试，这说明
+
+91
+00:10:29,000 --> 00:10:36,000
+if you have a particular point and the second derivative is positive, then the function has
+如果你有一个特定的点，并且二次导数为正，那么函数有
+
+92
+00:10:36,000 --> 00:10:46,000
+a local minimum, and if it’s negative, the second derivative, then you have a local maximum.
+一个局部最小值，如果是负值，第二个导数，那么你有一个局部最大值。
+
+93
+00:10:46,000 --> 00:10:53,000
+Looking again at the earlier function, you see over here that when you’re at 0, then you have
+再看前面的函数，你看这边，当你在0的时候，那么你就会有
+
+94
+00:10:53,000 --> 00:11:00,000
+the slope of 0 and the graph is concave downward, so you have a local maximum.
+的斜率为0，图形向下凹陷，所以你有一个局部最大值。
+
+95
+00:11:00,000 --> 00:11:07,000
+Just the reverse happens at 2 where you have a local minimum. That’s how the second derivative
+只是在2处发生了相反的情况，在那里你有一个局部最小值。这就是第二个导数
+
+96
+00:11:07,000 --> 00:11:12,000
+is quite a powerful tool for distinguishing between a maximum and a minimum.
+是一个相当强大的工具，用于区分最大值和最小值。
+
+97
+00:11:14,000 --> 00:11:18,000
+It’s time to summarize. You learned quite a lot in this lesson. First of all, we learned that
+是时候总结一下了。这节课你们学到了不少东西。首先，我们知道了
+
+98
+00:11:18,000 --> 00:11:27,000
+the mean value theorem is crucial for understanding how to graph a function starting from its derivative.
+平均值定理对于理解如何从导数开始绘制函数图至关重要。
+
+99
+00:11:27,000 --> 00:11:34,000
+We learned about the increasing/decreasing test for when a function increases or decreases.
+我们学习了函数增加或减少时的增减检验。
+
+100
+00:11:34,000 --> 00:11:39,000
+We learned the first derivative test for finding local maxima and minima.
+我们学习了寻找局部最大值和最小值的第一导数检验。
+
+101
+00:11:41,000 --> 00:11:48,000
+We talked about the concavity test for figuring out when the function is concave upward or downward,
+我们讲过凹凸测试，用于判断函数是向上凹还是向下凹。
+
+102
+00:11:48,000 --> 00:11:53,000
+and that relies on the second derivative. We spoke about inflection points,
+而这依赖于第二个导数。我们谈到了拐点。
+
+103
+00:11:53,000 --> 00:12:00,000
+where the curve kind of changes shape. Finally, the second derivative test tells us that
+其中曲线的形状发生了某种变化。最后，二次导数检验告诉我们
+
+104
+00:12:00,000 --> 00:12:07,000
+you can use the first and second derivatives together to find the local maxima and minima.
+你可以使用第一和第二导数一起找到局部最大值和最小值。
+
+105
+00:12:08,000 --> 00:12:12,000
+That’s the end of this lesson. The next lesson will talk about
+这节课到此结束。下一节课将讲到
+
+106
+00:12:12,000 --> 00:12:19,000
+limits at infinity and horizontal asymptotes. Before doing that, do review this lesson, do look at
+极限在无穷大，水平渐变。在这之前，先复习一下这节课，看一看
+
+107
+00:12:19,000 --> 00:12:25,000
+the exercises and make sure you follow this topic really well before you begin the next lesson.
+习题，并确保在开始下一节课之前，真正按照这个题目做好。
+
+108
+00:12:25,000 --> 00:12:27,000
+Thank you very much. I’ll stop here.
+谢谢你了我就到这里吧

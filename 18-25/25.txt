@@ -1,0 +1,764 @@
+1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 25 of this introduction to calculus with Wolfram U.
+大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第25课。
+
+2
+00:00:07,000 --> 00:00:13,000
+The topic for this lesson is the fundamental theorem of calculus.
+本节课的课题是微积分的基本定理。
+
+3
+00:00:14,000 --> 00:00:17,000
+Let’s begin with a brief overview of the lesson.
+我们先来简单介绍一下本课的内容。
+
+4
+00:00:17,000 --> 00:00:21,000
+So far in this course, we have talked about differential calculus
+到目前为止，在这门课程中，我们已经谈到了微分微积分。
+
+5
+00:00:21,000 --> 00:00:24,000
+and a bit of integral calculus.
+和一点积分微积分。
+
+6
+00:00:25,000 --> 00:00:30,000
+Now originally, differential calculus arose in the problem of
+现在，微分微积分最初是在以下问题中产生的。
+
+7
+00:00:30,000 --> 00:00:33,000
+finding the tangent line to a curve like you see over here—
+找出曲线的切线，就像你在这里看到的一样
+
+8
+00:00:33,000 --> 00:00:37,000
+a sine curve, and you want a tangent line at a point—
+正弦曲线，而你想在一个点上有一条切线--。
+
+9
+00:00:37,000 --> 00:00:40,000
+and that’s what differential calculus tries to do.
+而这正是微分学试图做的事情。
+
+10
+00:00:40,000 --> 00:00:44,000
+It tries to find the slope of that line at a point.
+它试图找到该线在某一点的斜率。
+
+11
+00:00:44,000 --> 00:00:49,000
+Now integral calculus, on the other hand, solves the problem
+现在积分微积分则解决了以下问题
+
+12
+00:00:49,000 --> 00:00:52,000
+of finding the area under the curve for a function.
+求函数的曲线下面积。
+
+13
+00:00:52,000 --> 00:00:56,000
+If you look at a sine function, then it tries to find
+如果你看一个正弦函数，那么它就会尝试找到
+
+14
+00:00:56,000 --> 00:01:00,000
+the area under this curve between the two limits over here.
+这条曲线下的区域在这里的两个极限之间。
+
+15
+00:01:00,000 --> 00:01:04,000
+Now what the fundamental theorem of calculus does is
+现在微积分的基本定理的作用就是
+
+16
+00:01:04,000 --> 00:01:07,000
+it ties these two ideas together.
+它把这两个想法联系在一起。
+
+17
+00:01:08,000 --> 00:01:11,000
+In this lesson, what we’ll do is to go over
+在这一课中，我们要做的是去了解一下
+
+18
+00:01:11,000 --> 00:01:13,000
+this very important theorem.
+这个非常重要的定理。
+
+19
+00:01:13,000 --> 00:01:19,000
+In fact, by far, this is the most basic fact of calculus
+事实上，到目前为止，这是微积分最基本的事实。
+
+20
+00:01:19,000 --> 00:01:23,000
+that you really should know in order to apply it in practice.
+你真的应该知道，以便在实践中应用它。
+
+21
+00:01:23,000 --> 00:01:27,000
+Okay. Let’s begin with the idea of an integral function.
+好吧，我们先从积分函数的概念开始。让我们从积分函数的概念开始。
+
+22
+00:01:27,000 --> 00:01:30,000
+Here I’m defining a function of <i>x</i>
+在这里，我定义了一个<i>x</i>的函数。
+
+23
+00:01:30,000 --> 00:01:35,000
+which is given by the integral of <i>t</i> from 0 to <i>x</i>.
+由<i>t</i>从0到<i>x</i>的积分给出。
+
+24
+00:01:37,000 --> 00:01:41,000
+Basically what it does it is takes the function <i>g</i>[<i>t</i>] = <i>t</i>
+基本上，它的作用是将函数<i>g</i>[<i>t</i>]=<i>t</i>。
+
+25
+00:01:41,000 --> 00:01:44,000
+and integrates from 0 to <i>x</i>.
+并从0到<i>x</i>积分。
+
+26
+00:01:44,000 --> 00:01:49,000
+Obviously if <i>x</i> is 0, then the value is 0
+显然，如果<i>x</i>为0，那么数值为0。
+
+27
+00:01:49,000 --> 00:01:53,000
+because you’re integrating from 0 to 0, so you get back 0.
+因为你是从0到0的积分，所以你得到的是0。
+
+28
+00:01:53,000 --> 00:02:00,000
+In general, it calculates the area under the curve from 0 to <i>x</i>.
+一般来说，它计算的是0到<i>x</i>的曲线下面积。
+
+29
+00:02:00,000 --> 00:02:03,000
+That’s the integral function <i>f</i>[<i>x</i>],
+这就是积分函数<i>f</i>[<i>x</i>]。
+
+30
+00:02:03,000 --> 00:02:08,000
+and here is a graph of the function and <i>x</i>.
+这里是函数和<i>x</i>的图形。
+
+31
+00:02:08,000 --> 00:02:11,000
+What we notice is that as <i>x</i> increases,
+我们注意到的是，随着<i>x</i>的增加。
+
+32
+00:02:11,000 --> 00:02:14,000
+the value of this function also increases
+这个函数的值也会增加
+
+33
+00:02:14,000 --> 00:02:18,000
+because the upper limit over here increases.
+因为这边的上限增加。
+
+34
+00:02:18,000 --> 00:02:23,000
+The integral function is increasing because the area increases,
+因为面积增大，所以积分函数也在增大。
+
+35
+00:02:23,000 --> 00:02:26,000
+in this case, as x increases.
+在这种情况下，随着x的增加。
+
+36
+00:02:26,000 --> 00:02:31,000
+Now the point is that there is actually an explicit formula
+现在的问题是，其实有一个明确的公式，即
+
+37
+00:02:31,000 --> 00:02:34,000
+for this integral function.
+对于这个积分函数。
+
+38
+00:02:34,000 --> 00:02:38,000
+What we do is we begin with the integral from 0 to <i>x</i>
+我们要做的是从0到<i>x</i>的积分开始。
+
+39
+00:02:38,000 --> 00:02:44,000
+and break it up into <i>n</i> parts, and then we set up the Riemann sum.
+并将其分解为<i>n</i>部分，然后我们设置黎曼和。
+
+40
+00:02:44,000 --> 00:02:48,000
+In this case, the Riemann sum is going to be <i>g</i>(<i>xi</i>)—
+在这种情况下，黎曼和将是<i>g</i>(<i>xi</i>)-。
+
+41
+00:02:48,000 --> 00:02:53,000
+those are sample points—times the width of each subinterval.
+这些都是样本点-每个子间隔的宽度。
+
+42
+00:02:53,000 --> 00:02:56,000
+Then you sum them all up and take a limit,
+然后你把它们汇总起来，取一个极限。
+
+43
+00:02:56,000 --> 00:02:59,000
+and what you get back is <i>x</i>^2/2.
+而你得到的是<i>x</i>^2/2。
+
+44
+00:02:59,000 --> 00:03:05,000
+But then you remind yourself that the antiderivative of <i>g</I>[<i>t</i>]
+但你又提醒自己，<i>g</I>[<i>t</i>]的反义词。
+
+45
+00:03:05,000 --> 00:03:09,000
+is also <i>t</i>^2/2 plus some constant.
+也是<i>t</i>^2/2加上一些常数。
+
+46
+00:03:09,000 --> 00:03:11,000
+Here’s a check for that.
+这里有一个检查。
+
+47
+00:03:11,000 --> 00:03:15,000
+It looks like the integral function for <i>g</i>[<i>t</i>]
+看起来像是<i>g</i>[<i>t</i>]的积分函数。
+
+48
+00:03:15,000 --> 00:03:19,000
+is actually an antiderivative of <i>g</i>[<i>t</i>].
+实际上是<i>g</i>[<i>t</i>]的反引申。
+
+49
+00:03:19,000 --> 00:03:21,000
+Now that looks very surprising,
+现在看起来非常令人惊讶。
+
+50
+00:03:21,000 --> 00:03:25,000
+so what we’ll do is we’ll try and go a bit deeper
+所以我们要做的是，我们将尝试并去更深一点。
+
+51
+00:03:25,000 --> 00:03:29,000
+and develop some intuition for why that might be the case.
+并对为什么会出现这种情况产生一些直觉。
+
+52
+00:03:29,000 --> 00:03:33,000
+Let’s begin over here with the integral function again
+我们再从积分函数开始吧
+
+53
+00:03:33,000 --> 00:03:40,000
+and think of the difference at two points, <i>f</i>[<i>x</i> + <i>h</i>] and <i>f</i>[<i>x</i>]—
+并思考两点的区别，<i>f</i>[<i>x</i>+<i>h</i>]和<i>f</i>[<i>x</i>]-。
+
+54
+00:03:40,000 --> 00:03:44,000
+two close-by points with <i>h</i> being very small.
+两个相近的点，<i>h</i>很小。
+
+55
+00:03:44,000 --> 00:03:47,000
+Now that difference over here would just be
+现在，这里的差异将只是
+
+56
+00:03:47,000 --> 00:03:52,000
+the area of a tiny strip because <i>h</i> is very small.
+因为<i>h</i>非常小，所以是一个小带子的面积。
+
+57
+00:03:53,000 --> 00:03:55,000
+Here’s a picture.
+这里有一张图片。
+
+58
+00:03:55,000 --> 00:04:01,000
+The area of that strip is simply the width times the height,
+该条带的面积只是宽度乘以高度。
+
+59
+00:04:01,000 --> 00:04:05,000
+which is just the <i>g</i>[<i>x</i>], so the area is <i>h</i> * <i>g</i>[<i>x</i>].
+这只是<i>g</i>[<i>x</i>]，所以面积是<i>h</i>*<i>g</i>[<i>x</i>]。
+
+60
+00:04:05,000 --> 00:04:11,000
+But then that is <i>f</i>[<i>x</i> + <i>h</i>] – <i>f</i>[<i>x</i>], so if you divide,
+但那就是<i>f</i>[<i>x</i>+<i>h</i>]-<i>f</i>[<i>x</i>]，所以如果你除。
+
+61
+00:04:11,000 --> 00:04:13,000
+then you get back this relation over here.
+然后你把这个关系拿回来
+
+62
+00:04:13,000 --> 00:04:19,000
+As <i>h</i> goes to 0, that says that <i>f</i>'[<i>x</i>] = <i>g</i>[<i>x</i>].
+由于<i>h</i>为0，所以说<i>f</i>'[<i>x</i>]=<i>g</i>[<i>x</i>]。
+
+63
+00:04:19,000 --> 00:04:25,000
+In other words, <I>f</I>[<i>x</i>] is an antiderivative of <i>g</i>[<i>x</i>].
+换句话说，<I>f</I>[<i>x</i>]是<i>g</i>[<i>x</i>]的反衍生。
+
+64
+00:04:25,000 --> 00:04:30,000
+It is this remarkable fact which is summarized
+正是这个显著的事实被概括为
+
+65
+00:04:30,000 --> 00:04:32,000
+in the fundamental theorem of calculus.
+在微积分基本定理中。
+
+66
+00:04:32,000 --> 00:04:34,000
+There are two versions.
+有两个版本。
+
+67
+00:04:34,000 --> 00:04:36,000
+That’s version 1 over here.
+这是版本1在这里。
+
+68
+00:04:36,000 --> 00:04:40,000
+It says that if you have a continuous function <i>g</i>
+它说，如果你有一个连续函数<i>g</i>。
+
+69
+00:04:40,000 --> 00:04:45,000
+and you define <i>f</i> to be an integral from 0 to <i>x</i>—
+你定义<i>f</i>为0到<i>x</i>-的积分。
+
+70
+00:04:45,000 --> 00:04:49,000
+from <i>a</i> to <I>x</i>, in this case—then what you get back
+从<i>a</i>到<I>x</i>，在这种情况下，你得到的是
+
+71
+00:04:49,000 --> 00:04:54,000
+is a function, an integral function, and this integral function
+是一个函数，是一个积分函数，而这个积分函数
+
+72
+00:04:54,000 --> 00:04:58,000
+is actually an antiderivative of <i>g</i>.
+实际上是<i>g</i>的反赋值。
+
+73
+00:04:58,000 --> 00:05:03,000
+In other words, <i>f</I>'[<i>x</i>] is equal to <i>g</i>[<i>x</i>].
+换句话说，<i>f</I>'[<i>x</i>]等于<i>g</i>[<i>x</i>]。
+
+74
+00:05:05,000 --> 00:05:07,000
+Let’s try and understand that a bit more
+让我们试着去理解一下吧。
+
+75
+00:05:07,000 --> 00:05:08,000
+by looking at some examples.
+通过看一些例子。
+
+76
+00:05:08,000 --> 00:05:13,000
+Let’s say you have the function <i>f</i>[<i>x</i>] given by the integral
+假设你有函数<i>f</i>[<i>x</i>]，其积分为
+
+77
+00:05:13,000 --> 00:05:19,000
+from 0 to <i>x</i> for Sin(√1 + <I>t</i>^2)<i>dt</i> and you integrate it.
+从0到<i>x</i>为Sin(√1+<I>t</i>^2)<i>dt</i>，你把它积分。
+
+78
+00:05:19,000 --> 00:05:23,000
+Then you just get back Sin(√1 + <i>x</i>^2).
+那么你只需取回Sin(√1+<i>x</i>^2)。
+
+79
+00:05:23,000 --> 00:05:25,000
+Here’s a check; namely, if we take
+这里有一个检查，即如果我们把
+
+80
+00:05:25,000 --> 00:05:27,000
+the derivative of the integral function,
+积分函数的导数。
+
+81
+00:05:27,000 --> 00:05:31,000
+you will get back just the original function.
+你将得到的只是原来的功能。
+
+82
+00:05:31,000 --> 00:05:33,000
+That’s the summary over here which says that
+这就是这边的总结，说的是
+
+83
+00:05:33,000 --> 00:05:37,000
+if you take a function, integrate it and then differentiate it,
+如果你把一个函数，整合后再进行区分。
+
+84
+00:05:37,000 --> 00:05:40,000
+you get back the original function.
+你会找回原来的功能。
+
+85
+00:05:40,000 --> 00:05:44,000
+Now the problem is the upper limit itself
+现在的问题是上限本身
+
+86
+00:05:44,000 --> 00:05:46,000
+might depend on <I>x</i> in some complicated way.
+可能以某种复杂的方式依赖于<I>x</i>。
+
+87
+00:05:46,000 --> 00:05:48,000
+In that case, you must apply the chain rule.
+在这种情况下，你必须应用链式规则。
+
+88
+00:05:48,000 --> 00:05:51,000
+Let’s say <i>g</i>[<i>x</i>] is the integral 0 to <i>x</i>^2
+假设<i>g</i>[<i>x</i>]是0到<i>x</i>^2的积分。
+
+89
+00:05:51,000 --> 00:05:53,000
+of the same function.
+的相同功能。
+
+90
+00:05:53,000 --> 00:05:57,000
+Then if you differentiate that with respect to <i>x</i>,
+那么如果你对<i>x</i>进行区分。
+
+91
+00:05:57,000 --> 00:05:59,000
+you will need to account for the <i>x</i>^2,
+你需要考虑到<i>x</i>^2。
+
+92
+00:05:59,000 --> 00:06:02,000
+so you get back a factor of 2<i>x</i> over here.
+所以你在这里得到的是2<i>x</i>的系数。
+
+93
+00:06:02,000 --> 00:06:03,000
+Let’s check that.
+让我们检查一下。
+
+94
+00:06:03,000 --> 00:06:09,000
+You get back 2<i>x</i>Sin(√1 + <i>x</i>^4).
+你得到的是2<i>x</i>Sin(√1+<i>x</i>^4)。
+
+95
+00:06:10,000 --> 00:06:16,000
+Okay. Let’s now go on to talking about why these integral functions
+好了，现在我们继续说说为什么这些积分函数我们现在继续讨论为什么这些积分函数
+
+96
+00:06:16,000 --> 00:06:18,000
+are useful at all.
+都是有用的。
+
+97
+00:06:18,000 --> 00:06:21,000
+There is a function called the Fresnel function
+有一个函数叫菲涅尔函数
+
+98
+00:06:21,000 --> 00:06:25,000
+which really quite useful in optics and highway design.
+这在光学和公路设计中真的相当有用。
+
+99
+00:06:25,000 --> 00:06:28,000
+After all, if you design a highway or you design, let’s say,
+毕竟，如果你设计一条高速公路或者你设计，比方说。
+
+100
+00:06:28,000 --> 00:06:30,000
+a very long line, you need to worry about the turns,
+一条很长的线，你需要担心转弯。
+
+101
+00:06:30,000 --> 00:06:33,000
+and that’s where this Fresnel function comes in.
+这就是这个菲涅尔功能的作用。
+
+102
+00:06:33,000 --> 00:06:36,000
+It’s the integral function of a sine function.
+它是正弦函数的积分函数。
+
+103
+00:06:36,000 --> 00:06:39,000
+We have this in the Wolfram Language.
+我们在Wolfram语言中就有这个功能。
+
+104
+00:06:39,000 --> 00:06:41,000
+It’s called FresnelS.
+这就是所谓的FresnelS。
+
+105
+00:06:41,000 --> 00:06:45,000
+That’s FresnelS and its derivative on the same plot.
+那是FresnelS和它在同一情节上的衍生物。
+
+106
+00:06:45,000 --> 00:06:50,000
+The blue plot is the Fresnel function and the orange plot is
+蓝色图是菲涅尔函数，橙色图是
+
+107
+00:06:50,000 --> 00:06:53,000
+its derivative, which is just the sine function over here.
+其导数，也就是这边的正弦函数而已。
+
+108
+00:06:53,000 --> 00:06:57,000
+Another very useful function is the error function,
+另一个非常有用的功能是错误函数。
+
+109
+00:06:57,000 --> 00:07:00,000
+which is also an integral function,
+这也是一个积分函数。
+
+110
+00:07:00,000 --> 00:07:03,000
+and that’s used in statistics and probability.
+而这在统计学和概率学中是用的。
+
+111
+00:07:03,000 --> 00:07:07,000
+Here is the error function with its derivative.
+下面是误差函数及其导数。
+
+112
+00:07:07,000 --> 00:07:09,000
+You have the error function, which is blue,
+你有错误函数，这是蓝色的。
+
+113
+00:07:09,000 --> 00:07:11,000
+over here, and the derivative.
+在这里，和衍生。
+
+114
+00:07:11,000 --> 00:07:13,000
+It’s just a normal probability curve.
+这只是一条正常的概率曲线。
+
+115
+00:07:13,000 --> 00:07:16,000
+What happens is as you approach very large values,
+当你接近非常大的数值时，会发生什么。
+
+116
+00:07:16,000 --> 00:07:20,000
+the probability of everything being covered is almost 1,
+覆盖一切的概率几乎为1。
+
+117
+00:07:20,000 --> 00:07:24,000
+so that’s why the values over here are almost 1.
+所以这就是为什么这边的数值几乎是1。
+
+118
+00:07:26,000 --> 00:07:29,000
+Okay. Now there is another more useful version
+好了，现在还有一个更有用的版本。现在还有一个更有用的版本
+
+119
+00:07:29,000 --> 00:07:33,000
+of the fundamental theorem, and that’s version 2,
+的基本定理，这就是第二版。
+
+120
+00:07:33,000 --> 00:07:36,000
+which says that suppose you have a function <i>f</i>
+它说，假设你有一个函数<i>f</i>。
+
+121
+00:07:36,000 --> 00:07:41,000
+and you find an antiderivative of that function by some means.
+而你通过某种方式找到该函数的反函数。
+
+122
+00:07:41,000 --> 00:07:45,000
+Then the value of the integral from <i>a</I> to <i>b</i> of this function <i>f</i>
+那么这个函数<i>a</I>到<i>b</i>的积分值<i>f</i>。
+
+123
+00:07:45,000 --> 00:07:51,000
+is the antidervative at <i>b</i> minus the antiderivative at <i>a</i>.
+是<i>b</i>的反余数减去<i>a</i>的反余数。
+
+124
+00:07:51,000 --> 00:07:55,000
+In other words, the integral of an antiderivative
+换句话说，一个反求异体的积分
+
+125
+00:07:55,000 --> 00:07:58,000
+can be found quite easily by simply working out
+可以很容易地找到，只要计算出
+
+126
+00:07:58,000 --> 00:08:02,000
+the difference between the values at the upper and the lower limits.
+上下限值之差；
+
+127
+00:08:02,000 --> 00:08:06,000
+That says that differentiation and integration
+这说明，差异化和一体化
+
+128
+00:08:06,000 --> 00:08:09,000
+are actually the inverse processes of each other.
+其实都是彼此的逆过程。
+
+129
+00:08:09,000 --> 00:08:11,000
+That’s quite a remarkable fact.
+这是一个相当了不起的事实。
+
+130
+00:08:11,000 --> 00:08:13,000
+For example, if you’re asked to find
+例如，如果你被要求找到
+
+131
+00:08:13,000 --> 00:08:16,000
+the integral of <i>x</i>^2 from 1 to 4,
+<i>x</i>^2从1到4的积分。
+
+132
+00:08:16,000 --> 00:08:20,000
+then you first work out the antiderivative, which is <i>x</i>^3/3.
+那么你首先要计算出反演数，即<i>x</i>^3/3。
+
+133
+00:08:20,000 --> 00:08:22,000
+Then you plug in the upper and lower limits,
+然后你插上上下限。
+
+134
+00:08:22,000 --> 00:08:27,000
+so you get 4^3/3 – 1^3/3, and the answer 21.
+所以你得到4^3/3-1^3/3，答案为21。
+
+135
+00:08:27,000 --> 00:08:33,000
+You can check that with Integrate and get back just the same result.
+你可以用Integrate检查一下，得到的结果也一样。
+
+136
+00:08:34,000 --> 00:08:37,000
+That brings me to the end of this lesson,
+至此，本课结束。
+
+137
+00:08:37,000 --> 00:08:41,000
+but the main point is that the fundamental theorem of calculus
+但主要的是，微积分的基础定理
+
+138
+00:08:41,000 --> 00:08:44,000
+is one of the most important theorems in calculus
+是微积分中最重要的定理之一。
+
+139
+00:08:44,000 --> 00:08:50,000
+because it says that differentiation and integration
+因为它说，差异化和一体化
+
+140
+00:08:50,000 --> 00:08:55,000
+are the inverse processes of each other.
+是彼此的逆过程。
+
+141
+00:08:55,000 --> 00:09:00,000
+In fact, its real utility is to compute integrals
+事实上，它的真正用途是计算积分。
+
+142
+00:09:00,000 --> 00:09:03,000
+by using antiderivatives
+用反义词
+
+143
+00:09:03,000 --> 00:09:08,000
+Basically, using the antiderivatives is much easier
+基本上，使用抗衍生品要容易得多。
+
+144
+00:09:08,000 --> 00:09:10,000
+than using Riemann sums.
+比使用黎曼和。
+
+145
+00:09:10,000 --> 00:09:12,000
+Instead of calculating Riemann sums,
+而不是计算黎曼和。
+
+146
+00:09:12,000 --> 00:09:14,000
+you would calculate antiderivatives.
+你会计算反演。
+
+147
+00:09:16,000 --> 00:09:18,000
+The next lesson will talk about indefinite integrals.
+下节课将讲到不定积分。
+
+148
+00:09:18,000 --> 00:09:20,000
+But before that, do review this lesson over here
+但在这之前，请先在这边复习一下这堂课吧
+
+149
+00:09:20,000 --> 00:09:25,000
+because we have covered one of the most important theorems in calculus,
+因为我们已经涵盖了微积分中最重要的定理之一。
+
+150
+00:09:25,000 --> 00:09:27,000
+and that’s going to be used all the time.
+而这将会被一直使用。
+
+151
+00:09:27,000 --> 00:09:29,000
+Let’s stop over here.
+让我们在这里停下来。
+
+152
+00:09:29,000 --> 00:09:30,000
+Thank you very much,
+非常感谢你。
+
+153
+00:09:30,000 --> 00:09:33,000
+and I hope you have learned a lot in this lesson.
+并希望你在这一课中学到很多东西。
