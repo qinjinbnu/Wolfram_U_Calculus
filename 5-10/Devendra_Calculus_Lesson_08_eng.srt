@@ -1,0 +1,408 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+Hello, and welcome to Lesson 8 of this introduction to calculus with Wolfram U.
+
+2
+00:00:05,000 --> 00:00:10,000
+Our topic for today is the derivative as a function.
+
+3
+00:00:11,000 --> 00:00:17,000
+Let’s begin with a brief overview of today’s lesson. In Lesson 7, you learned about
+
+4
+00:00:17,000 --> 00:00:23,000
+finding the derivatives at particular points for a function. Now the fact is that
+
+5
+00:00:23,000 --> 00:00:29,000
+you can go beyond that and the derivative itself can be regarded as a function.
+
+6
+00:00:29,000 --> 00:00:35,000
+Starting with a function, you can find the derivative, and then that gives you another function.
+
+7
+00:00:35,000 --> 00:00:41,000
+The way to do that in the Wolfram Language is to use to the function D. Let’s say you have
+
+8
+00:00:41,000 --> 00:00:46,000
+a function <i>f</i>[<i>x</i>] like over here. You can work out the derivative using D, and you get back
+
+9
+00:00:46,000 --> 00:00:55,000
+another function. Now you can plot the function and the derivative on the same plot,
+
+10
+00:00:55,000 --> 00:01:03,000
+and you get back this picture of the function in blue and its derivative in orange.
+
+11
+00:01:03,000 --> 00:01:09,000
+The point over here is that the derivative is a function just like the earlier one,
+
+12
+00:01:09,000 --> 00:01:14,000
+and you can keep on doing the same process, and that’s the plan for today, to talk about
+
+13
+00:01:14,000 --> 00:01:17,000
+derivatives as functions and higher derivatives.
+
+14
+00:01:17,000 --> 00:01:23,000
+Okay. A simple example. Let’s say I ask you to find the derivative of <i>x</i>^3 + <i>x</i>.
+
+15
+00:01:25,000 --> 00:01:34,000
+You can work out the derivatives in D—that’s 3<i>x</i>^2 + 1—and then you can also use <i>f</i>'[<i>x</i>].
+
+16
+00:01:34,000 --> 00:01:39,000
+that’s another way to do the same thing. You can plot the function derivative
+
+17
+00:01:39,000 --> 00:01:46,000
+and you get back the result, which is the plot for both these functions. Now the difficulty is that
+
+18
+00:01:46,000 --> 00:01:51,000
+there are many ways to write derivatives. Let’s talk a little bit about derivative notation.
+
+19
+00:01:51,000 --> 00:02:00,000
+Some people prefer to write <i>f</i>[<i>x</i>] for the function then <i>f</i>'[<i>x</i>] for the derivative. Others prefer D.
+
+20
+00:02:00,000 --> 00:02:08,000
+Some prefer <i>y</i>’, some use <i>dy</i>/<i>dx</i>, some use <i>df</i>/<i>dx</i>, et cetera. In fact, mathematicians like
+
+21
+00:02:08,000 --> 00:02:15,000
+to think of D and <i>d</i>/<i>dx</i> as being as being differentiation operators which work on functions
+
+22
+00:02:15,000 --> 00:02:22,000
+and give you their derivatives. The whole process of calculating derivatives is called differentiation.
+
+23
+00:02:22,000 --> 00:02:27,000
+There is a lot of terminology over here, but as far as we are concerned, if you know D and <i>f</i>',
+
+24
+00:02:27,000 --> 00:02:33,000
+that’s good enough for you. So here I’ve got D[<i>f</i>[<i>x</i>]] and <i>f</i>'[<i>x</i>], and you get back
+
+25
+00:02:33,000 --> 00:02:40,000
+just the same result in both the cases. For this lesson, if you know D and <i>f</i>',
+
+26
+00:02:40,000 --> 00:02:44,000
+that’s enough to do all the calculations.
+
+27
+00:02:44,000 --> 00:02:50,000
+Okay. One issue with derivatives is that they are defined by limits. If they are limits,
+
+28
+00:02:50,000 --> 00:02:54,000
+and because you can talk about left-hand and right-hand limits, you can also talk about
+
+29
+00:02:54,000 --> 00:02:59,000
+left-hand and right-hand derivatives at a point. Here’s a function <i>g</i>
+
+30
+00:02:59,000 --> 00:03:05,000
+defined using the RealAbs function, the absolute value function, and clearly there will be
+
+31
+00:03:05,000 --> 00:03:12,000
+an issue at 5 where the sign changes. If you find the derivatives from the right and left at 5,
+
+32
+00:03:12,000 --> 00:03:17,000
+then what you see is that they are different, so you have a problem
+
+33
+00:03:17,000 --> 00:03:23,000
+because the left-hand and right-hand derivatives at the point 5 do not agree.
+
+34
+00:03:23,000 --> 00:03:29,000
+If you plot the function derivative, you see a little more clearly. That’s the original function,
+
+35
+00:03:29,000 --> 00:03:38,000
+and the derivative is 3 on the right and −3 on the left. That’s one way in which things can go wrong,
+
+36
+00:03:38,000 --> 00:03:42,000
+namely that the left-hand limit and the right-hand limit do not agree,
+
+37
+00:03:42,000 --> 00:03:45,000
+and you do not have a derivative at that point.
+
+38
+00:03:45,000 --> 00:03:56,000
+Let’s talk about differentiability. A function is differentiable if <i>f</i>'[<i>a</i>] exists for a point <i>a</i>,
+
+39
+00:03:56,000 --> 00:04:01,000
+and of course if you were to have a whole range of values from <i>a</i> to <i>b</i>, then it’s differentiable
+
+40
+00:04:01,000 --> 00:04:09,000
+if it’s differentiable at every point, every number in that interval. Here’s a function.
+
+41
+00:04:09,000 --> 00:04:16,000
+Let’s find the derivative. The question is where is it differentiable? Well, the only difficulty
+
+42
+00:04:16,000 --> 00:04:20,000
+would be at 0 because then you have a 0 in the denominator over here, and in fact,
+
+43
+00:04:20,000 --> 00:04:27,000
+if you work out the left- and right-hand derivatives at this point at 0, then you do see
+
+44
+00:04:27,000 --> 00:04:35,000
+that they are very different. In fact if you plug in 0 into <i>f</i>'[<i>x</i>], you get back an indeterminate answer.
+
+45
+00:04:35,000 --> 00:04:43,000
+Here’s a function which we just showed you which is differentiable everywhere except at 0.
+
+46
+00:04:44,000 --> 00:04:52,000
+The question arises in what way can a function be non-differentiable? When can things go wrong?
+
+47
+00:04:52,000 --> 00:04:58,000
+One way that they can go wrong is if you’re at a corner. Here’s an example.
+
+48
+00:04:58,000 --> 00:05:06,000
+You have the absolute value function times 3, and if you plot it with the derivative, you see that at 0
+
+49
+00:05:06,000 --> 00:05:11,000
+the calculation and graph both show that you have a problem at 0. You have a corner over there
+
+50
+00:05:11,000 --> 00:05:16,000
+which leads to the differentiability being lost. Here’s a corner for the function,
+
+51
+00:05:16,000 --> 00:05:23,000
+and that’s an issue for differentiability. Another thing that can go wrong is that you are at a cusp.
+
+52
+00:05:23,000 --> 00:05:29,000
+Here’s a cube root function, and at 0 again the problem is because you actually have a cusp.
+
+53
+00:05:29,000 --> 00:05:34,000
+That’s a cusp over there, a change in shape, and that’s going to cause you problems with derivatives.
+
+54
+00:05:34,000 --> 00:05:38,000
+You can see the derivative does not exist at 0.
+
+55
+00:05:39,000 --> 00:05:44,000
+A third way in which things can go wrong is if you are at a discontinuity of a function.
+
+56
+00:05:44,000 --> 00:05:51,000
+Here’s a function. It’s piecewise, and it changes form at 0. That’s the function.
+
+57
+00:05:51,000 --> 00:05:59,000
+Work out the derivative, and its 0 is a problem. You get indeterminate. If you plot it,
+
+58
+00:05:59,000 --> 00:06:05,000
+you can see quite clearly that everything’s fine everywhere except at 0.
+
+59
+00:06:06,000 --> 00:06:15,000
+One last thing that can go wrong is if you are at a vertical tangent. Here’s the cube root function again,
+
+60
+00:06:15,000 --> 00:06:24,000
+and if we look at 0, you actually have a problem because you have a vertical tangent over there.
+
+61
+00:06:24,000 --> 00:06:30,000
+That’s the way in which things can go wrong, but for the most part, functions will be differentiable,
+
+62
+00:06:30,000 --> 00:06:36,000
+and if they are not, it will only happen at a few isolated points.
+
+63
+00:06:37,000 --> 00:06:42,000
+Now starting with a function, you cannot just work out the first derivative like over here,
+
+64
+00:06:42,000 --> 00:06:50,000
+but you can go a step further and work out the second derivative. The second derivative is
+
+65
+00:06:50,000 --> 00:06:59,000
+the derivative of the first derivative. We with start with 4<i>x</i>^3. You get 12<i>x</i>^2 and then you get 24<i>x</i>,
+
+66
+00:06:59,000 --> 00:07:06,000
+and you can get the same result by using D with this notation, which says differentiate <i>f</i>
+
+67
+00:07:06,000 --> 00:07:12,000
+with respect to <i>x</i> two times, and you get back just the same answer. That’s the shorthand
+
+68
+00:07:12,000 --> 00:07:23,000
+for computing the second derivative. Here are the plots of all three. There’s <i>f</i>, there’s the first derivative
+
+69
+00:07:23,000 --> 00:07:31,000
+and the second derivative. The point is starting from a function, you can work out the derivative.
+
+70
+00:07:31,000 --> 00:07:37,000
+Then you can work its derivative, and they are all just as good as functions.
+
+71
+00:07:37,000 --> 00:07:42,000
+Now of course you can go on with that, and in the Wolfram Language you can work out the <i>n</i>th derivative
+
+72
+00:07:42,000 --> 00:07:49,000
+for any value of <i>n</i>, whether it be 1 or 2 or 6 or 100 or whatever. Here’s a simple function <i>x</i>^6.
+
+73
+00:07:49,000 --> 00:07:55,000
+You can work out the first six derivatives. The first expression over here is just the function itself,
+
+74
+00:07:55,000 --> 00:07:59,000
+and the last one is 720, which means that you are almost at the edge
+
+75
+00:07:59,000 --> 00:08:06,000
+where things are going to start becoming 0. Okay. Here’s a plot of the first six derivatives.
+
+76
+00:08:06,000 --> 00:08:11,000
+You have the function over here, first derivative, second derivative, et cetera.
+
+77
+00:08:11,000 --> 00:08:19,000
+You can see over here that the <i>n</i>th derivative is a function just like the earlier one.
+
+78
+00:08:20,000 --> 00:08:24,000
+Okay. Now in physics, there are some special names for <i>n</i>th derivatives.
+
+79
+00:08:24,000 --> 00:08:33,000
+Here’s a position function <i>s</i>[<i>t</i>], and if you work out the first six derivatives, they’ve got names.
+
+80
+00:08:33,000 --> 00:08:40,000
+They’re called the velocity, the acceleration, the jerk, snap, crackle, pop.
+
+81
+00:08:40,000 --> 00:08:46,000
+That’s first derivative, second derivative, third derivative, fourth, fifth and sixth.
+
+82
+00:08:46,000 --> 00:08:52,000
+If you plot them, then just like in the earlier case you get back a plot, but now this shows you
+
+83
+00:08:52,000 --> 00:08:59,000
+the variation of the position and velocity, et cetera as time goes by.
+
+84
+00:08:59,000 --> 00:09:03,000
+High derivatives are really quite useful. They occur in physics, they occur elsewhere
+
+85
+00:09:03,000 --> 00:09:08,000
+and in fact they are what makes calculus so applicable in real life.
+
+86
+00:09:09,000 --> 00:09:13,000
+Okay. Now we’re at the end of today’s lesson, and what you’ve learned is that you can
+
+87
+00:09:13,000 --> 00:09:18,000
+work out derivatives not just at points, but for entire functions, and what you get then is
+
+88
+00:09:18,000 --> 00:09:25,000
+a new function. Because a derivative is a limit, you can compute left and right derivatives.
+
+89
+00:09:25,000 --> 00:09:30,000
+Now if it happens that the left and right derivatives are not equal, then the derivative
+
+90
+00:09:30,000 --> 00:09:40,000
+does not exist at the given point. If it does exist, then the function is differentiable at that point.
+
+91
+00:09:40,000 --> 00:09:45,000
+You’ve got differentiable functions and non-differentiable functions which can occur in many ways,
+
+92
+00:09:45,000 --> 00:09:50,000
+like you are at a corner, you are at a cusp, et cetera. As I said earlier on,
+
+93
+00:09:50,000 --> 00:09:58,000
+most functions will be differentiable almost everywhere. Now you can go a step further from derivatives
+
+94
+00:09:58,000 --> 00:10:02,000
+and work out higher-order derivatives—the first, second, third, fourth, et cetera—
+
+95
+00:10:02,000 --> 00:10:08,000
+and those are quite useful. For example, they’re useful for studying the motion of a particle.
+
+96
+00:10:08,000 --> 00:10:14,000
+That’s a lot of stuff over here. We talked about higher derivatives, left derivatives, right derivatives.
+
+97
+00:10:14,000 --> 00:10:21,000
+That’s a whole bag of ideas, and in the next lesson we’ll try and make things look much simpler
+
+98
+00:10:21,000 --> 00:10:27,000
+by talking about the rules for finding derivatives. It might all look a little bit difficult right now,
+
+99
+00:10:27,000 --> 00:10:31,000
+but once you have rules of derivatives, then things will become much simpler.
+
+100
+00:10:31,000 --> 00:10:39,000
+That’s for Lesson 9, but before that we will have Problem Session 2 and you can take a small quiz,
+
+101
+00:10:39,000 --> 00:10:45,000
+and that should put you in good shape for Lesson 9. But I’ll stop over here for Lesson 8.
+
+102
+00:10:45,000 --> 00:10:48,000
+I hope you have enjoyed it. Thank you.
+

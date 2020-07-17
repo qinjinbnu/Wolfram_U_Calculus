@@ -1,0 +1,484 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 6 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:14,000
+Our topic for today is continuity. Let’s begin with a brief overview of the idea for today’s lesson.
+
+3
+00:00:14,000 --> 00:00:21,000
+Begin by recalling if you have a polynomial like this one over here, then its limit at a point
+
+4
+00:00:21,000 --> 00:00:26,000
+is simply the value of the polynomial at that point. If you look at the polynomial <i>f</i>[<i>x</i>],
+
+5
+00:00:26,000 --> 00:00:34,000
+then I simply replace <i>x</i> by <i>a</i>, and I get the limit of <i>f</i>[<i>x</i>] as <i>x</i> approaches <i>a</i>.
+
+6
+00:00:34,000 --> 00:00:41,000
+That’s a very special property of polynomials and similar functions—namely, that their limit
+
+7
+00:00:41,000 --> 00:00:50,000
+at any point is just the value of those functions at that point, and such functions are called continuous.
+
+8
+00:00:50,000 --> 00:00:58,000
+A continuous function is one for which the limit at a point and the function value agree.
+
+9
+00:00:58,000 --> 00:01:05,000
+This lesson will give examples of continuous functions, functions that are not continuous,
+
+10
+00:01:05,000 --> 00:01:11,000
+so-called discontinuous functions, and we’ll also give a nice application of continuity.
+
+11
+00:01:11,000 --> 00:01:17,000
+Let’s begin with the definition of continuous functions in a formal way.
+
+12
+00:01:17,000 --> 00:01:25,000
+A function is continuous at a point <i>a</i> if the value at <i>a</i> is equal to the limit of <i>f</i> at <i>a</i>.
+
+13
+00:01:25,000 --> 00:01:34,000
+For a function to be continuous, three things must happen. First of all, it must be defined at that point.
+
+14
+00:01:34,000 --> 00:01:41,000
+The limit must exist at that point, and that’s not enough; the limit must be equal to
+
+15
+00:01:41,000 --> 00:01:47,000
+the value of the function at that point. The equality is a very important condition for continuity.
+
+16
+00:01:49,000 --> 00:01:56,000
+Very informally, a continuous function should have no gaps or breaks in its graph.
+
+17
+00:01:56,000 --> 00:02:01,000
+If you draw the graph of a function and it looks continuous—it has no gaps or breaks—
+
+18
+00:02:01,000 --> 00:02:05,000
+then in fact that’s very likely to be a continuous function. For example,
+
+19
+00:02:05,000 --> 00:02:12,000
+here is a function of <i>x</i> as a polynomial, and its value at 1 is the same as the limit.
+
+20
+00:02:12,000 --> 00:02:20,000
+You plot it, and sure enough, there is no break in the graph, so that is a continuous function.
+
+21
+00:02:20,000 --> 00:02:24,000
+That’s just a simple way to tell if a function is continuous or not.
+
+22
+00:02:26,000 --> 00:02:31,000
+Okay. Some simple examples. Polynomials and rational functions are continuous
+
+23
+00:02:31,000 --> 00:02:39,000
+wherever they are defined. Here’s a polynomial <i>f</i>[<i>x</i>] and a rational function <i>g</i>[<i>x</i>].
+
+24
+00:02:39,000 --> 00:02:49,000
+<i>f</i> is of course continuous at every point, but <i>g</i> is continuous everywhere except at −1,
+
+25
+00:02:49,000 --> 00:02:57,000
+where the denominator is 0, so it’s not defined. Here’s a plot of <i>f</i>[<i>x</i>], nice and continuous,
+
+26
+00:02:57,000 --> 00:03:04,000
+and a plot of <i>g</i>[<i>x</i>], which has a problem, a discontinuity at −1.
+
+27
+00:03:05,000 --> 00:03:12,000
+Okay. Next let’s talk about functions which are not continuous. A function that is not continuous
+
+28
+00:03:12,000 --> 00:03:20,000
+is said to be discontinuous at that point. Here are two examples, <i>f</i>[<i>x</i>] and <i>g</i>[<i>x</i>].
+
+29
+00:03:20,000 --> 00:03:27,000
+Now if you think about <i>f</i>[<i>x</i>], there’s a problem at 1. If you find the value at 1, sure enough,
+
+30
+00:03:27,000 --> 00:03:34,000
+the answer is indeterminate. That function has a discontinuity at <i>x</i> = 1.
+
+31
+00:03:34,000 --> 00:03:40,000
+Now what’s happened with <i>g</i> is that we’ve chained the value at 1 hoping to fix the problem,
+
+32
+00:03:40,000 --> 00:03:49,000
+but that’s still not good enough because the limit as you approach 1 is −3, while the value is −2.
+
+33
+00:03:51,000 --> 00:03:57,000
+If you plot the functions, you see that <i>f</i> has a problem at 1, which you can’t really see over here,
+
+34
+00:03:57,000 --> 00:04:00,000
+but that’s the fact from the definition, whereas <i>g</i>
+
+35
+00:04:00,000 --> 00:04:06,000
+did not quite fix it because you chose the wrong value at that discontinuity.
+
+36
+00:04:06,000 --> 00:04:09,000
+Of course you’ve got to fix it, but the whole point is to construct examples
+
+37
+00:04:09,000 --> 00:04:13,000
+where things can go wrong for continuity.
+
+38
+00:04:14,000 --> 00:04:20,000
+Okay. A second class of examples here is a piecewise function <i>f</i>[<i>x</i>],
+
+39
+00:04:20,000 --> 00:04:25,000
+and clearly that’s problematic at 0 because you’re dividing by 0.
+
+40
+00:04:25,000 --> 00:04:33,000
+That’s the floor function <i>g</i>[<i>x</i>], so <i>f</i> clearly has a discontinuity at 0.
+
+41
+00:04:33,000 --> 00:04:41,000
+You can see that. You’ve got ∞ over here and 0 over there, whereas <i>g</i> is a bit more complicated.
+
+42
+00:04:41,000 --> 00:04:47,000
+It’s got discontinuities at all integers. For example, at 0 it’s indeterminate,
+
+43
+00:04:47,000 --> 00:04:55,000
+the limit, and the value at 0 itself is 0, so clearly there’s a problem at that point. Here are the functions.
+
+44
+00:04:55,000 --> 00:05:03,000
+<i>f</i> only has a problem at 0, while <i>g</i> seems to have many more problems in its graph.
+
+45
+00:05:06,000 --> 00:05:13,000
+Okay. Although the floor function is discontinuous, it does have one nice property,
+
+46
+00:05:13,000 --> 00:05:20,000
+namely that if you approach it from the right, then things are okay, but they are not from the left.
+
+47
+00:05:20,000 --> 00:05:25,000
+Let’s see that for the floor function. If you try and find the limit from the right,
+
+48
+00:05:25,000 --> 00:05:30,000
+from above for the floor function at 0, then it’s okay. You get back True.
+
+49
+00:05:30,000 --> 00:05:40,000
+But if you try and find it from the left, it is not okay. The plot clearly says that we have issues at
+
+50
+00:05:40,000 --> 00:05:44,000
+all the integers, but in fact you have a function, the floor function,
+
+51
+00:05:44,000 --> 00:05:50,000
+which is continuous from the right at every integer, but not from the left.
+
+52
+00:05:52,000 --> 00:05:58,000
+Okay. Root functions are also very similar to polynomials because they’re continuous
+
+53
+00:05:58,000 --> 00:06:02,000
+everywhere in their domains. Wherever they are defined, you are okay.
+
+54
+00:06:02,000 --> 00:06:07,000
+Here’s a square root function <i>f</i>[<i>x</i>], and that’s continuous wherever it is defined,
+
+55
+00:06:07,000 --> 00:06:15,000
+namely, when <i>x</i> is non-negative. But at −1, it’s got an imaginary value <i>i</i>,
+
+56
+00:06:15,000 --> 00:06:21,000
+so one cannot really talk about continuity at that point. Here’s a graph,
+
+57
+00:06:21,000 --> 00:06:28,000
+and as long as the function is defined, there is no problem at all; it is continuous.
+
+58
+00:06:30,000 --> 00:06:37,000
+Okay. Trigonometric functions are pretty simple. The sine function and the cosine function
+
+59
+00:06:37,000 --> 00:06:45,000
+are both continuous at 0, and in fact, they are continuous at every point. Here’s a graph of
+
+60
+00:06:45,000 --> 00:06:51,000
+each of these functions. They are clearly continuous—there are no breaks—and one way to prove that
+
+61
+00:06:51,000 --> 00:06:57,000
+might be to use the addition formulae from algebra, from trigonometry, which can be used
+
+62
+00:06:57,000 --> 00:07:02,000
+to show that these functions are actually continuous at every point. On the other hand,
+
+63
+00:07:02,000 --> 00:07:07,000
+the tangent function has a problem because the denominator has cosine, so it is not continuous
+
+64
+00:07:07,000 --> 00:07:13,000
+whenever the cosine is 0. You can see the problems over here at every place where
+
+65
+00:07:13,000 --> 00:07:18,000
+cosine becomes 0 like π/2, et cetera, there are problems with the tangent function.
+
+66
+00:07:20,000 --> 00:07:28,000
+Okay. If you want to go further, then one needs the laws of continuity. Just like you have
+
+67
+00:07:28,000 --> 00:07:33,000
+the laws for limits, you also have the laws for continuity. You have the sum law, which says that
+
+68
+00:07:33,000 --> 00:07:38,000
+if <i>f</i> and <i>g</i> are continuous, then so is <i>f</i> + <i>g</i>. You have the difference law,
+
+69
+00:07:38,000 --> 00:07:45,000
+which says that <i>f</i> − <i>g</i> is also continuous if <i>f</i> and <i>g</i> are so; the scalar multiplication law,
+
+70
+00:07:45,000 --> 00:07:52,000
+which says you can multiply by constants and still get continuity; the product law for products;
+
+71
+00:07:52,000 --> 00:07:58,000
+and the quotient law for quotients. Together they give you a nice way of showing that
+
+72
+00:07:58,000 --> 00:08:04,000
+fairly complicated functions are in fact continuous. Here’s a function <i>f</i>.
+
+73
+00:08:04,000 --> 00:08:10,000
+It looks pretty complicated, but then you can think about it and say oh yes, cosine is continuous,
+
+74
+00:08:10,000 --> 00:08:16,000
+so is sine; now you are dividing over here, you are adding there, et cetera,
+
+75
+00:08:16,000 --> 00:08:24,000
+so by the laws of continuity, this function is continuous. If you find the value at π, the answer is
+
+76
+00:08:24,000 --> 00:08:31,000
+the same as the limit at π. That’s a powerful way of showing that a function is continuous,
+
+77
+00:08:31,000 --> 00:08:37,000
+namely, to apply the laws of continuity just like one could apply the laws of limits.
+
+78
+00:08:40,000 --> 00:08:46,000
+Okay. A slightly harder problem is what happens if a function is a composition,
+
+79
+00:08:46,000 --> 00:08:57,000
+so it’s <i>f</i>[<i>g</i>[<i>x</i>]]. Well, in that case you simply let the limit go, so to speak, inside the bracket,
+
+80
+00:08:57,000 --> 00:09:04,000
+and if you still get the same answers then you’re okay, and that’s exactly what’s happening over here
+
+81
+00:09:04,000 --> 00:09:12,000
+in this case. Basically you have <i>f</i>[<i>x</i>] defined as cosine of a polynomial, but cosine is continuous;
+
+82
+00:09:12,000 --> 00:09:20,000
+so is a polynomial. This function is a composition of trigs and polynomials. If you look at the graphs,
+
+83
+00:09:20,000 --> 00:09:28,000
+everything looks fine, and in fact the function is continuous. The point is that
+
+84
+00:09:28,000 --> 00:09:32,000
+given a composition of functions, you can basically ensure they’re continuous
+
+85
+00:09:32,000 --> 00:09:37,000
+by looking at each piece separately. In this case, you looked at <i>x</i>^2 − 7<i>x</i> + 10,
+
+86
+00:09:37,000 --> 00:09:41,000
+and we looked at cosine and then we were done.
+
+87
+00:09:43,000 --> 00:09:50,000
+Okay. We are almost done with today’s lesson, but one last important theme is that
+
+88
+00:09:50,000 --> 00:09:55,000
+you can actually apply the idea of continuity in practice to find roots.
+
+89
+00:09:56,000 --> 00:10:01,000
+The theorem that helps to do that is the intermediate value theorem. That means
+
+90
+00:10:01,000 --> 00:10:08,000
+the theorem for the values between two values. What it says is that
+
+91
+00:10:08,000 --> 00:10:15,000
+if you have a continuous function <i>f</i> on an interval <i>a</i> to <i>b</i> and you have any number <i>n</i>
+
+92
+00:10:15,000 --> 00:10:22,000
+between <i>f</i>[<i>a</i>] and <i>f</i>[<i>b</i>], then you will have a value somewhere in the middle.
+
+93
+00:10:22,000 --> 00:10:29,000
+That <i>f</i>[<i>c</i>] is equal to <i>n</i>. Basically a continuous function will take every value
+
+94
+00:10:29,000 --> 00:10:37,000
+between any two of its values. Of course one must assume that they are distinct
+
+95
+00:10:37,000 --> 00:10:43,000
+to get some kind of interesting behavior, but basically you can assume for continuous functions
+
+96
+00:10:43,000 --> 00:10:51,000
+that they take every value between any two of their values. Let’s try and find the root of
+
+97
+00:10:51,000 --> 00:10:57,000
+this rather complicated looking polynomial <i>f</i>[<i>x</i>]. It’s a cubic polynomial. Now you want to find
+
+98
+00:10:57,000 --> 00:11:05,000
+the root between 1 and 2, so what you do is you first of all evaluate at 1 and 2.
+
+99
+00:11:05,000 --> 00:11:12,000
+You find that it’s negative here, it’s positive there, so because the function is continuous,
+
+100
+00:11:12,000 --> 00:11:19,000
+and because 0 lies between those two numbers over here, then there must be a root in the interval.
+
+101
+00:11:19,000 --> 00:11:25,000
+Using the intermediate value theorem, you can now check by the plot of my Solve
+
+102
+00:11:25,000 --> 00:11:32,000
+that now there is in fact actually a root, and that root in this case is about 1.63334.
+
+103
+00:11:32,000 --> 00:11:41,000
+People who try and solve equations will often apply this theorem to try and find a root of a function.
+
+104
+00:11:41,000 --> 00:11:47,000
+That’s a very powerful application of continuity. It’s not just a theoretical concept,
+
+105
+00:11:47,000 --> 00:11:51,000
+it’s a very powerful practical concept.
+
+106
+00:11:53,000 --> 00:11:57,000
+Okay. We are done for today’s lesson. Let’s summarize. Basically, continuous functions
+
+107
+00:11:57,000 --> 00:12:03,000
+are very common in the real world, and in fact, most functions you’ll meet are going to be continuous.
+
+108
+00:12:03,000 --> 00:12:08,000
+There really is no problem at all. We did see some examples, but they were somewhat artificial
+
+109
+00:12:08,000 --> 00:12:12,000
+in some cases, and you don’t need to worry about them mostly.
+
+110
+00:12:12,000 --> 00:12:21,000
+Informally, a continuous function has no gaps or breaks in its graph. If you look at
+
+111
+00:12:21,000 --> 00:12:25,000
+polynomials’ root functions, they are continuous wherever they are defined.
+
+112
+00:12:25,000 --> 00:12:29,000
+That’s no issue for polynomials, but for root functions like the square root, you do need
+
+113
+00:12:29,000 --> 00:12:36,000
+to worry about where they are defined. Now rational functions and trigs are slightly harder.
+
+114
+00:12:36,000 --> 00:12:41,000
+They may or may not be continuous. That depends upon the kind of way that they are being set up.
+
+115
+00:12:43,000 --> 00:12:52,000
+Finally, the intermediate value theorem is a very powerful way to find the roots of functions.
+
+116
+00:12:52,000 --> 00:12:58,000
+That’s the end of the discussion of continuity for today, and in the next lesson,
+
+117
+00:12:58,000 --> 00:13:05,000
+we’ll begin discussing differential calculus by using limits to define so-called derivatives.
+
+118
+00:13:05,000 --> 00:13:11,000
+That’s where calculus really becomes useful in a very profound way. Next lesson is a time
+
+119
+00:13:11,000 --> 00:13:17,000
+we start looking deeper into calculus, but before doing that, do review today’s lesson,
+
+120
+00:13:17,000 --> 00:13:23,000
+try and solve the exercises and be ready for the next time. It was great to present this to you.
+
+121
+00:13:23,000 --> 00:13:24,000
+Thank you very much.
+

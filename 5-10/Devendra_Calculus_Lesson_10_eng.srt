@@ -1,0 +1,268 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 10 of this introduction to calculus with Wolfram U.
+
+2
+00:00:07,000 --> 00:00:13,000
+The topic for this lesson is derivatives of trigonometric functions.
+
+3
+00:00:13,000 --> 00:00:20,000
+Let’s begin with a brief overview of the lesson. Recall that the trigonometric functions
+
+4
+00:00:20,000 --> 00:00:26,000
+are oscillatory—so they go up and down like waves. You would expect that their derivatives
+
+5
+00:00:26,000 --> 00:00:31,000
+would oscillatory too. Here’s an example that illustrates that.
+
+6
+00:00:31,000 --> 00:00:39,000
+Here’s a function <i>f</i> which is composed of sine and cosine, and if you plot the function along with
+
+7
+00:00:39,000 --> 00:00:47,000
+the derivative, then what you see is they are both oscillatory. The blue graph is <i>f</i>
+
+8
+00:00:47,000 --> 00:00:56,000
+and the orange graph is <i>f</i>', and as <i>f</i> changes in an oscillatory way, so does <i>f</i>'.
+
+9
+00:00:56,000 --> 00:01:03,000
+But of course I haven’t told you how to find the derivative of <i>f</i>, and that’s the goal of today’s lesson.
+
+10
+00:01:03,000 --> 00:01:10,000
+The goal of this lesson is to develop a table of derivatives for trigonometric functions.
+
+11
+00:01:10,000 --> 00:01:18,000
+Let’s begin with the sine function. Here’s the sine function, and to find the derivative,
+
+12
+00:01:18,000 --> 00:01:25,000
+we simply apply the definition—namely, it’s the limit of the difference quotient as <i>h</i> approaches 0—
+
+13
+00:01:25,000 --> 00:01:32,000
+and you get back Cos[<i>x</i>].That says that the derivative of sine is cosine.
+
+14
+00:01:32,000 --> 00:01:41,000
+Let’s confirm that with D. Here’s a plot of both the functions sine and cosine.
+
+15
+00:01:41,000 --> 00:01:45,000
+Sine is the function and cosine is the derivative of the function.
+
+16
+00:01:45,000 --> 00:01:54,000
+Let’s go on now to the cosine function. Once again, we apply the definition, and what you get back
+
+17
+00:01:54,000 --> 00:01:59,000
+this time is the negative of the sine. That’s important: the derivative of cosine
+
+18
+00:01:59,000 --> 00:02:05,000
+is the negative of the sine function. Let’s confirm that with D.
+
+19
+00:02:05,000 --> 00:02:15,000
+You get back −Sin[<i>x</i>]. Here is a plot of both the functions Cos[<i>x</i>] and its derivative −Sin[<i>x</i>].
+
+20
+00:02:15,000 --> 00:02:27,000
+Let’s go on further to the tangent function. Here’s <i>f</I> = Tan[<i>x</i>]. Work out the derivative with the definition
+
+21
+00:02:27,000 --> 00:02:36,000
+and you get back Sec^2[<i>x</i>]—so that’s to be remembered, that the derivative of Tan[<i>x</i>] is Sec^2[<i>x</i>].
+
+22
+00:02:36,000 --> 00:02:42,000
+Let’s confirm that with D, and the question is why is there is a square in the answer?
+
+23
+00:02:42,000 --> 00:02:50,000
+Well, when you plot <i>f</i> and the derivative, you see that the tangent function is always increasing,
+
+24
+00:02:50,000 --> 00:02:57,000
+so the derivative, as the slope of tangent is always non-negative—and that’s why the derivative
+
+25
+00:02:57,000 --> 00:03:02,000
+has got a square in it. So Sec^2 lies above the <i>x</i> axis.
+
+26
+00:03:02,000 --> 00:03:10,000
+Okay. Now we go on to the reciprocals. The secant function has derivative
+
+27
+00:03:10,000 --> 00:03:21,000
+Sec[<i>x</i>] * Tan[<i>x</i>], and here’s a confirmation with D. Let’s plot them both, and there you are.
+
+28
+00:03:23,000 --> 00:03:28,000
+Next we go on to the cosecant function. That’s the reciprocal of sine,
+
+29
+00:03:28,000 --> 00:03:38,000
+and its derivative is negative of cotangent times cosecant. Confirm that with D,
+
+30
+00:03:38,000 --> 00:03:46,000
+and once again we can plot it to get the function and its derivative.
+
+31
+00:03:48,000 --> 00:03:58,000
+Finally we got on to the cotangent function. Now its derivative turns out to be −Csc^2[<i>x</i>].
+
+32
+00:03:58,000 --> 00:04:06,000
+You can confirm that with D, and the question is why is there a negative sign?
+
+33
+00:04:06,000 --> 00:04:13,000
+Well, the point is that unlike the tangent, the cotangent is always decreasing,
+
+34
+00:04:13,000 --> 00:04:17,000
+and so its derivative is always negative.
+
+35
+00:04:19,000 --> 00:04:26,000
+Okay. Let’s summarize a bit. Here you have the six functions that we just spoke about—
+
+36
+00:04:26,000 --> 00:04:34,000
+sine, cosine, tangent, secant, cosecant, cotanget—and here are their derivatives.
+
+37
+00:04:34,000 --> 00:04:43,000
+That says that the derivative of sine is cosine, et cetera, and that small table is well worth memorizing
+
+38
+00:04:43,000 --> 00:04:53,000
+for all your future work. Let’s plot them, and you see that you have all the functions
+
+39
+00:04:53,000 --> 00:04:59,000
+and their derivatives in just one picture, with the top three being sine, cosine, tangent,
+
+40
+00:04:59,000 --> 00:05:03,000
+and the bottom being secant, cosecant and cotangent.
+
+41
+00:05:04,000 --> 00:05:09,000
+Okay. Just a little bit about the higher derivatives of the trigonometric functions.
+
+42
+00:05:09,000 --> 00:05:15,000
+We know that the trigonometric functions have a cyclical nature. You would expect that
+
+43
+00:05:15,000 --> 00:05:21,000
+there’s some kind of interesting pattern in their derivatives, and indeed that’s what happens.
+
+44
+00:05:21,000 --> 00:05:33,000
+Here is a table of the first four derivatives of sine. You’ve got Sin[<i>x</i>]. Its derivative is Cos[<i>x</i>].
+
+45
+00:05:33,000 --> 00:05:39,000
+Its derivative is −Sin[<i>x</i>], then −Cos[<i>x</i>] and then Sin[<i>x</i>]. You see that you’re back to Sin[<i>x</i>]
+
+46
+00:05:39,000 --> 00:05:45,000
+after a cycle of four derivatives, and that says that, for example, if I ask you
+
+47
+00:05:45,000 --> 00:05:52,000
+what is the 1,001st derivative of the sine function, you will say, oh yes, if we divide by 4
+
+48
+00:05:52,000 --> 00:06:00,000
+we just get 1 as the remainder, so the answer is Cos[<i>x</i>]. In fact, there is a very nice formula for
+
+49
+00:06:00,000 --> 00:06:09,000
+the <i>n</i>th derivative of the sine function. It’s just Sin[<i>x</i>] + <i>n</i> * <i>y</i>/2, and you can check that
+
+50
+00:06:09,000 --> 00:06:16,000
+that gives you the correct answers when you plug in the values of <i>n</i> as 1, 2, 3, 4, et cetera.
+
+51
+00:06:16,000 --> 00:06:27,000
+Finally here is a plot of all the derivatives of Sin[<i>x</i>], and you see quite clearly that
+
+52
+00:06:27,000 --> 00:06:33,000
+you start off at sine, then you go to cosine, then you go to negative sine,
+
+53
+00:06:33,000 --> 00:06:36,000
+then you go to negative cosine, then you come back to sine.
+
+54
+00:06:37,000 --> 00:06:46,000
+That is the end of today’s lesson, but let’s summarize. Because the trig functions are periodic,
+
+55
+00:06:46,000 --> 00:06:52,000
+then so are their derivatives. The derivative of sine is cosine.
+
+56
+00:06:53,000 --> 00:07:00,000
+The derivative of cosine is negative sine. The derivative of tangent is secant squared.
+
+57
+00:07:00,000 --> 00:07:04,000
+The derivative of secant is secant times tangent.
+
+58
+00:07:04,000 --> 00:07:10,000
+The derivative of cosecant is negative cosecant times cotangent.
+
+59
+00:07:10,000 --> 00:07:18,000
+The derivative of cotangent is negative cosecant squared. That short list should be enough
+
+60
+00:07:18,000 --> 00:07:23,000
+for most applications. Now this is a very short lesson, but it’s a very useful lesson
+
+61
+00:07:23,000 --> 00:07:29,000
+and it’s a very important lesson because the trig functions appear in all kinds of applications,
+
+62
+00:07:29,000 --> 00:07:36,000
+starting from the motions of particles around circles to the electric currents
+
+63
+00:07:36,000 --> 00:07:42,000
+that flow through wires, et cetera. Knowing the derivatives for these functions is a great step
+
+64
+00:07:42,000 --> 00:07:49,000
+in your knowledge of calculus. In the next lesson, we’ll talk about the so-called chain rule,
+
+65
+00:07:49,000 --> 00:07:54,000
+which deals with compositions of functions. But before then, do revise this lesson and make sure
+
+66
+00:07:54,000 --> 00:07:58,000
+you understand the trig function derivatives. I’ll stop over here.
+
+67
+00:07:58,000 --> 00:08:01,000
+Thank you very much. I hope you enjoyed the lesson.
+
