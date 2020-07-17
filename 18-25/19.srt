@@ -1,82 +1,82 @@
 1
 00:00:00,000 --> 00:00:06,000
 Hello, and welcome to Lesson 19 of this introduction to calculus with Wolfram U.
-大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第19课。
+大家好 欢迎来到本次与沃尔夫兰大学合作的微积分入门第19课
 
 2
 00:00:06,000 --> 00:00:14,000
 The topic for this lesson is asmyptotes. Let’s begin with a brief overview of the lesson.
-本节课的主题是asmyptotes。我们先来简单介绍一下本课的内容。
+本节课的主题是渐近线  我们先来简单介绍一下本课的内容
 
 3
 00:00:14,000 --> 00:00:18,000
 In the past, we have learned how to calculate the limits of functions at points.
-在过去，我们已经学会了如何计算函数在点上的极限。
+在过去 我们已经学会了如何计算函数在点上的极限
 
 4
 00:00:18,000 --> 00:00:26,000
 For example, if I said find the limit of 3<i>x</i> as <i>x</i>→2, then the answer of course is just 6.
-例如，如果我说找3<i>x</i>的极限为<i>x</i>→2，那么答案当然只是6。
+例如 如果我说找3<i>x</i>的极限为<i>x</i>→2，那么答案当然只是6
 
 5
 00:00:26,000 --> 00:00:35,000
 But you can also take limits at positive or negative infinity. For example, if you said
-但你也可以在正无穷或负无穷处取极限。例如，如果你说
+但你也可以在正无穷或负无穷处取极限  例如 如果你说
 
 6
 00:00:35,000 --> 00:00:45,000
 a limit of 3<i>x</i> as <i>x</i>→∞, the answer is ∞. At –∞, just the opposite happens; you get back –∞.
-3<i>x</i>的极限为<i>x</i>→∞，答案为∞。在-∞时，刚好相反，你得到的是-∞。
+3<i>x</i>的极限为<i>x</i>→∞，答案为 ∞  在 -∞ 时 刚好相反 你得到的是 -∞
 
 7
 00:00:45,000 --> 00:00:53,000
 Now the nice thing is that although you might have infinite limits, the actual answer might be finite.
-现在好的是，虽然你可能有无限的限制，但实际的答案可能是有限的。
+不错的是虽然你可能有无限的限制 但实际的答案可能是有限的
 
 8
 00:00:53,000 --> 00:01:01,000
 In this case, you have the limit of 1/<i>x</i> as <i>x</i>→∞ going to 0. There are various kinds of
-在这种情况下，你有1/<i>x</i>的极限，因为<i>x</i>→∞去0。
+在这种情况下 你有1/<i>x</i>的极限 因为<i>x</i>→∞ 趋近于 0
 
 9
 00:01:01,000 --> 00:01:09,000
 of interesting behaviors taking place at infinity, and these are so-called end behaviors of functions.
-在无穷大处发生的有趣行为，这些就是所谓的函数的末端行为。
+有各种各样在无穷大处发生的有趣事 这些就是所谓的函数的末端行为
 
 10
 00:01:09,000 --> 00:01:16,000
 That’s the theme for this lesson, which will be used to sketch graphs eventually.
-这就是本节课的主题，最终会用到草图。
+这就是本节课的主题，最终会用到绘制图像上
 
 11
 00:01:17,000 --> 00:01:22,000
 Let’s begin with some more motivation and talk about horizontal asymptotes.
-我们先再来激励一下，说说横向渐变。
+我们先再来说说横向渐变
 
 12
 00:01:23,000 --> 00:01:32,000
 If you look at this table over here, it’s a table for 1/<i>x</i> as <i>x</i>→∞, and you see that as <i>x</i> becomes larger,
-如果你看这边的这个表，这是一个1/<i>x</i>的表，因为<i>x</i>→∞，你看随着<i>x</i>变大。
+如果你看这边的这个表 这是一个1/<i>x</i>的表 因为<i>x</i>→∞ 你看随着<i>x</i>变大
 
 13
 00:01:32,000 --> 00:01:40,000
 the value of 1/<i>x</i> becomes smaller. As <i>x</i> approaches ∞, 1/<i>x</i> gets closer and closer to 0,
-1/<i>x</i>的值越来越小。当<i>x</i>接近∞时，1/<i>x</i>越来越接近于0。
+1/<i>x</i>的值越来越小  当<i>x</i>接近 ∞ 时 1/<i>x</i>越来越接近于 0
 
 14
 00:01:40,000 --> 00:01:51,000
 and hence 0 is a horizontal asymptote of 1/<i>x</i>. You can actually check that in a plot.
-因此0是1/<i>x</i>的水平渐近线。其实你可以在图中检查一下。
+因此 0 是1/<i>x</i>的水平渐近线 其实你可以在图中检查一下
 
 15
 00:01:51,000 --> 00:01:57,000
 You see over here you have the graph of 1/<i>x</i>, and that’s the horizontal asymptote.
-你看这里有1/<i>x</i>的图形，这就是水平渐近线。
+你看这里有1/<i>x</i>的图像 这就是水平渐近线
 
 16
 00:01:57,000 --> 00:02:04,000
 It’s just a horizontal line to which the plot approaches as <i>x</i>→∞.
-它只是一条水平线，当<i>x</i>→∞时，剧情向其靠近。
+它只是一条水平线 当<i>x</i>→∞时 剧情向其靠近
 
 17
 00:02:04,000 --> 00:02:17,000
