@@ -81,404 +81,404 @@ It’s just a horizontal line to which the plot approaches as <i>x</i>→∞.
 17
 00:02:04,000 --> 00:02:17,000
 Now a more formal definition. The limit of <i>f</i>[<i>x</i>] is <i>L</i> as <i>x</i>→∞ if the value if the values of <i>f</i>[<i>x</i>]
-现在来个更正式的定义。<i>f</i>[<i>x</i>]的极限是<i>L</i>，因为<i>x</i>→∞如果<i>f</i>[<i>x</i>]的值是<i>f</i>[<i>x</i>]。
+现在来个更正式的定义  当 <i>x</i>→∞ 时 <i>f</i>[<i>x</i>]的极限是<i>L</i> 
 
 18
 00:02:17,000 --> 00:02:27,000
 approach <i>L</i> as <i>x</i> becomes sufficiently large. When you add –∞, the same statement holds,
-当<i>x</i>变得足够大时，接近<i>L</i>。当你加上-∞时，同样的说法也成立。
+如果当<i>x</i>变得足够大时 <i>f</i>[<i>x</i>] 的值会接近 <i>L</i> 当你加上 -∞ 时 同样也成立
 
 19
 00:02:27,000 --> 00:02:35,000
 except that you’re now taking <i>x</i> to be sufficiently large and negative. Then a line <i>y</i> = <i>L</i>
-除了你现在把<i>x</i>取为足够大的负值。那么一条线<i>y</i>=<i>L</i>。
+除非你现在把<i>x</i>取为足够大的负值  
 
 20
 00:02:35,000 --> 00:02:46,000
 is a horizontal asymptote of the curve <i>y</i> = <i>f</i>[<i>x</i>] if the limit of <i>f</i>[<i>x</i>] at ∞ or –∞ is <i>L</i>.
-是曲线<i>y</i>=<i>f</i>[<i>x</i>]的水平渐近线，如果<i>f</i>[<i>x</i>]在∞或-∞处的极限是<i>L</i>。
+如果 <i>f</i>[<i>x</i>] 在 ∞ 或 -∞ 处的极限是 <i>L</i> 那么直线<i>y</i>=<i>L</i>是曲线<i>y</i>=<i>f</i>[<i>x</i>]的水平渐近线  
 
 21
 00:02:46,000 --> 00:02:58,000
 Here’s a plot for the function (<i>x</i>^2 + 1)/(<i>x</i>^2 – 1). When <i>x</i> approaches ∞ or –∞, the values of <i>y</i>
-下面是函数(<i>x</i>^2 + 1)/(<i>x</i>^2 - 1)的图。当<i>x</i>接近∞或-∞时，<i>y</i>的值为
+下面是函数(<i>x</i>^2 + 1)/(<i>x</i>^2 - 1)的图像  当 <i>x</i> 接近 ∞ 或 -∞ 时 <i>y</i> 的值将
 
 22
 00:02:58,000 --> 00:03:06,000
 will approach 1. Roughly speaking, when <i>x</i> is very large, you get (<i>x</i>^2)/(<i>x</i>^2), which is 1.
-将接近1。粗略地讲，当<i>x</i>非常大时，你会得到(<i>x</i>^2)/(<i>x</i>^2)，也就是1。
+接近 1  粗略地讲 当<i>x</i>非常大时 你会得到 (<i>x</i>^2)/(<i>x</i>^2) 也就是1
 
 23
 00:03:07,000 --> 00:03:14,000
 Okay. Now let’s talk about the opposite behavior where you do not have a finite answer at ∞,
-好了，现在我们来谈谈相反的行为，即在∞处没有有限的答案。现在让我们来谈谈相反的行为，在∞处你没有一个有限的答案。
+好了 现在我们来谈谈相反的情况 即在 ∞ 处没有有限的答案
 
 24
 00:03:14,000 --> 00:03:20,000
 you have infinite limits at ∞. Here’s a very simple example which we saw earlier on as well.
-你在∞处有无限的极限。这里有一个很简单的例子，我们前面也看到了。
+你在 ∞ 处有无限的极限 这里有一个很简单的例子 我们前面也看到了
 
 25
 00:03:20,000 --> 00:03:25,000
 When you take the limit of 3<i>x</i> as it approaches ∞, the answer is ∞.
-当你把3<i>x</i>的极限接近∞时，答案是∞．
+当你把 3<i>x</i> 的极限接近 ∞ 时 答案是 ∞
 
 26
 00:03:25,000 --> 00:03:34,000
 Just the opposite happens at –∞, so the plot over here has no horizontal asymptotes.
-只是在-∞处发生了相反的情况，所以这边的图没有水平渐变。
+只是在 -∞ 处发生了相反的情况  所以这边的图没有水平渐进性
 
 27
 00:03:35,000 --> 00:03:41,000
 Okay. Now one might talk about the laws of limits at ∞ just as before. You remember that
-好了，现在可以像以前一样，谈谈∞处的极限规律。现在可以像以前一样，谈谈∞处的极限规律。你还记得吗？
+好了 现在可以像以前一样 谈谈 ∞ 处的极限规律 你还记得
 
 28
 00:03:41,000 --> 00:03:47,000
 we have talked about mathematical laws that limits obey, and most of these laws
-我们已经谈到了极限服从的数学规律，而这些规律大多是
+我们已经谈到了极限所遵守的数学规律  而这些规律大多是
 
 29
 00:03:47,000 --> 00:03:54,000
 also apply to limits at ∞, but you must be a bit careful. The reason why you must be careful is that
-也适用于∞处的限制，但你必须小心一点。必须小心的原因是
+也适用于极限 ∞ 处的情况  但你必须小心一点 原因是
 
 30
 00:03:54,000 --> 00:04:00,000
 now more than ever, you could have things which are both ∞, and when you try to cancel them,
-现在比以往任何时候都要多，你可能有的东西都是∞，而当你试图取消它们时。
+现在比以往任何时候都要可能碰到一些情况  可能有的东西两项都趋近于 ∞  而当你试图消去它们时
 
 31
 00:04:00,000 --> 00:04:09,000
 you do not get back 0. Here’s an example. You have <i>x</i>^3 – <i>x</i>, and as <i>x</i>→∞, you get ∞ – ∞.
-你不会得到回0。这里有一个例子。你有<i>x</i>^3 - <i>x</i>，由于<i>x</i> →∞，你得到∞ - ∞。
+你不会得到趋近于0的结果  这里有一个例子 <i>x</i>^3 - <i>x</i> 由于<i>x</i> →∞ 你得到 ∞ - ∞ 
 
 32
 00:04:09,000 --> 00:04:16,000
 But that’s not 0, so you get back a False over here. But if you think of it as being ∞ * ∞,
-但这不是0，所以你在这边得到的是False。但如果你把它看成是∞*∞。
+但结果不是0 所以你在这边得到的是 False (结果为'假') 但如果你把它看成是 ∞ * ∞
 
 33
 00:04:16,000 --> 00:04:23,000
 then the answer really is ∞. Better still, you could think of this as being <i>x</i>^3
-那么答案真的是∞。更好的是，你可以把它看成是<i>x</i>^3
+那么答案是 ∞  更好的是 你可以把它看成是 <i>x</i>^3
 
 34
 00:04:23,000 --> 00:04:29,000
 as very large compared to <i>x</i>, so the answer is ∞.
-因为与<i>x</i>相比非常大，所以答案为∞。
+因为与 <i>x</i> 相比非常大 所以答案为 ∞
 
 35
 00:04:31,000 --> 00:04:39,000
 Okay. A very important law which you can use for limits at infinity is the following.
-好吧，你可以用以下一个非常重要的法则来计算无穷大的极限。一个非常重要的法则，你可以用在无限大的极限上，就是下面。
+好吧 你可以用以下面非常重要的法则来计算无穷大的极限
 
 36
 00:04:39,000 --> 00:04:47,000
 You look at the limit of (1/<i>x</i>)^<i>r</i> where <i>r</i> is some positive rational number,
-你看(1/<i>x</i>)^<i>r</i>的极限，其中<i>r</i>是某个正有理数。
+你看 (1/<i>x</i>)^<i>r</i> 的极限 其中<i>r</i>是某个正有理数
 
 37
 00:04:47,000 --> 00:04:56,000
 and if you assume that <i>r</i> is positive, then this limit is always 0. Just the same thing happens at –∞.
-而如果你假设<i>r</i>是正值，那么这个极限总是0。只是同样的事情发生在-∞处。
+而如果你假设 <i>r</i> 是正值 那么这个极限总是0 只是同样的事情发生在 -∞ 处
 
 38
 00:04:56,000 --> 00:05:03,000
 You get back a 0 over there as well. For example, if you want the limit of 1/<i>x</i>^2
-你在那边也会回一个0。例如，如果你想知道1/<i>x</i>^2的极限。
+你得到趋近于 0  例如 如果你想知道 1/<i>x</i>^2 的极限
 
 39
 00:05:03,000 --> 00:05:11,000
 as <i>x</i> approaches either plus or minus infinity, the answer is just 0. This law is the basis of
-当<i>x</i>接近正无穷或负无穷时，答案就是0。
+当 <i>x</i> 接近正无穷或负无穷时 答案就是 0
 
 40
 00:05:11,000 --> 00:05:19,000
 lot of problem solving which we’ll see in the next few minutes. As my first example,
-很多问题的解决，我们将在接下来的几分钟内看到。作为我的第一个例子。
+这是很多问题解决的基础  我们将在接下来的几分钟内看到几个例子  第一个例子
 
 41
 00:05:19,000 --> 00:05:27,000
 let’s take a rational function. If you want the limit at ∞, then notice that the highest power
-让我们取一个有理函数。如果你想在∞处得到极限，那么请注意，最高次幂的
+让我们取一个有理函数 如果你想在 ∞ 处得到极限  那么请注意
 
 42
 00:05:27,000 --> 00:05:37,000
 in the numerator and denominator is <i>x</i>^2. You divide by that and use a function called Apart,
-的分子和分母是<i>x</i>^2。你除以这个数，然后使用一个叫做Apart的函数。
+分子和分母中的最高幂是是<i>x</i>^2 你除以这个数 然后使用一个叫做Apart的函数
 
 43
 00:05:37,000 --> 00:05:42,000
 which will break apart the expressions. You see over here that as <i>x</i> approaches ∞,
-这将拆分表达式。你看这边，当<i>x</i>接近∞时。
+它可以拆分表达式  你看这里当 <i>x</i> 接近 ∞ 时
 
 44
 00:05:42,000 --> 00:05:48,000
 by the previous law, both those terms give you 0, and both those terms give you 0 as well,
-由前面的规律，这两个条件都给你0，这两个条件也给你0。
+根据前面的规律 左边的式子(分子)这一部分是 0  右边的式子(分母)这一部分也同样是 0
 
 45
 00:05:48,000 --> 00:05:56,000
 so the limit of the numerator is just 2—that’s the 2 from here—and the denominator,
-所以分子的极限只是2--也就是这里的2--分母。
+所以左边的极限是 2 
 
 46
 00:05:56,000 --> 00:06:04,000
 the limit is just going to be 3. That’s the 3 from over there. To summarize, the limit of this
-限制就是要3个。就是那边的3。综上所述，这个极限的
+右边的极限是 3  综上所述
 
 47
 00:06:04,000 --> 00:06:11,000
 rather difficult-looking function is just 2/3 as <i>x</i>→∞.
-相当难看的函数只是2/3，因为<i>x</i> →∞。
+当<i>x</i> → ∞  这个看起来很复杂函数的极限只是 2/3
 
 48
 00:06:12,000 --> 00:06:17,000
 Okay. That’s the rational case, and now let’s take a case where you have the combination of
-好的，这就是合理的情况。这是合理的情况下，现在让我们采取的情况下，你有组合的。
+这就是合理的情况  现在让我们看看这种情况  你有组合的。
 
 49
 00:06:17,000 --> 00:06:27,000
 a radical and a rational. Okay. Now that’s your function <i>f</i>[<i>x</i>], and notice that the highest power
-一个激进的和一个理性的。好了，现在这就是你的函数&lt;i&gt;f&lt;/i&gt;[&lt;i&gt;x&lt;/i&gt;]。这就是你的函数<i>f</i>[<i>x</i>]，请注意，最高的幂是
+一个带根号的式子的和一个有理数的式子 这就是函数 &lt;i&gt;f&lt;/i&gt;[&lt;i&gt;x&lt;/i&gt;] 请注意，最高的幂是
 
 50
 00:06:27,000 --> 00:06:33,000
 is <i>x</I> because you’ve got a square root of <i>x</i>^2 roughly, so if you divide by that, then you see that
-是<i>x</I>，因为你已经得到了<i>x</i>^2的平方根，所以如果你除以它，你会看到
+是<i>x</I>  因为你已经得到了 <i>x</i>^2 的平方根 所以如果你除以它 你会看到
 
 51
 00:06:33,000 --> 00:06:42,000
 the numerator will have a limit of √5 as <i>x</i>→∞ and the denominator will have a limit of 2 as <i>x</i>→∞,
-分子的极限为√5，因为<i>x</i> →∞，分母的极限为2，因为<i>x</i> →∞。
+当 <i>x</i> → ∞ 分子的极限为 √5  当 <i>x</i> →∞ 分母的极限为 2
 
 52
 00:06:42,000 --> 00:06:48,000
 so those are the answers separately. Then if you divide them, you get the limit
-所以这些都是分别的答案。然后如果你把它们除以，你就会得到极限值
+所以这些都是各自的答案  然后如果你把它们相除 
 
 53
 00:06:48,000 --> 00:06:52,000
 for the entire radical rational expression.
-为整个根本理性表达。
+你就会得到整个带 根号的 有理的 表达式的极限值
 
 54
 00:06:54,000 --> 00:07:03,000
 Finally, let’s take a pure radical. Here is a radical function. The problem is that as <i>x</i>→∞,
-最后，我们来看看一个纯基。这里是一个基函数。问题是，由于<i>x</i> →∞。
+最后我们来看看一个纯根式 这里是一个带根式的函数 问题是当 <i>x</i> →∞
 
 55
 00:07:03,000 --> 00:07:10,000
 you roughly speaking get ∞ – ∞, and you cannot define that. What we do is we work with
-你大致上得到∞--∞，而你无法定义它。我们要做的是我们用
+你大致上得到 ∞-∞  而你无法定义它 我们要做的是我们用
 
 56
 00:07:10,000 --> 00:07:17,000
 the conjugate radical and multiply <i>f</i> by it. You see over here that if we simplify it,
-的共轭基，并将其乘以<i>f</i>。你看这边，如果我们把它简化。
+的共轭根式 并将其乘以<i>f</i> 你看这里 如果我们把它简化
 
 57
 00:07:17,000 --> 00:07:26,000
 the answer is just 4. In other words, the function is simply 4/(<i>x</I> + √(<i>x</i>^2 + 4)).
-换句话说，这个函数只是4/(<i>x</I>+√(<i>x</i>^2+4))。
+这个答案是 4  换句话说 这个函数只 4/(<i>x</I>+√(<i>x</i>^2+4))
 
 58
 00:07:27,000 --> 00:07:37,000
 When <i>x</i> becomes very large, the denominator is much larger than the numerator, so the answer is 0
-当<i>x</i>变得很大时，分母比分子大得多，所以答案为0．
+当 <i>x</i> 变得很大时 分母比分子大得多 所以极限的答案为 0
 
 59
 00:07:37,000 --> 00:07:47,000
 for the limit. You can confirm that with a plot. You see the limit approaches 0 as <i>x</i>→∞.
-为极限。你可以用一张图来证实这一点。您可以看到，当<i>x</i> →∞时，极限接近0。
+你可以用一张图来证实这一点 您可以看到，当 <i>x</i> →∞ 时 极限接近 0
 
 60
 00:07:49,000 --> 00:07:56,000
 Okay. How about compositions? Remember that if you have a composition of <i>f</i> and <i>g</i>
-好吧，那组成呢？记住，如果你有一个由<i>f</i>和<i>g</i>组成的组成。
+那组成呢？ 记住 如果你有一个由 <i>f</i>和<i>g</i> 组成的组合
 
 61
 00:07:56,000 --> 00:08:05,000
 and you want to find the limit as <i>x</i>→<i>a</i>, then what you could do is take the limit inside the function <i>f</i>,
-而你想找极限为<i>x</i> →<i>a</i>，那么你可以做的是在函数<i>f</i>中取极限。
+你想找极限为 <i>x</i> →<i>a</i> 可以这么说 如果 <i>f</i> 是连续的而且极限存在
 
 62
 00:08:05,000 --> 00:08:11,000
 so to speak, provided that <i>f</i> is continuous and the limit exists. Here’s an example.
-可以这么说，只要<i>f</i>是连续的，而且极限存在。这里有一个例子。
+那么你就可以在函数 <i>f</i> 中取极限 这里有一个例子
 
 63
 00:08:11,000 --> 00:08:20,000
 You have a function Cos[1/<i>x</i>]. That’s the composition. If you look at the inner limit as <i>x</i>→∞,
-你有一个函数Cos[1/<i>x</i>]。这就是构成。如果你把内限看成<i>x</i> →∞。
+你有一个函数 Cos[1/<i>x</i>] 这就是构成。如果你把内极限看成 <i>x</i> →∞
 
 64
 00:08:20,000 --> 00:08:32,000
 then you get back 0. Then if you take the outer limit, you’ll get back a 1 because the cosine of 0 is 1.
-那么你就会得到0.那么如果你取外限，你会得到一个1，因为0的余弦是1。
+那么你就会得到 0 那么如果你取外极限 你会得到一个 1  因为 0 的余弦是 1
 
 65
 00:08:32,000 --> 00:08:43,000
 Here is a plot of the function, and you see that as <i>x</i> becomes very large, the function value approaches ∞.
-这是函数的图，你可以看到，当<i>x</i>变得非常大时，函数值接近∞。
+这是函数的图 你可以看到 当<i>x</i>变得非常大时 函数值接近 ∞
 
 66
 00:08:45,000 --> 00:08:52,000
 Okay. Now in the last two slides, I’ll talk about two shortcuts for computing
-好了，现在在最后两张幻灯片中，我将谈谈计算的两个捷径。现在，在最后两张幻灯片中，我将谈谈计算的两个捷径。
+现在在最后两张幻灯片 我将谈谈计算极限在无穷的有理函数的两个捷径
 
 67
 00:08:52,000 --> 00:08:58,000
 rational function limits at infinity. There are some special tricks which are
-有理函数极限在无穷大。有一些特殊的技巧是
+在这个领域有一些特殊的技巧是很值得我们了解的
 
 68
 00:08:58,000 --> 00:09:04,000
 well worth knowing in this area. For example, if we have a rational function
-很值得我们了解这方面的知识。例如，如果我们有一个有理函数
+例如 如果我们有一个有理函数
 
 69
 00:09:04,000 --> 00:09:14,000
 and the degree of the numerator is less than the degree of the denominator like over here,
-而分子的度数小于分母的度数，就像这里。
+而分子的度数小于分母的度数 就像这里
 
 70
 00:09:14,000 --> 00:09:21,000
 then then whether you are at ∞ or –∞, the answer is going to be 0 because the denominator grows
-那么无论你是在∞还是-∞，答案都会是0，因为分母会增长。
+那么无论你是在 ∞ 还是 -∞  答案都会是 0 因为分母会增大的速度比分子快得多
 
 71
 00:09:21,000 --> 00:09:30,000
 much more rapidly than the numerator. On the other hand, if the degrees agree
-比分子的速度快得多。另一方面，如果度数一致
+另一方面，如果幂一致
 
 72
 00:09:30,000 --> 00:09:36,000
 so the degree of the numerator equals the degree of the denominator, then all that you do is
-所以分子的度数等于分母的度数，那么你所做的就是
+也就是分子的幂等于分母的幂 那么你所做的就是
 
 73
 00:09:36,000 --> 00:09:42,000
 you look at the leading coefficients and you get back the answer 2/7 in both the cases over here.
-你看一下领先系数，在这边的两种情况下，你会得到2/7的答案。
+你看一下首项系数 在这边的两种情况下 你会得到答案为 2/7
 
 74
 00:09:43,000 --> 00:09:49,000
 We’ve covered the case of when the degree is less for the numerator than the denominator
-我们已经介绍了分子的度数小于分母的情况。
+我们已经介绍了分子的度数小于分母的情况
 
 75
 00:09:49,000 --> 00:09:55,000
 and when they are both equal, but the really difficult case is when they are both
-和当它们都相等时，但真正困难的情况是当它们都是
+和当它们都相等时的情况  但真正困难的情况是当它们都是
 
 76
 00:09:55,000 --> 00:10:01,000
 slightly different in the sense that the degree of the numerator is greater than
-略有不同，分子的度数要大过
+略有不同 分子的幂要大过分母的幂
 
 77
 00:10:01,000 --> 00:10:07,000
 the degree of the denominator. Now four things can happen. First of all, you have
-分母的度数。现在有四种情况可能发生。首先，你有
+现在有四种情况可能发生。首先
 
 78
 00:10:07,000 --> 00:10:15,000
 a positive expression at ∞, so you have <i>x</I>^6 roughly at ∞ and <i>x</i>^2 over here.
-在∞处是一个正表达式，所以你有<i>x</I>^6大致在∞处，<i>x</i>^2在这里。
+在 ∞ 处有一个正值的表达式  所以在 ∞ 处分子有<i>x</I>^6  分母有 <i>x</i>^2
 
 79
 00:10:15,000 --> 00:10:24,000
 Then as you approach ∞, then both of these become ∞ because the difference
-那么当你接近∞的时候，那么这两个都变成了∞，因为不同的是
+那么当接近 ∞ 的时候 那么这两个都变成了 ∞ 因为不同的是
 
 80
 00:10:24,000 --> 00:10:34,000
 between the two degrees is even. If, on the other hand, you have a negative expression at infinity,
-两度之间是偶数。如果另一方面，你在无穷大处有一个负表达式。
+幂之间是偶数  如果另一方面 你在无穷大处有一个负表达式
 
 81
 00:10:34,000 --> 00:10:42,000
 –2/3 roughly over here and –2/3 roughly over there, then the answer for both the limits will be –∞.
-这里的-2/3大致超过，那里的-2/3大致超过，那么这两个极限的答案将是-∞。
+这里大致是 -2/3  那里大致 -2/3  那么这两个极限的答案将是 -∞
 
 82
 00:10:42,000 --> 00:10:49,000
 Now on the other hand, if you have an odd difference for the degrees
-现在另一方面，如果你的度数有奇异的差别
+现在另一方面如果有幂的奇数差
 
 83
 00:10:49,000 --> 00:10:58,000
 and the function is positive for larger values, then you see that the degree will affect the answer
-而且函数的值越大越正，那么你会发现度数会影响答案
+而且函数的值越大时为正 那么你会发现幂会影响答案
 
 84
 00:10:58,000 --> 00:11:10,000
 in the sense that we have ∞ at ∞ and –∞ at –∞. After all, roughly speaking, there is <i>x</i>^9 over <i>x</i>^6.
-的意义上，我们在∞处有∞，在-∞处有-∞。毕竟，粗略地讲，有<i>x</i>^9超过<i>x</i>^6。
+我们在 ∞ 处趋近于 ∞ 在  -∞ 处趋近于 -∞  粗略地讲 <i>x</i>^9 大于 <i>x</i>^6 差为 <i>x</i>^3
 
 85
 00:11:10,000 --> 00:11:18,000
 That’s <i>x</i>^3, so as <i>x</i> becomes large, you get ∞, and as <i>x</i> becomes very large and negative, you get –∞.
-那就是<i>x</i>^3，所以当<i>x</i>变大时，就会得到∞，当<i>x</i>变大且为负时，就会得到-∞。
+所以当 <i>x</i> 变大时  就会得到 ∞  当 <i>x</i> 变得很大且为负时 就会得到 -∞
 
 86
 00:11:19,000 --> 00:11:27,000
 Finally, if the function is negative for large values of <i>x</i>, then you see that
-最后，如果函数对<i>x</i>的大值为负，那么你会看到
+最后 如果函数对<i>x</i>的大值为负 那么你会看到
 
 87
 00:11:27,000 --> 00:11:33,000
 you get the opposite behavior. After all, when <i>x</i> is large, the negative sign becomes important.
-你会得到相反的行为。毕竟，当<i>x</i>很大时，负号变得很重要。
+你会得到相反结果  毕竟 当<i>x</i>很大时 负号变得很重要
 
 88
 00:11:33,000 --> 00:11:42,000
 You get –∞ over here and ∞ over here. There are four combinations: both ∞; both –∞;
-这边有-∞，那边有∞。有四种组合：都是∞；都是-∞。
+这边你得到 -∞ 那边得到 ∞  有四种组合：都是 ∞ 都是 -∞
 
 89
 00:11:42,000 --> 00:11:48,000
 and one of them ∞, one of them –∞; and then the other way around.
-而其中一个∞，一个-∞；然后反过来。
+而其中一个是 ∞ 而另一个 -∞  最后一种是其中一个是 -∞ 而另一个 ∞
 
 90
 00:11:50,000 --> 00:11:59,000
 So that’s the end of this lesson. The main point to note is that roughly the same laws hold
-那么这节课就到此为止了。要注意的是，大体上相同的法则也适用于
+那么这节课就到此为止了 要注意的是
 
 91
 00:11:59,000 --> 00:12:05,000
 for limits at infinity as they do at individual points, but you have to be a bit more careful.
-对于无限大的极限，就像他们在各个点上一样，但你必须更加小心。
+对于无限大的极限和就像他们在各个点上的法则是几乎一样的 但你必须更加小心
 
 92
 00:12:05,000 --> 00:12:12,000
 There is a special rule which we saw earlier on for rational functional limits at infinity.
-有一个特殊的规则，我们在前面看到了无穷大处的有理函数极限。
+有一个特殊的规则  我们在前面看到了无穷大处的有理函数极限
 
 93
 00:12:12,000 --> 00:12:20,000
 Sometimes you may need to use a bit of algebra to tackle cases where there are radicals,
-有时你可能需要使用一点代数来处理有基数的情况。
+有时你可能需要使用一点代数来处理有根号的情况
 
 94
 00:12:20,000 --> 00:12:29,000
 and then multiplying by conjugates might help. In general, it’s really as easy to work at infinity
-然后再乘以共轭物，也许会有帮助。一般来说，在无穷大的地方工作真的很容易。
+然后再乘以共轭也许会有帮助 一般来说 在无限远和在有限远的情况下解决问题一样容易
 
 95
 00:12:29,000 --> 00:12:37,000
 as it is with finite points. With what you’ve learned, the next lesson will talk about sketching curves.
-因为它是有限点。有了所学的知识，下节课将讲曲线的草图绘制。
+有了所学的知识 下节课将讲曲线的草图绘制
 
 96
 00:12:37,000 --> 00:12:43,000
 But before you do that, do review this lesson and look at the exercises and be ready for
-但在这之前，要先复习一下本课，看看习题，做好准备。
+但在这之前 要先复习一下本课 看看习题
 
 97
 00:12:43,000 --> 00:12:49,000
 the next lesson on sketching curves. I’ll stop over here. Thank you very much.
-下一节课画曲线的课程。我在这里停一下谢谢你了
+做好下一节课画图像课程的准备 今天就到这里了 谢谢
