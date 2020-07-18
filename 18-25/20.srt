@@ -1,502 +1,501 @@
 1
 00:00:00,000 --> 00:00:06,000
 Hello, and welcome to Lesson 20 of this introduction to calculus with Wolfram U.
-大家好，欢迎来到本次与Wolfram U合作的微积分入门第20课。
+大家好 欢迎来到本次与Wolfram U合作的微积分入门第20课
 
 2
 00:00:06,000 --> 00:00:11,000
 The topic of this lesson is curve sketching.
-本节课的主题是曲线素描。
+本节课的主题是画函数图
 
 3
 00:00:11,000 --> 00:00:15,000
 Let’s begin with a brief overview of the lesson.
-我们先来简单介绍一下本课的内容。
+我们先来简单介绍一下本课的内容
 
 4
 00:00:15,000 --> 00:00:21,000
 Suppose you have a function <i>f</i> like the one shown over here, <i>x</i>^2/(<i>x</i>^2 – 4).
-假设你有一个函数<i>f</i>，如图所示，<i>x</i>^2/（<i>x</i>^2 - 4）。
+假设你有一个函数<i>f</i> 如图所示，<i>x</i>^2/（<i>x</i>^2 - 4）
 
 5
 00:00:21,000 --> 00:00:26,000
 Then you can do several things. For example, you can work out the zeros of the function
-然后你可以做几件事。例如，你可以计算出函数的零点。
+然后你可以做几件事例如，你可以计算出函数的零点
 
 6
 00:00:26,000 --> 00:00:33,000
 simply by solving for <i>f</I>[<i>x</i>] = 0, and you find that they’re 0 at 0.
-只要求出<i>f</I>[<i>x</i>]=0，就会发现它们在0处是0。
+只要求出<i>f</I>[<i>x</i>]=0 就会发现它们在坐标 0 处是 0
 
 7
 00:00:33,000 --> 00:00:39,000
 Or you could work out the vertical asymptotes simply by finding out whether
-或者你可以简单地通过找出垂直渐变线，找出是否有
+或者你可以简单地通过找出垂直渐变线 找出是否有
 
 8
 00:00:39,000 --> 00:00:48,000
 the denominator <i>x</i>^2 – 4 is 0. Then we get the answer either –2 or 2.
-分母<i>x</i>^2 - 4为0，那么我们得到的答案是-2或2。
+分母 <i>x</i>^2 - 4 为 0 的值  那么我们得到的答案是 -2 或 2
 
 9
 00:00:49,000 --> 00:00:57,000
 Or you could work out the horizontal asymptotes by using the limit and letting <i>x</i> go to either ∞ or –∞,
-或者你可以通过使用极限，让<i>x</i>走到∞或-∞来计算出水平渐变线。
+或者你可以通过使用极限  让 <i>x</i> 趋近 ∞ 或 -∞ 来计算出水平渐变线
 
 10
 00:00:57,000 --> 00:01:02,000
 and you find that you actually have horizontal aymptotes, only at 1.
-你会发现，其实你有水平的征兆，只是在1。
+你会发现 其实有水平的渐近线并且只发生在等于 1 的时候
 
 11
 00:01:02,000 --> 00:01:10,000
 Okay. Now with all that information, you can plot by hand or, like I’ve done over here,
-好了，现在有了所有的信息，你可以用手绘图现在有了所有的信息，你可以用手绘制，或者像我在这里做的那样。
+好了 现在有了所有的信息 你可以用手绘图现在有了所有的信息 或者像我在这里做的这样
 
 12
 00:01:10,000 --> 00:01:15,000
 just use the Plot function to get back the same plot showing all the information.
-只需使用Plot函数就可以得到同样的显示所有信息的图。
+只需使用Plot函数就可以得到同样的显示所有信息的图
 
 13
 00:01:15,000 --> 00:01:24,000
 For example, there’s a 0 at 0, et cetera. The goal of this lesson is to help you to sketch functions
-例如，0处有一个0，等等。本课的目的是帮助你绘制函数草图。
+例如 0 点处有一个 0 等等 本课的目的是使用导数帮助你绘制函数草图
 
 14
 00:01:24,000 --> 00:01:32,000
 using derivatives and then perhaps use the Plot function to confirm that all your ideas are correct.
-使用导数，然后或许使用Plot函数来确认你所有的想法都是正确的。
+然后或许使用Plot函数来确认你所有的想法都是正确的
 
 15
 00:01:33,000 --> 00:01:41,000
 Okay. As a set of guidelines that you’ll require for today’s lesson, let’s make a list of things.
-好吧，作为今天课程所需的一套准则，作为今天课程所需要的一套准则，我们来列一个清单。
+作为今天课程所需的一套指南 我们来列一个清单。
 
 16
 00:01:41,000 --> 00:01:47,000
 First of all, when you want to sketch a function, you should find the domain of the function.
-首先，当你要勾画一个函数时，你应该找到函数的域。
+首先 当你要勾画一个函数时 你应该找到函数的定义域
 
 17
 00:01:47,000 --> 00:01:53,000
 Where is the function defined? Next find the <i>x</i> and the <i>y</i> intercepts.
-函数定义在哪里？接下来找出<i>x</i>和<i>y</i>的截距。
+函数定义在哪里？接下来找出 <i>x</i> 和 <i>y</i> 的截距
 
 18
 00:01:53,000 --> 00:02:03,000
 Where does it meet the <i>x</i> and <i>y</i> axes? Next, is the function even? Is it odd? Is it periodic?
-它与<i>x</i>和<i>y</i>轴的交点在哪里？其次，这个函数是偶数吗？它是奇数吗？它是周期性的吗？
+它与 <i>x</i> 和 <i>y</i> 轴的交点在哪里？ 其次 这个函数是偶数吗？是奇数吗？是周期性的吗？
 
 19
 00:02:03,000 --> 00:02:07,000
 If it’s any one of these, then of course everything becomes much simpler.
-如果是以上任何一种，当然一切都变得简单多了。
+如果是以上任何一种 当然一切都变得简单多了
 
 20
 00:02:07,000 --> 00:02:14,000
 Now does the function have either a vertical or horizontal asymptote,
-现在函数是否有垂直或水平的渐近线。
+现在函数是否有垂直或水平的渐近线
 
 21
 00:02:14,000 --> 00:02:18,000
 or perhaps even a slant asymptote? I haven’t told you what a slant asymptote is,
-或者甚至是一个倾斜的渐近线？我还没告诉你什么是斜渐近线。
+或者甚至是一个倾斜的渐近线？ 我还没告诉你什么是 斜渐近线
 
 22
 00:02:18,000 --> 00:02:25,000
 but let’s take that for granted for now. Okay. Next find out the intervals where the function
-但让我们把它视为理所当然的现在。好了，接下来找出函数所在的区间。接下来找出函数
+但现在让我们把它视为理所当然  好了 接下来找出函数增加或减少所在的区间
 
 23
 00:02:25,000 --> 00:02:31,000
 either increases or decreases, and to do that, you could actually use the first derivative
-或增加或减少，要做到这一点，你实际上可以使用第一导数。
+要做到这一点 实际上可以使用一阶导数完成
 
 24
 00:02:31,000 --> 00:02:36,000
 of the function and then apply the increasing or decreasing test.
-的函数，然后应用增减检验。
+然后应用增减判别法
 
 25
 00:02:37,000 --> 00:02:43,000
 Next find the local maxima and minima, for which of course you will first find the critical numbers
-接下来要找到局部最大值和最小值，当然首先要找到临界数。
+当然首先要找到临界数 然后找到局部最大值和最小值 
 
 26
 00:02:43,000 --> 00:02:49,000
 and then use either the first derivative test or the second derivative test.
-然后使用第一导数测试或第二导数测试。
+接下来使用一阶导数判别法和二阶导数判别法
 
 27
 00:02:51,000 --> 00:02:56,000
 Next you’ll want to check the concavity of the function, and for that you’ll use
-接下来你要检查函数的凹凸度，为此你将使用
+然后你要检查函数的凹凸度 为此你将使用
 
 28
 00:02:56,000 --> 00:03:03,000
 the second derivative of the function. Then if the second derivative is positive,
-函数的二次导数。那么如果二次导数为正。
+函数的二阶导数 那么如果二次导数为正
 
 29
 00:03:03,000 --> 00:03:12,000
 then you have a concave upward graph, and if it’s negative, then you have a concave downward graph.
-那么你就有一个向上的凹凸图形，如果是负数，那么你就有一个向下的凹凸图形。
+那么你就有一个向上的凹凸图像  如果是负数 那么你就有一个向下的凹凸图像
 
 30
 00:03:13,000 --> 00:03:18,000
 Finally you might want to find the inflection points, and those are the points at which
-最后，你可能要找到拐点，这些点是在
+最后 你可能要找到拐点 这些点
 
 31
 00:03:18,000 --> 00:03:25,000
 either the second derivative is 0 and switches signs, or in some cases
-要么是第二个导数为0并转换符号，要么在某些情况下是
+要么是第二个导数为 0 并转换符号  要么在某些情况下它甚至可能不容易计算
 
 32
 00:03:25,000 --> 00:03:30,000
 it might not even be easy to calculate. With all that information,
-它甚至可能不容易计算。有了这些信息。
+有了这些信息
 
 33
 00:03:30,000 --> 00:03:35,000
 you can then sketch your curve by hand, or as we’ll do over here, use the Plot function.
-然后你可以用手画出你的曲线，或者像我们在这里做的那样，使用绘图功能。
+你可以用手画出你的曲线 或者像我们在这里做的那样 使用 Plot 函数
 
 34
 00:03:37,000 --> 00:03:42,000
 Okay. Let’s take an example now. Here is a rational function very similar to
-好吧，我们现在举个例子。我们现在举个例子。这是一个非常相似的有理函数
+我们现在举个例子 3<i>x</i>^2/(<i>x</i>^2 -4) 是一个和我们早些时候接触非常相似的有理函数
 
 35
 00:03:42,000 --> 00:03:49,000
 the one we took earlier on: 3<i>x</i>^2/(<i>x</i>^2 – 4). Now of course this function is defined everywhere
-我们早些时候拍的那张。3<i>x</i>^2/(<i>x</i>^2 -4).当然，这个函数在任何地方都被定义为： 3&lt;i&gt;x&lt;/i&gt;^2/(&lt;i&gt;x&lt;/i&gt;^2 - 4).
+当然 这个函数在除了在 -2 和 2 的任何地方都有定义
 
 36
 00:03:49,000 --> 00:03:57,000
 except at –2 and 2, so the domain is those three pieces over here right up to –2,
-除了在-2和2，所以领域是这三块在这里，直到-2。
+所以定义域是这三部分 -∞ 到 -2
 
 37
 00:03:57,000 --> 00:04:04,000
 then between –2 and 2, and then all the way from 2 to ∞, but not including either –2 or 2.
-然后在-2和2之间，再从2一直到∞，但不包括-2或2。
+-2 到 2 再从 2 到 ∞  但不包括 -2 或 2
 
 38
 00:04:04,000 --> 00:04:11,000
 To find the intercepts, you solve <i>f</i>[<i>x</i>] = 0 and also find the value of <i>f</i>[0], and you find that
-要想找到截距，就解<i>f</i>[<i>x</i>]=0，还要找到<i>f</i>[0]的值，就会发现
+要想找到截距，就解 <i>f</i>[<i>x</i>]=0 还要找到 <i>f</i>[0]的值 就会发现
 
 39
 00:04:11,000 --> 00:04:21,000
 those are the <i>x</i> and <i>y</i> intercepts. Next we can check that the function is even simply by
-这些是<i>x</i>和<i>y</i>的截距。接下来我们可以通过以下方法来检查函数是否均匀简单
+这些是 <i>x</i> 和 <i>y</i> 的截距  接下来我们可以通过相等判别来检查函数是否是偶函数
 
 40
 00:04:21,000 --> 00:04:30,000
 equality testing over here, so <i>f</i>[–<i>x</i>] is the same as <i>f</i>[<i>x</i>]. That’s clear from the function itself.
-在这里进行平等测试，所以 <i>f</i>[-<i>x</i>] 与 <i>f</i>[<i>x</i>] 是一样的。这一点从函数本身就可以看出来。
+所以 <i>f</i>[-<i>x</i>] 与 <i>f</i>[<i>x</i>] 是一样的  这一点从函数本身就可以看出来
 
 41
 00:04:30,000 --> 00:04:36,000
 We have an <i>x</i>^2, so that’s an even function. Next we can work out the vertical asymptotes
-我们有一个<i>x</i>^2，所以这是一个偶数函数。接下来，我们可以计算出垂直渐变线，即
+我们得到 <i>x</i>^2 所以这是一个偶数函数  接下来 我们可以计算出垂直渐变线
 
 42
 00:04:36,000 --> 00:04:47,000
 at –2 and 2, and you can check that there’s a horizontal asymptote at <i>y</i> = 3.
-在-2和2处，你可以检查在<i>y</i>=3处有一个水平渐近线。
+即在 -2 和 2 处 你可以查看在 <i>y</i>=3 处有一个水平渐近线
 
 43
 00:04:47,000 --> 00:04:54,000
 Having done that, we go on to the problem of finding out the critical points.
-做完了这些，我们再去找关键点的问题。
+做完了这些 我们再去找临界点的问题
 
 44
 00:04:54,000 --> 00:05:01,000
 Critical points are the points at which <i>f</i>'[<i>x</i>] is 0. You have one critical point, and the function is
-临界点是<i>f</i>'[<i>x</i>]为0的点，你有一个临界点，函数是
+临界点是 <i>f</i>'[<i>x</i>] 为 0 的点 这就是一个临界点
 
 45
 00:05:01,000 --> 00:05:08,000
 not defined at 2 and –2, so in all, you have three critical points. What you do is you test
-在2和-2处没有定义，所以总的来说，你有三个关键点。你要做的是测试
+另外函数在 2 和 -2 处没有定义 所以总的来说 你有三个临界点
 
 46
 00:05:08,000 --> 00:05:17,000
 the derivative on each part of the real line depending upon those. You take one point to the left of –2,
-实线各部分的导数取决于这些。你在-2的左边取一个点。
+要做的是测试实轴各部分的导数  在 -2 的左边取一个点
 
 47
 00:05:17,000 --> 00:05:23,000
 one point between –2 and 0, et cetera, and you find that you actually have
-在-2和0之间的一个点，诸如此类，你会发现你其实有
+在 -2 和 0 之间取一个点 诸如此类 会发现其实有
 
 48
 00:05:23,000 --> 00:05:25,000
 some positive and negative signs.
-一些积极和消极的迹象。
+一些正负的符号
 
 49
 00:05:25,000 --> 00:05:34,000
 That says that the function is increasing on (–∞, 2) and (–2, 0) because those derivatives
-这说明函数在(-∞，2)和(-2，0)上是递增的，因为那些导数
+这说明函数在 (-∞，2) 和 (-2，0) 上是递增的 因为那些导数
 
 50
 00:05:34,000 --> 00:05:39,000
 are positive, and it’s decreasing on the other two parts over there because the first derivative
-都是正数，而它在那边的另外两部分是递减的，因为第一个导数... ...
+都是正数 而它在那边的另外两部分是递减的 因为第一个导数是负数
 
 51
 00:05:39,000 --> 00:05:45,000
 is negative. Now the question is are there any local maxima or minima?
-是负数。现在的问题是有没有局部最大值或最小值？
+现在的问题是有没有局部最大值或最小值？
 
 52
 00:05:45,000 --> 00:05:50,000
 Well, if you work out the second derivative at 0, then the answer is negative, so you do have
-好吧，如果你在0处计算出第二个导数，那么答案是负的，所以你有
+如果你在 0 处计算出第二个导数 那么答案是负的 所以在 0 处你有局部最大值
 
 53
 00:05:50,000 --> 00:06:01,000
 a local maximum at 0. The function has no inflection points, as you can check for solving <i>f</i>''[<i>x</i>] = 0,
-函数没有拐点，你可以检查解<i>f</i>''[<i>x</i>]=0。
+函数没有拐点 你可以解 <i>f</i>''[<i>x</i>]=0 测试一下
 
 54
 00:06:01,000 --> 00:06:10,000
 and then you can also check that it is concave upward between (–∞, 2) and (2, ∞)
-然后还可以检查它在（-∞，2）和（2，∞）之间是否向上凹陷
+然后还可以检查它在 (-∞，2) 和 (2，∞) 之间是否向上凹
 
 55
 00:06:10,000 --> 00:06:16,000
 and concave downward between the two values. That’s the information about
-并在两个值之间向下凹陷。这就是关于
+或在两个值之间向下凹 这就是关于
 
 56
 00:06:16,000 --> 00:06:24,000
 inflection points and the concavity. Finally you can put that all together and get a nice plot
-拐点和凹处。最后，你可以把所有这些放在一起，得到一个漂亮的情节
+拐点和凹凸趋势  最后 你可以把所有这些放在一起 得到一个漂亮的函数图像
 
 57
 00:06:24,000 --> 00:06:30,000
 of a function which shows all the information that we gathered earlier on.
-的一个函数，它显示了我们之前收集的所有信息。
+它显示了我们之前收集的所有信息
 
 58
 00:06:32,000 --> 00:06:37,000
 Okay. A second example. Let’s take a slightly harder function which is trigonometric.
-好吧，再举一个例子。第二个例子。让我们来看看一个稍微难一点的函数，它是三角函数。
+再举一个例子 让我们来看看一个稍微难一点的函数 它是三角函数。
 
 59
 00:06:37,000 --> 00:06:42,000
 You’ve got Sin[<i>x</i>]/(2 + Cos[<i>x</i>]). Now that’s never problematic because
-你已经得到了Sin[<i>x</i>]/(2 + Cos[<i>x</i>])。现在，这从来没有问题，因为
+你已经得到了 Sin[<i>x</i>]/(2 + Cos[<i>x</i>]) 现在不会有分母变成0的问题
 
 60
 00:06:42,000 --> 00:06:49,000
 the denominator never becomes 0, so the domain is all the real numbers. The question is
-分母永远不会变成0，所以域是所有实数。问题是
+所以定义域域是所有实数  问题是
 
 61
 00:06:49,000 --> 00:06:54,000
 what are the intercepts? Well, you solve for <i>f</I> equal to 0 and find the value at <i>f</i>[0],
-截距是什么？好吧，你解出<i>f</I>等于0，然后找到<i>f</i>[0]处的值。
+截距是什么？ 你解出<i>f</I>等于0 然后找到<i>f</i>[0]处的值
 
 62
 00:06:54,000 --> 00:07:03,000
 and you get back that in fact, it’s going to be multiples of π for the <i>x</i> intercepts
-而你得到的回报是，事实上，对于<i>x</i>的截取，它将是π的倍数。
+而你得到的结果是  事实上对于<i>x</i>的截取 它将是π的倍数
 
 63
 00:07:03,000 --> 00:07:09,000
 because that’s where the sine function is 0, and the <i>y</i> intercept is just at 0.
-因为那是正弦函数为0的地方，而<i>y</i>截距刚好在0处。
+因为那是正弦函数为 0 的地方 而 <i>y</i> 截距刚好在0处
 
 64
 00:07:10,000 --> 00:07:18,000
 Okay. That conditional expression over here is telling you the condition for there to be an <i>x</i> intercept.
-好的，这里的条件表达式是告诉你有一个&lt;i&gt;x&lt;/i&gt;拦截的条件。这个条件表达式在这里告诉你有一个<i>x</i>拦截的条件。
-
+此处的条件表达式告诉您存在 <i>x</i> 截距的条件
 65
 00:07:18,000 --> 00:07:26,000
 Next the function is certainly odd and periodic because the sine function is odd.
-接下来函数肯定是奇数和周期性的，因为正弦函数是奇数。
+接下来函数肯定是奇函数和周期性的 因为正弦函数是奇函数
 
 66
 00:07:26,000 --> 00:07:32,000
 Because it’s periodic, you can afford to look at the interval  [0, 2π],
-因为它是周期性的，你可以负担得起看区间[0，2π]。
+由于它是周期性的 你可以看区间 [0，2π]
 
 67
 00:07:32,000 --> 00:07:38,000
 and that’s quite an equality. The function has no vertical asymptotes
-而且是相当的平等。该函数没有垂直渐变线
+而且是相当的平等 该函数没有垂直渐近线
 
 68
 00:07:38,000 --> 00:07:44,000
 because the denominator is never problematic, and there are horizontal asymptotes
-因为分母从来没有问题，而且有水平渐变的现象
+由于分母从来没有问题 而且在没有点的时候有水平渐变的现象
 
 69
 00:07:44,000 --> 00:07:49,000
 at no points because the limits don’t even exist; they are intervals.
-在没有点的时候，因为极限根本不存在，它们是间隔。
+因为极限根本不存在 它们是间隔
 
 70
 00:07:52,000 --> 00:07:58,000
 Okay. Now the question is what are the critical points? Well, if you check between 0 and 2π,
-好了，现在的问题是，关键点是什么？现在的问题是什么是临界点？好吧，如果你检查0和2π之间，
+现在的问题是 临界点是什么？  如果你检查 0 和 2π 之间
 
 71
 00:07:58,000 --> 00:08:05,000
 you find two critical points, and then if you take sample points, then you find out that
-你找到两个临界点，然后如果你取样点，那么你就会发现。
+你找到两个临界点 然后如果你采样一些点 那么你就会发现
 
 72
 00:08:05,000 --> 00:08:12,000
 in fact your have an increasing behavior between (0, 2π/3) and (4π/3, 2π)
-事实上，你的行为在(0, 2π/3)和(4π/3, 2π)之间是不断增加的。
+事实上  在 (0, 2π/3) 和 (4π/3, 2π) 之间是不断增加的。
 
 73
 00:08:12,000 --> 00:08:19,000
 and decreasing between those two values. That’s the information about the first derivative,
-并在这两个值之间递减。这就是第一导数的信息。
+并在这两个值之间递减 这就是一阶导数的信息
 
 74
 00:08:19,000 --> 00:08:27,000
 and that’s going to tell you that you have a local maximum at 2π/3 and a local minimum at 4π/3.
-而这将告诉你，你的局部最大值为2π/3，局部最小值为4π/3。
+而这将告诉你 你的局部最大值为 2π/3  局部最小值为 4π/3
 
 75
 00:08:27,000 --> 00:08:32,000
 You can check that with the second derivative. You have a negative second derivative at
-你可以用二次导数来检查。你有一个负的二次导数，在
+你可以用二阶导数来检查 你有一个负的二阶导数
 
 76
 00:08:32,000 --> 00:08:37,000
 the first point and a positive second derivative at the second point, so you have a local maximum
-第一点和第二点的第二导数为正值，所以你有一个局部最大值。
+在第一点和第二点的第二导数为正值 所以你有一个局部最大值
 
 77
 00:08:37,000 --> 00:08:45,000
 in the first case and a local minimum in the second case. Finally you can check there are
-在第一种情况下，第二种情况下是局部最小值。最后你可以检查是否有
+在第一种情况下 第二种情况下是局部最小值 最后通过使二次导数等于 0 的解
 
 78
 00:08:45,000 --> 00:08:53,000
 inflection points at 0, π and 2π by solving for the second derivative equal to 0.
-在0，π和2π处的拐点，解得二次导数等于0。
+你可以检查是否有在 0 和 π 和 2π 处 的拐点 
 
 79
 00:08:54,000 --> 00:08:59,000
 Now the concavity test can be applied, and you see that you actually have
-现在可以应用凹度测试，你会发现，你实际上有了
+现在可以应用凹凸判别法 你会发现 在 (π，2π) 上有一个向上凹的阶段
 
 80
 00:08:59,000 --> 00:09:05,000
 a concave upward behavior on (π, 2π) and a concave downward behavior on (0, π).
-在(π，2π)上有一个向上凹的行为，在(0，π)上有一个向下凹的行为。
+在 (0，π) 上有一个向下凹的阶段
 
 81
 00:09:07,000 --> 00:09:16,000
 Now we can put that all together and get this plot of the function, which shows all the earlier information.
-现在我们可以把这些放在一起，得到这个函数的图，它显示了前面所有的信息。
+现在我们可以把这些放在一起 得到这个函数的图 它显示了前面所有的信息
 
 82
 00:09:18,000 --> 00:09:23,000
 Now I haven’t really spoken about slant asymptotes in the course earlier on,
-现在我在前面的课程中还没有真正讲过斜纹征。
+现在我在前面的课程中还没有真正讲过斜渐近线
 
 83
 00:09:23,000 --> 00:09:31,000
 but let’s define a slant asymptote. A slant asymptote is a line such that the limit of <i>f</i>
-但让我们定义一个斜渐近线。斜渐近线是指<i>f</i>的极限为
+但让我们定义一个斜渐近线 斜渐近线是指 <i>f</i> 的极限
 
 84
 00:09:31,000 --> 00:09:38,000
 approaches <i>mx</i> + <i>b</i> where <i>mx</i> + <i>b</i> is the right-hand side for the line.
-接近<i>mx</i>+<i>b</i>，其中<i>mx</i>+<i>b</i>为线的右侧。
+接近 <i>mx</i>+<i>b</i>  其中 <i>mx</i>+<i>b</i> 为线的右侧 
 
 85
 00:09:38,000 --> 00:09:43,000
 Basically the graph of the function approaches that straight line, but that straight line
-基本上函数的图形接近那条直线，但那条直线
+根本上函数的图形接近那条直线  但那条直线
 
 86
 00:09:43,000 --> 00:09:52,000
 may not be vertical or horizontal. Okay. Now the question is how do you find the slant asymptotes?
-可能不是垂直或水平的。好吧，现在的问题是...现在的问题是，你如何找到斜渐变子？
+可能不是垂直或水平的   现在的问题是你如何找到斜渐近线
 
 87
 00:09:52,000 --> 00:09:58,000
 Luckily if you have a rational function, then slant asymptotes can occur only when
-幸运的是，如果你有一个有理函数，那么只有在以下情况下才会出现斜渐变现象
+幸运的是如果你有一个有理函数  那么只有在分子的度数比分母的度数多一个情况下
 
 88
 00:09:58,000 --> 00:10:03,000
 the degree of the numerator is one more than the degree of the denominator.
-分子的度数比分母的度数多一个。
+才会出现斜渐变现象
 
 89
 00:10:03,000 --> 00:10:09,000
 In that case, you can simply use polynomial long division. You can work out the quotient.
-在这种情况下，你可以简单地使用多项式长除法。你可以计算出商。
+在这种情况下 你可以简单地使用多项式除法 你可以计算出商
 
 90
 00:10:09,000 --> 00:10:15,000
 For example, over here you have the function (<i>x</i>^2 + 1)/<i>x</i>. Then if you find the quotient,
-例如，在这边你有函数(<i>x</i>^2+1)/<i>x</i>。那么如果你找到商。
+例如 在这边你有函数 (<i>x</i>^2+1)/<i>x</i>  那么如果你找到商
 
 91
 00:10:15,000 --> 00:10:22,000
 the answer is just <i>x</i>, so <i>y</i> = <i>x</i> is a slant asymptote. You can check that with the plot,
-答案就是<i>x</i>，所以<i>y</i>=<i>x</i>是一个斜渐变。你可以用图来检查。
+答案就是 <i>x</i>  所以 <i>y</i>=<i>x</i> 是一个斜渐变 你可以用图像来检查
 
 92
 00:10:22,000 --> 00:10:27,000
 and you see that you have a slant asymptote at <i>y</i> = <i>x</i> over here.
-你看，你在<i>y</i>=<i>x</i>处有一个斜渐近线，在这里。
+你可以看到在 <i>y</i>=<i>x</i> 处有一个斜渐近线
 
 93
 00:10:29,000 --> 00:10:34,000
 With that information, we can now take up a slant asymptote problem
-有了这些信息，我们现在可以着手解决一个斜渐近问题
+有了这些信息  我们现在可以着手解决一个斜渐近问题
 
 94
 00:10:34,000 --> 00:10:41,000
 and try and draft the function 2<i>x</i>^3/(<i>x</i>^2 + 2). The function is defined everywhere;
-并尝试起草函数2<i>x</i>^3/(<i>x</i>^2+2)。函数的定义无处不在。
+并尝试画函数 2<i>x</i>^3/(<i>x</i>^2+2) 的草图 函数在任何地方都有定义
 
 95
 00:10:41,000 --> 00:10:47,000
 no problem at all. The denominator is never zero, so the domain is all the real numbers.
-完全没有问题。分母永远不是零，所以域是所有实数。
+完全没有问题  分母永远不是零  所以定义域是所有实数。
 
 96
 00:10:48,000 --> 00:10:55,000
 The <i>x</i> and the <i>y</i> intercepts are both at 0. That’s easy to show. It’s certainly an odd function.
-<i>x</i>和<i>y</i>的截距都在0，这很容易证明。这当然是一个奇函数。
+<i>x</i>和<i>y</i> 的截距都在0 这很容易证明 这当然是一个奇函数
 
 97
 00:10:55,000 --> 00:10:59,000
 It’s an odd function because we have an <i>x</i>^3 over there.
-这是一个奇怪的函数，因为我们有一个<i>x</i>^3在那边。
+这是一个奇怪的函数 因为我们有一个 <i>x</i>^3 在那边
 
 98
 00:11:00,000 --> 00:11:07,000
 There are no vertical or horizontal asymptotes, but you do have a slant asymptote
-没有垂直或水平的渐变线，但你有一个倾斜的渐变线。
+没有垂直或水平的渐变线 但你有一个倾斜的渐变线
 
 99
 00:11:07,000 --> 00:11:11,000
 that you can work out by division, and you see over here that actually
-你可以通过除法来计算，你看这里，其实
+你可以通过除法来计算 你看这里 其实
 
 100
 00:11:11,000 --> 00:11:18,000
 the function does approach 2<i>x</i> as <i>x</i>→∞, so that is a slant asymptote for this example.
-当<i>x</i>→∞时，函数确实接近2<i>x</i>，所以本例是一个斜渐近线。
+当 <i>x</i>→∞ 时 函数确实接近 2<i>x</i> 所以本例是一个斜渐近线
 
 101
 00:11:21,000 --> 00:11:27,000
@@ -511,94 +510,95 @@ You can check that. If you take sample points at –1 and 1, then you have an in
 103
 00:11:36,000 --> 00:11:43,000
 between (–∞, 0) and (0, ∞). The first derivative test tells you that there are
-在（-∞，0）和（0，∞）之间。第一导数检验告诉你，有
+在（-∞，0）和（0，∞）之间。一阶导数判别法告诉你
 
 104
 00:11:43,000 --> 00:11:48,000
 no local maxima or minima. The second derivative test doesn’t tell you anything
-没有局部最大值或最小值。二次导数测试并不能说明任何问题。
+没有局部最大值或最小值 二阶导数判别法并不能说明任何问题
 
 105
 00:11:48,000 --> 00:11:55,000
 because the second derivative of 0 is 0. It looks like there might be some inflection points,
-因为0的二次导数是0，看来可能存在一些拐点。
+因为 0 的二次导数是 0  看来可能存在一些拐点
 
 106
 00:11:55,000 --> 00:12:02,000
 and sure enough, there are three inflection points over here: at 0, √6 and –√6.
-果然，这边有三个拐点：在0、√6和-√6。
+果然 这边有三个拐点：在 0 √6 和 -√6
 
 107
 00:12:02,000 --> 00:12:10,000
 You can check that it’s concave upward on two intervals and concave downward on two others.
-你可以检查一下，它有两个区间是向上凹的，另外两个区间是向下凹的。
+你可以检查一下 它有两个区间是向上凹的 另外两个区间是向下凹的。
 
 108
 00:12:10,000 --> 00:12:16,000
 You have a positive derivative over here and you have a positive derivative over there
-你在这里有一个正导数，在那里有一个正导数。
+对于二阶导数你在这里有一个正导数 在那里有一个正导数
 
 109
 00:12:16,000 --> 00:12:22,000
 for the second derivative. In that case, you have a concave upward behavior,
-为第二导数。在这种情况下，你有一个凹凸向上的行为。
+在这种情况下 你有一个凹凸向上的趋势
 
 110
 00:12:22,000 --> 00:12:28,000
 and the reverse happens in the other two cases. With all that information,
-而其他两种情况则相反。有了这些信息，
+而其他两种情况则相反 有了这些信息
 
 111
 00:12:28,000 --> 00:12:37,000
 one can plot this rather complicated function, and that is the plot showing the asymptote <i>y</i> = 2<i>x</i>.
-我们可以绘制这个相当复杂的函数，那就是显示渐近线<i>y</i>=2<i>x</i>的图。
+我们可以绘制这个相当复杂的函数  那就是显示渐近线 <i>y</i>=2<i>x</i> 的图 
 
 112
 00:12:38,000 --> 00:12:43,000
 Okay. That brings me to the end of this lesson. What we’ve learned is that we can use
-好了，我的课到此结束。本课到此结束。我们所学到的是，我们可以使用... ...
+好了 我的课到此结束 本课到此结束 
 
 113
 00:12:43,000 --> 00:12:49,000
 many of the properties that we’ve learned earlier on to sketch the graph of the function.
-许多我们前面学过的特性，来勾画函数的图形。
+我们可以使用许多我们前面学过的特性 来勾画函数的图像
 
 114
 00:12:49,000 --> 00:12:56,000
 For example, the intercepts will determine where the function is 0 or where it crosses the <i>y</i> axis.
-例如，截距将决定函数在哪里是0或在哪里穿过<i>y</i>轴。
+例如 截距将决定函数在哪里是 0 或在哪里穿过 <i>y</i> 轴
 
 115
 00:12:56,000 --> 00:13:00,000
 Of course to find the asymptotes, you would just use the limit function.
-当然，要想找到渐变点，你只需要使用极限函数。
+当然 要想找到渐近线 你只需要使用极限函数
 
 116
 00:13:01,000 --> 00:13:07,000
 To find local maxima and minima, you would use the first and second derivatives,
-为了找到局部最大值和最小值，你会使用第一和第二导数。
+为了找到局部最大值和最小值 你会使用第一和第二阶导数
 
 117
 00:13:07,000 --> 00:13:14,000
 and you can also find inflection points and intervals of increase or decrease.
-并且还可以找到拐点和增减的区间。
+并且还可以找到拐点和增减的区间
 
 118
 00:13:14,000 --> 00:13:20,000
 All of that information together will let you get a nice sketch of your function.
-所有这些信息结合在一起，会让你对自己的功能有一个很好的勾勒。
+所有这些信息结合在一起 会让你会很好的描绘一个函数
 
 119
 00:13:22,000 --> 00:13:26,000
 In the next lesson we’ll be talking about optimization problems, but before we do that,
-在下一节课我们将讨论优化问题，但在这之前。
+在下一节课我们将讨论优化问题 但在这之前
 
 120
 00:13:26,000 --> 00:13:32,000
 do practice curve sketching—it’s an important topic—and be ready for the next lesson.
-做曲线草图的练习--这是一个重要的课题，并为下一课做好准备。
+做画图的练习 这是一个重要的课题 并为下一课做好准备
 
 121
 00:13:32,000 --> 00:13:35,000
 Thank you very much. I’ll stop over here.
-谢谢你了我会在这里停下来。
+谢谢 今天就到这里了
+翻译 彭彦鸿
