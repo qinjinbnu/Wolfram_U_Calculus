@@ -1,7 +1,7 @@
 ﻿1
 00:00:00,000 --> 00:00:07,000
 Hello, and welcome to Lesson 34 of this introduction to calculus with Wolfram U.
-大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第34课。
+您好，欢迎来到 Wolfram U 的微积分入门课程第 34 课。
 
 2
 00:00:07,000 --> 00:00:12,000
@@ -26,7 +26,7 @@ like this one, 2^<i>x</i>.
 6
 00:00:21,000 --> 00:00:23,000
 Here is a plot of the function.
-下面是函数的图。
+下面是函数的图像。
 
 7
 00:00:23,000 --> 00:00:30,000
@@ -36,7 +36,7 @@ The question is suppose we want to solve the equation 2^<i>x</i> = 5.
 8
 00:00:30,000 --> 00:00:35,000
 The problem here is that 5 is not a power of 2 in any obvious way,
-这里的问题是，5不是2的明显幂。
+这里的问题是，5显然不是2的幂。
 
 9
 00:00:35,000 --> 00:00:39,000
@@ -51,12 +51,12 @@ that <i>x</i> is Log[5]/Log[2].
 11
 00:00:43,000 --> 00:00:47,000
 That’s the answer given by Solve, and really speaking,
-这是索芙给出的答案，也是真正意义上的答案。
+这是Solve给出的答案，也是真正意义上的答案。
 
 12
 00:00:47,000 --> 00:00:50,000
 it’s the logarithm of 5 to the base 2.
-它是5的对数到基数2。
+它是以2为底5的对数。
 
 13
 00:00:50,000 --> 00:00:54,000
@@ -66,12 +66,12 @@ That’s an example of a logarithm.
 14
 00:00:54,000 --> 00:00:58,000
 This lesson will talk about these logarithmic functions
-本节课要讲的就是这些对数函数。
+本课将更详细地讨论这些对数函数
 
 15
 00:00:58,000 --> 00:01:02,000
 in more detail and some of their properties.
-更详细的资料和它们的一些特性。
+及其一些特性
 
 16
 00:01:02,000 --> 00:01:08,000
@@ -101,7 +101,7 @@ and so is the logarithm of <i>a</i>^<i>x</i> in the base <i>a</i>.
 21
 00:01:25,000 --> 00:01:30,000
 The number <i>a</i> is the base of the logarithm.
-数字<i>a</i>是对数的基数。
+数字<i>a</i>是对数的底数。
 
 22
 00:01:31,000 --> 00:01:35,000
@@ -115,8 +115,8 @@ which does these calculations.
 
 24
 00:01:37,000 --> 00:01:44,000
-The log of 27 to the base 3 is 3 because because 3^3 is 27,
-27到基数3的对数是3，因为因为3^3是27。
+The log of 27 to the base 3 is 3 because 3^3 is 27,
+以3为底27的对数是3，因为3^3是27。
 
 25
 00:01:44,000 --> 00:01:48,000
@@ -136,12 +136,12 @@ so the logarithm of <i>e</i>^2 is just 2.
 28
 00:01:58,000 --> 00:02:04,000
 That’s the natural logarithm which is implemented
-这就是自然对数，它的实现方式是
+这是在 Wolfram 语言中
 
 29
 00:02:04,000 --> 00:02:07,000
 in the Wolfram Language with base <i>e</I>.
-在Wolfram语言中，基数为<i>e</I>。
+以 <i>e</I> 为基础实现的自然对数
 
 30
 00:02:09,000 --> 00:02:13,000
@@ -151,12 +151,12 @@ Next let’s take the graph of a logarithm function.
 31
 00:02:13,000 --> 00:02:16,000
 Here’s the graph, and you’ll notice that it’s defined
-这是一张图，你会发现它的定义为
+这是它的图像，你会发现它
 
 32
 00:02:16,000 --> 00:02:24,000
 only for positive <i>x</i>, and the range is all the way from –∞ up to ∞.
-只对正的<i>x</i>，而且范围从-∞一直到∞。
+只对正的<i>x</i>有定义，而且范围从-∞一直到∞。
 
 33
 00:02:24,000 --> 00:02:30,000
@@ -191,12 +191,12 @@ Of course the graph intersects the <i>x</i> axis at <i>x</i> = 1.
 39
 00:02:55,000 --> 00:02:58,000
 Okay. Next let’s take an example
-好了，接下来我们来举个例子。接下来我们举个例子
+好的。接下来，我们以一个
 
 40
 00:02:58,000 --> 00:03:01,000
 where you have a base which is less than 1.
-其中你的基数小于1。
+底数小于 1 的示例为例
 
 41
 00:03:01,000 --> 00:03:03,000
@@ -206,7 +206,7 @@ Now the opposite happens.
 42
 00:03:03,000 --> 00:03:06,000
 You have a function which is still defined on positive numbers,
-你有一个函数还是定义在正数上的。
+您有一个仍在正数上定义的函数
 
 43
 00:03:06,000 --> 00:03:12,000
@@ -216,12 +216,12 @@ but it shoots up to ∞ at 0 and goes down to –∞ on the other side.
 44
 00:03:12,000 --> 00:03:15,000
 Domain and range is just the same as before,
-领域和范围和以前一样。
+定义域和值域和以前一样。
 
 45
 00:03:15,000 --> 00:03:18,000
 but now the limits are the opposite,
-但现在的限制是相反的。
+但现在的极限是相反的。
 
 46
 00:03:18,000 --> 00:03:21,000
@@ -236,7 +236,7 @@ When you approach 0, you get ∞.
 48
 00:03:24,000 --> 00:03:29,000
 That’s the behavior of a logarithm whose base is less than 1.
-这就是基数小于1的对数的行为。
+这就是底数小于1的对数的行为。
 
 49
 00:03:29,000 --> 00:03:36,000
