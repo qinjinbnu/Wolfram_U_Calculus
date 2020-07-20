@@ -1,0 +1,296 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 9 of this introduction to calculus with Wolfram U.
+
+2
+00:00:07,000 --> 00:00:16,000
+Our topic for today is differentiation formulas. Let’s begin with a brief overview of today’s lesson.
+
+3
+00:00:17,000 --> 00:00:24,000
+The point is that one can find derivatives using the limit definition, but in practice
+
+4
+00:00:24,000 --> 00:00:29,000
+this is quite a tedious and tricky approach, and one wishes that there was some simpler way
+
+5
+00:00:29,000 --> 00:00:37,000
+of finding derivatives in practice. Luckily there are formulas which help us to find derivatives
+
+6
+00:00:37,000 --> 00:00:48,000
+of many commonly occurring functions. For example, here is a constant function <i>f</i>[<i>x</i>] = <i>c</i>,
+
+7
+00:00:48,000 --> 00:00:56,000
+and you can see over here that the derivative of this function is just 0. The derivative of
+
+8
+00:00:56,000 --> 00:01:07,000
+a constant function is always 0. Let’s check the graphs. Here is a graph of the function,
+
+9
+00:01:07,000 --> 00:01:14,000
+and the derivative is 0. In this lesson, what we’ll do is we’ll cover basic differentiation formulas
+
+10
+00:01:14,000 --> 00:01:19,000
+of this type, and by the end of today’s lesson, you’ll feel quite comfortable about
+
+11
+00:01:19,000 --> 00:01:21,000
+computing derivatives in practice.
+
+12
+00:01:22,000 --> 00:01:28,000
+As a first example, here are the power functions. You have a function <i>x</i>^<i>n</i>.
+
+13
+00:01:28,000 --> 00:01:33,000
+For different values of <i>n</i>, you get different power functions. Taking this function
+
+14
+00:01:33,000 --> 00:01:41,000
+and finding its derivative gives you <i>n</i> * <i>x</i>^(<i>n</i> − 1). That’s a very well-known formula
+
+15
+00:01:41,000 --> 00:01:49,000
+in differential calculus. For example, if <i>n</i> is 2, then you have a quadratic function
+
+16
+00:01:49,000 --> 00:01:57,000
+and its derivative is just 2<i>x</i>. It might be good to memorize that the derivative of <i>x</i>^2 is 2<i>x</i>.
+
+17
+00:01:57,000 --> 00:02:04,000
+Let’s plot the function and derivative. That’s the function, a quadratic function, a parabola,
+
+18
+00:02:04,000 --> 00:02:10,000
+and that’s the derivative, and clearly the derivative must be negative on the left
+
+19
+00:02:10,000 --> 00:02:15,000
+because the function is decreasing, so the slopes are all negative over here.
+
+20
+00:02:16,000 --> 00:02:21,000
+Going to the same topic, suppose you have <i>x</i>^−1. That’s a negative number,
+
+21
+00:02:21,000 --> 00:02:30,000
+but the same rule applies and you get back −1/<i>x</i>^2 as the answer. Again, here is a plot of the function
+
+22
+00:02:30,000 --> 00:02:34,000
+and its derivative. Finally let’s take an example where you actually have
+
+23
+00:02:34,000 --> 00:02:41,000
+a kind of negative decimal power. But the same formula applies, and you get back
+
+24
+00:02:41,000 --> 00:02:47,000
+a derivative in the same form, <i>n</i> * <i>x</i>^(<i>n</i> − 1).
+
+25
+00:02:47,000 --> 00:02:53,000
+Okay. To go further, let’s now talk about constant multiples of functions. Here you have
+
+26
+00:02:53,000 --> 00:02:59,000
+a constant and a function, and when you try to find the derivative, what you do is you simply
+
+27
+00:02:59,000 --> 00:03:02,000
+pull out the constant from the function where you’re trying finding the derivative.
+
+28
+00:03:02,000 --> 00:03:07,000
+The derivative over here is just 15<i>x</i>^2, which is just 5 times 3<i>x</i>^2, so the 15<i>x</i>^2 over here
+
+29
+00:03:07,000 --> 00:03:18,000
+the constant 5 times 3<i>x</i>^2, which is the derivative of <i>x</i>^3. Here’s a plot of the function and derivative,
+
+30
+00:03:18,000 --> 00:03:23,000
+and you can see that this is a very simple rule, the constant multiple rule.
+
+31
+00:03:25,000 --> 00:03:30,000
+To go a step further, let’s look at a very important rule named the sum rule.
+
+32
+00:03:30,000 --> 00:03:39,000
+If you have a function <i>f</I> and a function <i>g</i> and you find their sum, then the derivative of the sum
+
+33
+00:03:39,000 --> 00:03:48,000
+is just the sum of the derivatives. So you simply work out <i>f</i>' and <i>g</i>' separately,
+
+34
+00:03:48,000 --> 00:03:55,000
+and then when you add them up, in this case you get back 6<i>x</i> + 2, which is the correct answer.
+
+35
+00:03:55,000 --> 00:04:03,000
+The sum rule makes it quite simple to find the derivative in such cases. Once again, here’s a plot.
+
+36
+00:04:03,000 --> 00:04:13,000
+You have the function <i>f</i>[<i>x</i>], the function <i>g</i>[<i>x</i>], and the derivatives over here are <i>f</i>'[<i>x</i>],  <i>g</i>'[<i>x</i>],
+
+37
+00:04:13,000 --> 00:04:18,000
+and the sum has got a derivative, which is the sum of those two.
+
+38
+00:04:20,000 --> 00:04:24,000
+Okay. On to the difference rule, which is very simple and similar.
+
+39
+00:04:24,000 --> 00:04:30,000
+If you’ve got a function <i>f</i> and a function <i>g</i> and you define their difference,
+
+40
+00:04:30,000 --> 00:04:37,000
+then then derivative of the difference is the difference of the derivatives—
+
+41
+00:04:37,000 --> 00:04:44,000
+namely, you work out <i>f</I>'[<i>x</i>], work out <i>g</i>'[<i>x</i>] and then you subtract them, and you get back
+
+42
+00:04:44,000 --> 00:04:56,000
+the answer for the difference derivative. Here’s a plot of all the derivatives. Once again you see that
+
+43
+00:04:56,000 --> 00:05:03,000
+if you have a difference, then the derivative is really simple to compute.
+
+44
+00:05:03,000 --> 00:05:07,000
+Sums are simple. Differences are simple. The question is what happens to products.
+
+45
+00:05:07,000 --> 00:05:14,000
+Well, if you have a function <i>f</i>[<i>x</i>] and then a function <i>g</i>[<i>x</i>] and you multiply them to get the product,
+
+46
+00:05:14,000 --> 00:05:22,000
+you might think that the derivative of the product is the product of the derivatives,
+
+47
+00:05:22,000 --> 00:05:29,000
+but that is not the case. In fact, if you work it out over here you get √<i>x</i> in one case
+
+48
+00:05:29,000 --> 00:05:35,000
+and you get quite a different answer in the other. It turns out that in this case,
+
+49
+00:05:35,000 --> 00:05:47,000
+the correct formula is you do <i>f</i> * <i>g</i>' + <i>g</i> * <i>f</i>', and then you do get back the correct answer
+
+50
+00:05:47,000 --> 00:05:55,000
+for the derivative of the product. Once again, here’s a plot of all three derivatives
+
+51
+00:05:55,000 --> 00:06:01,000
+to give you a feeling for what’s happening over here, but notice that now things are no longer simple.
+
+52
+00:06:01,000 --> 00:06:06,000
+You actually do need to memorize a rule which says that the derivative of
+
+53
+00:06:06,000 --> 00:06:17,000
+the product of <i>f</i> and <i>g</i> is <i>f</i> * <i>g</i>' + <i>g</i> * <i>f</i>', and as if this is not complicated enough,
+
+54
+00:06:17,000 --> 00:06:23,000
+let’s look at the quotient rule. If you have <i>f</i> and <i>g</i> and you take their quotient,
+
+55
+00:06:23,000 --> 00:06:33,000
+so you divide them, then once again the derivative of the quotient is not the quotient of the derivatives.
+
+56
+00:06:33,000 --> 00:06:38,000
+You can check that over here. If you do <i>f</i>'/<i>g</i>', you get one answer;
+
+57
+00:06:38,000 --> 00:06:42,000
+if you find the derivative directly for the quotient, you get another answer.
+
+58
+00:06:42,000 --> 00:06:48,000
+The fact is that the quotient rule for derivatives is a lot harder. It says that
+
+59
+00:06:48,000 --> 00:07:02,000
+the derivative is (<i>g</i> * <i>f</i>' − <i>f</i> * <i>g</i>')/<i>g</i>^2. In this case, the rule gives you the correct answer,
+
+60
+00:07:02,000 --> 00:07:14,000
+namely, −3/2<i>x</i>^3. Once again you can plot all the derivatives, and you learn that the quotient rule
+
+61
+00:07:14,000 --> 00:07:20,000
+is significantly more complicated than the earlier rules, but in fact it does give you
+
+62
+00:07:20,000 --> 00:07:27,000
+the correct answer in all cases. We’ve learned the sum rule, the difference rule, the product rule
+
+63
+00:07:27,000 --> 00:07:33,000
+and the quotient rule, and in fact that brings us to the end of today’s lesson.
+
+64
+00:07:34,000 --> 00:07:40,000
+The point is that yes, derivatives are useful, but it is only when you have the rules for differentiation
+
+65
+00:07:40,000 --> 00:07:45,000
+that you can actually use them effectively in practice, so you do need to know all the rules we learned today.
+
+66
+00:07:45,000 --> 00:07:58,000
+There are rules for sums, differences, products and quotients. Of course the simplest rule is the power rule,
+
+67
+00:07:58,000 --> 00:08:05,000
+which lets you find the derivative of things like <i>x</i>^2 and <i>x</i>^3 and other powers of <i>x</i>.
+
+68
+00:08:07,000 --> 00:08:11,000
+In the next lesson, we’ll go on to doing something more with derivatives, namely,
+
+69
+00:08:11,000 --> 00:08:14,000
+talking about the trigonometric functions. But before we do that,
+
+70
+00:08:14,000 --> 00:08:18,000
+do make sure you review today’s lesson, try the exercises and make sure
+
+71
+00:08:18,000 --> 00:08:24,000
+you’re ready for the next theme, which is the derivatives of trigonometric functions.
+
+72
+00:08:24,000 --> 00:08:29,000
+I’ll stop over here. I hope you found this lesson really useful. This is where calculus really begins,
+
+73
+00:08:29,000 --> 00:08:35,000
+where it becomes a very algebraic kind of process and becomes easy to apply in practice.
+
+74
+00:08:35,000 --> 00:08:37,000
+Thank you very much. I’ll stop over here.
+

@@ -1,0 +1,476 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 7 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:11,000
+Our topic for today is derivatives and rates of change.
+
+3
+00:00:11,000 --> 00:00:16,000
+Let’s begin with a brief overview of today’s lesson. At the start, we said that
+
+4
+00:00:16,000 --> 00:00:22,000
+calculus is the science of change. The primary goal of calculus is to study change.
+
+5
+00:00:22,000 --> 00:00:28,000
+Now there is one way to study change, and that’s to use functions. Functions tell us
+
+6
+00:00:28,000 --> 00:00:35,000
+how one quantity changes with respect to other quantities. For example, here’s a function
+
+7
+00:00:35,000 --> 00:00:44,000
+which relates <i>x</i> to <i>f</i>[<i>x</i>] or <i>y</i>, and that’s the plot of the function. That tells you
+
+8
+00:00:44,000 --> 00:00:49,000
+how <i>y</i> changes with respect to <i>x</i>, but of course we need more than that often.
+
+9
+00:00:49,000 --> 00:00:55,000
+We need to know how the function changes with point to point. We need the rate of change,
+
+10
+00:00:55,000 --> 00:01:00,000
+so to speak. If you have a straight line, that’s simple; you simply find the slope.
+
+11
+00:01:00,000 --> 00:01:06,000
+Here’s a straight line, the slope is 3, and that’s a very nice measure of
+
+12
+00:01:06,000 --> 00:01:12,000
+the rate of change of that function. In this lesson, we’ll show you how to do that
+
+13
+00:01:12,000 --> 00:01:17,000
+for more general functions. In other words, we’ll try and generalize the idea of slope
+
+14
+00:01:17,000 --> 00:01:25,000
+using what are known as derivatives. That’s the theme for today, derivatives and rates of change.
+
+15
+00:01:27,000 --> 00:01:34,000
+Let’s begin with the notion of a derivative. The derivative is a special kind of limit, and that limit,
+
+16
+00:01:34,000 --> 00:01:41,000
+roughly speaking, is linked to the tangent to a curve. I haven’t told exactly how,
+
+17
+00:01:41,000 --> 00:01:46,000
+but we’ll see that later. For example, if you have a straight line, the simplest kind of curve,
+
+18
+00:01:46,000 --> 00:01:55,000
+then the slope of the straight line is rise over run. That’s difference in <i>y</i> over difference in <i>x</i>,
+
+19
+00:01:55,000 --> 00:02:02,000
+and in the <i>f</i> notation, that’s <i>f</i>(<i>x</i>) − <i>f</i>(<i>a</i>) over <i>x</i> − <i>a</i>. The question is,
+
+20
+00:02:02,000 --> 00:02:08,000
+is that good enough for a general function <i>f</i>, and the answer is no. This only gives you
+
+21
+00:02:08,000 --> 00:02:13,000
+the slope of the secant line for an arbitrary function <i>f</i>. Let’s see that.
+
+22
+00:02:13,000 --> 00:02:23,000
+Here’s a function <i>f</i>[<i>x</i>] = 1/<i>x</i>, a very simple function, and let’s take two points on it, (1/2, 2) and (3, 1/3),
+
+23
+00:02:23,000 --> 00:02:29,000
+and work out the slope of the secant line between those two points. That’s −2/3.
+
+24
+00:02:29,000 --> 00:02:35,000
+Now if you draw the graph of the function and that secant line, you see it’s not quite what we need.
+
+25
+00:02:35,000 --> 00:02:42,000
+It’s just a little too far off to be useful. What’s missing over here is that the two points
+
+26
+00:02:42,000 --> 00:02:51,000
+need to be really close by, and so really what we need is the notion of limits that we studied earlier on.
+
+27
+00:02:55,000 --> 00:03:03,000
+To find the tangent line to a curve at a point, you really need to take the limit of secant lines.
+
+28
+00:03:03,000 --> 00:03:08,000
+To be more precise, you need to find the difference in <i>f</i> between <i>x</i> and <i>a</i>
+
+29
+00:03:08,000 --> 00:03:15,000
+over the difference in <i>x</i> itself, and then take the limit as <i>x</i> approaches the given point <i>a</i>.
+
+30
+00:03:15,000 --> 00:03:23,000
+This is what will give you the slope of the tangent line that goes through the required point (<i>a</i>, <i>f</i>[<i>a</i>]).
+
+31
+00:03:23,000 --> 00:03:28,000
+Here’s an example to show you that you have a secant line over here, and then as you let
+
+32
+00:03:28,000 --> 00:03:33,000
+the points come closer and closer, you will then get the tangent line.
+
+33
+00:03:33,000 --> 00:03:40,000
+It’s only in the limit that you actually get the tangent line starting from a secant line.
+
+34
+00:03:41,000 --> 00:03:50,000
+Okay. As an example of a tangent line, let’s take the curve of <i>f</i>[<i>x</i>] = <i>x</i>^3, and here’s a slope of
+
+35
+00:03:50,000 --> 00:03:57,000
+the secant line through the point (1, 1) and the limit, and that’s the slope of the tangent.
+
+36
+00:03:57,000 --> 00:04:08,000
+If the slope is 3, then the equation is <i>y</i> − <i>y</i>1 equal to slope times (<i>x</i> − <i>x</i>1), and if you plot that,
+
+37
+00:04:08,000 --> 00:04:17,000
+you surely do get the tangent line to the curve <i>x</i>^3 at this point (1, 1). Just to summarize,
+
+38
+00:04:17,000 --> 00:04:24,000
+given a point on a curve, what you do first is you work out the limit of this quotient over here.
+
+39
+00:04:24,000 --> 00:04:31,000
+You get the slope. That slope can be used to find the equation of the line, and that line
+
+40
+00:04:31,000 --> 00:04:38,000
+is then the tangent line. It’s slope times (<i>x</i> − <i>x</i>1) + <i>y</i>1 in this plot over here.
+
+41
+00:04:40,000 --> 00:04:46,000
+Okay. In practice, of course, we use something called the difference quotient to find derivatives.
+
+42
+00:04:46,000 --> 00:04:52,000
+Here’s the difference quotient, but it says you want the limit as this number <i>h</i> approaches 0
+
+43
+00:04:52,000 --> 00:04:59,000
+of the difference between <i>f</i> at a nearby point and at the given point over <i>h</i>.
+
+44
+00:04:59,000 --> 00:05:06,000
+It’s still a slope, but it’s a slope in a slightly different form. As an example, suppose <i>f</i>[<i>x</i>] = 1/<i>x</i>.
+
+45
+00:05:06,000 --> 00:05:15,000
+Work out the slope over here, and you get −1. Now once you’ve got the slope, what you can do is
+
+46
+00:05:15,000 --> 00:05:20,000
+you can plug in and find the equation of the tangent line, and here you are.
+
+47
+00:05:20,000 --> 00:05:23,000
+That is the correct tangent line at the point.
+
+48
+00:05:23,000 --> 00:05:29,000
+Okay. Now a couple of places where you might find this notion. First of all, the idea of velocity.
+
+49
+00:05:29,000 --> 00:05:37,000
+The instantaneous velocity of a position function is given by the slope of a tangent line
+
+50
+00:05:37,000 --> 00:05:41,000
+to the positional curve. If a particle is changing position and you want to find
+
+51
+00:05:41,000 --> 00:05:47,000
+the speed or the velocity at a particular time, then all you do is you work out the tangent line
+
+52
+00:05:47,000 --> 00:05:56,000
+to the curve at that point. For example, suppose that the position is this very simple function <i>s</i>[<i>t</i>] = 5<i>t</i>.
+
+53
+00:05:56,000 --> 00:06:02,000
+You work out the velocity by doing the difference quotient calculation we did earlier on,
+
+54
+00:06:02,000 --> 00:06:09,000
+and then you find out that in fact the position is, in this case, a linear function
+
+55
+00:06:09,000 --> 00:06:14,000
+while the velocity is constant, which of course we could have guessed from earlier work
+
+56
+00:06:14,000 --> 00:06:27,000
+in your class on physics or other subjects. This is the notion of velocity as the derivative of position.
+
+57
+00:06:27,000 --> 00:06:34,000
+Okay. A slightly harder problem. Suppose a ball is dropped from a building 100 m above the ground,
+
+58
+00:06:34,000 --> 00:06:38,000
+and you want to find the velocity of the ball after two seconds, let’s say,
+
+59
+00:06:38,000 --> 00:06:43,000
+and you want to find out how fast it’s going when the ball hits the ground.
+
+60
+00:06:43,000 --> 00:06:47,000
+There are two problems over here. You want to find what the velocity is after two seconds
+
+61
+00:06:47,000 --> 00:06:52,000
+and you want to find out how fast it is going, the ball is going, when it hits the ground.
+
+62
+00:06:52,000 --> 00:07:00,000
+Now, you can work out the equation of motion as 100, the initial height, minus 4.9<i>t</i>^2—
+
+63
+00:07:00,000 --> 00:07:05,000
+that comes from the acceleration of gravity—and then what you can do is you can work out
+
+64
+00:07:05,000 --> 00:07:12,000
+the speed at time <i>t</i> = 2 by using the difference quotient calculation. Now the question is
+
+65
+00:07:12,000 --> 00:07:20,000
+why is it negative? It’s negative because the ball is going down. If you plot the position
+
+66
+00:07:20,000 --> 00:07:28,000
+and the tangent equation we saw just now, that’s the velocity over here. Okay. The question now is
+
+67
+00:07:28,000 --> 00:07:34,000
+what happens when the ball hits the ground? When the ball hits the ground, the displacement is 0.
+
+68
+00:07:34,000 --> 00:07:44,000
+You solve that equation, which just says that the displacement is 0 when the time is about 4.517.
+
+69
+00:07:44,000 --> 00:07:55,000
+Now you can plug into the derivative the speed, and you get back −44.2719.
+
+70
+00:07:55,000 --> 00:08:02,000
+That’s the way to find out what happens to the ball when it hits the ground, what the speed is.
+
+71
+00:08:04,000 --> 00:08:12,000
+Okay. Now the question is what is the slope of the tangent line at a point?
+
+72
+00:08:12,000 --> 00:08:17,000
+Well, it is the derivative at that point. When people say derivative at a point, what they really mean is
+
+73
+00:08:17,000 --> 00:08:22,000
+the slope of the tangent line and vice versa. Now we have a shorthand for it.
+
+74
+00:08:22,000 --> 00:08:29,000
+We use the notation <i>f</i>'[<i>x</i>] over there. If you say <i>f</i>[<i>x</i>] = <i>x</i>^3, then in the Wolfram Language,
+
+75
+00:08:29,000 --> 00:08:39,000
+<i>f</i>'[1] is the derivative at <i>x</i> = 1. The derivative of <i>x</i>^3 at (1, 1) is 3.
+
+76
+00:08:39,000 --> 00:08:45,000
+You can plot that and check that it in fact is the correct answer.
+
+77
+00:08:45,000 --> 00:08:50,000
+A couple of more concepts over here. First of all, we have a notion of a tangent line
+
+78
+00:08:50,000 --> 00:08:54,000
+to a more general curve like over here. You’ve got the tangent line to a parabola,
+
+79
+00:08:54,000 --> 00:09:01,000
+and you want to work out a tangent equation for that parabola. What you do is
+
+80
+00:09:01,000 --> 00:09:09,000
+you set up an equation, which is <i>y</i> equal to slope, the derivative, times <i>x</i> − <i>x</i>1 plus <i>y</i>1,
+
+81
+00:09:09,000 --> 00:09:19,000
+and you work it out. Then you get actually the required plot of the parabola
+
+82
+00:09:19,000 --> 00:09:22,000
+with the tangent line at <i>x</i> = 2.
+
+83
+00:09:23,000 --> 00:09:31,000
+Now sometimes people talk about the average rate of change. Suppose you’ve got a function <i>y</i>[<i>x</i>],
+
+84
+00:09:31,000 --> 00:09:39,000
+and let’s say <i>x</i> changes from <i>x</i>1 to <i>x</i>2. Naturally <i>y</i> changes from some <i>y</i>1 to <i>y</i>2.
+
+85
+00:09:39,000 --> 00:09:47,000
+The increment over here means that change in <i>x</i>, and the increment over there means the change in <i>y</i>,
+
+86
+00:09:47,000 --> 00:09:54,000
+so you’ve got Δ<i>x</i> and Δ<i>y</i> telling you what the change in <i>x</i> and the change in <i>y</i> are.
+
+87
+00:09:54,000 --> 00:10:05,000
+Their ratio is what is called the average rate of change of <i>y</i> with respect to <i>x</i>, as you go from <i>x</i>1 to <i>x</i>2.
+
+88
+00:10:05,000 --> 00:10:12,000
+This average rate of change is exactly the slope of the secant line between the two points.
+
+89
+00:10:12,000 --> 00:10:18,000
+For example, if you want to find the average rate of change over this interval, you simply find
+
+90
+00:10:18,000 --> 00:10:23,000
+the difference in the function values divided by the difference in the <i>x</i> values, and you get back
+
+91
+00:10:23,000 --> 00:10:29,000
+the average rate. Here is a plot of the secant line along with the original curve.
+
+92
+00:10:33,000 --> 00:10:40,000
+As the secant line goes closer to the point, then of course we get the instantaneous rate of change.
+
+93
+00:10:40,000 --> 00:10:46,000
+The instantaneous rate of change is the change that you get when Δ<i>x</i>, the change in <i>x</i>, goes to 0.
+
+94
+00:10:46,000 --> 00:10:54,000
+That is exactly the slope of the tangent line at that point. In our case,
+
+95
+00:10:54,000 --> 00:11:02,000
+if we take the limit in the calculation, then you get back the tangent line at the point.
+
+96
+00:11:02,000 --> 00:11:07,000
+The instantaneous rate of change is exactly the derivative of <i>y</i> at <i>x</i>.
+
+97
+00:11:10,000 --> 00:11:20,000
+Finally, an example involving tables. Here is the table showing the US national debt in billions
+
+98
+00:11:20,000 --> 00:11:28,000
+between 1980 and 2015, measured at 5 year increments. Here’s a plot.
+
+99
+00:11:28,000 --> 00:11:37,000
+It’s clearly going up. The question is can you estimate the instantaneous rate of change at the year 2010?
+
+100
+00:11:37,000 --> 00:11:43,000
+As a first step, what you do is you make a piecewise function from it, because that lets you
+
+101
+00:11:43,000 --> 00:11:49,000
+you build the function starting from the data. You want to find the derivative,
+
+102
+00:11:49,000 --> 00:11:54,000
+so you set up the quotient like we did earlier on. You want to find 2010,
+
+103
+00:11:54,000 --> 00:12:01,000
+so that’s where that comes from. Then you can kind of interpolate—in other words,
+
+104
+00:12:01,000 --> 00:12:08,000
+in other words, find an average of the values between 2005 and 2015, and that, roughly speaking,
+
+105
+00:12:08,000 --> 00:12:17,000
+is the instantaneous rate of change at 2010. Roughly speaking, the rate of increase of debt
+
+106
+00:12:17,000 --> 00:12:22,000
+is about 1.1 trillion dollars in the year 2010.
+
+107
+00:12:25,000 --> 00:12:31,000
+Okay. That brings me to the end of today’s lesson, and the point is that the derivative of a function
+
+108
+00:12:31,000 --> 00:12:40,000
+is simply the slope of the function at that point. You can think of this derivative as being
+
+109
+00:12:40,000 --> 00:12:45,000
+the limit of the slopes of secant lines. You start a secant line, then you take the limit,
+
+110
+00:12:45,000 --> 00:12:53,000
+then you get the derivative of the tangent line. Now the derivative idea is very useful
+
+111
+00:12:53,000 --> 00:12:59,000
+in lots of places, like we saw for speed and that kind of thing in physics, and also for calculating,
+
+112
+00:12:59,000 --> 00:13:06,000
+let’s say, debt in economics. Often the only data you have is a table of values, in which case
+
+113
+00:13:06,000 --> 00:13:13,000
+you can approximate the derivative. The idea is that starting with a table of values,
+
+114
+00:13:13,000 --> 00:13:17,000
+you can find the approximate value, but of course you cannot calculate
+
+115
+00:13:17,000 --> 00:13:23,000
+the exact value of the derivative. That’s the idea for today, the idea of a derivative
+
+116
+00:13:23,000 --> 00:13:29,000
+and the notion of rate of change. In the next lesson, we’ll talk about the derivative itself
+
+117
+00:13:29,000 --> 00:13:35,000
+as being a function just like function that you start with. I’ll stop over here.
+
+118
+00:13:35,000 --> 00:13:40,000
+Do go over today’s lesson, try the exercises and you should be in good shape for the next lesson,
+
+119
+00:13:40,000 --> 00:13:43,000
+which is lesson number 8. Thank you.
+
