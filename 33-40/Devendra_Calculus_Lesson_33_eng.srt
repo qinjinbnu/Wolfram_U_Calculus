@@ -206,7 +206,7 @@ If you have (<i>a</i>^<i>x</i>)^<I>y</i>, then you simply multiply the exponents
 42
 00:02:50,000 --> 00:02:54,000
 and you get <i>a</i>^(<i>x</i> * <i>y</i>) like over here.
-然后你会得到<i>a</i>^(<i>x</i>*<i>y</i>)，正如此处的显示。
+然后你会得到<i>a</i>^(<i>x</i>*<i>y</i>)，正如这里显示的。
 
 43
 00:02:56,000 --> 00:03:00,000
