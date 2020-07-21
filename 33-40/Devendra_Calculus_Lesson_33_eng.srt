@@ -221,7 +221,7 @@ that’s the same as <i>a</i>^<i>x</i> * <i>b</i>^<i>x</i> like over here.
 45
 00:03:07,000 --> 00:03:11,000
 Okay. Now let’s talk a little bit about some deeper properties.
-好了，现在我们来谈谈更深层次的属性。
+现在，让我们深入谈谈。
 
 46
 00:03:11,000 --> 00:03:15,000
@@ -296,12 +296,12 @@ The point is that the derivative of <i>a</I>^<i>x</i>
 60
 00:04:06,000 --> 00:04:11,000
 is not <i>x</I> * <i>a</i>^(<i>x</i> – 1) as you might think,
-并非如你所想的<i>x</I> * <i>a</i>^(<i>x</i> - 1)。
+和你所想象的的<i>x</I> * <i>a</i>^(<i>x</i> - 1)不同，
 
 61
 00:04:11,000 --> 00:04:16,000
 but in fact it is <i>a</i>^<i>x</i> * Log[<i>a</i>].
-而实际上是<i>a</i>^<i>x</i>*Log[<i>a</i>]。
+实际结果是<i>a</i>^<i>x</i>*Log[<i>a</i>]。
 
 62
 00:04:16,000 --> 00:04:19,000
@@ -311,7 +311,7 @@ Here’s the derivative from D.
 63
 00:04:19,000 --> 00:04:26,000
 Now the question is in which case does this logarithm term become 1?
-那么，什么时候这个对数项会变成1？
+那么，什么时候这个对数式等于1？
 
 64
 00:04:26,000 --> 00:04:31,000
@@ -321,7 +321,7 @@ That happens when the number <i>a</i> has got a special value called <i>e</i>,
 65
 00:04:31,000 --> 00:04:34,000
 and this <i>e</i> is named in honor of
-这个名字是为了纪念
+这个名字，是为了纪念
 
 66
 00:04:34,000 --> 00:04:37,000
@@ -396,7 +396,7 @@ then you get back <i>a</i>^<i>x</i>/Log[<i>a</i>].
 80
 00:05:25,000 --> 00:05:30,000
 Okay. Let’s go a step deeper into the number <i>e</i>.
-好，让我们进一步了解一下这个数字，<i>e</i>。
+好，让我们进一步了解这个数字，<i>e</i>。
 
 81
 00:05:30,000 --> 00:05:32,000
@@ -421,7 +421,7 @@ but you can also define it using limits.
 85
 00:05:42,000 --> 00:05:47,000
 This limit over here becomes 1 when <i>x</i> is <i>e</i>.
-当<i>x</i>是<i>e</i>时，这里的极限才会趋向于 1。
+当<i>x</i>是<i>e</i>时，这里的极限才趋向于 1。
 
 86
 00:05:47,000 --> 00:05:51,000
@@ -451,7 +451,7 @@ becomes 1 when <i>a</I> is the number <i>e</i>.
 91
 00:06:07,000 --> 00:06:10,000
 Finally, you should know that
-最后，你也应该知晓，
+最后，你也应该明白，
 
 92
 00:06:10,000 --> 00:06:15,000
