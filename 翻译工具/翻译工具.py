@@ -2,15 +2,14 @@
             encoding='utf-8').readlines()
 英文文件 = open(r'C:\Users\wuyudi\Desktop\34.txt',
             encoding='utf-8').readlines()
-中文 = [j for i, j in enumerate(中文文件) if i % 4 == 2]
 
-newfile = []
 
-for i, j in enumerate(英文文件):
-    newfile.append(j)
-    if i % 4 == 2:
-        newfile.append(中文[i//4])
+def newfile():
+    for i, j in enumerate(英文文件):
+        yield j
+        if i % 4 == 2:
+            yield 中文文件[i]
+
 
 with open(r'C:\Users\wuyudi\Desktop\34 - 副本.txt', 'w') as f:
-    for j in newfile:
-        f.write(j)
+    f.write(newfile())
