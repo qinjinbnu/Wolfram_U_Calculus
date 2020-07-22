@@ -1,6 +1,6 @@
-中文文件 = open(r'C:\Users\wuyudi\Desktop\新建文本文档 (3).txt',
+中文文件 = open(r'C:\Users\wuyudi\Desktop\temp1.txt',
             encoding='utf-8').readlines()
-英文文件 = open(r'C:\Users\wuyudi\Desktop\34.txt',
+英文文件 = open(r'C:\Users\wuyudi\Desktop\temp2.txt',
             encoding='utf-8').readlines()
 
 
@@ -12,4 +12,5 @@ def newfile():
 
 
 with open(r'C:\Users\wuyudi\Desktop\34 - 副本.txt', 'w') as f:
-    f.write(newfile())
+    for k in newfile():
+        f.write(k)
