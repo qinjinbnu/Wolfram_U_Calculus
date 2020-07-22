@@ -35,3 +35,4 @@ The topic for this lesson is logarithmic functions.
 ```
 
 下载 `翻译工具.nb` , 放在 `xx.txt` ,`yy.txt` 同一目录下，把对应的文件名改掉，运行。
+或 `翻译工具.py`，直接把路径写在文件里的位置，运行。
