@@ -1,67 +1,67 @@
 ﻿1
 00:00:00,000 --> 00:00:07,000
 Hello, and welcome to Lesson 34 of this introduction to calculus with Wolfram U.
-您好，欢迎来到 Wolfram U 的微积分入门课程第 34 课。
+您好 欢迎来到 Wolfram U 的微积分入门课程第 34 课
 
 2
 00:00:07,000 --> 00:00:12,000
 The topic for this lesson is logarithmic functions.
-本节课的课题是对数函数。
+本节课的课题是对数函数
 
 3
 00:00:12,000 --> 00:00:16,000
 Let’s begin with a brief overview of the subject.
-我们先来简单介绍一下这个问题。
+我们先来简单介绍一下这个问题
 
 4
 00:00:16,000 --> 00:00:19,000
 In the last lesson, we talked about exponential functions
-上节课，我们讲了指数函数
+上节课 我们讲了指数函数
 
 5
 00:00:19,000 --> 00:00:21,000
 like this one, 2^<i>x</i>.
-像这个，2^<i>x</i>。
+像这个 2^<i>x</i>
 
 6
 00:00:21,000 --> 00:00:23,000
 Here is a plot of the function.
-下面是函数的图像。
+下面是函数的图像
 
 7
 00:00:23,000 --> 00:00:30,000
 The question is suppose we want to solve the equation 2^<i>x</i> = 5.
-问题是假设我们要解方程2^<i>x</i>=5。
+问题是假设我们要解方程2^<i>x</i>=5
 
 8
 00:00:30,000 --> 00:00:35,000
 The problem here is that 5 is not a power of 2 in any obvious way,
-这里的问题是，5显然不是2的幂。
+这里的问题是 5显然不是2的幂
 
 9
 00:00:35,000 --> 00:00:39,000
 so we give it to Solve, and then Solve comes back and tells us
-所以我们把它给Solve，然后Solve回来告诉我们
+所以我们把它给Solve 然后Solve回来告诉我们
 
 10
 00:00:39,000 --> 00:00:43,000
 that <i>x</i> is Log[5]/Log[2].
-即<i>x</i>为Log[5]/Log[2]。
+即<i>x</i>为Log[5]/Log[2]
 
 11
 00:00:43,000 --> 00:00:47,000
 That’s the answer given by Solve, and really speaking,
-这是Solve给出的答案，也是真正意义上的答案。
+这是Solve给出的答案 也是真正意义上的答案
 
 12
 00:00:47,000 --> 00:00:50,000
 it’s the logarithm of 5 to the base 2.
-它是以2为底5的对数。
+它是以2为底5的对数
 
 13
 00:00:50,000 --> 00:00:54,000
 That’s an example of a logarithm.
-这就是一个对数的例子。
+这就是一个对数的例子
 
 14
 00:00:54,000 --> 00:00:58,000
@@ -76,12 +76,12 @@ in more detail and some of their properties.
 16
 00:01:02,000 --> 00:01:08,000
 Basically,  a logarithm is an inverse function
-基本上，对数是一个反函数。
+基本上 对数是一个反函数
 
 17
 00:01:08,000 --> 00:01:13,000
 because it is the inverse of an exponential function <i>a</i>^<i>x</i>.
-因为它是指数函数<i>a</i>^<i>x</i>的倒数。
+因为它是指数函数<i>a</i>^<i>x</i>的倒数
 
 18
 00:01:13,000 --> 00:01:17,000
@@ -91,47 +91,47 @@ You can think of it as having the property that
 19
 00:01:17,000 --> 00:01:21,000
 <i>a</i> raised to the logarithm of <i>x</I> to the base <i>a</i> is <i>x</i>,
-<i>a</i>提高到<i>x</I>的对数，以<i>a</i>为基数就是<i>x</i>。
+<i>a</i>提高到<i>x</I>的对数 以<i>a</i>为基数就是<i>x</i>
 
 20
 00:01:21,000 --> 00:01:25,000
 and so is the logarithm of <i>a</i>^<i>x</i> in the base <i>a</i>.
-所以是基数<i>a</i>^<i>x</i>的对数。
+所以是基数<i>a</i>^<i>x</i>的对数
 
 21
 00:01:25,000 --> 00:01:30,000
 The number <i>a</i> is the base of the logarithm.
-数字<i>a</i>是对数的底数。
+数字<i>a</i>是对数的底数
 
 22
 00:01:31,000 --> 00:01:35,000
 Now we have a function called Log in the Wolfram Language
-现在我们在Wolfram语言中有一个叫做Log的函数。
+现在我们在Wolfram语言中有一个叫做Log的函数
 
 23
 00:01:35,000 --> 00:01:37,000
 which does these calculations.
-它做这些计算。
+它做这些计算
 
 24
 00:01:37,000 --> 00:01:44,000
 The log of 27 to the base 3 is 3 because 3^3 is 27,
-以3为底27的对数是3，因为3^3是27。
+以3为底27的对数是3 因为3^3是27
 
 25
 00:01:44,000 --> 00:01:48,000
 and the logarithm of 1/4^–2 is –2.
-而1/4^-2的对数是-2。
+而1/4^-2的对数是-2
 
 26
 00:01:48,000 --> 00:01:55,000
 Keep in mind that the default base for Log is <i>e</i>,
-请记住，Log的默认基数是<i>e</i>。
+请记住 Log的默认基数是<i>e</i>
 
 27
 00:01:55,000 --> 00:01:58,000
 so the logarithm of <i>e</i>^2 is just 2.
-所以<i>e</i>^2的对数只是2。
+所以<i>e</i>^2的对数只是2
 
 28
 00:01:58,000 --> 00:02:04,000
@@ -146,52 +146,52 @@ in the Wolfram Language with base <i>e</I>.
 30
 00:02:09,000 --> 00:02:13,000
 Next let’s take the graph of a logarithm function.
-接下来我们来看看对数函数的图形。
+接下来我们来看看对数函数的图形
 
 31
 00:02:13,000 --> 00:02:16,000
 Here’s the graph, and you’ll notice that it’s defined
-这是它的图像，你会发现它
+这是它的图像 你会发现它
 
 32
 00:02:16,000 --> 00:02:24,000
 only for positive <i>x</i>, and the range is all the way from –∞ up to ∞.
-只对正的<i>x</i>有定义，而且范围从-∞一直到∞。
+只对正的<i>x</i>有定义 而且范围从-∞一直到∞
 
 33
 00:02:24,000 --> 00:02:30,000
 The function domain for the logarithm is just the positive numbers,
-对数的函数域只是正数。
+对数的函数域只是正数
 
 34
 00:02:30,000 --> 00:02:34,000
 and the range is all the real numbers.
-而范围都是实数。
+而范围都是实数
 
 35
 00:02:35,000 --> 00:02:39,000
 Now if you look at the limits when <i>x</I> approaches ∞,
-现在如果你看看当<i>x</I>接近∞时的极限。
+现在如果你看看当<i>x</I>接近∞时的极限
 
 36
 00:02:39,000 --> 00:02:43,000
 then you see that the answer is ∞, and when it approaches 0,
-那么你就会发现，答案是∞，而当它接近0时。
+那么你就会发现 答案是∞ 而当它接近0时
 
 37
 00:02:43,000 --> 00:02:46,000
 the answer is –∞.
-答案是-∞。
+答案是-∞
 
 38
 00:02:46,000 --> 00:02:53,000
 Of course the graph intersects the <i>x</i> axis at <i>x</i> = 1.
-当然，该图与<i>x</i>轴交于<i>x</i>=1。
+当然 该图与<i>x</i>轴交于<i>x</i>=1
 
 39
 00:02:55,000 --> 00:02:58,000
 Okay. Next let’s take an example
-好的。接下来，我们以一个
+好的接下来 我们以一个
 
 40
 00:02:58,000 --> 00:03:01,000
@@ -201,7 +201,7 @@ where you have a base which is less than 1.
 41
 00:03:01,000 --> 00:03:03,000
 Now the opposite happens.
-现在却发生了相反的情况。
+现在却发生了相反的情况
 
 42
 00:03:03,000 --> 00:03:06,000
@@ -211,127 +211,127 @@ You have a function which is still defined on positive numbers,
 43
 00:03:06,000 --> 00:03:12,000
 but it shoots up to ∞ at 0 and goes down to –∞ on the other side.
-但它在0处射到∞，另一侧则降到-∞。
+但它在0处射到∞ 另一侧则降到-∞
 
 44
 00:03:12,000 --> 00:03:15,000
 Domain and range is just the same as before,
-定义域和值域和以前一样。
+定义域和值域和以前一样
 
 45
 00:03:15,000 --> 00:03:18,000
 but now the limits are the opposite,
-但现在的极限是相反的。
+但现在的极限是相反的
 
 46
 00:03:18,000 --> 00:03:21,000
 so when you approach ∞, you get –∞.
-所以当你接近∞时，你会得到-∞。
+所以当你接近∞时 你会得到-∞
 
 47
 00:03:21,000 --> 00:03:24,000
 When you approach 0, you get ∞.
-当你接近0时，你会得到∞。
+当你接近0时 你会得到∞
 
 48
 00:03:24,000 --> 00:03:29,000
 That’s the behavior of a logarithm whose base is less than 1.
-这就是底数小于1的对数的行为。
+这就是底数小于1的对数的行为
 
 49
 00:03:29,000 --> 00:03:36,000
 Finally, the plot has the same <i>x</i> intercept at <i>x</i> = 1.
-最后，该图在<i>x</i>=1处有相同的<i>x</i>截距。
+最后 该图在<i>x</i>=1处有相同的<i>x</i>截距
 
 50
 00:03:38,000 --> 00:03:42,000
 Now the point is that when you have inverse functions,
-现在的问题是，当你有反函数。
+现在的问题是 当你有反函数
 
 51
 00:03:42,000 --> 00:03:48,000
 then their graphs are reflections of each other in the line <i>y</I> = <i>x</i>.
-那么它们的图形在<i>y</I>=<i>x</i>这条直线上是相互反映的。
+那么它们的图形在<i>y</I>=<i>x</i>这条直线上是相互反映的
 
 52
 00:03:48,000 --> 00:03:53,000
 For example, if you take E^<i>x</I> and Log[<i>x</i>],
-例如，如果取E^<i>x</I>和Log[<i>x</i>]。
+例如 如果取E^<i>x</I>和Log[<i>x</i>]
 
 53
 00:03:53,000 --> 00:03:57,000
 then they are inverse functions, and if you look at their graphs,
-那么它们就是反函数，如果你看它们的图形。
+那么它们就是反函数 如果你看它们的图形
 
 54
 00:03:57,000 --> 00:04:01,000
 then they are reflections of each other in the line <i>y</i> = <i>x</i>.
-那么它们在线段<i>y</i>=<i>x</i>中是相互反射的。
+那么它们在线段<i>y</i>=<i>x</i>中是相互反射的
 
 55
 00:04:01,000 --> 00:04:04,000
 Just the same happens if you take <i>e</I>^–<i>x</i>,
-只是如果你把<i>e</I>^-<i>x</i>也是一样。
+只是如果你把<i>e</I>^-<i>x</i>也是一样
 
 56
 00:04:04,000 --> 00:04:06,000
 and you see that again you have a reflection,
-你看，你又有了反思。
+你看 你又有了反思
 
 57
 00:04:06,000 --> 00:04:08,000
 but that’s slightly harder to see.
-但这稍微有点难看。
+但这稍微有点难看
 
 58
 00:04:08,000 --> 00:04:13,000
 The red plot is reflected in the line <i>y</I> = <i>x</i> to give you the blue plot.
-红色图反映在线段<i>y</I>=<i>x</i>中，得到蓝色图。
+红色图反映在线段<i>y</I>=<i>x</i>中 得到蓝色图
 
 59
 00:04:14,000 --> 00:04:17,000
 Now of course there are lots of properties
-当然，现在有很多属性
+当然 现在有很多属性
 
 60
 00:04:17,000 --> 00:04:19,000
 of the exponential function,
-指数函数的。
+指数函数的
 
 61
 00:04:19,000 --> 00:04:22,000
 and in just the same way, you have properties of the logarithm.
-并且以同样的方式，你有对数的属性。
+并且以同样的方式 你有对数的属性
 
 62
 00:04:22,000 --> 00:04:28,000
 So Log[<i>x</I> * <i>y</i>] is Log[<i>x</i>] + Log[<i>y</i>].
-所以Log[<i>x</I>*<i>y</i>]就是Log[<i>x</i>]+Log[<i>y</i>]。
+所以Log[<i>x</I>*<i>y</i>]就是Log[<i>x</i>]+Log[<i>y</i>]
 
 63
 00:04:28,000 --> 00:04:35,000
 But if you have quotients like <i>x</I>/<i>y</i>, then they turn into differences.
-但如果你有像<i>x</I>/<i>y</i>这样的商，那么它们就会变成差。
+但如果你有像<i>x</I>/<i>y</i>这样的商 那么它们就会变成差
 
 64
 00:04:36,000 --> 00:04:41,000
 Finally if you have powers, then they turn into multiplication.
-最后如果你有力量，那么它们就会变成乘法。
+最后如果你有力量 那么它们就会变成乘法
 
 65
 00:04:41,000 --> 00:04:44,000
 The log of <i>x</i>^<i>b</i> is <i>b</i> times the log of <i>x</i>.
-<i>x</i>^<i>b</i>的对数是<i>b</i>乘以<i>x</i>的对数。
+<i>x</i>^<i>b</i>的对数是<i>b</i>乘以<i>x</i>的对数
 
 66
 00:04:46,000 --> 00:04:49,000
 The point is that logarithms are really useful
-重点是，对数真的很有用。
+重点是 对数真的很有用
 
 67
 00:04:49,000 --> 00:04:52,000
 because they convert multiplication to addition,
-因为它们将乘法转化为加法。
+因为它们将乘法转化为加法
 
 68
 00:04:52,000 --> 00:04:54,000
@@ -341,7 +341,7 @@ they convert division to subtraction
 69
 00:04:54,000 --> 00:04:57,000
 and they convert powers to multiplication.
-他们将幂数转化为乘法。
+他们将幂数转化为乘法
 
 70
 00:04:59,000 --> 00:05:03,000
@@ -351,12 +351,12 @@ Now an important rule is the change of base
 71
 00:05:03,000 --> 00:05:06,000
 where if you have a base <i>x</i>, you can change to base <i>a</i>
-如果你有一个基数<i>x</i>，你可以改成基数<i>a</i>。
+如果你有一个基数<i>x</i> 你可以改成基数<i>a</i>
 
 72
 00:05:06,000 --> 00:05:08,000
 by this kind of a quotient.
-由这种商。
+由这种商
 
 73
 00:05:08,000 --> 00:05:11,000
@@ -366,27 +366,27 @@ The logarithm <i>y</i> to the base <i>x</i> is
 74
 00:05:11,000 --> 00:05:13,000
 the logarithm of <i>y</i> to the base <i>a</i>
-的对数，以<i>y</i>为基数<i>a</i>。
+的对数 以<i>y</i>为基数<i>a</i>
 
 75
 00:05:13,000 --> 00:05:16,000
 divided by the logarithm of <i>x</i> to the base <i>a</i>.
-除以<i>x</i>的对数，以<i>a</i>为基数。
+除以<i>x</i>的对数 以<i>a</i>为基数
 
 76
 00:05:16,000 --> 00:05:20,000
 Okay. For example, when you get back this answer from Solve,
-好的。例如，当你从Solve得到这个答案时。
+好的例如 当你从Solve得到这个答案时
 
 77
 00:05:20,000 --> 00:05:26,000
 then that really is the logarithm of 5 to the base 2.
-那就真的是5的对数到2的基数。
+那就真的是5的对数到2的基数
 
 78
 00:05:28,000 --> 00:05:30,000
 Okay. At long last, we can talk about
-好了，终于，我们可以谈谈了最后，我们可以谈谈
+好了 终于 我们可以谈谈了最后 我们可以谈谈
 
 79
 00:05:30,000 --> 00:05:32,000
@@ -396,22 +396,22 @@ the derivatives and integrals of logarithms.
 80
 00:05:32,000 --> 00:05:35,000
 The derivative for Log[<i>x</i>] is just 1/<i>x</i>.
-Log[<i>x</i>]的导数只有1/<i>x</i>。
+Log[<i>x</i>]的导数只有1/<i>x</i>
 
 81
 00:05:35,000 --> 00:05:38,000
 That’s a very nice property, very surprising.
-这是一个非常好的财产，非常令人惊讶。
+这是一个非常好的财产 非常令人惊讶
 
 82
 00:05:38,000 --> 00:05:43,000
 But the fact is that logarithms grow more slowly than polynomials.
-但事实上，对数比多项式增长得更慢。
+但事实上 对数比多项式增长得更慢
 
 83
 00:05:43,000 --> 00:05:47,000
 Because you have a change of base formula,
-因为你的基础公式发生了变化。
+因为你的基础公式发生了变化
 
 84
 00:05:47,000 --> 00:05:49,000
@@ -421,7 +421,7 @@ you can work out the derivative of
 85
 00:05:49,000 --> 00:05:53,000
 the logarithm of <i>x</i> to the base <i>a</i> as 1/(<i>x</i>Log[<i>a</i>]).
-<i>x</i>对基数<i>a</i>的对数为1/(<i>x</i>Log[<i>a</i>])。
+<i>x</i>对基数<i>a</i>的对数为1/(<i>x</i>Log[<i>a</i>])
 
 86
 00:05:53,000 --> 00:05:55,000
@@ -431,27 +431,27 @@ You can apply the chain rule
 87
 00:05:55,000 --> 00:05:58,000
 and work out more complicated derivatives.
-并计算出更复杂的衍生产品。
+并计算出更复杂的衍生产品
 
 88
 00:05:58,000 --> 00:06:03,000
 Here is a plot of the logarithm and its derivative.
-这是一张对数及其导数的图。
+这是一张对数及其导数的图
 
 89
 00:06:03,000 --> 00:06:08,000
 Notice that the logarithm function is only defined for positive <i>x</i>
-请注意，对数函数只定义了正的<i>x</i>。
+请注意 对数函数只定义了正的<i>x</i>
 
 90
 00:06:08,000 --> 00:06:11,000
 whereas its derivative is defined for all <i>x</i>,
-而它的导数是对所有<i>x</i>定义的。
+而它的导数是对所有<i>x</i>定义的
 
 91
 00:06:11,000 --> 00:06:15,000
 and that’s an issue which we’ll come back to later in the lesson.
-而这个问题，我们在后面的课程中会再提到。
+而这个问题 我们在后面的课程中会再提到
 
 92
 00:06:16,000 --> 00:06:18,000
@@ -461,117 +461,117 @@ How about the integral of log?
 93
 00:06:18,000 --> 00:06:22,000
 Well, the integral of log is <i>x</i>Log[<i>x</i>] – <i>x</i>,
-那么，log的积分是<i>x</i>Log[<i>x</i>]-<i>x</i>。
+那么 log的积分是<i>x</i>Log[<i>x</i>]-<i>x</i>
 
 94
 00:06:22,000 --> 00:06:25,000
 and that’s a bit hard to prove,
-而这一点很难证明。
+而这一点很难证明
 
 95
 00:06:25,000 --> 00:06:28,000
 but you can check the answer by doing a derivative,
-但你可以通过做导数来检查答案。
+但你可以通过做导数来检查答案
 
 96
 00:06:28,000 --> 00:06:30,000
 and you get back the usual function.
-然后你就会回到通常的功能。
+然后你就会回到通常的功能
 
 97
 00:06:30,000 --> 00:06:39,000
 The integral of the natural logarithm is <i>x</i>Log[<i>x</i>] – <i>x</i>.
-自然对数的积分为<i>x</i>Log[<i>x</i>]-<i>x</i>。
+自然对数的积分为<i>x</i>Log[<i>x</i>]-<i>x</i>
 
 98
 00:06:40,000 --> 00:06:43,000
 Here is a plot of the integral.
-下面是积分图。
+下面是积分图
 
 99
 00:06:44,000 --> 00:06:47,000
 Okay. Now an important application.
-好了，现在是一个重要的应用。现在，一个重要的应用。
+好了 现在是一个重要的应用现在 一个重要的应用
 
 100
 00:06:47,000 --> 00:06:54,000
 The integral of 1/<i>x</i> is possible to compute, but for that,
-1/<i>x</i>的积分是可以计算的，但对于。
+1/<i>x</i>的积分是可以计算的 但对于
 
 101
 00:06:54,000 --> 00:06:56,000
 you need to worry about the fact that the logarithm function
-你需要担心的是，对数函数
+你需要担心的是 对数函数
 
 102
 00:06:56,000 --> 00:07:01,000
 is only defined for positive <i>x</i> whereas 1/<i>x</i> is defined for all <i>x</i>.
-只定义了正的<i>x</i>，而1/<i>x</i>定义了所有<i>x</i>。
+只定义了正的<i>x</i> 而1/<i>x</i>定义了所有<i>x</i>
 
 103
 00:07:01,000 --> 00:07:04,000
 To work out that difficulty, what we’ll do is we’ll introduce
-为了解决这个难题，我们要做的是，我们将引入
+为了解决这个难题 我们要做的是 我们将引入
 
 104
 00:07:04,000 --> 00:07:07,000
 a logarithm of the absolute value of <i>x</i>.
-<i>x</i>的绝对值的对数。
+<i>x</i>的绝对值的对数
 
 105
 00:07:07,000 --> 00:07:13,000
 Now that’s nicely defined for all numbers, except of course for 0.
-现在对所有的数字都有很好的定义，当然0除外。
+现在对所有的数字都有很好的定义 当然0除外
 
 106
 00:07:13,000 --> 00:07:17,000
 Once you have done that, then you can see that the integral of 1/<i>x</i>
-一旦你做到了这一点，那么你可以看到1/<i>x</i>的积分。
+一旦你做到了这一点 那么你可以看到1/<i>x</i>的积分
 
 107
 00:07:17,000 --> 00:07:21,000
 is the logarithm of the absolute value of <i>x</i>,
-是<i>x</i>绝对值的对数。
+是<i>x</i>绝对值的对数
 
 108
 00:07:21,000 --> 00:07:23,000
 but in the Wolfram Language, the Log function
-但在Wolfram语言中，日志函数
+但在Wolfram语言中 日志函数
 
 109
 00:07:23,000 --> 00:07:26,000
 can handle both positive and negative numbers.
-可以处理正数和负数。
+可以处理正数和负数
 
 110
 00:07:26,000 --> 00:07:33,000
 For example, the Log[–2] is the Log[2] plus a complex number.
-例如，Log[-2]是Log[2]加上一个复数。
+例如 Log[-2]是Log[2]加上一个复数
 
 111
 00:07:33,000 --> 00:07:41,000
 So in the Wolfram Language, the integral of 1/<i>x</i> is just Log[<i>x</i>].
-所以在Wolfram语言中，1/<i>x</i>的积分只是Log[<i>x</i>]。
+所以在Wolfram语言中 1/<i>x</i>的积分只是Log[<i>x</i>]
 
 112
 00:07:41,000 --> 00:07:47,000
 But in fact, one could write it as Log[|<i>x</i>|] + <i>C</i>.
-但实际上，可以写成Log[|<i>x</i>|]+<i>C</i>。
+但实际上 可以写成Log[|<i>x</i>|]+<i>C</i>
 
 113
 00:07:49,000 --> 00:07:52,000
 Okay. Finally, let’s talk about an application.
-好吧，最后，我们来谈谈应用。最后，我们来谈谈应用。
+好吧 最后 我们来谈谈应用最后 我们来谈谈应用
 
 114
 00:07:52,000 --> 00:07:55,000
 Here is an exponential decay function.
-这里是一个指数衰减函数。
+这里是一个指数衰减函数
 
 115
 00:07:55,000 --> 00:08:01,000
 The <i>n</i> over here is a quantity at time <i>t</i> = 0, and the question is
-这边的<i>n</i>是时间<i>t</i>=0时的量，问题是
+这边的<i>n</i>是时间<i>t</i>=0时的量 问题是
 
 116
 00:08:01,000 --> 00:08:05,000
@@ -586,52 +586,52 @@ to reach half of its initial value?
 118
 00:08:08,000 --> 00:08:12,000
 Well, to do that, we solve the equation and get back an answer,
-好吧，要做到这一点，我们解方程，然后得到一个答案。
+好吧 要做到这一点 我们解方程 然后得到一个答案
 
 119
 00:08:12,000 --> 00:08:16,000
 and this answer is called the half-life of the function.
-而这个答案叫做函数的半衰期。
+而这个答案叫做函数的半衰期
 
 120
 00:08:16,000 --> 00:08:19,000
 The λ is called the decay constant.
-λ称为衰变常数。
+λ称为衰变常数
 
 121
 00:08:19,000 --> 00:08:21,000
 It tells you how fast it decays.
-它告诉你它的衰减速度。
+它告诉你它的衰减速度
 
 122
 00:08:21,000 --> 00:08:26,000
 1/λ is called the mean lifetime of the function.
-1/λ称为函数的平均寿命。
+1/λ称为函数的平均寿命
 
 123
 00:08:26,000 --> 00:08:28,000
 Often when you do such calculations,
-通常当你进行这样的计算时。
+通常当你进行这样的计算时
 
 124
 00:08:28,000 --> 00:08:31,000
 you will need to know the logarithm of 2.
-你需要知道2的对数。
+你需要知道2的对数
 
 125
 00:08:31,000 --> 00:08:34,000
 The numerical value is approximately 0.693,
-数值约为0.693。
+数值约为0.693
 
 126
 00:08:34,000 --> 00:08:37,000
 and that’s well worth memorizing.
-这一点很值得记忆。
+这一点很值得记忆
 
 127
 00:08:38,000 --> 00:08:40,000
 With that, we come to the end of this lesson,
-至此，我们来到了本节课的尾声。
+至此 我们来到了本节课的尾声
 
 128
 00:08:40,000 --> 00:08:44,000
@@ -641,52 +641,52 @@ the main point being that logarithms are very useful
 129
 00:08:44,000 --> 00:08:48,000
 in solving exponential equations of this type.
-在解这类指数方程时。
+在解这类指数方程时
 
 130
 00:08:48,000 --> 00:08:51,000
 Just like you have properties of exponentials,
-就像你有指数的属性一样。
+就像你有指数的属性一样
 
 131
 00:08:51,000 --> 00:08:55,000
 you also have properties of logarithms.
-你也有对数的属性。
+你也有对数的属性
 
 132
 00:08:55,000 --> 00:09:00,000
 The derivative of a logarithm of <i>x</i> is 1/<i>x</i>.
-<i>x</i>的对数的导数为1/<i>x</i>。
+<i>x</i>的对数的导数为1/<i>x</i>
 
 133
 00:09:00,000 --> 00:09:03,000
 The integral is a lot harder.
-积分的难度很大。
+积分的难度很大
 
 134
 00:09:03,000 --> 00:09:07,000
 It is <i>x</i>Log[<i>x</i>] – <i>x</i> + <i>C</i>.
-它是<i>x</i>Log[<i>x</i>]-<i>x</i>+<i>C</i>。
+它是<i>x</i>Log[<i>x</i>]-<i>x</i>+<i>C</i>
 
 135
 00:09:07,000 --> 00:09:13,000
 The integral of 1/<i>x</I> is Log[|<i>x</i>|] + <i>C</i>.
-1/<i>x</I>的积分为Log[|<i>x</i>|]+<i>C</i>。
+1/<i>x</I>的积分为Log[|<i>x</i>|]+<i>C</i>
 
 136
 00:09:13,000 --> 00:09:16,000
 Of course, you can use logarithms
-当然，你也可以用对数。
+当然 你也可以用对数
 
 137
 00:09:16,000 --> 00:09:19,000
 to find the half-life of a function.
-以求函数的半衰期。
+以求函数的半衰期
 
 138
 00:09:19,000 --> 00:09:23,000
 That’s a brief introduction to logarithms—
-这就是对数的简单介绍--。
+这就是对数的简单介绍--
 
 139
 00:09:23,000 --> 00:09:26,000
@@ -696,7 +696,7 @@ enough for us to now start talking about
 140
 00:09:26,000 --> 00:09:29,000
 the so-called L’Hospital’s rule, which we’ll do next time.
-所谓L'Hospital的规则，我们下次再做。
+所谓L'Hospital的规则 我们下次再做
 
 141
 00:09:29,000 --> 00:09:32,000
