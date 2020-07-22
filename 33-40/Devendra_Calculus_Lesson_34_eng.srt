@@ -704,5 +704,5 @@ the so-called L’Hospital’s rule, which we’ll do next time.
 141
 00:09:29,000 --> 00:09:32,000
 I’ll stop over here. Thank you very much.
-今天就到这里了 谢谢观看
+这节课到这就结束了 谢谢观看
 

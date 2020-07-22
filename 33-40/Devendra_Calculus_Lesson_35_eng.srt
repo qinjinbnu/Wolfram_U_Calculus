@@ -791,4 +791,5 @@ and you surely will benefit a lot from review.
 159
 00:09:39,000 --> 00:09:41,000
 I’ll stop over here. Thank you very much.
-我在这里停一下谢谢你了
+这节课到这就结束了 谢谢观看
+
