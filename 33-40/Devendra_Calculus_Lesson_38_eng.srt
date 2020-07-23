@@ -1,12 +1,12 @@
 ﻿1
 00:00:00,000 --> 00:00:03,000
 Hello, and welcome to Lesson 38
-你好 欢迎来到第38课
+你好 欢迎来到Wolfram U的微积分入门课程第38课
 
 2
 00:00:03,000 --> 00:00:07,000
 of this introduction to calculus with Wolfram U.
-的这个微积分导论与Wolfram U
+你好 欢迎来到Wolfram U的微积分入门课程第38课
 
 3
 00:00:07,000 --> 00:00:12,000
