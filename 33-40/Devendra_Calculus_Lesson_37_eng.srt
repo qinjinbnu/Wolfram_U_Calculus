@@ -11,12 +11,12 @@ of this introduction to calculus with Wolfram U.
 3
 00:00:06,000 --> 00:00:11,000
 The topic for this lesson is separable differential equations.
-本节课的课题是可分离微分方程
+本节课的课题是可分离变量的微分方程
 
 4
 00:00:11,000 --> 00:00:15,000
 Let’s begin with a brief overview of the lesson.
-我们先来简单介绍一下本课的内容
+让我们从本课的简单概览开始
 
 5
 00:00:15,000 --> 00:00:20,000

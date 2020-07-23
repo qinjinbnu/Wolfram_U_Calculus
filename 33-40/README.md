@@ -9,6 +9,9 @@
 
 - 你好 欢迎来到Wolfram U的微积分入门课程第xx课
 
+Let’s begin with a brief overview of the subject.
+让我们从本课的简单概览开始
+
 结尾：
 
 - 这节课到这就结束了 谢谢观看

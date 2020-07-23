@@ -16,7 +16,7 @@ The topic for this lesson is slope fields and Euler’s method.
 4
 00:00:13,000 --> 00:00:17,000
 Let’s begin with a brief overview of the lesson.
-首先简单介绍一下本课的内容
+让我们从本课的简单概览开始
 
 5
 00:00:17,000 --> 00:00:20,000

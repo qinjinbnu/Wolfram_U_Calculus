@@ -11,7 +11,7 @@ The topic for this lesson is logarithmic functions.
 3
 00:00:12,000 --> 00:00:16,000
 Let’s begin with a brief overview of the subject.
-让我们先简单概览
+让我们从本课的简单概览开始
 
 4
 00:00:16,000 --> 00:00:19,000

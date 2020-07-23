@@ -16,7 +16,7 @@ The topic for this lesson is L’Hospital’s rule.
 4
 00:00:10,000 --> 00:00:14,000
 Let’s begin with a brief overview of the lesson.
-让我们从本课的简单概述开始
+让我们从本课的简单概览开始
 
 5
 00:00:14,000 --> 00:00:17,000

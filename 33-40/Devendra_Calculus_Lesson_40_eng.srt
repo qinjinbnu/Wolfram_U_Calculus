@@ -16,7 +16,7 @@ The topic for this lesson is part 2 of a sample calculus exam.
 4
 00:00:16,000 --> 00:00:18,000
 Let’s begin with a brief overview of the lesson.
-我们先来简单介绍一下本课的内容
+让我们从本课的简单概览开始
 
 5
 00:00:18,000 --> 00:00:23,000
