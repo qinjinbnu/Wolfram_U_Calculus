@@ -6,47 +6,47 @@ Hello, and welcome to Lesson 36
 2
 00:00:03,000 --> 00:00:07,000
 of this introduction to calculus with Wolfram U.
-的微积分入门课程第 37 课。
+的微积分入门课程第 37 课
 
 3
 00:00:07,000 --> 00:00:13,000
 The topic for this lesson is slope fields and Euler’s method.
-本节课的主题是斜率场和欧拉法。
+本节课的主题是斜率场和欧拉法
 
 4
 00:00:13,000 --> 00:00:17,000
 Let’s begin with a brief overview of the lesson.
-先来简单介绍一下本课的内容。
+先来简单介绍一下本课的内容
 
 5
 00:00:17,000 --> 00:00:20,000
 The fact is that some differential equations
-事实上，一些微分方程
+事实上 一些微分方程
 
 6
 00:00:20,000 --> 00:00:23,000
 are very difficult to solve by hand.
-是很难用手解决的。
+是很难用手解决的
 
 7
 00:00:23,000 --> 00:00:28,000
 For example, here’s a differential equation that looks quite simple,
-例如，这里有一个微分方程，看起来很简单。
+例如 这里有一个微分方程 看起来很简单
 
 8
 00:00:28,000 --> 00:00:34,000
 <i>y</i>'[<i>x</i>] = <i>y</i>[<i>x</i>]^2 – <i>x</i>, and you want to solve it
-<i>y</i>'[<i>x</i>]=<i>y</i>[<i>x</i>]^2 - <i>x</i>，你要解决的是
+<i>y</i>'[<i>x</i>]=<i>y</i>[<i>x</i>]^2 - <i>x</i> 你要解决的是
 
 9
 00:00:34,000 --> 00:00:39,000
 with the condition that when <i>x</i> = 1, then <i>y</i> = 0.
-条件是当<i>x</i>=1时，则<i>y</i>=0。
+条件是当<i>x</i>=1时 则<i>y</i>=0
 
 10
 00:00:39,000 --> 00:00:44,000
 Now the function DSolve can certainly solve this equation,
-现在函数DSolve当然可以解这个方程。
+现在函数DSolve当然可以解这个方程
 
 11
 00:00:44,000 --> 00:00:46,000
@@ -56,57 +56,57 @@ but the solution is huge
 12
 00:00:46,000 --> 00:00:49,000
 and involves these so-called Bessel functions,
-并涉及这些所谓的贝塞尔函数。
+并涉及这些所谓的贝塞尔函数
 
 13
 00:00:49,000 --> 00:00:53,000
 which occur in the oscillations of membranes and elsewhere.
-其中发生在膜和其他地方的振荡。
+其中发生在膜和其他地方的振荡
 
 14
 00:00:53,000 --> 00:00:57,000
 In such cases, it is much easier to just visualize
-在这种情况下，只需将以下内容可视化，就会轻松很多
+在这种情况下 只需将以下内容可视化 就会轻松很多
 
 15
 00:00:57,000 --> 00:01:01,000
 what the solution to the curve looks like for any initial value.
-对于任何初始值，曲线的解是什么样子的。
+对于任何初始值 曲线的解是什么样子的
 
 16
 00:01:01,000 --> 00:01:05,000
 In this lesson, we’ll learn how to use slope fields
-在本课中，我们将学习如何使用斜坡字段。
+在本课中 我们将学习如何使用斜坡字段
 
 17
 00:01:05,000 --> 00:01:09,000
 to see the behavior of such differential equations.
-来观察这种微分方程的行为。
+来观察这种微分方程的行为
 
 18
 00:01:11,000 --> 00:01:13,000
 As an introduction to slope fields,
-作为坡场的介绍。
+作为坡场的介绍
 
 19
 00:01:13,000 --> 00:01:18,000
 let’s consider the differential equation <i>y</I>'[<i>x</i>] = <i>f</i>[<i>x</I>, <i>y</i>].
-让我们考虑微分方程<i>y</I>'[<i>x</i>]=<i>f</i>[<i>x</I>，<i>y</i>]。
+让我们考虑微分方程<i>y</I>'[<i>x</i>]=<i>f</i>[<i>x</I> <i>y</i>]
 
 20
 00:01:18,000 --> 00:01:22,000
 If you want to find the slope field for this equation,
-如果你想找到这个方程的斜率场。
+如果你想找到这个方程的斜率场
 
 21
 00:01:22,000 --> 00:01:24,000
 what you do is you plug in the values for <i>x</i> and <i>y</i>
-您要做的是插入<i>x</i>和<i>y</i>的值。
+您要做的是插入<i>x</i>和<i>y</i>的值
 
 22
 00:01:24,000 --> 00:01:30,000
 in the function <i>f</i> and then plot the slope at that point.
-函数<i>f</i>中，然后绘制该点的斜率。
+函数<i>f</i>中 然后绘制该点的斜率
 
 23
 00:01:30,000 --> 00:01:31,000
@@ -116,62 +116,62 @@ What does that mean?
 24
 00:01:31,000 --> 00:01:34,000
 It means that you draw a small line segment
-意思是说，你画一条小线段
+意思是说 你画一条小线段
 
 25
 00:01:34,000 --> 00:01:40,000
 with slope close to the value you get from the expression <i>f</I>[<i>x</i>, <i>y</i>].
-斜率接近于表达式<i>f</I>[<i>x</i>，<i>y</i>]的值。
+斜率接近于表达式<i>f</I>[<i>x</i> <i>y</i>]的值
 
 26
 00:01:40,000 --> 00:01:44,000
 Then you get a slope field, which gives you a very general picture
-然后，你会得到一个斜坡领域，这给你一个非常概括的画面。
+然后 你会得到一个斜坡领域 这给你一个非常概括的画面
 
 27
 00:01:44,000 --> 00:01:47,000
 of the solutions to the differential equation.
-的微分方程的解。
+的微分方程的解
 
 28
 00:01:47,000 --> 00:01:49,000
 It’s not very precise, but it’s good enough.
-虽然不是很精确，但已经很好了。
+虽然不是很精确 但已经很好了
 
 29
 00:01:49,000 --> 00:01:53,000
 Luckily we have two functions in the Wolfram Language.
-幸运的是，我们在Wolfram语言中有两个功能。
+幸运的是 我们在Wolfram语言中有两个功能
 
 30
 00:01:53,000 --> 00:01:58,000
 There’s StreamPlot and VectorPlot, which can be used for this purpose.
-有StreamPlot和VectorPlot，可以用来做这个用途。
+有StreamPlot和VectorPlot 可以用来做这个用途
 
 31
 00:01:58,000 --> 00:02:02,000
 For example, let’s go back to the earlier differential equation,
-例如，我们再回到前面的微分方程。
+例如 我们再回到前面的微分方程
 
 32
 00:02:02,000 --> 00:02:10,000
 and you can use VectorPlot by saying {1, <i>f</I>[<i>x</i>, y]} over here,
-你可以用VectorPlot说{1，<i>f</I>[<i>x</i>，y]}在这里。
+你可以用VectorPlot说{1 <i>f</I>[<i>x</i> y]}在这里
 
 33
 00:02:10,000 --> 00:02:13,000
 or StreamPlot with the same kind of specification,
-或具有相同规格的StreamPlot。
+或具有相同规格的StreamPlot
 
 34
 00:02:13,000 --> 00:02:16,000
 and you get back the vector field,
-然后你就可以得到矢量场。
+然后你就可以得到矢量场
 
 35
 00:02:16,000 --> 00:02:20,000
 the slope field over here and the stream field over there.
-坡地在这里，溪地在那里。
+坡地在这里 溪地在那里
 
 36
 00:02:20,000 --> 00:02:22,000
@@ -181,32 +181,32 @@ The stream field has a solution of curves
 37
 00:02:22,000 --> 00:02:25,000
 instead of just the arrows like over here.
-而不是像这里一样只有箭头。
+而不是像这里一样只有箭头
 
 38
 00:02:26,000 --> 00:02:28,000
 Now in some cases, what we really want
-在某些情况下，我们真正想要的是
+在某些情况下 我们真正想要的是
 
 39
 00:02:28,000 --> 00:02:32,000
 are the particular solutions to a differential equation.
-是微分方程的特殊解。
+是微分方程的特殊解
 
 40
 00:02:32,000 --> 00:02:36,000
 For example, in the first case for our introduction,
-例如，在我们介绍的第一个案例中。
+例如 在我们介绍的第一个案例中
 
 41
 00:02:36,000 --> 00:02:41,000
 we had the differential equation with the initial value <i>y</i>[1] = 0.
-我们有初始值为<i>y</i>[1]=0的微分方程。
+我们有初始值为<i>y</i>[1]=0的微分方程
 
 42
 00:02:41,000 --> 00:02:46,000
 To find that out, you can use the StreamPoints option like over here
-要想知道，你可以使用StreamPoints选项，就像在这里一样
+要想知道 你可以使用StreamPoints选项 就像在这里一样
 
 43
 00:02:46,000 --> 00:02:50,000
@@ -216,52 +216,52 @@ and get the particular solution curve
 44
 00:02:50,000 --> 00:02:55,000
 on the vector plot or on the stream plot.
-在向量图或流图上。
+在向量图或流图上
 
 45
 00:02:57,000 --> 00:02:58,000
 A couple more examples.
-再举几个例子。
+再举几个例子
 
 46
 00:02:58,000 --> 00:03:04,000
 Here is the vector field for <i>x</I> – <i>y</i>, the stream plot.
-这里是<i>x</I>-<i>y</i>的向量场，流图。
+这里是<i>x</I>-<i>y</i>的向量场 流图
 
 47
 00:03:04,000 --> 00:03:07,000
 You see over here that when <i>x</i> is very large,
-你看这边，当<i>x</i>很大的时候。
+你看这边 当<i>x</i>很大的时候
 
 48
 00:03:07,000 --> 00:03:11,000
 then you have a positive slope from the expression over here.
-那么从这边的表达方式来看，你的斜率为正。
+那么从这边的表达方式来看 你的斜率为正
 
 49
 00:03:11,000 --> 00:03:14,000
 When <i>y</i> is very large, you have a negative slope.
-当<i>y</i>非常大时，你的斜率为负。
+当<i>y</i>非常大时 你的斜率为负
 
 50
 00:03:14,000 --> 00:03:18,000
 The same thing can be worked out with VectorPlot over here
-同样的事情也可以用VectorPlot来解决，在这里
+同样的事情也可以用VectorPlot来解决 在这里
 
 51
 00:03:18,000 --> 00:03:23,000
 with the initial value <i>y</i>[0] = 0.
-初始值<i>y</i>[0]=0。
+初始值<i>y</i>[0]=0
 
 52
 00:03:24,000 --> 00:03:27,000
 Okay. Another example.
-好吧，又是一个例子。另一个例子。
+好吧 又是一个例子另一个例子
 
 53
 00:03:27,000 --> 00:03:29,000
 Let’s take <i>f</i> to be <i>x</i> * <i>y</i>.
-我们将<i>f</i>取为<i>x</i>*<i>y</i>。
+我们将<i>f</i>取为<i>x</i>*<i>y</i>
 
 54
 00:03:29,000 --> 00:03:32,000
@@ -271,32 +271,32 @@ Now what happens over here is the stream plot
 55
 00:03:32,000 --> 00:03:35,000
 depends upon where you are.
-取决于你在哪里。
+取决于你在哪里
 
 56
 00:03:35,000 --> 00:03:39,000
 If you are in the first or the third quadrant,
-如果你在第一或第三象限。
+如果你在第一或第三象限
 
 57
 00:03:39,000 --> 00:03:41,000
 then both <i>x</i> and <i>y</i> are the same sign,
-那么<i>x</i>和<i>y</i>都是同一个符号。
+那么<i>x</i>和<i>y</i>都是同一个符号
 
 58
 00:03:41,000 --> 00:03:43,000
 so you have positive slopes,
-所以你有正斜率。
+所以你有正斜率
 
 59
 00:03:43,000 --> 00:03:46,000
 and just the opposite happens in the other two quadrants.
-而其他两个象限的情况刚好相反。
+而其他两个象限的情况刚好相反
 
 60
 00:03:46,000 --> 00:03:50,000
 If you want the particular solution <i>y</I>[1] = –1,
-如果你想要特定的解<i>y</I>[1]=-1。
+如果你想要特定的解<i>y</I>[1]=-1
 
 61
 00:03:50,000 --> 00:03:52,000
@@ -306,32 +306,32 @@ you plug that over here in StreamPoints
 62
 00:03:52,000 --> 00:03:56,000
 and you get back the plot for that particular curve.
-然后你就可以得到那条特定曲线的图。
+然后你就可以得到那条特定曲线的图
 
 63
 00:03:57,000 --> 00:04:02,000
 Okay. Now in practice, you might just want to estimate
-好吧，现在在实践中，你可能只是想估算一下。现在，在实践中，你可能只是想估计一下。
+好吧 现在在实践中 你可能只是想估算一下现在 在实践中 你可能只是想估计一下
 
 64
 00:04:02,000 --> 00:04:04,000
 the solution for a differential equation,
-微分方程的解。
+微分方程的解
 
 65
 00:04:04,000 --> 00:04:07,000
 and that can be done with Euler’s method.
-而这可以用欧拉的方法来完成。
+而这可以用欧拉的方法来完成
 
 66
 00:04:07,000 --> 00:04:09,000
 The idea is this.
-我的想法是这样的。
+我的想法是这样的
 
 67
 00:04:09,000 --> 00:04:11,000
 Here’s the same example from the introduction,
-这也是介绍中的例子。
+这也是介绍中的例子
 
 68
 00:04:11,000 --> 00:04:13,000
@@ -341,27 +341,27 @@ and you want to find the value at 2
 69
 00:04:13,000 --> 00:04:17,000
 starting with the value at 1 equal to 0.
-从1处的值开始等于0。
+从1处的值开始等于0
 
 70
 00:04:17,000 --> 00:04:21,000
 What you do is you start with (1, 0)
-你要做的就是从（1，0）开始。
+你要做的就是从（1 0）开始
 
 71
 00:04:21,000 --> 00:04:25,000
 and plug it in the slope over here, so the slope is –1.
-并把它插在这边的斜率上，所以斜率是-1。
+并把它插在这边的斜率上 所以斜率是-1
 
 72
 00:04:25,000 --> 00:04:30,000
 Then write down the linear approximation, which is <i>y</i> = –(<i>x</i> – 1).
-然后写下线性近似值，即<i>y</i>=-(<i>x</i>-1)。
+然后写下线性近似值 即<i>y</i>=-(<i>x</i>-1)
 
 73
 00:04:30,000 --> 00:04:35,000
 If you plug in 2, then the approximate value is –1.
-如果你插上2，那么近似值就是-1。
+如果你插上2 那么近似值就是-1
 
 74
 00:04:36,000 --> 00:04:38,000
@@ -371,27 +371,27 @@ But of course what you could do is
 75
 00:04:38,000 --> 00:04:40,000
 you could go off a little bit on the tangent line,
-你可以在切线上走一下。
+你可以在切线上走一下
 
 76
 00:04:40,000 --> 00:04:42,000
 then change direction,
-然后改变方向。
+然后改变方向
 
 77
 00:04:42,000 --> 00:04:46,000
 and then that will give you a better approximation.
-然后会给你一个更好的近似值。
+然后会给你一个更好的近似值
 
 78
 00:04:46,000 --> 00:04:50,000
 For example, you could go halfway from 1 to 2 up to 1.5,
-比如说，你可以从1到2的一半到1.5。
+比如说 你可以从1到2的一半到1.5
 
 79
 00:04:50,000 --> 00:04:55,000
 and then you could change your direction with the new slope,
-然后你可以用新的斜坡改变你的方向。
+然后你可以用新的斜坡改变你的方向
 
 80
 00:04:55,000 --> 00:04:58,000
@@ -401,27 +401,27 @@ and you get a better approximation
 81
 00:04:58,000 --> 00:05:00,000
 from the linear approximation over here,
-从这边的线性近似。
+从这边的线性近似
 
 82
 00:05:00,000 --> 00:05:04,000
 and you get back the solution at 2 to be –0.125.
-而你得到的解决方案在2是-0.125。
+而你得到的解决方案在2是-0.125
 
 83
 00:05:06,000 --> 00:05:09,000
 Here’s the idea behind Euler’s method.
-这就是欧拉方法的理念。
+这就是欧拉方法的理念
 
 84
 00:05:09,000 --> 00:05:12,000
 The idea is that when you take very short steps along tangent lines,
-这个想法是，当你沿着切线走很短的步子。
+这个想法是 当你沿着切线走很短的步子
 
 85
 00:05:12,000 --> 00:05:15,000
 you get much better estimates.
-你会得到更好的估计。
+你会得到更好的估计
 
 86
 00:05:15,000 --> 00:05:17,000
@@ -436,87 +436,87 @@ you’ll use an equation of this type over here
 88
 00:05:19,000 --> 00:05:24,000
 where every value of <i>y</i> depends upon the previous value.
-其中，<i>y</i>的每个值都取决于前一个值。
+其中 <i>y</i>的每个值都取决于前一个值
 
 89
 00:05:24,000 --> 00:05:30,000
 Here’s a visual for the case where <i>y</i>' = <i>y</i> and <i>y</i>[0] = 1.
-以下是<i>y</i>'=<i>y</i>和<i>y</i>[0]=1的情况下的视觉效果。
+以下是<i>y</i>'=<i>y</i>和<i>y</i>[0]=1的情况下的视觉效果
 
 90
 00:05:30,000 --> 00:05:34,000
 Of course in this case, the exact solution is just <i>e</I>^<i>x</i>
-当然在这种情况下，精确的解只是<i>e</I>^<i>x</i>。
+当然在这种情况下 精确的解只是<i>e</I>^<i>x</i>
 
 91
 00:05:34,000 --> 00:05:37,000
 because its derivative is itself.
-因为它的导数就是自己。
+因为它的导数就是自己
 
 92
 00:05:37,000 --> 00:05:41,000
 If you have only one point, then you get back just a tangent line,
-如果你只有一个点，那么你得到的只是一条切线。
+如果你只有一个点 那么你得到的只是一条切线
 
 93
 00:05:41,000 --> 00:05:43,000
 the red line over here.
-红线在这里。
+红线在这里
 
 94
 00:05:43,000 --> 00:05:47,000
 If you take two points, you go halfway down,
-如果你拿了两分，你就会半途而废。
+如果你拿了两分 你就会半途而废
 
 95
 00:05:47,000 --> 00:05:51,000
 then you change direction and you get a better approximation.
-然后你改变方向，你会得到一个更好的近似值。
+然后你改变方向 你会得到一个更好的近似值
 
 96
 00:05:51,000 --> 00:05:54,000
 Then of course you could take three points, four points, et cetera.
-那你当然可以拿三分，四分，等等。
+那你当然可以拿三分 四分 等等
 
 97
 00:05:54,000 --> 00:05:57,000
 By the time we get to ten points like the green line over here,
-到了十点，比如这边的绿线。
+到了十点 比如这边的绿线
 
 98
 00:05:57,000 --> 00:06:00,000
 then you get a really nice approximation.
-那么你就会得到一个非常好的近似值。
+那么你就会得到一个非常好的近似值
 
 99
 00:06:00,000 --> 00:06:05,000
 Of course the top-most graph is the actual solution.
-当然最上面的图是实际的解决方案。
+当然最上面的图是实际的解决方案
 
 100
 00:06:05,000 --> 00:06:09,000
 With Euler’s method, the approximation improves
-用欧拉法，近似度提高了。
+用欧拉法 近似度提高了
 
 101
 00:06:09,000 --> 00:06:12,000
 as you take more and more points.
-当你拿着越来越多的积分。
+当你拿着越来越多的积分
 
 102
 00:06:12,000 --> 00:06:16,000
 You have one point, then two points, then ten points
-你有一个点，然后两个点，然后十个点
+你有一个点 然后两个点 然后十个点
 
 103
 00:06:16,000 --> 00:06:20,000
 and then you get closer and closer to the solution.
-然后你就会越来越接近解决方案。
+然后你就会越来越接近解决方案
 
 104
 00:06:20,000 --> 00:06:26,000
 Now Euler’s method relies on so-called recurrence relations.
-现在欧拉的方法依靠的是所谓的递归关系。
+现在欧拉的方法依靠的是所谓的递归关系
 
 105
 00:06:26,000 --> 00:06:27,000
@@ -526,77 +526,77 @@ What’s that?
 106
 00:06:27,000 --> 00:06:32,000
 Well, here’s the relation for Euler’s method, and what happens is
-好吧，这是欧拉法的关系，发生了什么是
+好吧 这是欧拉法的关系 发生了什么是
 
 107
 00:06:32,000 --> 00:06:37,000
 let’s say you want to find the value of <i>y</i>2—so <i>n</i> is 2.
-假设你想求<i>y</i>2-所以<i>n</i>的值是2。
+假设你想求<i>y</i>2-所以<i>n</i>的值是2
 
 108
 00:06:37,000 --> 00:06:41,000
 Then that depends upon <i>y</i>1 and <i>x</i>1.
-那么这取决于<i>y</i>1和<i>x</i>1。
+那么这取决于<i>y</i>1和<i>x</i>1
 
 109
 00:06:41,000 --> 00:06:47,000
 You need <i>x</I>1 and <I>y</i>1 to work out the value of <i>y</i>2.
-你需要<i>x</I>1和<I>y</i>1来计算<i>y</i>2的值。
+你需要<i>x</I>1和<I>y</i>1来计算<i>y</i>2的值
 
 110
 00:06:47,000 --> 00:06:50,000
 Then you say I don’t know the value of <i>y</i>1,
-然后你说我不知道<i>y</i>1的值。
+然后你说我不知道<i>y</i>1的值
 
 111
 00:06:50,000 --> 00:06:56,000
 so to find the value of <I>y</i>1, you need the value of <i>x</i>0 and <i>y</i>0.
-所以要找到<I>y</i>1的值，需要<i>x</i>0和<i>y</i>0的值。
+所以要找到<I>y</i>1的值 需要<i>x</i>0和<i>y</i>0的值
 
 112
 00:06:56,000 --> 00:06:59,000
 But of course, those are just the initial conditions.
-但当然，这些只是初始条件。
+但当然 这些只是初始条件
 
 113
 00:06:59,000 --> 00:07:03,000
 In practice, if you want to find, let’s say, <i>y</i>100,
-在实践中，如果你想找到，比方说，<i>y</i>100。
+在实践中 如果你想找到 比方说 <i>y</i>100
 
 114
 00:07:03,000 --> 00:07:05,000
 you need to go around all the way to 0,
-你需要绕过所有的方式到0。
+你需要绕过所有的方式到0
 
 115
 00:07:05,000 --> 00:07:08,000
 and that’s of course a very tiresome thing to do by hand.
-而这当然是一件非常烦人的手工活。
+而这当然是一件非常烦人的手工活
 
 116
 00:07:08,000 --> 00:07:12,000
 On the other hand, it’s a perfect thing to do by computer,
-另一方面，这是一件完美的事情，用电脑来做。
+另一方面 这是一件完美的事情 用电脑来做
 
 117
 00:07:12,000 --> 00:07:15,000
 so it’s very easy to program on a computer.
-所以在电脑上编程非常容易。
+所以在电脑上编程非常容易
 
 118
 00:07:15,000 --> 00:07:19,000
 After a couple of lessons, we’ll talk about how to make
-上了几节课，我们就来谈谈如何让
+上了几节课 我们就来谈谈如何让
 
 119
 00:07:19,000 --> 00:07:23,000
 a program that calculates the points from Euler’s method.
-一个根据欧拉法计算点的程序。
+一个根据欧拉法计算点的程序
 
 120
 00:07:25,000 --> 00:07:29,000
 That’s the end of this lesson, and the main point is
-这节课到此结束，主要内容是
+这节课到此结束 主要内容是
 
 121
 00:07:29,000 --> 00:07:31,000
@@ -606,17 +606,17 @@ you can use slope fields to visualize
 122
 00:07:31,000 --> 00:07:34,000
 the behavior of differential equations.
-微分方程的行为。
+微分方程的行为
 
 123
 00:07:34,000 --> 00:07:36,000
 We have two nice functions.
-我们有两个不错的功能。
+我们有两个不错的功能
 
 124
 00:07:36,000 --> 00:07:41,000
 We have VectorPlot and we have StreamPlot to plot these slope fields.
-我们有VectorPlot和StreamPlot来绘制这些坡度场。
+我们有VectorPlot和StreamPlot来绘制这些坡度场
 
 125
 00:07:41,000 --> 00:07:43,000
@@ -626,17 +626,17 @@ You can use Euler’s method
 126
 00:07:43,000 --> 00:07:46,000
 to estimate the solution at various points,
-以估计各点的解决方案。
+以估计各点的解决方案
 
 127
 00:07:46,000 --> 00:07:49,000
 and because that’s rather tedious to do,
-而且因为这样做相当乏味。
+而且因为这样做相当乏味
 
 128
 00:07:49,000 --> 00:07:51,000
 we can actually program it with a computer,
-我们其实可以用电脑编程。
+我们其实可以用电脑编程
 
 129
 00:07:51,000 --> 00:07:53,000
@@ -646,17 +646,17 @@ but that you’ll learn very soon.
 130
 00:07:53,000 --> 00:07:57,000
 The next lesson is about separable differential equations.
-下节课讲的是可分离微分方程。
+下节课讲的是可分离微分方程
 
 131
 00:07:57,000 --> 00:07:59,000
 Before we do that, do review today’s lesson.
-在这之前，先做一下今天的复习。
+在这之前 先做一下今天的复习
 
 132
 00:07:59,000 --> 00:08:03,000
 It’s an important lesson for differential equations.
-这是微分方程的重要一课。
+这是微分方程的重要一课
 
 133
 00:08:03,000 --> 00:08:06,000
