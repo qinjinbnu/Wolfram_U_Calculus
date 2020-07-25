@@ -7,4 +7,5 @@
   - Lesson 13的第27句**翻译不确定**
   - Lesson 13的第82句原字幕有误，改为"because derivatives are very important in sciences, and it’s important that you understand"
   - Lesson 14的第5句**翻译不确定**
+  - Lesson 14的第78句**翻译不确定**
 
