@@ -2,3 +2,4 @@
 - 20200716：初步机器翻译，等待校正
 - 20200725：
   - Lesson 12的第13句"and today is what we will do is to talk about"改为"and todaywhat we will do is to talk about"
+  - Lesson 12的第44句的句首补一个"So"
