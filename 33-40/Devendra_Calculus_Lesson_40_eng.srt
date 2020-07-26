@@ -26,7 +26,7 @@ Like I said earlier on, this is the second part of the calculus exam
 6
 00:00:23,000 --> 00:00:25,000
 that I’ll present now.
-我现在要介绍的
+我要介绍的
 
 7
 00:00:25,000 --> 00:00:29,000
@@ -36,12 +36,12 @@ As in part 1, which we presented last time,
 8
 00:00:29,000 --> 00:00:32,000
 the questions over here are very similar to what you might find
-这里的问题和你可能会发现的问题非常相似
+这里的问题和你届时遇到的可能非常相似
 
 9
 00:00:32,000 --> 00:00:37,000
 on the AP Calculus AB exam, but of course the questions over here
-在AP微积分AB考试中 但当然这里的问题
+比如在AP微积分AB考试中 但当然这里的问题
 
 10
 00:00:37,000 --> 00:00:42,000
@@ -76,32 +76,32 @@ Let’s begin with question 14, where we left off last time.
 16
 00:00:58,000 --> 00:01:01,000
 The question is calculate the limit
-本题是计算极限
+本题是计算
 
 17
 00:01:01,000 --> 00:01:05,000
 of this expression over here at <i>h</i> = 0.
-在<i>h</i>=0时 这个表达式在这里
+在<i>h</i>=0时 这个表达式在这里的极限
 
 18
 00:01:05,000 --> 00:01:09,000
 Now the point is that it looks like a limit, no doubt,
-现在的问题是 它看起来像一个极限 毫无疑问
+关键在于 它看起来像一个极限 毫无疑问
 
 19
 00:01:09,000 --> 00:01:11,000
 but if you look at the expression very carefully,
-但如果你仔细观察表情
+但如果你仔细观察
 
 20
 00:01:11,000 --> 00:01:14,000
 it’s really a derivative,
-这其实是一个衍生品
+这其实是一个导数
 
 21
 00:01:14,000 --> 00:01:19,000
 and in fact, it’s a derivative of Sec[<i>x</i>] at π/3—
-而事实上 它是Sec[<i>x</i>]在π/3-的导数
+而事实上 它是Sec[<i>x</i>]在π/3的导数
 
 22
 00:01:19,000 --> 00:01:24,000
@@ -111,32 +111,32 @@ after all, it’s like f[<i>x</I>] + <i>h</i> – f[<i>x</i>]/<i>h</i>.
 23
 00:01:24,000 --> 00:01:26,000
 If you work out the derivative of secant,
-如果你计算出secant的导数
+如果你计算出Sec的导数
 
 24
 00:01:26,000 --> 00:01:28,000
 that’s secant times tangent,
-那是Srecant的时代切线
+那是Sec乘以Tan
 
 25
 00:01:28,000 --> 00:01:31,000
 so you would expect the answer to be 2√3.
-所以你会期望答案是2√3
+所以你会预期答案是2√3
 
 26
 00:01:31,000 --> 00:01:33,000
 Let’s check that with D.
-让我们和D一起检查一下
+让我们用D检查一下
 
 27
 00:01:33,000 --> 00:01:38,000
 You find the derivative of Sec[<i>x</I>] and plug in <i>x</i> as π/3,
-你找到Sec[<i>x</I>]的导数 并将<i>x</i>插入π/3
+你找到Sec[<i>x</I>]的导数 并将<i>x</i>带入π/3
 
 28
 00:01:38,000 --> 00:01:41,000
 and you do get back the expected answer.
-而你确实得到了预期的答案
+确实得到了预期的答案
 
 29
 00:01:41,000 --> 00:01:44,000
@@ -146,7 +146,7 @@ Or you could use Limit and find the answer,
 30
 00:01:44,000 --> 00:01:47,000
 and you get back just the same result.
-而你得到的只是同样的结果
+得到的是同样的结果
 
 31
 00:01:48,000 --> 00:01:54,000
@@ -166,7 +166,7 @@ The error was around 0.04 cm.
 34
 00:02:02,000 --> 00:02:05,000
 The question is find the error in the area.
-本题是找到该区域的错误
+本题是找到面积的误差范围
 
 35
 00:02:05,000 --> 00:02:08,000
@@ -181,22 +181,22 @@ and they are related by <i>A</i> = π<i>r</i>^2.
 37
 00:02:12,000 --> 00:02:18,000
 Now if that’s the relation, then the differentials, the errors
-如果是这样的关系 那么微分 误差... ...
+如果是这样的关系 那么微分 误差
 
 38
 00:02:18,000 --> 00:02:23,000
 are related by <i>dA</I> = 2π<i>rdr</i> by taking derivatives,
-由<i>dA</I>=2π<i>rdr</i>取导数相关
+与<i>dA</I>=2π<i>rdr</i>取导数相关
 
 39
 00:02:23,000 --> 00:02:26,000
 so what you do is you recall that from the information given to you,
-所以 你要做的是 你要从给你的信息中回忆起来
+所以 你要做的是 从给你的信息中回忆起来
 
 40
 00:02:26,000 --> 00:02:34,000
 that <i>r</i> is 9, <i>dr</i> is 0.04—that’s the error—so now the error in the area
-<i>r</i>是9 <i>dr</i>是0.04--这就是误差--所以现在该区域的误差
+<i>r</i>是9 <i>dr</i>是0.04--这就是误差--所以该区域的误差
 
 41
 00:02:34,000 --> 00:02:43,000
@@ -206,12 +206,12 @@ would be 2π times <i>r</I> times <i>dr</i>, and so the answer is 2.26 roughly.
 42
 00:02:44,000 --> 00:02:52,000
 Okay. On to number 16, which says find the derivative of Log[<i>x</i>^2 – 3].
-好了 现在到了第16题 题目是求Log[&lt;i&gt;x&lt;/i&gt;^2 -3]的导数第16题 求Log[<i>x</i>^2 -3]的导数
+好 到了第16题 题目是求Log[<i>x</i>^2 -3]的导数第16题 求Log[<i>x</i>^2 -3]的导数
 
 43
 00:02:52,000 --> 00:02:56,000
 Now that looks like something for which you need the chain rule,
-现在看来 你需要链式规则的东西
+看来 你需要链式法则的东西
 
 44
 00:02:56,000 --> 00:03:00,000
@@ -241,17 +241,17 @@ You can check it with D, and you do get back just the same result.
 49
 00:03:15,000 --> 00:03:19,000
 On to number 17, which says calculate the third derivative
-到了第17条 它说计算第三个导数
+到了第17条 它说计算表达式的三阶导数
 
 50
 00:03:19,000 --> 00:03:26,000
 of the expression over here, 3<i>x</i>^4 – Cos[<i>x</i>] + <i>e</i>^2<i>x</i>.
-的表达式在这里 3<i>x</i>^4 - Cos[<i>x</i>] + <i>e</i>^2<i>x</i>
+3<i>x</i>^4 - Cos[<i>x</i>] + <i>e</i>^2<i>x</i>
 
 51
 00:03:26,000 --> 00:03:29,000
 What you do is you work out the first derivative,
-你要做的是计算出第一个导数
+你要做的是计算出导数
 
 52
 00:03:29,000 --> 00:03:34,000
@@ -261,12 +261,12 @@ which is 12<i>x</i>^3 from 3<i>x</I>^4, plus Sin[<i>x</i>] from the second term
 53
 00:03:34,000 --> 00:03:37,000
 and 2<i>e</i>^2<i>x</i> from the third term.
-和2<i>e</i>^2<i>x</i>从第三项
+和第三项得到的2<i>e</i>^2<i>x</i>
 
 54
 00:03:37,000 --> 00:03:45,000
 Check that with D, then start here and work out the second derivative,
-用D来检查 然后从这里开始计算出第二个导数
+可以用D来检查 然后从这里开始计算出二阶导数导数
 
 55
 00:03:45,000 --> 00:03:51,000
@@ -281,17 +281,17 @@ and 4<i>e</I>^2<i>x</i> from the first term over here.
 57
 00:03:55,000 --> 00:03:58,000
 Let’s check that with D again, the second derivative,
-我们再用D检查一下 第二个导数
+我们再用D检查一下 二阶导数
 
 58
 00:03:58,000 --> 00:04:01,000
 then work out the third derivative
-然后求出第三个导数
+然后求出三阶导数
 
 59
 00:04:01,000 --> 00:04:03,000
 as the derivative of this expression over here.
-作为这个表达式的导数在这里
+作为这个表达式的导数 在这里
 
 60
 00:04:03,000 --> 00:04:07,000
@@ -301,67 +301,67 @@ Then you get back –Sin[<i>x</I>] from the Cos[<i>x</i>],
 61
 00:04:07,000 --> 00:04:09,000
 you get back 72<i>x</i> from here
-你从这里回来72<i>x</i>
+这里得到72<i>x</i>
 
 62
 00:04:09,000 --> 00:04:15,000
 and you get back an 8<i>e</i>^2<i>x</i> from the first term.
-你可以从第一项中得到一个8<i>e</i>^2<i>x</i>
+从第一项中得到一个8<i>e</i>^2<i>x</i>
 
 63
 00:04:15,000 --> 00:04:19,000
 Then you check that with D, taking the third derivative,
-然后你用D检查 取第三个导数
+然后你用D检查 取三阶导数
 
 64
 00:04:19,000 --> 00:04:21,000
 and you get back the answer.
-而你得到的答案
+得到了答案
 
 65
 00:04:23,000 --> 00:04:29,000
 Okay. On to number 18, which says that the region bounded by <i>x</i> + 2
-好了 现在说说第18条 该条规定 由&lt;i&gt;x&lt;/i&gt;+2为界的区域在18号 它说 该区域的边界由<i>x</i>+2
+好 说说第18题 区域边界是<i>x</i>+2
 
 66
 00:04:29,000 --> 00:04:34,000
 and the quadratic over here is rotated around the <i>x</i> axis.
-而这边的二次元是围绕<i>x</i>轴旋转的
+和这里的二次式 围绕<i>x</i>轴旋转得到的
 
 67
 00:04:34,000 --> 00:04:38,000
 The question is to find the volume of the solid
-问题是要找到固体的体积
+问题是求旋转包围的固体的体积
 
 68
 00:04:38,000 --> 00:04:40,000
 made by this rotation.
-这次轮换所做的
+问题是求旋转包围的固体的体积
 
 69
 00:04:40,000 --> 00:04:43,000
 Here is a plot.
-这是一个情节
+这是图像
 
 70
 00:04:43,000 --> 00:04:48,000
 You have a straight line and a parabola, an upward parabola,
-你有一条直线和一条抛物线 一条向上的抛物线
+直线和抛物线 一条向上的抛物线
 
 71
 00:04:48,000 --> 00:04:52,000
 and the question is where do these two intersect?
-而问题是这两者的交叉点在哪里？
+首先 这两者的交叉点在哪里？
 
 72
 00:04:52,000 --> 00:04:54,000
 Well, what you do is you use Solve
-好吧 你要做的是你用Solve
+好吧 要做的是用Solve
 
 73
 00:04:54,000 --> 00:04:58,000
 and find out where the straight line and the curve intersect.
-并找出直线和曲线的交点
+找出直线和曲线的交点
 
 74
 00:04:58,000 --> 00:05:00,000
@@ -371,7 +371,7 @@ You get a lower limit and an upper limit.
 75
 00:05:00,000 --> 00:05:06,000
 Now if you let <i>f</i> be the first function and <i>g</i> be the second function,
-现在如果让<i>f</i>是第一个函数 <i>g</i>是第二个函数
+如果让<i>f</i>是第一个函数 <i>g</i>是第二个函数
 
 76
 00:05:06,000 --> 00:05:10,000
@@ -386,12 +386,12 @@ Because you are rotating around the <i>x</i> axis,
 78
 00:05:15,000 --> 00:05:19,000
 you might want to use the washer method over here.
-你可能会想在这里使用洗衣机的方法
+你可能会想在这里使用垫圈法/圆盘法
 
 79
 00:05:21,000 --> 00:05:27,000
 That tells you you must use π(<i>g</i>(<i>x</i>)^2 – f(<i>x</i>)^2)<i>dx</i> inside.
-这就告诉你必须用π(<i>g</i>(<i>x</i>)^2-f(<i>x</i>)^2)<i>dx</i>里面
+这就告诉你必须在这里用π(<i>g</i>(<i>x</i>)^2-f(<i>x</i>)^2)<i>dx</i>
 
 80
 00:05:28,000 --> 00:05:31,000
@@ -406,17 +406,17 @@ you get back the final answer for the problem.
 82
 00:05:38,000 --> 00:05:44,000
 On to number 19, which says find the limit of this quotient over here.
-到了19号 上面写着在这里找到这个商的极限
+到了19题 上面写着在这里求这个商的极限
 
 83
 00:05:44,000 --> 00:05:48,000
 Now as a first step, what you could do is you’re working at 0,
-现在作为第一步 你可以做的是你在0
+你知道题目要求趋向0的极限
 
 84
 00:05:48,000 --> 00:05:52,000
 so you plug in 0 for both the numerator and the denominator,
-所以你把分子和分母都插入0
+所以你把分子和分母都带入0
 
 85
 00:05:52,000 --> 00:05:56,000
@@ -426,17 +426,17 @@ and what you find is that in fact, you have a 0/0 situation.
 86
 00:05:56,000 --> 00:05:58,000
 That’s an indeterminacy,
-这是一个不确定的问题
+这是一个不定式
 
 87
 00:05:58,000 --> 00:06:01,000
 so that should remind you of L’Hospital’s rule,
-所以这应该提醒你L'Hospital的规则
+这提醒你使用洛必达法则
 
 88
 00:06:01,000 --> 00:06:03,000
 which says that you work out the derivatives of
-它说你要计算出以下的导数
+它说 你要
 
 89
 00:06:03,000 --> 00:06:05,000
@@ -446,47 +446,47 @@ the numerator and denominator separately,
 90
 00:06:05,000 --> 00:06:09,000
 plug in <i>x</i> goes to 0, and you get back 5/3,
-插上<i>x</i>到0 就能得到5/3
+带入<i>x</i>到0 就能得到5/3
 
 91
 00:06:09,000 --> 00:06:13,000
 which is the correct answer, as you can check with Limit.
-这是正确的答案 因为你可以用Limit检查
+这是正确的答案 你可以用Limit检查
 
 92
 00:06:13,000 --> 00:06:16,000
 Here is a plot which confirms that you indeed have
-这里有一张图 可以证实你确实有
+这里有图 可以证实你确实
 
 93
 00:06:16,000 --> 00:06:19,000
 the correct answer for the limit.
-限的正确答案
+得到了正确答案
 
 94
 00:06:21,000 --> 00:06:23,000
 On to number 20, which says to calculate
-到了第20条 它说要计算出
+到了第20题 它说要计算出
 
 95
 00:06:23,000 --> 00:06:26,000
 the integral over here from 2 to 3.
-这里的积分从2到3
+这个式子从2到3的积分
 
 96
 00:06:26,000 --> 00:06:29,000
 Now that looks like the case of the substitution rule
-现在看来 这像是替代规则的情况
+看来 这是用替换法的情况
 
 97
 00:06:29,000 --> 00:06:34,000
 because you need to put the denominator <i>u</I> equal to <i>x</i>^2 – 1.
-因为你需要把分母<i>u</I>等于<i>x</i>^2 - 1
+你需要让分母<i>u</I>等于<i>x</i>^2 - 1
 
 98
 00:06:34,000 --> 00:06:38,000
 If you work out the derivative, you get <i>du</i> = 2<i>xdx</i>.
-如果你计算出导数 你会得到<i>du</i>=2<i>xdx</i>
+计算出导数 你会得到<i>du</i>=2<i>xdx</i>
 
 99
 00:06:38,000 --> 00:06:41,000
@@ -511,7 +511,7 @@ When <i>x</i> is 3, then 3^2 – 1 is 8,
 103
 00:06:53,000 --> 00:06:56,000
 so that’s the new integral over here,
-所以这是新的积分在这里
+所以这就是新的积分
 
 104
 00:06:56,000 --> 00:07:01,000
@@ -526,37 +526,37 @@ You can check the answer with Integrate,
 106
 00:07:04,000 --> 00:07:07,000
 and you do get back just the same result.
-而你得到的只是同样的结果
+得到的是同样的结果
 
 107
 00:07:07,000 --> 00:07:13,000
 Here is a plot which shows the area which you just computed.
-这里有一张图 显示了你刚才计算的面积
+这里的图 显示了你刚才计算的面积
 
 108
 00:07:15,000 --> 00:07:22,000
 On to number 21, which says find <i>y</I>' if <i>y</i>^2 + <i>x</i> * <i>y</i> = 2.
-到了第21题 说如果<i>y</i>^2+<i>x</i>*<i>y</i>=2 就找<i>y</i>'
+到了第21题 说如果<i>y</i>^2+<i>x</i>*<i>y</i>=2 求<i>y</i>'
 
 109
 00:07:22,000 --> 00:07:26,000
 The point is because you need to work with <i>y</i>^2,
-问题的关键在于你需要用<i>y</i>^2来工作
+问题的关键在于你需要求<i>y</i>^2
 
 110
 00:07:26,000 --> 00:07:29,000
 we should use implicit differentiation.
-我们应该使用隐性区分法
+我们应该使用隐函数微分
 
 111
 00:07:29,000 --> 00:07:32,000
 What you do is you work out the derivative
-你要做的是计算出导数
+你要做的是计算出
 
 112
 00:07:32,000 --> 00:07:35,000
 of each term in the equation separately.
-方程中每个项的分别
+分别求方程中每个项的微分
 
 113
 00:07:35,000 --> 00:07:37,000
@@ -566,7 +566,7 @@ That’s the derivative of <i>y</i>^2,
 114
 00:07:37,000 --> 00:07:40,000
 and the second term over here has got
-和第二任期在这里已经得到了
+第二项的在这里已经得到了
 
 115
 00:07:40,000 --> 00:07:42,000
@@ -581,32 +581,32 @@ and of course the right-hand side has the derivative 0.
 117
 00:07:45,000 --> 00:07:48,000
 You work out the derivative for each term separately,
-你分别计算出每项的导数
+分别计算出每项的导数
 
 118
 00:07:48,000 --> 00:07:51,000
 so you get 2<i>ydy</i>/<i>dx</i> from here,
-所以你从这里得到2<i>ydy</i>/<i>dx</i>
+从这里得到2<i>ydy</i>/<i>dx</i>
 
 119
 00:07:51,000 --> 00:07:55,000
 and then you try and simplify the answer.
-然后你再尝试简化答案
+然后再尝试简化答案
 
 120
 00:07:55,000 --> 00:07:59,000
 You get <i>dy</i>/<i>dx</i> = –<i>y</i>(2<i>y</i> + <i>x</i>).
-你得到<i>dy</i>/<i>dx</i>=-<i>y</i>(2<i>y</i>+<i>x</i>)
+得到<i>dy</i>/<i>dx</i>=-<i>y</i>(2<i>y</i>+<i>x</i>)
 
 121
 00:07:59,000 --> 00:08:02,000
 Of course you can do the same thing in the Wolfram Language,
-当然你也可以在Wolfram语言中做同样的事情
+当然你也可以用Wolfram语言中做同样的事情
 
 122
 00:08:02,000 --> 00:08:07,000
 and you get back the value for <i>y</I>' at the point (<i>x</i>, <i>y</i>),
-而你得到的是<i>y</I>'在该点的值(<i>x</i>, <i>y</i>)
+得到的是<i>y</I>'在该点的值(<i>x</i>, <i>y</i>)
 
 123
 00:08:07,000 --> 00:08:12,000
@@ -616,52 +616,52 @@ which is –<i>y</i>[<i>x</i>]/(<i>x</I> + 2<i>y</i>[<i>x</i>]).
 124
 00:08:12,000 --> 00:08:16,000
 On to number 22, which says find the equation
-到了第22条 它说要找到方程
+到了第22题 它说要找到方程
 
 125
 00:08:16,000 --> 00:08:23,000
 of the normal to this curve at (–2, –4).
-在(-2 -4)处 这个曲线的法线
+在(-2，-4)处 这个曲线的法线
 
 126
 00:08:23,000 --> 00:08:26,000
 Now keep in mind that the normal is really
-现在请记住 正常的是真正的
+请记住 法线
 
 127
 00:08:26,000 --> 00:08:29,000
 the perpendicular to the curve at the point,
-曲线在该点的垂直度
+与曲线在该点的切线垂直
 
 128
 00:08:29,000 --> 00:08:32,000
 so you first work out the slope at that point.
-所以你首先要在这一点上计算出坡度
+所以你首先要在这一点上计算出斜率
 
 129
 00:08:32,000 --> 00:08:36,000
 When I say slope, I mean the derivative,
-我说的斜率 是指导数
+当我们说到斜率 那就是指导数
 
 130
 00:08:36,000 --> 00:08:40,000
 and the derivative of this curve is just <i>x</i> + 3,
-而这条曲线的导数只是<i>x</i>+3
+而这条曲线的导数是<i>x</i>+3
 
 131
 00:08:40,000 --> 00:08:44,000
 so you plug in the value for <i>x</i> and you get the slope as 1.
-所以你插入<i>x</i>的值 你得到的斜率为1
+所以你带入<i>x</i>的值 得到的斜率为1
 
 132
 00:08:44,000 --> 00:08:46,000
 But that’s for the tangent,
-但这是为了切磋
+但这只是切线
 
 133
 00:08:46,000 --> 00:08:50,000
 so the normal line will have slope –1 from here.
-所以 从这里开始 法线的斜率将为-1
+所以法线的斜率是-1除以这个数
 
 134
 00:08:50,000 --> 00:08:55,000
@@ -681,27 +681,27 @@ Here is a plot which shows the given normal.
 137
 00:09:04,000 --> 00:09:08,000
 You have the curve over here and the normal over there.
-这边是曲线 那边是正常
+这边是曲线 那边是法线
 
 138
 00:09:10,000 --> 00:09:15,000
 Okay. On to number 23, which says for what value of <i>a</i> and <i>b</I>
-好了 现在说说第23条 它说的是&lt;i&gt;a&lt;/i&gt;和&lt;i&gt;b&lt;/I&gt;的值是多少关于第23条 它说 对于什么值的<i>a</i>和<i>b</I>
+好 说说第23条 它说的是<i>a</i>和<i>b</I>的值是多少
 
 139
 00:09:15,000 --> 00:09:19,000
 will this function over here become differentiable?
-这边的函数会不会变得可分化？
+才会使得这边的函数可微？
 
 140
 00:09:21,000 --> 00:09:23,000
 Basically you have a piecewise function
-基本上 你有一个计件函数
+你有一个分段函数
 
 141
 00:09:23,000 --> 00:09:27,000
 because there are two pieces over here,
-因为这边有两块
+这边有两块
 
 142
 00:09:27,000 --> 00:09:33,000
@@ -711,17 +711,17 @@ and they both meet at –1 provided <i>a</I> and <i>b</i> have got the right val
 143
 00:09:34,000 --> 00:09:36,000
 Now you want your function to be differentiable,
-现在 你希望你的函数是可区分的
+ 你希望你的函数是可微的
 
 144
 00:09:36,000 --> 00:09:38,000
 so there are two conditions.
-所以有两个条件
+所以这里两个条件
 
 145
 00:09:38,000 --> 00:09:42,000
 First of all, the left-hand derivative at –1
-首先 在-1处的左手导数
+首先 在-1处的左导数
 
 146
 00:09:42,000 --> 00:09:47,000
@@ -731,12 +731,12 @@ should equal the right-hand derivative, and secondly,
 147
 00:09:47,000 --> 00:09:52,000
 the left-hand limit at –1 should equal the right-hand limit.
-左手极限在-1处应等于右手极限
+左极限在-1处应等于右极限
 
 148
 00:09:52,000 --> 00:09:55,000
 Now for the first condition, if you differentiate over here,
-现在对于第一个条件 如果你在这边区分
+对于第一个条件 如果你在这边求导
 
 149
 00:09:55,000 --> 00:10:02,000
@@ -746,27 +746,27 @@ you get <i>a</i> = 3<i>b</i>(–1)^2 – 4(–1),
 150
 00:10:02,000 --> 00:10:06,000
 and the second relation over here for the limits
-和第二种关系在这里的极限
+还需要的是这里的极限得到的另一个关系式
 
 151
 00:10:06,000 --> 00:10:10,000
 will just be obtained by putting in <i>x</i> = –1.
-只需将<i>x</i>=-1 就可以得到
+只需令<i>x</i>=-1 就可以得到
 
 152
 00:10:11,000 --> 00:10:14,000
 You solve those two for <i>a</I> and <i>b</i>,
-你解决这两个<i>a</I>和<i>b</i>
+解这两个<i>a</I>和<i>b</i>
 
 153
 00:10:14,000 --> 00:10:18,000
 so that says that <i>a</i> is 11/2 and <i>b</I> is 1/2.
-所以说<i>a</i>是11/2 <i>b</I>是1/2
+<i>a</i>是11/2 <i>b</I>是1/2
 
 154
 00:10:18,000 --> 00:10:21,000
 Then the function is differentiable.
-那么这个函数是可微分的
+只有这时这个函数是可微分的
 
 155
 00:10:22,000 --> 00:10:26,000
@@ -776,27 +776,27 @@ Here is the graph of this function,
 156
 00:10:26,000 --> 00:10:33,000
 and you can see that it’s nice and smooth at the required point, –1.
-你可以看到它在所需的点-1处很平滑
+你可以看到它在需要的点 -1处很平滑
 
 157
 00:10:35,000 --> 00:10:38,000
 On to number 24, which says a particle moves
-在24号 它说一个粒子的运动
+在24号 它说一个粒子的运动速率
 
 158
 00:10:38,000 --> 00:10:43,000
 according to the velocity <i>v</I>(<i>t</i>) = 4sin(<i>t</i>)cos(<i>t</i>).
-根据速度<i>v</I>(<i>t</i>)=4sin(<i>t</i>)cos(<i>t</i>)
+满足方程<i>v</I>(<i>t</i>)=4sin(<i>t</i>)cos(<i>t</i>)
 
 159
 00:10:43,000 --> 00:10:48,000
 The question is find the total distance that it travels
-这道题是求出它所走的总路程
+问题是求出它所走的总路程
 
 160
 00:10:48,000 --> 00:10:52,000
 from 0 to π in seconds.
-从0到π 以秒为单位
+从0开始到π为止 以秒为单位
 
 161
 00:10:53,000 --> 00:10:55,000
@@ -806,22 +806,22 @@ To do that you must work out the integral,
 162
 00:10:55,000 --> 00:11:00,000
 but you must ignore the sign because you want a distance,
-但你一定要忽略这个标志 因为你要的是距离
+但一定要忽略符号 因为你要的是距离
 
 163
 00:11:00,000 --> 00:11:02,000
 so you have an absolute value over here.
-所以你在这里有一个绝对值
+这里要有一个绝对值
 
 164
 00:11:03,000 --> 00:11:07,000
 Use the Integrate function with the absolute value,
-使用绝对值的积分函数
+使用带绝对值的积分函数
 
 165
 00:11:07,000 --> 00:11:11,000
 and you get back the answer as 4.
-而你得到的答案是4
+得到的答案是4
 
 166
 00:11:11,000 --> 00:11:17,000
@@ -831,7 +831,7 @@ Here’s a plot which shows the distance that you have found.
 167
 00:11:18,000 --> 00:11:22,000
 Of course keep in mind that the negative area, in this case,
-当然要记住 在这种情况下 负面积
+要记住 在这种情况下 负面积
 
 168
 00:11:22,000 --> 00:11:27,000
@@ -846,17 +846,17 @@ On to one of the most difficult questions for this exam, number 25,
 170
 00:11:33,000 --> 00:11:37,000
 that will occupy two slides, so do pay careful attention.
-将占据两张幻灯片 所以要仔细注意
+这道题将占据两张幻灯片 所以要仔细注意
 
 171
 00:11:37,000 --> 00:11:44,000
 The question is a cylindrical can has got a volume of 216 cm^3.
-本题是一个圆柱形罐子的体积是216cm^3 请问它的体积是多少？
+一个圆柱形罐子的体积是216cm^3
 
 172
 00:11:44,000 --> 00:11:47,000
 The question is find a value for the radius
-问题是找到一个半径的值
+问题是找到半径的值
 
 173
 00:11:47,000 --> 00:11:51,000
@@ -866,27 +866,27 @@ that will minimize the amount of material used.
 174
 00:11:51,000 --> 00:11:56,000
 Now if you make a can, then the material will cover the surface,
-现在如果你做一个罐头 那么材料会覆盖在表面
+如果你做一个罐头 那么材料会覆盖在表面
 
 175
 00:11:56,000 --> 00:11:59,000
 so you’re talking about surface area of the can.
-所以你说的是罐子的表面积
+这里说的是罐子的表面积
 
 176
 00:12:00,000 --> 00:12:02,000
 Now surface area has got two parts.
-现在表面积有两个部分
+表面积有两个部分
 
 177
 00:12:02,000 --> 00:12:06,000
 One is the top and bottom areas, which give you 2π<i>r</i>^2,
-一个是上下两个区域 给你2π<i>r</i>^2
+一个是上下两个地面 面积是2π<i>r</i>^2
 
 178
 00:12:06,000 --> 00:12:08,000
 and the side area, which is 2π<i>rh</I>,
-和侧面积 即2π<i>rh</I>
+还有侧面积 即2π<i>rh</I>
 
 179
 00:12:08,000 --> 00:12:13,000
@@ -906,17 +906,17 @@ so you must eliminate one of them.
 182
 00:12:21,000 --> 00:12:26,000
 You know that π<i>r</I>^2<i>h</i> is 216—after all, that’s given to you over here.
-你知道π<i>r</I>^2<i>h</i>是216--毕竟这是在这边给你的
+你知道的条件是 π<i>r</I>^2<i>h</i>=216——毕竟是这里的条件
 
 183
 00:12:27,000 --> 00:12:30,000
 You can solve for <i>h</i> in terms of <i>r</i>,
-你可以用<i>r</i>来求解<i>h</i>
+你可以用<i>r</i>作为变量来求解<i>h</i>
 
 184
 00:12:30,000 --> 00:12:36,000
 and now the surface area no longer depends upon <i>h</I>.
-现在表面积不再取决于<i>h</I>
+表面积不再取决于<i>h</I>
 
 185
 00:12:36,000 --> 00:12:38,000
@@ -926,17 +926,17 @@ It only depends upon <i>r</I>,
 186
 00:12:38,000 --> 00:12:43,000
 and that is the starting point for the second part of the problem.
-而这也是问题第二部分的出发点
+而这也是问题第二部分的开始
 
 187
 00:12:45,000 --> 00:12:49,000
 Now what we do is we start with the expression for the surface area
-现在我们要做的是 我们从表面积的表达式入手
+我们要做的是 我们从表面积的表达式入手
 
 188
 00:12:49,000 --> 00:12:53,000
 and try and minimize it with respect to <i>r</i>.
-并尽量减少它对<i>r</i>的影响
+通过调整<i>r</i>尽量降低这个值
 
 189
 00:12:54,000 --> 00:12:59,000
@@ -946,17 +946,17 @@ What you do is you take the derivative, set it equal to 0
 190
 00:12:59,000 --> 00:13:05,000
 and you solve, and you get back <i>r</I> as roughly 3.25
-而你解 你得到的<i>r</I>大约是3.25
+解之 你得到的<i>r</I>大约是3.25
 
 191
 00:13:05,000 --> 00:13:09,000
 and exactly it is 3 times the cubed root of 4/π.
-而恰恰它是4/π的立方根的3倍
+准确的来说它是4/π的立方根的3倍
 
 192
 00:13:09,000 --> 00:13:11,000
 Now let’s check that you have a minimum,
-现在让我们检查一下你是否有最低限度的
+让我们检查一下得到的是否是最小值
 
 193
 00:13:11,000 --> 00:13:16,000
@@ -966,22 +966,22 @@ so work out the second derivative at that value of <i>r</I>.
 194
 00:13:16,000 --> 00:13:20,000
 It looks positive, so you have a minimum.
-它看起来是积极的 所以你有一个最低限度
+它看起来是正的 所以确实是最小值
 
 195
 00:13:20,000 --> 00:13:24,000
 Basically the can will use the least amount of material
-基本上 罐头将使用最少的材料
+基本来说 罐头要使用最少的材料
 
 196
 00:13:24,000 --> 00:13:29,000
 when the radius is around 3.25 cm.
-当半径在3.25厘米左右时
+只有其半径在3.25厘米左右时才能做到
 
 197
 00:13:30,000 --> 00:13:35,000
 On to the final question for the exam, this sample exam.
-到了考试的最后一道题 这次抽考
+终于到了考试的最后一道题
 
 198
 00:13:35,000 --> 00:13:40,000
@@ -996,22 +996,22 @@ The question is find the rate at which the radius is decreasing
 200
 00:13:44,000 --> 00:13:48,000
 when the radius is 10 cm.
-当半径为10厘米时
+前提是当半径为10厘米时
 
 201
 00:13:48,000 --> 00:13:50,000
 Now keep in mind that you actually have a relation
-现在请记住 你实际上有一个关系
+请记住 你实际上有的关系关系是
 
 202
 00:13:50,000 --> 00:13:56,000
 volume and radius, which is <i>V</I> = 4π<i>r</i>^3/3 for the sphere.
-体积和半径 对于球体来说 就是<i>V</I>=4π<i>r</i>^3/3
+体积和半径之间的 对于球体来说 就是<i>V</I>=4π<i>r</i>^3/3
 
 203
 00:13:56,000 --> 00:14:00,000
 If you find the derivative, you get <i>dV</I>/<i>dt</i> from there
-如果你找到了导数 你可以从那里得到<i>dV</I>/<i>dt</i>
+如果你算出了导数 你可以得到<i>dV</I>/<i>dt</i>
 
 204
 00:14:00,000 --> 00:14:03,000
@@ -1021,27 +1021,28 @@ equal to 4π<i>r</I>^2 <i>dr</i>/<i>dt</i>.
 205
 00:14:03,000 --> 00:14:07,000
 That’s just the differential version of the relation.
-这只是关系的微分版本
+这就是这个关系的微分版本
 
 206
 00:14:07,000 --> 00:14:13,000
 Okay. Now you know the value of <i>dV</i>/<i>dt</i> as –2,
-好了 现在你知道了&lt;i&gt;dV&lt;/i&gt;/&lt;i&gt;dt&lt;/i&gt;的值为-2 那么 你就知道了现在你知道<i>dV</i>/<i>dt</i>的值为-2
+好 现在你知道<i>dV</i>/<i>dt</i>的值为-2
+
 
 207
 00:14:13,000 --> 00:14:19,000
 so you can work out the value of <i>dr</i>/<i>dt</i> by solving,
-所以你可以通过求解来计算出<i>dr</i>/<i>dt</i>的值
+所以你可以通过Solve函数计算出<i>dr</i>/<i>dt</i>的值
 
 208
 00:14:19,000 --> 00:14:23,000
 and you get back the answer as –1/200π.
-而你得到的答案是-1/200π
+你得到的答案是-1/200π
 
 209
 00:14:23,000 --> 00:14:27,000
 The radius is decreasing—after all, you have a negative answer—
-半径是递减的--毕竟 你有一个否定的答案--
+因此气球的半径会不断下降——别忘了你的答案是个负数——
 
 210
 00:14:27,000 --> 00:14:32,000
@@ -1051,7 +1052,7 @@ at a rate of 1/200π cm/sec.
 211
 00:14:33,000 --> 00:14:38,000
 Okay. That brings me to the end of this sample exam,
-好了 我就到此为止了本次样板考试到此结束
+好 就到此为止了 本次模拟考试到此结束
 
 212
 00:14:38,000 --> 00:14:41,000
@@ -1061,19 +1062,20 @@ and also to the end of the course.
 213
 00:14:41,000 --> 00:14:44,000
 It’s been a great pleasure to teach you.
-很高兴能教你
+能够教你们这些我非常高兴
 
 214
 00:14:44,000 --> 00:14:48,000
 From here on, we wish you all the best.
-从这里开始 我们祝愿你一切顺利
+在这之后 我们祝愿你们一切顺利
 
 215
 00:14:48,000 --> 00:14:51,000
 From all of us here at Wolfram U,
-我们沃尔夫兰大学的所有人都这么说
+我代表代表Wolfram U 的全体成员
 
 216
 00:14:51,000 --> 00:14:53,000
 good luck, and thank you.
-这节课到这就结束了 谢谢观看
+祝愿你们幸运 谢谢观看
+GLHF！

@@ -861,7 +861,7 @@ plus second term times derivative of first.
 173
 00:11:01,000 --> 00:11:06,000
 Then you work out the second-term derivative in the same way.
-用同样的方法计算出二次导数
+用同样的方法计算出第二项的导数
 
 174
 00:11:07,000 --> 00:11:12,000
