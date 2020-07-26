@@ -1,0 +1,836 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+Hello everyone, and welcome to Introduction to Calculus with Wolfram U.
+大家好，欢迎与Wolfram U一起学习微积分入门。
+
+2
+00:00:05,000 --> 00:00:09,000
+My name is Devendra Kapadia, and I work here at Wolfram Research
+我叫Devendra Kapadia，我在Wolfram Research工作
+
+3
+00:00:09,000 --> 00:00:15,000
+as a kernel developer for calculus functions. But I also enjoy teaching mathematics,
+作为微积分功能的内核开发人员。但我也喜欢教数学
+
+4
+00:00:15,000 --> 00:00:20,000
+and it’s a great pleasure to have this opportunity to talk about calculus with you.
+很高兴有机会与您讨论微积分。
+
+5
+00:00:20,000 --> 00:00:28,000
+Now today is the first lesson, so I thought we would spend some time talking about what is calculus
+今天是第一课，所以我想我们会花一些时间来讨论什么是微积分
+
+6
+00:00:28,000 --> 00:00:35,000
+and trying to understand what this beautiful subject is all about. I’ll begin by defining calculus,
+并试图了解这个美丽的主题到底是什么。我将从定义微积分开始，
+
+7
+00:00:35,000 --> 00:00:40,000
+and then we’ll talk a little bit about the main problems of calculus, some history,
+然后我们将讨论微积分的主要问题，一些历史，
+
+8
+00:00:40,000 --> 00:00:45,000
+and then I’ll tell you why you might want to study the course, and what the course is all about.
+然后我会告诉你为什么要学习本课程，以及本课程的全部内容。
+
+9
+00:00:45,000 --> 00:00:50,000
+Let’s begin by answering the question what is calculus?
+让我们首先回答以下问题：什么是微积分？
+
+10
+00:00:50,000 --> 00:00:59,000
+Well, very simply, calculus is the science of change. Now, change is all around us.
+好吧，很简单，微积分是研究变化的科学。现在，变化无处不在。
+
+11
+00:00:59,000 --> 00:01:08,000
+For instance, the second hand on this clock changes its position every second, but you could have
+例如，该时钟的秒针每秒都在更改其位置，但是您可以看到自然界中存在着
+
+12
+00:01:08,000 --> 00:01:15,000
+more complicated motion. For example, the planets in the solar system change their position
+更复杂的运动。例如，太阳系中的行星在绕着太阳旋转的每个时刻
+
+13
+00:01:15,000 --> 00:01:19,000
+at every instant as they revolve around the sun. Now in the first case,
+都在改变它的位置。现在在第一种情况下
+
+14
+00:01:19,000 --> 00:01:25,000
+for the motion of the second hand around a clock, you could use simple arithmetic algebra
+对于秒针围绕时钟的运动，您可以使用简单的算术代数来分析问题，
+
+15
+00:01:25,000 --> 00:01:30,000
+to analyze a problem, but in more difficult cases like the solar system motion,
+但是在更困难的情况下，例如研究太阳系运动，
+
+16
+00:01:30,000 --> 00:01:36,000
+you would need better tools to analyze the motion, and one such tool is calculus.
+您将需要更好的工具来分析运动，而这样的工具之一就是微积分。
+
+17
+00:01:36,000 --> 00:01:45,000
+Calculus is an essential tool for deeply understanding change in a mathematical way, and hence,
+微积分是一种以数学方式深刻理解变化的重要工具，因此，
+
+18
+00:01:45,000 --> 00:01:51,000
+it is a tool of choice for many scientific problems. The next question is
+它是许多科学问题的首选工具。接下来我将阐述，
+
+19
+00:01:51,000 --> 00:01:56,000
+what are the main problems that drove the development of calculus?
+导致微积分发展的主要问题是什么？
+
+20
+00:01:56,000 --> 00:02:04,000
+Well, the four main problems of calculus are first, the problem of finding the tangent line
+微积分的四个主要问题如下：首先是寻找曲线上某一点处的切线的问题。
+
+21
+00:02:04,000 --> 00:02:10,000
+to a curve at a point. Now if the curve is sufficiently simple like a circle,
+现在，如果曲线足够简单，如圆形，
+
+22
+00:02:10,000 --> 00:02:16,000
+you can of course draw the tangent line to the curve at that point, but in more complicated cases,
+您当然可以在该点绘制曲线的切线，但是在更复杂的情况下，
+
+23
+00:02:16,000 --> 00:02:20,000
+you would need something like calculus to solve the problem.
+您将需要微积分来解决问题。
+
+24
+00:02:20,000 --> 00:02:25,000
+Number two is the problem of finding the area under a curve.
+第二个问题是找到曲线下的面积。
+
+25
+00:02:25,000 --> 00:02:29,000
+Now once again, if, let’s say, you have a circle, then finding the area is not very difficult.
+现在再说一次，如果您有一个圆圈，那么求出该面积并不是很困难。
+
+26
+00:02:29,000 --> 00:02:36,000
+But for more complicated curves, you would need better tools. Now from the point of view
+但是对于更复杂的曲线，您将需要更好的工具。现在来考虑物理问题
+
+27
+00:02:36,000 --> 00:02:40,000
+of physics, you might sometimes need to find, let’s say, the velocity the a particle
+您有时可能需要找到一个给定位置和加速度的粒子的速度
+
+28
+00:02:40,000 --> 00:02:46,000
+given either its position or acceleration, and once again,
+同样地，
+
+29
+00:02:46,000 --> 00:02:50,000
+you can use calculus to solve this problem.
+您可以使用微积分解决此问题。
+
+30
+00:02:51,000 --> 00:02:58,000
+And finally, from time to time, you are going to want to either maximize or minimize some quantity,
+最后，又是如果您想要最大化或最小化某些量，
+
+31
+00:02:58,000 --> 00:03:04,000
+and the common word for that is optimizing. For example, a businessman might want
+（最常用的词就是优化）。例如，一个商人可能想要
+
+32
+00:03:04,000 --> 00:03:14,000
+to maximize his profits or minimize his loss, and once again, calculus is the tool
+最大化他的利润或最小化他的损失，同样地，
+
+33
+00:03:14,000 --> 00:03:19,000
+which helps us to study the process of optimization.
+微积分是我们研究优化过程的重要工具。
+
+34
+00:03:19,000 --> 00:03:24,000
+Okay. Let’s look at each of these in a bit more detail. Let’s start with tangent to a curve.
+好了。我们现在来看一些更细节的东西。让我们从曲线的切线开始。
+
+35
+00:03:24,000 --> 00:03:29,000
+Let’s begin with the tangent to a curve. Now to find a tangent line at a point, what we do is
+我们从曲线的切线开始。现在要找到一点的切线，我们要做的是
+
+36
+00:03:29,000 --> 00:03:36,000
+we draw the secant lines from nearby points. Let’s say we want to find a tangent at this point over here.
+我们从附近的点画出割线。假设我们要在此处找到切线。
+
+37
+00:03:36,000 --> 00:03:42,000
+We start with a point, in this case far away, and let the secant line change
+我们从一个点开始，在这种情况下，它很远，然后让割线改变
+
+38
+00:03:42,000 --> 00:03:47,000
+by moving the point along the curve. Let’s run this animation over here.
+通过沿曲线移动点。让我们在这里运行该动画。
+
+39
+00:03:47,000 --> 00:03:52,000
+What you’ll see is that as the point moves to the required point,
+您会看到，随着点移动到所需点，
+
+40
+00:03:52,000 --> 00:04:00,000
+the secant becomes closer and closer to the tangent. Okay. To summarize,
+割线越来越接近切线。好的。总而言之，
+
+41
+00:04:00,000 --> 00:04:08,000
+as a secant gets closer to the desired point, you’re going to get the tangent line.
+当割线接近所需的点时，您将得到切线。
+
+42
+00:04:08,000 --> 00:04:16,000
+Now onto the second problem for calculus, and that’s the problem of finding the area
+现在到微积分的第二个问题，那就是求出区域面积
+
+43
+00:04:16,000 --> 00:04:24,000
+or length of a curve. Here is an animation in which we can talk about the area
+或曲线的长度的问题。这是一个动画，我们可以在其中探究这个区域
+
+44
+00:04:24,000 --> 00:04:31,000
+of a regular polygon when the number of sides goes from 3 to 50. Let’s begin with the case of <i>n</i> = 3,
+当边数从3变到50时，它变为正多边形。让我们从<i>n</i> = 3 的情况开始，
+
+45
+00:04:31,000 --> 00:04:37,000
+where you have a triangle, and then as you increase the number of sides, you see what happens
+那里有一个三角形，然后随着边数的增加，您会看到发生了什么
+
+46
+00:04:37,000 --> 00:04:43,000
+the perimeter and the area. Let’s run animation. You see that as the number of sides increases,
+周边和区域。让我们运行动画。您会看到随着边数的增加，
+
+47
+00:04:43,000 --> 00:04:52,000
+the polygon approaches the circumscribed circle. Of course in this case, you know that when you have
+多边形接近外接圆。当然，在这种情况下，您知道
+
+48
+00:04:52,000 --> 00:04:58,000
+an infinite number of sides, then you get the area of the full circle, which is just π if the radius is 1.
+如果你有无限多个边，则可以得到整个圆的面积，如果半径为1，那么面积就是π。
+
+49
+00:04:58,000 --> 00:05:05,000
+Okay. On to the third problem for calculus, and that is what is called the velocity problem.
+好的。关于微积分的第三个问题，那就是速度问题。
+
+50
+00:05:05,000 --> 00:05:11,000
+Here we have a particle that is moving along around a knotted curve. At each stage, you have the velocity
+在这里，我们有一个沿着打结曲线移动的粒子。在每个阶段，您都知道粒子
+的速度
+
+51
+00:05:11,000 --> 00:05:16,000
+and the acceleration, so you have the tangent and the normal, as we call it,
+和加速度，所以我们有切线和法线，如我们所说，
+
+52
+00:05:16,000 --> 00:05:23,000
+and the problem might be to compute the velocity and acceleration at any time in a very accurate way.
+问题是如何精确计算任意时刻粒子的速度和加速度
+53
+00:05:23,000 --> 00:05:26,000
+Once again, you can use calculus for this.
+再一次地，您可以为此使用微积分。
+
+54
+00:05:26,000 --> 00:05:35,000
+Finally, on to the problem of optimization. Let’s say a farmer has 500 feet of fencing available,
+最后，讨论优化问题。假设一个农夫有500英尺的栅栏，
+
+55
+00:05:35,000 --> 00:05:43,000
+and the farmer wants to fence off a rectangle with the maximum area. The question is
+农民想用最大面积的矩形围起来。问题是
+
+56
+00:05:43,000 --> 00:05:51,000
+what should the dimensions of the rectangle be? Let’s look at this interactive model over here.
+矩形的尺寸应该是多少？让我们在这里看看这个交互式模型。
+
+57
+00:05:51,000 --> 00:06:00,000
+You see that as you change the dimensions, you get more and more area. It increases up to certain point,
+您会看到，随着更改尺寸，您将获得越来越大的面积。它增加到一定程度，
+
+58
+00:06:00,000 --> 00:06:08,000
+and then it starts to shrink again. It would look like the best way to optimize over here would be
+然后又开始收缩。看起来在这里进行优化的最佳方法是
+
+59
+00:06:08,000 --> 00:06:15,000
+to choose a rectangle which is, in fact, a square of 125 feet by 125 feet, but the question is
+选择一个实际上是125英尺乘125英尺的正方形的矩形，但是问题是
+
+60
+00:06:15,000 --> 00:06:19,000
+how would you have arrived at the solution without trial and error?
+您将如何在没有反复试验的情况下得出解决方案？
+
+61
+00:06:19,000 --> 00:06:25,000
+Calculus gives you a systematic way of solving such problems.
+微积分为您提供了解决此类问题的系统方法。
+
+62
+00:06:27,000 --> 00:06:33,000
+Now of course the ancient Greeks knew quite a lot about solving such problems,
+当然，古希腊人对此类问题已经有很多的认识，
+
+63
+00:06:33,000 --> 00:06:39,000
+but it was only in the 17th century that mathematicians started to look a little deeper into
+但是直到17世纪，数学家才开始更深入地研究
+
+64
+00:06:39,000 --> 00:06:47,000
+how one could solve each of these four problems. The French lawyer and mathematician Pierre de Fermat
+如何解决这四个问题。法国律师兼数学家Pierre de Fermat
+
+65
+00:06:47,000 --> 00:06:52,000
+developed a method for drawing tangents and finding maxima and minima.
+发明了一种绘制切线并找到最大值和最小值的方法。
+
+66
+00:06:52,000 --> 00:07:04,000
+The clergymen John Wallis found ways, for example, to find the value of π/2 and do it quite accurately.
+神职人员约翰·沃利斯（John Wallis）找到了一些方法来求出π/ 2的值并相当准确地做到这一点。
+
+67
+00:07:04,000 --> 00:07:10,000
+Johannes Kepler, the great astronomer, used the method of the Greeks to find
+伟大的天文学家约翰尼斯·开普勒（Johannes Kepler）用希腊人的方法求出了
+
+68
+00:07:10,000 --> 00:07:16,000
+to find the volume of wine barrels, and in fact in doing so, he touched upon the questions of
+酒桶的体积，实际上，他谈到了以下问题：
+
+69
+00:07:16,000 --> 00:07:22,000
+finding volumes and finding maxima and minima, so he really is one of the pioneers of calculus.
+求出体积并找到其最大值和最小值，所以他确实是微积分的先驱之一。
+
+70
+00:07:22,000 --> 00:07:27,000
+Of course at that point, geometry was still the method of choice for many problems,
+当然，在那时，几何仍然是许多问题的选择方法，
+
+71
+00:07:27,000 --> 00:07:31,000
+so Isaac Barrow in England showed how to calculate the tangent to a curve
+所以英国的Isaac Barrow展示了如何使用纯粹的几何方法
+
+72
+00:07:31,000 --> 00:07:40,000
+using purely geometrical means. So Fermat, Wallis, Kepler and Barrow were the early pioneers
+来计算曲线的切线。因此，费马，沃利斯，开普勒和巴罗是微积分以及许多其他方法的先驱。
+
+73
+00:07:40,000 --> 00:07:47,000
+of calculus, along with many others. Now you might read in books or elsewhere that
+现在您可能会在书本或其他地方阅读到，
+
+74
+00:07:47,000 --> 00:07:50,000
+Newton and Leibniz discovered calculus. The question is
+牛顿和莱布尼兹发现了微积分。问题是
+
+75
+00:07:50,000 --> 00:07:57,000
+in what sense are they regarded as pioneers and discovers of calculus in the true sense?
+在什么意义上，他们被视为真正意义上的微积分的先驱和发现？
+
+76
+00:07:58,000 --> 00:08:03,000
+The point is that although the early mathematicians knew about calculus one way or the other,
+关键是，尽管早期的数学家以某种方式发展了微积分，
+
+77
+00:08:03,000 --> 00:08:10,000
+it was only Newton and Leibniz who gave general methods for doing calculus.
+只有牛顿和莱布尼兹给出了进行微积分的通用方法。
+
+78
+00:08:10,000 --> 00:08:15,000
+In fact, they put together all the earlier knowledge and found relations between
+实际上，他们将所有前人的知识放在一起，并发明了
+
+79
+00:08:15,000 --> 00:08:22,000
+the various concepts of calculus. One question was who discovered calculus first?
+微积分的各种概念。一个争论是谁首先发现了微积分？
+
+80
+00:08:22,000 --> 00:08:28,000
+Was it Newton or Leibniz? Well, Leibniz published his paper first,
+是牛顿还是莱布尼兹？莱布尼兹首先发表了他的论文，
+
+81
+00:08:28,000 --> 00:08:39,000
+but then Newton had already shared his ideas on calculus with others. In England people said
+但是后来牛顿已经与其他人分享了他关于微积分的想法。在英格兰，人们说
+
+82
+00:08:39,000 --> 00:08:49,000
+oh, Newton discovered calculus, while elsewhere in Europe, the support was all for Leibniz.
+哦，牛顿发现了微积分，而在欧洲其他地方，人们都说莱布尼茨是微积分之父。
+
+83
+00:08:49,000 --> 00:08:56,000
+Well, today it doesn’t matter a lot, and we regard Newton and Leibniz as the joint creators of calculus,
+今时今日，这些争论已经无关紧要了，我们认为牛顿和莱布尼兹是微积分的共同创造者，
+
+84
+00:08:56,000 --> 00:09:02,000
+for it was they who gave a unified way of looking at concepts in this subject to us,
+因为正是他们为我们提供了一种统一的方式来研究这一主题的概念，
+
+85
+00:09:02,000 --> 00:09:12,000
+and today we talk of the Newton and Leibniz approach to calculus. Now beyond Newton–Leibniz,
+今天我们讨论牛顿和莱布尼兹的微积分方法。现在超越牛顿-莱布尼兹，
+
+86
+00:09:12,000 --> 00:09:16,000
+people went on making improvements to calculus.
+人们继续改进微积分。
+
+87
+00:09:16,000 --> 00:09:23,000
+The Bernoulli brothers were very active in this area. In fact, Johann Bernoulli wrote the first
+伯努利兄弟在这一领域非常活跃。实际上，约翰·伯努利（Johann Bernoulli）写了第一本
+
+88
+00:09:23,000 --> 00:09:30,000
+the first differential calculus textbook informally; it was L’Hospital who actually published it.
+第一本微积分学非正式的教科书；实际上它是医院出版的。
+
+89
+00:09:30,000 --> 00:09:37,000
+Maria Agnesi—lady mathematician—she was the eldest of 21 children, and still found time
+玛丽亚·阿格尼丝（Maria Agnesi）-一位女数学家-她是21个孩子中的老大，寻找时间
+
+90
+00:09:37,000 --> 00:09:42,000
+to do calculus and write a book that covered both differential and integral calculus.
+研究微积分并写一本涵盖微积分和积分的书。
+
+91
+00:09:42,000 --> 00:09:48,000
+But the modern foundations of calculus, what made it really nice and precise,
+但是是微积分的现代基础使它变得非常精确，
+
+92
+00:09:48,000 --> 00:09:54,000
+were given by Cauchy and Weierstrass, and it was they who finally told us
+这是柯西和维尔斯特拉斯给出的，是他们最终
+
+93
+00:09:54,000 --> 00:10:00,000
+how to approach calculus in a very rigorous and complete manner.
+得出了处理微积分的非常严格和完整的方式。
+
+94
+00:10:00,000 --> 00:10:06,000
+Now although all these pioneers did a lot of work, things did not stop over there.
+现在，尽管所有这些先驱者都做了很多工作，但事情并没有就此止步。
+
+95
+00:10:06,000 --> 00:10:13,000
+Even today, we have calculus being used in many, many areas. For example, quantum mechanics,
+直到今天，微积分仍在许多领域中使用。例如量子力学
+
+96
+00:10:13,000 --> 00:10:19,000
+which is the study of matter at the atomic level, uses the Schrӧdinger equation,
+这是在原子水平上对物质的研究，使用Schrӧdinger方程，
+
+97
+00:10:19,000 --> 00:10:28,000
+which is a product of calculus. If you go to financial markets, then the Black–Scholes equation is used
+这是微积分的产物。在金融领域，则会使用Black–Scholes方程
+
+98
+00:10:28,000 --> 00:10:35,000
+to find the prices of options. The Black–Scholes equation, in fact, uses what are called
+来计算期权的价格。实际上，Black-Scholes方程使用的是所谓的
+
+99
+00:10:35,000 --> 00:10:42,000
+partial differential equations. When Albert Einstein wanted to discover the laws of gravitation,
+偏微分方程。当爱因斯坦想发现万有引力定律时，
+
+100
+00:10:42,000 --> 00:10:47,000
+he had to turn to calculus, something called Ricci calculus, and his friend Marcel Grossmann
+他不得不求助于微积分学，即所谓的Ricci微积分学，他的朋友Marcel Grossmann
+101
+00:10:47,000 --> 00:10:51,000
+taught him the details, but Albert Einstein developed the so-called general theory of relativity
+教会了他细节，但爱因斯坦根据微积分发展了
+
+102
+00:10:51,000 --> 00:10:57,000
+based on calculus. If you study economics and you want to study markets, you need calculus.
+相对论。如果您学习经济学并且想学习市场运转规律，也需要微积分。
+
+103
+00:10:57,000 --> 00:11:02,000
+If you want to study medicine, you need calculus to figure out dosing strategies.
+如果您想学习医学，则需要进行微积分计算剂量策略。
+
+104
+00:11:02,000 --> 00:11:07,000
+Of course even if you go to NASA, you would find that they use calculus all the time
+当然，即使您去NASA，也会发现他们一直在使用微积分
+
+105
+00:11:07,000 --> 00:11:15,000
+to figure out how to design and how to propel their rockets. The point is calculus continues to be
+去研究如何设计和推进火箭。微积分是许多不同领域的关键工具。
+
+106
+00:11:15,000 --> 00:11:21,000
+a key tool in many different areas. But you might ask okay, that’s fine;
+但是你可能会问“OK，
+107
+00:11:21,000 --> 00:11:26,000
+it’s really useful to some people, but why is it useful to me?
+它对某些人确实有用，但是为什么对我有用？”
+
+108
+00:11:26,000 --> 00:11:32,000
+Why should I study calculus? Well, I already gave the first reason. The first reason is that
+我为什么要学习微积分？我已经给出了第一个理由。第一个原因是
+
+109
+00:11:32,000 --> 00:11:39,000
+it has very broad applications in the real world. The other point is a more practical one—
+它在现实世界中具有非常广泛的应用。另一点是更实际的一点-
+
+110
+00:11:39,000 --> 00:11:45,000
+that if you are studying any kind of STEM degree in science or technology, then they would ask you
+如果您正在攻读任何类型的科学或技术的STEM学位，那么他们会要求您
+
+111
+00:11:45,000 --> 00:11:51,000
+to first master calculus before doing anything else. It’s a prerequisite which you must go through
+在做其他事情之前先掌握微积分。如果您想成为技术专家，
+
+112
+00:11:51,000 --> 00:11:59,000
+if you want to become a technical kind of person. Now on the other hand, you can say that
+这是您必须经过的前提条件。另一方面，您可以说
+
+113
+00:11:59,000 --> 00:12:04,000
+I’m not going to go into any of these STEM fields; I just am going to pursue my own interests.
+我将不打算涉及任何这些STEM领域。我只是为了追求自己的利益。
+
+114
+00:12:04,000 --> 00:12:11,000
+Well, that’s fine, but for anyone to master calculus represents a major academic milestone
+这很好，但是对任何人而言，掌握微积分都是一个学术里程碑。
+
+115
+00:12:11,000 --> 00:12:16,000
+for that person, and to me, that is the main reason for studying calculus.
+对我来说，这就是研究微积分的主要原因。
+
+116
+00:12:16,000 --> 00:12:21,000
+It is a major academic milestone. If at any point in your career you can say I know calculus,
+这是一个重要的学术里程碑。如果您在职业生涯的任何时候都可以说我了解微积分，
+
+117
+00:12:21,000 --> 00:12:25,000
+that is a great feeling, and I hope you get it after going through this course.
+这将会是一种很棒的感觉，我希望您在完成本课程后能得到它。
+
+118
+00:12:25,000 --> 00:12:34,000
+Okay. A little bit about the course itself. This course will have 40 lessons—it’s a 40-part course,
+好的。有关课程本身的一些知识。本课程将有40节课，这是一个40部分的课程，
+
+119
+00:12:34,000 --> 00:12:43,000
+and roughly speaking, the course is based on the AP Calculus AB in this country, the US.
+大致而言，该课程基于美国这个国家的AP Calculus AB。
+
+120
+00:12:43,000 --> 00:12:48,000
+The AP Calculus course is a pretty challenging high-school level course, and I thought that
+AP微积分课程是一门颇具挑战性的高中课程，我
+
+121
+00:12:48,000 --> 00:12:55,000
+it would be good to get more people into studying calculus early and preparing themselves
+希望有更多的人尽早学习微积分并做好
+
+122
+00:12:55,000 --> 00:13:03,000
+for applying it in their own careers. Now we’ll begin with standard topics like functions and limits,
+将其应用于自己的职业的准备。现在，我们将从函数和极限之类的标准主题开始，
+
+123
+00:13:03,000 --> 00:13:09,000
+and having done that, we will move onto differential calculus and finally we will move on to integral calculus.
+然后，我们将探讨微分，最后将探讨积分。
+
+124
+00:13:09,000 --> 00:13:14,000
+Don’t worry if you don't follow these terms; they’ll get familiar to you a little later on.
+如果您还不了解这些主题的话，没关系，之后你将会熟悉它们
+
+125
+00:13:14,000 --> 00:13:19,000
+Of course the only way to learn calculus and mathematics is by doing, so there will be lots of
+当然，学习微积分和数学的唯一方法是边做边学，因此会有很多
+
+126
+00:13:19,000 --> 00:13:25,000
+problem sessions and quizzes to help you understand calculus in a deeper and practical way.
+问题会议和测验可帮助您以更深入和实用的方式理解微积分。
+
+127
+00:13:25,000 --> 00:13:31,000
+But the main point is that we will focus on understanding, and there will be almost no
+但主要的一点是，我们将专注于理解，并且几乎没有
+
+128
+00:13:31,000 --> 00:13:37,000
+formal proofs for any theorems, so the advantage of that is that we can focus on visualization,
+任何定理的形式证明，所以它的优点是我们可以专注于微积分的可视化，
+
+129
+00:13:37,000 --> 00:13:42,000
+on calculations, and really get familiar with all the things which are possible
+并真正熟悉所有使用Mathematica和Wolfram语言
+
+130
+00:13:42,000 --> 00:13:48,000
+possible with Mathematica and the Wolfram Language. I do hope you’ll take advantage of this course
+可以做到的事情。我希望您能利用本课程的优势
+
+131
+00:13:48,000 --> 00:13:52,000
+to really understand fundamentals of calculus, how to compute things,
+真正了解微积分的基础知识，如何计算事物，
+
+132
+00:13:52,000 --> 00:13:58,000
+how to draw beautiful plots, et cetera, using the tools that are available to us today
+如何使用今天可用的工具绘制漂亮的地块等
+
+133
+00:13:58,000 --> 00:14:01,000
+and were not even a few decades ago.
+甚至不是几十年前
+
+134
+00:14:02,000 --> 00:14:07,000
+Okay. Who is this course for? You might wonder is this course really for me?
+好的。这门课程适合谁？您可能想知道这门课程真的适合我吗？
+
+135
+00:14:07,000 --> 00:14:13,000
+Am I old enough for it? Am I the right person? Well, it doesn’t matter who you are;
+我学龄足够吗？我是合适的人吗？好吧，您是谁都没有关系。
+
+136
+00:14:13,000 --> 00:14:18,000
+you will enjoy this course. You might be a beginner trying to learn calculus;
+您将喜欢这门课程。您可能是尝试学习微积分的初学者；
+
+137
+00:14:18,000 --> 00:14:22,000
+you’re welcome to the course. You might be a middle schooler, for example, who is ambitious
+欢迎您参加本课程。例如，您可能是一名中学生，有进取心
+
+138
+00:14:22,000 --> 00:14:28,000
+and wants to learn calculus at a very early stage. That’s fine; you can learn it. This course is
+并希望在早期阶段学习微积分。那很好; 你将可以掌握它。这门课是
+
+139
+00:14:28,000 --> 00:14:33,000
+a good place to begin. Or you might be a doctor or engineer who has learned calculus for sure earlier on,
+一个很好的起点。或者您可能是一位肯定已经学过微积分的医生或工程师，
+
+140
+00:14:33,000 --> 00:14:38,000
+but just wants to refresh their memory and learn this wonderful subject again.
+但是只想刷新自己的记忆，然后再次学习这个奇妙的主题。
+
+141
+00:14:38,000 --> 00:14:42,000
+That’s fine; you’re welcome to. You’ll benefit something from this course.
+没关系; 我们欢迎您学习这门课程。您将从本课程中受益。
+
+142
+00:14:42,000 --> 00:14:50,000
+Now that’s specialized people, but really anyone who wants to understand the Wolfram Language
+如果你是专业人士，实际上是任何想了解Wolfram语言
+
+143
+00:14:50,000 --> 00:14:56,000
+and how it applies to calculus is going to find this course extremely beneficial. To me,
+以及如何将其应用到微积分领域的人，您将发现该课程极其有益。对我来说，
+
+144
+00:14:56,000 --> 00:15:02,000
+this course is designed to be for everyone, not any specialty group, and we’ll try and go slow
+本课程是为所有人而设计的，而不是针对任何专业群体的，我们将尽力而为
+
+145
+00:15:02,000 --> 00:15:08,000
+and explain things very, very carefully at every stage. It’s a good point for me to mention that
+在每个阶段都非常非常认真地解释事情。对我来说，这是一个好主意
+
+146
+00:15:08,000 --> 00:15:16,000
+this course arose in an internship project with John Clark. John Clark was with me last summer,
+本课程是在与约翰·克拉克（John Clark）进行的实习项目中提出的。去年夏天，约翰·克拉克（John Clark）和我在一起，
+
+147
+00:15:16,000 --> 00:15:22,000
+and in fact, he was a student at some point at the California Institute of Technology.
+实际上，他曾经是加州理工学院的学生。
+
+148
+00:15:22,000 --> 00:15:28,000
+John is a remarkable person. He learned calculus when he was in the 7th grade. He is a genius,
+John是一个了不起的人。他七年级时学习微积分。他是一个天才，
+
+149
+00:15:28,000 --> 00:15:35,000
+and he did a great job producing the basic material for the course. But my point is that if John,
+他在制作本课程的基础材料方面做得很出色。但是我的意思是，如果John
+
+150
+00:15:35,000 --> 00:15:40,000
+at his age having just finished college, could write the course, you can surely follow
+在他刚刚大学毕业的年龄，可以编写微积分课程，你当然也可以。
+
+151
+00:15:40,000 --> 00:15:45,000
+what I’m saying over here. Do not give up. Keep persevering. The rewards will be immense.
+不要放弃。坚持不懈。回报将是巨大的。
+
+152
+00:15:45,000 --> 00:15:51,000
+I strongly urge you to follow the course all the way through all 40 lessons,
+我强烈敦促您在所有40节课程中始终遵循该课程，
+
+153
+00:15:51,000 --> 00:15:54,000
+and you will have mastered calculus by the time we are done.
+到我们完成时，您将掌握微积分。
+
+154
+00:15:54,000 --> 00:16:01,000
+Okay. Let’s summarize what we have learned today. As a piece of mathematics,
+好的。让我们总结一下我们今天学到的东西。作为一门数学，
+
+155
+00:16:01,000 --> 00:16:07,000
+calculus shows us what we are capable of if we really put our minds to it.
+微积分向我们展示了如果我们真正考虑到我们的能力。
+
+156
+00:16:07,000 --> 00:16:13,000
+Whether Newton or Leibniz or Fermat or Maria Agnesi, these individuals took time off from
+无论是牛顿还是莱布尼兹还是费马还是Maria Agnesi，这些人都从
+
+157
+00:16:13,000 --> 00:16:19,000
+their daily duties to do what interests them most, which is mathematics and calculus,
+他们的日常职责是做他们最感兴趣的事情，即数学和微积分，
+
+158
+00:16:19,000 --> 00:16:24,000
+and that’s why we have this wonderful subject today. Even today, if you want to do
+这就是为什么我们今天有这个很棒的主题。即使在今天，如果你想做
+
+159
+00:16:24,000 --> 00:16:27,000
+if you want to do any kind of science in the broadest sense, whether it’s physical science
+如果您想进行最广义的科学研究，无论是物理科学
+
+160
+00:16:27,000 --> 00:16:33,000
+or social science, you will find calculus is a very useful apparatus which has in fact
+或社会科学，您会发现微积分是非常有用的工具
+161
+00:16:33,000 --> 00:16:40,000
+changed our whole view of the world. Now if you are a student, you will more or less
+它改变了我们对世界的整体看法。现在，如果您是学生，您将或多或少
+
+162
+00:16:40,000 --> 00:16:45,000
+certainly at some stage have to do a little bit of calculus, and you should feel proud
+在某个阶段必须做一些微积分，并且您应该为自己掌握它而感到自豪。
+
+163
+00:16:45,000 --> 00:16:53,000
+to have mastered it yourself—beginning with this course, perhaps. That’s the introduction to calculus
+以上就是微积分的介绍。
+
+164
+00:16:53,000 --> 00:16:57,000
+which I have given you today, and in the next lesson, we will begin formally.
+这是我今天讲述给您的，在下一课中，我们将正式开始探讨微积分。
+
+165
+00:16:57,000 --> 00:17:03,000
+It’s all going to be a little more serious and straightforward in some ways because
+在某些方面，这将变得更加严肃和直接，因为
+
+166
+00:17:03,000 --> 00:17:09,000
+we will talk about functions and then slowly progress into the other areas of calculus.
+我们将讨论函数，然后慢慢进入微积分的其他领域。
+
+167
+00:17:09,000 --> 00:17:15,000
+With that summary, I will conclude today’s lesson. It’s been a pleasure to discuss
+总结之后，我将总结今天的课程。讨论很高兴
+
+168
+00:17:15,000 --> 00:17:20,000
+this introduction with you. I hope you have enjoyed a bit from it. Thank you very much.
+与您一起介绍。希望您喜欢它。非常感谢你。

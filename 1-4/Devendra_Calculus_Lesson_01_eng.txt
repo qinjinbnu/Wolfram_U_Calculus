@@ -1,0 +1,672 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+Hello everyone, and welcome to Introduction to Calculus with Wolfram U.
+
+2
+00:00:05,000 --> 00:00:09,000
+My name is Devendra Kapadia, and I work here at Wolfram Research
+
+3
+00:00:09,000 --> 00:00:15,000
+as a kernel developer for calculus functions. But I also enjoy teaching mathematics,
+
+4
+00:00:15,000 --> 00:00:20,000
+and it’s a great pleasure to have this opportunity to talk about calculus with you.
+
+5
+00:00:20,000 --> 00:00:28,000
+Now today is the first lesson, so I thought we would spend some time talking about what is calculus
+
+6
+00:00:28,000 --> 00:00:35,000
+and trying to understand what this beautiful subject is all about. I’ll begin by defining calculus,
+
+7
+00:00:35,000 --> 00:00:40,000
+and then we’ll talk a little bit about the main problems of calculus, some history,
+
+8
+00:00:40,000 --> 00:00:45,000
+and then I’ll tell you why you might want to study the course, and what the course is all about.
+
+9
+00:00:45,000 --> 00:00:50,000
+Let’s begin by answering the question what is calculus?
+
+10
+00:00:50,000 --> 00:00:59,000
+Well, very simply, calculus is the science of change. Now, change is all around us.
+
+11
+00:00:59,000 --> 00:01:08,000
+For instance, the second hand on this clock changes its position every second, but you could have
+
+12
+00:01:08,000 --> 00:01:15,000
+more complicated motion. For example, the planets in the solar system change their position
+
+13
+00:01:15,000 --> 00:01:19,000
+at every instant as they revolve around the sun. Now in the first case,
+
+14
+00:01:19,000 --> 00:01:25,000
+for the motion of the second hand around a clock, you could use simple arithmetic algebra
+
+15
+00:01:25,000 --> 00:01:30,000
+to analyze a problem, but in more difficult cases like the solar system motion,
+
+16
+00:01:30,000 --> 00:01:36,000
+you would need better tools to analyze the motion, and one such tool is calculus.
+
+17
+00:01:36,000 --> 00:01:45,000
+Calculus is an essential tool for deeply understanding change in a mathematical way, and hence,
+
+18
+00:01:45,000 --> 00:01:51,000
+it is a tool of choice for many scientific problems. The next question is
+
+19
+00:01:51,000 --> 00:01:56,000
+what are the main problems that drove the development of calculus?
+
+20
+00:01:56,000 --> 00:02:04,000
+Well, the four main problems of calculus are first, the problem of finding the tangent line
+
+21
+00:02:04,000 --> 00:02:10,000
+to a curve at a point. Now if the curve is sufficiently simple like a circle,
+
+22
+00:02:10,000 --> 00:02:16,000
+you can of course draw the tangent line to the curve at that point, but in more complicated cases,
+
+23
+00:02:16,000 --> 00:02:20,000
+you would need something like calculus to solve the problem.
+
+24
+00:02:20,000 --> 00:02:25,000
+Number two is the problem of finding the area under a curve.
+
+25
+00:02:25,000 --> 00:02:29,000
+Now once again, if, let’s say, you have a circle, then finding the area is not very difficult.
+
+26
+00:02:29,000 --> 00:02:36,000
+But for more complicated curves, you would need better tools. Now from the point of view
+
+27
+00:02:36,000 --> 00:02:40,000
+of physics, you might sometimes need to find, let’s say, the velocity the a particle
+
+28
+00:02:40,000 --> 00:02:46,000
+given either its position or acceleration, and once again,
+
+29
+00:02:46,000 --> 00:02:50,000
+you can use calculus to solve this problem.
+
+30
+00:02:51,000 --> 00:02:58,000
+And finally, from time to time, you are going to want to either maximize or minimize some quantity,
+
+31
+00:02:58,000 --> 00:03:04,000
+and the common word for that is optimizing. For example, a businessman might want
+
+32
+00:03:04,000 --> 00:03:14,000
+to maximize his profits or minimize his loss, and once again, calculus is the tool
+
+33
+00:03:14,000 --> 00:03:19,000
+which helps us to study the process of optimization.
+
+34
+00:03:19,000 --> 00:03:24,000
+Okay. Let’s look at each of these in a bit more detail. Let’s start with tangent to a curve.
+
+35
+00:03:24,000 --> 00:03:29,000
+Let’s begin with the tangent to a curve. Now to find a tangent line at a point, what we do is
+
+36
+00:03:29,000 --> 00:03:36,000
+we draw the secant lines from nearby points. Let’s say we want to find a tangent at this point over here.
+
+37
+00:03:36,000 --> 00:03:42,000
+We start with a point, in this case far away, and let the secant line change
+
+38
+00:03:42,000 --> 00:03:47,000
+by moving the point along the curve. Let’s run this animation over here.
+
+39
+00:03:47,000 --> 00:03:52,000
+What you’ll see is that as the point moves to the required point,
+
+40
+00:03:52,000 --> 00:04:00,000
+the secant becomes closer and closer to the tangent. Okay. To summarize,
+
+41
+00:04:00,000 --> 00:04:08,000
+as a secant gets closer to the desired point, you’re going to get the tangent line.
+
+42
+00:04:08,000 --> 00:04:16,000
+Now onto the second problem for calculus, and that’s the problem of finding the area
+
+43
+00:04:16,000 --> 00:04:24,000
+or length of a curve. Here is an animation in which we can talk about the area
+
+44
+00:04:24,000 --> 00:04:31,000
+of a regular polygon when the number of sides goes from 3 to 50. Let’s begin with the case of <i>n</i> = 3,
+
+45
+00:04:31,000 --> 00:04:37,000
+where you have a triangle, and then as you increase the number of sides, you see what happens
+
+46
+00:04:37,000 --> 00:04:43,000
+the perimeter and the area. Let’s run animation. You see that as the number of sides increases,
+
+47
+00:04:43,000 --> 00:04:52,000
+the polygon approaches the circumscribed circle. Of course in this case, you know that when you have
+
+48
+00:04:52,000 --> 00:04:58,000
+an infinite number of sides, then you get the area of the full circle, which is just π if the radius is 1.
+
+49
+00:04:58,000 --> 00:05:05,000
+Okay. On to the third problem for calculus, and that is what is called the velocity problem.
+
+50
+00:05:05,000 --> 00:05:11,000
+Here we have a particle that is moving along around a knotted curve. At each stage, you have the velocity
+
+51
+00:05:11,000 --> 00:05:16,000
+and the acceleration, so you have the tangent and the normal, as we call it,
+
+52
+00:05:16,000 --> 00:05:23,000
+and the problem might be to compute the velocity and acceleration at any time in a very accurate way.
+
+53
+00:05:23,000 --> 00:05:26,000
+Once again, you can use calculus for this.
+
+54
+00:05:26,000 --> 00:05:35,000
+Finally, on to the problem of optimization. Let’s say a farmer has 500 feet of fencing available,
+
+55
+00:05:35,000 --> 00:05:43,000
+and the farmer wants to fence off a rectangle with the maximum area. The question is
+
+56
+00:05:43,000 --> 00:05:51,000
+what should the dimensions of the rectangle be? Let’s look at this interactive model over here.
+
+57
+00:05:51,000 --> 00:06:00,000
+You see that as you change the dimensions, you get more and more area. It increases up to certain point,
+
+58
+00:06:00,000 --> 00:06:08,000
+and then it starts to shrink again. It would look like the best way to optimize over here would be
+
+59
+00:06:08,000 --> 00:06:15,000
+to choose a rectangle which is, in fact, a square of 125 feet by 125 feet, but the question is
+
+60
+00:06:15,000 --> 00:06:19,000
+how would you have arrived at the solution without trial and error?
+
+61
+00:06:19,000 --> 00:06:25,000
+Calculus gives you a systematic way of solving such problems.
+
+62
+00:06:27,000 --> 00:06:33,000
+Now of course the ancient Greeks knew quite a lot about solving such problems,
+
+63
+00:06:33,000 --> 00:06:39,000
+but it was only in the 17th century that mathematicians started to look a little deeper into
+
+64
+00:06:39,000 --> 00:06:47,000
+how one could solve each of these four problems. The French lawyer and mathematician Pierre de Fermat
+
+65
+00:06:47,000 --> 00:06:52,000
+developed a method for drawing tangents and finding maxima and minima.
+
+66
+00:06:52,000 --> 00:07:04,000
+The clergymen John Wallis found ways, for example, to find the value of π/2 and do it quite accurately.
+
+67
+00:07:04,000 --> 00:07:10,000
+Johannes Kepler, the great astronomer, used the method of the Greeks to find
+
+68
+00:07:10,000 --> 00:07:16,000
+to find the volume of wine barrels, and in fact in doing so, he touched upon the questions of
+
+69
+00:07:16,000 --> 00:07:22,000
+finding volumes and finding maxima and minima, so he really is one of the pioneers of calculus.
+
+70
+00:07:22,000 --> 00:07:27,000
+Of course at that point, geometry was still the method of choice for many problems,
+
+71
+00:07:27,000 --> 00:07:31,000
+so Isaac Barrow in England showed how to calculate the tangent to a curve
+
+72
+00:07:31,000 --> 00:07:40,000
+using purely geometrical means. So Fermat, Wallis, Kepler and Barrow were the early pioneers
+
+73
+00:07:40,000 --> 00:07:47,000
+of calculus, along with many others. Now you might read in books or elsewhere that
+
+74
+00:07:47,000 --> 00:07:50,000
+Newton and Leibniz discovered calculus. The question is
+
+75
+00:07:50,000 --> 00:07:57,000
+in what sense are they regarded as pioneers and discovers of calculus in the true sense?
+
+76
+00:07:58,000 --> 00:08:03,000
+The point is that although the early mathematicians knew about calculus one way or the other,
+
+77
+00:08:03,000 --> 00:08:10,000
+it was only Newton and Leibniz who gave general methods for doing calculus.
+
+78
+00:08:10,000 --> 00:08:15,000
+In fact, they put together all the earlier knowledge and found relations between
+
+79
+00:08:15,000 --> 00:08:22,000
+the various concepts of calculus. One question was who discovered calculus first?
+
+80
+00:08:22,000 --> 00:08:28,000
+Was it Newton or Leibniz? Well, Leibniz published his paper first,
+
+81
+00:08:28,000 --> 00:08:39,000
+but then Newton had already shared his ideas on calculus with others. In England people said
+
+82
+00:08:39,000 --> 00:08:49,000
+oh, Newton discovered calculus, while elsewhere in Europe, the support was all for Leibniz.
+
+83
+00:08:49,000 --> 00:08:56,000
+Well, today it doesn’t matter a lot, and we regard Newton and Leibniz as the joint creators of calculus,
+
+84
+00:08:56,000 --> 00:09:02,000
+for it was they who gave a unified way of looking at concepts in this subject to us,
+
+85
+00:09:02,000 --> 00:09:12,000
+and today we talk of the Newton and Leibniz approach to calculus. Now beyond Newton–Leibniz,
+
+86
+00:09:12,000 --> 00:09:16,000
+people went on making improvements to calculus.
+
+87
+00:09:16,000 --> 00:09:23,000
+The Bernoulli brothers were very active in this area. In fact, Johann Bernoulli wrote the first
+
+88
+00:09:23,000 --> 00:09:30,000
+the first differential calculus textbook informally; it was L’Hospital who actually published it.
+
+89
+00:09:30,000 --> 00:09:37,000
+Maria Agnesi—lady mathematician—she was the eldest of 21 children, and still found time
+
+90
+00:09:37,000 --> 00:09:42,000
+to do calculus and write a book that covered both differential and integral calculus.
+
+91
+00:09:42,000 --> 00:09:48,000
+But the modern foundations of calculus, what made it really nice and precise,
+
+92
+00:09:48,000 --> 00:09:54,000
+were given by Cauchy and Weierstrass, and it was they who finally told us
+
+93
+00:09:54,000 --> 00:10:00,000
+how to approach calculus in a very rigorous and complete manner.
+
+94
+00:10:00,000 --> 00:10:06,000
+Now although all these pioneers did a lot of work, things did not stop over there.
+
+95
+00:10:06,000 --> 00:10:13,000
+Even today, we have calculus being used in many, many areas. For example, quantum mechanics,
+
+96
+00:10:13,000 --> 00:10:19,000
+which is the study of matter at the atomic level, uses the Schrӧdinger equation,
+
+97
+00:10:19,000 --> 00:10:28,000
+which is a product of calculus. If you go to financial markets, then the Black–Scholes equation is used
+
+98
+00:10:28,000 --> 00:10:35,000
+to find the prices of options. The Black–Scholes equation, in fact, uses what are called
+
+99
+00:10:35,000 --> 00:10:42,000
+partial differential equations. When Albert Einstein wanted to discover the laws of gravitation,
+
+100
+00:10:42,000 --> 00:10:47,000
+he had to turn to calculus, something called Ricci calculus, and his friend Marcel Grossmann
+
+101
+00:10:47,000 --> 00:10:51,000
+taught him the details, but Albert Einstein developed the so-called general theory of relativity
+
+102
+00:10:51,000 --> 00:10:57,000
+based on calculus. If you study economics and you want to study markets, you need calculus.
+
+103
+00:10:57,000 --> 00:11:02,000
+If you want to study medicine, you need calculus to figure out dosing strategies.
+
+104
+00:11:02,000 --> 00:11:07,000
+Of course even if you go to NASA, you would find that they use calculus all the time
+
+105
+00:11:07,000 --> 00:11:15,000
+to figure out how to design and how to propel their rockets. The point is calculus continues to be
+
+106
+00:11:15,000 --> 00:11:21,000
+a key tool in many different areas. But you might ask okay, that’s fine;
+
+107
+00:11:21,000 --> 00:11:26,000
+it’s really useful to some people, but why is it useful to me?
+
+108
+00:11:26,000 --> 00:11:32,000
+Why should I study calculus? Well, I already gave the first reason. The first reason is that
+
+109
+00:11:32,000 --> 00:11:39,000
+it has very broad applications in the real world. The other point is a more practical one—
+
+110
+00:11:39,000 --> 00:11:45,000
+that if you are studying any kind of STEM degree in science or technology, then they would ask you
+
+111
+00:11:45,000 --> 00:11:51,000
+to first master calculus before doing anything else. It’s a prerequisite which you must go through
+
+112
+00:11:51,000 --> 00:11:59,000
+if you want to become a technical kind of person. Now on the other hand, you can say that
+
+113
+00:11:59,000 --> 00:12:04,000
+I’m not going to go into any of these STEM fields; I just am going to pursue my own interests.
+
+114
+00:12:04,000 --> 00:12:11,000
+Well, that’s fine, but for anyone to master calculus represents a major academic milestone
+
+115
+00:12:11,000 --> 00:12:16,000
+for that person, and to me, that is the main reason for studying calculus.
+
+116
+00:12:16,000 --> 00:12:21,000
+It is a major academic milestone. If at any point in your career you can say I know calculus,
+
+117
+00:12:21,000 --> 00:12:25,000
+that is a great feeling, and I hope you get it after going through this course.
+
+118
+00:12:25,000 --> 00:12:34,000
+Okay. A little bit about the course itself. This course will have 40 lessons—it’s a 40-part course,
+
+119
+00:12:34,000 --> 00:12:43,000
+and roughly speaking, the course is based on the AP Calculus AB in this country, the US.
+
+120
+00:12:43,000 --> 00:12:48,000
+The AP Calculus course is a pretty challenging high-school level course, and I thought that
+
+121
+00:12:48,000 --> 00:12:55,000
+it would be good to get more people into studying calculus early and preparing themselves
+
+122
+00:12:55,000 --> 00:13:03,000
+for applying it in their own careers. Now we’ll begin with standard topics like functions and limits,
+
+123
+00:13:03,000 --> 00:13:09,000
+and having done that, we will move onto differential calculus and finally we will move on to integral calculus.
+
+124
+00:13:09,000 --> 00:13:14,000
+Don’t worry if you don't follow these terms; they’ll get familiar to you a little later on.
+
+125
+00:13:14,000 --> 00:13:19,000
+Of course the only way to learn calculus and mathematics is by doing, so there will be lots of
+
+126
+00:13:19,000 --> 00:13:25,000
+problem sessions and quizzes to help you understand calculus in a deeper and practical way.
+
+127
+00:13:25,000 --> 00:13:31,000
+But the main point is that we will focus on understanding, and there will be almost no
+
+128
+00:13:31,000 --> 00:13:37,000
+formal proofs for any theorems, so the advantage of that is that we can focus on visualization,
+
+129
+00:13:37,000 --> 00:13:42,000
+on calculations, and really get familiar with all the things which are possible
+
+130
+00:13:42,000 --> 00:13:48,000
+possible with Mathematica and the Wolfram Language. I do hope you’ll take advantage of this course
+
+131
+00:13:48,000 --> 00:13:52,000
+to really understand fundamentals of calculus, how to compute things,
+
+132
+00:13:52,000 --> 00:13:58,000
+how to draw beautiful plots, et cetera, using the tools that are available to us today
+
+133
+00:13:58,000 --> 00:14:01,000
+and were not even a few decades ago.
+
+134
+00:14:02,000 --> 00:14:07,000
+Okay. Who is this course for? You might wonder is this course really for me?
+
+135
+00:14:07,000 --> 00:14:13,000
+Am I old enough for it? Am I the right person? Well, it doesn’t matter who you are;
+
+136
+00:14:13,000 --> 00:14:18,000
+you will enjoy this course. You might be a beginner trying to learn calculus;
+
+137
+00:14:18,000 --> 00:14:22,000
+you’re welcome to the course. You might be a middle schooler, for example, who is ambitious
+
+138
+00:14:22,000 --> 00:14:28,000
+and wants to learn calculus at a very early stage. That’s fine; you can learn it. This course is
+
+139
+00:14:28,000 --> 00:14:33,000
+a good place to begin. Or you might be a doctor or engineer who has learned calculus for sure earlier on,
+
+140
+00:14:33,000 --> 00:14:38,000
+but just wants to refresh their memory and learn this wonderful subject again.
+
+141
+00:14:38,000 --> 00:14:42,000
+That’s fine; you’re welcome to. You’ll benefit something from this course.
+
+142
+00:14:42,000 --> 00:14:50,000
+Now that’s specialized people, but really anyone who wants to understand the Wolfram Language
+
+143
+00:14:50,000 --> 00:14:56,000
+and how it applies to calculus is going to find this course extremely beneficial. To me,
+
+144
+00:14:56,000 --> 00:15:02,000
+this course is designed to be for everyone, not any specialty group, and we’ll try and go slow
+
+145
+00:15:02,000 --> 00:15:08,000
+and explain things very, very carefully at every stage. It’s a good point for me to mention that
+
+146
+00:15:08,000 --> 00:15:16,000
+this course arose in an internship project with John Clark. John Clark was with me last summer,
+
+147
+00:15:16,000 --> 00:15:22,000
+and in fact, he was a student at some point at the California Institute of Technology.
+
+148
+00:15:22,000 --> 00:15:28,000
+John is a remarkable person. He learned calculus when he was in the 7th grade. He is a genius,
+
+149
+00:15:28,000 --> 00:15:35,000
+and he did a great job producing the basic material for the course. But my point is that if John,
+
+150
+00:15:35,000 --> 00:15:40,000
+at his age having just finished college, could write the course, you can surely follow
+
+151
+00:15:40,000 --> 00:15:45,000
+what I’m saying over here. Do not give up. Keep persevering. The rewards will be immense.
+
+152
+00:15:45,000 --> 00:15:51,000
+I strongly urge you to follow the course all the way through all 40 lessons,
+
+153
+00:15:51,000 --> 00:15:54,000
+and you will have mastered calculus by the time we are done.
+
+154
+00:15:54,000 --> 00:16:01,000
+Okay. Let’s summarize what we have learned today. As a piece of mathematics,
+
+155
+00:16:01,000 --> 00:16:07,000
+calculus shows us what we are capable of if we really put our minds to it.
+
+156
+00:16:07,000 --> 00:16:13,000
+Whether Newton or Leibniz or Fermat or Maria Agnesi, these individuals took time off from
+
+157
+00:16:13,000 --> 00:16:19,000
+their daily duties to do what interests them most, which is mathematics and calculus,
+
+158
+00:16:19,000 --> 00:16:24,000
+and that’s why we have this wonderful subject today. Even today, if you want to do
+
+159
+00:16:24,000 --> 00:16:27,000
+if you want to do any kind of science in the broadest sense, whether it’s physical science
+
+160
+00:16:27,000 --> 00:16:33,000
+or social science, you will find calculus is a very useful apparatus which has in fact
+
+161
+00:16:33,000 --> 00:16:40,000
+changed our whole view of the world. Now if you are a student, you will more or less
+
+162
+00:16:40,000 --> 00:16:45,000
+certainly at some stage have to do a little bit of calculus, and you should feel proud
+
+163
+00:16:45,000 --> 00:16:53,000
+to have mastered it yourself—beginning with this course, perhaps. That’s the introduction to calculus
+
+164
+00:16:53,000 --> 00:16:57,000
+which I have given you today, and in the next lesson, we will begin formally.
+
+165
+00:16:57,000 --> 00:17:03,000
+It’s all going to be a little more serious and straightforward in some ways because
+
+166
+00:17:03,000 --> 00:17:09,000
+we will talk about functions and then slowly progress into the other areas of calculus.
+
+167
+00:17:09,000 --> 00:17:15,000
+With that summary, I will conclude today’s lesson. It’s been a pleasure to discuss
+
+168
+00:17:15,000 --> 00:17:20,000
+this introduction with you. I hope you have enjoyed a bit from it. Thank you very much.
+
