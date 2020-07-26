@@ -21,27 +21,27 @@ Let’s begin with a brief overview of the lesson.
 5
 00:00:15,000 --> 00:00:18,000
 The main point is that there are many problems in calculus
-最主要的是 微积分中存在许多问题
+关键在于微积分中存在许多情况
 
 6
 00:00:18,000 --> 00:00:22,000
 where you have to do some operation multiple times—
-你必须多次进行某些操作的地方----
+你必须多次进行某些操作——
 
 7
 00:00:22,000 --> 00:00:24,000
 tens or hundreds of times—
-几百倍
+可能要上百次
 
 8
 00:00:24,000 --> 00:00:27,000
 and a good example of that is Euler’s method.
-而欧拉的方法就是一个很好的例子
+而欧拉法就是一个很好的例子
 
 9
 00:00:27,000 --> 00:00:31,000
 Now in Euler’s method, you have a recurrence relation.
-现在在欧拉的方法中 你有一个递归关系
+在欧拉的方法中 你有一个递归关系
 
 10
 00:00:31,000 --> 00:00:38,000
@@ -61,27 +61,27 @@ you need to work out <i>y</i>[9], <i>y</i>[8], et cetera,
 13
 00:00:43,000 --> 00:00:48,000
 and to do this correctly by hand can be very, very tedious.
-而要正确地用手去做这件事 是非常非常繁琐的
+手算是非常非常繁琐的，还可能算错
 
 14
 00:00:48,000 --> 00:00:51,000
 You may have errors in your calculations,
-你的计算可能有错误
+你的计算非常可能有错
 
 15
 00:00:51,000 --> 00:00:54,000
 or it might just take a very long time.
-或者说可能要花很长的时间
+至少说 那要花很长的时间
 
 16
 00:00:54,000 --> 00:00:57,000
 Of course what you can do is to set up a program
-当然 你可以做的是设置一个程序
+你应该做的是设置一个程序
 
 17
 00:00:57,000 --> 00:01:01,000
 which does that for you in the Wolfram Language.
-它在Wolfram语言中为你做到了这一点
+Wolfram语言为你做到了这一点
 
 18
 00:01:01,000 --> 00:01:04,000
@@ -91,17 +91,17 @@ That’s the theme of this lesson.
 19
 00:01:04,000 --> 00:01:06,000
 In this lesson, you’ll learn how to make
-在本课中 你将学习如何制作
+本课 你将学习如何编写
 
 20
 00:01:06,000 --> 00:01:10,000
 your own programs within the Wolfram Language.
-在Wolfram语言中 你自己的程序
+你自己的程序 使用Wolfram语言
 
 21
 00:01:11,000 --> 00:01:14,000
 We need some preliminaries over here.
-我们需要在这里做一些预演
+我们在这里先做一些预演
 
 22
 00:01:14,000 --> 00:01:17,000
@@ -111,12 +111,12 @@ We need a few tools basically which will let us
 23
 00:01:17,000 --> 00:01:19,000
 make programs in the Wolfram Language,
-用Wolfram语言制作程序
+能够用Wolfram语言制作程序
 
 24
 00:01:19,000 --> 00:01:25,000
 and that’s just a list of functions which are useful in this context.
-而这只是一个在此背景下有用的函数列表
+这是一个在这时候有用的函数列表
 
 25
 00:01:25,000 --> 00:01:32,000
@@ -131,17 +131,17 @@ You also need the simple semicolon character
 27
 00:01:36,000 --> 00:01:41,000
 to stop an instruction and move on to another instruction.
-停止一个指令 继续另一个指令
+来停止一个指令 继续另一个指令
 
 28
 00:01:42,000 --> 00:01:47,000
 You need the function Print to put text on the screen
-您需要使用打印功能在屏幕上显示文字
+你需要使用Print函数来在屏幕上显示文字
 
 29
 00:01:47,000 --> 00:01:52,000
 and tell you what is happening inside the program,
-并告诉你程序内部发生了什么
+这可以告诉你自己 程序内部发生了什么
 
 30
 00:01:52,000 --> 00:01:55,000
@@ -171,17 +171,17 @@ otherwise, print “not positive”.
 35
 00:02:16,000 --> 00:02:18,000
 If you apply it to the list over here,
-如果你把它应用到这边的名单上
+如果你把它映射到这边的列表上
 
 36
 00:02:18,000 --> 00:02:26,000
 ifexample[10] should be positive, ifexample[0] should be not positive
-ifexample[10]应为正值 ifexample[0]应为负值
+ifexample[10]应为“正” ifexample[0]应为“不是正数”
 
 37
 00:02:26,000 --> 00:02:29,000
 and ifexample[–4] should also be not positive.
-和ifexample[-4]也应该不是正数
+ifexample[-4]应该也是“不是正数”
 
 38
 00:02:29,000 --> 00:02:31,000
@@ -191,27 +191,27 @@ Here is the output,
 39
 00:02:31,000 --> 00:02:33,000
 and you see that although you don’t get back anything—
-你会发现 虽然你什么都没拿回来... ...
+你会发现 虽然你什么返回值都没有得到——
 
 40
 00:02:33,000 --> 00:02:35,000
 eventually you just get back Null—but on the way,
-最终你只是回到Null 但在路上
+最终你只得到了Null 但——
 
 41
 00:02:35,000 --> 00:02:37,000
 you see the positive for the 10
-你看到了10的积极性
+你看到了10是正数
 
 42
 00:02:37,000 --> 00:02:40,000
 and the not positive for the remaining two.
-而其余两个人的不正
+而其余两个的不是
 
 43
 00:02:40,000 --> 00:02:45,000
 Now on the next note, if you, let’s say, say <i>a</i> = 5
-现在 在接下来的说明中 如果你 比方说 说<i>a</i>=5
+现在 在接下来的说明中 如果你 比方说 嗯 <i>a</i>=5
 
 44
 00:02:45,000 --> 00:02:47,000
@@ -226,47 +226,47 @@ that lets you move on to the next operation,
 46
 00:02:49,000 --> 00:02:52,000
 which in this case is <i>a</i> + 6.
-在这种情况下 它是<i>a</i>+6
+比如<i>a</i>+6
 
 47
 00:02:52,000 --> 00:02:56,000
 So, <i>a</i> is 5, so of course <i>a</i> + 6 is just 11.
-所以 <i>a</i>是5 所以<i>a</i>+6当然只是11
+<i>a</i>是5 所以<i>a</i>+6当然只是11
 
 48
 00:02:58,000 --> 00:03:00,000
 A couple of things more.
-多了几件事情
+补充一点
 
 49
 00:03:00,000 --> 00:03:03,000
 You can put comments in your program
-您可以在程序中加入注释
+你可以在程序中加入注释
 
 50
 00:03:03,000 --> 00:03:05,000
 using this notation over here,
-用这个符号在这里
+用这里的这个符号
 
 51
 00:03:05,000 --> 00:03:08,000
 and of course comments are very useful
-当然 评论是非常有用的
+毫无疑问 注释是非常有用的
 
 52
 00:03:08,000 --> 00:03:12,000
 because they explain how your code works.
-因为它们解释了你的代码如何工作
+它们解释了你的代码如何工作
 
 53
 00:03:12,000 --> 00:03:16,000
 Most code is very hard to read, and unless you have lots of comments,
-大多数代码都很难读 除非你有很多注释
+大多数代码都很难理解 除非你有很多注释
 
 54
 00:03:16,000 --> 00:03:22,000
 the reader will not be able to tell what’s happening inside the code.
-读者将无法知道代码内部发生了什么
+读者会很难理解代码内部发生了什么
 
 55
 00:03:22,000 --> 00:03:26,000
@@ -286,7 +286,7 @@ and then it gives the value of <i>c</i>.
 58
 00:03:33,000 --> 00:03:37,000
 Now another important function is the For function,
-现在另一个重要的函数是For函数
+另一个重要的函数是For函数
 
 59
 00:03:37,000 --> 00:03:39,000
@@ -306,32 +306,32 @@ Here’s a program that prints the numbers from 1 to 10.
 62
 00:03:46,000 --> 00:03:54,000
 We start with <i>i</i> = 1 and you go all the way up to 10, not 11.
-我们从<i>i</i>=1开始 你一直到10 而不是11
+我们从<i>i</i>=1开始 重复到10 注意不是11
 
 63
 00:03:54,000 --> 00:03:58,000
 You keep going as long as the number <i>i</i> is less than 11,
-只要数字<i>i</i>小于11 你就继续走
+只要数字<i>i</i>小于11 你就继续重复
 
 64
 00:03:58,000 --> 00:04:06,000
 and at every step, you increment <i>i</i> by 1 to go on to the next number.
-而每一步 你都会将<i>i</i>递增1 以进入下一个数字
+而每一步 你都会将<i>i</i>递增1 进入下一个循环
 
 65
 00:04:06,000 --> 00:04:09,000
 Then of course you print the number
-然后你当然会打印出数字
+然后当然 打印结果
 
 66
 00:04:09,000 --> 00:04:12,000
 to say what’s happening inside the code.
-来说说代码里面发生了什么
+来看看代码里发生了什么
 
 67
 00:04:12,000 --> 00:04:15,000
 Here is the For loop,
-这里是For循环
+这就是For循环
 
 68
 00:04:15,000 --> 00:04:20,000
@@ -341,12 +341,12 @@ and you see it prints 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 and then stops.
 69
 00:04:21,000 --> 00:04:24,000
 Okay. Just one more issue,
-好吧 还有一个问题还有一个问题
+好吧 还有一个问题
 
 70
 00:04:24,000 --> 00:04:28,000
 and that’s the issue of global versus local variables.
-这就是全局变量与局部变量的问题
+就是全局变量与局部变量的问题
 
 71
 00:04:29,000 --> 00:04:34,000
@@ -361,22 +361,22 @@ its value was set earlier to be 5.
 73
 00:04:38,000 --> 00:04:42,000
 Now that can be a huge problem for you when you make a program.
-现在 当你做一个程序时 这对你来说可能是一个巨大的问题
+现在 当你编写一个巨大的程序时 这对你来说可能是一个巨大的问题
 
 74
 00:04:42,000 --> 00:04:47,000
 For example, you write a function <i>f</i>[<i>x</I>] which just does <i>x</i> + <i>a</i>.
-例如 你写一个函数<i>f</i>[<i>x</I>] 它只是做<i>x</i>+<i>a</i>
+例如 你写一个函数<i>f</i>[<i>x</I>] 它只是计算<i>x</i>+<i>a</i>
 
 75
 00:04:47,000 --> 00:04:51,000
 If you do <i>f</I>[2], you might think you’ll get back 2 + <i>a</i>,
-如果你做<i>f</I>[2] 你可能会认为你会得到回2+<i>a</i>
+如果你试图计算<i>f</I>[2] 你可能会预期你会得到2+<i>a</i>
 
 76
 00:04:51,000 --> 00:04:55,000
 but instead you get back 7, and that’s because <i>a</i> is 5.
-但你却得到了7 这是因为<i>a</i>是5
+但你得到的是7 这是因为<i>a</i>是5
 
 77
 00:04:55,000 --> 00:04:59,000
@@ -386,42 +386,42 @@ What we need to do is to instead use local variables.
 78
 00:04:59,000 --> 00:05:02,000
 Now you could use different variable names,
-现在你可以使用不同的变量名称
+你可以使用另一个变量名称
 
 79
 00:05:02,000 --> 00:05:03,000
 but you might forget what they are,
-但你可能会忘记它们是什么
+但可能发生的结果是 你会混淆哪个是哪个
 
 80
 00:05:03,000 --> 00:05:06,000
 so the best way out is to use local variables.
-所以最好的办法就是使用局部变量
+所以最好的办法是使用局部变量
 
 81
 00:05:06,000 --> 00:05:10,000
 For example, over here you can use Module,
-例如 在这边你可以使用Module
+例如 在这里你可以使用Module
 
 82
 00:05:10,000 --> 00:05:15,000
 and what Module does is it localizes the variable <i>a</i>.
-而Module所做的就是将变量<i>a</i>本地化
+而Module所做的就是 将变量<i>a</i>局域化
 
 83
 00:05:15,000 --> 00:05:23,000
 If I do <i>f</i>[2], then you get back 2 plus this strange kind of <i>a</i>, <i>a</i>$2415.
-如果我做<i>f</i>[2] 那么你就会得到2加这种奇怪的<i>a</i> <i>a</i>2415元
+如果我计算<i>f</i>[2] 那么你就会得到2加这种奇怪的<i>a</i> <i>a</i>$2415
 
 84
 00:05:23,000 --> 00:05:26,000
 Now that number might change from time to time,
-现在这个数字可能会时常变化
+后面这个数字可能会时常变化
 
 85
 00:05:26,000 --> 00:05:31,000
 but basically that protects the <i>a</i> inside the function
-但基本上保护了函数中的<i>a</i>
+但基本上来说这保护了函数中的<i>a</i>
 
 86
 00:05:31,000 --> 00:05:34,000
@@ -441,27 +441,27 @@ it is a local variable or a Module variable.
 89
 00:05:42,000 --> 00:05:46,000
 That’s all we need to define a function
-这就是我们需要定义一个函数的全部内容
+这就是我们定义一个函数需要学习的全部内容
 
 90
 00:05:46,000 --> 00:05:49,000
 which implements Euler’s method.
-它实现了欧拉的方法
+它实现了欧拉法
 
 91
 00:05:49,000 --> 00:05:51,000
 Recall that that was the one thing
-记得那是一件事
+回忆一下，这个地方
 
 92
 00:05:51,000 --> 00:05:55,000
 we could not quite discuss fully in differential equations.
-我们在微分方程中不能完全讨论
+是我们在之前的微分方程课程中不能完全讨论的
 
 93
 00:05:55,000 --> 00:05:57,000
 So here’s a function called eulermethod.
-所以这里有一个函数叫eulermethod
+这里有一个函数叫eulermethod
 
 94
 00:05:57,000 --> 00:05:59,000
@@ -471,37 +471,37 @@ Now I’m using lowercase
 95
 00:05:59,000 --> 00:06:03,000
 because the Wolfram Language likes to reserve the uppercase letters
-因为 Wolfram 语言喜欢保留大写字母
+因为 Wolfram 语言喜欢把大写字母保留
 
 96
 00:06:03,000 --> 00:06:05,000
 for built-in functions.
-为内置功能
+用作内置功能
 
 97
 00:06:05,000 --> 00:06:11,000
 It takes the slope function, the starting point,
-它以斜率函数 为起点
+它先计算斜率函数 起始点
 
 98
 00:06:11,000 --> 00:06:16,000
 the end point of the interval, the initial value for the function
-区间的终点 函数的初始值
+一直到终点 函数的初始值
 
 99
 00:06:16,000 --> 00:06:22,000
 and the step size—how many steps you want to take as you go along.
-和步数--你想走多少步 你就走多少步
+和步数——你想走多少步 你就走多少步
 
 100
 00:06:22,000 --> 00:06:24,000
 What you do now is you set up a Module,
-你现在要做的是设置一个模块
+你现在要做的是设置一个Module 模块
 
 101
 00:06:24,000 --> 00:06:27,000
 and the Module has some variables in it.
-而Module里有一些变量
+Module里有一些变量
 
 102
 00:06:27,000 --> 00:06:29,000
@@ -511,12 +511,12 @@ The first variable is <i>m</i>,
 103
 00:06:29,000 --> 00:06:34,000
 and what <i>m</i> is, is just the number of steps to be used.
-而<i>m</i>是什么 只是使用的步数
+<i>m</i>是什么？ 是使用的步数
 
 104
 00:06:34,000 --> 00:06:38,000
 It’s the end minus the start over the step size.
-是终点减去起点超过步幅
+是终点减去起点再除以步幅
 
 105
 00:06:39,000 --> 00:06:41,000
@@ -531,12 +531,12 @@ That’s going to be the starting value plus the step size times <i>i</I>,
 107
 00:06:47,000 --> 00:06:51,000
 where <i>i</i> will go from 0 to the number of steps.
-其中<i>i</i>将从0到步数
+其中<i>i</i>将从0增长到步数
 
 108
 00:06:52,000 --> 00:06:57,000
 We also need the <i>y</i> values, and to do that,
-我们还需要<i>y</i>值 并做到这一点
+我们还需要<i>y</i>值来做到这一点
 
 109
 00:06:57,000 --> 00:07:03,000
@@ -566,7 +566,7 @@ Then finally we gather all the <i>x</i> and <i>y</i> values
 114
 00:07:24,000 --> 00:07:28,000
 and do this Transpose to make them look just right.
-并做这个Transpose 让它们看起来恰到好处
+并做这个Transpose 转置让它们看起来更合适
 
 115
 00:07:28,000 --> 00:07:33,000
@@ -591,7 +591,7 @@ Here is a differential equation, <i>y</i>' = <i>y</i> given <i>y</i>[0] = 1,
 119
 00:07:45,000 --> 00:07:48,000
 and of course the solution for that is just <i>e</i>^<i>x</i>.
-当然 解决这个问题的方法只是<i>e</i>^<i>x</i>
+当然 解就是<i>e</i>^<i>x</i>
 
 120
 00:07:48,000 --> 00:07:50,000
@@ -611,7 +611,7 @@ We apply the eulermethod to <i>f</i> starting at 0
 123
 00:07:57,000 --> 00:07:59,000
 because that’s where you’re starting over here,
-因为那是你在这里重新开始的地方
+因为那是你在这里开始的地方
 
 124
 00:07:59,000 --> 00:08:02,000
@@ -626,22 +626,22 @@ The initial value is 1.
 126
 00:08:05,000 --> 00:08:07,000
 That’s the 1 over here.
-这是1在这里
+所以这里是1
 
 127
 00:08:07,000 --> 00:08:11,000
 The 0.1 is going to be the step size.
-0.1要作为步长大小
+0.1是步长大小
 
 128
 00:08:12,000 --> 00:08:15,000
 Okay. When you do that, then you see over here that
-好吧 当你这样做的时候 当你这样做 那么你看到在这里 
+好 你这样做 那么你看到在这里
 
 129
 00:08:15,000 --> 00:08:20,000
 you get back a list of values starting from the initial value
-你会得到一个从初始值开始的数值列表
+会得到一个从初始值开始的数值列表
 
 130
 00:08:20,000 --> 00:08:25,000
@@ -651,7 +651,7 @@ and going all the way up to 2 in steps of 0.1.
 131
 00:08:25,000 --> 00:08:31,000
 Now you see over here that the last value is 6.7275.
-现在你看这边 最后一个值是6.7275
+现在看这边 最后一个值是6.7275
 
 132
 00:08:32,000 --> 00:08:37,000
@@ -676,32 +676,32 @@ But that’s because we’re only at a step size of 0.1.
 136
 00:08:48,000 --> 00:08:50,000
 Because you’re working on a computer,
-因为你是在电脑上工作
+记住你是在电脑上运行程序
 
 137
 00:08:50,000 --> 00:08:54,000
 you can afford to make much smaller steps.
-你可以负担得起更小的步骤
+你可以使用起更小的步长
 
 138
 00:08:54,000 --> 00:08:57,000
 You could say let the step size be 0.001,
-你可以说让步长为0.001
+比如让步长为0.001
 
 139
 00:08:57,000 --> 00:09:04,000
 and then you get back a much smaller estimate for the error,
-然后你会得到一个小得多的估计误差
+你会得到一个小得多的估计误差
 
 140
 00:09:04,000 --> 00:09:06,000
 which is 0.007.
-即0.007
+0.007
 
 141
 00:09:06,000 --> 00:09:12,000
 The point is that you can get better estimates for the values
-关键是 你可以得到更好的估计值
+关键在于 更好的估计值可以被容易的得到
 
 142
 00:09:12,000 --> 00:09:18,000
@@ -711,12 +711,12 @@ and much smaller errors simply by decreasing the step size.
 143
 00:09:18,000 --> 00:09:21,000
 Of course because it’s all automatic, it doesn’t matter.
-当然因为都是自动的 所以无所谓
+当然这都是全自动的 所以无所谓步长有多小
 
 144
 00:09:21,000 --> 00:09:26,000
 You can go quite a long way to get more and more accurate results.
-要想获得更多更准确的结果 你可以走相当长的路
+要想获得更多更准确的结果 你可以走更多步
 
 145
 00:09:27,000 --> 00:09:30,000
@@ -746,37 +746,36 @@ is to learn many parts of the Wolfram Language
 150
 00:09:41,000 --> 00:09:45,000
 in the context of calculus, and that’s a great thing to know.
-在微积分的背景下 这是一个伟大的事情 知道
-
+在微积分的背景下 知晓这些是非常伟大的
 151
 00:09:45,000 --> 00:09:49,000
 Programming is a big plus in this age.
-在这个时代 编程是一个很大的优势
+在这个时代 会编程是一个很大的优势
 
 152
 00:09:50,000 --> 00:09:56,000
 Now to program, you need functions like If, For, Print and Module.
-现在要编程 你需要If、For、Print和Module等功能
+要编程 你需要If、For、Print和Module等功能
 
 153
 00:09:57,000 --> 00:10:01,000
 Do not forget—try and put as many comments as you can
-不要忘了尝试 并把尽可能多的意见 你可以
+坚持尝试 并且尽可能多留下注释
 
 154
 00:10:01,000 --> 00:10:03,000
 because they are crucial for understanding
-因为它们对于理解
+它们对于理解你想做什么是至关重要的
 
 155
 00:10:03,000 --> 00:10:07,000
 what you are trying to do, both for yourself and for others.
-你想做什么 无论是为了自己还是为了别人
+它们对于理解你想做什么是至关重要的 无论是为了自己还是为了别人
 
 156
 00:10:08,000 --> 00:10:10,000
 Try to avoid global variables.
-尽量避免全局变量
+尽量避免使用全局变量
 
 157
 00:10:10,000 --> 00:10:13,000
@@ -786,12 +785,12 @@ Try and use local variables to avoid confusion,
 158
 00:10:13,000 --> 00:10:16,000
 and you can do that with Module.
-而你可以通过Module来实现
+这一点你可以通过Module来实现
 
 159
 00:10:16,000 --> 00:10:19,000
 We saw that we can program Euler’s method,
-我们看到 我们可以用欧拉的方法编程
+我们可以用欧拉法编程
 
 160
 00:10:19,000 --> 00:10:22,000
@@ -806,17 +805,17 @@ like finding maxima and minima, using the Wolfram Language.
 162
 00:10:25,000 --> 00:10:28,000
 To program yourself means that you actually become
-程式化意味着你实际上成为
+亲自写出这些意味着 你或许能成为
 
 163
 00:10:28,000 --> 00:10:31,000
 some kind of an expert on the Wolfram Language
-沃尔夫兰语言专家
+一位Wolfram语言专家
 
 164
 00:10:31,000 --> 00:10:35,000
 because those programs can be quite hard to write.
-因为那些程序可能相当难写
+那些程序可能相当难写
 
 165
 00:10:35,000 --> 00:10:39,000
@@ -826,17 +825,17 @@ That’s the end of this lesson on calculus and programming.
 166
 00:10:39,000 --> 00:10:43,000
 We’re really done with the course content.
-我们真的完成了课程内容的学习
+我们完成了课程内容的学习
 
 167
 00:10:43,000 --> 00:10:47,000
 In the next lesson, we’ll talk about a sample calculus exam,
-下节课 我们就来讲讲微积分考试的样题
+下节课 我们会讲微积分考试的例题
 
 168
 00:10:47,000 --> 00:10:49,000
 the first part of the exam, but until then,
-第一部分的考试 但在那之前
+那是第一部分的考试 但在那之前
 
 169
 00:10:49,000 --> 00:10:54,000
