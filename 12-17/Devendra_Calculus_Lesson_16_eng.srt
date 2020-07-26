@@ -1,610 +1,610 @@
 ﻿1
 00:00:00,000 --> 00:00:06,000
 Hello, and welcome to Lesson 16 of this introduction to calculus with Wolfram U.
-大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第16课。
+大家好 欢迎来到Wolfram U的微积分入门课程第16课
 
 2
 00:00:06,000 --> 00:00:11,000
 The topic for this lesson is maxima and minima.
-本节课的主题是最大值和最小值。
+本节课的主题是最大值和最小值
 
 3
 00:00:11,000 --> 00:00:19,000
 Let’s begin with a brief overview of the lesson. Many mathematical problems involve
-先来简单介绍一下本课的内容。很多数学问题都涉及到
+首先 简单介绍一下本课的内容 很多数学问题都涉及到
 
 4
 00:00:19,000 --> 00:00:23,000
-getting the best solution for a task. In fact, people use mathematics when they really do want
-得到任务的最佳解决方案。事实上，人们在真正想要的时候，就会用到数学。
+getting the best solution for a task. In fact, people use mathematics when they really do want the best solution for a task. 
+求解任务的最佳解决方案 事实上 当真正需要求解任务的最佳解决方案时 人们往往会使用数学
 
 5
 00:00:23,000 --> 00:00:31,000
-the best solution for a task. There’s a word for best solution. It’s usually called optimal solution,
-的最佳解决方案。有一个词叫最佳解决方案。它通常被称为最优解。
+There’s a word for best solution. It’s usually called optimal solution,
+最佳解决方案通常被称为最优解
 
 6
 00:00:31,000 --> 00:00:37,000
 and the whole process of getting such a solution is called optimization.
-而得到这样的解的整个过程就叫优化。
+而得到最优解的过程叫优化
 
 7
 00:00:38,000 --> 00:00:46,000
 Okay. As an example of optimization, let’s take this function <i>f</i>[<i>x</i>] and plot it.
-好吧，以优化为例，我们把这个函数&lt;i&gt;f&lt;/i&gt;[&lt;i&gt;x&lt;/i&gt;]绘制出来。作为一个优化的例子，让我们把这个函数<i>f</i>[<i>x</i>]绘制出来。
+举一个优化的例子 给定函数<i>f</i>[<i>x</i>] 并绘制其图像
 
 8
 00:00:46,000 --> 00:00:59,000
 The plot is a downward-opening parabola, and the highest value of this plot is clearly at (0, 3).
-该图是一条向下开口的抛物线，该图的最高值明显在（0，3）。
+函数图像是向下开口的抛物线 显然 函数的最大值点为（0，3）
 
 9
 00:00:59,000 --> 00:01:09,000
 In this case, our notion of best or optimal is the highest value. Typically, one wants to talk about
-在这种情况下，我们的最佳或最优的概念就是最高值。通常情况下，人们希望谈论的是
+在这个例子中 最佳或最优的定义就是最大值 通常情况下 人们
 
 10
 00:01:09,000 --> 00:01:17,000
 maxima and minima in various problems. The goal of this lesson is to develop a process
-各种问题中的最大值和最小值。本节课的目标是制定一个过程。
+在各种问题中都会讨论最大值和最小值 本节课的目标 是确定一个流程
 
 11
 00:01:17,000 --> 00:01:24,000
 for finding maxima or minima for different problems using derivatives.
-用于使用导数寻找不同问题的最大值或最小值。
+用来借助导数寻找不同问题的最大值或最小值
 
 12
 00:01:26,000 --> 00:01:33,000
 Various people use optimization in different ways. For example, if you run a business,
-不同的人以不同的方式使用优化。例如，如果你经营一家企业。
+不同的人使用不同的方式进行优化 例如 假设你经营一家企业
 
 13
 00:01:33,000 --> 00:01:40,000
 then clearly what you want to do is to maximize your profit and minimize your cost.
-那么很显然，你要做的是将利润最大化，成本最小化。
+显然 你想要的是利润最大化、成本最小化
 
 14
 00:01:40,000 --> 00:01:49,000
 Even a plant knows that it must grow in such a way that it obtains the maximum amount of sunlight.
-即使是植物也知道，它的生长方式必须是获得最大限度的阳光。
+即便是植物 它们也知道需要获得最多的阳光以生存
 
 15
 00:01:49,000 --> 00:01:59,000
 A GPS system is designed to get you to a destination in either the shortest amount of time or distance.
-GPS系统的设计是为了让你在最短的时间或距离内到达目的地。
+GPS系统被设计为 让你在最短的时间或距离内到达目的地
 
 16
 00:01:59,000 --> 00:02:08,000
 In general, you have optimization problems which involve either finding the maximum or the minimum.
-一般来说，你有优化问题，涉及到寻找最大值或最小值。
+一般来说 优化问题涉及到寻找最大值或最小值
 
 17
 00:02:08,000 --> 00:02:18,000
 Differential calculus is really an excellent tool for solving these optimization problems.
-微分微积分确实是解决这些优化问题的绝佳工具。
+微分学是解决优化问题的绝佳工具
 
 18
 00:02:18,000 --> 00:02:25,000
 In fact, that’s how the subject arose in the works of Fermat and other mathematicians.
-事实上，在费马和其他数学家的作品中，这个课题就是这样产生的。
+事实上 在费马和其他数学家的作品中 优化课题就是这样产生的
 
 19
 00:02:26,000 --> 00:02:32,000
 Let’s now go ahead and talk about the notion of an absolute maximum or minimum.
-现在我们先来谈谈绝对最大值或最小值的概念。
+首先讨论最大值和最小值的概念
 
 20
 00:02:32,000 --> 00:02:42,000
 A value <i>f</i>[<i>c</i>] is an absolute maximum of a function if its value is greater than or equal to
-如果函数的值<i>f</i>[<i>c</i>]大于或等于，则该值是函数的绝对最大值。
+<i>f</i>[<i>c</i>]为函数最大值的条件是 该函数值大于或等于
 
 21
 00:02:42,000 --> 00:02:48,000
 every other value for the values in a certain set D where D is called the domain.
-在某个集合D中的每一个其他值，其中D称为域。
+函数在某个集合D中的任意其他值（除<i>c</i>以外） 其中D称为函数定义域
 
 22
 00:02:48,000 --> 00:02:56,000
 When I say maximum and I say absolute maximum, I mean the very greatest value of a function.
-当我说最大，我说绝对最大时，我指的是函数的最大值。
+当提及最大或绝对最大时 指的就是函数的最大值
 
 23
 00:02:56,000 --> 00:03:05,000
 Similarly, if one says absolute minimum, you mean the least value of a function on a certain set D.
-同理，如果说绝对最小，就是指函数在某一集合D上的最小值。
+类似地 如果是绝对最小 指的是函数在某一集合D上的最小值
 
 24
 00:03:05,000 --> 00:03:14,000
 For example, if we take the sine function, clearly its maximum is over here at π/2
-例如，如果我们取正弦函数，很明显，它的最大值在π/2处。
+举例说明 正弦函数 显然 它的最大值在π/2处
 
 25
 00:03:14,000 --> 00:03:21,000
 where it’s got a value of 1, and its minimum is at 3π/2 where it’s got the value −1.
-它的值是1，最小值是3π/2，它的值是-1。
+函数值为1 而最小值在3π/2处 函数值为-1
 
 26
 00:03:21,000 --> 00:03:29,000
 Another term used for absolute maximum and minimum is global maximum and minimum.
-绝对最大值和最小值的另一个术语是全球最大值和最小值。
+绝对最大值和最小值又称为全局最大值和最小值
 
 27
 00:03:29,000 --> 00:03:34,000
 When you say absolute, it means the same thing as global.
-当你说绝对的时候，它和全球的意思是一样的。
+绝对与全局的意思一样
 
 28
 00:03:35,000 --> 00:03:44,000
 Okay. Together, these maxima and minima are sometimes called the extreme values of the function.
-好吧，这些最大值和最小值加在一起，有时被称为函数的极值。这些最大值和最小值加在一起，有时被称为函数的极值。
+最大值和最小值 有时也被称为函数的极值
 
 29
 00:03:44,000 --> 00:03:52,000
 In this case, we’re lucky. We had an absolute maximum and an absolute minimum.
-在这种情况下，我们是幸运的。我们有一个绝对的最大值和一个绝对的最小值。
+在这个例子中 很幸运 函数有一个绝对最大值和一个绝对最小值
 
 30
 00:03:52,000 --> 00:04:00,000
 But in general, the best that you can hope for are so-called local maxima and minima.
-但总的来说，你所能希望的最好的是所谓的局部最大值和最小值。
+总体而言 局部最大值和最小值是你应该期望的
 
 31
 00:04:00,000 --> 00:04:05,000
 For example, here is a function, a cubic function, and you can see quite clearly that
-例如，这里有一个函数，一个立方体函数，你可以很清楚的看到
+例如 这是一个三次函数 明显可以看到
 
 32
 00:04:05,000 --> 00:04:11,000
 this graph has got local maxima and minima. That’s the local maximum over here,
-这个图形有局部最大值和最小值。这是局部最大值在这里。
+函数有局部最大值和最小值 局部最大值在这里
 
 33
 00:04:11,000 --> 00:04:15,000
 and that’s the local minimum over there, but if you go far away enough, the values will
-这是当地的最低值，但如果你走得足够远，价值将
+这里是局部最小值 如果移动足够远 函数值将
 
 34
 00:04:15,000 --> 00:04:25,000
 go up or go down dramatically. The idea of a local maximum is that you have a value <i>f</i>[<i>c</i>]
-上升或急剧下降。局部最大值的概念是，你有一个值<i>f</i>[<i>c</i>] 。
+剧烈增加或下降 局部最大值的概念是 一个函数值<i>f</i>[<i>c</i>]
 
 35
 00:04:25,000 --> 00:04:33,000
 which is more than other values for <i>x</i> near <i>c</i>, and similarly for local minima.
-对于<i>c</i>附近的<i>x</i>，比其他值要多，对于局部最小值也是如此。
+对于<i>c</i>附近的<i>x</i> 都有<i>f</i>[<i>c</i>]大于<i>f</i>[<i>x</i>] 类似的可以得到局部最小值的定义
 
 36
 00:04:33,000 --> 00:04:39,000
 Near depends upon the function of course, but that’s a nice way about talking about maxima and minima—
-当然，近取决于函数，但这是谈论最大值和最小值的一种很好的方式-----。
+定义中的附近取决于函数 但这是一种讨论最大值和最小值很好的方式
 
 37
 00:04:39,000 --> 00:04:46,000
 by using the local definition rather than the global definition. In the case over here,
-使用本地定义而不是全局定义。在这边的情况下：
+即使用局部最值的定义而不是全局最值的定义 上述例子中
 
 38
 00:04:46,000 --> 00:04:51,000
 there is a local maximum at that point and a local minimum at that point.
-在该点有一个局部最大值，在该点有一个局部最小值。
+这是一个局部最大值点 这是一个局部最小值点
 
 39
 00:04:51,000 --> 00:04:57,000
 We’ll see that quite shortly. Of course, if you have an absolute maximum,
-我们很快就会看到这一点。当然，如果你有一个绝对的最大值。
+我们很快就能得到这一点 当然 如果是一个绝对最大值
 
 40
 00:04:57,000 --> 00:05:06,000
 that’s clearly a local maximum, and if you have an absolute minimum, that’s clearly a local minimum.
-这显然是一个局部最大值， 如果你有一个绝对最小值， 这显然是一个局部最小值。
+那显然也是一个局部最大值 如果是一个绝对最小值 那显然也是一个局部最小值
 
 41
 00:05:06,000 --> 00:05:12,000
 The fact that you have absolute maxima and minima is very special knowledge—
-事实上，你有绝对的最大值和最小值是非常特殊的知识--。
+事实上 有绝对最大值和最小值点意味着包含特别的性质
 
 42
 00:05:12,000 --> 00:05:16,000
 much better than having local maxima or minima.
-比有局部最大值或最小值要好得多。
+相比于局部最大值或最小值而言
 
 43
 00:05:17,000 --> 00:05:24,000
 Okay. Things could go wrong or be different in some cases. For example, if you have
-好吧。在某些情况下，事情可能会出错或不同。例如，如果你有
+在某些情况下 情况可能不同甚至出错 例如
 
 44
 00:05:24,000 --> 00:05:32,000
 the constant function like over here, the constant function 5, then clearly every real number is
-像这边的常数函数，常数函数5，那么很明显每个实数都是。
+像这样的常数函数5 那么显然每个实数5都是
 
 45
 00:05:32,000 --> 00:05:40,000
 an absolute maximum and minimum. On the other hand, if you have the cubic function over here,
-一个绝对的最大值和最小值。另一方面，如果你在这边有立方体函数。
+绝对最大值和最小值 另一个例子 这里的三次函数
 
 46
 00:05:40,000 --> 00:05:47,000
 then you have neither an absolute or local maximum or minimum everywhere.
-那么你既没有绝对的，也没有局部的最大或最小的到处。
+在任何地方都没有绝对或局部最大最小值点
 
 47
 00:05:47,000 --> 00:05:54,000
 These are very special cases which are worth remembering as we talk about maxima and minima.
-这些都是非常特殊的情况，值得我们在讨论最大值和最小值时记住。
+这些都是在讨论最大值和最小值时需要记住的特殊情况
 
 48
 00:05:54,000 --> 00:06:01,000
 Namely, you could have situations in which you have everything being optimal or nothing being optimal.
-也就是，你可能会出现这样的情况：你有的一切都很理想，有的什么都不理想。
+也就是说 可能会出现任意点都是最优解 或没有点是最优解
 
 49
 00:06:02,000 --> 00:06:08,000
 Okay. Now the question is how do we find these extreme values, but even if we’re talking about that,
-好吧，现在的问题是，我们如何找到这些极端的价值，但即使我们谈论的是，现在的问题是，我们如何找到这些极端的价值观，但即使我们谈论的是。
+那么 现在的问题是 如何才能找到这些极值 尽管我们已经正在讨论这个问题
 
 50
 00:06:08,000 --> 00:06:14,000
 we need to figure out some conditions under which one can guarantee that they’re extreme values.
-我们需要找出一些条件，在这些条件下，可以保证它们是极端值。
+我们仍然需要找出一些极值点的条件 在这些条件下 可以保证它们是极值
 
 51
 00:06:14,000 --> 00:06:21,000
 This is what’s called the extreme value theorem. What that does is it gives you conditions
-这就是所谓的极值定理。它的作用是给你提供条件
+这就是极值定理 其作用是 提供了判断
 
 52
 00:06:21,000 --> 00:06:26,000
 for when a function is guaranteed to have extreme values. It says that if you have a function
-用于保证一个函数有极值时。它说，如果你有一个函数
+一个函数存在极值点的条件 极值定理如下 一个 
 
 53
 00:06:26,000 --> 00:06:31,000
 on a closed interval and that function is continuous—so you have a continuous function
-在一个闭区间上，而且这个函数是连续的，所以你有一个连续的函数
+闭区间上的连续函数
 
 54
 00:06:31,000 --> 00:06:38,000
 on a closed interval [<i>a</i>, <i>b</i>]—then that function will attain an absolute maximum
-在一个闭区间[<i>a</i>，<i>b</i>]上--那么该函数将达到一个绝对最大值
+该函数必然存在一个绝对最大值
 
 55
 00:06:38,000 --> 00:06:43,000
 and an absolute minimum at some numbers <i>c</i> and <i>d</i> on the interval. As long as you have
-而在区间上的一些数字<i>c</i>和<i>d</i>处有一个绝对最小值。只要你有
+和绝对最小值 分别在区间上的<i>c</i>和<i>d</i>处取得 只要你有
 
 56
 00:06:43,000 --> 00:06:50,000
 a continuous function and a closed interval, you are fine. For example, I have these three plots over here,
-一个连续的函数和一个封闭的区间，你就可以了。例如，我这边有这三张图。
+一个连续函数和一个闭区间 条件就可以成立 举例 这里有三张图
 
 57
 00:06:50,000 --> 00:07:00,000
 and the black dots will indicate that that side of the interval is closed, and the white dots
-和黑点将表示该区间的那一侧是封闭的，而白点
+黑色点代表区间的这一侧是封闭的 而白色点
 
 58
 00:07:00,000 --> 00:07:05,000
 or the blank dots will indicate that you have an interval side which is not closed.
-或空白点将表示您有一个未关闭的区间边。
+或者空白点意味着区间这一侧不封闭
 
 59
 00:07:05,000 --> 00:07:11,000
 In the first example, you see you’ve got two black dots, so that’s a closed interval,
-在第一个例子中，你看到你有两个黑点，所以这是一个封闭的区间。
+第一个例子中 有两个黑色点 所以是一个闭区间
 
 60
 00:07:11,000 --> 00:07:15,000
 and clearly you have a continuous function. There are no breaks in the graph.
-很明显，你有一个连续的函数。图中没有断点。
+显然 这是一个连续函数 图中没有间断点
 
 61
 00:07:15,000 --> 00:07:21,000
 You have an absolute minimum over here and an absolute maximum over there.
-你在这里有一个绝对的最小值，在那里有一个绝对的最大值。
+因此 这里是绝对最小值 那里是绝对最大值
 
 62
 00:07:21,000 --> 00:07:27,000
 That’s the first example. It attains an absolute maximum and minimum on the interval.
-这是第一个例子。它在区间上达到一个绝对的最大值和最小值。
+这是第一个例子 其在区间上存在一个绝对最大值和最小值点
 
 63
 00:07:28,000 --> 00:07:33,000
 On the other hand, the second example is not in the scope of the discussion today
-另一方面，第二个例子不在今天的讨论范围内。
+另一方面 第二个例子不在今天的讨论范围内
 
 64
 00:07:33,000 --> 00:07:38,000
 because you have over here a function which is not continuous. You can see over here that
-因为你这里有一个不连续的函数。你可以看到，在这里
+因为这是一个不连续的函数 在图中的这个位置
 
 65
 00:07:38,000 --> 00:07:43,000
 there’s a sort of break in the graph. The theorem does not apply and you do not need to worry about
-图中有一种断裂。该定理不适用，你不需要担心的是
+存在间断 该定理不适用 你无需担心
 
 66
 00:07:43,000 --> 00:07:47,000
 whether there are absolute maxima or minima, but of course in this case,
-是否存在绝对最大值或最小值，但当然在这种情况下。
+该函数是否存在绝对最大值或最小值 当然在这种情况下
 
 67
 00:07:47,000 --> 00:07:52,000
 you actually do not have them because the function seems to go off to minus infinity over here
-你实际上没有他们，因为功能似乎去了负无限在这里。
+实际并不存在绝对最大值或最小值 因为函数在这边趋向负无穷
 
 68
 00:07:52,000 --> 00:07:58,000
 and plus infinity over there. The last example is again not quite relevant
-和那边的加无穷大。最后一个例子又不太相关
+而在那边趋向正无穷 最后一个例子也不太相关
 
 69
 00:07:58,000 --> 00:08:04,000
 because here you have an open interval. Because the interval is not closed, or is open,
-因为这里你有一个开放的区间。因为这个区间不是封闭的，还是开放的。
+因为函数定义在开区间上 即区间不是封闭的 而是开放的
 
 70
 00:08:04,000 --> 00:08:09,000
 therefore you cannot guarantee anything from the extreme value theorem. But in fact in this case,
-因此你不能从极值定理上保证什么。但事实上在这种情况下。
+因此你不能由极值定理上得到什么结论 事实上在这个例子中
 
 71
 00:08:09,000 --> 00:08:17,000
 there is neither an absolute maximum or minimum precisely because of the issue of missing endpoints.
-正因为缺少端点的问题，所以既没有绝对的最大值，也没有最小值。
+正因为区间缺少端点 所以函数既没有绝对最大值 也没有最小值
 
 72
 00:08:19,000 --> 00:08:24,000
 Okay. The question now is how do we actually find these extreme values.
-好吧，现在的问题是我们如何找到这些极端值。现在的问题是我们如何真正找到这些极端值。
+接下来的问题是如何求出极值
 
 73
 00:08:24,000 --> 00:08:31,000
 The best tool we have for this is Fermat’s theorem given by Pierre de Fermat a long time ago.
-我们最好的工具就是皮埃尔-德-费马在很久以前给出的费马定理。
+解决这个问题的最好工具是皮埃尔·德·费马多年前给出的费马定理
 
 74
 00:08:31,000 --> 00:08:41,000
 What that does is it lets us find local maxima and minima. What it says is if <i>f</i> has
-它的作用是让我们找到局部最大值和最小值。它说的是如果<i>f</i>有
+费马定理能让我们求得局部最大值和最小值 其内容是如果<i>f</i>存在
 
 75
 00:08:41,000 --> 00:08:49,000
 a local maximum or minimum, then its derivative at that point must be 0. For example,
-局部最大值或最小值，那么它在该点的导数必须为0。 例如：。
+局部最大值或最小值 那么函数在该点的导数必为0 例如
 
 76
 00:08:49,000 --> 00:08:56,000
-if you look at the earlier function, then the claim is that it’s got local maxima and minima
-如果你看一下前面的函数，那就说它有局部最大值和最小值。
+if you look at the earlier function, then the claim is that it’s got local maxima and minima over here and there,
+回顾前面的这个函数 它在该点和那点存在局部最大值和最小值
 
 77
 00:08:56,000 --> 00:09:01,000
-over here and there, and you can check that with the derivatives at those points. They are both 0,
-在这里和那里，你可以检查与这些点的导数。它们都是0。
+and you can check that with the derivatives at those points. They are both 0,
+你可以检查这些点的导数 都是0
 
 78
 00:09:01,000 --> 00:09:08,000
 so Fermat’s theorem will say that that’s the condition to be satisfied for local maxima and minima.
-所以费马定理会说，这就是局部最大值和最小值要满足的条件。
+根据费马定理 这就是局部最大值和最小值需要满足的条件
 
 79
 00:09:12,000 --> 00:09:18,000
 Okay. There are a few things to remember about Fermat’s theorem. The converse is not true,
-好吧，我知道了关于费马定理，有几件事要记住。反之则不然
+关于费马定理有几个需要注意的点 费马定理的逆命题并不成立
 
 80
 00:09:18,000 --> 00:09:23,000
 and it’s not true in a few ways. For example, we have a function over here, a cubed function,
-而且有几个方面是不对的。例如，我们这里有一个函数，一个立方体函数。
+不成立的原因有几方面 例如 这是一个三次函数
 
 81
 00:09:23,000 --> 00:09:27,000
 and clearly you have a horizontal tangent over here. The derivative is 0,
-很明显，你在这里有一个水平切线。导数是0。
+显然 函数具有在该点处具有水平切线 导数是0
 
 82
 00:09:27,000 --> 00:09:35,000
 and yet there are no maxima or minima. The theorem mainly says that if you have
-却没有最大值和最小值。该定理主要是说，如果你有
+却没有最大值和最小值 费马定理说的是如果存在
 
 83
 00:09:35,000 --> 00:09:41,000
 a maximum or minimum, then the derivative must be 0. The other example is
-的最大值或最小值，那么导数一定是0，另一个例子是
+最大值或最小值 那么导数一定是0 另一个例子是
 
 84
 00:09:41,000 --> 00:09:46,000
-the absolute value function where you do have a minimum, but then the derivative does not exist
-绝对值函数，其中你确实有一个最小值，但是导数不存在。
+the absolute value function where you do have a minimum, but then the derivative does not exist at that point. 
+绝对值函数 函数的确存在一个最小值 但是该点导数不存在。
 
 85
 00:09:46,000 --> 00:09:56,000
-at that point. Fermat’s theorem must be used with caution, but it is in fact a very powerful theorem.
-在这一点上。费马定理一定要谨慎使用，但它其实是一个非常强大的定理。
+Fermat’s theorem must be used with caution, but it is in fact a very powerful theorem.
+费马定理一定要谨慎使用 不过它也确实是一个非常强大的定理
 
 86
 00:09:57,000 --> 00:10:01,000
 Fermat’s theorem is really talking about what are called critical numbers.
-费马定理其实说的就是所谓的临界数。
+费马定理其实讨论的是驻点
 
 87
 00:10:01,000 --> 00:10:07,000
 When you want to look for maxima and minima, you need to look for what are called critical numbers.
-当你想寻找最大值和最小值时，你需要寻找所谓的临界数。
+当你要求最大值和最小值时 你需要求出驻点
 
 88
 00:10:07,000 --> 00:10:13,000
 What’s a critical number? Well, a critical number is a number where either you have a 0 derivative
-什么是临界数？临界数是指你的导数为0的数字。
+什么是驻点？驻点是令导数为0
 
 89
 00:10:13,000 --> 00:10:23,000
 or the derivative does not exist. For example, the cube root function has a critical point
-或导数不存在。例如，立方根函数的临界点是
+或导数不存在的数 例如 立方根函数的驻点
 
 90
 00:10:23,000 --> 00:10:27,000
 over here because the derivative is not defined there.
-在这里，因为那里没有定义导数。
+在这里 因为该点导数无定义
 
 91
 00:10:27,000 --> 00:10:35,000
 Of course, the local maxima and minima are good places to look for critical points.
-当然，局部最大值和最小值是寻找关键点的好地方。
+局部最大值和最小值点也是寻找驻点的位置
 
 92
 00:10:37,000 --> 00:10:46,000
 With all that information, we are now ready to put together a method for finding absolute maxima and minima.
-有了所有这些信息，我们现在准备把寻找绝对最大值和最小值的方法放在一起。
+综上所述 将求绝对最大值和最小值的方法总结归纳
 
 93
 00:10:46,000 --> 00:10:55,000
 That’s what is called the closed interval method. What it says is to find the absolute maximum
-这就是所谓的闭区间法。它说的是要找到绝对最大值
+方法是所谓的闭区间法 为找到闭区间上连续函数的绝对最大值
 
 94
 00:10:55,000 --> 00:11:00,000
 and minimum of a continuous function on a closed interval, you first of all find out
-和闭区间上的连续函数的最小值，你首先要找出的是
+和最小值 你首先要求出所有
 
 95
 00:11:00,000 --> 00:11:07,000
 the critical numbers, find out the values of the function at those critical numbers,
-的临界数，求出函数在这些临界数上的值。
+驻点 并求出驻点处的函数值
 
 96
 00:11:07,000 --> 00:11:16,000
 then you work out the value at the endpoints and then the largest of all those values
-然后计算出端点的值，然后取所有这些值中最大的一个。
+再计算出区间端点的函数值 取以上这些值中最大的一个
 
 97
 00:11:16,000 --> 00:11:24,000
 is the absolute maximum and the smallest value will be the absolute minimum.
-为绝对最大值，最小值为绝对最小值。
+作为绝对最大值 最小值则为绝对最小值
 
 98
 00:11:25,000 --> 00:11:33,000
 As an example, here’s a cubic function. We find the derivative, set it equal to 0 and figure out
-举个例子，这是一个立方函数。我们找到导数，设它等于0，然后计算出
+举例说明 这是一个三次函数 先求导数 令其为0 然后计算出
 
 99
 00:11:33,000 --> 00:11:44,000
 that 1 is a critical point. Add that 1 to the list 0 and 2. You’ve got to look at 0, 1 and 2.
-那1是一个临界点。把1加到0和2的列表中。你得看看0，1和2。
+那1是一个驻点 将1添加到0和2的求解列表中 需要关注的是0 1和2
 
 100
 00:11:44,000 --> 00:11:48,000
 0 and 2 are the endpoints of the interval, 1 is a critical point, and you find that
-0和2是区间的端点，1是临界点，你发现
+因为0和2是区间端点 1是临界点 可以求得
 
 101
 00:11:48,000 --> 00:11:55,000
 the minimum value occurs at −1 and the maximum value occurs at 2.
-最小值出现在-1，最大值出现在2。
+最小值为-1 最大值为2
 
 102
 00:11:55,000 --> 00:12:02,000
 You have an absolute maximum at (2, 2) and you have an absolute minimum at (−1, 1).
-你的绝对最大值在（2，2），绝对最小值在（-1，1）。
+则绝对最大值在（2，2）取得 绝对最小值在（-1，1）取得
 
 103
 00:12:02,000 --> 00:12:08,000
-We have two very nice functions called Maximize and Minimize which will do that
-我们有两个非常好的函数，叫做Maximize和Minimize，可以做到这一点。
+We have two very nice functions called Maximize and Minimize which will do that automatically for you, and there you are. 
+Wolfram语言包含有两个很有用的函数 Maximize和Minimize 可以自动求得最大最小值 如下所示
 
 104
 00:12:08,000 --> 00:12:13,000
-automatically for you, and there you are. It says that the maximum is at (2, 2)
-自动给你，就这样了。它说，最大的是在（2，2）。
+It says that the maximum is at (2, 2)
+结果显示 最大值点为（2，2）
 
 105
 00:12:13,000 --> 00:12:20,000
 and the minimum is at (−1, 1), just as we learned earlier on. But the closed interval method
-而最小值在（-1，1），就像我们前面学到的那样。但闭区间法
+而最小值点在（-1，1） 与前面求得的结果一致 闭区间法
 
 106
 00:12:20,000 --> 00:12:27,000
 is the basic tool for finding maxima and minima on a closed interval.
-是在闭区间上寻找最大值和最小值的基本工具。
+是在闭区间上寻找最大值和最小值的基本工具
 
 107
 00:12:27,000 --> 00:12:35,000
 As an application, let’s take this example. We have the cost function for a business,
-作为应用，我们举这个例子。我们有一个企业的成本函数。
+作为应用 这个例子包含一个企业的成本函数
 
 108
 00:12:35,000 --> 00:12:42,000
 and the question is to find the number of units <i>x</i> that minimize the cost. What you do is
-而问题是找到成本最小的单位数量<i>x</i>。你要做的是
+需要求得使成本最小的商品数量<i>x</i> 你需要做的是
 
 109
 00:12:42,000 --> 00:12:49,000
 you find the critical points. There’s just one over here. It’s about 6,790.
-你找到了关键点。只有一个在这里。大约有6790个。
+求出驻点 驻点只有一个大约为6790
 
 110
 00:12:49,000 --> 00:12:58,000
 You plug in the critical point and the endpoints over here. Then what you do is you work out
-你把临界点和端点插在这里。然后你要做的是你计算出
+再将驻点和端点代入 计算出
 
 111
 00:12:58,000 --> 00:13:05,000
 the values at those points, and you find out that you need to produce around 6,790 units
-在这些点上的数值，你会发现你需要生产大约6790个单位。
+在这些点处的成本 可以得出 需要生产大约6790件商品
 
 112
 00:13:05,000 --> 00:13:13,000
 to minimize the cost. Here’s a plot for the problem, and you can see quite clearly that
-来最小化成本。下面是这个问题的曲线图，你可以很清楚地看到
+使成本最小化 以下成本函数的图像 可以清晰地看到
 
 113
 00:13:13,000 --> 00:13:22,000
 you actually do have a minimum somewhere around 7,000. That’s the end of this lesson.
-你实际上有一个最低的地方约7000。这就是本课的结束。
+函数存在一个最小值点在7000附近 至此 本次课接近尾声了
 
 114
 00:13:22,000 --> 00:13:30,000
-Let’s summarize. We certainly realize that optimization is a crucial component of our lives
-我们来总结一下。我们当然意识到，优化是我们生活中至关重要的组成部分
+Let’s summarize. We certainly realize that optimization is a crucial component of our lives from day to day. 
+我们来总结一下 我们意识到 优化是我们日常生活中至关重要的组成部分
 
 115
 00:13:30,000 --> 00:13:37,000
-from day to day. Different people will use it in different ways. For example, businesses will want
-从一天到一天。不同的人会有不同的使用方式。例如，企业会希望
+Different people will use it in different ways. For example, businesses will want
+不同的人会在不同场合使用优化 例如 企业希望
 
 116
 00:13:37,000 --> 00:13:43,000
 to make the most money with the least amount of cost, while drivers might want to reduce
-以最小的成本赚取最大的利润，而司机们可能想降低
+以最小的成本赚取最大的利润 而司机们想节省
 
 117
 00:13:43,000 --> 00:13:51,000
 the time that they take to go from one place to another. The basic tool in this area is Fermat’s theorem,
-它们从一个地方到另一个地方所需的时间。这方面的基本工具是费马定理。
+从一个地方到另一个地方所花费的时间 优化问题的基本工具是费马定理
 
 118
 00:13:51,000 --> 00:14:00,000
 which lets us find the critical numbers for a function. The closed interval method is
-它让我们找到函数的临界数。闭区间法是
+费马定理让我们求得函数的驻点 而闭区间法是
 
 119
 00:14:00,000 --> 00:14:10,000
 a complete method for finding the absolute maxima and minima. That’s the end of this lesson.
-求绝对最大值和最小值的完整方法。这节课就到此结束了。
+求绝对最大值和最小值的完整方法 本次课到此结束了
 
 120
 00:14:10,000 --> 00:14:15,000
 The next lesson will talk about the mean value theorem, a very important theorem in calculus.
-下节课将讲均值定理，这是微积分中非常重要的定理。
+下节课将要讲均值定理 这是微积分中非常重要的定理
 
 121
 00:14:15,000 --> 00:14:21,000
 But before we do that, please do review today’s lesson, look at the exercises and make sure that
-但在这之前，请大家先复习一下今天的课程，看看习题，确定一下。
+在这之前 请大家先务必复习一下今天的课程 看看习题 确定
 
 122
 00:14:21,000 --> 00:14:26,000
 you’re ready for the next lesson on the mean value theorem. Thank you very much. I’ll stop over here.
-你可以上下一节课了，关于均值定理。谢谢你，非常感谢。我在这里停一下
+准备好上下一节关于均值定理的课 非常感谢！本次课就到这里
 
