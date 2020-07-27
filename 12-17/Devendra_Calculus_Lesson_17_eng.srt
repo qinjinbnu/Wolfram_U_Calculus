@@ -1,342 +1,342 @@
 ﻿1
 00:00:00,000 --> 00:00:07,000
 Hello, and welcome to Lesson 17 of this introduction to calculus with Wolfram U.
-大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第17课。
+大家好 欢迎来到Wolfram U的微积分入门课程第17课
 
 2
 00:00:07,000 --> 00:00:12,000
 The topic for this lesson is the mean value theorem.
-本节课的课题是均值定理。
+本节课的主题是中值定理
 
 3
 00:00:12,000 --> 00:00:18,000
 Let’s begin with a brief overview of the lesson. The mean value theorem, roughly speaking,
-先来简单介绍一下本课的内容。均值定理，粗略的说。
+首先 简单介绍一下本课的内容 中值定理 粗略来讲
 
 4
 00:00:18,000 --> 00:00:27,000
 relates to the slope of an interval with the instantaneous slope of some point in that interval.
-关系到一个区间的斜率与该区间内某点的瞬时斜率。
+与一个区间的斜率以及该区间上某个点的斜率有关
 
 5
 00:00:27,000 --> 00:00:32,000
 Now let’s look at that a little bit more in detail. Here you’ve got a curve,
-现在让我们来看看更详细一点的情况。这里你已经得到了一条曲线。
+接下来看看更详细的情况 这是一条曲线
 
 6
 00:00:32,000 --> 00:00:40,000
 and I joined the two endpoints over here by a secant. What the theorem is saying is that
-我把这两个端点连接在一起，用了一个分词。该定理的意思是
+将曲线的两个端点用一条割线连接起来 中值定理说的是
 
 7
 00:00:40,000 --> 00:00:49,000
 the slope of this interval over here is somehow related to the slope of this tangent at some point.
-这边的这个区间的斜率与这个切线的斜率在某一点上有某种关系。
+区间的割线斜率与区间上某点的切线斜率之间存在一定的关系
 
 8
 00:00:49,000 --> 00:00:57,000
 That’s what the theorem is about, about the slopes of intervals and the slopes of tangents.
-这就是定理的内容，关于区间的斜率和切线的斜率。
+这就是中值定理的内容 关于区间斜率和切线斜率
 
 9
 00:00:57,000 --> 00:01:02,000
 The goal of this lesson is to first of all understand the mean value theorem
-本节课的目标是首先理解均值定理。
+本节课的目标是 首先理解中值定理
 
 10
 00:01:02,000 --> 00:01:08,000
 and then give a few applications of the theorem. We’ll begin with
-然后给出该定理的一些应用。我们先说说
+然后给出该定理的一些应用 首先讨论的是
 
 11
 00:01:08,000 --> 00:01:14,000
 a special case of the theorem called Rolle’s theorem.
-该定理的一种特殊情况，称为罗尔定理。
+该定理的一种特殊情况 称为罗尔定理
 
 12
 00:01:14,000 --> 00:01:20,000
 As a motivation for Rolle’s theorem, let’s look at the function <i>f</i>[<i>x</i>] = <i>x</i>^2.
-作为罗尔定理的动机，我们来看一下函数<i>f</i>[<i>x</i>]=<i>x</i>^2。
+为引入罗尔定理 首先考虑函数<i>f</i>[<i>x</i>]=<i>x</i>^2
 
 13
 00:01:21,000 --> 00:01:29,000
 Here is a plot of the function as a parabola. Notice that the value of the function
-下面是函数的抛物线图。请注意，函数的值
+图像是一条抛物线 请注意 函数值
 
 14
 00:01:29,000 --> 00:01:40,000
 at the two endpoints −2 and 2 is the same, and the slope at 0, the derivative, is 0.
-在两个端点-2和2处是相同的，在0处的斜率，即导数，是0。
+在两个端点 -2和2处相等 而在0处的斜率 即导数 为0
 
 15
 00:01:40,000 --> 00:01:49,000
 That’s the hint for Rolle’s theorem, that the slope is 0 at the top, and you also have a tangent,
-这就是罗尔定理的提示，斜率在顶部为0，你也有一个切线。
+这暗示了罗尔定理 顶部割线的斜率0 同时也存在一条切线
 
 16
 00:01:49,000 --> 00:01:57,000
 so to speak, at which the slope is 0. Now a more formal statement of Rolle’s theorem,
-可以这么说，在该处的斜率为0.现在对罗尔定理进行更正式的陈述。
+其斜率也为0 接下来对罗尔定理进行更正式的定义
 
 17
 00:01:57,000 --> 00:02:03,000
 which was proved by Michel Rolle. What it says is that if you have a function
-这是由Michel Rolle证明的。它说的是，如果你有一个函数
+该定理由米歇尔·罗尔证明得到 定理的内容是 如果一个函数
 
 18
 00:02:03,000 --> 00:02:12,000
 that satisfies three hypotheses—first of all, it is continuous on a certain closed interval;
-，满足三个假设--首先，它在某个闭区间上是连续的。
+同时满足三个假设 首先 函数在某个闭区间上连续
 
 19
 00:02:12,000 --> 00:02:22,000
 it is differentiable on an open interval; and the value of the function at the left endpoint
-它在开区间上是可微分的；并且函数在左端点的值为
+且在开区间上可微 并且左端点的函数值
 
 20
 00:02:22,000 --> 00:02:28,000
 is the same as the value at the right endpoint—then there is a number <i>c</i>
-与右端点的值相同，则有一个数字<i>c</i>。
+与右端点相同 则区间内存在一个<i>c</i>。
 
 21
 00:02:28,000 --> 00:02:36,000
 in the interval at which the derivative becomes 0. The previous function we talked about in fact
-在导数变为0的区间内，我们前面谈到的函数其实是
+该点导数值为0 实际上 前面提到的函数
 
 22
 00:02:36,000 --> 00:02:41,000
 satisfies all the three hypotheses. After all, you do have a continuous function,
-满足所有三个假设。毕竟，你确实有一个连续函数。
+满足所有三个假设 毕竟 函数是连续的
 
 23
 00:02:41,000 --> 00:02:46,000
 it’s differentiable and the values at both the end points are the same.
-它是可微分的，而且两端点的值是一样的。
+是可微的 并且两个端点处的函数值相等
 
 24
 00:02:46,000 --> 00:02:53,000
 Here’s a plot which just confirms the theorem and says that the slope of this secant line
-这里有一张图，正好证实了这个定理，并说这条秒线的斜率为
+这张图 印证了这个定理 并且可以发现 割线
 
 25
 00:02:53,000 --> 00:02:58,000
 is the same as the slope of that tangent over there, which is 0.
-与那边的那个切线的斜率相同，即为0。
+与那条切线的斜率相等 都为0
 
 26
 00:03:00,000 --> 00:03:04,000
 Okay. Now on to the problems with Rolle’s theorem and how you apply it.
-好了，现在说说罗尔定理的问题以及如何应用。现在说说罗尔定理的问题，以及你如何应用它。
+接下来讨论的是使用罗尔定理需要注意的问题以及如何使用罗尔定理
 
 27
 00:03:04,000 --> 00:03:17,000
 First of all, let’s look at 1/<i>x</i>^2 on the interval (−1, 1). Notice that it has a discontinuity at 0,
-首先，我们看一下区间（-1，1）上的1/<i>x</i>^2。注意它在0处有一个不连续的地方。
+首先 观察区间（-1，1）上的1/<i>x</i>^2 注意到其在0处存在间断
 
 28
 00:03:17,000 --> 00:03:21,000
 so of course it’s not differentiable over there as well.
-所以当然在那边也是无法区分的。
+因此在0处不可微
 
 29
 00:03:21,000 --> 00:03:30,000
-The values at the endpoints are certainly equal; however, it does not satisfy all the hypotheses
-端点的数值肯定是相等的；但是，它并不满足所有的假说
+The values at the endpoints are certainly equal; however, it does not satisfy all the hypotheses of Rolle’s theorem, 
+区间端点的函数值显然相等 但 这个函数并不满足所有罗尔定理的假设
 
 30
 00:03:30,000 --> 00:03:34,000
-of Rolle’s theorem, and hence we cannot guarantee that there is any number in this range
-的Rolle定理，因此我们不能保证在这个范围内有任何数量的
+and hence we cannot guarantee that there is any number in this range at which the slope is 0. 
+因此 无法确定区间内存在导数值为0的点
 
 31
 00:03:34,000 --> 00:03:41,000
-at which the slope is 0. In fact, we confirm that using Solve, and we check that the derivative
-事实上，我们使用Solve确认了这一点，并且我们检查了导数
+In fact, we confirm that using Solve, and we check that the derivative
+事实上 利用Solve函数确认了这一点 该区间上的导数
 
 32
 00:03:41,000 --> 00:03:44,000
 is never 0 in this interval.
-在这个区间内永远不会是0。
+永远不为0
 
 33
 00:03:45,000 --> 00:03:52,000
 As another issue with the theorem, let’s look at the absolute value function between −1 and 1.
-作为该定理的另一个问题，我们来看看-1和1之间的绝对值函数。
+罗尔定理另一个需要注意的问题 观察-1和1之间的绝对值函数
 
 34
 00:03:52,000 --> 00:04:02,000
 Clearly that is continuous, but it is not differentiable at <i>x</i> = 0. There’s a corner at <i>x</i> = 0.
-显然这是连续的，但在<i>x</i>=0时是不可微分的，在<i>x</i>=0时有一个角。
+显然函数连续 但<i>x</i>=0处是不可微 <i>x</i>=0处存在拐角
 
 35
 00:04:02,000 --> 00:04:09,000
 The value of the function at both endpoints is the same, but since it does not satisfy
-两端点的函数值是一样的，但由于不满足
+而区间两个端点的函数值相等 但由于不满足
 
 36
 00:04:09,000 --> 00:04:14,000
-all the hypotheses of Rolle’s theorem—therefore you cannot guarantee that there is a number
-罗尔定理的所有假设--因此，你不能保证有一个数量的
+all the hypotheses of Rolle’s theorem—therefore you cannot guarantee that there is a number at which the slope is 0. 
+罗尔定理的所有条件 因此 无法确定区间内存在导数值为0的点
 
 37
 00:04:14,000 --> 00:04:22,000
-at which the slope is 0. Once again, you can use Solve to confirm that there is no such value.
-再一次，你可以使用Solve来确认是否有这样的值。
+Once again, you can use Solve to confirm that there is no such value.
+同样地 你可以使用Solve函数进行确认
 
 38
 00:04:22,000 --> 00:04:29,000
 That’s the derivative of the absolute value function on the interval, and it’s never 0 on that interval.
-那是绝对值函数在区间上的导数，在这个区间上它永远不会是0。
+这是绝对值函数在该区间上的导数 其永远不为0
 
 39
 00:04:31,000 --> 00:04:37,000
 Okay. Now on to the mean value theorem and some motivation. In the earlier example,
-好了，现在说说均值定理和一些动机。现在说说均值定理和一些动机。在前面的例子中。
+接下来谈谈中值定理及其应用 在前面的例子中
 
 40
 00:04:37,000 --> 00:04:50,000
 we said that the secant line between −2 and 2 and the tangent line at 0 had the same slope.
-我们说，-2和2之间的秒线和0处的切线有相同的斜率。
+-2和2之间的割线与0处的切线具有相同斜率
 
 41
 00:04:50,000 --> 00:04:53,000
 Now the whole situation over here is very symmetrical, so what we’ll do is we’ll make it
-现在，整个情况在这里是非常对称的， 所以我们要做的是，我们将使其
+这种情况区间十分对称 接下来将
 
 42
 00:04:53,000 --> 00:05:00,000
 slightly less symmetrical by looking at the interval [−0.5, 1]. That’s the interval over here.
-通过观察[-0.5，1]这个区间，稍微不那么对称。这就是这边的区间。
+观察区间变为不那么对称的[-0.5，1] 这是这个区间
 
 43
 00:05:00,000 --> 00:05:11,000
 Now we notice that the secant line at <i>x</i> = −0.5 and <i>x</i> = 1, the line joining those two points,
-现在我们注意到，在<i>x</i>=-0.5和<i>x</i>=1处的秒线，是连接这两点的线。
+注意到 连接<i>x</i> = −0.5和<i>x</i> = 1两点的割线
 
 44
 00:05:11,000 --> 00:05:21,000
 has got a slope 1/2. We can calculate that. The same thing happens at <i>x</i> = 1/4—namely, the tangent line
-有一个1/2的斜率。我们可以计算出来。同样的情况也发生在<i>x</i>=1/4处--也就是说，切线为
+斜率为1/2 通过计算 相同的情况出现在<i>x</i>=1/4处 即该点的切线
 
 45
 00:05:21,000 --> 00:05:29,000
 at that point has a slope of 1/2. The mean value theorem is just a modification,
-在该点的斜率为1/2。均值定理只是一种修改。
+斜率为1/2 中值定理对罗尔定理进行改变
 
 46
 00:05:29,000 --> 00:05:39,000
 a more general version of Rolle’s theorem. Here is a formal statement of the theorem which says that
-罗尔定理的一个更一般的版本。这里是对该定理的正式陈述，它表示
+是其更一般的版本 该定理的正式陈述为
 
 47
 00:05:39,000 --> 00:05:48,000
-suppose you have a function <i>f</i> that is continuous on a closed interval, differentiable on
-假设你有一个函数<i>f</i>，它在一个闭区间上是连续的，可在
+suppose you have a function <i>f</i> that is continuous on a closed interval,
+函数<i>f</i>在一个闭区间上连续
 
 48
 00:05:48,000 --> 00:05:56,000
-the open interval in that case. Then there is a number <i>c</i> in the interval at which
-在这种情况下的开放区间。那么在该区间内有一个数字<i>c</i>，在该区间的
+differentiable on the open interval in that case. Then there is a number <i>c</i> in the interval at which
+开区间上可微 那么在该区间上存在一点<i>c</i> 使得
 
 49
 00:05:56,000 --> 00:06:06,000
 the slope of the tangent line equals the slope of the secant line joining the endpoints.
-切线的斜率等于连接端点的割线的斜率。
+该点切线斜率等于连接端点的割线斜率
 
 50
 00:06:06,000 --> 00:06:17,000
 More formally, <i>f</i>'(<i>c</i>) = (<i>f</i>(<i>b</i>) − <i>f</i>(<i>a</i>))/(<i>b</i> − <i>a</i>). Sometimes it’s easier to cross-multiply and get
-更正式地说，<i>f</i>'(<i>c</i>)=(<i>f</i>(<i>b</i>)-<i>f</i>(<i>a</i>))/(<i>b</i>-<i>a</i>)。有时交叉相乘会更容易得到
+更正式的表述为 <i>f</i>'(<i>c</i>)=(<i>f</i>(<i>b</i>)-<i>f</i>(<i>a</i>))/(<i>b</i>-<i>a</i>) 有时两边相乘
 
 51
 00:06:17,000 --> 00:06:23,000
 the same equation in a slightly different form like is done over here. Now of course,
-同样的等式在一个稍微不同的形式，就像在这里做的一样。现在，当然。
+可以等到等式另一种表达形式 如此所示
 
 52
 00:06:23,000 --> 00:06:30,000
 Rolle’s theorem follows from the mean value theorem because if you set <i>f</i>[<i>b</i>] equal to <i>f</i>[<i>a</i>],
-罗尔定理从均值定理出发，因为如果设<i>f</i>[<i>b</i>]等于<i>f</i>[<i>a</i>]。
+罗尔定理来源于中值定理 如果令<i>f</i>[<i>b</i>]等于<i>f</i>[<i>a</i>]
 
 53
 00:06:30,000 --> 00:06:35,000
 then you have <i>f</i>'[<i>c</i>] equal to 0 at the point <i>c</i>.
-那么在点<i>c</i>处，你有<i>f</i>'[<i>c</i>]等于0。
+那么在点<i>c</i>处 有<i>f</i>'[<i>c</i>]等于0
 
 54
 00:06:35,000 --> 00:06:41,000
 That’s the Rolle’s theorem for the sine function on the interval [0, π].
-这就是区间[0，π]上正弦函数的罗尔定理。
+这是对区间[0，π]上正弦函数 应用罗尔定理
 
 55
 00:06:42,000 --> 00:06:47,000
 There are some issues with the mean value theorem I have interpreted.
-我所解释的均值定理存在一些问题。
+前面解释的中值定理中 需要注意一些问题
 
 56
 00:06:47,000 --> 00:06:52,000
 For example, we could have more than one <i>c</i>, which satisfies the theorem. Here you have a curve
-例如，我们可以有一个以上的<i>c</i>，它满足定理。这里你有一条曲线
+例如 区间上可能存在不止一个满足中值定理的<i>c</i> 这条曲线
 
 57
 00:06:52,000 --> 00:07:02,000
 in which that’s the secant line and those two tangents have the same slope as the secant line.
-其中，那是正切线，而这两条切线的斜率与正切线相同。
+这是割线 这两条切线斜率与割线相等
 
 58
 00:07:02,000 --> 00:07:11,000
 In fact, if you have a constant function like <i>f</i>[<i>x</i>] = 5, then the slope is 0 everywhere.
-事实上，如果你有一个像<i>f</i>[<i>x</i>]=5这样的常数函数，那么斜率到处都是0。
+事实上 像<i>f</i>[<i>x</i>]=5这样的常数函数 切线斜率处处为0
 
 59
 00:07:11,000 --> 00:07:18,000
 Here’s the constant function 5, and if you plot the function derivative, you see that
-这里是常数函数5，如果你绘制函数导数，你会看到
+这是常数函数5 绘制其导函数 会发现
 
 60
 00:07:18,000 --> 00:07:25,000
 the theorem is satisfied everywhere. You have some exceptions with the mean value theorem
-该定理处处满足。你的均值定理有一些例外情况
+处处满足中值定理 中值定理存在一些例外特殊情况
 
 61
 00:07:25,000 --> 00:07:31,000
 when you have either more than one value, or you might even have infinitely many values
-当你有一个以上的值，或者你甚至可能有无限多的值的时候
+即存在一个以上的点 甚至无穷多个点满足定理
 
 62
 00:07:31,000 --> 00:07:37,000
 because if the slope happens to be 0, then the function must be constant.
-因为如果斜率刚好为0，那么函数一定是常数。
+因为切线斜率为0 那么函数必然是常数函数
 
 63
 00:07:39,000 --> 00:07:45,000
 Okay. With that, some applications. For the first application, let’s look at the function <i>x</i>^3 − 8<i>x</i>
-好吧，有了这个，一些应用。就这样，一些应用。第一个应用，让我们看看函数<i>x</i>^3 - 8<i>x</i>。
+有了中值定理 下面是一些应用 第一个应用 函数<i>x</i>^3 - 8<i>x</i>。
 
 64
 00:07:45,000 --> 00:07:54,000
 on the interval 0 to 4, and you want to find a <i>c</i> in the range which has a tangent line
-在0到4的区间上，你想在这个范围内找到一个有切线的<i>c</i>。
+在0到4的区间上 请在这个范围内找到一个点<i>c</i>
 
 65
 00:07:54,000 --> 00:08:00,000
 parallel to the secant line to the endpoints. For the first step, you know that the mean value theorem
-平行于secant线的端点。对于第一步，你知道均值定理。
+使得该点切线平行于端点的割线 第一步 中值定理
 
 66
 00:08:00,000 --> 00:08:07,000
-is certainly applicable because you have a polynomial function. You solve for <i>c</i> or <i>x</i>
-当然是适用的，因为你有一个多项式函数。你要解<i>c</i>或<i>x</i>。
+is certainly applicable because you have a polynomial function. You solve for <i>c</i> or <i>x</i> like this equation, 
+适用于该问题 因为函数是多项式函数 如这个方程所示 求解出<i>c</i>或者叫<i>x</i>
 
 67
 00:08:07,000 --> 00:08:15,000
-like this equation, and the value of <i>c</i> or <i>x</i> is the value of 4/√3. At that value of <i>x</i>,
-像这个方程，而<i>c</i>或<i>x</i>的值是4/√3的值。在该值为<i>x</i>时．
+and the value of <i>c</i> or <i>x</i> is the value of 4/√3. At that value of <i>x</i>,
+解得<i>c</i>或<i>x</i>的值为4/√3 函数在点<i>x</i>处
 
 68
 00:08:15,000 --> 00:08:23,000
 we actually have a tangent line that is parallel to the secant line through the two endpoints.
-其实我们有一条切线，通过两个端点平行于secant线。
+存在一条切线平行于过两端点的割线
 
 69
 00:08:23,000 --> 00:08:29,000
@@ -346,185 +346,185 @@ Now let’s check that with the tangent line and a plot of the curve and tangent
 70
 00:08:29,000 --> 00:08:36,000
 and you can see that the secant line over here has the same slope as the tangent line over there.
-你可以看到这边的正切线和那边的切线有相同的斜率。
+可见 割线与切线具有相同斜率
 
 71
 00:08:38,000 --> 00:08:43,000
 Okay. As another example of the mean value theorem, let’s talk about a function <i>f</i>
-好吧，那就再举一个均值定理的例子吧。作为均值定理的另一个例子，我们来谈谈函数<i>f</i>。
+好的 再举一个关于中值定理的例子 函数<i>f</i>
 
 72
 00:08:43,000 --> 00:08:51,000
 whose value at 0 is 4 and whose derivative is bounded above by 6, and the question is how large
-其在0处的值是4，其导数在上面的边界是6，问题是多大的
+在0处的值是4 而其导数值不超过6 问题是
 
 73
 00:08:51,000 --> 00:09:01,000
 can the value of <i>f</i> at 3 possibly be? Because <i>f</i> is differentiable, therefore clearly it is continuous,
-3处的<i>f</i>的值可能是多少？因为<i>f</i>是可微分的，所以显然它是连续的。
+<i>f</i>在3处的值可能是多少？因为<i>f</i>是可微的 所以显然它是连续的
 
 74
 00:09:01,000 --> 00:09:08,000
 and so what we’ll do is we’ll apply the mean value theorem on the interval [0, 3].
-所以我们要做的就是在区间[0，3]上应用均值定理。
+接下来在[0，3]区间上应用中值定理
 
 75
 00:09:08,000 --> 00:09:16,000
 The mean value theorem says that you have the equation <i>f</i>(3) − <i>f</i>(0) is the value of the derivative
-平均值定理说，你有公式<i>f</i>(3)-<i>f</i>(0)是导数的值。
+根据中值定理 有<i>f</i>(3)-<i>f</i>(0)等于
 
 76
 00:09:16,000 --> 00:09:27,000
 at that point <i>c</i> times (3 − 0). You have a <i>c</i> with that property. Because you have <i>f</i>' less than
-在这一点上<i>c</i>乘以(3 - 0).你有一个&lt;i&gt;c&lt;/i&gt;具有该属性。你有一个<i>c</i>的属性。因为你的<i>f</i>'小于
+区间上一点<i>c</i>处的导数乘以(3 - 0) 存在一点<i>c</i>具有这样的特性 又因为<i>f</i>'小于
 
 77
 00:09:27,000 --> 00:09:37,000
 or equal to 6, therefore you set up the equation, which is <i>f</i>'[<i>c</i>], to be at most 6 and solve it for <i>f</i>[<i>3</i>],
-或等于6，因此你设方程，即<i>f</i>'[<i>c</i>]，最多为6，解得<i>f</i>[<i>3</i>]。
+或等于6 列出方程 <i>f</i>'[<i>c</i>]不大于6 求解出<i>f</i>[<i>3</i>]
 
 78
 00:09:37,000 --> 00:09:42,000
 and you find that the value of <i>f</i>[3] can be at the most 22.
-并且你发现<i>f</i>[3]的值最多可以是22。
+得到<i>f</i>[3]的值最大为22
 
 79
 00:09:44,000 --> 00:09:55,000
 Okay. As another example, let’s try and show that this polynomial, <i>x</i>^3 + 8<i>x</i> − 2, has exactly one root.
-好吧，再举个例子。作为另一个例子，让我们试着证明这个多项式，<i>x</i>^3 + 8<i>x</i> - 2，正好有一个根。
+再举一个例子 试着证明多项式<i>x</i>^3 + 8<i>x</i> - 2 正好有一个根
 
 80
 00:09:55,000 --> 00:10:01,000
 Because the function is continuous, you can apply the intermediate value theorem to try and show
-因为函数是连续的，你可以应用中间值定理来尝试并证明
+由于函数是连续的 可以尝试应用中值定理进行证明
 
 81
 00:10:01,000 --> 00:10:12,000
 that a root exists. The point is that the value of <i>f</i> at 0 is negative and the value at 1 is positive,
-即存在一个根。关键是<i>f</i>在0处的值为负，在1处的值为正。
+只存在一个根 问题的关键在于 <i>f</i>在0处的函数值为负 在1处的函数值为正
 
 82
 00:10:12,000 --> 00:10:18,000
 so the function must take every value between those two values, so at some point or the other,
-所以函数必须取这两个值之间的每一个值，所以在某些时候或其他时候。
+由于函数必然取遍这两点之间的值 所以在区间内的某点处
 
 83
 00:10:18,000 --> 00:10:24,000
 it must become 0, so you certainly have a root in the interval 0 to 1.
-它一定会变成0，所以你肯定在0到1的区间内有一个根。
+函数值必为0 所以 可以肯定在0到1的区间内有一个根
 
 84
 00:10:24,000 --> 00:10:31,000
 Now let’s suppose there are two roots, <i>a</I> and <i>b</i>. Then the mean value theorem would say
-现在我们假设有两个根，<i>a</I>和<i>b</i>。那么均值定理就会说
+接下来假设存在两个根 <i>a</I>和<i>b</i> 利用中值定理
 
 85
 00:10:31,000 --> 00:10:38,000
 that you actually have a slope of 0 between them, and hence you have a point <i>c</i>
-在它们之间实际上有一个0的斜率，因此你有一个点<i>c</i>。
+<i>a</I>和<i>b</i>之间存在一点切线斜率为0 即存在一点<i>c</i>
 
 86
 00:10:38,000 --> 00:10:46,000
 for which the slope is 0 as well. Then if we look at the derivative, it’s 3<i>x</i>^2 + 8,
-对其斜率也是0。那么如果我们看一下导数，就是3<i>x</i>^2+8。
+该点切线斜率为0 原函数的导数为3<i>x</i>^2+8。
 
 87
 00:10:46,000 --> 00:10:51,000
 which can never be 0, so it’s clear that you only have one root,
-永远不可能是0，所以很明显，你只有一个根。
+导数永远不可能是0 所以 明显地 方程有且只有一个根
 
 88
 00:10:51,000 --> 00:10:55,000
 but let’s just plot the function and make sure. You see over here that the function
-但我们还是把函数画出来，确定一下。你看这里，函数
+将函数图像画出来 确保正确 请看这里 函数
 
 89
 00:10:55,000 --> 00:10:59,000
 becomes zero somewhere to the right of 0, but then never again.
-在0的右边某处变成零，但以后再也不会了。
+在0的右侧某处变成零 后面再也不等于0
 
 90
 00:11:01,000 --> 00:11:07,000
 Now as an amusing application of the mean value theorem, let’s talk about speed limits.
-现在作为均值定理的一个有趣的应用，我们来谈谈限速问题。
+下面是中值定理的一个有趣应用 讨论的是限速问题
 
 91
 00:11:07,000 --> 00:11:11,000
 Suppose you’ve got two points, <i>A</i> and <i>B</i>, on a road, and they are 90 miles apart.
-假设你有两个点，<i>A</i>和<i>B</i>，在一条路上，它们相距90英里。
+假设路上的两个点 <i>A</i>和<i>B</i> 两点相距90英里
 
 92
 00:11:11,000 --> 00:11:18,000
 You start from point <i>A</i> at noon. Suppose you don’t take any breaks in your journey,
-你在中午时分从点<i>A</i>出发。假设你在旅途中没有任何休息。
+你在中午时分从点<i>A</i>出发 假设在路途中没有任何休息
 
 93
 00:11:18,000 --> 00:11:25,000
 and you get to the point <i>B</i> at 1 o’clock. Now, the speed limit in that area says that
-而你在一点钟方向到达B点<i>B</i>。现在，该地区的限速规定是：
+在一点钟到达B点<i>B</i> 该地区的限速规定是
 
 94
 00:11:25,000 --> 00:11:31,000
 you cannot exceed 80 miles per hour. The question is should you receive a speeding ticket or not?
-你不能超过80英里每小时。问题是你到底该不该收到超速罚单？
+不能超过80英里每小时 请问你该不该收到超速罚单？
 
 95
 00:11:31,000 --> 00:11:40,000
 Well, here’s the average speed for the whole trip. It’s 90. If you apply the mean value theorem,
-嗯，这是整个行程的平均速度。是90公里如果你应用平均值定理， If you apply the mean value theorem,
+整段行程的平均速度为90英里 应用中值定理
 
 96
 00:11:40,000 --> 00:11:46,000
 at some point, you must surely have crossed the speed limit of 80 miles per hour,
-在某些时候，你肯定已经超过了时速80英里的限制。
+在某些时刻 你肯定超过了时速80英里的限制
 
 97
 00:11:46,000 --> 00:11:51,000
 so certainly you should receive a speeding ticket, and it’s going to cost you some money.
-所以你肯定要收到一张超速罚单，而且要花你一些钱。
+因此你肯定会收到一张超速罚单 花去一些钱
 
 98
 00:11:54,000 --> 00:12:01,000
 Okay. Let’s summarize the lesson for today. We saw that the mean value theorem relates
-好了，我们来总结一下今天的课程。我们来总结一下今天的课程。我们看到均值定理涉及到了
+好的 我们来总结一下本次课程 中值定理涉及
 
 99
 00:12:01,000 --> 00:12:09,000
 the average slope of an interval with the instantaneous slope in the interval. Basically it says that
-区间的平均斜率与区间的瞬时斜率。基本上是说
+区间的割线斜率与区间某点处的斜率 总的来说
 
 100
 00:12:09,000 --> 00:12:13,000
 you’ve got a point at which the average slope is the same as the instantaneous slope.
-你已经得到了一个点，平均斜率与瞬时斜率相同。
+中值定理能得到割线斜率与某点处的切线斜率相等
 
 101
 00:12:15,000 --> 00:12:19,000
 Of course this theorem is a very useful theorem. We saw some applications,
-当然这个定理是一个非常有用的定理。我们看到了一些应用。
+这个定理非常有用 我们也讨论了它的一些应用
 
 102
 00:12:19,000 --> 00:12:25,000
 but in the next lesson, we’ll see even more where we’ll talk about the graphs of functions.
-但在下一节课，我们会看到更多的地方，我们将讨论函数的图形。
+在下一节课 我们会看到更多应用中值定理的地方 将讨论函数的图像
 
 103
 00:12:25,000 --> 00:12:30,000
 That’s really a very interesting geometrical problem which gets solved nicely
-这真是一个非常有趣的几何问题，它得到了很好的解决。
+函数图像是非常有趣的几何问题 该问题
 
 104
 00:12:30,000 --> 00:12:35,000
 with the use of the mean value theorem and other properties of derivatives.
-与利用均值定理和导数的其他性质。
+利用中值定理和导数的其他性质能得到很好的解决
 
 105
 00:12:35,000 --> 00:12:39,000
 But before we do that, do look over today’s lesson, do review the exercises
-但在这之前，请看一下今天的课程，请复习一下习题
+在此之前 请回顾本次课程 务必复习习题
 
 106
 00:12:39,000 --> 00:12:44,000
 and be ready for the lesson on graphs of functions. I’ll stop over here. Thank you.
-并准备好函数图的课程。我在这里停一下谢谢你了
+并准备好关于函数图像的课程 本次课到此结束 谢谢！
 
