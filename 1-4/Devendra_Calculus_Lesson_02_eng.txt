@@ -1,0 +1,380 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 2 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:14,000
+The topic for this lesson is functions. Let’s begin with a brief overview of the lesson.
+
+3
+00:00:14,000 --> 00:00:21,000
+Last time, we learned that calculus is all about change, so you can have changing speed
+
+4
+00:00:21,000 --> 00:00:27,000
+or changing volume, and then you can apply calculus to study such phenomena.
+
+5
+00:00:27,000 --> 00:00:35,000
+But a little more precisely, calculus is about quantities that change with respect to other quantities.
+
+6
+00:00:35,000 --> 00:00:42,000
+For example, the distance traveled by a car changes with respect to time,
+
+7
+00:00:42,000 --> 00:00:48,000
+so you think of time as being an independent variable, and the distance depends upon the time taken.
+
+8
+00:00:49,000 --> 00:00:58,000
+Or the surface area of a cylinder varies with respect to the radius and the height of the cylinder.
+
+9
+00:00:58,000 --> 00:01:06,000
+What we need is a precise way of defining such changes, and that’s what we’ll do in this lesson.
+
+10
+00:01:06,000 --> 00:01:14,000
+We’ll show you how to do this using functions in the Wolfram Language. Let’s begin by
+
+11
+00:01:14,000 --> 00:01:18,000
+by defining a function, but before doing that, I need to speak about sets.
+
+12
+00:01:18,000 --> 00:01:26,000
+A set is a collection of objects. For example, you could talk of the set of even, positive numbers—
+
+13
+00:01:26,000 --> 00:01:34,000
+2, 4, 6, 8, 10, et cetera—and then an element of this set is an object that belongs to it.
+
+14
+00:01:34,000 --> 00:01:44,000
+For example, 2 is an element of the even, positive numbers, while 3 is not an element of that set.
+
+15
+00:01:44,000 --> 00:01:57,000
+Well, a function is a rule that assigns to each element <i>x</i> in a set <i>X</i> exactly one element,
+
+16
+00:01:57,000 --> 00:02:05,000
+called <i>f</i>[<i>x</i>], in a set <i>Y</i>. You think of them as being <i>x</i> and <i>y</i> as in this example.
+
+17
+00:02:05,000 --> 00:02:11,000
+You’ve got a function Sin[<i>x</i>], which is a trigonometric function, and its graph,
+
+18
+00:02:11,000 --> 00:02:20,000
+its plot is a wavy form, but the point here is that this <i>x</i> axis over here is the domain
+
+19
+00:02:20,000 --> 00:02:29,000
+of the function, and that is all the real numbers, while the function values over go between
+
+20
+00:02:29,000 --> 00:02:39,000
+−1 and 1, so that gives you the range of this function, −1 to 1, while the entire <i>y</i> axis
+
+21
+00:02:39,000 --> 00:02:50,000
+is called the codomain. You have a function, and then you have the domain, the codomain and its range.
+
+22
+00:02:50,000 --> 00:02:55,000
+The question is how do you do make such functions in the Wolfram Language?
+
+23
+00:02:55,000 --> 00:03:02,000
+Here’s how we do it. We have a function <i>f</i>[<i>x</i>] = <i>x</i>^2, so for every <i>x</i> over here,
+
+24
+00:03:02,000 --> 00:03:08,000
+it doesn’t matter what <i>x</i> is; you simply square that number or expression. For example,
+
+25
+00:03:08,000 --> 00:03:18,000
+<i>f</i>[2] is clearly 4. But you can also have a function that depends upon two variables, <i>x</i> and <i>t</i>,
+
+26
+00:03:18,000 --> 00:03:25,000
+so that’s like a pattern for <i>x</i> and that’s a pattern for <i>t</i>. Here’s a function <i>g</i>, and then you can
+
+27
+00:03:25,000 --> 00:03:33,000
+define the function and then find its values. The <i>g</i>[2, 3] is 33, so when <i>x</i> is 2 and <i>t</i> is 3,
+
+28
+00:03:33,000 --> 00:03:36,000
+then the value of the function is 33.
+
+29
+00:03:36,000 --> 00:03:43,000
+Okay. Another thing you might want to do with a function is to find what the graph
+
+30
+00:03:43,000 --> 00:03:52,000
+of the function looks like. The graph is just the set of all ordered pairs <i>x</i> and <i>f</i>[<i>x</i>] for that function.
+
+31
+00:03:52,000 --> 00:03:55,000
+You think of that as being pairs of <i>x</i>’s and <i>y</i>’s.
+
+32
+00:03:55,000 --> 00:04:06,000
+Here is a plot of the function <i>f</i>[<i>x</i>] = <i>x</i>^2 between 0 and 10, but you can also put in
+
+33
+00:04:06,000 --> 00:04:11,000
+<i>x</i>^2 directly over here in the Plot function and get back just the same result.
+
+34
+00:04:14,000 --> 00:04:20,000
+Okay. The question now is how do you find the value of a function for other expressions?
+
+35
+00:04:20,000 --> 00:04:29,000
+Let’s say <i>f</i>[<i>x</i>] is <i>x</i>^2. Then the value of <i>f</i>[<i>x</i> + 1] is (<i>x</i> + 1)^2, but you might want to
+
+36
+00:04:29,000 --> 00:04:36,000
+simplify that a little bit, so you can do Expand of the result and get back the expanded version.
+
+37
+00:04:36,000 --> 00:04:42,000
+Or you can apply the Expand function a little later, and get back just the same result.
+
+38
+00:04:44,000 --> 00:04:51,000
+Over here you’ve got a function <i>g</i>, and you can put <i>x</i> + <i>y</i> for <i>x</i>, and then expand
+
+39
+00:04:51,000 --> 00:05:01,000
+and get back the result. Okay. The question is now in how many ways can you define a function?
+
+40
+00:05:01,000 --> 00:05:05,000
+Well, first of all, you could use a table of values like over here.
+
+41
+00:05:05,000 --> 00:05:11,000
+There’s a function which squares a number, so 1^2 is 1, 2^2 is 4, et cetera, and you get back
+
+42
+00:05:11,000 --> 00:05:20,000
+a function from this table of values. Or you could describe the graph of the function.
+
+43
+00:05:20,000 --> 00:05:27,000
+This graph over here tells you that for every value of the side, you have side squared on the <i>y</i> axis.
+
+44
+00:05:27,000 --> 00:05:36,000
+Or you could just use an algebraic formula and get the same function. Functions can be defined
+
+45
+00:05:36,000 --> 00:05:40,000
+in various ways depending on the situation and problem.
+
+46
+00:05:41,000 --> 00:05:46,000
+Now here’s a practical example to put together what we’ve done so far.
+
+47
+00:05:46,000 --> 00:05:55,000
+You want to find the cost of a metal box which has volume of 100 and whose height is twice its length,
+
+48
+00:05:55,000 --> 00:06:05,000
+given that the top and bottom cost $5 per square centimeter while the sides cost $8.
+
+49
+00:06:05,000 --> 00:06:13,000
+Okay. The cost is going to be 5 times the top and bottom area plus 8 times the side area.
+
+50
+00:06:13,000 --> 00:06:19,000
+That’s the cost function. Now you know the volume is length times width times height,
+
+51
+00:06:19,000 --> 00:06:25,000
+and that’s the relationship given to you, height is twice the length, so you can plug that into
+
+52
+00:06:25,000 --> 00:06:33,000
+the equation for the volume and get back an expression for <i>w</i>, the width, in terms of the length.
+
+53
+00:06:33,000 --> 00:06:40,000
+Once you’ve done that, then the entire cost of the box can be written in terms of <i>l</i>, the length.
+
+54
+00:06:40,000 --> 00:06:51,000
+You can use that to compute the cost of the box when its length is 10 cm, and the answer is $3,410.
+
+55
+00:06:53,000 --> 00:06:59,000
+Okay. Now in this example, if you look at the function for the box cost,
+
+56
+00:06:59,000 --> 00:07:07,000
+then you could plug in a length of −1. That still works, but of course that’s not a very meaningful length;
+
+57
+00:07:07,000 --> 00:07:11,000
+it’s a negative number. You could also try to plug in 0.
+
+58
+00:07:11,000 --> 00:07:17,000
+This time, Mathematica and the Wolfram Language will certainly complain and tell you that
+
+59
+00:07:17,000 --> 00:07:25,000
+this is not allowed; it’s an indeterminate answer. We have a function called FunctionDomain
+
+60
+00:07:25,000 --> 00:07:32,000
+which will definitely try and isolate the problems for you. It says over here that
+
+61
+00:07:32,000 --> 00:07:39,000
+the length of the box should either be negative or positive–not zero like over here—
+
+62
+00:07:39,000 --> 00:07:43,000
+but of course you know that in practice, negative lengths are not useful,
+
+63
+00:07:43,000 --> 00:07:48,000
+so you do need to use some common sense when you find the domain of a function.
+
+64
+00:07:48,000 --> 00:07:51,000
+The context of the problem is everything.
+
+65
+00:07:51,000 --> 00:07:59,000
+Okay. Let’s go on now and talk about how to decide whether something is a function.
+
+66
+00:07:59,000 --> 00:08:06,000
+A function, recall, has to give you exactly one element, <i>f</i>[<i>x</i>], for every <i>x</i>.
+
+67
+00:08:06,000 --> 00:08:12,000
+Here’s an example of a plot which is not a function, and why is that?
+
+68
+00:08:12,000 --> 00:08:17,000
+Because for every number over here, you get back two numbers on the <i>y</i> axis.
+
+69
+00:08:17,000 --> 00:08:24,000
+Every number between −1 and 1 gives you two numbers vertically. If you were to draw a vertical line,
+
+70
+00:08:24,000 --> 00:08:34,000
+then that vertical line will cut the plot at two points, and so this relation over here is not a function.
+
+71
+00:08:34,000 --> 00:08:42,000
+The vertical line test is a very useful way of finding out whether a given plot gives a function or not.
+
+72
+00:08:43,000 --> 00:08:48,000
+Having done all that, let’s now talk about all the different kinds of functions.
+
+73
+00:08:48,000 --> 00:08:54,000
+A very nice, simple kind of function is a piecewise function. For example, here is
+
+74
+00:08:54,000 --> 00:09:02,000
+the real absolute value of <i>x</i>. The absolute value is a V-shaped function, but you could also use
+
+75
+00:09:02,000 --> 00:09:09,000
+the built-in Piecewise function to do just the same thing. Piecewise will say that the value should be
+
+76
+00:09:09,000 --> 00:09:19,000
+−<i>x</i> for −<i>x</i>, and <i>x</i> otherwise. That’s the same function, but now defined manually
+
+77
+00:09:19,000 --> 00:09:28,000
+using Piecewise. Another kind of function that is quite useful in practice is a symmetric function.
+
+78
+00:09:28,000 --> 00:09:37,000
+You can have an even function which has a plot that’s the same on the left and the right, so to speak.
+
+79
+00:09:37,000 --> 00:09:48,000
+The value of <i>f</i>[−<i>x</i>] is the same as <i>f</i>[<i>x</i>]. Or you can have an odd function in which the plot now looks like
+
+80
+00:09:48,000 --> 00:09:58,000
+it’s negative on the left and positive on the right in this case, so the value of <i>f</i>[−<i>x</i>] is −<i>f</i>[<i>x</i>].
+
+81
+00:09:59,000 --> 00:10:04,000
+Finally, you could have a functions which increase or decrease.
+
+82
+00:10:04,000 --> 00:10:15,000
+Here is the square function, and if you plot it, it first decreases, it goes down and then increases.
+
+83
+00:10:17,000 --> 00:10:23,000
+But here’s an example of a much simpler function which neither increases or decreases;
+
+84
+00:10:23,000 --> 00:10:29,000
+it’s just nice and flat and constant. There are a wide range of functions in calculus,
+
+85
+00:10:29,000 --> 00:10:36,000
+and each of them lets us solve different kinds of problems. That’s the end of the lesson.
+
+86
+00:10:36,000 --> 00:10:42,000
+Just to summarize, functions tell us how quantities change with respect to other quantities.
+
+87
+00:10:42,000 --> 00:10:52,000
+You can use either words or tables or graphs or formulas to define a function.
+
+88
+00:10:52,000 --> 00:10:57,000
+If you’re given a graph, the question might be is this a function or not? Well, you can apply
+
+89
+00:10:57,000 --> 00:11:06,000
+the vertical line test. Then finally, functions can be piecewise or even or odd
+
+90
+00:11:06,000 --> 00:11:12,000
+or increasing or decreasing, and all kinds of other classifications, but all of them prove
+
+91
+00:11:12,000 --> 00:11:20,000
+to be useful in practice. In the next lesson, we’ll go over the basic functions which we require in calculus,
+
+92
+00:11:20,000 --> 00:11:27,000
+but before doing that, do review today’s lesson, go over the exercises and make sure you follow functions,
+
+93
+00:11:27,000 --> 00:11:32,000
+because they are at the very heart of calculus. Once you know functions,
+
+94
+00:11:32,000 --> 00:11:36,000
+you can begin the study of calculus. I’ll stop over here.
+
+95
+00:11:36,000 --> 00:11:38,000
+I hope you enjoyed today’s lesson. Thank you.
+
