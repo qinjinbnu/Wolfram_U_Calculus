@@ -1,0 +1,569 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 3 of this introduction to calculus with Wolfram U.
+您好，欢迎来到Wolfram U的微积分入门课程第3课
+
+2
+00:00:06,000 --> 00:00:15,000
+Our topic for today is the elementary functions. Let’s begin with a brief overview of today’s lesson.
+今天我们的主题是基本函数。让我们从今天课程的简要概述开始。
+
+3
+00:00:15,000 --> 00:00:23,000
+In the previous lesson, Lesson 2, we learned how our functions can be used to represent change,
+在上一课第2课中，我们学习了如何使用函数来表示变化，
+
+4
+00:00:23,000 --> 00:00:29,000
+and we learned how to define a function, plot it, evaluate it, et cetera, but then we also learned that
+我们学习了如何定义函数，对其进行绘制，对其进行计算等等，然后我们还了解到
+
+5
+00:00:29,000 --> 00:00:35,000
+there are many different kinds of functions. It’s quite puzzling, the number of functions you might see
+存在许多不同的函数 令人困惑的是，您可能会看到的功能数量
+
+6
+00:00:35,000 --> 00:00:41,000
+at any one time. Here are a few graphs over here. Let’s say that’s a kind of oscillating function,
+在任何时候。这是这里的一些图表。这是一种振荡函数，
+
+7
+00:00:41,000 --> 00:00:45,000
+and you might have an increasing function or a decreasing function, and the question is
+您也可能看到递增函数或递减函数，问题是
+
+8
+00:00:45,000 --> 00:00:52,000
+what do you really need to study calculus in this course? Well, in this lesson what we’ll do is
+在这门课程中你需要学习这些函数之中的哪些？在这节课中，
+
+9
+00:00:52,000 --> 00:00:58,000
+we’ll categorize the types of functions that you’ll really encounter later in the course.
+我们将对您在后面课程中有可能遇到的函数进行分类。
+
+10
+00:00:58,000 --> 00:01:03,000
+These functions are somewhat simpler than what you might encounter in advanced mathematics,
+这些函数比您在高等数学中可能遇到的函数要简单一些，
+
+11
+00:01:03,000 --> 00:01:09,000
+and hence they are called elementary functions, as opposed to what are called special functions.
+因此，它们被称为基本函数，而不是特殊函数
+
+12
+00:01:09,000 --> 00:01:15,000
+Our topic of today is elementary functions, which we will study in some detail.
+今天我们的主题是基本函数，我们将对其进行详细研究。
+
+13
+00:01:15,000 --> 00:01:24,000
+Perhaps the simplest kind of function is a linear function. For example, here is a function
+也许最简单的函数是线性函数。例如，这是一个函数
+
+14
+00:01:24,000 --> 00:01:36,000
+<i>f</i>[<i>x</i>] = <i>x</i> + 3, and if you plot it, what you see is you get a straight line. That’s a linear function,
+<i>f</i> [ <i>x</i> ] = <i>x</i> + 3，如果绘制它，您会看到一条直线。这就是一个线性函数
+
+15
+00:01:36,000 --> 00:01:45,000
+and in general, the function <i>f</i>[<i>x</i>] = <i>mx</i> + <i>b</i> is called a linear function, and that <i>m</i> over there is the slope
+通常，满足此表达式：<i>f</i> [ <i>x</i> ] = <i>mx</i> + <i>b</i>的函数称为线性函数，这里的<i>m</i>是斜率
+
+16
+00:01:45,000 --> 00:01:52,000
+and the <i>b</i> is the <i>y</i>-intercept. Linear functions are rather simple. Their graphs are straight lines,
+<i>b</i>是<i>ÿ</i>截距。线性函数非常简单。他们的图像是直线，
+
+17
+00:01:52,000 --> 00:01:58,000
+they have a slope and a <i>y</i>-intercept, and that’s about all.
+他们有一个斜率和<i>y</i>轴截距。这就是它的所有性质。
+
+18
+00:01:59,000 --> 00:02:07,000
+Okay. To go a step further, let’s talk about power functions. A power function is also very simple.
+好了。为了更进一步，让我们讨论幂函数。幂函数也非常简单。
+
+19
+00:02:07,000 --> 00:02:13,000
+It has a form <i>x</i> to the power <i>a</i>. Here are some power functions of a simple power
+它具有 <i>a</i>的<i>x</i>次方的形式。这是一些具有简单幂次的幂函数<i><font style="vertical-align: inherit;"></font></i><font style="vertical-align: inherit;"></font>
+
+20
+00:02:13,000 --> 00:02:23,000
+like 1 and 2 and 3 and 4. Let’s plot them, and what you notice is that the graphs depend upon
+它们具有像1和2以及3和4之类的幂次。让我们绘制它们，您会发现图形取决于
+
+21
+00:02:23,000 --> 00:02:30,000
+the kind of power you have. If you have an odd degree or an odd power function,
+它的幂次。如果您研究的是具有奇数次幂的函数，
+22
+00:02:30,000 --> 00:02:41,000
+then the graphs are odd. For example, the graph for <i>x</i> is odd, whereas the plot for <i>x</i>^2 will be even.
+那么这些图就是关于奇函数的。例如，<i>x</i>的图是奇数次的函数，而<i>x</i> ^ 2 的图是偶数次的
+
+23
+00:02:41,000 --> 00:02:47,000
+These power functions are simple in the sense that the odd degree functions are odd
+这些幂函数比较简单（奇数幂是奇函数，偶数幂是偶函数）
+
+24
+00:02:47,000 --> 00:02:54,000
+and the even degree functions are even. Now slightly harder than those are the root functions,
+比这些更难一些的是根式函数
+
+25
+00:02:54,000 --> 00:03:01,000
+where you have things like <i>x</i>^(1/2), like the square root function basically. That’s just a simple way
+这里有<i>x</i> ^（1/2）之类的东西，这就是就是平方根函数
+
+26
+00:03:01,000 --> 00:03:07,000
+That’s just a simple way of saying x^(1/3) in the Wolfram Language. Those functions are
+在Woflram语言中表示出x^(1/3)是很简单的事情。
+
+27
+00:03:07,000 --> 00:03:14,000
+are a little more complicated than the earlier set because now what happens is if you look at the plots,
+这些函数比起刚刚那些简单函数要更加复杂一点
+
+28
+00:03:14,000 --> 00:03:22,000
+they look a bit thicker over here than over there. That’s because the odd roots are defined everywhere
+它们在这里看起来比那儿要厚。那是因为在我们可以在整个实数域上面求奇数根
+
+29
+00:03:22,000 --> 00:03:30,000
+while the even ones are only defined for positive—or non-negative, really—values of the variable.
+而偶数根式仅作用于正的（或者非负的）变量。
+30
+00:03:30,000 --> 00:03:35,000
+Here’s the square root function, and the square root of a number is only defined
+这是平方根函数，仅当数字是非负数的时候，
+31
+00:03:35,000 --> 00:03:45,000
+if the number is non-negative. That’s the class of power functions which are quite useful in practice.
+才能定义它的根式。以上这些就是幂函数的分类，在实践中非常有用
+
+32
+00:03:45,000 --> 00:03:54,000
+To go a step further, let’s talk about polynomials. That over there, the function <i>f</I>, is a polynomial.
+为了更进一步，让我们谈谈多项式。这里的函数<i>f</i>是一个多项式。
+
+33
+00:03:54,000 --> 00:04:04,000
+Now if you plot the polynomial, you get a graph. It’s a nice smooth graph, and generally speaking
+现在，如果您绘制多项式，则会得到一个图形。这是一个很好的平滑图形，通常来说
+
+34
+00:04:04,000 --> 00:04:09,000
+if you want to find a polynomial, you need to set up a sum of this type. The <i>a</i>’s over here
+如果要建立一个多项式，则需要此类型的总和：这里的<i>a</i>
+
+35
+00:04:09,000 --> 00:04:18,000
+are coefficients, while the powers are right over there—<i>n</i>, <i>n − 1</i>, et cetera.
+是系数，而幂次在这儿： <i>n</i>，<i>n -1</i>等。
+
+36
+00:04:18,000 --> 00:04:24,000
+The highest power is called the degree of the polynomial. This polynomial over here
+最高次幂称为多项式的次数。这个多项式
+
+37
+00:04:24,000 --> 00:04:36,000
+has coefficients 3, −1, 7 and 6, while the degree is 4 because you have <i>x</i>^4 over there.
+的系数为3，-1、7和6，而次数为4，因为此处有<i>x</i> ^ 4。
+
+38
+00:04:36,000 --> 00:04:43,000
+In particular, linear functions have degree 1, quadratic functions have degree 2
+特别地，线性函数的阶数为1，二次函数的阶数为2
+
+39
+00:04:43,000 --> 00:04:50,000
+and cubic functions have degree 3. You have this vast array of polynomials.
+三次函数的阶数为3。你可以建立各种各样的多项式
+
+40
+00:04:50,000 --> 00:04:56,000
+They are very simple to work with, but they are incredibly useful. You have linear, quadratic,
+它们使用起来非常简单，但是却非常有用。您可以使用线性，二次方，
+
+41
+00:04:56,000 --> 00:05:01,000
+cubic polynomials, et cetera, which we encounter all the time in the course.
+三次多项式等，我们在课程中多次讨论多项式函数
+
+42
+00:05:02,000 --> 00:05:09,000
+Okay. To go a step further, we can talk about rational functions. A rational function is
+好了，更进一步，我们可以讨论有理函数。有理函数是
+
+43
+00:05:09,000 --> 00:05:14,000
+simply a quotient of two polynomials, the ratio of two polynomials.
+只是两个多项式的商，即两个多项式之比。
+
+44
+00:05:14,000 --> 00:05:20,000
+If you divide a polynomial by another, you get a rational function. Perhaps the simplest kind
+如果将多项式除以另一个，则会得到有理函数。
+
+45
+00:05:20,000 --> 00:05:24,000
+of rational function is the reciprocal function, which is 1/<i>x</i>. If you plot it,
+倒数函数或许能称作最简单的有理函数，即1 / <i>x</i>。如果把它画出来
+
+46
+00:05:24,000 --> 00:05:32,000
+you see the plot has got two pieces, and that’s because there is a problem at <i>x</i> = 0
+您会看到该图有两个部分，这是因为<i>x</i> = 0时存在问题
+
+47
+00:05:32,000 --> 00:05:39,000
+where the function is not defined. You have a piece on the right and a piece on the left,
+这是函数未定义的地方。原点左边和原点右边都有定义
+
+48
+00:05:39,000 --> 00:05:43,000
+and together they give you the reciprocal function. In general, rational functions
+它们共同构成倒数函数。一般而言，有理函数
+
+49
+00:05:43,000 --> 00:05:51,000
+are defined everywhere, except where the denominator is zero. Whenever the function <i>q</i> over here is zero,
+除分母为零的地方外，所有地方都定义了。每当函数<i>q</i>为零时
+
+50
+00:05:51,000 --> 00:05:57,000
+you will find that there are problems and the rational function is not defined. But apart from that,
+就会出现问题，在该点处有理函数没有定义。但是除此之外
+
+51
+00:05:57,000 --> 00:06:02,000
+they are rather simple to work with, and again, they are incredibly useful in calculus.
+它们使用起来非常简单，并且在微积分中非常有用。
+
+52
+00:06:04,000 --> 00:06:09,000
+Okay. Let’s go a step further and talk about algebraic functions. An algebraic function
+好了，让我们更进一步，讨论代数函数。代数函数
+
+53
+00:06:09,000 --> 00:06:15,000
+is obtained by adding, subtracting, multiplying, dividing or taking roots,
+是通过加，减，乘，除或取根获得的，
+
+54
+00:06:15,000 --> 00:06:19,000
+and that of course is where all the trouble lies because when you take roots, you can have
+当然那是所有麻烦的根源，因为当您取根式的时候
+
+55
+00:06:19,000 --> 00:06:24,000
+you can have all kinds of things going wrong. Here’s a pretty complicated algebraic function.
+你可能会遇到错误。这是一个非常复杂的代数函数。
+
+56
+00:06:24,000 --> 00:06:30,000
+It’s got square roots, cube roots, et cetera, in it, and if you plot it, there could be issues.
+它里面有平方根，立方根等等，如果我们绘制它，可能会遇到问题。
+
+57
+00:06:30,000 --> 00:06:36,000
+There is an issue over here at zero because of the denominator, and then the function may
+在0处，可能在分母上出现问题
+
+58
+00:06:36,000 --> 00:06:41,000
+not be defined on certain parts, so the domain is rather small typically,
+函数在这些部分没有定义，因此它的定义域通常很小，
+
+59
+00:06:41,000 --> 00:06:46,000
+and these algebraic functions come in a variety of shapes. Although they are interesting,
+这些代数函数具有多种形式。它们虽然很有趣，
+
+60
+00:06:46,000 --> 00:06:52,000
+they are somewhat less easy to work with, and we will probably not use them a lot at the start.
+但是有时候不太容易使用，一开始我们可能不会太多地使用它们
+
+61
+00:06:52,000 --> 00:06:57,000
+Okay. Beyond algebraic functions, we then have the trigonometric functions, which of course
+好了。除了代数函数，我们还有三角函数，当然
+
+62
+00:06:57,000 --> 00:07:03,000
+many of you might be familiar with. The sine, cosine, and tangent functions are
+你们中的许多人可能都熟悉三角函数。正弦，余弦和切线函数都是
+
+63
+00:07:03,000 --> 00:07:08,000
+the trigonometric functions. Now, just a word of warning. In the Wolfram Language,
+三角函数。现在，需要提醒您的一点是，在Wolfram语言中，
+
+64
+00:07:08,000 --> 00:07:18,000
+we always use the radian measure. If I say Sin[30], that’s not so good; you have to say Sin[π/6]
+我们总是使用弧度制。比方当你需要求角度30度的正弦值时，Sin[30]并不是一个好的写法
+
+65
+00:07:18,000 --> 00:07:22,000
+or Sin[30 Degree] when you really want the sine of 30 degrees. Then of course you get
+我们必须写成Sin[π/6]或Sin [30 Degree]。
+
+66
+00:07:22,000 --> 00:07:26,000
+Then of course you get the correct behavior. The 1/2’s over there came out because you used
+这样您就能得到正确的结果。算出来的结果是1/2
+67
+00:07:26,000 --> 00:07:33,000
+the right notation and the right units. Keep in mind that you must always use the radian measure
+因为您采取了正确的符号和正确的单位。请记住，在使用Wolfram语言工作时
+68
+00:07:33,000 --> 00:07:38,000
+when working in the Wolfram Language, or else you must say Degree like I have done over here.
+我们需要使用弧度制，否则您必须像我在这里所做的那样声明Degree（度数）。
+
+69
+00:07:38,000 --> 00:07:44,000
+Here are the first three plots for trig functions: sine, cosine and tangent.
+这是三角函数的前三个图：正弦，余弦和正切。
+
+70
+00:07:45,000 --> 00:07:52,000
+Okay. You can see that they are all oscillating, both sine and cosine. Then the tangent function
+您会看到正弦和余弦都在震荡。而正切函数是周期的
+
+71
+00:07:52,000 --> 00:08:00,000
+has got these similarities because that’s where you have a problem: when you divide by zero,
+
+
+72
+00:08:00,000 --> 00:08:06,000
+the cosine function is zero, et cetera. Okay. Those are the sine, cosine and tangent functions,
+余弦函数为零，等等。好了，这些是正弦，余弦和正切函数，
+
+73
+00:08:06,000 --> 00:08:13,000
+and sine and cosine have a period of 2π, while the tangent has a period of π only.
+正弦和余弦的周期为2π，而正切的周期仅为π。
+
+74
+00:08:13,000 --> 00:08:19,000
+They are repetitious and they have periods, but those periods depend upon the kind of function
+它们是重复的并且有周期，但是这些周期取决于函数的类型
+
+75
+00:08:19,000 --> 00:08:23,000
+you are working with. Of course you could have a Sin[2<i>x</i>], Sin[3<i>x</i>], et cetera,
+当然，您可以构造Sin [2 <i>x</i> ]，Sin [3 <i>x</i> ]等
+
+76
+00:08:23,000 --> 00:08:27,000
+to get faster and faster oscillations.
+震荡得越来越快的函数
+
+77
+00:08:29,000 --> 00:08:35,000
+Okay. Now if you take a reciprocal of the trigonometric functions, then you get
+好的。现在，如果您取三角函数的倒数，那么您将得到
+
+78
+00:08:35,000 --> 00:08:41,000
+cosecant, secant and cotangent, which are the reciprocal trigonometric functions.
+正割，余割和余切，这是三角函数的倒数。
+
+79
+00:08:41,000 --> 00:08:53,000
+Here are their graphs. What you see over here is that reciprocal graphs are right over there, and
+这是他们的函数图。你在这儿看到的就是三角函数的倒数图
+
+80
+00:08:53,000 --> 00:08:59,000
+the problem is that they are not defined wherever the corresponding trig function is 0.
+此处可能出现问题：如果某处它对应的三角函数值为0，则该函数在该点处没有定义。
+
+81
+00:08:59,000 --> 00:09:06,000
+For example, if sine happens to be zero at a point, then cosecant is not defined, et cetera,
+例如，如果正弦在某个点上恰好为零，则此处余割没有定义，等等，
+
+82
+00:09:06,000 --> 00:09:13,000
+so there are gaps in these functions which reflect the zeros of the underlying trigonometric function.
+因此这些函数中存在一些沟壑，这些沟壑处就是三角函数的零点
+
+83
+00:09:13,000 --> 00:09:19,000
+But they are also somewhat similar to trig functions in the sense that secant and cosecant have
+但是它们和三角函数也有相似之处，
+
+84
+00:09:19,000 --> 00:09:23,000
+got a period of 2π while cotangent has got a period of π.
+正割和余割的周期为2π，而余切线为π。
+
+85
+00:09:23,000 --> 00:09:29,000
+These functions are quite useful in some parts of calculus.
+这些函数在微积分的某些部分中非常有用。
+
+86
+00:09:29,000 --> 00:09:34,000
+Okay. Going a step further, we can now talk about the exponential functions,
+好了，让我们更进一步，我们现在可以继续讨论指数函数，
+
+87
+00:09:34,000 --> 00:09:40,000
+which are of the form <i>a</i> raised to the power <i>x</i>, so now the exponent is variable.
+只不过它们的形式从<i>a</i>的幂变成<i>x</i>的幂，那么现在底数是可变的。
+
+88
+00:09:40,000 --> 00:09:48,000
+For example, if we look at 2^<i>x</i>—that’s a case when the base <i>a</i> is greater than 1—
+举例来说，如果我们看2 ^ <i>x，</i>即底数<i>a</i>大于1的情况，
+
+89
+00:09:48,000 --> 00:09:55,000
+then you have an exponential growth function. Here’s a plot, and you can see quite clearly
+那么您就有了指数增长函数。这是一个函数图，您可以很清楚地看到
+
+90
+00:09:55,000 --> 00:10:02,000
+that it is growing quite fast. On the other hand, if you take number between 0 and 1 like 0.5,
+函数增长非常快。另一方面，如果您采用介于0和1之间的数字（如0.5），
+
+91
+00:10:02,000 --> 00:10:08,000
+then you get a decreasing function. But in any case, these functions always pass through
+那么你得到一个递减函数。但是无论如何，这些函数总是通过
+
+92
+00:10:08,000 --> 00:10:17,000
+the point (0, 1) because <i>a</i>^0 = 1, as you all know from your study of indices in algebra.
+点（0,1），因为<i>a</i> ^ 0 = 1
+
+93
+00:10:18,000 --> 00:10:27,000
+Exponential functions are really useful for capturing growth on one hand and decay on the other.
+在描述事物增长或者减少方面，指数函数非常有用
+
+94
+00:10:27,000 --> 00:10:32,000
+Things like our population might grow exponentially, and certain other things
+比如我们的人口可能会呈指数增长，而某些其他事物
+
+95
+00:10:32,000 --> 00:10:38,000
+might decay exponentially, but together, the exponential functions of different types give you
+可能会呈指数衰减。不同类型的指数函数是您在微积分中
+
+96
+00:10:38,000 --> 00:10:42,000
+a powerful way of expressing rates of growth or decay in calculus.
+表达增长或衰减速率的有效方法
+
+97
+00:10:42,000 --> 00:10:46,000
+They are incredibly important and you should know them well.
+它们非常重要，您应该非常了解它们。
+
+98
+00:10:47,000 --> 00:10:56,000
+Finally, we’ll talk about the logarithmic functions, which are defined as log[<i>x</i>] to base <i>a</i>,
+最后，我们将讨论对数函数，这些函数定义为基于<i>a</i> log [ <i>x</i> ] ，<i><font style="vertical-align: inherit;"></font></i><font style="vertical-align: inherit;"></font>
+
+99
+00:10:56,000 --> 00:11:04,000
+and they are the inverses of the exponential functions. Here is a graph of Log[<i>x</i>].
+它们是指数函数的逆函数。这是Log [ <i>x</i> ] 的图形。
+
+100
+00:11:04,000 --> 00:11:09,000
+Keep in mind that in the Wolfram Language, the base is set to <i>e</i>,
+请记住，在Wolfram语言中，底数设置为<i>e</i>，
+
+101
+00:11:09,000 --> 00:11:16,000
+but if you want a different base, then you would say that over here and you would get back Log[<i>x</i>],
+但是如果您想使用其他底数，那么您可以在这里声明，然后返回Log [ <i>x</i> ]，
+
+102
+00:11:16,000 --> 00:11:23,000
+but now to the base 1/4. They are very similar in some sense to the exponential functions
+但现在底数是1/4。在某种意义上，对数函数与指数函数非常相似
+
+103
+00:11:23,000 --> 00:11:29,000
+because they are in fact the inverses. The logarithmic functions are quite useful, but as you can see,
+因为它们实际上互为逆函数。对数函数非常有用，但是如您所见，
+
+104
+00:11:29,000 --> 00:11:35,000
+they grow much slower than the exponentials and they have their own uses.
+它们的增长比指数慢得多，它们有自己的用途
+
+105
+00:11:35,000 --> 00:11:42,000
+Okay. We’ve talked about a fairly wide variety of elementary functions,
+好了，我们讨论了各种各样的基本函数，
+
+106
+00:11:42,000 --> 00:11:47,000
+and to summarize today’s lesson, we have many different forms of functions
+现在来总结今天的课程，我们有许多不同形式的函数
+
+107
+00:11:47,000 --> 00:11:52,000
+and many different kinds of graphs studied today. You can have linear functions,
+以及今天研究的许多不同种类的图。你可以有线性函数，
+
+108
+00:11:52,000 --> 00:12:01,000
+polynomial functions, rational functions, trig functions, et cetera, and together they already required
+多项式函数，有理函数，三角函数等。
+
+109
+00:12:01,000 --> 00:12:05,000
+for studying calculus in this course, for the most part.
+在本课程的大多数内容中，都需要用到它们。
+
+110
+00:12:05,000 --> 00:12:11,000
+Okay. We are basically done with today’s lesson. In the next lesson we will cover limits,
+好的。今天的课程基本上已经完成。在下一课中，我们将介绍极限，
+
+111
+00:12:11,000 --> 00:12:17,000
+so you really start doing calculus in this course next time. But before doing that,
+下节课你将真正开始进行微积分计算。但是在那之前
+
+112
+00:12:17,000 --> 00:12:23,000
+do look at today’s lesson in the notebook that’s supplied to you, look at the accompanying exercises,
+请在提供给您的笔记本上复习今天的课程并且完成随附的练习，
+
+113
+00:12:23,000 --> 00:12:28,000
+go over them. You can only learn mathematics by doing, so spend some time reviewing,
+您需要亲自实践才能学会数学，因此您需要花一些时间进行复习
+
+114
+00:12:28,000 --> 00:12:34,000
+solve the exercises, et cetera, and you should be in good shape to join me next time for Lesson 4.
+并且完成练习。接着您应该能轻松学习第4课了。
+
+115
+00:12:34,000 --> 00:12:39,000
+Thank you very much. I hope you enjoyed today’s lesson. I’ll see you next time.
+非常感谢您的聆听。希望您享受这节课程，我们下节课再见。

@@ -1,0 +1,460 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 3 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:15,000
+Our topic for today is the elementary functions. Let’s begin with a brief overview of today’s lesson.
+
+3
+00:00:15,000 --> 00:00:23,000
+In the previous lesson, Lesson 2, we learned how our functions can be used to represent change,
+
+4
+00:00:23,000 --> 00:00:29,000
+and we learned how to define a function, plot it, evaluate it, et cetera, but then we also learned that
+
+5
+00:00:29,000 --> 00:00:35,000
+there are many different kinds of functions. It’s quite puzzling, the number of functions you might see
+
+6
+00:00:35,000 --> 00:00:41,000
+at any one time. Here are a few graphs over here. Let’s say that’s a kind of oscillating function,
+
+7
+00:00:41,000 --> 00:00:45,000
+and you might have an increasing function or a decreasing function, and the question is
+
+8
+00:00:45,000 --> 00:00:52,000
+what do you really need to study calculus in this course? Well, in this lesson what we’ll do is
+
+9
+00:00:52,000 --> 00:00:58,000
+we’ll categorize the types of functions that you’ll really encounter later in the course.
+
+10
+00:00:58,000 --> 00:01:03,000
+These functions are somewhat simpler than what you might encounter in advanced mathematics,
+
+11
+00:01:03,000 --> 00:01:09,000
+and hence they are called elementary functions, as opposed to what are called special functions.
+
+12
+00:01:09,000 --> 00:01:15,000
+Our topic of today is elementary functions, which we will study in some detail.
+
+13
+00:01:15,000 --> 00:01:24,000
+Perhaps the simplest kind of function is a linear function. For example, here is a function
+
+14
+00:01:24,000 --> 00:01:36,000
+<i>f</i>[<i>x</i>] = <i>x</i> + 3, and if you plot it, what you see is you get a straight line. That’s a linear function,
+
+15
+00:01:36,000 --> 00:01:45,000
+and in general, the function <i>f</i>[<i>x</i>] = <i>mx</i> + <i>b</i> is called a linear function, and that <i>m</i> over there is the slope
+
+16
+00:01:45,000 --> 00:01:52,000
+and the <i>b</i> is the <i>y</i>-intercept. Linear functions are rather simple. Their graphs are straight lines,
+
+17
+00:01:52,000 --> 00:01:58,000
+they have a slope and a <i>y</i>-intercept, and that’s about all.
+
+18
+00:01:59,000 --> 00:02:07,000
+Okay. To go a step further, let’s talk about power functions. A power function is also very simple.
+
+19
+00:02:07,000 --> 00:02:13,000
+It has a form <i>x</i> to the power <i>a</i>. Here are some power functions of a simple power
+
+20
+00:02:13,000 --> 00:02:23,000
+like 1 and 2 and 3 and 4. Let’s plot them, and what you notice is that the graphs depend upon
+
+21
+00:02:23,000 --> 00:02:30,000
+the kind of power you have. If you have an odd degree or an odd power function,
+
+22
+00:02:30,000 --> 00:02:41,000
+then the graphs are odd. For example, the graph for <i>x</i> is odd, whereas the plot for <i>x</i>^2 will be even.
+
+23
+00:02:41,000 --> 00:02:47,000
+These power functions are simple in the sense that the odd degree functions are odd
+
+24
+00:02:47,000 --> 00:02:54,000
+and the even degree functions are even. Now slightly harder than those are the root functions,
+
+25
+00:02:54,000 --> 00:03:01,000
+where you have things like <i>x</i>^(1/2), like the square root function basically. That’s just a simple way
+
+26
+00:03:01,000 --> 00:03:07,000
+That’s just a simple way of saying x^(1/3) in the Wolfram Language. Those functions are
+
+27
+00:03:07,000 --> 00:03:14,000
+are a little more complicated than the earlier set because now what happens is if you look at the plots,
+
+28
+00:03:14,000 --> 00:03:22,000
+they look a bit thicker over here than over there. That’s because the odd roots are defined everywhere
+
+29
+00:03:22,000 --> 00:03:30,000
+while the even ones are only defined for positive—or non-negative, really—values of the variable.
+
+30
+00:03:30,000 --> 00:03:35,000
+Here’s the square root function, and the square root of a number is only defined
+
+31
+00:03:35,000 --> 00:03:45,000
+if the number is non-negative. That’s the class of power functions which are quite useful in practice.
+
+32
+00:03:45,000 --> 00:03:54,000
+To go a step further, let’s talk about polynomials. That over there, the function <i>f</I>, is a polynomial.
+
+33
+00:03:54,000 --> 00:04:04,000
+Now if you plot the polynomial, you get a graph. It’s a nice smooth graph, and generally speaking
+
+34
+00:04:04,000 --> 00:04:09,000
+if you want to find a polynomial, you need to set up a sum of this type. The <i>a</i>’s over here
+
+35
+00:04:09,000 --> 00:04:18,000
+are coefficients, while the powers are right over there—<i>n</i>, <i>n − 1</i>, et cetera.
+
+36
+00:04:18,000 --> 00:04:24,000
+The highest power is called the degree of the polynomial. This polynomial over here
+
+37
+00:04:24,000 --> 00:04:36,000
+has coefficients 3, −1, 7 and 6, while the degree is 4 because you have <i>x</i>^4 over there.
+
+38
+00:04:36,000 --> 00:04:43,000
+In particular, linear functions have degree 1, quadratic functions have degree 2
+
+39
+00:04:43,000 --> 00:04:50,000
+and cubic functions have degree 3. You have this vast array of polynomials.
+
+40
+00:04:50,000 --> 00:04:56,000
+They are very simple to work with, but they are incredibly useful. You have linear, quadratic,
+
+41
+00:04:56,000 --> 00:05:01,000
+cubic polynomials, et cetera, which we encounter all the time in the course.
+
+42
+00:05:02,000 --> 00:05:09,000
+Okay. To go a step further, we can talk about rational functions. A rational function is
+
+43
+00:05:09,000 --> 00:05:14,000
+simply a quotient of two polynomials, the ratio of two polynomials.
+
+44
+00:05:14,000 --> 00:05:20,000
+If you divide a polynomial by another, you get a rational function. Perhaps the simplest kind
+
+45
+00:05:20,000 --> 00:05:24,000
+of rational function is the reciprocal function, which is 1/<i>x</i>. If you plot it,
+
+46
+00:05:24,000 --> 00:05:32,000
+you see the plot has got two pieces, and that’s because there is a problem at <i>x</i> = 0
+
+47
+00:05:32,000 --> 00:05:39,000
+where the function is not defined. You have a piece on the right and a piece on the left,
+
+48
+00:05:39,000 --> 00:05:43,000
+and together they give you the reciprocal function. In general, rational functions
+
+49
+00:05:43,000 --> 00:05:51,000
+are defined everywhere, except where the denominator is zero. Whenever the function <i>q</i> over here is zero,
+
+50
+00:05:51,000 --> 00:05:57,000
+you will find that there are problems and the rational function is not defined. But apart from that,
+
+51
+00:05:57,000 --> 00:06:02,000
+they are rather simple to work with, and again, they are incredibly useful in calculus.
+
+52
+00:06:04,000 --> 00:06:09,000
+Okay. Let’s go a step further and talk about algebraic functions. An algebraic function
+
+53
+00:06:09,000 --> 00:06:15,000
+is obtained by adding, subtracting, multiplying, dividing or taking roots,
+
+54
+00:06:15,000 --> 00:06:19,000
+and that of course is where all the trouble lies because when you take roots, you can have
+
+55
+00:06:19,000 --> 00:06:24,000
+you can have all kinds of things going wrong. Here’s a pretty complicated algebraic function.
+
+56
+00:06:24,000 --> 00:06:30,000
+It’s got square roots, cube roots, et cetera, in it, and if you plot it, there could be issues.
+
+57
+00:06:30,000 --> 00:06:36,000
+There is an issue over here at zero because of the denominator, and then the function may
+
+58
+00:06:36,000 --> 00:06:41,000
+not be defined on certain parts, so the domain is rather small typically,
+
+59
+00:06:41,000 --> 00:06:46,000
+and these algebraic functions come in a variety of shapes. Although they are interesting,
+
+60
+00:06:46,000 --> 00:06:52,000
+they are somewhat less easy to work with, and we will probably not use them a lot at the start.
+
+61
+00:06:52,000 --> 00:06:57,000
+Okay. Beyond algebraic functions, we then have the trigonometric functions, which of course
+
+62
+00:06:57,000 --> 00:07:03,000
+many of you might be familiar with. The sine, cosine, and tangent functions are
+
+63
+00:07:03,000 --> 00:07:08,000
+the trigonometric functions. Now, just a word of warning. In the Wolfram Language,
+
+64
+00:07:08,000 --> 00:07:18,000
+we always use the radian measure. If I say Sin[30], that’s not so good; you have to say Sin[π/6]
+
+65
+00:07:18,000 --> 00:07:22,000
+or Sin[30 Degree] when you really want the sine of 30 degrees. Then of course you get
+
+66
+00:07:22,000 --> 00:07:26,000
+Then of course you get the correct behavior. The 1/2’s over there came out because you used
+
+67
+00:07:26,000 --> 00:07:33,000
+the right notation and the right units. Keep in mind that you must always use the radian measure
+
+68
+00:07:33,000 --> 00:07:38,000
+when working in the Wolfram Language, or else you must say Degree like I have done over here.
+
+69
+00:07:38,000 --> 00:07:44,000
+Here are the first three plots for trig functions: sine, cosine and tangent.
+
+70
+00:07:45,000 --> 00:07:52,000
+Okay. You can see that they are all oscillating, both sine and cosine. Then the tangent function
+
+71
+00:07:52,000 --> 00:08:00,000
+has got these similarities because that’s where you have a problem: when you divide by zero,
+
+72
+00:08:00,000 --> 00:08:06,000
+the cosine function is zero, et cetera. Okay. Those are the sine, cosine and tangent functions,
+
+73
+00:08:06,000 --> 00:08:13,000
+and sine and cosine have a period of 2π, while the tangent has a period of π only.
+
+74
+00:08:13,000 --> 00:08:19,000
+They are repetitious and they have periods, but those periods depend upon the kind of function
+
+75
+00:08:19,000 --> 00:08:23,000
+you are working with. Of course you could have a Sin[2<i>x</i>], Sin[3<i>x</i>], et cetera,
+
+76
+00:08:23,000 --> 00:08:27,000
+to get faster and faster oscillations.
+
+77
+00:08:29,000 --> 00:08:35,000
+Okay. Now if you take a reciprocal of the trigonometric functions, then you get
+
+78
+00:08:35,000 --> 00:08:41,000
+cosecant, secant and cotangent, which are the reciprocal trigonometric functions.
+
+79
+00:08:41,000 --> 00:08:53,000
+Here are their graphs. What you see over here is that reciprocal graphs are right over there, and
+
+80
+00:08:53,000 --> 00:08:59,000
+the problem is that they are not defined wherever the corresponding trig function is 0.
+
+81
+00:08:59,000 --> 00:09:06,000
+For example, if sine happens to be zero at a point, then cosecant is not defined, et cetera,
+
+82
+00:09:06,000 --> 00:09:13,000
+so there are gaps in these functions which reflect the zeros of the underlying trigonometric function.
+
+83
+00:09:13,000 --> 00:09:19,000
+But they are also somewhat similar to trig functions in the sense that secant and cosecant have
+
+84
+00:09:19,000 --> 00:09:23,000
+got a period of 2π while cotangent has got a period of π.
+
+85
+00:09:23,000 --> 00:09:29,000
+These functions are quite useful in some parts of calculus.
+
+86
+00:09:29,000 --> 00:09:34,000
+Okay. Going a step further, we can now talk about the exponential functions,
+
+87
+00:09:34,000 --> 00:09:40,000
+which are of the form <i>a</i> raised to the power <i>x</i>, so now the exponent is variable.
+
+88
+00:09:40,000 --> 00:09:48,000
+For example, if we look at 2^<i>x</i>—that’s a case when the base <i>a</i> is greater than 1—
+
+89
+00:09:48,000 --> 00:09:55,000
+then you have an exponential growth function. Here’s a plot, and you can see quite clearly
+
+90
+00:09:55,000 --> 00:10:02,000
+that it is growing quite fast. On the other hand, if you take number between 0 and 1 like 0.5,
+
+91
+00:10:02,000 --> 00:10:08,000
+then you get a decreasing function. But in any case, these functions always pass through
+
+92
+00:10:08,000 --> 00:10:17,000
+the point (0, 1) because <i>a</i>^0 = 1, as you all know from your study of indices in algebra.
+
+93
+00:10:18,000 --> 00:10:27,000
+Exponential functions are really useful for capturing growth on one hand and decay on the other.
+
+94
+00:10:27,000 --> 00:10:32,000
+Things like our population might grow exponentially, and certain other things
+
+95
+00:10:32,000 --> 00:10:38,000
+might decay exponentially, but together, the exponential functions of different types give you
+
+96
+00:10:38,000 --> 00:10:42,000
+a powerful way of expressing rates of growth or decay in calculus.
+
+97
+00:10:42,000 --> 00:10:46,000
+They are incredibly important and you should know them well.
+
+98
+00:10:47,000 --> 00:10:56,000
+Finally, we’ll talk about the logarithmic functions, which are defined as log[<i>x</i>] to base <i>a</i>,
+
+99
+00:10:56,000 --> 00:11:04,000
+and they are the inverses of the exponential functions. Here is a graph of Log[<i>x</i>].
+
+100
+00:11:04,000 --> 00:11:09,000
+Keep in mind that in the Wolfram Language, the base is set to <i>e</i>,
+
+101
+00:11:09,000 --> 00:11:16,000
+but if you want a different base, then you would say that over here and you would get back Log[<i>x</i>],
+
+102
+00:11:16,000 --> 00:11:23,000
+but now to the base 1/4. They are very similar in some sense to the exponential functions
+
+103
+00:11:23,000 --> 00:11:29,000
+because they are in fact the inverses. The logarithmic functions are quite useful, but as you can see,
+
+104
+00:11:29,000 --> 00:11:35,000
+they grow much slower than the exponentials and they have their own uses.
+
+105
+00:11:35,000 --> 00:11:42,000
+Okay. We’ve talked about a fairly wide variety of elementary functions,
+
+106
+00:11:42,000 --> 00:11:47,000
+and to summarize today’s lesson, we have many different forms of functions
+
+107
+00:11:47,000 --> 00:11:52,000
+and many different kinds of graphs studied today. You can have linear functions,
+
+108
+00:11:52,000 --> 00:12:01,000
+polynomial functions, rational functions, trig functions, et cetera, and together they already required
+
+109
+00:12:01,000 --> 00:12:05,000
+for studying calculus in this course, for the most part.
+
+110
+00:12:05,000 --> 00:12:11,000
+Okay. We are basically done with today’s lesson. In the next lesson we will cover limits,
+
+111
+00:12:11,000 --> 00:12:17,000
+so you really start doing calculus in this course next time. But before doing that,
+
+112
+00:12:17,000 --> 00:12:23,000
+do look at today’s lesson in the notebook that’s supplied to you, look at the accompanying exercises,
+
+113
+00:12:23,000 --> 00:12:28,000
+go over them. You can only learn mathematics by doing, so spend some time reviewing,
+
+114
+00:12:28,000 --> 00:12:34,000
+solve the exercises, et cetera, and you should be in good shape to join me next time for Lesson 4.
+
+115
+00:12:34,000 --> 00:12:39,000
+Thank you very much. I hope you enjoyed today’s lesson. I’ll see you next time.
+
