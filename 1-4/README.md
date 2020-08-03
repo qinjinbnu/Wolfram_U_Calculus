@@ -24,3 +24,17 @@
 
 “The context of the problem is everything.
 问题的实质是一切。”
+
+## 第三个视频过程中出现的问题
+
+第5行，“It’s quite puzzling, the number of functions you might see at any one time.”
+
+我翻译为：函数的数目多得令人眼花缭乱。
+
+第71行：
+
+71
+00:07:52,000 --> 00:08:00,000
+has got these similarities because that’s where you have a problem: when you divide by zero,
+
+我彻底不会翻这个，因为上下文看起来非常奇怪
