@@ -1,0 +1,412 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Problem Session 3 of this introduction to calculus with Wolfram U.
+
+2
+00:00:07,000 --> 00:00:15,000
+The topic for this session is special derivatives, and what we’ll do is to take up several examples
+
+3
+00:00:15,000 --> 00:00:20,000
+to review the rules for derivatives and also get some extra practice on this topic.
+
+4
+00:00:20,000 --> 00:00:28,000
+Let’s begin with problem number 1, which says compute the derivative of 7<i>x</i>^3 − 2.
+
+5
+00:00:28,000 --> 00:00:33,000
+Now that is a polynomial, so things are quite simple. What you do is you apply
+
+6
+00:00:33,000 --> 00:00:43,000
+the power rule to 7<i>x</i>^3, and the answer is 21<i>x</i>^2. That’s a constant, −2, so the derivative is 0.
+
+7
+00:00:43,000 --> 00:00:48,000
+You can confirm the answer with D and check that it’s actually 21<i>x</i>^2.
+
+8
+00:00:49,000 --> 00:00:55,000
+Here is a plot of the function and the derivative. The blue part is the function
+
+9
+00:00:55,000 --> 00:01:00,000
+and the orange part is the derivative. You can see that the function is increasing,
+
+10
+00:01:00,000 --> 00:01:05,000
+so the derivative stays non-negative all the time.
+
+11
+00:01:06,000 --> 00:01:15,000
+Problem number 2 says compute the derivative of Sin[<i>x</i>]/<i>x</i>^2. Now this requires the quotient rule,
+
+12
+00:01:15,000 --> 00:01:22,000
+so what you do is you do denominator times derivative of numerator minus numerator
+
+13
+00:01:22,000 --> 00:01:27,000
+times derivative of denominator over denominator squared. When you do that,
+
+14
+00:01:27,000 --> 00:01:36,000
+you get (<i>x</i>Cos[<i>x</i>] − 2Sin[<i>x</i>])/<i>x</i>^3. You can check the answer with D, and you get back
+
+15
+00:01:36,000 --> 00:01:41,000
+almost the same thing, except that you might need to take an <i>x</i> here to get both of them
+
+16
+00:01:41,000 --> 00:01:49,000
+to agree exactly. Here’s a plot of the function and its derivative. Let’s go on to number 3.
+
+17
+00:01:49,000 --> 00:02:01,000
+It says find the derivative of <i>x</i>Sec[<i>x</i>] − 2<i>x</i>^2. Now for the first term over here, <i>x</i>Sec[<i>x</i>],
+
+18
+00:02:01,000 --> 00:02:05,000
+what you do is you work out the derivative with the product rule, so you get
+
+19
+00:02:05,000 --> 00:02:16,000
+<i>x</i> * Sec[<i>x</i>]' + Sec[<i>x</i>] * (<i>x</i>)', and that’s the answer over here. You can check the answer with D.
+
+20
+00:02:19,000 --> 00:02:28,000
+And then for the 2<i>x</i>^2, the derivative is 4<i>x</i> by the power rule. Then you combine them with
+
+21
+00:02:28,000 --> 00:02:34,000
+the difference rule, and you get the answer. You can confirm that with D to check that it’s correct,
+
+22
+00:02:34,000 --> 00:02:41,000
+and finally, here is a plot of the function and its derivative.
+
+23
+00:02:43,000 --> 00:02:49,000
+On to number 4, which says compute the derivative of √Csc(<i>x</i>).
+
+24
+00:02:49,000 --> 00:02:54,000
+Over here apply the chain rule, which says that you have the derivative being
+
+25
+00:02:54,000 --> 00:03:10,000
+1/2 * Csc(<i>x</i>)^(−1/2) * Csc(<i>x</i>)'. You do a bit of work and you get back −1/2Cot[<i>x</i>]√Csc[<i>x</i>].
+
+26
+00:03:10,000 --> 00:03:14,000
+You can check the answer with D, and you get back almost the same thing except that
+
+27
+00:03:14,000 --> 00:03:24,000
+D has simplified a bit more and replaced the cotangent over here by cosine over sine. You can then
+
+28
+00:03:24,000 --> 00:03:31,000
+plot the derivative and the function and get this nice visual for the whole problem.
+
+29
+00:03:33,000 --> 00:03:43,000
+Okay. On to number 5, which says find the derivative of 4 * (3)√6 − Sin[5<i>x</i>]. This is a composition,
+
+30
+00:03:43,000 --> 00:03:57,000
+so you need to be a bit careful. What you do is you do constant 4 * 1/3(6 − Sin[5<i>x</i>])^(−2/3).
+
+31
+00:03:57,000 --> 00:04:08,000
+That’s 1 − 1/3^−1, and then you get the derivative over here of 6 − Sin[5<i>x</i>]', which is −5Cos[5<i>x</i>].
+
+32
+00:04:08,000 --> 00:04:16,000
+That’s the final answer over here. You can check it with D, and you get back the same result.
+
+33
+00:04:16,000 --> 00:04:23,000
+Then you can plot the function derivative and get back a plot of the whole problem.
+
+34
+00:04:25,000 --> 00:04:32,000
+Okay. On to number 6, which says find the second derivative—so this time,
+
+35
+00:04:32,000 --> 00:04:41,000
+it’s the second derivative of this quotient. It’s a quotient, (2<i>x</i> + 3)/(8<i>x</i> − 1), so you apply
+
+36
+00:04:41,000 --> 00:04:47,000
+the quotient rule. It’s, again, denominator times derivative of numerator minus numerator
+
+37
+00:04:47,000 --> 00:04:53,000
+times derivative of denominator, and you get back a result. You can check the answer with D
+
+38
+00:04:53,000 --> 00:05:03,000
+for the first derivative. Then apply the power rule to the answer and you get back the second derivative.
+
+39
+00:05:03,000 --> 00:05:10,000
+You can confirm the answer with D and check that you get the same result.
+
+40
+00:05:11,000 --> 00:05:16,000
+Here’s a plot of the function and its derivative.
+
+41
+00:05:18,000 --> 00:05:26,000
+Let’s go on to number 7, which says find the second derivative of this product.
+
+42
+00:05:26,000 --> 00:05:33,000
+You apply the product rule: first function times derivative of second plus second function
+
+43
+00:05:33,000 --> 00:05:41,000
+times derivative of first. Get the answer with D to check. Then you need to apply two rules:
+
+44
+00:05:41,000 --> 00:05:49,000
+the product rule over here for each of these parts separately, and then the sum rule.
+
+45
+00:05:49,000 --> 00:05:56,000
+After we do some work, you get the answer over here by hand. You can confirm with D
+
+46
+00:05:56,000 --> 00:06:06,000
+and check that the answer is correct, and then finally, we plot the function and derivative.
+
+47
+00:06:06,000 --> 00:06:10,000
+Notice we are talking about the second derivative over here, and it turns out that in this case,
+
+48
+00:06:10,000 --> 00:06:15,000
+this second derivative is all non-negative.
+
+49
+00:06:17,000 --> 00:06:26,000
+Okay. Let’s go on now to problem number 8, which says find the third derivative of Sin[<i>x</i>^2].
+
+50
+00:06:26,000 --> 00:06:35,000
+You apply the chain rule to get the first derivative. That’s going to be Cos[<i>x</i>^2] * 2<i>x</i>.
+
+51
+00:06:35,000 --> 00:06:43,000
+That’s from the <i>x</i>^2 over here. Check the answer with D. Apply the chain rule
+
+52
+00:06:43,000 --> 00:06:50,000
+and the product rule over here, so you get 2<i>x</i> times the derivative of the second factor, et cetera,
+
+53
+00:06:50,000 --> 00:07:01,000
+and check the answer with D. Then finally you can apply three rules—the chain rule,
+
+54
+00:07:01,000 --> 00:07:09,000
+the product rule and the difference rule—to find the third derivative, and confirm the answer with D.
+
+55
+00:07:12,000 --> 00:07:16,000
+Here’s a plot of the function and the third derivative.
+
+56
+00:07:18,000 --> 00:07:27,000
+On to problem number 9, which says find the third derivative of 4<i>x</i>^3 − 1/<i>x</i>.
+
+57
+00:07:27,000 --> 00:07:34,000
+For the first derivative you can apply the power rule and the difference rule, so you get 12<i>x</i>^2
+
+58
+00:07:34,000 --> 00:07:43,000
+from the 4<i>x</i>^3 and 1/<i>x</i>^2 from the −1/<i>x</i>. Check the answer. Apply the same rule again,
+
+59
+00:07:43,000 --> 00:07:51,000
+so you get 24<i>x</i> − 2/<i>x</i>^3. Check the answer with D. Then find the third derivative,
+
+60
+00:07:51,000 --> 00:07:58,000
+which would be 24 from here and plus 6/<i>x</i>^4 from there, and you get back
+
+61
+00:07:58,000 --> 00:08:07,000
+the same result from D. Finally you plot the function and the third derivative.
+
+62
+00:08:10,000 --> 00:08:19,000
+Okay. On to problem number 10. Now this is about the topic of implicit differentiation,
+
+63
+00:08:19,000 --> 00:08:30,000
+so keep in mind that the derivative of <i>y</i> is going to be <i>y</i>'. The equation is <i>y</i> Cot[<i>x</i>] = Cos[<i>y</i>]
+
+64
+00:08:30,000 --> 00:08:40,000
+and you want to find the derivative at (π/2, π/2), so <i>x</i> and <i>y</i> are both π/2. When you apply the rule,
+
+65
+00:08:40,000 --> 00:08:49,000
+you get <i>y</i> times the derivative of cotangent, which is −Csc[<i>x</i>]^2, plus Cot[<i>x</i>] times <i>y</i>',
+
+66
+00:08:49,000 --> 00:08:55,000
+and on the right-hand side you get −Sin[<i>y</i>] times <i>y</i>'. Check the answer with D.
+
+67
+00:08:55,000 --> 00:09:07,000
+Then you solve for <i>y</i>'[<i>x</i>] like I’ve done over here, and finally you plug in the value of <i>x</i> and <i>y</i>,
+
+68
+00:09:07,000 --> 00:09:17,000
+and you get back π/2 as the derivative at that point. Once we have the derivative,
+
+69
+00:09:17,000 --> 00:09:29,000
+you can compute the tangent line, <i>y</i> = π/2 + π/2(<i>x</i> − π/2). Plot the curve and the derivative,
+
+70
+00:09:29,000 --> 00:09:33,000
+and you get back this beautiful plot over here.
+
+71
+00:09:35,000 --> 00:09:42,000
+On to number 11, which says compute the derivative for this implicit function.
+
+72
+00:09:42,000 --> 00:09:54,000
+You have a <i>y</i>^2 over there, so you get 2<i>y</i> * <i>y</i>' = 6<i>x</i> − 1 for the derivative. Check that with D.
+
+73
+00:09:54,000 --> 00:10:06,000
+Solve for <i>y</i>'. You get back the answer. Plug in the values 1/2 and 1/2 for <i>x</i> and <i>y</i>, and you get back 2 as
+
+74
+00:10:06,000 --> 00:10:12,000
+the slope of the derivative. You plot the tangent line like I’ve done over here,
+
+75
+00:10:12,000 --> 00:10:17,000
+and you get back the curve and the tangent line at the given point.
+
+76
+00:10:19,000 --> 00:10:29,000
+Okay. On to number 12, which says find the normal line to this curve at (1, 1).
+
+77
+00:10:31,000 --> 00:10:38,000
+The normal line is perpendicular to the tangent line, so you must first find the slope of the tangent
+
+78
+00:10:38,000 --> 00:10:43,000
+and then work out the slope of the normal. If you find the derivative over here,
+
+79
+00:10:43,000 --> 00:10:53,000
+you get 8<i>x</i> + 4<i>y</i> + 4<i>xy</i>'—that’s from this middle term over here—plus 2<i>y</i> * <i>y</i>' = 0.
+
+80
+00:10:53,000 --> 00:11:05,000
+Check with D. Solve for <i>y</i>'. You notice that you get back this −2, and we’ll see why this is
+
+81
+00:11:05,000 --> 00:11:10,000
+the case in a minute. The slope of the normal line will of course be 1/2 because it is
+
+82
+00:11:10,000 --> 00:11:18,000
+perpendicular to the tangent line. That’s the equation of the normal. Then you can plot the curve
+
+83
+00:11:18,000 --> 00:11:26,000
+and the normal, and in fact, this curve is just a pair of straight lines, and that’s why you have
+
+84
+00:11:26,000 --> 00:11:34,000
+a constant slope for the curve. The normal line of course is perpendicular to the curve,
+
+85
+00:11:34,000 --> 00:11:37,000
+so that’s the normal line.
+
+86
+00:11:39,000 --> 00:11:46,000
+Okay. On to number 13, which says find the second derivative for this implicit equation.
+
+87
+00:11:46,000 --> 00:11:54,000
+If you find the derivative, you get 2<i>y</i> * <i>y</i>' − 2<i>x</i> = 0. Check the answer with D.
+
+88
+00:11:54,000 --> 00:12:04,000
+Solve for the derivative, and you get back <i>x</i>/<i>y</i> basically. Now work out the second derivative
+
+89
+00:12:04,000 --> 00:12:11,000
+starting from the equation we got earlier on over here, and you get back a simple result.
+
+90
+00:12:11,000 --> 00:12:24,000
+You get back 2<i>y</i> * <i>y</i>'' + (<i>y</i>')^2 − 2 = 0. Check with D. Solve for <i>y</i>'', and then you notice that
+
+91
+00:12:24,000 --> 00:12:33,000
+you still have a <i>y</i>' inside the answer, so you plug in <i>y</i>'[<i>x</i>] equal to <i>x</i> or <i>y</i> like I have done over here,
+
+92
+00:12:33,000 --> 00:12:37,000
+and you get back the final result for <i>y</i>''.
+
+93
+00:12:40,000 --> 00:12:50,000
+And finally, we go on to number 14, which says find the second derivative of this implicit equation.
+
+94
+00:12:50,000 --> 00:13:00,000
+We’ve got Sin[<i>y</i>] = Tan[<i>x</i>]. Work out the derivative on both the sides. Check the answer with D.
+
+95
+00:13:02,000 --> 00:13:11,000
+Solve for <i>y</i>'. Take a second derivative starting from the equation over here, so we get
+
+96
+00:13:11,000 --> 00:13:22,000
+the expression over there. Check the answer with D again. Solve for <i>y</i>''.
+
+97
+00:13:22,000 --> 00:13:32,000
+Then you still have a <i>y</i>'[<i>x</i>] inside the result, so you plug in <i>y</i>'[<i>x</i>] as Sec[<i>x</i>]^2Sec[<i>y</i>]
+
+98
+00:13:32,000 --> 00:13:36,000
+and you get back the result for the second derivative.
+
+99
+00:13:38,000 --> 00:13:43,000
+This brings me to the end of today’s problem session. I hope you have learned something
+
+100
+00:13:43,000 --> 00:13:51,000
+about how to compute derivatives of all kinds. We’ll then go on to Lesson 13,
+
+101
+00:13:51,000 --> 00:13:55,000
+which is about rates of change, but before we do that, do make sure that you understand
+
+102
+00:13:55,000 --> 00:14:01,000
+today’s problem session quite well and do practice a lot before we go on to the next topic.
+
+103
+00:14:01,000 --> 00:14:03,000
+Thank you. I’ll stop over here.
+

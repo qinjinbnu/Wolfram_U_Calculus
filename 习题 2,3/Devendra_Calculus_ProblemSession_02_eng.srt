@@ -1,0 +1,456 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Problem Session 2 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:12,000
+Our topic for today is derivatives and continuity. Now being a problem session,
+
+3
+00:00:12,000 --> 00:00:16,000
+we’ll discuss a few problems, but the point will be to try to show you how to solve
+
+4
+00:00:16,000 --> 00:00:21,000
+real problems in calculus, and also how to review the concepts that you’ve learned earlier
+
+5
+00:00:21,000 --> 00:00:28,000
+by looking at real examples. Let’s begin with the first problem for today, and that says
+
+6
+00:00:28,000 --> 00:00:37,000
+find the limit of <i>x</i> * Sin[<i>x</i>] + Cos[<i>x</i>] as <i>x</i> goes to π. Now keep in mind that <i>x</i> is continuous
+
+7
+00:00:37,000 --> 00:00:42,000
+and so is Sin[<i>x</i>] and so is Cos[<i>x</i>], so the entire expression over here is continuous,
+
+8
+00:00:42,000 --> 00:00:48,000
+and hence what you can do is you can simply plug in the value π into it. If you do that,
+
+9
+00:00:48,000 --> 00:00:54,000
+then the answer is −1. You expect that the limit is going to be −1, and you can compute the limit
+
+10
+00:00:54,000 --> 00:01:04,000
+with the Limit function and get just the same answer. Here’s a plot of the function around π,
+
+11
+00:01:04,000 --> 00:01:08,000
+and you see that the value is actually −1 around there.
+
+12
+00:01:09,000 --> 00:01:18,000
+Okay. Let’s go onto problem 2, which asks you to compute the limit of Sin[<i>x</i>^2 – 3<i>x</i>] as <I>x</i> approaches 3.
+
+13
+00:01:18,000 --> 00:01:24,000
+Now the point is that sine is a continuous function, so you can basically take the limit
+
+14
+00:01:24,000 --> 00:01:31,000
+inside the bracket over here and work out that simple limit, which is just 9 – 9, so that’s 0.
+
+15
+00:01:31,000 --> 00:01:38,000
+You expect the limit is going to be 0 for the entire expression, and you can confirm that with Limit
+
+16
+00:01:38,000 --> 00:01:45,000
+and get back the same answer, 0. Here is a plot, and the plot shows you
+
+17
+00:01:45,000 --> 00:01:51,000
+that indeed the limit is 0 at <i>x</i> = 3.
+
+18
+00:01:53,000 --> 00:01:59,000
+Okay. Problem 3 asks you to find the limit as <i>x</i> approaches 9 of this function over here.
+
+19
+00:01:59,000 --> 00:02:05,000
+Now the point is that when <i>x</i> is 9, we have an issue because the denominator becomes 0 at <i>x</i> = 9
+
+20
+00:02:05,000 --> 00:02:12,000
+because that’s 81 − 81. That’s 0, so you can not evaluate the limit that the quotient law as given to you.
+
+21
+00:02:12,000 --> 00:02:19,000
+But what you can do is to try and cancel a common factor by first multiplying the top and the bottom
+
+22
+00:02:19,000 --> 00:02:26,000
+by 3 + √<i>x</i>, and if we do that, you see that we now have the required factor 9 – <i>x</i>,
+
+23
+00:02:26,000 --> 00:02:33,000
+which cancels with the denominator, and if you do that, you can simplify. Then you get back
+
+24
+00:02:33,000 --> 00:02:40,000
+an expression which no longer has any problem with computing limits. If you now plug in <i>x</i> = 9,
+
+25
+00:02:40,000 --> 00:02:47,000
+you would expect to get 54 over here, so the answer is 1/54 for this limit.
+
+26
+00:02:47,000 --> 00:02:52,000
+That’s a bit difficult because you had to do some work to get to the answer,
+
+27
+00:02:52,000 --> 00:02:59,000
+but typically limits of rational functions or rational expressions are a bit more complicated.
+
+28
+00:03:00,000 --> 00:03:08,000
+Problem 4 asks you to show that there is a root of this expression over here between 2 and 3.
+
+29
+00:03:08,000 --> 00:03:14,000
+Now that should remind you of the intermediate value theorem, which says that
+
+30
+00:03:14,000 --> 00:03:20,000
+the if sign of the expression is different at the two ends, then you actually have a root in the middle.
+
+31
+00:03:20,000 --> 00:03:31,000
+If you compute the expression at 2 you get −5 point something, and at 3 you get a positive number.
+
+32
+00:03:31,000 --> 00:03:36,000
+You have a negative value at one end, a positive value at the other end, so there must be
+
+33
+00:03:36,000 --> 00:03:43,000
+a root in the interval 2 to 3. You can confirm that with Solve, and actually you compute the value,
+
+34
+00:03:43,000 --> 00:03:53,000
+which is about 2.39. Here’s the plot, and you can see the function does becomes 0 around 2.4,
+
+35
+00:03:53,000 --> 00:04:00,000
+so that agrees with the value given by Solve. Like we said earlier on, the intermediate value theorem
+
+36
+00:04:00,000 --> 00:04:06,000
+is a very powerful tool for identifying roots of functions.
+
+37
+00:04:08,000 --> 00:04:16,000
+Okay. Problem 5 says find the value of <i>a</i> which will make this piecewise expression continuous,
+
+38
+00:04:16,000 --> 00:04:24,000
+and clearly the only problem is at 1. Now what you need to do is to fit the value of <i>a</i>
+
+39
+00:04:24,000 --> 00:04:32,000
+so the function becomes continuous at 1. Now at 1, if you work out the function value it’s 3,
+
+40
+00:04:32,000 --> 00:04:40,000
+and the limit from the right-hand side is also 3 because if you plug in 1 over here,
+
+41
+00:04:40,000 --> 00:04:47,000
+you get back 3, so you need to fit the value of <i>a</i> so that the left-hand limit is 3 as well.
+
+42
+00:04:47,000 --> 00:04:54,000
+You can do that with the Solve function, and get <i>a</i> to be 6. Now once you do that,
+
+43
+00:04:54,000 --> 00:05:01,000
+then the function becomes 6<i>x</i> − 3 instead of 8<i>x</i> − 3 for <i>x</i> less than 1, and if you plot it now,
+
+44
+00:05:01,000 --> 00:05:06,000
+it looks nice and continuous—although it does have a corner over here—but there is
+
+45
+00:05:06,000 --> 00:05:16,000
+no problem with the continuity. <i>a</i> = 6 is required for making this expression continuous at 1.
+
+46
+00:05:18,000 --> 00:05:27,000
+Problem 6 says find the limit of (1/<i>x</i> – 1/3)/(<i>x</i> – 3). Now that’s just a derivative
+
+47
+00:05:27,000 --> 00:05:32,000
+because that’s like a difference quotient. You can work out the answer using D,
+
+48
+00:05:32,000 --> 00:05:39,000
+or you could work out the limit directly and get back the same answer.
+
+49
+00:05:39,000 --> 00:05:48,000
+Here is a plot which shows that in fact you do have a tangent line at this point over here.
+
+50
+00:05:50,000 --> 00:05:58,000
+Working the limit in this case could be done either by using D or by doing a limit calculation.
+
+51
+00:06:00,000 --> 00:06:08,000
+Okay. Problem number 7 says compute the left-hand derivative of this expression at 1.
+
+52
+00:06:08,000 --> 00:06:15,000
+First we set up the function <i>f</i>[<i>x</i>] with the given expression. You want to find the left-hand derivative,
+
+53
+00:06:15,000 --> 00:06:21,000
+so you can use DifferenceQuotient with the Direction option. You say FromBelow.
+
+54
+00:06:21,000 --> 00:06:28,000
+You want to go from the left at <i>x</i> = 1, and you get back the answer. Then what you can do is
+
+55
+00:06:28,000 --> 00:06:34,000
+you can use that answer, which is just like the slope, to work out the tangent line,
+
+56
+00:06:34,000 --> 00:06:39,000
+and you see that indeed you have a tangent line at the required point.
+
+57
+00:06:41,000 --> 00:06:47,000
+But notice that you have a problem at 1. This is just going to be the left-hand derivative.
+
+58
+00:06:50,000 --> 00:06:59,000
+Okay. Let’s go on now to find the derivative of this expression at 2. Now because you have
+
+59
+00:06:59,000 --> 00:07:04,000
+an absolute value, what you could do is analyze the expression a bit more
+
+60
+00:07:04,000 --> 00:07:10,000
+and say that because 2 is less than 3, so the expression becomes 4 * (−<i>x</i> + 3),
+
+61
+00:07:10,000 --> 00:07:18,000
+and then work out the derivative of that, which is just −4. Or you can simply use D itself
+
+62
+00:07:18,000 --> 00:07:26,000
+on the original function and get back just the same answer. What you can do finally is
+
+63
+00:07:26,000 --> 00:07:33,000
+to plot the derivative and original expression, the tangent line, and what you see over here is that
+
+64
+00:07:33,000 --> 00:07:39,000
+in fact you have a coincidence of tangent line with the function on the left, and that’s very typical of
+
+65
+00:07:39,000 --> 00:07:44,000
+of the absolute value function—namely, the tangent line will overlap the graph at some stage.
+
+66
+00:07:46,000 --> 00:07:51,000
+Okay. Problem number 9 says compute the values of <i>a</i> and <i>b</i> for which this function
+
+67
+00:07:51,000 --> 00:07:58,000
+becomes differentiable. Now that’s a much a harder problem because you need to check that
+
+68
+00:07:58,000 --> 00:08:03,000
+that you actually have the same left-hand and right-hand derivatives, and you also need to
+
+69
+00:08:03,000 --> 00:08:09,000
+some kind of continuity. Okay. We’re talking about derivatives. If you work out
+
+70
+00:08:09,000 --> 00:08:16,000
+the derivative on the left. That’s 3<i>x</i>^2 + <i>a</i>, so at 2, the answer is going to be 12 + <i>a</i>.
+
+71
+00:08:16,000 --> 00:08:24,000
+That must be equal to the derivative that’s over here, which is 2<i>bx</i> – 3, so that must be 4<i>b</i>.
+
+72
+00:08:26,000 --> 00:08:31,000
+If you work out the left-hand limits, then you see over here when you plug in 2, you get 8 + 2<i>a</i>,
+
+73
+00:08:31,000 --> 00:08:41,000
+and over there you get 4<i>b</i> – 3. Now both those must be satisfied for getting the values of <i>a</i> and <i>b</i>,
+
+74
+00:08:41,000 --> 00:08:50,000
+so you solve the system and you get back <i>a</i>  as 1 and <i>b</i> as 13/4. Once you’ve got those values,
+
+75
+00:08:50,000 --> 00:08:58,000
+you can then plot everything and check that in fact you have a nice smooth expression over here.
+
+76
+00:09:01,000 --> 00:09:09,000
+Okay. Let’s go on now to number 10, which says compute the tangent line of this function at 1.
+
+77
+00:09:09,000 --> 00:09:16,000
+Now to compute the tangent line, you first of all need to find a value of the function at 1.
+
+78
+00:09:16,000 --> 00:09:26,000
+You need to compute the slope at <i>x</i> = 1. You’ve got both those now. Then the tangent line
+
+79
+00:09:26,000 --> 00:09:34,000
+is <i>y</i> – <i>y</i>1 equal to slope times (<i>x</i> – <I>x</i>1). That’s the equation of the tangent line,
+
+80
+00:09:34,000 --> 00:09:43,000
+and then you can do that over here to get a plot. You’ve got a plot now which shows clearly
+
+81
+00:09:43,000 --> 00:09:47,000
+that we’ve got the right tangent line in this case.
+
+82
+00:09:50,000 --> 00:09:58,000
+Okay. Problem 11 says compute the normal line to a function at 4. Now the normal line,
+
+83
+00:09:58,000 --> 00:10:06,000
+keep in mind, is perpendicular to the tangent line. Of course you first find the value at 4.
+
+84
+00:10:08,000 --> 00:10:16,000
+Then you compute the derivative at 4. The answer is −10. Now −10 is the slope of the tangent line,
+
+85
+00:10:16,000 --> 00:10:23,000
+so the slope of the normal must be 1/10. Use that information to work out
+
+86
+00:10:23,000 --> 00:10:32,000
+the equation of the normal over here, and then finally we plot the original function
+
+87
+00:10:32,000 --> 00:10:40,000
+along with the normal line at 4. You do see that the normal line is perpendicular to
+
+88
+00:10:40,000 --> 00:10:47,000
+the curve at that point, and of course it’s perpendicular to the tangent line at that point.
+
+89
+00:10:49,000 --> 00:10:55,000
+Problem number 12 says that you’re given the position vector of a particle <i>s</i>[<i>t</i>]
+
+90
+00:10:55,000 --> 00:11:03,000
+and you want to find the acceleration of that particle at a certain time, namely, <i>t</i> = 3π/2.
+
+91
+00:11:03,000 --> 00:11:13,000
+Now the acceleration is the second derivative of the position, so you compute the second derivative.
+
+92
+00:11:13,000 --> 00:11:21,000
+That’s the shorthand for the second derivative of the position. Then you plug in the <i>t</i> as 3π/2,
+
+93
+00:11:21,000 --> 00:11:26,000
+and you get back the value. Then you can use that to actually plot both
+
+94
+00:11:26,000 --> 00:11:34,000
+the position and the acceleration, and that’s the plot of both those functions.
+
+95
+00:11:34,000 --> 00:11:40,000
+The accretion is the second time derivative of the position.
+
+96
+00:11:42,000 --> 00:11:48,000
+Problem number 13 says that you’re given a table of values, and from a table of values
+
+97
+00:11:48,000 --> 00:11:53,000
+for a function <i>f</i>[<i>x</i>], you want to compute the average rate of change of that function
+
+98
+00:11:53,000 --> 00:12:01,000
+over the range 6 to 12. Now the average rate simply means the slope of the secant line
+
+99
+00:12:01,000 --> 00:12:08,000
+between those two points, so you work it out. The values are 14 and 10 at those two points.
+
+100
+00:12:08,000 --> 00:12:16,000
+We will divide (14 – 10) by (12 – 6), and you get back the average rate of change.
+
+101
+00:12:16,000 --> 00:12:24,000
+Here’s a plot of the points in secant line. Of course secant line is not a very good approximation,
+
+102
+00:12:24,000 --> 00:12:29,000
+but often all that you have is a table of values.
+
+103
+00:12:32,000 --> 00:12:40,000
+And finally, problem 14, which says compute the instantaneous rate of change of <i>z</i>
+
+104
+00:12:40,000 --> 00:12:47,000
+with respect to <i>y</i> for this function over here when <i>y</i> is π. Now when we say
+
+105
+00:12:47,000 --> 00:12:54,000
+instantaneous rate of change, what we mean is the derivative. You simply work out D at that point.
+
+106
+00:12:54,000 --> 00:13:02,000
+That’s the instantaneous rate of change, and then using that, you can work out the tangent line.
+
+107
+00:13:02,000 --> 00:13:08,000
+When you do that, you actually see that you have the tangent line over here given by
+
+108
+00:13:08,000 --> 00:13:12,000
+the instantaneous rate of change as its slope.
+
+109
+00:13:14,000 --> 00:13:19,000
+To summarize, the key concept for this problem was that the instantaneous rate of change
+
+110
+00:13:19,000 --> 00:13:28,000
+is the slope of the tangent line at that point. This brings me to the end of today’s problem session.
+
+111
+00:13:28,000 --> 00:13:34,000
+I hope that you have benefited from the discussion. Do review the problems, and then in Lesson 9,
+
+112
+00:13:34,000 --> 00:13:38,000
+we’ll go on to talking about differentiation rules. But before doing that,
+
+113
+00:13:38,000 --> 00:13:44,000
+there is a small quiz for you to take. Do take Quiz 2, and then you’ll be ready for Lesson 9.
+
+114
+00:13:44,000 --> 00:13:49,000
+Thank you very much. I hope that you’ve enjoyed today’s lesson. I’ll stop over here.
+
