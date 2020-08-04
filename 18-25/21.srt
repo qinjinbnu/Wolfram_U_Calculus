@@ -1,42 +1,42 @@
 1
 00:00:00,000 --> 00:00:06,000
 Hello, and welcome to Lesson 21 of this introduction to calculus with Wolfram U.
-大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第21课。
+大家好 欢迎来到本次与沃尔夫兰大学合作的微积分入门第21课
 
 2
 00:00:06,000 --> 00:00:11,000
 The topic for this lesson is optimization.
-本节课的主题是优化。
+本节课的主题是优化
 
 3
 00:00:12,000 --> 00:00:15,000
 Let’s begin with a brief overview of the lesson.
-先来简单介绍一下本课的内容。
+先来简单介绍一下本课的内容
 
 4
 00:00:15,000 --> 00:00:20,000
 We’ve learned how to find extreme values—maxima and minima—earlier on,
-我们在前面已经学习了如何寻找极值--最大值和最小值。
+我们在前面已经学习了如何寻找极值--最大值和最小值
 
 5
 00:00:20,000 --> 00:00:24,000
 and those have been very useful in applications.
-而这些在应用中已经非常有用。
+而这些在应用中已经非常有用
 
 6
 00:00:24,000 --> 00:00:27,000
 Now we’ve also learned that those derivatives in maxima and minima
-现在我们也知道了，在最大值和最小值中的那些导数。
+现在我们也知道了 在最大值和最小值中的那些导数
 
 7
 00:00:27,000 --> 00:00:32,000
 can be used to do things like maximize profits or minimize costs,
-可以用来做利润最大化或成本最小化等事情。
+可以用来做利润最大化或成本最小化等事情
 
 8
 00:00:32,000 --> 00:00:36,000
 so they have quite a few very practical uses.
-所以它们有不少非常实用的用途。
+所以它们有不少非常实用的用途
 
 9
 00:00:36,000 --> 00:00:39,000
@@ -46,462 +46,463 @@ This lesson will continue the approach learned earlier on
 10
 00:00:39,000 --> 00:00:43,000
 to solve some more optimization problems.
-来解决一些更多的优化问题。
+来解决一些更多的优化问题
 
 11
 00:00:43,000 --> 00:00:46,000
 So it’s just a continuation of all the earlier work,
-所以这只是之前所有工作的延续。
+所以这只是之前所有工作的延续
 
 12
 00:00:46,000 --> 00:00:51,000
 but this time around, we’ll develop a way for solving optimization problems.
-但这一次，我们将开发一种解决优化问题的方法。
+但这一次 我们将开发一种解决优化问题的方法
 
 13
 00:00:51,000 --> 00:00:57,000
 We’ll set up a set of guidelines that should help us solve these problems in a systematic way.
-我们会建立一套准则，应该可以帮助我们系统地解决这些问题。
+我们会建立一套准则 应该可以帮助我们系统地解决这些问题
 
 14
 00:00:58,000 --> 00:01:00,000
 Okay. Here are those guidelines.
-好的，这是指导原则。
+好的 这是指导原则
 
 15
 00:01:00,000 --> 00:01:06,000
 Number one: make sure you understand the problem, perhaps by reading it more than once.
-第一：确保自己对问题的理解，也许要多看几遍。
+第一 确保自己对问题的理解 也许要多看几遍
 
 16
 00:01:06,000 --> 00:01:12,000
 Next make a picture to get an idea of what you need to do in the problem.
-接下来做一张图片，了解一下你需要做的问题。
+接下来做一张图来了解一下你需要做的问题
 
 17
 00:01:13,000 --> 00:01:20,000
 Next assign a symbol like <i>M</i> to the quantity that is being maximized or minimized,
-接下来给被最大化或最小化的量分配一个类似<i>M</i>的符号。
+接下来给被最大化或最小化的量分配一个类似 <i>M</i> 的符号
 
 18
 00:01:20,000 --> 00:01:25,000
 and of course do the same thing for all the other unknown quantities.
-当然，对于所有其他未知量也要做同样的事情。
+当然 对于所有其他未知量也要做同样的事情
 
 19
 00:01:26,000 --> 00:01:36,000
 Now use all the information to set up an expression for <i>M</i> in terms of all the other variables.
-现在，使用所有的信息来为<i>M</i>建立一个表达式，以所有其他变量为单位。
+现在 根据所有其他变量 使用所有的信息来为 <i>M</i> 建立一个表达式
 
 20
 00:01:36,000 --> 00:01:40,000
 Another difficulty is that if you have multiple symbols,
-另一个困难是，如果你有多个符号。
+另一个困难是 如果你有多个符号
 
 21
 00:01:40,000 --> 00:01:49,000
 then you will need to find relationships so that <i>M</i> is a function of just one variable <i>x</i>.
-那么你将需要找到关系，使<i>M</i>只是一个变量<i>x</i>的函数。
+那么你将需要找到关系 使 <i>M</i> 只是一个变量 <i>x</i> 的函数
 
 22
 00:01:49,000 --> 00:01:53,000
 After all, we’re doing single-variable calculus,
-毕竟，我们在做单变量微积分。
+毕竟 我们在做单变量微积分
 
 23
 00:01:53,000 --> 00:01:58,000
 so you must have just one variable <i>x</I> on which <i>M</i> depends.
-所以你必须只有一个变量<i>x</I>，而<i>M</i>取决于此。
+所以你必须只有一个关于变量 <i>x</I> 的函数 <i>M</i> 
 
 24
 00:01:59,000 --> 00:02:02,000
 One last thing is find the domain of <i>f</i>.
-最后一件事是找到<i>f</i>的域。
+最后一件事是找到 <i>f</i> 的值域
 
 25
 00:02:02,000 --> 00:02:07,000
 Find out where <i>f</i> is defined because that will tell you the interval
-找出定义<i>f</i>的地方，因为这将告诉你区间。
+找出定义 <i>f</i> 的地方 因为这将告诉你
+
 
 26
 00:02:07,000 --> 00:02:11,000
 on which you must find the maxima and minima.
-你必须在其上找到最大值和最小值。
+必须在其上找到最大值和最小值的区间
 
 27
 00:02:12,000 --> 00:02:16,000
 For the final step, you find the absolute maximum and minimum of <i>f</i>
-最后一步，你要找到<i>f</i>的绝对最大值和最小值。
+最后一步 你要找到 <i>f</i> 的绝对最大值和最小值
 
 28
 00:02:16,000 --> 00:02:20,000
 using all that you’ve learned in earlier lessons.
-利用你在前面的课程中学到的所有知识。
+利用你在前面的课程中学到的所有知识
 
 29
 00:02:21,000 --> 00:02:24,000
 Let’s begin with an example.
-我们先来举个例子。
+举个例子
 
 30
 00:02:24,000 --> 00:02:29,000
 A farmer has 3,600 feet of fencing,
-一个农民有3600英尺的围栏。
+一个农民有3600英尺的围栏
 
 31
 00:02:29,000 --> 00:02:34,000
 and this farmer wants to build a rectangular field that borders a river,
-而这个农夫想建一个长方形的田地，与河相邻。
+而这个农夫想建一个长方形的田地 与河相邻。
 
 32
 00:02:34,000 --> 00:02:39,000
 but he doesn’t want to put any fencing on the side touching the river.
-但他不想在触及河流的一侧设置任何围栏。
+但他不想在触及河流的一侧设置任何围栏
 
 33
 00:02:39,000 --> 00:02:44,000
 The question is find the dimensions of the field that maximize the area.
-本题是求面积最大的场的尺寸。
+本题是求面积最大的场的尺寸
 
 34
 00:02:45,000 --> 00:02:48,000
 Now for the first step, let’s do an animation.
-现在第一步，我们来做一个动画。
+现在第一步 我们来做一个动画
 
 35
 00:02:48,000 --> 00:02:54,000
 Here’s the area for particular values of <i>x</i> and <i>y</i>.
-这里是<i>x</i>和<i>y</i>的特定值的区域。
+这里是 <i>x</i> 和 <i>y</i> 的特定值的区域
 
 36
 00:02:54,000 --> 00:03:01,000
 Let’s begin by starting all the way to the left over here, and let’s play the animation.
-我们先从这边一直往左开始，我们来播放动画。
+我们先从这边一直往左开始 我们来播放动画
 
 37
 00:03:01,000 --> 00:03:07,000
 You see over here that initially the area increases, and then it starts to drop.
-你看这里，一开始面积增加，然后开始下降。
+你看这里 一开始面积增加 然后开始下降
 
 38
 00:03:07,000 --> 00:03:16,000
 In other words, your configuration can neither be too thin, nor can it be too tall.
-换句话说，你的配置既不能太薄，也不能太高。
+换句话说 你选的区域既不能太薄 也不能太高
 
 39
 00:03:16,000 --> 00:03:19,000
 In fact, here’s a picture you have of the problem.
-其实，这是你的问题图片。
+其实 这是问题的图片
 
 40
 00:03:19,000 --> 00:03:27,000
 You have the area over here depending upon <i>x</i> and <i>y</i>, the length and the width of the field.
-这里的面积取决于<i>x</i>和<i>y</i>，即场的长和宽。
+这里的面积取决于 <i>x</i> 和 <i>y</i> 即场的长和宽
 
 41
 00:03:29,000 --> 00:03:33,000
 Okay. Let’s now start solving the problem.
-好了，现在开始解决问题吧。我们现在开始解决问题吧。
+好了 现在开始解决问题吧 我们现在开始解决问题吧
 
 42
 00:03:33,000 --> 00:03:39,000
 The area is going to be <i>x</i> times <i>y</i>, which is the length times the width.
-面积将是<i>x</i>乘以<i>y</i>，即长乘以宽。
+面积将是 <i>x</i> 乘以 <i>y</i> 即长乘以宽
 
 43
 00:03:39,000 --> 00:03:43,000
 The problem is you have two variables, so you must eliminate one of them,
-问题是你有两个变量，所以你必须消除其中一个。
+问题是你有两个变量 所以你必须消除其中一个
 
 44
 00:03:43,000 --> 00:03:53,000
 but then you know 2<i>x</i> + <i>y</i> must be the length of the fencing available—after all, <i>y</i> occurs only once.
-但您知道2<i>x</i>+<i>y</i>一定是可用的围栏长度--毕竟<i>y</i>只出现一次。
+但您知道 2<i>x</i>+<i>y</i> 一定是可用的围栏长度 毕竟 <i>y</i> 只出现一次
 
 45
 00:03:53,000 --> 00:03:59,000
 Replace <i>y</i> by an expression involving <i>x</i>, and then the area depends only on one variable, <i>x</i>.
-用一个涉及<i>x</i>的表达式代替<i>y</i>，那么面积就只取决于一个变量，<i>x</i>。
+用一个关于 <i>x</i> 的表达式代替 <i>y</i> 那么面积就只取决于一个变量 <i>x</i>
 
 46
 00:04:00,000 --> 00:04:05,000
 Now the point is that you cannot have the value of <i>x</i> exceeding 1,800
-现在的问题是，你不能让<i>x</i>的值超过1,800。
+现在的问题是 你不能让 <i>x</i> 的值超过1,800
 
 47
 00:04:05,000 --> 00:04:11,000
 because otherwise the area would be less than 0 because that factor becomes negative.
-因为如果不这样做，面积就会小于0，因为这个系数变成了负数。
+因为如果不这样做 面积就会小于 这个系数变成了负数
 
 48
 00:04:11,000 --> 00:04:16,000
 So the domain of the function is from 0 to 1,800.
-所以函数的域是从0到1800。
+所以函数的域是从0到1800
 
 49
 00:04:17,000 --> 00:04:23,000
 Then finally, let’s use the closed interval method like I’m doing over here
-最后，让我们使用封闭区间法，就像我在这里做的那样。
+最后让我们使用封闭区间法 就像我在这里做的那样
 
 50
 00:04:23,000 --> 00:04:33,000
 to find the critical points, and then here is the area at that value of <i>x</i>.
-找到临界点，然后这里是该值<i>x</i>的区域。
+找到临界点 然后这里是值 <i>x</i> 的区域
 
 51
 00:04:33,000 --> 00:04:36,000
 Another point is that you only have a single critical point,
-另一点是，你只有一个关键点。
+另一点是 你只有一个临界点
 
 52
 00:04:36,000 --> 00:04:41,000
 and at the end points you have either a 0 area, which makes no sense,
-而在终端点，你要么有一个0的区域，这没有意义。
+而在终点 你要也么有一个面积为 0 的区域 这无意义的
 
 53
 00:04:41,000 --> 00:04:48,000
 or you have this maximum area over here, so you have a maximum at this value of <i>x</i> over here.
-或者你有这个最大的面积在这里，所以你有一个最大的值<i>x</i>在这里。
+或者在这里你有这个最大的面积 所以在这里你有一个最大的值 <i>x</i>
 
 54
 00:04:48,000 --> 00:04:55,000
 So the rectangle should be 900 feet long and 1,800 feet wide.
-所以长方形应该是900英尺长，1800英尺宽。
+所以长方形应该是900英尺长 1800英尺宽
 
 55
 00:04:57,000 --> 00:05:02,000
 Okay. Before going on, we need to talk a little bit about absolute extreme values.
-好了，在继续之前，我们需要先说一下绝对极值。
+好了在继续之前 我们需要先说一下绝对极值
 
 56
 00:05:02,000 --> 00:05:06,000
 Earlier on, we mostly talked about local extreme values.
-前面我们主要讲的是地方极值。
+前面我们主要讲的是局部极值
 
 57
 00:05:06,000 --> 00:05:13,000
 The point is that if you have a critical number <i>c</i> for a function and you find that the derivative is,
-关键是，如果你有一个函数的临界数<i>c</i>，你发现导数是：。
+关键是 如果你有一个函数的临界数 <i>c</i> 你发现导数是
 
 58
 00:05:13,000 --> 00:05:23,000
 let’s say, positive to the left of it for all values and negative to the right of it for all values,
-比方说，在它的左边为正值，在它的右边为负值。
+比方说 在它的左边为正值 在它的右边为负值
 
 59
 00:05:23,000 --> 00:05:29,000
 then that value is actually an absolute maximum for the function.
-那么这个值实际上是函数的绝对最大值。
+那么这个值实际上是函数的绝对最大值
 
 60
 00:05:29,000 --> 00:05:35,000
 In just the same way, if you have a value <i>c</i> for which the derivative is
-同样地，如果你有一个值<i>c</i>，其导数是
+同样地 如果你有一个值 <i>c</i> 其导数是
 
 61
 00:05:35,000 --> 00:05:43,000
 negative for all values to the left and positive for all values to the right,
-左边的所有数值为负，右边的所有数值为正。
+左边的所有数值为负 右边的所有数值为正
 
 62
 00:05:43,000 --> 00:05:46,000
 then you have an absolute minimum.
-那么你有一个绝对的最低限度。
+那么你有一个绝对最小值
 
 63
 00:05:46,000 --> 00:05:52,000
 That’s just a slightly more general result than the first derivative test.
-这只是比第一种导数测试的结果略显笼统。
+这只是比第一种导数测试的结果略显笼统
 
 64
 00:05:52,000 --> 00:05:58,000
 We have tweaked that test slightly to find aboslute maxima and minima
-我们稍微调整了这个测试，以找到最大和最小值。
+我们稍微调整了这个测试 以找到绝对最大和最小值。
 
 65
 00:05:58,000 --> 00:06:02,000
 instead of local maxima and minima.
-而不是局部最大值和最小值。
+而不是局部最大值和最小值
 
 66
 00:06:02,000 --> 00:06:07,000
 As a very simple example, here’s <i>x</I>^2 with its derivative 2<i>x</i>.
-作为一个非常简单的例子，这里是<i>x</I>^2及其导数2<i>x</i>。
+作为一个非常简单的例子 这里是 <i>x</I>^2 及其导数 2<i>x</i>
 
 67
 00:06:07,000 --> 00:06:14,000
 You see over here that that’s the minimum, and to the left the derivative is negative,
-你看这里，那是最小值，左边的导数是负数。
+你看这里 那是最小值 左边的导数是负数
 
 68
 00:06:14,000 --> 00:06:21,000
 and to the right it’s positive for all values, so you actually have an absolute minimum over here.
-右边所有的值都是正数，所以这里实际上有一个绝对最小值。
+右边所有的值都是正数 所以这里实际上有一个绝对最小值 
 
 69
 00:06:22,000 --> 00:06:28,000
 As an application, now let’s take up the problem of making a cylindrical can
-作为一个应用，现在我们来讨论一下制作一个圆柱形罐头的问题。
+下面看一个应用 现在我们来讨论一下制作一个能装满 1 升 的圆柱形罐头的问题
 
 70
 00:06:28,000 --> 00:06:34,000
 that holds 1 liter of water, and you want to find the dimensions
-而你想找到的尺寸是什么？
+而你想找到的尺寸能够
 
 71
 00:06:34,000 --> 00:06:40,000
 that will minimize the total cost of plastic that’s used to make the can.
-这将最大限度地降低用于制造罐头的塑料的总成本。
+最大限度地降低用于制造罐头的塑料的总成本
 
 72
 00:06:40,000 --> 00:06:43,000
 Now if you want to minimize the cost of plastic,
-现在如果你想把塑料的成本降到最低。
+现在如果你想把塑料的成本降到最低
 
 73
 00:06:43,000 --> 00:06:49,000
 then the best way to do that is to minimize the surface area of the can.
-那么最好的办法就是尽量减少罐体的表面积。
+那么最好的办法就是尽量减少罐体的表面积
 
 74
 00:06:49,000 --> 00:06:52,000
 Here is the can itself.
-这里是罐头本身。
+这里是罐头本身
 
 75
 00:06:52,000 --> 00:06:56,000
 That’s the surface area <i>S</i>, the radius and the height.
-那就是表面积<i>S</i>，半径和高度。
+那就是表面积 <i>S</i> 半径和高度
 
 76
 00:06:57,000 --> 00:07:05,000
 The formula for the area is just the area of the two sides and the two bases,
-面积的计算公式只是两边和两边底的面积。
+面积的计算公式只是两边和两边底的面积
 
 77
 00:07:05,000 --> 00:07:11,000
 so that’s the total area. Now you want to eliminate <i>h</i>, let’s say,
-所以这就是总面积。现在你想消除<i>h</i>，比方说。
+所以这就是总面积 现在你想消除 <i>h</i> 比方说
 
 78
 00:07:11,000 --> 00:07:14,000
 so remember that the volume π<i>r</I>^2<i>h</i> is 1,000.
-所以记住体积π<i>r</I>^2<i>h</i>是1000。
+所以记住体积 π<i>r</I>^2<i>h</i> 是 1000
 
 79
 00:07:14,000 --> 00:07:22,000
 After all, you have 1 liter of water, so <i>h</I> is 1,000/(π<i>r</i>^2).
-毕竟，你有1升水，所以<i>h</I>是1,000/(π<i>r</i>^2)。
+毕竟 你有1升水 所以 <i>h</I> 是 1,000/(π<i>r</i>^2)
 
 80
 00:07:22,000 --> 00:07:29,000
 Having done that, we can now write the surface area in terms of just one variable <i>r</i>,
-这样，我们现在可以用一个变量<i>r</i>来表示表面积。
+这样 我们现在可以用一个变量 <i>r</i> 来表示表面积
 
 81
 00:07:29,000 --> 00:07:35,000
 and the domain is just from 0 all the way to ∞.
-而域只是从0一直到∞。
+而定义域只是从 0 一直到 ∞
 
 82
 00:07:35,000 --> 00:07:40,000
 In principle, you could have any value for <i>r</i>.
-原则上，你可以为<i>r</i>设置任何值。
+原则上 你可以为 <i>r</i> 设置任何值
 
 83
 00:07:41,000 --> 00:07:46,000
 Now the point is you cannot apply the closed interval method because the interval is infinite,
-现在的问题是你不能应用封闭区间法，因为区间是无限的。
+现在的问题是你不能应用封闭间隔法 因为间隔是无限的
 
 84
 00:07:46,000 --> 00:07:50,000
 so what we do is we first of all work out the critical numbers.
-所以我们要做的是首先要计算出关键的数字。
+所以我们要做的是首先要计算出临界值
 
 85
 00:07:50,000 --> 00:07:53,000
 There’s just one critical number, but then you note that
-只有一个关键数字，但你注意到
+只有一个临界值 但你注意到
 
 86
 00:07:53,000 --> 00:07:58,000
 to the left of that value you have the derivative being negative,
-在该值的左边，你的导数是负的。
+在该值的左边 你的导数是负的。
 
 87
 00:07:58,000 --> 00:08:04,000
 and to the right you have it being positive, so actually you have an absolute minimum.
-而在右边你有它是积极的，所以实际上你有一个绝对的最低限度。
+而在右边你有它是正的 所以实际上你有一个绝对最小值
 
 88
 00:08:04,000 --> 00:08:09,000
 Okay. Now with that radius, you can work out the height using the solution above,
-好了，现在有了这个半径，你就可以用上面的方法计算出高度了现在有了这个半径，你就可以用上面的方法计算出高度。
+好了 现在有了这个半径 你就可以用上面的方法计算出高度了
 
 89
 00:08:09,000 --> 00:08:17,000
 this 5.41926, and that says that the radius should be approximately 5.42
-这个5.41926，说明半径应该是5.42左右。
+这是 5.41926 说明半径应该是 5.42 左右
 
 90
 00:08:17,000 --> 00:08:21,000
 and the height should be approximately 10.84.
-且高度应在10.84左右。
+且高度应在 10.84 左右
 
 91
 00:08:23,000 --> 00:08:26,000
 Okay. Now a problem about distances.
-好吧，现在有个关于距离的问题。现在，一个关于距离的问题。
+好吧 现在有个关于距离的问题
 
 92
 00:08:26,000 --> 00:08:34,000
 You want to find the point on the parabola <i>y</i>^2 = 2<i>x</i> which is closest to the point (1, 32).
-你想在抛物线<i>y</i>^2=2<i>x</i>上找到离点(1，32)最近的一点。
+你想在抛物线 <i>y</i>^2=2<i>x</i> 上找到离点 (1，32) 最近的一点
 
 93
 00:08:34,000 --> 00:08:37,000
 That’s the distance formula.
-这就是距离公式。
+这就是距离公式
 
 94
 00:08:37,000 --> 00:08:43,000
 You have √(<i>x</I> – 1)^2 + (<i>y</i> – 32)^2 for that point.
-你有√(<i>x</I> - 1)^2 + (<i>y</i> - 32)^2的那个点。
+你有 √(<i>x</I> - 1)^2 + (<i>y</i> - 32)^2 的那个点
 
 95
 00:08:43,000 --> 00:08:49,000
 Because the point lies on the parabola, you have <i>x</i> = <i>y</i>^2/2 from here,
-因为点位于抛物线上，所以从这里有<i>x</i>=<i>y</i>^2/2。
+因为点位于抛物线上 所以从这里有 <i>x</i>=<i>y</i>^2/2
 
 96
 00:08:49,000 --> 00:08:52,000
 so you plug it back and you get a distance function.
-所以你把它插回去，就能得到一个距离函数。
+所以你把它加回去 就能得到一个距离函数
 
 97
 00:08:52,000 --> 00:08:56,000
 Now I won’t worry about the square root sign. That doesn’t matter.
-现在我不担心平方根符号了。那并不重要。
+现在我不担心平方根符号了 那并不重要
 
 98
 00:08:56,000 --> 00:09:02,000
 You work out the critical numbers, and you find that it’s just one critical number.
-你计算出临界数，发现只有一个临界数。
+你计算出临界值 发现只有一个临界值
 
 99
 00:09:02,000 --> 00:09:05,000
 If you look at the derivative, you actually see that
-如果你看一下导数，实际上你会发现
+如果你看一下导数 实际上你会发现
 
 100
 00:09:05,000 --> 00:09:11,000
 the derivative is going to be negative to the left of 4 and positive to the right of 4,
-导数在4的左边是负数，在4的右边是正数。
+导数在4的左边是负数 在4的右边是正数
 
 101
 00:09:11,000 --> 00:09:14,000
 so you actually have an absolute minimum.
-所以你实际上有一个绝对的最低限度。
+所以你实际上有一个绝对最小值
 
 102
 00:09:14,000 --> 00:09:22,000
