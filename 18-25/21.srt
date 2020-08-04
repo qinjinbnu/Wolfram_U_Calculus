@@ -507,67 +507,67 @@ so you actually have an absolute minimum.
 102
 00:09:14,000 --> 00:09:22,000
 The minimum value will occur when you are at (8, 4), and that’s the answer to the problem.
-当你在（8，4）时，会出现最小值，这就是问题的答案。
+当你在 （8，4） 时 会出现最小值 这就是问题的答案
 
 103
 00:09:24,000 --> 00:09:27,000
 Okay. Now on to a business example.
-好了，现在开始讲一个商业例子。现在来举个商业例子。
+好了 现在开始讲一个商业例子
 
 104
 00:09:27,000 --> 00:09:35,000
 Let’s say you have a store that sells 300 monitors a week at $200 each.
-比方说，你有一家商店，每周销售300台显示器，每台200元。
+比方说 你有一家商店 每周销售300台显示器 每台200元
 
 105
 00:09:35,000 --> 00:09:42,000
 Now the store finds that for each $10 rebate, of course the sales go up,
-现在店家发现，每返利10元，销量当然就上去了。
+现在店家发现 每返利10元销量当然就会增加
 
 106
 00:09:42,000 --> 00:09:48,000
 so the number of monitors increases by the number 30 in a week.
-所以一周内显示器的数量会增加30个。
+所以一周内显示器的数量会增加30个
 
 107
 00:09:49,000 --> 00:09:55,000
 Okay. The question is what are the demand function and the revenue function?
-好的。问题是需求函数和收入函数是什么？
+好的 我的问题是需求函数和收入函数是什么
 
 108
 00:09:55,000 --> 00:10:03,000
 You also want to find the rebate that the store should offer to maximize its revenue.
-你也要找到店铺应该提供的返利，使其收益最大化。
+你也要找到店铺应该提供多少返利 使其收益最大化
 
 109
 00:10:03,000 --> 00:10:07,000
 The demand function is just the price per unit, so that’s given over here.
-需求函数只是单位价格，所以在这边给出了。
+需求函数只是单位价格 所以在这边给出了
 
 110
 00:10:07,000 --> 00:10:16,000
 You have the base price 200 minus the discount that customers will get
-你的基本价格是200减去客户将得到的折扣。
+你的基本价格是 200 减去客户将得到的折扣
 
 111
 00:10:16,000 --> 00:10:20,000
 depending upon how many monitors are sold.
-取决于显示器的销售数量。
+取决于显示器的销售数量
 
 112
 00:10:20,000 --> 00:10:24,000
 The revenue function is just the total revenue.
-收入功能只是总收入。
+收入函数只是总收入
 
 113
 00:10:24,000 --> 00:10:27,000
 That’s the number of items times the price per item.
-那就是商品数量乘以每件商品的价格。
+那就是商品数量乘以每件商品的价格
 
 114
 00:10:27,000 --> 00:10:32,000
 To maximize revenue, you simply find its critical value, which is 450,
-要想实现收益最大化，你只要找到它的临界值，也就是450。
+要想实现收益最大化 你只要找到它的临界值 也就是 450
 
 115
 00:10:32,000 --> 00:10:38,000
