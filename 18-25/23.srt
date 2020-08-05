@@ -1,312 +1,312 @@
 1
 00:00:00,000 --> 00:00:07,000
 Hello, and welcome to Lesson 23 of this introduction to calculus with Wolfram U.
-大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第23课。
+大家好 欢迎来到本次与沃尔夫兰大学合作的微积分入门第23课
 
 2
 00:00:07,000 --> 00:00:10,000
 The topic for this lesson is Riemann sums.
-本节课的课题是黎曼和。
+本节课的课题是黎曼和
 
 3
 00:00:10,000 --> 00:00:14,000
 Let’s begin with a brief overview of the lesson.
-我们先来简单介绍一下本课的内容。
+我们先来简单介绍一下本课的内容
 
 4
 00:00:14,000 --> 00:00:19,000
 Basically there are two fundamental aspects of calculus.
-基本上，微积分有两个基本方面。
+基本上微积分有两个基本方面
 
 5
 00:00:19,000 --> 00:00:22,000
 The first aspect is differential calculus,
-第一个方面是微分计算。
+第一个方面是微分计算
 
 6
 00:00:22,000 --> 00:00:26,000
 and that’s what we’ve been talking about all the time so far.
-这也是我们一直在谈论的，到目前为止，所有的时间。
+这也是到目前为止我们一直在谈论的
 
 7
 00:00:26,000 --> 00:00:34,000
 Now the prime motivation over there is to find the slope of a curve at a point of the tangent line.
-现在那边的首要动机是求出曲线在切线某点的斜率。
+现在那边的首要动机是求出曲线在切线某点的斜率
 
 8
 00:00:34,000 --> 00:00:40,000
 Now the second aspect of calculus is the so-called integral calculus,
-现在微积分的第二个方面就是所谓的积分微积分。
+现在微积分的第二个方面就是所谓的积分微积分
 
 9
 00:00:40,000 --> 00:00:44,000
 and that is what we’ll cover from now on.
-这也是我们从现在开始要做的事情。
+这也是我们从现在开始要做的事情
 
 10
 00:00:44,000 --> 00:00:52,000
 Now the basic motivation, the prime motivation for this part of calculus is quite simple.
-现在基本的动机，这部分微积分的首要动机很简单。
+现在基本的动机 这部分微积分的首要动机很简单
 
 11
 00:00:52,000 --> 00:00:59,000
 Basically here is a plot of this function, and the problem is that
-基本上这里是这个函数的图，问题是...。
+基本上这里是这个函数的图 问题是
 
 12
 00:00:59,000 --> 00:01:04,000
 you’d like to find this area under the curve for the function.
-你想找到这个函数的曲线下面积。
+你想找到这个函数的曲线下面积
 
 13
 00:01:06,000 --> 00:01:09,000
 In this lesson, what we’ll do is we’ll devise a precise way
-在本课中，我们要做的是，我们将设计一个精确的方式
+在本课中我们要做的是 我们将设计一个精确的方式
 
 14
 00:01:09,000 --> 00:01:16,000
 of expressing this notion of area under the curve mathematically.
-曲线下的面积这一概念在数学上的表达。
+曲线下的面积这一概念在数学上的表达
 
 15
 00:01:17,000 --> 00:01:23,000
 Okay. Let’s begin with some review of your earlier work.
-好吧，我们先来回顾一下你之前的工作。我们先回顾一下你之前的工作。
+好吧 我们先来回顾一下您之前的工作
 
 16
 00:01:23,000 --> 00:01:29,000
 If you have a rectangle, then its area is length times width.
-如果你有一个矩形，那么它的面积就是长度乘以宽度。
+如果你有一个矩形 那么它的面积就是长度乘以宽度
 
 17
 00:01:30,000 --> 00:01:35,000
 On the other hand, if it were a triangle, then its area is base times height over 2.
-另一方面，如果它是一个三角形，那么它的面积就是基数乘以高度超过2。
+另一方面 如果它是一个三角形 那么它的面积就是底乘以高度除以 2
 
 18
 00:01:35,000 --> 00:01:42,000
 But if you have a general polygon, what you’d do is you’d break it up into triangles,
-但如果你有一个一般的多边形，你要做的是把它分解成三角形。
+但如果你有一个一般的多边形 你要做的是把它分解成三角形
 
 19
 00:01:42,000 --> 00:01:48,000
 then find the area of each one triangle and then add them all together.
-然后找出每一个三角形的面积，再把它们加在一起。
+然后找出每一个三角形的面积 再把它们加在一起
 
 20
 00:01:48,000 --> 00:01:53,000
 Now the area of a circle is a bit harder because it involves the number π,
-现在圆的面积有点难，因为它涉及到数字π。
+现在圆的面积有点难 因为它涉及到数字 π
 
 21
 00:01:53,000 --> 00:01:57,000
 but that’s straightforward to work with.
-但这是直接的工作。
+但这是直接的工作
 
 22
 00:01:57,000 --> 00:02:04,000
 The question now is what happens if you have a more general curve?
-现在的问题是，如果你有一条更一般的曲线会怎样？
+现在的问题是 如果你有一条更随机的曲线会怎样
 
 23
 00:02:04,000 --> 00:02:10,000
 Let’s say you have this parabola, and you want to find the area under the parabola.
-假设你有一条抛物线，你想找到抛物线下的面积。
+假设你有一条抛物线 你想找到抛物线下的面积
 
 24
 00:02:10,000 --> 00:02:12,000
 How do you work it out?
-你是怎么解决的？
+你怎么解决
 
 25
 00:02:13,000 --> 00:02:18,000
 To motivate our discussion, let’s recall the idea of the slope at a point.
-为了激发我们的讨论，让我们回顾一下某点的斜率的概念。
+为了激发我们的讨论 让我们回顾一下某点的斜率的概念
 
 26
 00:02:18,000 --> 00:02:23,000
 Let’s say if you have a differentiable function, then the slopes of
-比方说，如果你有一个可微分函数，那么斜率为
+比方说 如果你有一个可微分函数 那么斜率为
 
 27
 00:02:23,000 --> 00:02:28,000
 the secant lines at a point will eventually approach some value <i>m</i>,
-在某一点上的secant线最终会接近某个值<i>m</i>。
+在某一点上的割线最终会接近某个值 <i>m</i>
 
 28
 00:02:28,000 --> 00:02:33,000
 which is the slope of the tangent at that point.
-即该点的切线的斜率。
+即该点的切线的斜率
 
 29
 00:02:33,000 --> 00:02:36,000
 Here’s an example to illustrate that.
-这里有一个例子可以说明。
+这里有一个例子
 
 30
 00:02:36,000 --> 00:02:42,000
 You have a curve <i>x</i>^2 and you have a point (1, 1) on it,
-你有一条曲线<i>x</i>^2，上面有一个点（1，1）。
+你有一条曲线 <i>x</i>^2 上面有一个点 （1，1）
 
 31
 00:02:42,000 --> 00:02:46,000
 and you want to work out the slope at that point.
-而你要在这一点上计算出坡度。
+而你要在这一点上计算出坡度
 
 32
 00:02:46,000 --> 00:02:51,000
 At the moment, the slope is 3.618 for the secant,
-目前，秒速时时彩开奖走势图的斜率为3.618。
+目前 秒速时时彩开奖走势图的斜率为 3.618
 
 33
 00:02:51,000 --> 00:02:55,000
 but what I’ll do now is I’ll try and bring the point <i>Q</i> closer to <i>P</i>,
-但我现在要做的是，我将试着使<i>Q</i>点接近<i>P</i>。
+但我现在要做的是 我将试着使 <i>Q</i> 点接近 <i>P</i>
 
 34
 00:02:55,000 --> 00:02:59,000
 and as I bring it closer, the value of the slope
-当我把它拉近，斜率的值
+当我把它拉近 斜率的值
 
 35
 00:02:59,000 --> 00:03:05,000
 approaches the correct value, which is eventually 2.
-接近正确值，最终是2。
+接近正确值 最终是 2
 
 36
 00:03:06,000 --> 00:03:09,000
 That’s the idea of slope at a point.
-这就是一点上的坡度的概念。
+这就是一点上的斜率的概念
 
 37
 00:03:09,000 --> 00:03:14,000
 You take secant lines, and then you take the limit of those lines
-你把秒线，然后你把这些线的极限。
+你把割线 然后你把这些线的极限
 
 38
 00:03:14,000 --> 00:03:16,000
 as you approach the point.
-当你接近该点时。
+接近该点时
 
 39
 00:03:16,000 --> 00:03:20,000
 A similar idea can be used for areas; namely, break up the areas
-对于区域也可以采用类似的思路，即把区域打散
+对于区域也可以采用类似的思路 即把区域打散
 
 40
 00:03:20,000 --> 00:03:27,000
 into separate rectangles, and then you add up all those rectangle areas
-成单独的矩形，然后将所有这些矩形面积相加。
+成单独的矩形 然后将所有这些矩形面积相加
 
 41
 00:03:27,000 --> 00:03:31,000
 and then you get an approximate area for the region.
-然后你就可以得到该区域的大致面积。
+然后你就可以得到该区域的大致面积
 
 42
 00:03:31,000 --> 00:03:36,000
 For example, if you take the same curve and you break it up
-例如，如果你把同一条曲线拆开，你就会发现
+例如 如果你把同一条曲线拆开 你就会发现
 
 43
 00:03:36,000 --> 00:03:40,000
 into four rectangles over here, then you see that the area approximately,
-成四个长方形在这里，那么你看，面积大约。
+在这里拆分成成四个长方形 然后你看大概的面积
 
 44
 00:03:40,000 --> 00:03:43,000
 but of course a wide space tells you that
-但当然，广阔的空间告诉你
+但当然 广阔的空间告诉你
 
 45
 00:03:43,000 --> 00:03:46,000
 there is some error in the approximation.
-近似值有一定的误差。
+近似值有一定的误差
 
 46
 00:03:46,000 --> 00:03:50,000
 Now if you take more rectangles—let’s say you take 10 rectangles—
-现在如果你取更多的矩形--比方说你取10个矩形--就会有更多的矩形。
+现在如果你取更多的矩形 比方说你取 个矩形 就会有更多的矩形
 
 47
 00:03:50,000 --> 00:03:55,000
 you will get a better approximation, and then as you increase
-你会得到一个更好的近似值，然后随着你增加
+你会得到一个更好的近似值 然后随着你增加
 
 48
 00:03:55,000 --> 00:04:00,000
 the number of rectangles, you will get a better and better approximation, hopefully.
-矩形的数量，你会得到一个更好的和更好的近似值，希望。
+矩形的数量 你会得到一个更好的和更好的近似值
 
 49
 00:04:01,000 --> 00:04:06,000
 That’s the idea of area which we want to explore.
-这就是我们想要探索的区域理念。
+这就是我们想要探索的区域理念
 
 50
 00:04:06,000 --> 00:04:12,000
 Let’s begin now with a parabola again and try and work with rectangles
-现在我们再从抛物线开始，试着用长方形来进行处理
+现在我们再从抛物线开始 试着用长方形来进行处理
 
 51
 00:04:12,000 --> 00:04:19,000
 which have the top-left corner at the point on the curve.
-其中左上角为曲线上的点。
+其中左上角为曲线上的点
 
 52
 00:04:19,000 --> 00:04:23,000
 What you see here is that in this case, you actually have
-你在这里看到的是，在这种情况下，你实际上有。
+你在这里看到的是 在这种情况下 你实际上有
 
 53
 00:04:23,000 --> 00:04:30,000
 an underestimation of the total area, so the answer which you get is less than the total area.
-总面积的低估，所以你得到的答案是小于总面积的。
+低估的总面积 所以你得到的答案是小于总面积的。
 
 54
 00:04:30,000 --> 00:04:35,000
 For example,  in this case your corners are at 0, 0.2, et cetera,
-例如，在这种情况下，你的角在0，0.2，等等。
+例如 在这种情况下 你的角在 0 0.2 等等
 
 55
 00:04:35,000 --> 00:04:38,000
 and you can work out the area.
-你就可以计算出面积。
+你就可以计算出面积
 
 56
 00:04:38,000 --> 00:04:43,000
 Then you get back the answer, 0.21875.
-然后你会得到答案，0.21875。
+然后你会得到答案 0.21875
 
 57
 00:04:43,000 --> 00:04:46,000
 Those over here are just the function values.
-这边的只是函数值。
+这边的只是函数值
 
 58
 00:04:47,000 --> 00:04:52,000
 Okay. On the other hand, if you took the top-right corner for each rectangle,
-好吧。另一方面，如果你把每个矩形的右上角，
+另一方面 如果你看每个矩形的右上角
 
 59
 00:04:52,000 --> 00:04:57,000
 then you can see you’re going to overestimate the area under the curve,
-那么你可以看到你会高估曲线下的面积。
+那么你可以看到你会高估曲线下的面积
 
 60
 00:04:57,000 --> 00:05:02,000
 so in this case you get back the answer, 0.46875.
-所以在这种情况下，你得到的答案，0.46875。
+所以在这种情况下 你得到的答案 0.46875
 
 61
 00:05:02,000 --> 00:05:10,000
 It looks like the answer would lie somewhere between 0.21875 and 0.46875.
-看来答案应该在0.21875和0.46875之间。
+看来答案应该在 0.21875 和 0.46875 之间
 
 62
 00:05:10,000 --> 00:05:14,000
 That’s the conclusion from the earlier slide which I am repeating over here again.
-这就是前面幻灯片的结论，我在这里再重复一遍。
+这就是前面幻灯片的结论 我在这里再重复一遍
 
 63
 00:05:15,000 --> 00:05:20,000
@@ -316,187 +316,187 @@ What happens as you increase the number of rectangles?
 64
 00:05:20,000 --> 00:05:24,000
 Well, you see over here that as you have a larger and larger number
-嗯，你看这里，当你有一个越来越大的数量
+嗯 你看这里 当你有一个越来越大的数量
 
 65
 00:05:24,000 --> 00:05:30,000
 of rectangles, then the lower and the upper estimates become closer and closer,
-的矩形，那么下限和上限的估计就会越来越接近。
+的矩形 那么下限和上限的估计就会越来越接近
 
 66
 00:05:30,000 --> 00:05:34,000
 and they are almost identical eventually.
-而且它们最终几乎完全相同。
+而且它们最终几乎完全相同
 
 67
 00:05:35,000 --> 00:05:37,000
 The plots over here show you what’s happening over here.
-这边的剧情让你看到这边的情况。
+这边的剧情让你看到这边的情况
 
 68
 00:05:37,000 --> 00:05:41,000
 As you have a larger number of rectangles,
-由于你的矩形数量较多。
+由于你的矩形数量较多
 
 69
 00:05:41,000 --> 00:05:44,000
 you get a better and better approximation to the area,
-你会得到一个更好的和更好的近似的区域。
+你会得到一个更好的近似的区域
 
 70
 00:05:44,000 --> 00:05:48,000
 and finally it looks like you actually get the area.
-最后看来你真的得到了这个区域。
+最后看来你真的得到了这个区域
 
 71
 00:05:49,000 --> 00:05:53,000
 But that only happens when you take a limit.
-但这只有在你采取限制时才会发生。
+但这只有在你施加约束时才会发生
 
 72
 00:05:53,000 --> 00:05:58,000
 The area will approach 1/3, but that will only actually happen if you take a limit.
-面积会接近1/3，但这只有在你采取限制时才会真正发生。
+面积会接近 1/3 但这只有在你施加约束时才会真正发生
 
 73
 00:05:58,000 --> 00:06:05,000
 Here’s a required limit. 1/<i>n</i> is the width of each rectangle,
-这里有一个必要的限制。1/<i>n</i>是每个矩形的宽度。
+这里有一个必要的约束 1/<i>n</i> 是每个矩形的宽度
 
 74
 00:06:05,000 --> 00:06:09,000
 and that’s the functional value, the height.
-而这就是功能价值，高度。
+而这就是功能函数 高度。
 
 75
 00:06:09,000 --> 00:06:14,000
 The limit over here is 1/3—that’s the upper limit—and the lower limit
-这里的限制是1/3，这是上限，也是下限。
+这里的限制是 1/3 这是上限
 
 76
 00:06:14,000 --> 00:06:17,000
 would be to take the other end of the rectangle,
-将是取长方形的另一端。
+也是下限将是取长方形的另一端
 
 77
 00:06:17,000 --> 00:06:22,000
 and then you get back 1/3 as the answer in this case as well.
-然后在这种情况下，你也会得到1/3的答案。
+然后在这种情况下 你也会得到 1/3 的答案
 
 78
 00:06:24,000 --> 00:06:31,000
 Okay. Now to get a bit more general, I need to talk about so-called Riemann sums.
-好吧，现在说得更笼统一点。现在说得更笼统一点，我需要谈谈所谓的黎曼和。
+好吧 现在说得更笼统一点 我需要谈谈所谓的黎曼和。
 
 79
 00:06:31,000 --> 00:06:35,000
 Now this is a fairly difficult concept, so let me go slowly.
-现在这个概念相当难，让我慢慢说。
+现在这个概念相当难 让我慢慢说
 
 80
 00:06:35,000 --> 00:06:39,000
 Let’s say you have a general function <i>f</i>[<i>x</i>], not just a parabola,
-比方说，你有一个泛函<i>f</i>[<i>x</i>]，而不仅仅是一条抛物线。
+比方说 你有一个普通的函数 <i>f</i>[<i>x</i>] 而不仅仅是一条抛物线
 
 81
 00:06:39,000 --> 00:06:43,000
 and you want to work out the area under the curve between [<i>a</I>, <i>b</i>].
-你要计算[<i>a</I>, <i>b</i>]之间的曲线下面积。
+你要计算 [<i>a</I>, <i>b</i>] 之间的曲线下面积
 
 82
 00:06:43,000 --> 00:06:47,000
 What you do is you first break it up into <i>n</i> rectangles
-您要做的是首先将其分解成<i>n</i>个矩形。
+您要做的是首先将其分解成 <i>n</i> 个矩形
 
 83
 00:06:47,000 --> 00:06:51,000
 so each rectangle will have a width (<i>b</I> – <i>a</i>)/<i>n</i>.
-所以每个矩形的宽度为(<i>b</I>-<i>a</i>)/<i>n</i>。
+所以每个矩形的宽度为 (<i>b</I>-<i>a</i>)/<i>n</i>
 
 84
 00:06:52,000 --> 00:06:57,000
 This quantity is called Δ<i>x</i>. Δ means very small.
-这个量叫做Δ<i>x</i>。Δ的意思是非常小。
+这个量叫做 Δ<i>x</i> Δ的意思是非常小
 
 85
 00:06:57,000 --> 00:07:04,000
 Now you’ve broken up your interval [<i>a</i>, <i>b</i>] into <i>n</i> smaller intervals,
-现在您已经将您的区间[<i>a</i>，<i>b</i>]分解成<i>n</i>个较小的区间。
+现在您已经将您的区间 [<i>a</i>，<i>b</i>] 分解成 <i>n</i> 个较小的区间
 
 86
 00:07:04,000 --> 00:07:13,000
 [<i>x</i>0, <i>x</i>1], [<i>x</i>1, <i>x</i>2], et cetera, and the left endpoint is <i>a</i>, the right endpoint is <i>b</i>.
-[<i>x</i>0，<i>x</i>1]，[<i>x</i>1，<i>x</i>2]，等等，左端点为<i>a</i>，右端点为<i>b</i>。
+[<i>x</i>0，<i>x</i>1]，[<i>x</i>1，<i>x</i>2] 等等 左端点为 <i>a</i> 右端点为<i>b</i>
 
 87
 00:07:14,000 --> 00:07:20,000
 For each subinterval, you have the endpoints given by just adding Δ<i>x</i> every time.
-对于每个子间隔，你只要每次加上Δ<i>x</i>，就可以得到端点。
+对于每个子间隔 你只要每次加上 Δ<i>x</i> 就可以得到端点
 
 88
 00:07:20,000 --> 00:07:25,000
 What you see over here is the area of any one rectangle
-你在这里看到的是任何一个矩形的面积。
+你在这里看到的是任何一个矩形的面积
 
 89
 00:07:25,000 --> 00:07:29,000
 will be the width of the rectangle times the height.
-将是矩形的宽度乘以高度。
+将是矩形的宽度乘以高度
 
 90
 00:07:29,000 --> 00:07:32,000
 Let’s say if you work with the right-aligned rectangles,
-比方说，如果你用右对齐的矩形工作。
+比方说 如果你用右对齐的矩形
 
 91
 00:07:32,000 --> 00:07:38,000
 then that height will be <i>f</i>[<i>xi</i>].
-那么该高度将是<i>f</i>[<i>xi</i>]。
+那么该高度将是 <i>f</i>[<i>xi</i>]
 
 92
 00:07:38,000 --> 00:07:44,000
 That’s the total area, the sum, but if you work out the left-aligned rectangles,
-这就是总面积，总和，但如果你把左对齐的矩形计算出来。
+这就是总面积 总和 但如果你把左对齐的矩形计算出来
 
 93
 00:07:44,000 --> 00:07:51,000
 then you get a similar sum, but with <i>xi</i> – 1 as the point which you evaluate.
-那么你就会得到一个类似的和，但是用<i>xi</i> - 1作为你评估的点。
+那么你就会得到一个类似的和 但是用 <i>xi</i> - 1 作为你评估的点
 
 94
 00:07:51,000 --> 00:07:55,000
 These sums are called Riemann sums because
-这些和被称为黎曼和，因为
+这些和被称为黎曼和 因为
 
 95
 00:07:55,000 --> 00:08:00,000
 they were discovered by the famous German mathematician Bernhard Riemann.
-它们是由德国著名数学家伯恩哈德-黎曼发现的。
+它们是由德国著名数学家 伯恩哈德·黎曼 发现的
 
 96
 00:08:01,000 --> 00:08:04,000
 Here’s an example that shows what’s happening.
-这里有一个例子可以说明发生了什么。
+这里有一个例子可以说明发生了什么
 
 97
 00:08:04,000 --> 00:08:07,000
 You have the curve Sin[<i>x</i>] + 2, and you want to see what happens
-你有一条曲线Sin[<i>x</i>]+2，你想看看会发生什么事？
+你有一条曲线 Sin[<i>x</i>]+2 你想看看会发生什么事？
 
 98
 00:08:07,000 --> 00:08:11,000
 as you increase the number of rectangles.
-当你增加矩形的数量时。
+当你增加矩形的数量时
 
 99
 00:08:11,000 --> 00:08:14,000
 Let’s play the animation.
-我们来播放动画。
+我们来播放动画
 
 100
 00:08:14,000 --> 00:08:17,000
 You see that you get a better limit approximation
-你看，你会得到一个更好的极限近似。
+你看 你会得到一个更好的极限近似
 
 101
 00:08:17,000 --> 00:08:20,000
