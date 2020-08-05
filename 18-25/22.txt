@@ -245,397 +245,397 @@ We also have a constant multiple law which says that
 50
 00:04:18,000 --> 00:04:26,000
 if you want to work out the antiderivative of <i>kF</i>'[<i>x</i>], then the answer is <i>kF</i>[<i>x</i>] + <i>C</i>.
-如果你想计算出 <i>kF</i>'[<i>x</i>]的反导数 那么答案是 <i>kF</i>[<i>x</i>]+<i>C</i>
+如果你想计算出 <i>kF</i>'[<i>x</i>] 的反导数 那么答案是 <i>kF</i>[<i>x</i>]+<i>C</i>
 
 51
 00:04:26,000 --> 00:04:30,000
 Now in just the same way, there are rules for products and quotients,
-现在以同样的方式，产品和商也有规则。
+现在以同样的方式 产品和商也有规则
 
 52
 00:04:30,000 --> 00:04:33,000
 but they are much harder to use.
-但它们的使用难度更大。
+但它们的使用难度更大
 
 53
 00:04:35,000 --> 00:04:39,000
 Okay. How about trig functions?
-好吧，那三角函数呢？
+好吧 那三角函数呢
 
 54
 00:04:39,000 --> 00:04:42,000
 Let’s say you have the trig functions over here, the six basic ones—
-比如说，你有三角函数，六个基本函数
+比如说 你有三角函数 六个基本函数
 
 55
 00:04:42,000 --> 00:04:50,000
 sine, cosine, tangent, secant, cosecant and cotangent—and those are the derivatives.
-正弦、余弦、正切、正割、余割和余切，这些都是导数。
+正弦、余弦、正切、正割、余割和余切 这些都是导数。
 
 56
 00:04:50,000 --> 00:04:57,000
 For example, if you want to work out the antiderivative of Sec[<i>x</i>]Tan[<i>x</i>].
-例如，如果你想求出Sec[<i>x</i>]Tan[<i>x</i>]的反求法。
+例如 如果你想求出 Sec[<i>x</i>]Tan[<i>x</i>] 的反导数
 
 57
 00:04:57,000 --> 00:05:03,000
 You look back over there, and the answer is Sec[<i>x</i>] from here plus the constant <i>C</i>.
-你回头看那边，答案是这里的Sec[<i>x</i>]加上常数<i>C</i>。
+你回头看那边 答案是这里的 Sec[<i>x</i>] 加上常数 <i>C</i>
 
 58
 00:05:03,000 --> 00:05:08,000
 Here is a table of all those antiderivatives.
-下面是所有这些反面教材的表格。
+下面是所有这些反面教材的表格
 
 59
 00:05:08,000 --> 00:05:13,000
 The antiderivative of cosine is sine, et cetera.
-余弦的反义词是正弦，等等。
+余弦的反义词是正弦 等等
 
 60
 00:05:13,000 --> 00:05:17,000
 Now of course in each case, you must put the +<i>C</i> at the end,
-当然，在每一种情况下，你必须在最后加上+<i>C</i>。
+当然 在每一种情况下 你必须在最后加上 +<i>C</i>
 
 61
 00:05:17,000 --> 00:05:20,000
 but I haven’t done that in this table.
-但我还没有在这个表格里做过。
+但我还没有在这个表格里做过
 
 62
 00:05:22,000 --> 00:05:26,000
 Okay. As an example of how we can apply all this knowledge,
-好吧，我知道了。作为一个例子，我们如何应用这些知识。
+好吧 我知道了 作为一个例子 我们如何应用这些知识
 
 63
 00:05:26,000 --> 00:05:32,000
 let’s try and find the general antiderivative of the function <i>f</i> over here.
-让我们试着在这里找到函数<i>f</i>的一般反导数。
+让我们试着在这里找到函数 <i>f</i> 的一般反导数
 
 64
 00:05:32,000 --> 00:05:36,000
 You have a sum over here, so you can apply the sum rule,
-你在这边有一个和，所以你可以运用和规则。
+你在这边有一个和 所以你可以运用和规则
 
 65
 00:05:36,000 --> 00:05:44,000
 and you see that the antiderivative of 3Sin[<i>x</i>] is –3Cos[<i>x</i>] + <i>C</i>.
-你可以看到3Sin[<i>x</i>]的反演是-3Cos[<i>x</i>]+<i>C</i>。
+你可以看到 3Sin[<i>x</i>] 的反演是 -3Cos[<i>x</i>]+<i>C</i>
 
 66
 00:05:44,000 --> 00:05:47,000
 Let’s check that. That’s correct.
-让我们检查一下。是的，没错
+让我们检查一下 是的 没错
 
 67
 00:05:47,000 --> 00:05:56,000
 Then what you do is you break up this over here into two terms by writing it as a difference.
-那么你要做的就是把这边的这个拆成两个术语，写成一个区别。
+那么你要做的就是把这边的这个拆成两个项做差
 
 68
 00:05:57,000 --> 00:06:03,000
 You simply separate out the terms and then you work out the antiderivative separately,
-你只要把这些条款分开，然后再分别计算出反义词。
+你只要把这些项分开 然后再分别计算出反导数
 
 69
 00:06:03,000 --> 00:06:08,000
 so you get 4<i>x</i>^5/5 + <i>C</i> for the first term,
-所以你得到4<i>x</i>^5/5+<i>C</i>的第一项。
+所以你得到 4<i>x</i>^5/5+<i>C</i> 的第一项
 
 70
 00:06:08,000 --> 00:06:18,000
 and –<i>x</i>^–1/2 has the antiderivative –<i>x</i>^1/2/(–1/2) + <i>C</i>.
-而-<i>x</i>^-1/2有反推式-<i>x</i>^1/2/(-1/2)+<i>C</i>。
+而 -<i>x</i>^-1/2 有反推式 -<i>x</i>^1/2/(-1/2)+<i>C</i>
 
 71
 00:06:18,000 --> 00:06:20,000
-The complete antiderivative is over here.
-完整的反演在这里。
+The complete antiderivative is over here
+完整的反导数在这里
 
 72
 00:06:20,000 --> 00:06:23,000
 Here’s a check that each part is correct
-下面检查一下各部分是否正确。
+下面检查一下各部分是否正确
 
 73
 00:06:23,000 --> 00:06:27,000
 so you can find the complete answer for the whole expression
-所以你可以找到整个表达式的完整答案。
+所以你可以找到整个表达式的完整答案
 
 74
 00:06:27,000 --> 00:06:29,000
 by simply adding things together,
-通过简单地将东西加在一起。
+通过简单地将东西加在一起
 
 75
 00:06:29,000 --> 00:06:33,000
 and here’s a verification that everything is correct.
-而这里的验证，一切都正确。
+而这里的验证 一切都正确
 
 76
 00:06:33,000 --> 00:06:39,000
 In general, you will need to combine rules to get the answer for the full problem.
-一般来说，你需要结合规则，才能得到全部问题的答案。
+一般来说 你需要结合规则 才能得到全部问题的答案
 
 77
 00:06:40,000 --> 00:06:46,000
 Okay. These antiderivatives are very useful for solving differential equations.
-好了，这些反导数对解决微分方程非常有用。这些反导数对解决微分方程非常有用。
+好了 这些反导数对解决微分方程非常有用 这些反导数对解决微分方程非常有用
 
 78
 00:06:46,000 --> 00:06:51,000
 What are these? They are equations that involve derivatives.
-这些是什么？它们是涉及导数的方程。
+这些是什么 它们是涉及导数的方程
 
 79
 00:06:51,000 --> 00:06:55,000
 Now in general, it’s pretty difficult to solve differential equations,
-现在一般来说，解微分方程是相当困难的。
+现在一般来说 解微分方程是相当困难的
 
 80
 00:06:55,000 --> 00:07:00,000
 but one can solve some simple ones with what we’ve learned so far.
-但可以用我们目前所学的知识解决一些简单的。
+但可以用我们目前所学的知识解决一些简单的
 
 81
 00:07:00,000 --> 00:07:09,000
 For example, if I said solve the equation <i>f</i>'[<i>x</i>] = <i>x</i>√<i>x</i> where <i>f</i>[1] = 3,
-例如，如果我说解方程<i>f</i>'[<i>x</i>]=<i>x</i>√<i>x</i>，其中<i>f</i>[1]=3。
+例如，如果我说解方程 <i>f</i>'[<i>x</i>]=<i>x</i>√<i>x</i> 其中<i>f</i>[1]=3
 
 82
 00:07:09,000 --> 00:07:13,000
 then what you would do is you would first work out the antiderivative over here,
-那么你要做的是你会先计算出这里的反引物。
+那么你要做的是你会先计算出这里的反导数
 
 83
 00:07:13,000 --> 00:07:16,000
 and then we’ll apply the condition <i>f</i>[1] = 3.
-然后我们将应用条件<i>f</i>[1]=3。
+然后我们将应用条件 <i>f</i>[1]=3
 
 84
 00:07:16,000 --> 00:07:22,000
 The antiderivative in this case is 2<i>x</i>^(5/2)/5 + <i>C</i>.
-在这种情况下，反推数是2<i>x</i>^(5/2)/5+<i>C</i>。
+在这种情况下，反导数是 2<i>x</i>^(5/2)/5+<i>C</i>
 
 85
 00:07:22,000 --> 00:07:28,000
 Let’s check that. Then you want to find the value of <i>C</i>.
-我们来检查一下。然后你想找到<i>C</i>的值。
+我们来检查一下 然后你想找到 <i>C</i> 的值
 
 86
 00:07:28,000 --> 00:07:34,000
 What you do is you plug in <i>x</i> = 1 in the equation—remember that <i>f</i>[1] is 3—
-你要做的是在方程中插入<i>x</i>=1--记住，<i>f</i>[1]是3-。
+你要做的是在方程中插入 <i>x</i>=1 记住 <i>f</i>[1] 是 3-
 
 87
 00:07:34,000 --> 00:07:40,000
 and work out the value of <i>C</i>. You have that the required solution,
-并计算出<i>C</i>的值。你有，所需的解决方案。
+并计算出 <i>C</i> 的值 你有所需的解
 
 88
 00:07:40,000 --> 00:07:47,000
 the particular solution, is (2<i>x</i>^(5/2) + 13)/5.
-具体的解，是(2<i>x</i>^(5/2)+13)/5。
+具体的解 是 (2<i>x</i>^(5/2)+13)/5
 
 89
 00:07:47,000 --> 00:07:52,000
 Now of course we have a very nice function in the Wolfram Language called DSolve
-当然，在Wolfram语言中我们有一个非常好的函数，叫做DSolve。
+当然 在Wolfram语言中我们有一个非常好的函数 叫做DSolve。
 
 90
 00:07:52,000 --> 00:07:55,000
 which will do that for you automatically, but before that,
-会自动帮你完成，但在此之前。
+会自动帮你完成 但在此之前
 
 91
 00:07:55,000 --> 00:07:59,000
 let’s just clear the function <i>f</i> because we defined it earlier on and call DSolve,
-我们只需清除函数<i>f</i>，因为我们在前面定义了它，然后调用DSolve。
+我们只需清除函数 <i>f</i> 因为我们在前面定义了它 然后调用 DSolve
 
 92
 00:07:59,000 --> 00:08:03,000
 and you get back just the same answer.
-而你却得到同样的答案。
+而你却得到同样的答案
 
 93
 00:08:04,000 --> 00:08:09,000
 That’s the differential equation, that’s the condition <i>f</i>[1] = 3,
-这就是微分方程，这就是条件<i>f</i>[1]=3。
+这就是微分方程 这就是条件 <i>f</i>[1]=3
 
 94
 00:08:09,000 --> 00:08:13,000
 and you simply want to solve for <i>f</i>[<i>x</i>] with variable <i>x</i>,
-而你只想求解<i>f</i>[<i>x</i>]与变量<i>x</i>。
+而你只想求解 <i>f</i>[<i>x</i>] 与变量 <i>x</i>
 
 95
 00:08:13,000 --> 00:08:17,000
 and DSolve will do that for you quite easily.
-而DSolve可以很容易地帮你完成这个任务。
+而 DSolve 可以很容易地帮你完成这个任务
 
 96
 00:08:18,000 --> 00:08:20,000
 Okay. A slightly harder example.
-好吧，一个稍微难一点的例子。一个稍微难一点的例子。
+好吧 一个稍微难一点的例子
 
 97
 00:08:20,000 --> 00:08:26,000
 Let’s take a second-order differential equation where you have a second derivative over here.
-让我们来看看一个二阶微分方程，你在这里有一个二次导数。
+让我们来看看一个二阶微分方程 你在这里有一个二次导数
 
 98
 00:08:26,000 --> 00:08:34,000
 You’re given <i>f</i>'' and two conditions, <i>f</i>[0] and <i>f</i>[1].
-给你<i>f</i>''和两个条件，<i>f</i>[0]和<i>f</i>[1]。
+给你 <i>f</i>'' 和两个条件 <i>f</i>[0] 和 <i>f</i>[1]
 
 99
 00:08:34,000 --> 00:08:40,000
 What you do is you first of all work out <i>f</i>'[<i>x</i>] by one antiderivative computation,
-你要做的是，首先通过一次反推演计算算出<i>f</i>'[<i>x</i>]。
+你要做的是 首先通过一次反推演计算算出 <i>f</i>'[<i>x</i>]
 
 100
 00:08:40,000 --> 00:08:46,000
 and you get 4<i>x</i>^3 – 3<i>x</i>^2 – 8<i>x</i> + <i>C</i>. Let’s check that.
-而你得到4<i>x</i>^3 - 3<i>x</i>^2 - 8<i>x</i>+<i>C</i>。我们来检查一下。
+而你得到 4<i>x</i>^3 - 3<i>x</i>^2 - 8<i>x</i>+<i>C</i> 我们来检查一下
 
 101
 00:08:46,000 --> 00:08:50,000
 Then what you do is you start with the expression over here
-然后，你要做的是，你开始与表达式在这里
+然后 你要做的是 你开始与表达式在这里
 
 102
 00:08:50,000 --> 00:08:58,000
 and work out its antiderivative and you get another answer, so the answer over here.
-并计算出它的反义词，你会得到另一个答案，所以答案在这里。
+并计算出它的反导数 你会得到另一个答案 所以答案在这里
 
 103
 00:08:59,000 --> 00:09:02,000
 Okay. Then you want to solve for <i>C</i> and <i>D</i>,
-好吧，那你要解决&lt;i&gt;C&lt;/i&gt;和&lt;i&gt;D&lt;/i&gt;的问题。那么你要解决<i>C</i>和<i>D</i>。
+好吧 那么你要解决 <i>C</i> 和 <i>D</i>
 
 104
 00:09:02,000 --> 00:09:09,000
 so you take the expression from there and you plug in the values given to you,
-所以，你从那里获取表达式，然后插入给你的值。
+所以你从那里获取表达式 然后插入给你的值
 
 105
 00:09:09,000 --> 00:09:14,000
 and you find the value of <i>c</i> is 5 and the value of <i>d</i> is 1.
-而你发现<i>c</i>的值是5，<i>d</i>的值是1。
+而你发现 <i>c</i> 的值是 5 <i>d</i> 的值是 1
 
 106
 00:09:14,000 --> 00:09:18,000
 You’ve worked out a particular solution as shown over here.
-你已经想出了一个特别的解决方案，如图所示。
+你已经想出了一个特别的解决方案 如图所示
 
 107
 00:09:18,000 --> 00:09:22,000
 Of course, you can do all that with DSolve automatically
-当然，您也可以通过DSolve自动完成这些工作。
+当然 您也可以通过 DSolve 自动完成这些工作
 
 108
 00:09:22,000 --> 00:09:26,000
 and get back the same answer as you did by hand.
-并得到和你手工操作一样的答案。
+并得到和你手工操作一样的答案
 
 109
 00:09:27,000 --> 00:09:30,000
 Okay. Now an application to physics.
-好了，现在是物理学的应用。现在是物理学的应用。
+好了 现在是物理学的应用 现在是物理学的应用
 
 110
 00:09:30,000 --> 00:09:35,000
 Let’s say you’re given the acceleration of a particle as 6<i>t</i>^2 – 10,
-假设给你一个粒子的加速度为6<i>t</i>^2 - 10。
+假设给你一个粒子的加速度为 6<i>t</i>^2 - 10
 
 111
 00:09:35,000 --> 00:09:46,000
 and you’re given that the velocity at time <i>t</i>[0] = –4 and the position at that time is 3.
-而你给出的是时间<i>t</i>[0]的速度=-4，此时的位置是3。
+而你给出的是时间的速度 <i>t</i>[0] =-4 此时的位置是 3
 
 112
 00:09:46,000 --> 00:09:49,000
 You want to work out the position function.
-你想锻炼位置功能。
+你想锻炼位置函数
 
 113
 00:09:49,000 --> 00:09:57,000
 For the first step, you work out the velocity by antidifferentiation as 2<i>t</i>^3 – 10<i>t</i> + <i>C</i>.
-第一步，你通过反差计算出速度为2<i>t</i>^3-10<i>t</i>+<i>C</i>。
+第一步 你通过反差计算出速度为 2<i>t</i>^3-10<i>t</i>+<i>C</i>
 
 114
 00:09:57,000 --> 00:09:59,000
 Here’s a check for that.
-这里有一个检查。
+这里有一个检查
 
 115
 00:09:59,000 --> 00:10:05,000
 Then you work out the position function by one more antidifferentiation.
-然后你再通过一个反差来计算出位置函数。
+然后你再通过一个反差来计算出位置函数
 
 116
 00:10:05,000 --> 00:10:09,000
 Here’s a check for that, and then you apply the given conditions
-这里有一个检查，然后你应用给定的条件。
+这里有一个检查 然后你应用给定的条件
 
 117
 00:10:09,000 --> 00:10:16,000
 because you want to work out <i>C</i> and <i>D</i> over here. So <i>v</i>[0] = –4, <i>s</i>[0] = 3.
-因为你要在这里计算出<i>C</i>和<i>D</i>。所以<i>v</i>[0]=-4，<i>s</i>[0]=3。
+因为你要在这里计算出 <i>C</i> 和 <i>D</i> 所以 <i>v</i>[0]=-4 <i>s</i>[0]=3
 
 118
 00:10:16,000 --> 00:10:24,000
 You plug in those values, and you find that you actually have <i>C</i> goes to –4 and <i>D</i> goes to 3,
-你把这些值插进去，你会发现实际上你的<i>C</i>会变成-4，<i>D</i>会变成3。
+你把这些值插进去 你会发现实际上你的 <i>C</i> 会变成 -4 以及 <i>D</i> 会变成 3
 
 119
 00:10:24,000 --> 00:10:27,000
 so that’s the solution for the problem;
-所以这就是解决问题的办法。
+所以这就是解决问题的办法
 
 120
 00:10:27,000 --> 00:10:37,000
 namely, that you have an expression with <i>t</i>^4/2 – 5<i>t</i>^2 – 4<i>t</i> + 3.
-即你有一个表达式为<i>t</i>^4/2 - 5<i>t</i>^2 - 4<i>t</i>+3。
+即你有一个表达式为 <i>t</i>^4/2 - 5<i>t</i>^2 - 4<i>t</i>+3
 
 121
 00:10:37,000 --> 00:10:43,000
 Now you can use the same method but automatically by calling DSolve,
-现在你可以使用同样的方法，但要自动调用DSolve。
+现在你可以使用同样的方法 但要自动调用 DSolve
 
 122
 00:10:43,000 --> 00:10:47,000
 and you find you get the same answer.
-而你发现你得到的答案是一样的。
+而你发现你得到的答案是一样的
 
 123
 00:10:48,000 --> 00:10:51,000
 Okay. That brings me to the end of today’s lesson.
-好了，今天的课程到此结束。今天的课程到此结束。
+好了 今天的课程到此结束 今天的课程到此结束
 
 124
 00:10:51,000 --> 00:11:00,000
 The main point is that the antiderivative of a function is a function <i>g</i> such that <i>g</i>'[<i>x</i>] = <i>f</i>[<i>x</i>].
-主要是函数的反函数是函数<i>g</i>，使<i>g</i>'[<i>x</i>]=<i>f</i>[<i>x</i>]。
+主要是函数的反导数是函数 <i>g</i> 使<i>g</i>'[<i>x</i>]=<i>f</i>[<i>x</i>]
 
 125
 00:11:00,000 --> 00:11:03,000
 Now these antiderivatives come in families.
-现在，这些反面教材是分家庭的。
+现在 这些反导数是从他的家族来的
 
 126
 00:11:03,000 --> 00:11:04,000
 You don’t always just get one;
-你并不总是只得到一个。
+你并不总是只得到一个
 
 127
 00:11:04,000 --> 00:11:09,000
 you get lots of them, so you always add an arbitrary constant, +<i>C</i>.
-你会得到很多，所以你总是添加一个任意的常数，+<i>C</i>。
+你会得到很多 所以你总是添加一个任意的常数 +<i>C</i>
 
 128
 00:11:09,000 --> 00:11:17,000
 You can find them by using the usual differentiation rules, but you need to go in reverse.
-用一般的区分规则就可以找到它们，但你需要逆向而行。
+用一般的区分规则就可以找到它们 但你需要逆向而行
 
 129
 00:11:18,000 --> 00:11:22,000
@@ -645,59 +645,59 @@ Now the most important application in practice
 130
 00:11:22,000 --> 00:11:28,000
 is to solve differential equations using these antiderivatives.
-就是利用这些反演式来解微分方程。
+就是利用这些反导数来解微分方程
 
 131
 00:11:28,000 --> 00:11:31,000
 Given a differential equation, you can solve it,
-给定一个微分方程，你就可以解决它。
+给定一个微分方程 你就可以解决它
 
 132
 00:11:31,000 --> 00:11:33,000
 but if you’re given some extra conditions,
-但如果给你一些额外的条件。
+但如果给你一些额外的条件
 
 133
 00:11:33,000 --> 00:11:38,000
 you can actually work out a particular solution for that differential equation.
-你实际上可以计算出该微分方程的特定解。
+你实际上可以计算出该微分方程的特定解
 
 134
 00:11:39,000 --> 00:11:44,000
 Finally these antiderivatives are really useful in physics
-最后，这些反导数在物理学中真的很有用。
+最后 这些反导数在物理学中真的很有用
 
 135
 00:11:44,000 --> 00:11:48,000
 when you want to analyze the one-dimensional motion of a particle.
-当你想分析一个粒子的一维运动时。
+当你想分析一个粒子的一维运动时
 
 136
 00:11:48,000 --> 00:11:53,000
 With that, we are now ready to go on into what is called integral calculus.
-有了这些，我们现在就可以继续进入所谓的积分微积分了。
+有了这些 我们现在就可以继续进入所谓的积分微积分了
 
 137
 00:11:53,000 --> 00:11:57,000
 What we’ve done so far is called differential calculus.
-到目前为止，我们所做的事情叫做微分计算。
+到目前为止 我们所做的事情叫做微分计算
 
 138
 00:11:57,000 --> 00:12:00,000
 In the next lesson, we’ll talk about integral calculus,
-下节课，我们就来讲讲积分微积分。
+下节课我们就来讲讲积分微积分
 
 139
 00:12:00,000 --> 00:12:03,000
 but before we do that, do make sure you’ve gone through today’s lesson
-但在我们这样做之前，请确保你已经通过今天的课程。
+但在我们这样做之前 请确保你已经通过今天的课程
 
 140
 00:12:03,000 --> 00:12:07,000
 and you’re ready to take on the next topic, which is integral calculus.
-你就可以进行下一个题目了，那就是积分微积分。
+你就可以进行下一个题目了 那就是积分微积分
 
 141
 00:12:07,000 --> 00:12:10,000
 I’ll stop over here. Thank you very much.
-我在这里停一下谢谢你了
+今天就到这里了，非常感谢
