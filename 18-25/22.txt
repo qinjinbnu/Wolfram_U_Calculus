@@ -1,252 +1,251 @@
 1
 00:00:00,000 --> 00:00:07,000
 Hello, and welcome to Lesson 22 of this introduction to calculus with Wolfram U.
-大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第22课。
+大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第22课
 
 2
 00:00:07,000 --> 00:00:11,000
 The topic for this lesson is antiderivatives.
-本节课的课题是反面教材。
+本节课的课题是反函数
 
 3
 00:00:11,000 --> 00:00:14,000
 Let’s begin with a brief overview of the lesson.
-先来简单介绍一下本课的内容。
+先来简单介绍一下本课的内容
 
 4
 00:00:14,000 --> 00:00:17,000
 So far, we have been talking about derivatives of functions.
-到目前为止，我们一直在讨论函数的导数。
+到目前为止 我们一直在讨论函数的导数
 
 5
 00:00:17,000 --> 00:00:23,000
 For example, the derivative of 3<i>x</i> with respect to <i>x</i> is just 3.
-例如，3<i>x</i>相对于<i>x</i>的导数只是3。
+例如 3<i>x</i> 相对于 <i>x</i> 的导数只是 3
 
 6
 00:00:23,000 --> 00:00:26,000
 Now let’s say you want to go backward.
-现在假设你想往回走。
+现在假设你想往回想
 
 7
 00:00:26,000 --> 00:00:32,000
 You want to find a function whose derivative is 3.
-你想找一个导数为3的函数。
+你想找一个导数为 3 的函数
 
 8
 00:00:32,000 --> 00:00:39,000
 Now of course in this case, you already know that 3<i>x</i> is the answer, or it is an answer,
-现在当然在这种情况下，你已经知道3<i>x</i>是答案，或者说它是一个答案。
+现在当然在这种情况下 你已经知道 3<i>x</i> 是答案 或者说它是一个答案
 
 9
 00:00:39,000 --> 00:00:44,000
 but in this lesson, we’ll go over that for many different kinds of functions.
-但在这节课中，我们将针对许多不同类型的函数进行讲解。
+但在这节课中 我们将针对许多不同类型的函数进行讲解
 
 10
 00:00:44,000 --> 00:00:49,000
 This idea of going back has many applications.
-这种回去的想法有很多应用。
+这种倒过来回想的方法有很多应用
 
 11
 00:00:49,000 --> 00:00:54,000
 For example, if you’re given the particle’s velocity function in a problem,
-例如，如果在一道题中给你粒子的速度函数。
+例如 如果在一道题中给你粒子的速度函数
 
 12
 00:00:54,000 --> 00:00:58,000
 you could go out and work out the position of a particle.
-你可以出去计算出粒子的位置。
+你可以出去计算出粒子的位置
 
 13
 00:00:58,000 --> 00:01:01,000
 That’s the main theme for today,
-这就是今天的主旋律。
+这就是今天的主旋律
 
 14
 00:01:01,000 --> 00:01:08,000
 to try and go backward and figure out a function whose derivative is a given expression.
-试着往回走，找出一个函数，其导数是一个给定的表达式。
+试着往回想 找出一个函数 其导数是一个给定的表达式
 
 15
 00:01:08,000 --> 00:01:12,000
 That’s the topic of antiderivatives.
-这就是反衍生品的话题。
+这就是反函数的话题
 
 16
 00:01:12,000 --> 00:01:19,000
 The function with a given derivative <i>f</i> is called the antiderivative of <i>f</i>.
-具有给定导数<i>f</i>的函数称为<i>f</i>的反导数。
+具有给定导数 <i>f</i> 的函数称为 <i>f</i> 的反导数
 
 17
 00:01:20,000 --> 00:01:24,000
 Now let’s take <i>f</i> equal to <i>x</i>.
-现在我们取<i>f</i>等于<i>x</i>。
+现在我们取 <i>f</i> 等于 <i>x</i>
 
 18
 00:01:24,000 --> 00:01:27,000
 The question is what is its antiderivative?
-问题是它的反面是什么？
+问题是它的反函数是什么
 
 19
 00:01:27,000 --> 00:01:32,000
 Then what you could do is you could actually use the power rule, but you do it in reverse.
-那么你可以做的是，你实际上可以使用权力规则，但你要反过来做。
+那么你可以做的是 你实际上可以使用权力规则 但你要反过来做
 
 20
 00:01:32,000 --> 00:01:38,000
 You have <i>x</I>^2, so increase the exponent by one to get the <i>x</i>^2,
-你有<i>x</I>^2，所以将指数增加一，得到<i>x</i>^2。
+你有 <i>x</I>^2 所以将指数增加一 得到<i>x</i>^2
 
 21
 00:01:38,000 --> 00:01:44,000
 and then you would divide by the new exponent, so the answer is <i>x</i>^2/2.
-然后除以新的指数，所以答案是<i>x</i>^2/2。
+然后除以新的指数 所以答案是 <i>x</i>^2/2
 
 22
 00:01:44,000 --> 00:01:48,000
 But that’s only one possible answer you’ll see soon.
-但这只是一个可能的答案，你很快就会看到。
+但这只是一个可能的答案 你很快就会看到
 
 23
 00:01:48,000 --> 00:01:52,000
 Let’s confirm with D, and you’ll see that the derivative of <i>x</i>^2/2 is indeed <i>x</i>.
-我们用D来证实，你会发现<i>x</i>^2/2的导数确实是<i>x</i>。
+我们用D来证实 你会发现 <i>x</i>^2/2 的导数确实是 <i>x</i>
 
 24
 00:01:52,000 --> 00:01:57,000
 We have found an antiderivative of <i>x</I>, and that’s <i>x</i>^2/2.
-我们已经找到了<i>x</I>的反导数，那就是<i>x</i>^2/2。
+我们已经找到了 <i>x</I> 的反导数 那就是<i>x</i>^2/2
 
 25
 00:01:57,000 --> 00:02:02,000
 Here’s a plot of <i>x</i> and the antiderivative.
-这是一个<i>x</i>和反求的图。
+这是一个 <i>x</i> 的图和反导数
 
 26
 00:02:02,000 --> 00:02:10,000
 Okay. This is the function, and that’s the antiderivative we found out.
-好吧，这就是函数，这就是我们发现的反引物。这就是函数，这就是我们发现的反推论。
+好吧 这就是函数 这就是我们发现的反导数
 
 27
 00:02:10,000 --> 00:02:17,000
 Now we said over here that <i>x</i>^2/2 is an antiderivative of <i>x</i>,
-现在我们在这里说过，<i>x</i>^2/2是<i>x</i>的反导数。
+现在我们在这里说过 <i>x</i>^2/2 是 <i>x</i> 的反导数。
 
 28
 00:02:17,000 --> 00:02:24,000
 and that’s because every function has more than one antiderivative.
-那是因为每个函数都有一个以上的反赋值。
+那是因为每个函数都有一个以上的反导数
 
 29
 00:02:24,000 --> 00:02:30,000
 For example, in our case,  <i>x</i>^2/2 + 1 is also an antiderivative.
-例如，在我们的情况下，<i>x</i>^2/2+1也是一个反求式。
+例如 在我们的情况下 <i>x</i>^2/2+1 也是一个反求式
 
 30
 00:02:30,000 --> 00:02:34,000
 In general, if you have one antiderivative,
-一般来说，如果你有一个反面教材。
+一般来说 如果你有一个反导数
 
 31
 00:02:34,000 --> 00:02:39,000
 you have many more by simply adding arbitrary constants.
-通过简单地添加任意常数，你可以拥有更多的常数。
+通过简单地添加任意常数 你可以拥有更多的常数
 
 32
 00:02:39,000 --> 00:02:47,000
 This expression over here gives you a family of antiderivatives.
-这边的表达方式给了你一个反衍生品的家族。
+这边的表达方式给了你一个反衍生品的家族
 
 33
 00:02:48,000 --> 00:02:53,000
 Here’s a plot to show that for the function we just talked about, the function <i>x</i>:
-下面用一张图来说明，对于我们刚才讲的函数<i>x</i>。
+下面用一张图来说明 对于我们刚才讲的函数 <i>x</i>
 
 34
 00:02:53,000 --> 00:03:02,000
 you have <i>x</i> over here, the function, and all those curves are antiderivatives for <i>x</i>.
-你有<i>x</i>在这里，函数，所有这些曲线都是<i>x</i>的反导数。
+你有<i>x</i>在这里 这个函数 所有这些曲线都是<i>x</i>的反导数
 
 35
 00:03:03,000 --> 00:03:11,000
 Notice that each of them is simply a vertical shift of <i>x</i>^2/2 either up or down.
-请注意，它们中的每一个都只是<i>x</i>^2/2向上或向下的垂直移动。
+请注意它们中的每一个都只是 <i>x</i>^2/2 向上或向下的垂直移动。
 
 36
 00:03:13,000 --> 00:03:17,000
 Okay. Some rules for antiderivatives.
-好吧，一些关于反衍生品的规则。
+好吧 说一些关于反导数的规则。
 
 37
 00:03:17,000 --> 00:03:23,000
 The antiderivative of a sum is the sum of the antiderivatives.
-一个和的反演是反演的和。
-
+一些式子和的反导数是反导数的和
 38
 00:03:23,000 --> 00:03:27,000
 For example, if you want to work out the antiderivative of <i>x</i>^2 + <i>x</i>^3,
-例如，如果你想计算出<i>x</i>^2+<i>x</i>^3的反导数。
+例如 如果你想计算出 <i>x</i>^2+<i>x</i>^3 的反导数
 
 39
 00:03:27,000 --> 00:03:34,000
 then you would work out the first answer, which is <i>x</i>^3/3, the second one, <i>x</i>^4/4,
-那么你就会计算出第一个答案，即<i>x</i>^3/3，第二个答案，<i>x</i>^4/4。
+那么你就会计算出第一个答案 即 <i>x</i>^3/3 第二个答案 <i>x</i>^4/4
 
 40
 00:03:34,000 --> 00:03:36,000
 and then you add the constant <i>c</i> and you’re done.
-然后你加上常量<i>c</i>就可以了。
+然后你加上常量 <i>c</i> 就可以了
 
 41
 00:03:36,000 --> 00:03:40,000
 That’s the way to find the antiderivatives of a sum.
-这就是寻找一个和的反义词的方法。
+这就是寻找一个和的反导数的方法
 
 42
 00:03:41,000 --> 00:03:44,000
 Next if you have a difference,
-接下来如果你有不同。
+接下来如果你有一个差
 
 43
 00:03:44,000 --> 00:03:48,000
 then you can simply work out the antiderivatives of each term
-那么你可以简单地计算出每个术语的反义词。
+那么你可以简单地计算出每个项的反导数
 
 44
 00:03:48,000 --> 00:03:51,000
 and then find the difference of those antiderivatives.
-然后找到这些反义词的区别。
+然后找到这些反导数的差
 
 45
 00:03:51,000 --> 00:03:53,000
 For example, if you have 5 – <i>x</i>^4,
-例如，如果你有5-<i>x</i>^4。
+例如，如果你有 5 - <i>x</i>^4
 
 46
 00:03:53,000 --> 00:04:00,000
 then the answer is 5<i>x</i> from the 5 and <i>x</i>^5/5 from the <i>x</i>^4.
-那么答案是5<i>x</i>由5和<i>x</i>^5/5由<i>x</i>^4组成。
+那么答案是 5<i>x</i> 由 5 和 <i>x</i>^5/5由<i>x</i>^4 组成
 
 47
 00:04:01,000 --> 00:04:05,000
 That’s the proof that the answer is correct.
-这就是答案正确的证明。
+这就是答案正确的证明
 
 48
 00:04:05,000 --> 00:04:13,000
 These rules correspond to the sum and difference laws for differentiation.
-这些规则对应于微分的和差法则。
+这些规则对应于微分的和差法则
 
 49
 00:04:13,000 --> 00:04:18,000
 We also have a constant multiple law which says that
-我们还有一个恒定的倍数法则，它说的是
+我们还有一个恒定的倍数法则 它说的是
 
 50
 00:04:18,000 --> 00:04:26,000
 if you want to work out the antiderivative of <i>kF</i>'[<i>x</i>], then the answer is <i>kF</i>[<i>x</i>] + <i>C</i>.
-如果你想计算出<i>kF</i>'[<i>x</i>]的反推数，那么答案是<i>kF</i>[<i>x</i>]+<i>C</i>。
+如果你想计算出 <i>kF</i>'[<i>x</i>]的反导数 那么答案是 <i>kF</i>[<i>x</i>]+<i>C</i>
 
 51
 00:04:26,000 --> 00:04:30,000
