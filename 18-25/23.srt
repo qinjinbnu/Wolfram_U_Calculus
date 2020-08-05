@@ -191,7 +191,7 @@ as you approach the point.
 39
 00:03:16,000 --> 00:03:20,000
 A similar idea can be used for areas; namely, break up the areas
-对于区域也可以采用类似的思路 即把区域打散
+对于区域也可以采用类似的思路 即把区域分开
 
 40
 00:03:20,000 --> 00:03:27,000
@@ -501,27 +501,27 @@ You see that you get a better limit approximation
 101
 00:08:17,000 --> 00:08:20,000
 as you increase the number of rectangles.
-当你增加矩形的数量时。
+当你增加矩形的数量时
 
 102
 00:08:20,000 --> 00:08:23,000
 But of course, things are not so simple because at some places,
-但当然，事情并不那么简单，因为在一些地方。
+但当然 事情并不那么简单 因为在一些地方
 
 103
 00:08:23,000 --> 00:08:27,000
 you get a slightly smaller area, and at some others,
-你得到的面积稍小，而在其他一些。
+你得到的面积稍小 而在其他一些
 
 104
 00:08:27,000 --> 00:08:29,000
 you overestimate the area.
-你高估了面积。
+你高估了面积
 
 105
 00:08:32,000 --> 00:08:36,000
 Okay. Now we can make a formal definition of area.
-好了，现在我们可以给面积下个正式定义了。现在我们可以给面积下一个正式的定义。
+好了 现在我们可以给面积下个正式定义了
 
 106
 00:08:36,000 --> 00:08:39,000
@@ -531,62 +531,62 @@ The area under the curve is defined by
 107
 00:08:39,000 --> 00:08:47,000
 the limit of the sum of the areas of the rectangles.
-矩形面积之和的极限。
+矩形面积之和的极限
 
 108
 00:08:47,000 --> 00:08:54,000
 Now that’s the case for right-aligned because you’re working with <i>f</i>[<i>xi</i>],
-现在是右对齐的情况，因为你是在用<i>f</i>[<i>xi</i>]工作。
+现在是右对齐的情况 因为你是在用 <i>f</i>[<i>xi</i>] 工作
 
 109
 00:08:54,000 --> 00:08:59,000
 but if you want left-aligned rectangles, then you get almost the same expression,
-但如果你想要左对齐的矩形，那么你得到的表达式几乎是一样的。
+但如果你想要左对齐的矩形 那么你得到的表达式几乎是一样的
 
 110
 00:08:59,000 --> 00:09:03,000
 but now you start at 0 rather than starting at 1.
-但现在你从0开始，而不是从1开始。
+但现在你从 0 开始 而不是从 1 开始
 
 111
 00:09:03,000 --> 00:09:07,000
 The fact is that if your function <i>f</i> is continuous,
-事实上，如果你的函数<i>f</i>是连续的。
+事实上 如果你的函数 <i>f</i> 是连续的
 
 112
 00:09:07,000 --> 00:09:12,000
 then both those limits will exist, and in fact, they’ll be equal.
-那么这两个极限都将存在，事实上，它们将是平等的。
+那么这两个极限都将存在 事实上 它们将是平等的
 
 113
 00:09:12,000 --> 00:09:18,000
 You could work with those sums, or you could actually take the values
-你可以用这些总和来计算，或者你可以实际取值
+你可以用这些总和来计算 或者你可以实际取值
 
 114
 00:09:18,000 --> 00:09:23,000
 at any number in the subinterval for each <i>i</i>.
-在每个<i>i</i>的子间隔中的任何数字。
+在每个 <i>i</i> 的子间隔中的任何数字
 
 115
 00:09:23,000 --> 00:09:27,000
 These numbers are called sample points.
-这些数字被称为样本点。
+这些数字被称为样本点
 
 116
 00:09:27,000 --> 00:09:31,000
 In particular, if you have right-aligned rectangles,
-特别是，如果你有右对齐的矩形。
+特别是 如果你有右对齐的矩形
 
 117
 00:09:31,000 --> 00:09:36,000
 then you have the sample points <i>xi</i>, and if you have left-aligned rectangles,
-然后你有样本点<i>xi</i>，如果你有左对齐的矩形。
+然后你有样本点 <i>xi</i> 如果你有左对齐的矩形
 
 118
 00:09:36,000 --> 00:09:39,000
 then you have the sample points <i>xi</i> – 1.
-那么你有样本点<i>xi</i> - 1。
+那么你有样本点 <i>xi</i> - 1
 
 119
 00:09:39,000 --> 00:09:42,000
@@ -596,83 +596,82 @@ That’s the general formula for the area
 120
 00:09:42,000 --> 00:09:46,000
 with any sample points for each subinterval.
-与每个子间隔的任何样本点。
+与每个子间隔的任何样本点
 
 121
 00:09:46,000 --> 00:09:49,000
 For example, here you have taken the sample points
-例如，在这里，你已经采取了示例点
+例如 在这里 你已经采取了样本点
 
 122
 00:09:49,000 --> 00:09:52,000
 to be the midpoints of each subinterval.
-为每个子区间的中点。
+为每个子区间的中点
 
 123
 00:09:53,000 --> 00:09:56,000
 Okay. Now it’s time to work out an example,
-好了，现在是时候举个例子了现在是时候来举个例子了。
+好了 现在是时候举个例子了
 
 124
 00:09:56,000 --> 00:10:00,000
 so let’s try to work out the area of Sin[<i>x</i>] from 0 to <i>b</i>
-所以让我们试着计算出Sin[<i>x</i>]从0到<i>b</i>的面积。
+所以让我们试着计算出 Sin[<i>x</i>] 从 0 到 <i>b</i> 的面积
 
 125
 00:10:00,000 --> 00:10:03,000
 where the number <i>b</i> lies between 0 and π.
-其中数字<i>b</i>位于0和π之间。
+其中数字 <i>b</i> 位于 0 和 π 之间
 
 126
 00:10:03,000 --> 00:10:12,000
 Here’s a plot. Now we break up the interval into <i>n</i> subintervals.
-这是一个图。现在我们将区间分解成<i>n</i>个子区间。
+这是一个图 现在我们将区间分解成 <i>n</i> 个子区间
 
 127
 00:10:12,000 --> 00:10:15,000
 We’ll work with, let’s say, right-aligned rectangles,
-我们将使用，比方说，右对齐的矩形。
+我们将使用 比方说 右对齐的矩形
 
 128
 00:10:15,000 --> 00:10:21,000
 and you get the answer for the area as 1 – Cos[<i>b</i>].
-你可以得到面积的答案为1 - Cos[<i>b</i>]。
+你可以得到面积的答案为 1 - Cos[<i>b</i>]
 
 129
 00:10:22,000 --> 00:10:26,000
 Of course, you could then replace the <i>b</i> with π,
-当然，你可以把<i>b</i>换成π。
+当然你可以把 <i>b</i> 换成π
 
 130
 00:10:26,000 --> 00:10:31,000
 and you get back a much nicer answer, which is just 2.
-而你得到的答案要好得多，这只是2。
+而你得到的答案要好得多 这只是 2
 
 131
 00:10:32,000 --> 00:10:36,000
 That’s the power of the whole method; namely, it gives the exact answer
-这就是整个方法的威力；即它给出了准确的答案。
+这就是整个方法的威力 即它给出了准确的答案
 
 132
 00:10:36,000 --> 00:10:40,000
 under this curve between, in this case, 0 and π.
-在这条曲线下，在这种情况下，0和π之间。
+在这条曲线下 在这种情况下 0 和 π 之间
 
 133
 00:10:42,000 --> 00:10:46,000
 Okay. Now a slightly more practical problem.
-好了，现在说一个稍微实际一点的问题。现在是一个稍微实际一点的问题。
+好了 现在说一个稍微实际一点的问题
 
 134
 00:10:46,000 --> 00:10:50,000
 Let’s say a car moves on a highway, and you’re given the velocities
-假设一辆汽车在高速公路上行驶，你得到的速度是： 1.
+假设一辆汽车在高速公路上行驶 每隔10分钟 你会得到的速度
 
 135
 00:10:50,000 --> 00:10:56,000
 at different times at 10-minute intervals, and you want to work out
-在不同的时间，每隔10分钟，你想锻炼出
-
+你想得到
 136
 00:10:56,000 --> 00:10:59,000
 the total distance covered in 100 minutes.
@@ -681,137 +680,137 @@ the total distance covered in 100 minutes.
 137
 00:10:59,000 --> 00:11:01,000
 What you do is you divide by 60 over here—
-你要做的是用60除以这里的...
+你要做的是用 60 除以这里
 
 138
 00:11:01,000 --> 00:11:05,000
 after all, you want to work with minutes—and you take the height,
-毕竟，你要用分钟来工作，而你要用高度。
+毕竟 你要用分钟来工作 而你得到高度。
 
 139
 00:11:05,000 --> 00:11:11,000
 so to speak, as the velocities, so you take 63, 62, 61, et cetera, from here,
-可以说，作为速度， 所以你把63，62，61，等等，从这里。
+可以说 作为速度 所以你把63 62 61 等等 从这里
 
 140
 00:11:11,000 --> 00:11:16,000
 and you get back the sum, which is just the distance covered.
-而你拿回来的总和，只是覆盖的距离。
+而你拿回来的总和 只是覆盖的距离
 
 141
 00:11:16,000 --> 00:11:23,000
 You can also take the heights to be the velocities at the right endpoints
-你也可以把高度当作右端点的速度。
+你也可以把高度当作右端点的速度
 
 142
 00:11:23,000 --> 00:11:29,000
 like I’ve done over here, in which case you get back the answer 108.33.
-就像我在这里做的那样，在这种情况下，你得到的答案是108. 33。
+就像我在这里做的那样 在这种情况下 你得到的答案是 108. 33
 
 143
 00:11:30,000 --> 00:11:36,000
 That’s a plot of the velocities, and we’ve worked out distance in two ways
-这是速度的曲线图，我们用两种方法计算出了距离
+这是速度的曲线图 我们用两种方法计算出了距离
 
 144
 00:11:36,000 --> 00:11:40,000
 using the left values and the right values.
-使用左值和右值。
+使用左值和右值
 
 145
 00:11:40,000 --> 00:11:44,000
 But of course we could be more precise and assume that the velocity
-但当然我们可以更精确地假设，速度为
+但当然我们可以更精确地假设
 
 146
 00:11:44,000 --> 00:11:48,000
 is given by a certain function, in which case you could work out
-是由某个函数给出的，在这种情况下，你可以计算出
+速度是由某个函数给出的 在这种情况下 你可以计算出
 
 147
 00:11:48,000 --> 00:11:50,000
 the distance by a similar method as earlier on.
-用类似前面的方法来计算距离。
+用类似前面的方法来计算距离
 
 148
 00:11:50,000 --> 00:11:55,000
 You take the limit of the sum, and then velocities must be then
-你取和的极限，那么速度一定是那么的
+你取和的极限 那么速度一定
 
 149
 00:11:55,000 --> 00:11:59,000
 found out at those values over here.
-发现在这些值在这里。
+在这里的这些值
 
 150
 00:11:59,000 --> 00:12:04,000
 Then you get back the answer as 109.394 in this case.
-那么在这种情况下，你得到的答案是109.394。
+那么在这种情况下 你得到的答案是 109.394
 
 151
 00:12:06,000 --> 00:12:10,000
 That’s a plot of velocity, and the area under the curve in this case
-那是速度的曲线图，在这种情况下，曲线下的面积。
+那是速度的曲线图 在这种情况下 曲线下的面积
 
 152
 00:12:10,000 --> 00:12:15,000
 will give you the distance covered in that interval of time.
-将给你在该时间段内所覆盖的距离。
+将给你在该时间段内所覆盖的距离
 
 153
 00:12:17,000 --> 00:12:19,000
 That brings me to the end of this lesson.
-至此，本课结束。
+本课至此就结束了
 
 154
 00:12:19,000 --> 00:12:23,000
 Basically, finding area is a very practical matter.
-基本上，寻找面积是一件非常实际的事情。
+基本上 寻找面积是一件非常实际的事情
 
 155
 00:12:23,000 --> 00:12:25,000
 You’ve done it forever, so to speak,
-可以说，你已经做了一辈子了。
+可以说 你已经做了一辈子了
 
 156
 00:12:25,000 --> 00:12:28,000
 from, let’s say, middle school all the way up.
-从，比方说，初中一直到。
+、比方说，初中一直到现在
 
 157
 00:12:28,000 --> 00:12:32,000
 But to work out the area under a general curve,
-但为了求出一般曲线下的面积。
+但为了求出一般曲线下的面积
 
 158
 00:12:32,000 --> 00:12:38,000
 you must divide into rectangles and then add those areas up.
-你必须分成长方形，然后把这些区域加起来。
+你必须分成长方形 然后把这些区域加起来
 
 159
 00:12:38,000 --> 00:12:41,000
 Finally, we are doing calculus, so you must take the limit
-最后，我们在做微积分，所以你一定要把极限
+最后 我们在做微积分 所以你一定要把极限
 
 160
 00:12:41,000 --> 00:12:46,000
 as those rectangle numbers approach infinity,
-当这些矩形数字接近无穷大时。
+当这些矩形数字接近无穷大时
 
 161
 00:12:46,000 --> 00:12:49,000
 and then you get the real area under the curve.
-然后你就可以得到曲线下的实际面积。
+然后你就可以得到曲线下的实际面积
 
 162
 00:12:49,000 --> 00:12:53,000
 Now, these sums that you compute are called Riemann sums
-现在，你计算的这些和叫做黎曼和。
+现在 你计算的这些和叫做黎曼和
 
 163
 00:12:53,000 --> 00:12:56,000
 in honor of the mathematician Riemann,
-为了纪念数学家黎曼。
+为了纪念数学家黎曼
 
 164
 00:12:56,000 --> 00:13:00,000
@@ -821,29 +820,29 @@ and these Riemann sums can also be used to work out
 165
 00:13:00,000 --> 00:13:05,000
 the total distance traveled when you are given only the velocity.
-当你只给你速度时，总的移动距离。
+当你只给你速度时 总的移动距离
 
 166
 00:13:06,000 --> 00:13:09,000
 That’s the end of this lesson.
-这节课就到此为止。
+这节课就到此为止
 
 167
 00:13:09,000 --> 00:13:12,000
 The next lesson will talk about Riemann sums in more detail,
-下节课将详细讲黎曼和。
+下节课将详细讲黎曼和
 
 168
 00:13:12,000 --> 00:13:15,000
 but before doing that, there will be a problem session,
-但在做之前，会有一个问题环节。
+但在做之前 会有一个问题环节
 
 169
 00:13:15,000 --> 00:13:21,000
 which you should certainly look at and understand the topic in much greater detail.
-你一定要看清楚，更详细地了解这个话题。
+你一定要看清楚 更详细地了解这个话题
 
 170
 00:13:21,000 --> 00:13:24,000
 Thank you very much. I’ll stop over here.
-谢谢你了我会在这里停下来。
+谢谢你了今天就到这里吧
