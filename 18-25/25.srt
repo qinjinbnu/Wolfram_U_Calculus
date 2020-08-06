@@ -1,12 +1,12 @@
 1
 00:00:00,000 --> 00:00:07,000
 Hello, and welcome to Lesson 25 of this introduction to calculus with Wolfram U.
-大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第25课。
+大家好 欢迎来到本次与沃尔夫兰大学合作的微积分入门第 25 课
 
 2
 00:00:07,000 --> 00:00:13,000
 The topic for this lesson is the fundamental theorem of calculus.
-本节课的课题是微积分的基本定理。
+本节课的课题是微积分的基本定理
 
 3
 00:00:14,000 --> 00:00:17,000
@@ -486,137 +486,137 @@ There is a function called the Fresnel function
 98
 00:06:21,000 --> 00:06:25,000
 which really quite useful in optics and highway design.
-这在光学和公路设计中真的相当有用。
+这在光学和公路设计中真的相当有用
 
 99
 00:06:25,000 --> 00:06:28,000
 After all, if you design a highway or you design, let’s say,
-毕竟，如果你设计一条高速公路或者你设计，比方说。
+毕竟 如果你设计一条高速公路或者
 
 100
 00:06:28,000 --> 00:06:30,000
 a very long line, you need to worry about the turns,
-一条很长的线，你需要担心转弯。
+一条很长的线 你需要关注一下拐点
 
 101
 00:06:30,000 --> 00:06:33,000
 and that’s where this Fresnel function comes in.
-这就是这个菲涅尔功能的作用。
+这就是这个菲涅尔函数的作用
 
 102
 00:06:33,000 --> 00:06:36,000
 It’s the integral function of a sine function.
-它是正弦函数的积分函数。
+它是正弦函数的积分函数
 
 103
 00:06:36,000 --> 00:06:39,000
 We have this in the Wolfram Language.
-我们在Wolfram语言中就有这个功能。
+我们在 Wolfram 语言中就有这个函数
 
 104
 00:06:39,000 --> 00:06:41,000
 It’s called FresnelS.
-这就是所谓的FresnelS。
+这就是所谓的 FresnelS 函数
 
 105
 00:06:41,000 --> 00:06:45,000
 That’s FresnelS and its derivative on the same plot.
-那是FresnelS和它在同一情节上的衍生物。
+那是 FresnelS 和它在同一图像上的导数
 
 106
 00:06:45,000 --> 00:06:50,000
 The blue plot is the Fresnel function and the orange plot is
-蓝色图是菲涅尔函数，橙色图是
+蓝色图是菲涅尔函数 橙色图是它的导数
 
 107
 00:06:50,000 --> 00:06:53,000
 its derivative, which is just the sine function over here.
-其导数，也就是这边的正弦函数而已。
+也就是这边的正弦函数而已
 
 108
 00:06:53,000 --> 00:06:57,000
 Another very useful function is the error function,
-另一个非常有用的功能是错误函数。
+另一个非常有用的功能是误差函数
 
 109
 00:06:57,000 --> 00:07:00,000
 which is also an integral function,
-这也是一个积分函数。
+这也是一个积分函数
 
 110
 00:07:00,000 --> 00:07:03,000
 and that’s used in statistics and probability.
-而这在统计学和概率学中是用的。
+运用在统计学和概率学
 
 111
 00:07:03,000 --> 00:07:07,000
 Here is the error function with its derivative.
-下面是误差函数及其导数。
+下面是误差函数及其导数
 
 112
 00:07:07,000 --> 00:07:09,000
 You have the error function, which is blue,
-你有错误函数，这是蓝色的。
+你有蓝色的误差函数
 
 113
 00:07:09,000 --> 00:07:11,000
 over here, and the derivative.
-在这里，和衍生。
+在这里 和导数
 
 114
 00:07:11,000 --> 00:07:13,000
 It’s just a normal probability curve.
-这只是一条正常的概率曲线。
+这只是一条正常的概率曲线
 
 115
 00:07:13,000 --> 00:07:16,000
 What happens is as you approach very large values,
-当你接近非常大的数值时，会发生什么。
+当你接近非常大的数值时 会发生什么=
 
 116
 00:07:16,000 --> 00:07:20,000
 the probability of everything being covered is almost 1,
-覆盖一切的概率几乎为1。
+覆盖一切的概率几乎为 1
 
 117
 00:07:20,000 --> 00:07:24,000
 so that’s why the values over here are almost 1.
-所以这就是为什么这边的数值几乎是1。
+所以这就是为什么这边的数值几乎是 1
 
 118
 00:07:26,000 --> 00:07:29,000
 Okay. Now there is another more useful version
-好了，现在还有一个更有用的版本。现在还有一个更有用的版本
+好了现在还有一个更有用的基本定理版本
 
 119
 00:07:29,000 --> 00:07:33,000
 of the fundamental theorem, and that’s version 2,
-的基本定理，这就是第二版。
+就是第二版
 
 120
 00:07:33,000 --> 00:07:36,000
 which says that suppose you have a function <i>f</i>
-它说，假设你有一个函数<i>f</i>。
+假设你有函数 <i>f</i>
 
 121
 00:07:36,000 --> 00:07:41,000
 and you find an antiderivative of that function by some means.
-而你通过某种方式找到该函数的反函数。
+而你通过某种方式找到该函数的反导数
 
 122
 00:07:41,000 --> 00:07:45,000
 Then the value of the integral from <i>a</I> to <i>b</i> of this function <i>f</i>
-那么这个函数<i>a</I>到<i>b</i>的积分值<i>f</i>。
+那么这个函数从 <i>a</I> 到 <i>b</i> 的积分值 <i>f</i>
 
 123
 00:07:45,000 --> 00:07:51,000
 is the antidervative at <i>b</i> minus the antiderivative at <i>a</i>.
-是<i>b</i>的反余数减去<i>a</i>的反余数。
+是 <i>b</i> 的反导数减去<i>a</i>的反导数
 
 124
 00:07:51,000 --> 00:07:55,000
 In other words, the integral of an antiderivative
-换句话说，一个反求异体的积分
+换句话说，一个反导数的积分
 
 125
 00:07:55,000 --> 00:07:58,000
@@ -626,122 +626,122 @@ can be found quite easily by simply working out
 126
 00:07:58,000 --> 00:08:02,000
 the difference between the values at the upper and the lower limits.
-上下限值之差；
+上下限值之差
 
 127
 00:08:02,000 --> 00:08:06,000
 That says that differentiation and integration
-这说明，差异化和一体化
+这说明 差异化和一体化
 
 128
 00:08:06,000 --> 00:08:09,000
 are actually the inverse processes of each other.
-其实都是彼此的逆过程。
+其实都是彼此的逆过程
 
 129
 00:08:09,000 --> 00:08:11,000
 That’s quite a remarkable fact.
-这是一个相当了不起的事实。
+这是一个相当了不起的事实 
 
 130
 00:08:11,000 --> 00:08:13,000
 For example, if you’re asked to find
-例如，如果你被要求找到
+例如 如果你被要求计算出
 
 131
 00:08:13,000 --> 00:08:16,000
 the integral of <i>x</i>^2 from 1 to 4,
-<i>x</i>^2从1到4的积分。
+<i>x</i>^2 从 1 到 4 的积分
 
 132
 00:08:16,000 --> 00:08:20,000
 then you first work out the antiderivative, which is <i>x</i>^3/3.
-那么你首先要计算出反演数，即<i>x</i>^3/3。
+那么你首先要计算出反演数 即 <i>x</i>^3/3
 
 133
 00:08:20,000 --> 00:08:22,000
 Then you plug in the upper and lower limits,
-然后你插上上下限。
+然后你插上上下限
 
 134
 00:08:22,000 --> 00:08:27,000
 so you get 4^3/3 – 1^3/3, and the answer 21.
-所以你得到4^3/3-1^3/3，答案为21。
+所以你得到 4^3/3-1^3/3 答案为 21
 
 135
 00:08:27,000 --> 00:08:33,000
 You can check that with Integrate and get back just the same result.
-你可以用Integrate检查一下，得到的结果也一样。
+你可以用 Integrate 函数检查一下 得到的结果也一样
 
 136
 00:08:34,000 --> 00:08:37,000
 That brings me to the end of this lesson,
-至此，本课结束。
+本课到这里结束了
 
 137
 00:08:37,000 --> 00:08:41,000
 but the main point is that the fundamental theorem of calculus
-但主要的是，微积分的基础定理
+但主要的是 微积分的基础定理
 
 138
 00:08:41,000 --> 00:08:44,000
 is one of the most important theorems in calculus
-是微积分中最重要的定理之一。
+是微积分中最重要的定理之一
 
 139
 00:08:44,000 --> 00:08:50,000
 because it says that differentiation and integration
-因为它说，差异化和一体化
+因为它说 差异化和一体化
 
 140
 00:08:50,000 --> 00:08:55,000
 are the inverse processes of each other.
-是彼此的逆过程。
+是彼此的逆过程
 
 141
 00:08:55,000 --> 00:09:00,000
 In fact, its real utility is to compute integrals
-事实上，它的真正用途是计算积分。
+事实上 它的真正用途是计算积分
 
 142
 00:09:00,000 --> 00:09:03,000
 by using antiderivatives
-用反义词
+用反导数
 
 143
 00:09:03,000 --> 00:09:08,000
 Basically, using the antiderivatives is much easier
-基本上，使用抗衍生品要容易得多。
+基本上，使用反导数比使用黎曼和
 
 144
 00:09:08,000 --> 00:09:10,000
 than using Riemann sums.
-比使用黎曼和。
+要容易得多
 
 145
 00:09:10,000 --> 00:09:12,000
 Instead of calculating Riemann sums,
-而不是计算黎曼和。
+不用计算黎曼和
 
 146
 00:09:12,000 --> 00:09:14,000
 you would calculate antiderivatives.
-你会计算反演。
+直接计算反导数
 
 147
 00:09:16,000 --> 00:09:18,000
 The next lesson will talk about indefinite integrals.
-下节课将讲到不定积分。
+下节课将讲到不定积分
 
 148
 00:09:18,000 --> 00:09:20,000
 But before that, do review this lesson over here
-但在这之前，请先在这边复习一下这堂课吧
+但在这之前 请先在这边复习一下这堂课吧
 
 149
 00:09:20,000 --> 00:09:25,000
 because we have covered one of the most important theorems in calculus,
-因为我们已经涵盖了微积分中最重要的定理之一。
+因为我们已经涵盖了微积分中最重要的定理之一
 
 150
 00:09:25,000 --> 00:09:27,000
@@ -751,14 +751,14 @@ and that’s going to be used all the time.
 151
 00:09:27,000 --> 00:09:29,000
 Let’s stop over here.
-让我们在这里停下来。
+今天就到这里
 
 152
 00:09:29,000 --> 00:09:30,000
 Thank you very much,
-非常感谢你。
+非常感谢您
 
 153
 00:09:30,000 --> 00:09:33,000
 and I hope you have learned a lot in this lesson.
-并希望你在这一课中学到很多东西。
+并希望你在这一课中学到很多东西
