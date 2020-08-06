@@ -226,7 +226,7 @@ there is some error in the approximation.
 46
 00:03:46,000 --> 00:03:50,000
 Now if you take more rectangles—let’s say you take 10 rectangles—
-现在如果你取更多的矩形 比方说你取 个矩形 就会有更多的矩形
+现在如果你取更多的矩形 比方说你取10个矩形
 
 47
 00:03:50,000 --> 00:03:55,000
@@ -236,7 +236,7 @@ you will get a better approximation, and then as you increase
 48
 00:03:55,000 --> 00:04:00,000
 the number of rectangles, you will get a better and better approximation, hopefully.
-矩形的数量 你会得到一个更好的和更好的近似值
+矩形的数量 你会得到一个更更好的近似值
 
 49
 00:04:01,000 --> 00:04:06,000
@@ -536,7 +536,7 @@ the limit of the sum of the areas of the rectangles.
 108
 00:08:47,000 --> 00:08:54,000
 Now that’s the case for right-aligned because you’re working with <i>f</i>[<i>xi</i>],
-现在是右对齐的情况 因为你是在用 <i>f</i>[<i>xi</i>] 工作
+现在是右对齐的情况 因为你是在用 <i>f</i>[<i>xi</i>]
 
 109
 00:08:54,000 --> 00:08:59,000
