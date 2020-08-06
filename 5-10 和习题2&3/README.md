@@ -1,4 +1,4 @@
-#修正
+# 修正
 
 1.
 Devendra_Calculus_Lesson_10_eng.srt 第 49 句
