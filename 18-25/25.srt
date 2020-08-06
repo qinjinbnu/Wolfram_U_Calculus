@@ -266,7 +266,7 @@ and think of the difference at two points, <i>f</i>[<i>x</i> + <i>h</i>] and <i>
 54
 00:03:40,000 --> 00:03:44,000
 two close-by points with <i>h</i> being very small.
-两个相近的点 <i>h</i> 很小。
+两个相近的点 <i>h</i> 很小
 
 55
 00:03:44,000 --> 00:03:47,000
@@ -296,127 +296,127 @@ which is just the <i>g</i>[<i>x</i>], so the area is <i>h</i> * <i>g</i>[<i>x</i
 60
 00:04:05,000 --> 00:04:11,000
 But then that is <i>f</i>[<i>x</i> + <i>h</i>] – <i>f</i>[<i>x</i>], so if you divide,
-但那就是 <i>f</i>[<i>x</i>+<i>h</i>]-<i>f</i>[<i>x</i>] 所以如果你除
+但那就是 <i>f</i>[<i>x</i>+<i>h</i>]-<i>f</i>[<i>x</i>] 所以如果你做除法
 
 61
 00:04:11,000 --> 00:04:13,000
 then you get back this relation over here.
-然后你把这个关系拿回来
+然后你回顾这个关系
 
 62
 00:04:13,000 --> 00:04:19,000
 As <i>h</i> goes to 0, that says that <i>f</i>'[<i>x</i>] = <i>g</i>[<i>x</i>].
-由于<i>h</i>为0，所以说<i>f</i>'[<i>x</i>]=<i>g</i>[<i>x</i>]。
+由于 <i>h</i> 为 0 所以说 <i>f</i>'[<i>x</i>]=<i>g</i>[<i>x</i>]
 
 63
 00:04:19,000 --> 00:04:25,000
 In other words, <I>f</I>[<i>x</i>] is an antiderivative of <i>g</i>[<i>x</i>].
-换句话说，<I>f</I>[<i>x</i>]是<i>g</i>[<i>x</i>]的反衍生。
+换句话说 <I>f</I>[<i>x</i>] 是 <i>g</i>[<i>x</i>] 反导数
 
 64
 00:04:25,000 --> 00:04:30,000
 It is this remarkable fact which is summarized
-正是这个显著的事实被概括为
+正是这个事实被概括在
 
 65
 00:04:30,000 --> 00:04:32,000
 in the fundamental theorem of calculus.
-在微积分基本定理中。
+微积分基本定理中
 
 66
 00:04:32,000 --> 00:04:34,000
 There are two versions.
-有两个版本。
+它有两个版本
 
 67
 00:04:34,000 --> 00:04:36,000
 That’s version 1 over here.
-这是版本1在这里。
+这是版本一
 
 68
 00:04:36,000 --> 00:04:40,000
 It says that if you have a continuous function <i>g</i>
-它说，如果你有一个连续函数<i>g</i>。
+它说 如果你有一个连续函数 <i>g</i>
 
 69
 00:04:40,000 --> 00:04:45,000
 and you define <i>f</i> to be an integral from 0 to <i>x</i>—
-你定义<i>f</i>为0到<i>x</i>-的积分。
+你定义 <i>f</i> 为从 0 到 <i>x</i>- 的积分
 
 70
 00:04:45,000 --> 00:04:49,000
 from <i>a</i> to <I>x</i>, in this case—then what you get back
-从<i>a</i>到<I>x</i>，在这种情况下，你得到的是
+从<i>a</i> 到 <I>x</i> 在这种情况下 你得到的是
 
 71
 00:04:49,000 --> 00:04:54,000
 is a function, an integral function, and this integral function
-是一个函数，是一个积分函数，而这个积分函数
+是一个积分函数 而这个积分函数
 
 72
 00:04:54,000 --> 00:04:58,000
 is actually an antiderivative of <i>g</i>.
-实际上是<i>g</i>的反赋值。
+实际上是 <i>g</i> 的反导数
 
 73
 00:04:58,000 --> 00:05:03,000
 In other words, <i>f</I>'[<i>x</i>] is equal to <i>g</i>[<i>x</i>].
-换句话说，<i>f</I>'[<i>x</i>]等于<i>g</i>[<i>x</i>]。
+换句话说 <i>f</I>'[<i>x</i>] 等于 <i>g</i>[<i>x</i>]
 
 74
 00:05:05,000 --> 00:05:07,000
 Let’s try and understand that a bit more
-让我们试着去理解一下吧。
+让我们试着去理解一下吧
 
 75
 00:05:07,000 --> 00:05:08,000
 by looking at some examples.
-通过看一些例子。
+通过看一些例子
 
 76
 00:05:08,000 --> 00:05:13,000
 Let’s say you have the function <i>f</i>[<i>x</i>] given by the integral
-假设你有函数<i>f</i>[<i>x</i>]，其积分为
+假设你有函数 <i>f</i>[<i>x</i>] 其积分为
 
 77
 00:05:13,000 --> 00:05:19,000
 from 0 to <i>x</i> for Sin(√1 + <I>t</i>^2)<i>dt</i> and you integrate it.
-从0到<i>x</i>为Sin(√1+<I>t</i>^2)<i>dt</i>，你把它积分。
+从 0 到 <i>x</i> 为 Sin(√1+<I>t</i>^2)<i>dt</i>
 
 78
 00:05:19,000 --> 00:05:23,000
 Then you just get back Sin(√1 + <i>x</i>^2).
-那么你只需取回Sin(√1+<i>x</i>^2)。
+那么你只需取回 Sin(√1+<i>x</i>^2)
 
 79
 00:05:23,000 --> 00:05:25,000
 Here’s a check; namely, if we take
-这里有一个检查，即如果我们把
+这里有一个检查 即如果我们用
 
 80
 00:05:25,000 --> 00:05:27,000
 the derivative of the integral function,
-积分函数的导数。
+积分函数的导数
 
 81
 00:05:27,000 --> 00:05:31,000
 you will get back just the original function.
-你将得到的只是原来的功能。
+你将得到的只是原来的函数
 
 82
 00:05:31,000 --> 00:05:33,000
 That’s the summary over here which says that
-这就是这边的总结，说的是
+这就是这边的总结
 
 83
 00:05:33,000 --> 00:05:37,000
 if you take a function, integrate it and then differentiate it,
-如果你把一个函数，整合后再进行区分。
+如果你把一个函数积分后在求导
 
 84
 00:05:37,000 --> 00:05:40,000
 you get back the original function.
-你会找回原来的功能。
+你会找回原来的函数
 
 85
 00:05:40,000 --> 00:05:44,000
@@ -426,57 +426,57 @@ Now the problem is the upper limit itself
 86
 00:05:44,000 --> 00:05:46,000
 might depend on <I>x</i> in some complicated way.
-可能以某种复杂的方式依赖于<I>x</i>。
+可能以某种复杂的方式依赖于 <I>x</i>
 
 87
 00:05:46,000 --> 00:05:48,000
 In that case, you must apply the chain rule.
-在这种情况下，你必须应用链式规则。
+在这种情况下 你必须应用链式法则
 
 88
 00:05:48,000 --> 00:05:51,000
 Let’s say <i>g</i>[<i>x</i>] is the integral 0 to <i>x</i>^2
-假设<i>g</i>[<i>x</i>]是0到<i>x</i>^2的积分。
+假设在相同函数中
 
 89
 00:05:51,000 --> 00:05:53,000
 of the same function.
-的相同功能。
+<i>g</i>[<i>x</i>] 是 0 到 <i>x</i>^2 的积分
 
 90
 00:05:53,000 --> 00:05:57,000
 Then if you differentiate that with respect to <i>x</i>,
-那么如果你对<i>x</i>进行区分。
+那么如果你对 <i>x</i> 进行微分
 
 91
 00:05:57,000 --> 00:05:59,000
 you will need to account for the <i>x</i>^2,
-你需要考虑到<i>x</i>^2。
+你需要考虑到 <i>x</i>^2
 
 92
 00:05:59,000 --> 00:06:02,000
 so you get back a factor of 2<i>x</i> over here.
-所以你在这里得到的是2<i>x</i>的系数。
+所以你在这里得到的是 2<i>x</i> 的系数
 
 93
 00:06:02,000 --> 00:06:03,000
 Let’s check that.
-让我们检查一下。
+让我们检查一下
 
 94
 00:06:03,000 --> 00:06:09,000
 You get back 2<i>x</i>Sin(√1 + <i>x</i>^4).
-你得到的是2<i>x</i>Sin(√1+<i>x</i>^4)。
+你得到的是 2<i>x</i>Sin(√1+<i>x</i>^4)
 
 95
 00:06:10,000 --> 00:06:16,000
 Okay. Let’s now go on to talking about why these integral functions
-好了，现在我们继续说说为什么这些积分函数我们现在继续讨论为什么这些积分函数
+好了 现在我们继续说说为什么
 
 96
 00:06:16,000 --> 00:06:18,000
 are useful at all.
-都是有用的。
+这些积分函数都是有用的
 
 97
 00:06:18,000 --> 00:06:21,000
