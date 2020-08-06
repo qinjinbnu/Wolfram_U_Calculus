@@ -1,0 +1,372 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 11 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:15,000
+The topic for this lesson is the chain rule, so let’s begin with a brief overview of the lesson.
+
+3
+00:00:15,000 --> 00:00:22,000
+Recall that if you have two functions <i>f</i> and <i>g</i>, then the composition of <i>f</i> and <i>g</i> will
+
+4
+00:00:22,000 --> 00:00:32,000
+take the values of <i>g</i> and then plug them into <i>f</i>. Here’s an example. You have <i>f</i> given by <i>x</i>^2,
+
+5
+00:00:32,000 --> 00:00:42,000
+and <i>g</i> is just a sine function. If you try and work out <i>f</i>[<i>g</i>[<i>x</i>]], that’s going to be Sin[<i>x</i>]
+
+6
+00:00:42,000 --> 00:00:48,000
+and then the square of it, so Sin[<i>x</i>], the whole squared, or sine squared <i>x</i>.
+
+7
+00:00:48,000 --> 00:00:55,000
+Now, the rules we have discussed so far—the sum rule, product, et cetera—cannot be used to find
+
+8
+00:00:55,000 --> 00:01:01,000
+the derivatives of such compositions, but of course D knows about them.
+
+9
+00:01:01,000 --> 00:01:10,000
+What’s required over here is something called the chain rule. The chain rule is what lets you
+
+10
+00:01:10,000 --> 00:01:16,000
+find out the derivatives of compositions, and that’s the topic for the lesson:
+
+11
+00:01:16,000 --> 00:01:21,000
+the chain rule and examples for this very powerful rule.
+
+12
+00:01:21,000 --> 00:01:26,000
+Let’s begin with a statement of the rule. If you have two functions <i>f</i> and <i>g</i>
+
+13
+00:01:26,000 --> 00:01:36,000
+and if <i>f</i> is differentiable at <i>g</i>[<i>x</i>] and <i>g</i> is differentiable at <i>x</i>, then the composition is also
+
+14
+00:01:36,000 --> 00:01:43,000
+differentiable at <i>x</i>. The main point now is that the derivative is given by <i>g</i>'[<i>x</i>] on the right
+
+15
+00:01:43,000 --> 00:01:57,000
+and <i>f</i>'[<i>g</i>[<i>x</i>]] on the left. Here’s an example in the abstract setting. <i>D</i>[<i>f</i>[<i>g</i>[<i>x</i>]] is <i>f</i>'[<I>g</i>[<i>x</i>]] times <i>g</i>'[<i>x</i>].
+
+16
+00:01:58,000 --> 00:02:07,000
+So, if I said find the derivative of Sin^2[<i>x</i>], you would first work out the derivative of Sin[<i>x</i>]
+
+17
+00:02:07,000 --> 00:02:17,000
+and then the derivative of <i>x</i>^2, and then would plug in <i>x</i> with Sin[<i>x</i>]. Okay.
+
+18
+00:02:17,000 --> 00:02:25,000
+Then you get back the answer 2Cos[<i>x</i>]Sin[<i>x</i>]. Here’s a plot of the function and its derivative,
+
+19
+00:02:25,000 --> 00:02:32,000
+and notice that the function Sin^2[<i>x</i>] is always non-negative, but its derivative can be
+
+20
+00:02:32,000 --> 00:02:37,000
+either positive or negative depending upon which portion of the graph you are in.
+
+21
+00:02:39,000 --> 00:02:45,000
+Okay. As an example of an algebraic function with a composition in it, let’s take
+
+22
+00:02:45,000 --> 00:02:53,000
+the square root of <i>x</i>^2 − 1. Now in this case, the inner function is going to be <i>x</i>^2 − 1,
+
+23
+00:02:53,000 --> 00:03:01,000
+and the outer one is square root of <i>x</i>, so that’s the composition in this case, <i>g</i>[<i>h</i>[<i>x</i>]].
+
+24
+00:03:01,000 --> 00:03:09,000
+What you do is you work out the derivative of <i>x</i>^2 − 1, which is 2<i>x</i>, and then work out
+
+25
+00:03:09,000 --> 00:03:17,000
+the derivative of the outer function, and there’s the answer. D gives the same result,
+
+26
+00:03:17,000 --> 00:03:25,000
+and here is a plot of the function and its derivative. Of course because we’re finding
+
+27
+00:03:25,000 --> 00:03:31,000
+the derivative of the square root of <i>x</i>^2 − 1, there’s nothing on the left of 1 over here.
+
+28
+00:03:32,000 --> 00:03:39,000
+Okay. Here’s a trig function, Cos[<i>x</i>^2]. Now the inner function over here is <i>x</i>^2;
+
+29
+00:03:39,000 --> 00:03:47,000
+the outer one is Cos[<i>x</i>]. Let’s first set up the composition, and you get back Cos[<i>x</i>^2] from <i>g</i>[<i>h</i>[<i>x</i>]].
+
+30
+00:03:47,000 --> 00:03:53,000
+You work out the derivative of <i>h</i>. That’s 2<i>x</i>. Work out the derivative of <i>g</i>,
+
+31
+00:03:53,000 --> 00:04:00,000
+and then that’s the answer. And of course, D gives just the same result.
+
+32
+00:04:00,000 --> 00:04:05,000
+Here is a plot of the function and its derivative.
+
+33
+00:04:07,000 --> 00:04:17,000
+Let’s go on now to talking about the power rule. Now, the power rule is a rule for finding
+
+34
+00:04:17,000 --> 00:04:24,000
+the derivative of <i>x</i>^<i>n</i>, but you can make it even more powerful by just composing it
+
+35
+00:04:24,000 --> 00:04:33,000
+with another function <i>g</i>. Okay. If I gave you <i>f</i>[<i>g</i>[<i>x</i>]] with <i>g</i> being some function,
+
+36
+00:04:33,000 --> 00:04:43,000
+then the chain rule says that the derivative is <i>ng</i>[<i>x</i>]^(−1 − <i>n</i>)<i>g</i>'[<i>x</i>]. For example, if I said
+
+37
+00:04:43,000 --> 00:04:50,000
+find the derivative of (<i>x</i>^4 + 1)^100, you can find it quite easily because all you do is
+
+38
+00:04:50,000 --> 00:05:01,000
+you do 100 times that raised to 99 times the derivative of (<i>x</i>^4 + 1), which is 4<i>x</i>^3.
+
+39
+00:05:01,000 --> 00:05:10,000
+Of course, you don’t have to use a positive here. You could use a fraction like in this example,
+
+40
+00:05:10,000 --> 00:05:17,000
+or you could even use a negative number, and you get back the answer quite easily.
+
+41
+00:05:17,000 --> 00:05:21,000
+In this very simple way, you can extend the power rule
+
+42
+00:05:21,000 --> 00:05:27,000
+to find the derivatives of fairly complicated compositions.
+
+43
+00:05:29,000 --> 00:05:39,000
+Okay. Now if you have a product like over here—<i>f</i>[<i>x</i>] is a product of two things over here:
+
+44
+00:05:39,000 --> 00:05:47,000
+(3<i>x</i> − 2)^3 and (9<i>x</i>^4 − <i>x</i> +3)^5. You might think that the best way to do it is to expand <i>f</i>.
+
+45
+00:05:47,000 --> 00:05:55,000
+Well, you could do that and then find the derivative, but that’s going to be a long, messy answer,
+
+46
+00:05:55,000 --> 00:05:58,000
+so a much better way is to use the product rule and the chain rule together.
+
+47
+00:05:58,000 --> 00:06:07,000
+You say first function times the derivative of the second one, and then the second function times
+
+48
+00:06:07,000 --> 00:06:12,000
+the derivative of the first, and you get back the answer, which is the same as
+
+49
+00:06:12,000 --> 00:06:20,000
+the earlier long answer. In fact, D prefers to use the product rule,
+
+50
+00:06:20,000 --> 00:06:28,000
+and of course you should do that too. Given a fairly complicated expression like this,
+
+51
+00:06:28,000 --> 00:06:35,000
+you must try and use the best rules possible to get the most compact answer in the result
+
+52
+00:06:35,000 --> 00:06:40,000
+because then you can use it much more easily in future work.
+
+53
+00:06:42,000 --> 00:06:48,000
+Okay. Let’s go on now to talking about multiple compositions. The chain rule itself
+
+54
+00:06:48,000 --> 00:06:57,000
+talks about the derivative of <i>f</i>[<i>g</i>[<i>x</i>]] as being <i>g</i>'[<i>x</i>] times <I>f</i>'[<i>g</i>[<i>x</i>]], but of course that will hardly be
+
+55
+00:06:57,000 --> 00:07:05,000
+a chain which only has two links in it, so you can keep on this way and build up chains
+
+56
+00:07:05,000 --> 00:07:10,000
+of longer and longer lengths. Let’s say that we’ve got <i>f</i>[<i>g</i>[<i>h</i>[<i>x</i>]]] like over here.
+
+57
+00:07:10,000 --> 00:07:22,000
+The derivative is going to be <i>h</i>'[<i>x</i>] and then <i>g</i>'[<i>h</i>[<i>x</i>]] and then <i>f</i>'[<i>g</i>[<i>h</i>[<i>x</i>]]]. In every case,
+
+58
+00:07:22,000 --> 00:07:29,000
+you fix the remaining functions or variables and work out derivative. For example, if I gave you
+
+59
+00:07:29,000 --> 00:07:40,000
+Sin[Cos[<i>x</i>^2]] as your function, then the derivative would be 2<i>x</i> from the <i>x</i>^2, then −Sin[<i>x</i>^2]
+
+60
+00:07:40,000 --> 00:07:49,000
+from the cosine and then Cos[Cos[<i>x</i>^2]] from the outer sine wave. The answer over here
+
+61
+00:07:49,000 --> 00:07:57,000
+is confirmed by D, and that tells you that given any long chain of compositions,
+
+62
+00:07:57,000 --> 00:08:00,000
+you can apply just the same rule and get the result.
+
+63
+00:08:01,000 --> 00:08:07,000
+A similar example is one I’ll take up next, which is CubeRoot[Cos[<i>x</i>^2]].
+
+64
+00:08:07,000 --> 00:08:15,000
+Again, you start from the innermost function, <I>x</i>^2, then work out the next function derivative
+
+65
+00:08:15,000 --> 00:08:27,000
+in the chain and then the outermost derivative. The answer over here is a fairly complicated function,
+
+66
+00:08:27,000 --> 00:08:36,000
+but D confirms that it is correct. You can plot the function and its derivative, and you get back
+
+67
+00:08:36,000 --> 00:08:44,000
+this beautiful plot. Just to recall for you the procedure again, you work out the derivative of <i>x</i>^2,
+
+68
+00:08:44,000 --> 00:08:52,000
+the innermost one, work out the derivative of Cos[<i>x</i>] and replace <i>x</i> with <i>x</i>^2, and then finally
+
+69
+00:08:52,000 --> 00:08:57,000
+work out the derivative of CubeRoot[<i>x</i>] and replace <i>x</i> with Cos[<i>x</i>^2].
+
+70
+00:09:00,000 --> 00:09:04,000
+Okay. As a final example, let’s talk about simple harmonic motion.
+
+71
+00:09:04,000 --> 00:09:10,000
+Simple harmonic motion is a motion that’s given by the scale of a trigonometric function.
+
+72
+00:09:10,000 --> 00:09:18,000
+Here <i>A</i> is the amplitude. Think about a pendulum. The amplitude is how far it goes in one direction.
+
+73
+00:09:18,000 --> 00:09:29,000
+ω is the frequency—that is, how fast it goes—and δ is the phase shift. You could have two pendulums
+
+74
+00:09:29,000 --> 00:09:36,000
+and they both have drastic different motions because they have different phase shifts.
+
+75
+00:09:36,000 --> 00:09:41,000
+They started, say, at different times and you get different phase shifts.
+
+76
+00:09:41,000 --> 00:09:48,000
+Now given such a simple harmonic motion, you can work out the velocity and the acceleration
+
+77
+00:09:48,000 --> 00:09:55,000
+by working out the first and second derivatives. Here are the velocity and acceleration,
+
+78
+00:09:55,000 --> 00:10:06,000
+<i>v</i> and <i>A</i>, and notice that the acceleration is almost the same as the position except that
+
+79
+00:10:06,000 --> 00:10:15,000
+it has this − ω^2 multiplied to it as an extra factor. What that says
+
+80
+00:10:15,000 --> 00:10:26,000
+is that <i>s</i>'' +  ω^2<i>s</i>[<i>t</i>] is equal to 0, and that’s something called a differential equation,
+
+81
+00:10:26,000 --> 00:10:33,000
+which you will study much later in calculus. The HoldForm does the following.
+
+82
+00:10:33,000 --> 00:10:38,000
+It prevents anything from evaluating, so if you do ReleaseHold like I’ve done over there,
+
+83
+00:10:38,000 --> 00:10:46,000
+then in fact you get back the result True, which says that the differential equation is satisfied by
+
+84
+00:10:46,000 --> 00:10:49,000
+the simple harmonic motion function over here.
+
+85
+00:10:50,000 --> 00:10:57,000
+Okay. That brings me to the end of today’s lesson. To summarize, the chain rule lets you
+
+86
+00:10:57,000 --> 00:11:01,000
+find the derivatives of many more functions because you can work out
+
+87
+00:11:01,000 --> 00:11:08,000
+the derivatives of products and powers, et cetera, much more easily with the help of this rule.
+
+88
+00:11:08,000 --> 00:11:13,000
+Now of course you can build up a chain of any length so you can use it more than once
+
+89
+00:11:13,000 --> 00:11:21,000
+where a function is a composition of more than two functions. Those two statements
+
+90
+00:11:21,000 --> 00:11:27,000
+summarize the lesson, but today’s lesson is probably the most difficult one in our series so far,
+
+91
+00:11:27,000 --> 00:11:32,000
+so do review it carefully, look at the exercises and make sure you’re ready for the next lesson,
+
+92
+00:11:32,000 --> 00:11:36,000
+which is on implicit differentiation. I’ll stop over here.
+
+93
+00:11:36,000 --> 00:11:39,000
+I hope you enjoyed listening. Thank you.
+

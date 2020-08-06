@@ -38,3 +38,6 @@
 has got these similarities because that’s where you have a problem: when you divide by zero,
 
 我彻底不会翻这个，因为上下文看起来非常奇怪
+
+## 第四个视频过程中出现的问题
+
