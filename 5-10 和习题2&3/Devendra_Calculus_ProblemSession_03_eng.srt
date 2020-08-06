@@ -360,7 +360,7 @@ You get back 2<i>y</i> * <i>y</i>'' + (<i>y</i>')^2 − 2 = 0. Check with D. Sol
 
 91
 00:12:24,000 --> 00:12:33,000
-you still have a <i>y</i>' inside the answer, so you plug in <i>y</i>'[<i>x</i>] equal to <i>x</i> or <i>y</i> like I have done over here,
+you still have a <i>y</i>' inside the answer, so you plug in <i>y</i>'[<i>x</i>] equal to <i>x</i> over <i>y</i> like I have done over here,
 
 92
 00:12:33,000 --> 00:12:37,000

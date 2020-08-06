@@ -507,67 +507,67 @@ so you actually have an absolute minimum.
 102
 00:09:14,000 --> 00:09:22,000
 The minimum value will occur when you are at (8, 4), and that’s the answer to the problem.
-当你在（8，4）时，会出现最小值，这就是问题的答案。
+当你在 （8，4） 时 会出现最小值 这就是问题的答案
 
 103
 00:09:24,000 --> 00:09:27,000
 Okay. Now on to a business example.
-好了，现在开始讲一个商业例子。现在来举个商业例子。
+好了 现在开始讲一个商业例子
 
 104
 00:09:27,000 --> 00:09:35,000
 Let’s say you have a store that sells 300 monitors a week at $200 each.
-比方说，你有一家商店，每周销售300台显示器，每台200元。
+比方说 你有一家商店 每周销售300台显示器 每台200元
 
 105
 00:09:35,000 --> 00:09:42,000
 Now the store finds that for each $10 rebate, of course the sales go up,
-现在店家发现，每返利10元，销量当然就上去了。
+现在店家发现 每返利10元销量当然就会增加
 
 106
 00:09:42,000 --> 00:09:48,000
 so the number of monitors increases by the number 30 in a week.
-所以一周内显示器的数量会增加30个。
+所以一周内显示器的数量会增加30个
 
 107
 00:09:49,000 --> 00:09:55,000
 Okay. The question is what are the demand function and the revenue function?
-好的。问题是需求函数和收入函数是什么？
+好的 我的问题是需求函数和收入函数是什么
 
 108
 00:09:55,000 --> 00:10:03,000
 You also want to find the rebate that the store should offer to maximize its revenue.
-你也要找到店铺应该提供的返利，使其收益最大化。
+你也要找到店铺应该提供多少返利 使其收益最大化
 
 109
 00:10:03,000 --> 00:10:07,000
 The demand function is just the price per unit, so that’s given over here.
-需求函数只是单位价格，所以在这边给出了。
+需求函数只是单位价格 所以在这边给出了
 
 110
 00:10:07,000 --> 00:10:16,000
 You have the base price 200 minus the discount that customers will get
-你的基本价格是200减去客户将得到的折扣。
+你的基本价格是 200 减去客户将得到的折扣
 
 111
 00:10:16,000 --> 00:10:20,000
 depending upon how many monitors are sold.
-取决于显示器的销售数量。
+取决于显示器的销售数量
 
 112
 00:10:20,000 --> 00:10:24,000
 The revenue function is just the total revenue.
-收入功能只是总收入。
+收入函数只是总收入
 
 113
 00:10:24,000 --> 00:10:27,000
 That’s the number of items times the price per item.
-那就是商品数量乘以每件商品的价格。
+那就是商品数量乘以每件商品的价格
 
 114
 00:10:27,000 --> 00:10:32,000
 To maximize revenue, you simply find its critical value, which is 450,
-要想实现收益最大化，你只要找到它的临界值，也就是450。
+要想实现收益最大化 你只要找到它的临界值 也就是 450
 
 115
 00:10:32,000 --> 00:10:38,000
@@ -577,154 +577,154 @@ and then you can actually check quite easily that you actually have
 116
 00:10:38,000 --> 00:10:41,000
 an absolute maximum at this value.
-在此值上为绝对最大值。
+在此值上为绝对最大值
 
 117
 00:10:41,000 --> 00:10:46,000
 The price at this value of <i>x</i> is 150.
-此值<i>x</i>时的价格为150。
+此值 <i>x</i> 时的价格为 150
 
 118
 00:10:46,000 --> 00:10:55,000
 Now the rebate should be $200, the base price, minus $150. That’s $50.
-现在回扣应该是200元，基本价格，减去150元。那就是50元。
+现在回扣应该是 200 元 基本价格减去 150 元那就是 50 元
 
 119
 00:10:57,000 --> 00:11:01,000
 Okay. Now that’s all done manually, but in the Wolfram Language,
-好了，现在这些都是手动完成的。现在，所有这些都是手动完成的，但在Wolfram语言中。
+好了 现在这些都是手动完成的 现在 所有这些都是手动完成的 但在 Wolfram 语言中
 
 120
 00:11:01,000 --> 00:11:06,000
 we have two functions, Maximize and Minimize, which can actually find
-我们有两个函数，Maximize和Minimize，它实际上可以发现
+我们有两个函数 Maximize 和 Minimize 实际上可以发现
 
 121
 00:11:06,000 --> 00:11:12,000
 these absolute maxima and minima for a given range without any effort on our part.
-这些绝对最大值和最小值在给定的范围内，我们不需要做任何努力。
+我们可以在给定的范围内轻易地找到这些绝对最大值和最小值
 
 122
 00:11:12,000 --> 00:11:17,000
 For example, in the earlier case, I could use Maximize to get back
-例如，在前面的案例中，我可以使用Maximize来返回到
+例如 在前面的案例中 我可以使用 Maximize 来返回到
 
 123
 00:11:17,000 --> 00:11:21,000
 just the same answer for the revenue.
-只是收入的答案是一样的。
+只是收入的答案是一样的
 
 124
 00:11:22,000 --> 00:11:28,000
 You could also specify range, and we get back the answer for that range.
-你也可以指定范围，我们就会得到这个范围的答案。
+你也可以指定范围 我们就会得到这个范围的答案
 
 125
 00:11:31,000 --> 00:11:35,000
 That’s Maximize, and similarly, you could find an absolute minimum
-这就是Maximize，同样，你也可以找到一个绝对最小的
+这就是 Maximize 同样 你也可以通过使用最小化函数
 
 126
 00:11:35,000 --> 00:11:38,000
 by using the Minimize function.
-通过使用最小化函数。
+找到一个绝对最小值
 
 127
 00:11:38,000 --> 00:11:44,000
 Here is a function and you want to minimize it between 0 and 2π,
-这里有一个函数，你想在0和2π之间把它最小化。
+这里有一个函数 你想在 0 和 2π 之间把它最小化
 
 128
 00:11:44,000 --> 00:11:47,000
 so you use Minimize and you get back an answer,
-所以你使用最小化，然后得到一个答案。
+所以你使用最小化 然后得到一个答案
 
 129
 00:11:47,000 --> 00:11:51,000
 and here is a plot showing that that answer is actually correct.
-而这里有一张图显示，这个答案其实是正确的。
+而这里有一张图显示 这个答案其实是正确的
 
 130
 00:11:51,000 --> 00:11:55,000
 That dot over here is the point at which you have a minimum.
-这边的那个点就是你的最低点。
+这边的那个点就是你的最低点
 
 131
 00:11:57,000 --> 00:11:59,000
 Okay. That’s the end of this lesson.
-好了，这节课到此结束这就是本课的结束。
+好了 这节课到此结束这就是本课的结束。
 
 132
 00:11:59,000 --> 00:12:05,000
 The main point is that optimization is a very important area of applied mathematics.
-主要是优化是应用数学中一个非常重要的领域。
+主要是优化是应用数学中一个非常重要的领域
 
 133
 00:12:05,000 --> 00:12:11,000
 A lot of people spend time just solving optimization problems.
-很多人花时间只是解决优化问题。
+很多人花时间只是解决优化问题
 
 134
 00:12:11,000 --> 00:12:16,000
 Now to solve such problems, the first point is you must try and understand what the problem is.
-现在要解决这样的问题，第一点就是你必须试着去了解问题是什么。
+现在要解决这样的问题 第一点就是你必须试着去了解问题是什么
 
 135
 00:12:16,000 --> 00:12:21,000
 To understand the problem, you draw a picture, et cetera,
-为了了解问题，你画了一幅画，等等。
+为了了解问题 你画了一幅画 等等
 
 136
 00:12:21,000 --> 00:12:24,000
 and make you’ve got all of it set up right before you try and solve it.
-在你尝试解决它之前，让你把所有的东西都设置好。
+在你尝试解决它之前 让你把所有的东西都设置好
 
 137
 00:12:25,000 --> 00:12:30,000
 Of course, if you are in business, then optimization is particularly important
-当然，如果你是做企业的，那么优化就显得尤为重要了
+当然 如果你是做生意的 那么优化就显得尤为重要了
 
 138
 00:12:30,000 --> 00:12:32,000
 because you want maximize the profits,
-因为你想让利润最大化。
+因为你想让利润最大化
 
 139
 00:12:32,000 --> 00:12:37,000
 so you need some kind of quantitative way of maximizing profits.
-所以你需要某种量化的方式来实现利润最大化。
+所以你需要某种量化的方式来实现利润最大化
 
 140
 00:12:37,000 --> 00:12:42,000
 There are two built-in functions, Maximize and Minimize,
-有两个内置功能，最大化和最小化。
+有两个内置函数 Maximize 和 Minimize
 
 141
 00:12:42,000 --> 00:12:46,000
 which are really useful for solving such problems.
-这对解决此类问题确实很有用。
+这对解决此类问题确实很有用
 
 142
 00:12:48,000 --> 00:12:50,000
 The next lesson will talk about antiderivatives,
-下节课将讲到反面教材。
+下节课将讲到反导数
 
 143
 00:12:50,000 --> 00:12:53,000
 but before you do that, do review today’s lesson.
-但在这之前，请先复习一下今天的课程。
+但在这之前 请先复习一下今天的课程
 
 144
 00:12:53,000 --> 00:12:55,000
 It was quite a difficult lesson.
-这是相当困难的一课。
+这是相当困难的一课
 
 145
 00:12:55,000 --> 00:13:00,000
 Make sure you understand all the steps, and then we’ll go on to antiderivatives next time.
-确保你理解了所有的步骤，然后我们下一次再继续讲反面教材。
+确保你理解了所有的步骤 然后我们下一次再继续讲反导数
 
 146
 00:13:00,000 --> 00:13:03,000
 Thank you very much. I’ll stop over here.
-谢谢你了我会在这里停下来。
+谢谢您 今天讲到这里吧
