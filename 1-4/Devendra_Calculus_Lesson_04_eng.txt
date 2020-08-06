@@ -1,0 +1,588 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 4 of this introduction to calculus with Wolfram U.
+
+2
+00:00:07,000 --> 00:00:13,000
+The topic for today’s lesson is the limit of a function, and it is today that we begin formally
+
+3
+00:00:13,000 --> 00:00:22,000
+the study of calculus in this course. The limits are an essential topic in any calculus course.
+
+4
+00:00:22,000 --> 00:00:25,000
+Let’s begin with an overview of the topic.
+
+5
+00:00:25,000 --> 00:00:34,000
+Here are two simple plots. I’m going to plot <i>x</i> from −1 to 1. That is of course just a straight line,
+
+6
+00:00:34,000 --> 00:00:44,000
+and then I’m going to plot <i>x</i>^2/<i>x</i> in the same limits, and I again get back what looks like
+
+7
+00:00:44,000 --> 00:00:50,000
+essentially the same straight line. On the other hand, if we look at the function <i>x</i>^2/<i>x</i>,
+
+8
+00:00:50,000 --> 00:00:56,000
+then strictly speaking it’s not defined when <i>x</i> is 0 because you’re doing 0/0,
+
+9
+00:00:56,000 --> 00:01:03,000
+and that becomes clearer if we define a function <i>g</i> with that expression. <i>g</i> over here
+
+10
+00:01:03,000 --> 00:01:10,000
+is defined to be <i>x</i>^2/<i>x</i>, and if you try to find the value of <i>g</i> at 0, then you get back
+
+11
+00:01:10,000 --> 00:01:15,000
+the value indeterminate. The Quiet over only says that I would not like to see
+
+12
+00:01:15,000 --> 00:01:19,000
+any warnings that Wolfram Language would give us in this case.
+
+13
+00:01:19,000 --> 00:01:27,000
+Okay. The point is you have two very similar functions, but the second one has a slight issue at 0.
+
+14
+00:01:27,000 --> 00:01:33,000
+Now even though it is not defined at 0, you still would like to know what the behavior
+
+15
+00:01:33,000 --> 00:01:39,000
+of the function is near this point, and that’s what limits are all about. They are about tracking
+
+16
+00:01:39,000 --> 00:01:47,000
+the behavior of a function near a point. The mathematical way of doing this is called a limit.
+
+17
+00:01:48,000 --> 00:01:57,000
+Here’s an example to show the notion of a limit. Let’s take <i>f</i>[<i>x</i>] = <i>x</i>^2 − <i>x</i> + 2.
+
+18
+00:01:57,000 --> 00:02:05,000
+Again, you want to find the behavior of this function as <i>x</i> approaches a certain value.
+
+19
+00:02:05,000 --> 00:02:10,000
+Let’s say you want to focus on the value <i>x</i> = 1 and you make a table over here.
+
+20
+00:02:10,000 --> 00:02:14,000
+Don’t worry too much about how to make the table; that’s not too important for us.
+
+21
+00:02:14,000 --> 00:02:21,000
+As you take values close to 1, you begin from 0 and go up to 1—very close to 1, but not 1 itself—
+
+22
+00:02:21,000 --> 00:02:27,000
+you see the values get close to 2. Just same thing happens from the right, that the value is
+
+23
+00:02:27,000 --> 00:02:34,000
+very close to 2 when you are close to 1. It appears that this function gets closer and closer to 2
+
+24
+00:02:34,000 --> 00:02:45,000
+as the values of <i>x</i> grow closer and closer to 1 from both the sides. One would then say that
+
+25
+00:02:45,000 --> 00:02:52,000
+the limit of this function when <i>x</i> approaches 1 is 2. Limits are just
+
+26
+00:02:52,000 --> 00:03:01,000
+a way of showing the behavior of a function near a point, but not necessarily at that point.
+
+27
+00:03:02,000 --> 00:03:09,000
+Okay. Some examples. Let’s begin with a function which is a trigonometric function divided by
+
+28
+00:03:09,000 --> 00:03:13,000
+a simple polynomial. It’s a trigonometric rational function, and you want to find
+
+29
+00:03:13,000 --> 00:03:21,000
+the limit of this function as <i>x</i> approaches 0. If you look over here at the table, it’s clear that
+
+30
+00:03:21,000 --> 00:03:28,000
+as you approach 0 from either side, the values approach 1. In fact if you plot the function,
+
+31
+00:03:28,000 --> 00:03:35,000
+you get the same kind of guess that the value of the limit seems to be 1. The table says 1,
+
+32
+00:03:35,000 --> 00:03:43,000
+the plot says 1, but in practice it’s best to use the Limit function in Wolfram Language,
+
+33
+00:03:43,000 --> 00:03:51,000
+which tells you the limit is actually 1. Tables are good, plots are better, but Limit is the best.
+
+34
+00:03:51,000 --> 00:03:56,000
+Limit will always tell you exactly what the limit of a function is at a point.
+
+35
+00:03:56,000 --> 00:04:03,000
+The whole theme of our discussion will be try to move towards using Limit whenever you can.
+
+36
+00:04:03,000 --> 00:04:10,000
+As my second example, let’s take a rational function. That’s a rational function.
+
+37
+00:04:10,000 --> 00:04:17,000
+It’s a polynomial divided by a polynomial. Now notice that when <i>x</i> is plus or minus 1,
+
+38
+00:04:17,000 --> 00:04:21,000
+there’s a problem with the denominator becoming 0. Let’s say you want to talk about
+
+39
+00:04:21,000 --> 00:04:30,000
+the behavior near −1. Near −1, it looks like the values are very close to −0.5.
+
+40
+00:04:30,000 --> 00:04:35,000
+Now let’s plot the function, and it does look like when you are close to −1,
+
+41
+00:04:35,000 --> 00:04:43,000
+the values are close to −0.5. It looks like the function approaches −1/2 as an exact number
+
+42
+00:04:43,000 --> 00:04:50,000
+as <i>x</i> approaches −1. You can confirm that with Limit and get back that value as the actual limit.
+
+43
+00:04:50,000 --> 00:04:56,000
+Okay. As my next example, let’s consider this piecewise function <i>g</i>[<i>x</i>].
+
+44
+00:04:56,000 --> 00:05:03,000
+Now the piecewise part over here is all simple. It’s just −0.75 at <i>x</i> = −1,
+
+45
+00:05:03,000 --> 00:05:08,000
+and it’s the same rational function as before everywhere else. Now if you make a table of values,
+
+46
+00:05:08,000 --> 00:05:13,000
+it’s clear that as long as you stay away from −1, then there’s no problem at all
+
+47
+00:05:13,000 --> 00:05:20,000
+and the values approach −0.5 as before. Here’s a plot which shows that there’s a problem
+
+48
+00:05:20,000 --> 00:05:26,000
+at just a single point, −1, but everywhere else, things are just the same as before.
+
+49
+00:05:26,000 --> 00:05:34,000
+In fact, the limit does seem to be −0.5. Let’s confirm that over here, and you do get back −0.5
+
+50
+00:05:34,000 --> 00:05:37,000
+for this piecewise function limit.
+
+51
+00:05:37,000 --> 00:05:45,000
+Now, let’s go on to a slightly more complicated example; namely, an algebraic function.
+
+52
+00:05:46,000 --> 00:05:53,000
+Here’s an algebraic function. It’s got a square root in it and the denominator <i>x</i>^2, so when <i>x</i> is 0,
+
+53
+00:05:53,000 --> 00:05:59,000
+that’s a problem. But fortunately everything is removable in the sense that
+
+54
+00:05:59,000 --> 00:06:04,000
+there really is no problem at 0. In fact, if we make a table of values, you see that
+
+55
+00:06:04,000 --> 00:06:10,000
+when you are very close to 0, the value is very close to 0.25. You plot the function,
+
+56
+00:06:10,000 --> 00:06:20,000
+and you see that the value at 0 does seem to approach 0.25. You can confirm the answer with Limit,
+
+57
+00:06:20,000 --> 00:06:26,000
+and you get back the value 0.25 as an exact number, 1/4.
+
+58
+00:06:26,000 --> 00:06:34,000
+Okay. Let’s go on now to a slightly more tricky function. Here is a trigonometric function.
+
+59
+00:06:34,000 --> 00:06:43,000
+Now if we make a table of values over here, what you see is that the values all seem to be 1 mostly.
+
+60
+00:06:43,000 --> 00:06:49,000
+It looks like there is a problem because the limit seems to be 1. Intuition tells you that
+
+61
+00:06:49,000 --> 00:06:56,000
+this might be more complicated, so let’s plot. Then you do that. You see it is much more wiggly.
+
+62
+00:06:56,000 --> 00:07:01,000
+It’s much more complicated. What you need to take away from this is that
+
+63
+00:07:01,000 --> 00:07:09,000
+tables are useful, but they are not terribly reliable. The plot says that this limit
+
+64
+00:07:09,000 --> 00:07:18,000
+probably does not exist, but in fact you can confirm the answer with Limit, and check that
+
+65
+00:07:18,000 --> 00:07:24,000
+the answer is actually indeterminate. Indeterminate says that this limit does not exist.
+
+66
+00:07:25,000 --> 00:07:31,000
+Okay. Let’s move on now to a slightly more complicated function, and hopefully you realize by now
+
+67
+00:07:31,000 --> 00:07:34,000
+that we do need some different ways of finding limits. But just for now,
+
+68
+00:07:34,000 --> 00:07:39,000
+let’s take the same approach and make a table of values over here.
+
+69
+00:07:39,000 --> 00:07:44,000
+When you make a table of values and you are close to 0, you see the values
+
+70
+00:07:44,000 --> 00:07:53,000
+seem to approach 0.015 on either side. As an exact number, you would expect
+
+71
+00:07:53,000 --> 00:08:02,000
+the limit to be around 3/200. You plot the function. The limit does look like 0.015 at 0.
+
+72
+00:08:03,000 --> 00:08:09,000
+You can confirm the answer with Limit and get back the correct result, which is 3/200.
+
+73
+00:08:10,000 --> 00:08:17,000
+That’s the value of the limit function. It will tell you exactly what the limit is at a point.
+
+74
+00:08:20,000 --> 00:08:25,000
+Okay. Having talked about limits, it’s convenient sometimes to talk about one-sided limits.
+
+75
+00:08:25,000 --> 00:08:32,000
+Here’s an example where you have a piecewise function, and if you plot it, you see that
+
+76
+00:08:32,000 --> 00:08:41,000
+when you approach the point 0 from the left, the answer is −1. When you approach it from the right,
+
+77
+00:08:41,000 --> 00:08:48,000
+the limit seems to be 1. The question is how do you check that with the Limit function?
+
+78
+00:08:48,000 --> 00:08:53,000
+Well, we have an option called Direction, so when you say Direction→“FromBelow”,
+
+79
+00:08:53,000 --> 00:08:59,000
+you’re going from the left; when it’s Direction→“FromAbove”, you’re going from the right.
+
+80
+00:08:59,000 --> 00:09:08,000
+When you do that, you see that you get back the values −1 and 1 respectively. Of course because
+
+81
+00:09:08,000 --> 00:09:13,000
+you don’t have the same behavior on the left and right, you get back indeterminate
+
+82
+00:09:13,000 --> 00:09:19,000
+as the answer for the limit. One-sided limits are really quite useful because they let you
+
+83
+00:09:19,000 --> 00:09:23,000
+analyze more and more complicated functions.
+
+84
+00:09:23,000 --> 00:09:32,000
+Here is a piecewise function. It’s got several pieces. Notice that when you plot the function,
+
+85
+00:09:32,000 --> 00:09:38,000
+then there are three values of interest to us: there’s 1, there’s 4 and there’s 6.
+
+86
+00:09:38,000 --> 00:09:47,000
+Now 4 is not a problem at all; it’s nice over there. At 1, it’s almost okay, except that
+
+87
+00:09:47,000 --> 00:09:54,000
+you have a slight piece outside of the point over here given by this piecewise component.
+
+88
+00:09:54,000 --> 00:10:01,000
+At 6, you have a slightly more difficult problem because you actually have a jump.
+
+89
+00:10:01,000 --> 00:10:10,000
+It would look like when you approach 1, the value must be 3 for the limit. That’s 3 over here.
+
+90
+00:10:10,000 --> 00:10:18,000
+When you approach 4, the answer must be 6. That looks clear as well. Now when you approach 6 itself,
+
+91
+00:10:18,000 --> 00:10:23,000
+the limit does not seem to exist, and you can confirm this by using the Limit function.
+
+92
+00:10:23,000 --> 00:10:30,000
+Now this strange thing over here is what we call a Map function, which actually lets you find
+
+93
+00:10:30,000 --> 00:10:38,000
+the values of the limits at different points in one stroke. You can confirm that at 6 you actually have
+
+94
+00:10:38,000 --> 00:10:43,000
+separate limits on the right and left by doing the direction computation,
+
+95
+00:10:43,000 --> 00:10:49,000
+and you get back different answers, so surely the limit does not exist at <i>x</i> = 6.
+
+96
+00:10:49,000 --> 00:10:57,000
+Okay. Now we need to turn in a slightly different direction and talk about infinite limits.
+
+97
+00:10:57,000 --> 00:11:02,000
+Here’s an example where you have a rational function, and what you want to do is to use
+
+98
+00:11:02,000 --> 00:11:10,000
+a table of values that’s given to you to try and guess what the limit might be at the point <i>x</i> = −1.
+
+99
+00:11:10,000 --> 00:11:16,000
+Here’s the table, and what you see is that when they approach −1 on the left or right,
+
+100
+00:11:16,000 --> 00:11:22,000
+the values seem to blow up—they become infinite—but they become negatively infinite
+
+101
+00:11:22,000 --> 00:11:28,000
+on one side and positively infinite on this side. You can confirm that with the Limit function.
+
+102
+00:11:28,000 --> 00:11:35,000
+You see that the values become −∞ on one side and ∞ on the other,
+
+103
+00:11:35,000 --> 00:11:43,000
+and you can check that the limit does not exist, finally. Now we are talking about infinite limits,
+
+104
+00:11:43,000 --> 00:11:52,000
+and that leads us to the concept of an asymptote. What’s an asymptote? It’s a point in the graph
+
+105
+00:11:52,000 --> 00:11:59,000
+where things become infinite. Here’s an example. You’ve got 1/(<i>x</i> − 1)^2 as a function,
+
+106
+00:11:59,000 --> 00:12:05,000
+and whether you approach it at 1 from the left or right, the value becomes infinitely large
+
+107
+00:12:05,000 --> 00:12:10,000
+in a positive sense, and you can confirm that with a plot to check
+
+108
+00:12:10,000 --> 00:12:16,000
+the limit is actually going to be ∞ on either side. Well, if it’s infinite on either side, it is ∞,
+
+109
+00:12:16,000 --> 00:12:24,000
+so Limit says yes, the limit is ∞ at 1. That’s what we call a vertical asymptote.
+
+110
+00:12:24,000 --> 00:12:29,000
+It’s a kind of vertical line that shows you that the function will become infinite
+
+111
+00:12:29,000 --> 00:12:32,000
+on both sides, in this case.
+
+112
+00:12:32,000 --> 00:12:42,000
+But it can also have slightly different behavior. Here’s <i>f</i>[<i>x</i>] = 1/<i>x</i>, and if you plot it between −1 and 1,
+
+113
+00:12:42,000 --> 00:12:51,000
+then at 0 you have a different behavior on the left and the right—so on the right, it approaches ∞;
+
+114
+00:12:51,000 --> 00:12:58,000
+on the left, it approaches −∞, and you can confirm that with Limit. You see the limit does not exist,
+
+115
+00:12:58,000 --> 00:13:03,000
+and what you have is a vertical asymptote of a slightly different kind.
+
+116
+00:13:03,000 --> 00:13:11,000
+Okay. The question is how do you find asymptotes in general? Well, that’s really a hard problem,
+
+117
+00:13:11,000 --> 00:13:18,000
+but let’s say if I give you a cotangent function and I said find the asymptotes between −2π and 2π,
+
+118
+00:13:18,000 --> 00:13:26,000
+what you could do is make a plot of the function. The plot seems to say that there are
+
+119
+00:13:26,000 --> 00:13:34,000
+problems at 0—you can see over here—and then at π and then at 2π, et cetera. Let’s look at 0.
+
+120
+00:13:34,000 --> 00:13:41,000
+You see that the function values are −∞ and ∞ from the two sides, so you certainly have
+
+121
+00:13:41,000 --> 00:13:50,000
+a vertical asymptote at 0, and just the same thing happens at all the other multiples of π.
+
+122
+00:13:50,000 --> 00:13:56,000
+You can see that the limit does not exist at any of those points. Given a function,
+
+123
+00:13:56,000 --> 00:14:02,000
+you could try to plot it and then use Limit to figure out where the asymptotes might be.
+
+124
+00:14:02,000 --> 00:14:10,000
+Okay. Finally I have an example in which you actually do need to use tables.
+
+125
+00:14:10,000 --> 00:14:15,000
+Here is an example in which you have two variables. You have got an <i>h</i> and an <i>x</i>.
+
+126
+00:14:15,000 --> 00:14:21,000
+Now the problem is that because <i>x</i> is not known to you, you cannot graph the function,
+
+127
+00:14:21,000 --> 00:14:30,000
+so graphing will get you nowhere in this case. But what you could do is make a table of values,
+
+128
+00:14:30,000 --> 00:14:39,000
+and then what you see is—well, roughly speaking—if you expand it out, you get <i>x</i>^2 + 2<i>xh</i> + <i>h</i>^2 − <i>x</i>^2.
+
+129
+00:14:39,000 --> 00:14:44,000
+If you do a bit of algebra, it will be clear to you that what is going to get left over is just 2<i>x</i>.
+
+130
+00:14:45,000 --> 00:14:51,000
+Right. The point over here is the limit over here is just going to be 2<i>x</i>.
+
+131
+00:14:51,000 --> 00:14:56,000
+Okay. We’ve seen now that tables are quite useful in some cases,
+
+132
+00:14:56,000 --> 00:14:59,000
+but in general, you should try and avoid them.
+
+133
+00:14:59,000 --> 00:15:08,000
+That brings me to the end of today’s lesson. What you’ve learned is that the limits are a good way of
+
+134
+00:15:08,000 --> 00:15:15,000
+figuring out what happens as a function approaches a certain value of <i>x</i>.
+
+135
+00:15:15,000 --> 00:15:21,000
+Now the function doesn’t even need to be defined at the point at which you want to find the limit,
+
+136
+00:15:21,000 --> 00:15:28,000
+but as long as the right-hand limit and the left-hand limit both exist, you are fine.
+
+137
+00:15:28,000 --> 00:15:35,000
+For a limit to exist, you must have the right-hand limit and the left-hand limit to be equal.
+
+138
+00:15:35,000 --> 00:15:41,000
+They could both be infinite, but they must both be equal. As you saw in the last example,
+
+139
+00:15:41,000 --> 00:15:47,000
+tables are really useful in some cases, but in general, you want to avoid using them,
+
+140
+00:15:47,000 --> 00:15:53,000
+and you really want to use the Limit function. In the next lesson, we’ll talk the laws of limits,
+
+141
+00:15:53,000 --> 00:15:59,000
+which actually let you do limit computations very efficiently without using tables.
+
+142
+00:15:59,000 --> 00:16:05,000
+But before we do that, I recommend that you go over today’s lesson and carefully master all the details
+
+143
+00:16:05,000 --> 00:16:09,000
+from the notebook, look at the exercises and make sure you understand
+
+144
+00:16:09,000 --> 00:16:15,000
+the notion of a limit really well before we actually start computing them at a really fast pace.
+
+145
+00:16:15,000 --> 00:16:22,000
+That’s all I have to say for today’s lesson on the limit of a function. I hope you enjoyed it.
+
+146
+00:16:22,000 --> 00:16:28,000
+I hope you really benefit from this first introduction to calculus with limits,
+
+147
+00:16:28,000 --> 00:16:31,000
+and I’ll see you next time. Thank you.
+
