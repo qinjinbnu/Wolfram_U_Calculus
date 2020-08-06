@@ -346,7 +346,7 @@ and you define <i>f</i> to be an integral from 0 to <i>x</i>—
 70
 00:04:45,000 --> 00:04:49,000
 from <i>a</i> to <I>x</i>, in this case—then what you get back
-从<i>a</i> 到 <I>x</i> 在这种情况下 你得到的是
+从 <i>a</i> 到 <I>x</i> 在这种情况下 你得到的是
 
 71
 00:04:49,000 --> 00:04:54,000
@@ -571,7 +571,7 @@ It’s just a normal probability curve.
 115
 00:07:13,000 --> 00:07:16,000
 What happens is as you approach very large values,
-当你接近非常大的数值时 会发生什么=
+当你接近非常大的数值时 会发生什么
 
 116
 00:07:16,000 --> 00:07:20,000
