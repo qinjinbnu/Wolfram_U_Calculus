@@ -1,42 +1,42 @@
 1
 00:00:00,000 --> 00:00:07,000
 Hello, and welcome to Lesson 24 of this introduction to calculus with Wolfram U.
-大家好，欢迎来到本次与沃尔夫兰大学合作的微积分入门第24课。
+大家好 欢迎来到本次与沃尔夫兰大学合作的微积分入门第24课
 
 2
 00:00:07,000 --> 00:00:12,000
 The topic of this lesson is the definite integral.
-本节课的课题是定积分。
+本节课的课题是定积分
 
 3
 00:00:12,000 --> 00:00:16,000
 Let’s begin with a brief overview of the lesson.
-先来简单介绍一下本课的内容。
+先来简单介绍一下本课的内容
 
 4
 00:00:16,000 --> 00:00:20,000
 In the previous lesson, we talked about the Riemann sum
-在上一节课中，我们讲了黎曼和。
+在上一节课中 我们讲了黎曼和
 
 5
 00:00:20,000 --> 00:00:26,000
 and the limit of said sum for a function <i>f</I>[<i>x</i>].
-以及所述和的极限为函数<i>f</I>[<i>x</i>]。
+以及所述和的极限为函数 <i>f</I>[<i>x</i>]
 
 6
 00:00:26,000 --> 00:00:30,000
 Usually we picked <i>f</i> to be positive, and if we did that,
-通常我们选择<i>f</i>是积极的，如果我们这样做。
+通常我们选择 <i>f</i> 是正的 如果我们这样做
 
 7
 00:00:30,000 --> 00:00:32,000
 then one could interpret the sum as being
-那么就可以解释为
+那么和就可以解释为
 
 8
 00:00:32,000 --> 00:00:37,000
 the area under the curve corresponding to <i>f</i>.
-与<i>f</i>对应的曲线下的面积；
+与 <i>f</i> 对应的曲线下的面积
 
 9
 00:00:37,000 --> 00:00:40,000
@@ -46,27 +46,27 @@ But there is a slight problem to this approach
 10
 00:00:40,000 --> 00:00:45,000
 because the Riemann sum has lots of practical applications,
-因为黎曼和有很多实际应用。
+因为黎曼和有很多实际应用
 
 11
 00:00:45,000 --> 00:00:49,000
 such as finding the area under the velocity curve.
-如求速度曲线下的面积。
+如求速度曲线下的面积
 
 12
 00:00:49,000 --> 00:00:51,000
 Here’s an example.
-这里有一个例子。
+这里有一个例子
 
 13
 00:00:51,000 --> 00:00:54,000
 That’s the velocity of a particle, let’s say.
-这就是粒子的速度，比方说。
+这就是粒子的速度
 
 14
 00:00:54,000 --> 00:00:56,000
 Here’s a plot.
-这里有一个情节。
+请看这个图
 
 15
 00:00:56,000 --> 00:01:00,000
@@ -76,142 +76,142 @@ Then the area under this curve can be interpreted as
 16
 00:01:00,000 --> 00:01:04,000
 the total distance traveled by the particle,
-粒子走过的总距离。
+粒子走过的总距离
 
 17
 00:01:04,000 --> 00:01:08,000
 in this case from 0 to 5 seconds, let’s say.
-在这种情况下，从0到5秒，比方说。
+在这种情况下 从 0 到 5 秒
 
 18
 00:01:08,000 --> 00:01:13,000
 Now the question is what happens if <i>f</i> is negative?
-现在的问题是，如果<i>f</i>是负数会怎样？
+现在的问题是 如果 <i>f</i> 是负数会怎样
 
 19
 00:01:13,000 --> 00:01:16,000
 After all, the velocity of a particle can be
-毕竟，一个粒子的速度可以是。
+毕竟 一个粒子的速度可以根据方向不同
 
 20
 00:01:16,000 --> 00:01:20,000
 either positive or negative depending upon the direction.
-根据方向的不同，可以是正的，也可以是负的。
+可以是正的 也可以是负的
 
 21
 00:01:20,000 --> 00:01:24,000
 That’s the question that we want to answer in this lesson,
-这就是我们这节课要回答的问题。
+这就是我们这节课要回答的问题
 
 22
 00:01:24,000 --> 00:01:29,000
 and then we will talk about some properties of the Riemann sum.
-然后我们再来谈谈黎曼和的一些特性。
+然后我们再来谈谈黎曼和的一些特性
 
 23
 00:01:31,000 --> 00:01:33,000
 Let’s begin with a definition.
-先说说定义吧。
+先说说定义
 
 24
 00:01:33,000 --> 00:01:36,000
 Because we use Riemann sums so often,
-因为我们经常使用黎曼和。
+因为我们经常使用黎曼和
 
 25
 00:01:36,000 --> 00:01:38,000
 we have given it a special name in mathematics.
-我们在数学上给它起了一个特殊的名字。
+我们在数学上给它起了一个特殊的名字
 
 26
 00:01:38,000 --> 00:01:42,000
 It’s called the definite integral.
-这就是所谓的定积分。
+这就是所谓的定积分
 
 27
 00:01:42,000 --> 00:01:44,000
 In fact, there is also a special notation
-其实，还有一个特殊的记号就是
+其实还有一个特殊的记号
 
 28
 00:01:44,000 --> 00:01:47,000
 for that rather cumbersome Riemann sum.
-对于那个相当繁琐的黎曼和。
+对于那个相当繁琐的黎曼和
 
 29
 00:01:47,000 --> 00:01:53,000
 It’s just called integral from <i>a</i> to <i>b</i> <i>f</i>(<i>x</I>)<i>d</i>(<i>x</i>).
-从<i>a</i>到<i>b</i><i>f</i>(<i>x</I>)<i>d</i>(<i>x</i>)就叫积分。
+从 <i>a</i> 到 <i>b</i><i>f</i>(<i>x</I>)<i>d</i>(<i>x</i>) 就叫积分。
 
 30
 00:01:53,000 --> 00:01:59,000
 That over there, that elongated S, is the definite integral sign
-在那边，那个拉长的S，就是定积分的符号
+在那边 那个拉长的 S 就是定积分的符号
 
 31
 00:01:59,000 --> 00:02:03,000
 with <i>a</i> and <i>b</i>, the limits, at both the ends.
-以<i>a</i>和<i>b</i>为极限，在两端。
+以 <i>a</i> 和 <i>b</i> 为极限 在两端
 
 32
 00:02:04,000 --> 00:02:06,000
 The S over here, like I said,
-我说过，这里的S。
+这里的S就像我说的
 
 33
 00:02:06,000 --> 00:02:10,000
 is just the elongated S standing for “sum”.
-只是加长的S代表"和"。
+只是加长的 S 代表 "和"
 
 34
 00:02:11,000 --> 00:02:17,000
 When you find the area under a function curve from <i>a</i> to <i>b</i>,
-当你找到从<i>a</i>到<i>b</i>的函数曲线下的面积时。
+当你找到从 <i>a</i>到<i>b</i> 的函数曲线下的面积时
 
 35
 00:02:17,000 --> 00:02:21,000
 we’ll say that we are integrating the function from <i>a</i> to <i>b</i>.
-我们将说我们正在整合函数从<i>a</i>到<i>b</i>。
+我们将说我们正在整合函数从 <i>a</i> 到 <i>b</i>
 
 36
 00:02:22,000 --> 00:02:24,000
 Luckily the Wolfram Language has
-幸运的是，Wolfram语言有
+幸运的是 Wolfram语言有
 
 37
 00:02:24,000 --> 00:02:29,000
 a very nice built-in function that integrates these functions,
-一个非常好的内置功能，整合了这些功能。
+一个非常好的内置函数 整合了这些功能
 
 38
 00:02:29,000 --> 00:02:31,000
 and it’s called Integrate.
-而它的名字叫Integrate。
+而它的名字叫 Integrate
 
 39
 00:02:31,000 --> 00:02:33,000
 Integrate is the function that you’d use
-Integrate是你要使用的函数
+Integrate 是你要使用的函数
 
 40
 00:02:33,000 --> 00:02:36,000
 to compute these definite integrals.
-来计算这些定积分。
+来计算这些定积分
 
 41
 00:02:36,000 --> 00:02:41,000
 For example, let’s look at <i>f</i>[<i>x</i>] = <i>x</i>^2, and you want to integrate,
-例如，我们看<i>f</i>[<i>x</i>]=<i>x</i>^2，你要整合。
+例如 我们看 <i>f</i>[<i>x</i>]=<i>x</i>^2 你想求积分
 
 42
 00:02:41,000 --> 00:02:43,000
 let’s say, from 0 to 1.
-比方说，从0到1。
+比方说 从 0 到 1
 
 43
 00:02:43,000 --> 00:02:46,000
 Here’s a Riemann sum and the limit, and you get back the answer 1/3.
-这里有一个黎曼和和极限，你得到的答案是1/3。
+这里有一个黎曼和和极限 你得到的答案是 1/3
 
 44
 00:02:46,000 --> 00:02:48,000
@@ -221,62 +221,62 @@ But you could just as well use
 45
 00:02:48,000 --> 00:02:51,000
 the Integrate symbol that’s over here.
-在这里的Integrate符号。
+在这里的 Integrate 符号
 
 46
 00:02:51,000 --> 00:02:53,000
 You integrate from 0 to 1 for <i>x</i>^2,
-你对<i>x</i>^2从0到1进行积分。
+你对 <i>x</i>^2 从 0 到 1 进行积分
 
 47
 00:02:53,000 --> 00:02:56,000
 and you get back just the same answer, 1/3.
-而你得到的只是同样的答案，1/3。
+而你得到的只是同样的答案 1/3
 
 48
 00:02:57,000 --> 00:02:59,000
 Integrate is the function to use
-Integrate是要使用的功能
+Integrate 当你想定义积分时
 
 49
 00:02:59,000 --> 00:03:03,000
 when you want to do definite integration.
-当你想做明确的整合时。
+是要使用的功能
 
 50
 00:03:05,000 --> 00:03:09,000
 Now, the point is that not every function is integrable.
-现在，问题的关键是，不是每个函数都是可整除的。
+现在问题的关键是不是每个函数都是可可积的
 
 51
 00:03:09,000 --> 00:03:12,000
 Not every function can be integrated, and that’s because
-并不是每个功能都能整合，那是因为
+并不是每个函数都能做积分 因为
 
 52
 00:03:12,000 --> 00:03:17,000
 the limit in the Riemann sum may not converge to a finite value.
-黎曼和中的极限可能不会收敛到一个有限值。
+黎曼和中的极限可能不会收敛到一个有限值
 
 53
 00:03:17,000 --> 00:03:19,000
 Here’s an example.
-这里有一个例子。
+有一个例子
 
 54
 00:03:19,000 --> 00:03:23,000
 You have <i>f</i>[<i>x</i>] = 1/<i>x</i> and you’re trying to find the integral.
-你有<i>f</i>[<i>x</i>]=1/<i>x</i>，你想找积分。
+你想找 <i>f</i>[<i>x</i>]=1/<i>x</i> 的积分
 
 55
 00:03:23,000 --> 00:03:27,000
 Notice over here I’m using the full text over here for Integrate
-请注意，我在这里使用的是Integrate的全文。
+请注意 我在这里使用的是 Integrate 的全称
 
 56
 00:03:27,000 --> 00:03:32,000
 rather than the symbol, and it says over here that this integral
-而不是符号，它在这边说，这个整数
+而不是符号 这边说的是这个积分
 
 57
 00:03:32,000 --> 00:03:35,000
