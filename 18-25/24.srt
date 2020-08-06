@@ -281,347 +281,347 @@ rather than the symbol, and it says over here that this integral
 57
 00:03:32,000 --> 00:03:35,000
 does not converge on 0 to 1, and that’s because
-不会在0到1之间收敛，这是因为
+不会在 0 到 1 之间收敛 这是因为
 
 58
 00:03:35,000 --> 00:03:41,000
 the graph shows that in fact you have an ∞ near 0
-从图中可以看出，实际上你的∞接近0。
+从图中可以看出 实际上你的 ∞ 接近 0
 
 59
 00:03:41,000 --> 00:03:45,000
 because 1/<i>x</i> becomes infinite as you approach 0 from the right.
-因为当你从右边接近0时，1/<i>x</i>会变得无限大。
+因为当你从右边接近 0 时 1/<i>x</i> 会变得无限大
 
 60
 00:03:45,000 --> 00:03:48,000
 Luckily in this lesson, we’ll talk about
-幸运的是，在这节课中，我们会讲到关于
+幸运的是 在这节课中 我们会讲到一些函数
 
 61
 00:03:48,000 --> 00:03:52,000
 functions which can be integrated as long as you’re careful.
-的功能，只要你细心，就能集成。
+只要你细心 就能积分
 
 62
 00:03:52,000 --> 00:03:57,000
 In general, one has the property that a function is integrable
-一般来说，我们有这样的性质：一个函数是可积分的。
+一般来说 我们有这样的性质 一个函数如果它是连续的或者在图形中没有断裂
 
 63
 00:03:57,000 --> 00:04:01,000
 if it is continuous—no breaks in the graph—
-如果它是连续的--在图形中没有断裂--则
+则是可积分的
 
 64
 00:04:01,000 --> 00:04:06,000
 or it has only a finite number of jump discontinuities.
-或者它只有有限的跳跃不连续的数量。
+或者它只有有限的跳跃不连续的数
 
 65
 00:04:06,000 --> 00:04:08,000
 In this case, the point is you actually have
-在这种情况下，重点是你实际上有
+在这种情况下
 
 66
 00:04:08,000 --> 00:04:12,000
 an infinite discontinuity at 0, and that’s a real problem.
-在0处的无限不连续，这是一个真正的问题。
+实际上在0处有无限的不连续性 这是一个真正的问题。
 
 67
 00:04:14,000 --> 00:04:19,000
 Okay. Let’s go on now to talking about functions which have
-好了，现在我们继续讨论一下有哪些函数。我们现在继续讨论一下有以下功能的函数
+好了 现在我们继续讨论一下有哪些函数
 
 68
 00:04:19,000 --> 00:04:22,000
 a negative function value.
-一个负函数值。
+有负函数值
 
 69
 00:04:22,000 --> 00:04:26,000
 For example, you have the function <i>f</i>[<i>x</i>] = –<i>x</i>,
-例如，你有函数<i>f</i>[<i>x</i>] = -<i>x</i>。
+例如 你有函数 <i>f</i>[<i>x</i>] = -<i>x</i>
 
 70
 00:04:26,000 --> 00:04:28,000
 and you want find its area.
-而你想找到它的区域。
+而你想找到它的面积
 
 71
 00:04:28,000 --> 00:04:30,000
 Well the point is because it’s negative,
-好吧，关键是因为它是负面的。
+好吧 关键是因为它是负的
 
 72
 00:04:30,000 --> 00:04:34,000
 what you do is you find the area from 0 to 1
-你要做的是找到0到1的区域。
+你要做的是找到 0 到 1 的面积
 
 73
 00:04:34,000 --> 00:04:37,000
 as if it’s a normal triangle that’s 1/2,
-仿佛是一个正常的三角形，是1/2。
+仿佛是一个正常的三角形 是 1/2
 
 74
 00:04:37,000 --> 00:04:41,000
 and then you get the minus sign, and you get the answer, –1/2.
-然后你得到减号，你得到的答案，-1/2。
+然后你得到负号 你得到的答案 -1/2
 
 75
 00:04:41,000 --> 00:04:44,000
 if you use integrate, you get back just the same result,
-如果你使用集成，你会得到同样的结果。
+如果你使用积分 你会得到同样的结果
 
 76
 00:04:44,000 --> 00:04:47,000
 –1/2, for this integral.
--1/2，对于这个积分。
+对于这个积分是 -1/2
 
 77
 00:04:49,000 --> 00:04:53,000
 Okay. Next point over here is what happens if you have a function
-好的。下一个问题是如果你有一个函数
+好的 下一个问题是如果你有一个既是正数也是负数的函数
 
 78
 00:04:53,000 --> 00:04:56,000
 which is both positive and negative.
-其中，既是正面的，也是负面的。
+会发生什么
 
 79
 00:04:57,000 --> 00:04:59,000
 Let’s take a sine function.
-就拿正弦函数来说吧。
+就拿正弦函数来说吧
 
 80
 00:04:59,000 --> 00:05:02,000
 Now we see what happens over here is that the function is
-现在我们看到这里发生了什么，函数是
+现在我们看到这里 如函数是有时是正的 有时是负的
 
 81
 00:05:02,000 --> 00:05:05,000
 sometimes positive and sometimes negative.
-有时是积极的，有时是消极的。
+会发生什么
 
 82
 00:05:05,000 --> 00:05:10,000
 It’s positive from 0 to π, and then negative from π to 2π.
-从0到π是正数，然后从π到2π是负数。
+从 0 到 π 是正数 然后从 π 到 2π 是负数
 
 83
 00:05:10,000 --> 00:05:12,000
 In this case, what you’ll do is you’ll add
-在这种情况下，你要做的是添加
+在这种情况下 你要做的是添加
 
 84
 00:05:12,000 --> 00:05:15,000
 all the areas above the <i>x</i> axis
-所有在<i>x</i>轴上方的区域。
+所有在 <i>x</i> 轴上方的面积
 
 85
 00:05:15,000 --> 00:05:19,000
 and then you subtract the sum of the areas below the <i>x</i> axis,
-然后减去<i>x</i>轴下的面积之和。
+然后减去 <i>x</i> 轴下的面积之和
 
 86
 00:05:19,000 --> 00:05:21,000
 and you get back the net area.
-你就会得到回网面积。
+你就会得到净面积
 
 87
 00:05:21,000 --> 00:05:24,000
 Now in this case, of course, we have a positive area
-现在，在这种情况下，当然，我们有一个积极的区域。
+在这种情况下 我们有一个正的区域和负面积
 
 88
 00:05:24,000 --> 00:05:27,000
 and a negative area, and the net area is 0.
-和负面积，净面积为0。
+净面积为 0
 
 89
 00:05:27,000 --> 00:05:29,000
 Let’s check that over here with Integrate,
-让我们用Integrate检查一下。
+让我们用 Integrate 函数检查一下
 
 90
 00:05:29,000 --> 00:05:33,000
 and you do get back the answer is 0 for this area.
-而你确实得到的答案是这个区域的0。
+而这个区域你确实得到的答案是的 0
 
 91
 00:05:34,000 --> 00:05:38,000
 Okay. On to some properties of definite integrals.
-好吧，那就说说定积分的一些特性吧。关于定积分的一些特性。
+好吧 那就说说定积分的一些特性
 
 92
 00:05:38,000 --> 00:05:42,000
 If you work out the integral from <i>a</i> to <i>b</i> of a function,
-如果你计算出一个函数从<i>a</i>到<i>b</i>的积分。
+如果你计算出一个函数从 <i>a</i> 到 <i>b</i> 的积分
 
 93
 00:05:42,000 --> 00:05:47,000
 then that’s the negative of the area from <i>b</i> to <i>a</i>.
-那么这就是从<i>b</i>到<i>a</i>区域的负值。
+那么这就是从 <i>b</i> 到 <i>a</i> 负值区域
 
 94
 00:05:47,000 --> 00:05:51,000
 For example, if you work out the integral of <i>x</i>^2 from 1 to 0,
-例如，如果你计算出<i>x</i>^2从1到0的积分。
+例如 如果你计算出 <i>x</i>^2 从 1 到 0 的积分
 
 95
 00:05:51,000 --> 00:05:55,000
 that’s the negative of the area from 0 to 1,
-这是从0到1的负值区域。
+这是从 0 到 1 的负值区域
 
 96
 00:05:55,000 --> 00:06:00,000
 so you have a –1/3 over here and 1/3 over there.
-所以你有一个-1/3在这里和1/3在那里。
+所以你有一个 -1/3 在这里和 1/3 在那里
 
 97
 00:06:01,000 --> 00:06:04,000
 In particular, if <i>a</i> = <i>b</i>, then you have
-特别是，如果<i>a</i>=<i>b</i>，那么你有
+特别是 如果 <i>a</i>=<i>b</i> 然后你有
 
 98
 00:06:04,000 --> 00:06:08,000
 something which is negative itself, so the area in this case
-本身就是负数的东西，所以这里的面积
+本身就是负数的函数 所以如果这里的面积只是 0
 
 99
 00:06:08,000 --> 00:06:10,000
 is just 0, and that makes sense
-只是0，那就有意义了
+那就有意义了
 
 100
 00:06:10,000 --> 00:06:14,000
 because there’s no area between <i>a</i> and <i>a</i> to compute.
-因为在<i>a</i>和<i>a</i>之间没有区域可以计算。
+因为在 <i>a</i> 和 <i>a</i> 之间没有区域可以计算
 
 101
 00:06:15,000 --> 00:06:20,000
 In our particular case, if you take the integral of <i>f</i> from 1 to 1,
-在我们的特殊情况下，如果你把<i>f</i>的积分从1到1。
+在我们的特殊情况下 如果你把 <i>f</i> 的积分从 1 到 1
 
 102
 00:06:20,000 --> 00:06:23,000
 then you get back 0 as expected.
-那么你就会如愿以偿地得到0。
+那么就会得到 0
 
 103
 00:06:25,000 --> 00:06:27,000
 Okay. Properties two.
-好的属性二。
+好的，下面说性质二
 
 104
 00:06:28,000 --> 00:06:30,000
 You see over here that if you have a constant function
-你看这里，如果你有一个常数函数。
+看这里 如果有一个常数函数
 
 105
 00:06:30,000 --> 00:06:33,000
 and you find the integral from <i>a</i> to <i>b</i>,
-并找到从<i>a</i>到<i>b</i>的积分。
+并找到从 <i>a</i> 到 <i>b</i> 的积分
 
 106
 00:06:33,000 --> 00:06:37,000
 then you just get back the constant value times (<i>b</i> – <i>a</i>).
-那么你只需取回常量值的倍数（<i>b</i>-<i>a</i>）。
+那么你只需取回常量然后乘以 （<i>b</i>-<i>a</i>）
 
 107
 00:06:39,000 --> 00:06:42,000
 If you have a sum of functions, then the integral is
-如果你有一个函数之和，那么积分是
+如果你有一个函数之和 那么积分是
 
 108
 00:06:42,000 --> 00:06:46,000
 the sum of <i>f</i> integral and the <i>g</i> integral.
-<i>f</i>积分和<i>g</i>积分之和。
+<i>f</i> 的积分之和 以及 <i>g</i> 积分之和
 
 109
 00:06:46,000 --> 00:06:50,000
 For a difference, the integral of <i>f</i> – <i>g</i>
-对于一个差值，<i>f</i>-<i>g</i>的积分。
+对于一个差值 <i>f</i>-<i>g</i> 的积分是
 
 110
 00:06:50,000 --> 00:06:54,000
 is the integral of <i>f</i> minus the integral of <i>g</i>.
-是<i>f</i>的积分减去<i>g</i>的积分。
+<i>f</i> 的积分减去 <i>g</i> 的积分
 
 111
 00:06:54,000 --> 00:06:58,000
 Finally, you can always pull out constants
-最后，你可以随时调出常量
+最后 你可以随时调出常量
 
 112
 00:06:58,000 --> 00:07:02,000
 from inside integral signs and save yourself some computation.
-从积分符号里面，省去了一些计算。
+从积分符号里面 省去一些计算
 
 113
 00:07:02,000 --> 00:07:06,000
 For the first property, for example, if you want to find
-对于第一个属性，例如，如果你想找的是
+对于第一个性质 举个例子 
 
 114
 00:07:06,000 --> 00:07:12,000
 the area from, let’s say, 1 to 5 for the function
-的区域，比如说，函数的1到5的区域。
+如果你想找的是函数从1到5一个区域
 
 115
 00:07:12,000 --> 00:07:16,000
 with constant height 5, then the answer is just going to be 20.
-与恒定的高度5，那么答案就是要20。
+高度恒定是5 那么答案就是 20。
 
 116
 00:07:16,000 --> 00:07:22,000
 After all, you have 5 times 4, which is equal to 20.
-毕竟，你有5乘以4，等于20。
+毕竟 你有 5 乘以 4 等于 20
 
 117
 00:07:24,000 --> 00:07:27,000
 Okay. The final set of properties is that
-好吧，最后一组属性是最后一组属性是
+好吧 最后一组性质是
 
 118
 00:07:27,000 --> 00:07:30,000
 if you have three points <i>a</i>, <i>b</I> and <i>c</i>
-如果你有三点<i>a</i>，<i>b</i>和<i>c</i>。
+如果你有三点 <i>a</i> <i>b</i> <i>c</i>
 
 119
 00:07:30,000 --> 00:07:33,000
 and you want to work out the area from <i>a</i> to <i>c</i>,
-你要计算出从<i>a</i>到<i>c</i>的区域。
+你要计算出从 <i>a</i> 到 <i>c</i> 的的面积
 
 120
 00:07:33,000 --> 00:07:35,000
 you work out the integral from <i>a</I> to <i>b</i> and then <i>b</i> to <i>c</i>,
-你计算出从<i>a</I>到<i>b</i>的积分，然后从<i>b</i>到<i>c</i>。
+你计算出从 <i>a</I> 到 <i>b</i> 的积分，然后从 <i>b</i> 到 <i>c</i>
 
 121
 00:07:35,000 --> 00:07:38,000
 and you get back the area from <i>a</i> to <i>c</i>.
-而你得到的区域从<i>a</i>到<i>c</i>。
+最后你得到的区域从 <i>a</i> 到 <i>c</i>
 
 122
 00:07:38,000 --> 00:07:42,000
 Now obviously if a function is non-negative,
-现在很明显，如果一个函数是非负数。
+现在很明显 如果一个函数是非负数的
 
 123
 00:07:42,000 --> 00:07:46,000
 then the area also will be non-negative,
-那么该区域也将是非负数。
+那么该区域也将是非负数
 
 124
 00:07:46,000 --> 00:07:52,000
 and if <i>f</i> is larger than <i>g</i>, then the integral of of <i>f</i>
-而如果<i>f</i>大于<i>g</i>，则<i>f</i>的积分为
+而如果 <i>f</i> 大于 <i>g</i> 则 <i>f</i> 的积分为
 
 125
 00:07:52,000 --> 00:07:55,000
 will be larger than the integral of <i>g</i>.
-将大于<i>g</i>的积分。
+将大于 <i>g</i> 的积分
 
 126
 00:07:55,000 --> 00:07:59,000
@@ -631,62 +631,62 @@ One last point: if <i>f</i> is kind of sandwiched between
 127
 00:07:59,000 --> 00:08:03,000
 the limits <i>m</i> and the capital <i>M</i> over here,
-这里的界限<i>m</i>和首都<i>m</i>。
+这里的界限 <i>m</i> 和大写的 <i>m</i>
 
 128
 00:08:03,000 --> 00:08:08,000
 then the area for <i>f</i> will be sandwiched between the area
-那么，<i>f</i>的区域将被夹在以下区域之间
+那么 <i>f</i> 的区域将被夹在以下区域之间
 
 129
 00:08:08,000 --> 00:08:13,000
 for a rectangle with sides <i>m</i>(<i>b</i> – <i>a</i>)
-对于边长为<i>m</i>(<i>b</i>-<i>a</i>的矩形而言)
+边长为<i>m</i>(<i>b</i>-<i>a</i>)的矩形
 
 130
 00:08:13,000 --> 00:08:17,000
 and a larger rectangle with sides <i>M</i>(<i>b</i> – <i>a</i>).
-和一个边长较大的矩形<i>M</i>(<i>b</i>-<i>a</i>)。
+和一个较大的矩形 边长为<i>M</i>(<i>b</i>-<i>a</i>)
 
 131
 00:08:17,000 --> 00:08:19,000
 Here’s a picture.
-这里有一张图片。
+这里有一张图
 
 132
 00:08:19,000 --> 00:08:23,000
 That’s the function <i>f</i>, and the area under <i>f</i>
-这就是函数<i>f</i>，以及<i>f</i>下的面积。
+这就是函数 <i>f</i> 以及 <i>f</i> 下的面积
 
 133
 00:08:23,000 --> 00:08:28,000
 is sandwiched between the areas of those two rectangles.
-被夹在这两个矩形的区域之间。
+被夹在这两个矩形的区域之间
 
 134
 00:08:30,000 --> 00:08:32,000
 That brings me to the end of this lesson.
-至此，本课结束。
+本课到这里就结束了
 
 135
 00:08:32,000 --> 00:08:36,000
 To summarize, we have given a new name to Riemann sums.
-综上所述，我们给黎曼和起了一个新的名字。
+综上所述 我们给黎曼和起了一个新的名字
 
 136
 00:08:36,000 --> 00:08:40,000
 You now call them definite integrals.
-你现在称它们为定积分。
+你现在称它们为定积分
 
 137
 00:08:40,000 --> 00:08:45,000
 These definite integrals have many nice special properties
-这些定积分有许多很好的特殊性质。
+这些定积分有许多很好的特殊性质
 
 138
 00:08:45,000 --> 00:08:47,000
 which makes them easy to compute.
-这使得它们易于计算。
+这使得它们易于计算
 
 139
 00:08:48,000 --> 00:08:51,000
@@ -696,37 +696,37 @@ The nice thing about the definite integral is it can handle
 140
 00:08:51,000 --> 00:08:55,000
 functions with both positive values and negative values,
-正值和负值的函数。
+正值和负值的函数
 
 141
 00:08:55,000 --> 00:08:57,000
 and then you might get answers which are positive
-然后你可能会得到积极的答案
+然后你可能会得到正的答案
 
 142
 00:08:57,000 --> 00:09:00,000
 or negative or even 0.
-或负数甚至0。
+或负的答案甚至是 0
 
 143
 00:09:01,000 --> 00:09:04,000
 We have a very nice function in the Wolfram Language
-我们在Wolfram语言中有一个非常好的函数
+我们在 Wolfram 语言中有一个非常好的函数
 
 144
 00:09:04,000 --> 00:09:06,000
 which does the work for you.
-它为你做的工作。
+可以为你运算
 
 145
 00:09:06,000 --> 00:09:08,000
 It’s called Integrate, and that is
-它的名字叫Integrate，那就是。
+它的名字叫 Integrate
 
 146
 00:09:08,000 --> 00:09:12,000
 a very popular, well-used function in the language.
-一个在语言中非常流行的、使用得很好的功能。
+它是一个在语言中非常流行的 很好用的函数
 
 147
 00:09:13,000 --> 00:09:15,000
@@ -736,29 +736,29 @@ In the next lesson we’ll talk about
 148
 00:09:15,000 --> 00:09:17,000
 the so-called fundamental theorem of calculus,
-所谓微积分基本定理。
+所谓微积分基本定理
 
 149
 00:09:17,000 --> 00:09:21,000
 which connects the two branches of calculus,
-它连接了微积分的两个分支。
+它连接了微积分的两个分支
 
 150
 00:09:21,000 --> 00:09:24,000
 integral calculus and differential calculus, together.
-积分微积分和微分微积分，一起。
+积分微积分和微分微积分
 
 151
 00:09:24,000 --> 00:09:29,000
 But before we do that, do review this lesson, go over the exercises
-但在这之前，要先复习一下这节课，复习一下习题。
+但在这之前 要先复习一下这节课
 
 152
 00:09:29,000 --> 00:09:32,000
 and be ready for the fundamental theorem of calculus.
-并为微积分的基本定理做好准备。
+并为微积分的基本定理做好准备
 
 153
 00:09:32,000 --> 00:09:35,000
 Thank you very much. I’ll stop over here.
-谢谢你了我会在这里停下来。
+谢谢您今天就到这里吧
