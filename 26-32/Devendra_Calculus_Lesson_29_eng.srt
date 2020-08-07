@@ -1,0 +1,719 @@
+1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 29 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:11,000
+The topic for this lesson is volumes of solids.
+本次课程的主题是 固体体积
+
+3
+00:00:11,000 --> 00:00:14,000
+Let’s begin with a brief overview of today’s lesson.
+先简单回顾一下上节课
+
+4
+00:00:14,000 --> 00:00:18,000
+Thus far we’ve been talking about the area under curves,
+到目前为止 我们一直在讨论曲线下的面积
+
+5
+00:00:18,000 --> 00:00:21,000
+and we’ve used integral calculus for doing that.
+并且我们已经会使用积分来计算
+
+6
+00:00:21,000 --> 00:00:23,000
+For example, if you work out this integral over here,
+例如 如果在此计算积分
+
+7
+00:00:23,000 --> 00:00:25,000
+then what you’re really doing is
+那么真正在做的是
+
+8
+00:00:25,000 --> 00:00:31,000
+to work out the area under the curve <i>y</i> = <i>x</i>^2 between 2 and 3.
+计算出在 2 和 3 之间曲线 <i>y</i> = <i>x</i>^2 下的面积
+
+9
+00:00:31,000 --> 00:00:34,000
+The point is that you can also use integral calculus
+关键是你也可以使用积分
+
+10
+00:00:34,000 --> 00:00:38,000
+to find the volume of solids, and that would be
+计算固体的体积 那将是
+
+11
+00:00:38,000 --> 00:00:40,000
+a big advancement if we could learn it.
+大的进步 要是我们能掌握的话
+
+12
+00:00:40,000 --> 00:00:44,000
+Let’s look at a very simple example of a solid like over here.
+来看一个非常简单的例子 比如这个固体
+
+13
+00:00:44,000 --> 00:00:48,000
+What we can do is we can actually calculate
+实际上我们可以算
+
+14
+00:00:48,000 --> 00:00:51,000
+the volume of this solid or others using calculus.
+这个固体或其他固体的体积 用微积分
+
+15
+00:00:51,000 --> 00:00:57,000
+This lesson is about one method for computing such volumes.
+这节课就是关于如何计算这些体积的
+
+16
+00:00:59,000 --> 00:01:03,000
+The solid that we spoke of just now was a cylinder of course,
+刚才我们说的固体当然是圆柱体
+
+17
+00:01:03,000 --> 00:01:06,000
+and if you think of a cylinder, it can be constructed
+当你想到一个圆柱体 就可以构造出来
+
+18
+00:01:06,000 --> 00:01:11,000
+by taking a plane region, and then you sweep out a volume.
+通过先画一个平面 然后扫出一个体积
+
+19
+00:01:11,000 --> 00:01:17,000
+For example, let’s say you take this disk over here
+例如 在这里放一个圆盘
+
+20
+00:01:17,000 --> 00:01:21,000
+and you sweep out a volume up to a certain height
+然后扫出一个有一定高度的体积
+
+21
+00:01:21,000 --> 00:01:24,000
+and you get a cylinder.
+你就得到了一个圆柱
+
+22
+00:01:24,000 --> 00:01:28,000
+That’s a hint for finding the volume of a cylinder;
+这就是求圆柱体积的提示
+
+23
+00:01:28,000 --> 00:01:32,000
+namely, you think of it as being composed of disks.
+即 当他是由圆盘组成的
+
+24
+00:01:33,000 --> 00:01:36,000
+If you want to find the volume of a cylinder, what you do is
+如果要求圆柱的体积 就要
+
+25
+00:01:36,000 --> 00:01:38,000
+you take the base area
+找到底面积
+
+26
+00:01:38,000 --> 00:01:43,000
+and then multiply it by the height to get the volume.
+然后乘以高即可得到体积
+
+27
+00:01:43,000 --> 00:01:46,000
+For example, here’s a disk.
+例如 这个圆盘
+
+28
+00:01:46,000 --> 00:01:49,000
+You can work out its area,
+可以算出他的面积
+
+29
+00:01:49,000 --> 00:01:55,000
+and that’s a cylinder with that disk as a base and height 4,
+那这就是以该圆为底高度为 4 的圆柱体
+
+30
+00:01:55,000 --> 00:01:58,000
+and its volume is 4π.
+他的体积是 4π
+
+31
+00:01:58,000 --> 00:02:00,000
+Basically the volume of the cylinder is
+基本上 圆柱的体积是
+
+32
+00:02:00,000 --> 00:02:04,000
+the area of the base times the height, which is 4 in this case.
+底面积乘高 这里高是 4
+
+33
+00:02:04,000 --> 00:02:05,000
+Now of course there are many more
+当然现在还有更多的
+
+34
+00:02:05,000 --> 00:02:08,000
+shapes and solids in the Wolfram Language
+形状和固体定义在 Wolfram 语言中
+
+35
+00:02:08,000 --> 00:02:11,000
+and you can work out their volumes directly,
+可以直接计算出他们的体积
+
+36
+00:02:11,000 --> 00:02:13,000
+but what you might want to do is to work out
+但是你可能想算
+
+37
+00:02:13,000 --> 00:02:17,000
+the volumes of even more general solids.
+更多的一半的固体的体积
+
+38
+00:02:17,000 --> 00:02:19,000
+Here’s an example.
+例如
+
+39
+00:02:19,000 --> 00:02:22,000
+You have a three-dimensional region.
+有一个三维区域
+
+40
+00:02:23,000 --> 00:02:25,000
+If you look at this region, you think of it
+观察这个区域 就会发现
+
+41
+00:02:25,000 --> 00:02:28,000
+as being composed of square cross sections.
+他是由正方形横截面组成的
+
+42
+00:02:28,000 --> 00:02:32,000
+If you were to slice the region, you would see that
+对这个区域进行切片 就能看到
+
+43
+00:02:32,000 --> 00:02:37,000
+the area of each piece is 4<i>x</i>^2 because you have
+每一片的面积是 4<i>x</i>^2 因为你的
+
+44
+00:02:37,000 --> 00:02:42,000
+squares with lengths and widths of 2<i>x</i>.
+正方形长宽都是 2<i>x</i>
+
+45
+00:02:42,000 --> 00:02:46,000
+The volume of each piece would be 4<i>x</i>^2Δ<i>x</i>,
+每一片的体积就是 4<i>x</i>^2Δ<i>x</i>
+
+46
+00:02:46,000 --> 00:02:50,000
+and then you can add them all up, so to speak,
+所以说 把他们全加起来 
+
+47
+00:02:50,000 --> 00:02:54,000
+and get the total volume to be the integral of 4<i>x</i>^2<i>dx</i>
+就得到整个体积是 4<i>x</i>^2<i>dx</i> 的积分
+
+48
+00:02:54,000 --> 00:02:56,000
+between the right limits.
+在确定的上下限之间
+
+49
+00:02:56,000 --> 00:02:58,000
+For example, if you want to define the limits as 1 and 3,
+例如 如果确定上下限是 1 和 3
+
+50
+00:02:58,000 --> 00:03:00,000
+then the volume is 104/3.
+那体积就是 104/3
+
+51
+00:03:01,000 --> 00:03:06,000
+Okay. Now let’s try and generalize that a bit more.
+好 现在我们尝试进一步概括一下
+
+52
+00:03:06,000 --> 00:03:11,000
+If you have a solid with cross-section area <i>A</i>[<i>x</i>],
+如果固体的 横截面 面积为 <i>A</i>[<i>x</i>]
+
+53
+00:03:11,000 --> 00:03:16,000
+then its volume is the integral from <i>a</i> to <i>b</i> of <i>A</i>(<i>x</i>)<i>dx</i>
+那他的体积就是 <i>A</i>(<i>x</i>)<i>dx</i> 在 <i>a</i> 到 <i>b</i> 上的积分
+
+54
+00:03:16,000 --> 00:03:20,000
+where <i>a</i> and <i>b</i> are the limits within which you want to find the volume.
+这里 <i>a</i> 和 <i>b</i> 是你想求的体积的上下限
+
+55
+00:03:20,000 --> 00:03:23,000
+For example, if you want to find the volume of a ball
+例如 想求球的体积
+
+56
+00:03:23,000 --> 00:03:25,000
+like over here and the radius is <i>r</i>,
+就像在这里 半径是 <i>r</i>
+
+57
+00:03:25,000 --> 00:03:31,000
+then each cross section has got a radius of √(<i>r</i>^2 – <i>x</i>^2).
+那么每个横截面的半径为 √(<i>r</i>^2 – <i>x</i>^2)
+
+58
+00:03:31,000 --> 00:03:35,000
+So the cross sections of the left end have got very small areas.
+因此 左端的横截面面积很小
+
+59
+00:03:35,000 --> 00:03:38,000
+As you go to the middle, the area increases.
+当回到中间时 面积会变大
+
+60
+00:03:38,000 --> 00:03:43,000
+Basically, the area will be π(<i>r</i>^2 – <i>x</i>^2).
+基本上 面积是 π(<i>r</i>^2 – <i>x</i>^2)
+
+61
+00:03:43,000 --> 00:03:47,000
+You add them all up and you get the volume of the ball,
+全部加在一起就得到球的体积
+
+62
+00:03:47,000 --> 00:03:49,000
+which is of course (4π<i>r</i>^3)/3.
+当然就是 (4π<i>r</i>^3)/3
+
+63
+00:03:49,000 --> 00:03:54,000
+You can check that with Volume and get back just the same result.
+可以用 Volume 进行验算 并得到相同的结果
+
+64
+00:03:55,000 --> 00:03:58,000
+Okay. Let’s use the same idea to talk about
+好 来用类似的思路来讨论
+
+65
+00:03:58,000 --> 00:04:00,000
+what are called solves of revolutions.
+所谓旋转体的处理
+
+66
+00:04:00,000 --> 00:04:03,000
+Here’s a function, and what you can do is
+这个函数 我们能做的是
+
+67
+00:04:03,000 --> 00:04:04,000
+you can take the graph of this function
+可以画出函数图像
+
+68
+00:04:04,000 --> 00:04:08,000
+and revolve it around the <i>x</i> axis, and then you get a solid.
+然后以 <i>x</i> 为轴旋转 就得到一个旋转体
+
+69
+00:04:08,000 --> 00:04:10,000
+Here’s how we do it.
+这里怎么做呢
+
+70
+00:04:10,000 --> 00:04:13,000
+You use RevolutionPlot3D, and you get this solid
+使用 RevolutionPlot3D 就能得到他
+
+71
+00:04:13,000 --> 00:04:17,000
+obtained by revolving the curve about the <i>x</i> axis.
+通过绕 <i>x</i> 旋转得到
+
+72
+00:04:17,000 --> 00:04:20,000
+Of course you could also revolve it around the <i>y</i> axis
+当然你也可以绕 <i>y</i> 轴旋转得到
+
+73
+00:04:20,000 --> 00:04:22,000
+and get a slightly different solid.
+一个略有不同的形状
+
+74
+00:04:22,000 --> 00:04:26,000
+The question is how do you work out the volume in these cases?
+问题是 在这些情况下如何求体积
+
+75
+00:04:26,000 --> 00:04:31,000
+Okay. What you do is you can again divide the volume into disks,
+好 再一次我们划分体积为圆盘
+
+76
+00:04:31,000 --> 00:04:37,000
+but in this case, each cross section is a disk whose radius is <i>f</i>[<i>x</i>],
+但是现在 每个横截面都是半径为 <i>f</i>[<i>x</i>] 圆盘
+
+77
+00:04:37,000 --> 00:04:40,000
+the value of the function <i>f</i> at <i>x</i>, so the volume will be
+在 <i>x</i> 处的函数值为 <i>f</i> 所以体积是
+
+78
+00:04:40,000 --> 00:04:45,000
+the integral from <i>a</i> to <i>b</i> of π<i>f</i>[<i>x</i>]^2<i>dx</i>.
+π<i>f</i>[<i>x</i>]^2<i>dx</i> 在 <i>a</i> 到 <i>b</i> 间的积分
+
+79
+00:04:45,000 --> 00:04:48,000
+Let’s say you want to find the volume from –1 to 1.
+假设要求 -1 到 1 之间的体积
+
+80
+00:04:48,000 --> 00:04:53,000
+We get back the integral over here, which is 2π/5.
+回到这个积分上 体积就是 2π/5
+
+81
+00:04:53,000 --> 00:04:56,000
+Just to remind you, that was the original parabola,
+只是提醒你一下 那是原来的抛物线
+
+82
+00:04:56,000 --> 00:05:02,000
+and that was the solid obtained by revolving around the <i>x</i> axis.
+这是围绕 <i>x</i> 轴旋转获得的固体
+
+83
+00:05:02,000 --> 00:05:07,000
+Now you might, let’s say, want to revolve it around the line <i>y</i> = 1,
+现在 可能你想 绕 <i>y</i> = 1 旋转
+
+84
+00:05:07,000 --> 00:05:09,000
+in which case you just subtract off 1
+这是你只需要剪去 1
+
+85
+00:05:09,000 --> 00:05:12,000
+because if you look at the volume over here,
+因为你看这个体积公式
+
+86
+00:05:12,000 --> 00:05:14,000
+you see that you actually have different radii
+你看实际上半径是不同的
+
+87
+00:05:14,000 --> 00:05:16,000
+depending upon where you are.
+取决于你的位置
+
+88
+00:05:16,000 --> 00:05:19,000
+Basically you shift down the function by one
+基本上 你把函数相加移动一个单位
+
+89
+00:05:19,000 --> 00:05:21,000
+to get the correct picture.
+就得到了正确的图像
+
+90
+00:05:21,000 --> 00:05:24,000
+Then the radius of each cross section is 1 – <i>f</i>[<i>x</i>],
+然后每个横截面半径为 1 – <i>f</i>[<i>x</i>]
+
+91
+00:05:24,000 --> 00:05:29,000
+so you can work out the volume as the integral of π(1 – <i>f</i>[<i>x</i>])^2
+因此 可以将体积视为 π(1 – <i>f</i>[<i>x</i>])^2 的积分
+
+92
+00:05:29,000 --> 00:05:32,000
+between the correct limits.
+在这个决定的范围里
+
+93
+00:05:32,000 --> 00:05:34,000
+Similarly, if you want to find, let’s say,
+同样 比如你想求 比如
+
+94
+00:05:34,000 --> 00:05:39,000
+the volume obtained by revolving around the line <i>y</i> = –1,
+围绕 <i>y</i> = –1 旋转所得的体积
+
+95
+00:05:39,000 --> 00:05:40,000
+then you add a 1.
+那你加 1 就行
+
+96
+00:05:41,000 --> 00:05:43,000
+Here’s the picture.
+这是图像
+
+97
+00:05:43,000 --> 00:05:47,000
+Again, work out the volume with an integral
+还是 用积分算体积
+
+98
+00:05:47,000 --> 00:05:49,000
+and you get back the answer.
+你可以得到这个答案
+
+99
+00:05:49,000 --> 00:05:52,000
+Basically, shift the function up by 1 in this case.
+基本上 在这种情况下 将函数向上移动 1
+
+100
+00:05:53,000 --> 00:05:58,000
+Now a second method for computing volumes
+现在计算体积的第二个方法
+
+101
+00:05:58,000 --> 00:06:00,000
+is the so-called washer method.
+称之为 垫圈法
+
+102
+00:06:00,000 --> 00:06:02,000
+The idea is simple.
+原理很简单
+
+103
+00:06:02,000 --> 00:06:04,000
+You have two functions, <i>f</i> and <i>g</i>,
+有两个函数  <i>f</i> 和 <i>g</i>
+
+104
+00:06:04,000 --> 00:06:08,000
+and you look at the area between them
+来看他们之间的区域
+
+105
+00:06:08,000 --> 00:06:11,000
+and then you revolve it around the <i>x</i> axis.
+然后绕 <i>x</i> 轴旋转
+
+106
+00:06:11,000 --> 00:06:15,000
+Here’s a nice demonstration of that.
+这里有一个很好的演示
+
+107
+00:06:15,000 --> 00:06:19,000
+You revolve it. It sweeps out the volume.
+旋转他 扫出一个体积
+
+108
+00:06:19,000 --> 00:06:25,000
+The question is how do you work out a formula for that volume?
+问题是如何得到这个体积的计算公式
+
+109
+00:06:27,000 --> 00:06:31,000
+What you do is you remind yourself that now each cross section
+你要做的就是提醒自己 现在每个横截面
+
+110
+00:06:31,000 --> 00:06:36,000
+is like a washer because it’s got a kind of outer and inner radius.
+像是一个垫圈 因为他有这种内径和外径
+
+111
+00:06:36,000 --> 00:06:39,000
+That’s the area of this washer.
+底面积就是这个
+
+112
+00:06:39,000 --> 00:06:43,000
+We work out the integral for the volume,
+我们算出这个体积的积分
+
+113
+00:06:43,000 --> 00:06:48,000
+and that’s the method for finding the volume using the washer method.
+这就是使用垫圈法求体积的方法
+
+114
+00:06:48,000 --> 00:06:53,000
+But of course we might have liked to go around the <i>y</i> axis,
+当然 我们也能绕 <i>y</i> 轴转
+
+115
+00:06:53,000 --> 00:06:55,000
+in which case we do just the opposite.
+这时我们要做的恰恰相反
+
+116
+00:06:55,000 --> 00:06:58,000
+You write <i>f</i> and <i>g</i> as functions of <i>y</i>
+将 <i>f</i> 和 <i>g</i> 写为 <i>y</i> 的函数
+
+117
+00:06:58,000 --> 00:07:02,000
+and then do a similar integral to get back the answer.
+然后求一个类似的积分来得到答案
+
+118
+00:07:04,000 --> 00:07:06,000
+That brings me to the end of the lesson.
+这节课就到这儿了
+
+119
+00:07:06,000 --> 00:07:09,000
+The main point is that you can use integrals
+要点是 可以使用积分
+
+120
+00:07:09,000 --> 00:07:11,000
+to find the volumes of solids,
+来算固体的体积
+
+121
+00:07:11,000 --> 00:07:13,000
+and that’s quite a powerful idea.
+这是相当强大的一个思想
+
+122
+00:07:13,000 --> 00:07:19,000
+Let’s say if you have a cylinder, then its volume is base times height,
+假设有一个圆柱体 那么他的体积就是简单乘高
+
+123
+00:07:19,000 --> 00:07:22,000
+where <i>B</i> is the area of the base.
+这里 <i>B</i> 是底面积
+
+124
+00:07:22,000 --> 00:07:27,000
+If you have a more general solid with the cross-sectional area <i>A</i>[<i>x</i>],
+如果更一般的固体的横截面面积是 <i>A</i>[<i>x</i>]
+
+125
+00:07:27,000 --> 00:07:30,000
+then you’ll compute an integral to find the volume.
+那就能算个积分来求体积
+
+126
+00:07:30,000 --> 00:07:32,000
+If you have a solid of revolution
+如果是旋转体
+
+127
+00:07:32,000 --> 00:07:36,000
+obtained by revolving the function around a certain line,
+是函数通过绕某条确定直线旋转得到的
+
+128
+00:07:36,000 --> 00:07:39,000
+then you can compute its volume using the formula over here.
+那你就可以用这个公式来计算
+
+129
+00:07:39,000 --> 00:07:42,000
+Typically you might just want <i>y</i> to be 0,
+通常 可能设 <i>y</i> 是 0
+
+130
+00:07:42,000 --> 00:07:44,000
+so you’re revolving around the <i>x</i> axis.
+所以就是绕 <i>x</i> 轴旋转
+
+131
+00:07:44,000 --> 00:07:46,000
+If you have two functions
+如果你有两个函数
+
+132
+00:07:46,000 --> 00:07:49,000
+and you want to revolve the area between them,
+想算他们之间区域的旋转体
+
+133
+00:07:49,000 --> 00:07:53,000
+then you apply the washer method and apply the formula over here.
+然后使用垫圈法 在这里套用公式
+
+134
+00:07:53,000 --> 00:07:56,000
+Of course you can repeat the same thing
+当然可以重复相同的事情
+
+135
+00:07:56,000 --> 00:07:59,000
+for revolving around the line <i>x</i> = <i>x</i>0.
+对于绕直线 <i>x</i> = <i>x</i>0 旋转
+
+136
+00:07:59,000 --> 00:08:04,000
+That’s the end of this lesson about the volume of solids
+本节课关于固体体积的算法就到这里了
+
+137
+00:08:04,000 --> 00:08:08,000
+using the so-called disk method and the washer method.
+用所谓的圆盘法和垫圈法
+
+138
+00:08:08,000 --> 00:08:11,000
+In the next lesson, we’ll talk about another method
+下节课我们讨论另一种方法
+
+139
+00:08:11,000 --> 00:08:13,000
+which is called the cylindrical shell method.
+称之为柱壳法
+
+140
+00:08:13,000 --> 00:08:18,000
+That’s a little easier in some cases, but that’s for next time.
+某些时候会容易一点 但是那是下节课
+
+141
+00:08:18,000 --> 00:08:19,000
+Do review today’s lesson.
+请复习这次的课程
+
+142
+00:08:19,000 --> 00:08:21,000
+It’s quite a difficult lesson.
+他有一点难度的
+
+143
+00:08:21,000 --> 00:08:22,000
+I’ll see you next time.
+我们下次见
+
+144
+00:08:22,000 --> 00:08:25,000
+Thank you very much. I’ll stop over here.
+本节课到此为止，再见
+
