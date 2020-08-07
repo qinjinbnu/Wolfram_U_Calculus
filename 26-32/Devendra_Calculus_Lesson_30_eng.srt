@@ -11,7 +11,7 @@ The topic for this lesson is volumes by cylindrical shells.
 3
 00:00:12,000 --> 00:00:16,000
 Let’s begin with a brief overview of the lesson.
-先简单回顾一下上节课
+让我们从本课的简要概述开始
 
 4
 00:00:16,000 --> 00:00:21,000
@@ -643,5 +643,6 @@ and it really shows you how powerful calculus is.
 130
 00:08:37,000 --> 00:08:39,000
 I’ll stop over here. Thank you very much.
- 本节课到此为止，再见
+本节课到此为止，再见
+翻译：兰州大学 周怀尚
 
