@@ -1,0 +1,609 @@
+1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 31 of this introduction to calculus with Wolfram U.
+大家好，这里是 Wolfram U的微积分入门，第31课
+
+2
+00:00:06,000 --> 00:00:12,000
+The topic for this lesson is average value of a function.
+本次课程的主题是 函数的均值
+
+3
+00:00:12,000 --> 00:00:15,000
+Let’s begin with a brief overview of the lesson.
+让我们从本课的简要概述开始
+
+4
+00:00:15,000 --> 00:00:17,000
+Let’s say you have a list of numbers like over here,
+假设有一个像这样的数列
+
+5
+00:00:17,000 --> 00:00:20,000
+and you want to work out their average value.
+你想求他们的均值
+
+6
+00:00:20,000 --> 00:00:23,000
+Of course what you do is just add the numbers
+当然 只需要把数字加起来
+
+7
+00:00:23,000 --> 00:00:25,000
+and then divide by the number of numbers,
+然后除以数字个数
+
+8
+00:00:25,000 --> 00:00:28,000
+which is 10 in this case, and you get back the answer.
+这里是 10 然后你就能得到答案
+
+9
+00:00:28,000 --> 00:00:31,000
+You also have a function called Mean in the Wolfram Language
+在 Wolfram 语言中 还有一个称为 Mean 的函数
+
+10
+00:00:31,000 --> 00:00:33,000
+which does just the same thing for you,
+做的是一件事
+
+11
+00:00:33,000 --> 00:00:35,000
+and you get back the same answer.
+得到同一个答案
+
+12
+00:00:35,000 --> 00:00:38,000
+Now let’s say instead of a list of values,
+现在说说不是数列的时候
+
+13
+00:00:38,000 --> 00:00:41,000
+you had a function like the one shown over here.
+有一个像这里一样的函数
+
+14
+00:00:42,000 --> 00:00:44,000
+Here’s a plot of the function.
+这是函数图像
+
+15
+00:00:44,000 --> 00:00:47,000
+The question is can we work out
+问题是我们能否求得
+
+16
+00:00:47,000 --> 00:00:51,000
+the average value of such a function?
+这个函数的均值
+
+17
+00:00:51,000 --> 00:00:54,000
+The answer is yes.
+答案是肯定的
+
+18
+00:00:54,000 --> 00:00:55,000
+Here’s some intuition.
+这是直觉
+
+19
+00:00:55,000 --> 00:00:59,000
+Let’s say your function runs from <i>a</i> to <i>b</i>.
+假设函数在 <i>a</i> 和 <i>b</i> 之间
+
+20
+00:01:01,000 --> 00:01:04,000
+You break the interval into <i>n</i> subintervals,
+将区间分为 <i>n</i> 个子区间
+
+21
+00:01:04,000 --> 00:01:07,000
+take a sample point for each subinterval
+在每个字区间中取一个采样点
+
+22
+00:01:07,000 --> 00:01:10,000
+and then work out the average value like over here.
+然后计算这的均值
+
+23
+00:01:11,000 --> 00:01:14,000
+Now we want to rewrite it as a Riemann sum,
+现在我们想改写为黎曼和的形式
+
+24
+00:01:14,000 --> 00:01:18,000
+so the <i>n</i> over here can be thought of as being related to Δ<i>x</i>,
+所以这里的 <i>n</i> 可以认为与 Δ<i>x</i> 有关
+
+25
+00:01:18,000 --> 00:01:20,000
+the length of each subinterval.
+这是子区间长度
+
+26
+00:01:20,000 --> 00:01:26,000
+So  Δ<i>x</i> is (<i>b</i> – <i>a</i>)/<i>n</i>, and hence <i>n</i> is (<i>b</i> – <i>a</i>)/Δ<i>x</i>.
+因此 Δ<i>x</i> 是 (<i>b</i> – <i>a</i>)/<i>n</i> 并且得 <i>n</i> 是 (<i>b</i> – <i>a</i>)/Δ<i>x</i>
+
+27
+00:01:26,000 --> 00:01:30,000
+You can rewrite the average in a slightly different form
+你可以用略有不同的形式重写平均值
+
+28
+00:01:30,000 --> 00:01:34,000
+in which it’s clear that if you now let <i>n</i> go to ∞
+很明显 如果现在让 <i>n</i> 趋向于 ∞
+
+29
+00:01:34,000 --> 00:01:37,000
+so you’ve got very small subintervals,
+所以子区间很小
+
+30
+00:01:37,000 --> 00:01:40,000
+then what you get back is the integral
+那么你得到积分
+
+31
+00:01:40,000 --> 00:01:43,000
+divided by the length of the interval.
+除以区间的长度
+
+32
+00:01:43,000 --> 00:01:46,000
+That’s the average value of a function.
+这就是函数的均值
+
+33
+00:01:46,000 --> 00:01:50,000
+It’s the integral of the function over an interval
+他是在一个区间上的积分
+
+34
+00:01:50,000 --> 00:01:53,000
+divided by the length of the interval.
+除以区间长度
+
+35
+00:01:53,000 --> 00:01:57,000
+Let’s say in our example, if you want to work out the average value,
+假设对我们的例子 你要算均值
+
+36
+00:01:57,000 --> 00:02:01,000
+you simply find the integral from 0 to 5 and then divide by 5,
+只需计算0到5之间的积分 然后除以5
+
+37
+00:02:01,000 --> 00:02:03,000
+and you get back the answer.
+就能得到答案
+
+38
+00:02:04,000 --> 00:02:07,000
+Okay. Now a much deeper fact is
+好 更深层的事实是
+
+39
+00:02:07,000 --> 00:02:10,000
+something called the mean value theorem, which says that
+称为均值定理的东西
+
+40
+00:02:10,000 --> 00:02:13,000
+if you have a continuous function on an interval,
+如果函数在区间上连续
+
+41
+00:02:13,000 --> 00:02:17,000
+then there is at least one number <i>c</i> in that interval
+那么在区间中至少存在一个点 <i>c</i>
+
+42
+00:02:17,000 --> 00:02:23,000
+such that the value of the function is equal to the average value.
+使得此点的函数值就是平均值
+
+43
+00:02:23,000 --> 00:02:27,000
+That should remind you of the mean value theorem for derivatives,
+这会让你想到微分均值定理
+
+44
+00:02:27,000 --> 00:02:29,000
+which was the same thing,
+这是一回事
+
+45
+00:02:29,000 --> 00:02:35,000
+but now for integrals over intervals and areas rather than slopes.
+但是现在是针对的是区间上的积分和面积而不是斜率
+
+46
+00:02:35,000 --> 00:02:38,000
+If you multiply both sides by <i>b</i> – <i>a</i>,
+如果将两边都乘以 <i>b</i> – <i>a</i>
+
+47
+00:02:38,000 --> 00:02:43,000
+what you get on the left-hand side is just the area of a rectangle
+左边得到的是一个矩形的面积
+
+48
+00:02:43,000 --> 00:02:46,000
+with height <i>f</i>(<i>c</i>) and length <i>b</i> – <i>a</i>,
+高是 <i>f</i>(<i>c</i>) 长为 <i>b</i> – <i>a</i>
+
+49
+00:02:46,000 --> 00:02:48,000
+and the right-hand side is the integral.
+然后右边是这个积分
+
+50
+00:02:48,000 --> 00:02:52,000
+Here is a visual interpretation of the whole thing.
+这是整个事情的可视化描述
+
+51
+00:02:52,000 --> 00:02:54,000
+Let’s say that this is your curve,
+来看这条曲线
+
+52
+00:02:54,000 --> 00:03:00,000
+and now you have the area under the curve, and that’s the rectangle.
+现在有曲线下的面积 这就是矩形
+
+53
+00:03:00,000 --> 00:03:04,000
+Now there’s a bit of area that’s common over here,
+现在这里又一些公共区域
+
+54
+00:03:04,000 --> 00:03:07,000
+and then a bit over here which only belongs to the rectangle
+然后在这里有些点只属于矩形
+
+55
+00:03:07,000 --> 00:03:09,000
+and a bit that only belongs to the curve,
+还有些点只属于曲线
+
+56
+00:03:09,000 --> 00:03:13,000
+and what we’re saying over here is that the area of this rectangle
+我们说在这个地方有 这个矩形的面积
+
+57
+00:03:13,000 --> 00:03:16,000
+is equal to the area under the curve.
+等于曲线下的面积
+
+58
+00:03:16,000 --> 00:03:18,000
+That’s quite a remarkable theorem.
+这是个相当了不起的定理
+
+59
+00:03:18,000 --> 00:03:22,000
+It’s very deep and shows you how powerful calculus is.
+他非常深刻 并且展现了微积分的力量
+
+60
+00:03:22,000 --> 00:03:24,000
+We’re able to reduce the area under a curve
+我们能够分解曲线下的面积
+
+61
+00:03:24,000 --> 00:03:26,000
+to the area of a rectangle,
+移到矩形区域
+
+62
+00:03:26,000 --> 00:03:30,000
+which is the simplest thing one might think about in areas.
+这是人们能想到的最简单的事情
+
+63
+00:03:32,000 --> 00:03:35,000
+Okay. As an application, here’s a function,
+好 作为应用 这有一个函数
+
+64
+00:03:35,000 --> 00:03:39,000
+and you want to find a value in the interval –2 to 3
+要找一个在区域 -2 到 3 之间的值
+
+65
+00:03:39,000 --> 00:03:42,000
+such that the function value is equal to
+使得这个函数的均值等于
+
+66
+00:03:42,000 --> 00:03:44,000
+the average value over that interval.
+他在这个区域上的均值
+
+67
+00:03:44,000 --> 00:03:47,000
+Now because the function is continuous, it’s a polynomial,
+由于函数是连续的 他是个多项式
+
+68
+00:03:47,000 --> 00:03:50,000
+so you can certainly apply the theorem, the mean value theorem.
+所以当然可以应用这个定理 即均值定理
+
+69
+00:03:50,000 --> 00:03:52,000
+Let’s say you want to do that.
+假设你要这样做
+
+70
+00:03:52,000 --> 00:03:58,000
+You solve the equation <i>f</i>[<i>c</i>] equal to the average value,
+解这个方程 <i>f</i>[<i>c</i>] 等于 均值
+
+71
+00:03:58,000 --> 00:04:02,000
+and when you do that, you get back an answer.
+等你这么做完 就能得到答案
+
+72
+00:04:02,000 --> 00:04:06,000
+Here’s a plot which shows the point at which
+这张图 显示了
+
+73
+00:04:06,000 --> 00:04:09,000
+the average value is actually retained.
+这个均值实际上是有的
+
+74
+00:04:10,000 --> 00:04:13,000
+That’s the mean value theorem in action.
+这就是均值定理在起作用
+
+75
+00:04:13,000 --> 00:04:16,000
+But the main point is that sometimes you can get
+但是要点是有时候你可以得到
+
+76
+00:04:16,000 --> 00:04:21,000
+more than one point at which the average value is retained.
+不止一个点 这些点的值都是均值
+
+77
+00:04:21,000 --> 00:04:22,000
+Here’s an example.
+这有一个例子
+
+78
+00:04:22,000 --> 00:04:24,000
+You have a function.
+这个函数
+
+79
+00:04:24,000 --> 00:04:27,000
+You try and work out the average value, and then work out
+试着算一下均值 然后得到
+
+80
+00:04:27,000 --> 00:04:31,000
+the point at which you want to check whether
+这些点 你要检查是否
+
+81
+00:04:31,000 --> 00:04:35,000
+the average value equals the function value.
+均值等于函数值
+
+82
+00:04:35,000 --> 00:04:38,000
+You get two points now, and here’s a picture which says
+你现在得到两个点 这张图上面说
+
+83
+00:04:38,000 --> 00:04:40,000
+that you really have two points at which
+你真的有两个点
+
+84
+00:04:40,000 --> 00:04:43,000
+the average value is attained.
+能取到均值
+
+85
+00:04:45,000 --> 00:04:47,000
+As an application of these ideas,
+作为这些思想的应用
+
+86
+00:04:47,000 --> 00:04:51,000
+here’s a temperature for a city <i>t</i> hours after noon.
+这是 中午 <i>t</i> 小时后 城市的温度
+
+87
+00:04:51,000 --> 00:04:56,000
+You plot the temperate from 1pm to 3am,
+画出从 1pm 到 3am 的温度图像
+
+88
+00:04:56,000 --> 00:05:00,000
+and the question is, is there a time at which the temperature
+问题是 是否有有这么个时间当时的温度
+
+89
+00:05:00,000 --> 00:05:03,000
+equals the average temperature?
+就是一天的平均温度
+
+90
+00:05:03,000 --> 00:05:04,000
+The answer is yes.
+答案是肯定的
+
+91
+00:05:04,000 --> 00:05:10,000
+Just solve the equation and you get back that <i>c</i> is about 8.57.
+只需解方程 就能得到 <i>c</i> 约是 8.57
+
+92
+00:05:10,000 --> 00:05:16,000
+That’s in hours, so that means at around 8:34pm,
+以小时为单位 这意味着晚上 8:34 左右
+
+93
+00:05:16,000 --> 00:05:18,000
+the temperature will be equal to the average temperature
+此时温度就是平均温度
+
+94
+00:05:18,000 --> 00:05:20,000
+over the time period.
+在这一段时间中的
+
+95
+00:05:21,000 --> 00:05:25,000
+As another application, let’s look at a car on a highway.
+另一个应用是 来看一下高速公路上的汽车
+
+96
+00:05:25,000 --> 00:05:28,000
+Here is the velocity of the car, and you want to find
+这是汽车的速度 要算
+
+97
+00:05:28,000 --> 00:05:32,000
+the average velocity over the time period.
+这段时间里的平均速度
+
+98
+00:05:32,000 --> 00:05:35,000
+What you do is you simply integrate
+你要做的就是简单的积分
+
+99
+00:05:35,000 --> 00:05:37,000
+and divide by the time interval.
+除以时间区间
+
+100
+00:05:37,000 --> 00:05:41,000
+Here’s a plot which shows clearly that
+这张图清楚的表明
+
+101
+00:05:41,000 --> 00:05:46,000
+the average value is attained at two different points,
+平均值能够在不同的两个点取到
+
+102
+00:05:46,000 --> 00:05:52,000
+so the average velocity is attained twice in the interval.
+所以平均速度能取到两次在区域内
+
+103
+00:05:52,000 --> 00:05:55,000
+That brings me to the end of this lesson,
+这节课到此为止
+
+104
+00:05:55,000 --> 00:05:58,000
+but the main point for today is that with integration,
+但是今天的重点是积分
+
+105
+00:05:58,000 --> 00:06:03,000
+you can find the average value of a function over an interval.
+你可以找到某个区间内的函数的平均值
+
+106
+00:06:04,000 --> 00:06:07,000
+That average value is given by the integral
+均值的计算由这个积分
+
+107
+00:06:07,000 --> 00:06:11,000
+divided by the length of the interval.
+除以区间长度得到
+
+108
+00:06:11,000 --> 00:06:13,000
+The mean value theorem is a very powerful theorem
+均值定理是非常有力的一个定理
+
+109
+00:06:13,000 --> 00:06:16,000
+which says that if you have a continuous function,
+他表明如果有一个连续函数
+
+110
+00:06:16,000 --> 00:06:19,000
+then it takes on its average value at least once—
+那他至少能取到一次他的均值
+
+111
+00:06:19,000 --> 00:06:23,000
+could be more than once, but at least once—in the interval.
+在区间内可能不止取到一次 但是至少一次
+112
+00:06:23,000 --> 00:06:26,000
+Of course once you have this very powerful theorem,
+当然一旦有了这个非常强大的定理
+
+113
+00:06:26,000 --> 00:06:29,000
+you could apply it to temperatures or velocities
+你可以应用到温度和速度上
+
+114
+00:06:29,000 --> 00:06:33,000
+or all kinds of other fillable phenomena.
+或者其他的可填充的现象中
+
+115
+00:06:33,000 --> 00:06:35,000
+You have the mean value theorem, which tells you that
+均值定理 告诉你
+
+116
+00:06:35,000 --> 00:06:39,000
+the area under the curve is equal to the area of a certain rectangle.
+曲线下的面积等于某个矩形的面积
+
+117
+00:06:39,000 --> 00:06:43,000
+That’s a very powerful theorem for calculus.
+对于微积分这是非常强大的一个定理
+
+118
+00:06:45,000 --> 00:06:48,000
+In the next lesson we’ll talk about approximate values of integrals,
+在下一课中 我们将讨论积分的近似
+
+119
+00:06:48,000 --> 00:06:51,000
+but for now, do review this lesson,
+但现在 请复习本课中
+
+120
+00:06:51,000 --> 00:06:53,000
+go over the idea for the mean value
+求平均值的思想
+
+121
+00:06:53,000 --> 00:06:56,000
+and I’ll see you next time.
+我们下次见
+
+122
+00:06:56,000 --> 00:06:58,000
+Thank you very much. I’ll stop over here.
+本节课到此为止，再见
+

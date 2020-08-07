@@ -1,0 +1,831 @@
+1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 32 of this introduction to calculus with Wolfram U.
+大家好，这里是 Wolfram U的微积分入门，第31课
+
+2
+00:00:07,000 --> 00:00:12,000
+The topic for this lesson is approximate integration.
+本次课程的主题是 积分近似
+
+3
+00:00:12,000 --> 00:00:15,000
+Let’s begin with a brief overview of the lesson.
+让我们从本课的简要概述开始
+
+4
+00:00:15,000 --> 00:00:19,000
+So far, you’ve been using integration to calculate
+到目前为止 你一直在使用积分来算
+
+5
+00:00:19,000 --> 00:00:22,000
+the area under curves, et cetera, and the point is
+曲线下的面积 等等 要点是
+
+6
+00:00:22,000 --> 00:00:26,000
+if you can compute an integral, then you can work out the area.
+能算出积分 就能算出面积
+
+7
+00:00:26,000 --> 00:00:29,000
+For example, if you can work out the integral of <i>x</i>^2,
+例如 如果你能计算 <i>x</i>^2 的积分
+
+8
+00:00:29,000 --> 00:00:32,000
+which is of course <i>x</i>^3/3, then you can work out
+当然答案是 <i>x</i>^3/3 然后你就能算出
+
+9
+00:00:32,000 --> 00:00:36,000
+the area under the curve for <i>y</i> = <i>x</i>^2 between,
+曲线 <i>y</i> = <i>x</i>^2 下区域间的面积
+
+10
+00:00:36,000 --> 00:00:39,000
+let’s say, 2 and 5 in two ways:
+假设有 2 和 5 现在有两种方法
+
+11
+00:00:39,000 --> 00:00:43,000
+either you can actually plug in the upper and lower limits 5 and 2
+一个是实际上上限 5 和下限 2代到
+
+12
+00:00:43,000 --> 00:00:46,000
+in the answer on the earlier step or you can use Integrate,
+在上一步的答案中 或者可以使用 Integrate
+13
+00:00:46,000 --> 00:00:49,000
+and you get back just the same result.
+都能得到相同的结果
+
+14
+00:00:49,000 --> 00:00:54,000
+The point is that some functions have no known closed form
+关键是某些函数没有已知的闭形式
+
+15
+00:00:54,000 --> 00:00:56,000
+for their integrals.
+对他们的积分而言
+
+16
+00:00:56,000 --> 00:01:00,000
+Here’s an example: <i>e</i>^<i>e</i>^<i>x</i>^2 does not have an integral.
+例如 <i>e</i>^<i>e</i>^<i>x</i>^2  就没有原函数
+
+17
+00:01:00,000 --> 00:01:03,000
+The question is what do we do in such a case?
+问题是这时候我们怎么办
+
+18
+00:01:03,000 --> 00:01:07,000
+How do you find the area under the curve in such cases?
+这是怎么算曲线下方的面积
+
+19
+00:01:07,000 --> 00:01:10,000
+In this lesson, we’ll go over some ways
+这节课 我们将介绍一些方法
+
+20
+00:01:10,000 --> 00:01:15,000
+to evaluate such integrals numerically or approximately.
+计算这些积分 在数值上或是近似的
+
+21
+00:01:17,000 --> 00:01:22,000
+As a first step, let’s look at so-called left and right approximations.
+首先 来看一下所谓的左近似和右近似
+
+22
+00:01:22,000 --> 00:01:26,000
+When we began integration, we talked about the area of a region
+当我们积分时 我们谈到了区域上的面积
+
+23
+00:01:26,000 --> 00:01:30,000
+as being a kind of Riemann sum, so you have the function value
+是一种黎曼和 所以你有函数值
+
+24
+00:01:30,000 --> 00:01:34,000
+at some sample points times the length of each subinterval,
+在某些采样点上的值 乘 每个子区间长度
+
+25
+00:01:34,000 --> 00:01:39,000
+and then the sample points could be chosen in various ways.
+然后可以通过多种方式选择采样点
+
+26
+00:01:39,000 --> 00:01:44,000
+In the first case over here, if I choose <i>i</i> – 1 over here,
+第一种情况下 如果我们这里选择 <i>i</i> – 1
+27
+00:01:44,000 --> 00:01:48,000
+then basically I get the left-end sample points,
+然后基本上就得到了 左采样点
+28
+00:01:48,000 --> 00:01:53,000
+so the rectangles have their upper left-hand corners
+所以这个矩形的左上角
+
+29
+00:01:53,000 --> 00:01:55,000
+lying on the curve.
+在曲线上
+
+30
+00:01:55,000 --> 00:01:57,000
+If you have an <i>i</i> over here,
+如果你这里选 <i>i</i>
+
+31
+00:01:57,000 --> 00:02:01,000
+then you get upper-right corners lying on the curve.
+那么右上角就在曲线上
+
+32
+00:02:01,000 --> 00:02:05,000
+Here’s a plot to show all that.
+这个图可以说明一切
+
+33
+00:02:05,000 --> 00:02:09,000
+In this first case, you have the left approximations,
+第一种情况下 你有左近似
+
+34
+00:02:09,000 --> 00:02:12,000
+and in the second case, you have the right approximations.
+在第二个例子里 你有右近似
+
+35
+00:02:12,000 --> 00:02:17,000
+It’s clear in the first case you’re kind of under approximating,
+很明显 第一种情况下 你是一种下近似
+
+36
+00:02:17,000 --> 00:02:19,000
+and in the second case you’re over approximating.
+第二种情况下 是一种上近似
+
+37
+00:02:19,000 --> 00:02:24,000
+Let’s now actually work out the answers using the sum over here,
+现在让我们用此处的总和来计算答案
+
+38
+00:02:24,000 --> 00:02:29,000
+and you get back the answers 1.285 and 1.385.
+然后得 1.285 和 1.385
+
+39
+00:02:29,000 --> 00:02:32,000
+That’s the left sum.
+这是左和
+
+40
+00:02:32,000 --> 00:02:35,000
+That’s the right sum.
+这是右和
+
+41
+00:02:35,000 --> 00:02:39,000
+The actual answer is sandwiched between those two numbers.
+实际答案夹在这两个数字之间
+
+42
+00:02:39,000 --> 00:02:42,000
+It’s 1.3333, which is somewhere between
+他是 1.3333 这就是在
+
+43
+00:02:42,000 --> 00:02:44,000
+the left and the right answers.
+左右答案之间
+
+44
+00:02:44,000 --> 00:02:47,000
+The question is can we do any better?
+问题是我们能做的更好吗？
+
+45
+00:02:47,000 --> 00:02:49,000
+Well, what we could do is to take
+我们能做的是
+
+46
+00:02:49,000 --> 00:02:54,000
+the midpoints of each subinterval as the sample point.
+以每个子区间的中点作为采样点
+
+47
+00:02:54,000 --> 00:02:57,000
+Here’s the midpoint in each case.
+这是每个小长条的中点
+
+48
+00:02:57,000 --> 00:03:01,000
+Then the rectangles have the middle of their tops
+然后矩形有其顶部的中间
+
+49
+00:03:01,000 --> 00:03:03,000
+going through the curve.
+都在曲线上
+
+50
+00:03:03,000 --> 00:03:05,000
+Here’s a plot with our function,
+这里画出我们的函数
+
+51
+00:03:05,000 --> 00:03:08,000
+and you can see over here that things are better
+然后你可以看到变得更好了
+
+52
+00:03:08,000 --> 00:03:11,000
+because you have some extra area over here, for example,
+因为这有些额外的区域 比如这儿
+
+53
+00:03:11,000 --> 00:03:14,000
+and some less area over there, so it looks like this might give you
+还有一些缺了的区域补上了 所以看起来能够给你
+
+54
+00:03:14,000 --> 00:03:17,000
+a better approximation than the earlier method.
+更好的近似相比先前的方法
+
+55
+00:03:17,000 --> 00:03:21,000
+Let’s do that, and you do find that you get a better approximation.
+我们这么做 你就能得到一个更好的近似
+
+56
+00:03:23,000 --> 00:03:28,000
+Another method might be to use the so-called trapezoidal rule.
+另一个方法就是所谓的 梯形法
+
+57
+00:03:28,000 --> 00:03:32,000
+Earlier we spoke about the left and right approximations,
+之前我们谈到了左右近似
+
+58
+00:03:32,000 --> 00:03:35,000
+and that’s the actual integral.
+然后这是实际积分
+
+59
+00:03:35,000 --> 00:03:41,000
+If you work them out, you can get back 1.285, 1.385, 1.3333.
+算出来 可得 1.285 1.385 1.3333
+
+60
+00:03:41,000 --> 00:03:46,000
+But what you could do is to take an average of the right and left
+但是还可以取左右的平均值
+
+61
+00:03:46,000 --> 00:03:49,000
+and compare it with the actual integral,
+再和实际积分做比较
+
+62
+00:03:49,000 --> 00:03:51,000
+and that definitely looks much better.
+这看起来肯定好多了
+
+63
+00:03:51,000 --> 00:03:56,000
+Effectively what you’re doing is you’re taking a trapezoid
+实际上 你在做的就是用梯形
+
+64
+00:03:56,000 --> 00:04:02,000
+in each case with the height of the trapezoid equal to Δ<i>x</i>
+在每个时候梯形的高等于 Δ<i>x</i>
+
+65
+00:04:02,000 --> 00:04:06,000
+and the two lengths over here being
+两个长度在这里
+
+66
+00:04:06,000 --> 00:04:10,000
+the lengths of the function heights at those points.
+这些点处的函数高度的长度
+
+67
+00:04:10,000 --> 00:04:13,000
+Here’s the answer for that trapezoidal rule,
+这是梯形法的答案
+
+68
+00:04:13,000 --> 00:04:15,000
+and you get back just the same result.
+得到的结果是一样的
+
+69
+00:04:17,000 --> 00:04:21,000
+Now to go a step further, one could actually try and use polynomials,
+更进一步 实际上可以尝试使用多项式
+
+70
+00:04:21,000 --> 00:04:24,000
+and that’s what is called Simpson’s rule.
+这就是所谓的辛普森法
+
+71
+00:04:24,000 --> 00:04:27,000
+With Simpson’s rule, what we’ll do is use parabolas
+根据辛普森法 我们要用抛物线
+
+72
+00:04:27,000 --> 00:04:30,000
+to approximate the area under the curve.
+去近似曲线下面积
+
+73
+00:04:30,000 --> 00:04:32,000
+But that’s a much harder problem,
+但这是更难的一个问题
+
+74
+00:04:32,000 --> 00:04:35,000
+so you get back a slightly more complicated formula.
+所以得到一个稍微复杂的公式
+
+75
+00:04:35,000 --> 00:04:38,000
+You do need to take an even number of points,
+你需要取偶数个点
+
+76
+00:04:38,000 --> 00:04:44,000
+and then basically you take <i>x</i>0, <i>x</i>1, <i>x</i>2 et cetera in triples
+基本上就是取 <i>x</i>0 <i>x</i>1 <i>x</i>2 等三个点
+
+77
+00:04:44,000 --> 00:04:47,000
+to compute the sum for the area.
+去计算这个区域的和
+
+78
+00:04:48,000 --> 00:04:50,000
+That’s a particular combination.
+这是一个特别的组合
+
+79
+00:04:50,000 --> 00:04:54,000
+You have 1, 4, 1 as the combination on your subinterval.
+您的子区间上有 1 4 1 作为组合
+
+80
+00:04:54,000 --> 00:04:58,000
+Here’s the computation with our earlier example
+下面是我们前面的示例的计算
+
+81
+00:04:58,000 --> 00:05:00,000
+and, let’s say, 10 subregions.
+比如说 10 个子区域
+
+82
+00:05:00,000 --> 00:05:04,000
+What you get back is the exact answer.
+你得到的就是确切答案
+
+83
+00:05:04,000 --> 00:05:08,000
+Simpson’s rule is extremely powerful.
+辛普森法及其强大
+
+84
+00:05:08,000 --> 00:05:12,000
+It tries to use parabolae to compute the approximation,
+他用抛物线近似计算
+
+85
+00:05:12,000 --> 00:05:16,000
+and in this simple case, it actually gets to the exact answer.
+再简单的情况下 他实际上能得到正解
+
+86
+00:05:16,000 --> 00:05:20,000
+Now whenever we do any kind of approximation,
+现在 每当我们做任何近似
+
+87
+00:05:20,000 --> 00:05:23,000
+you need to worry about errors.
+你需要担心误差
+
+88
+00:05:23,000 --> 00:05:26,000
+For the midpoint rule, it turns out that if you have
+对于中点规则 事实证明 如果你有
+
+89
+00:05:26,000 --> 00:05:29,000
+an upper-bound <i>K</i> for the second derivative,
+上界 <i>K</i> 对于二阶导数而言是存在的
+
+90
+00:05:29,000 --> 00:05:34,000
+then that’s the error for the length of <i>b</i> – <i>a</i> for the interval
+那么这就是长度为 <i>b</i> – <i>a</i> 的区间上的误差
+
+91
+00:05:34,000 --> 00:05:37,000
+and <i>n</i> rectangles.
+关于 <i>n</i> 个矩形
+
+92
+00:05:37,000 --> 00:05:40,000
+The trapezoidal rule has a very similar formula,
+梯形法有一个很像的公式
+
+93
+00:05:40,000 --> 00:05:46,000
+but in fact the error is exactly twice the midpoint rule error.
+但是事实上误差刚好上中点法的两倍
+
+94
+00:05:46,000 --> 00:05:49,000
+Simpson’s rule is a lot better
+辛普森法好多了
+
+95
+00:05:49,000 --> 00:05:51,000
+because now you look at the fourth derivative,
+因为你能看到四阶导数
+
+96
+00:05:51,000 --> 00:05:54,000
+and you get back an error term over here.
+得到这个误差项
+
+97
+00:05:54,000 --> 00:05:56,000
+Those are the maximum errors
+这都是最大误差
+
+98
+00:05:56,000 --> 00:05:59,000
+for each method that we have spoken about.
+对于我们提到的每一个方法而言
+
+99
+00:06:00,000 --> 00:06:03,000
+The midpoint case and the trapezoidal case,
+中点情形和梯形情形
+
+100
+00:06:03,000 --> 00:06:07,000
+you can work out the errors—they’re quite small—
+可以让他们的误差足够小
+
+101
+00:06:07,000 --> 00:06:09,000
+and compare them with the actual errors,
+并且和实际误差相比较
+
+102
+00:06:09,000 --> 00:06:12,000
+namely, the difference between the actual integrals
+即和实际积分的不同
+
+103
+00:06:12,000 --> 00:06:15,000
+and the midpoint method and the trapezoidal method,
+以及中点法和梯形法
+
+104
+00:06:15,000 --> 00:06:19,000
+and you get back just the same result.
+你都能得到相同的结论
+
+105
+00:06:19,000 --> 00:06:21,000
+The question now is
+现在的问题是
+
+106
+00:06:21,000 --> 00:06:23,000
+why did Simpson’s rule give you no error?
+辛普森法的误差呢？
+
+107
+00:06:23,000 --> 00:06:27,000
+The point is that you have a quadratic polynomial,
+关键在于你有一个二次多项式
+
+108
+00:06:27,000 --> 00:06:29,000
+so its fourth derivative is 0,
+所以他的四阶导数是 0
+
+109
+00:06:29,000 --> 00:06:35,000
+and so there is no error in the Simpson’s method.
+那辛普森法就没有误差
+
+110
+00:06:37,000 --> 00:06:40,000
+Okay. Fortunately in the Wolfram Language,
+好 幸运的是在 Wolfram 语言中
+
+111
+00:06:40,000 --> 00:06:43,000
+we have a wonderful function called NIntegrate
+有一个好用的函数叫 NIntegrate
+
+112
+00:06:43,000 --> 00:06:47,000
+which actually computes numerical integrals very nicely.
+他在实际计算数值积分时非常好
+
+113
+00:06:47,000 --> 00:06:51,000
+For the example in our introduction, <i>e</i>^<i>e</i>^<i>x</i>^2,
+例如介绍中的示例 <i>e</i>^<i>e</i>^<i>x</i>^2
+
+114
+00:06:51,000 --> 00:06:53,000
+you get back a nice answer quite quickly.
+很快就能得到一个很好的答案
+
+115
+00:06:53,000 --> 00:06:56,000
+Here is a plot of that area.
+这是面积的图像
+
+116
+00:06:58,000 --> 00:07:03,000
+In general, NIntegrate uses very highly optimized methods.
+通常 NIntegrate 使用更高阶的优化方法
+
+117
+00:07:03,000 --> 00:07:07,000
+It does not use any particular method, but it might use
+它不使用任何特定方法 但是使用
+
+118
+00:07:07,000 --> 00:07:12,000
+some very general, efficient algorithm to compute the answer.
+一些非常通用 高效的算法来计算答案
+
+119
+00:07:12,000 --> 00:07:15,000
+You do get back the best possible answer,
+您确实会得到最好的答案
+
+120
+00:07:15,000 --> 00:07:18,000
+and I strongly recommend you check your answers with NIntegrate.
+我强烈建议使用 NIntegrate 检查答案
+
+121
+00:07:18,000 --> 00:07:21,000
+But of course you might say oh, I really want to have
+但是你当然可以说 哦 我真的很想有
+
+122
+00:07:21,000 --> 00:07:24,000
+my own function done my way to compute integrals.
+我自己的函数 用自己的方式算积分
+
+123
+00:07:24,000 --> 00:07:25,000
+Well, you can do that.
+当然 你可以
+
+124
+00:07:25,000 --> 00:07:27,000
+You can make your own functions.
+你可以自己写函数
+
+125
+00:07:27,000 --> 00:07:30,000
+We’ll learn that in a later lesson.
+我们将在之后的课程中学习
+
+126
+00:07:30,000 --> 00:07:33,000
+For numerical integration, you can either make up your own functions
+对于数值积分 可以自己的函数
+
+127
+00:07:33,000 --> 00:07:35,000
+or simply call NIntegrate.
+或者简单调用 NIntegrate
+
+128
+00:07:35,000 --> 00:07:37,000
+They are both fine, but you must decide
+他们俩都很好 但是你要做决定
+
+129
+00:07:37,000 --> 00:07:41,000
+how accurate you want your answer to be.
+你需要多到的精度
+
+130
+00:07:42,000 --> 00:07:46,000
+Okay. Finally, one might sometimes only have a table of values.
+好的 最后 有时可能只有一张数值表
+131
+00:07:46,000 --> 00:07:47,000
+Here’s an example.
+例如
+
+132
+00:07:47,000 --> 00:07:50,000
+You’re given a table of values for the speed of a particle
+有一张粒子的速度表
+
+133
+00:07:50,000 --> 00:07:52,000
+at 11 instances of time.
+在 11 个时间点处
+
+134
+00:07:52,000 --> 00:07:55,000
+Those are the times and the speeds,
+这些是时刻和速度
+
+135
+00:07:55,000 --> 00:07:57,000
+and you’ve got the trapezoidal rule.
+并且有梯形法
+
+136
+00:07:57,000 --> 00:08:02,000
+Basically what happens over here is you have the left endpoint
+基本上这些事就是你有左端点
+
+137
+00:08:02,000 --> 00:08:04,000
+and the right endpoint of the intervals,
+和区间的右端点
+
+138
+00:08:04,000 --> 00:08:07,000
+and then you have everything else getting counted twice.
+然后你把所有的事情都算了两次
+
+139
+00:08:07,000 --> 00:08:12,000
+For Simpson’s rule, you have the left endpoint, the right endpoint
+根据辛普森法 有左端点 右端点
+
+140
+00:08:12,000 --> 00:08:16,000
+and then everything else getting counted four times.
+然后其他所有事情都被计算了四次
+
+141
+00:08:16,000 --> 00:08:18,000
+That’s the Simpson’s rule answer.
+那就是辛普森法的答案
+
+142
+00:08:18,000 --> 00:08:20,000
+They are pretty close.
+他们非常接近
+
+143
+00:08:20,000 --> 00:08:22,000
+Here’s a plot of the data.
+这是数据图
+
+144
+00:08:22,000 --> 00:08:26,000
+Basically you can compute a numerical approximation
+基本上可以计算出数值近似值
+
+145
+00:08:26,000 --> 00:08:28,000
+given only a table of values.
+仅给出一个数值表
+
+146
+00:08:28,000 --> 00:08:32,000
+After all, all of today’s formulas depend only upon
+毕竟 今天所有的公式仅取决于
+
+147
+00:08:32,000 --> 00:08:36,000
+knowing the values at a certain fixed number of points.
+已知的某个固定点数的值
+
+148
+00:08:36,000 --> 00:08:38,000
+That brings me to the end of this lesson,
+本次课到此为止
+
+149
+00:08:38,000 --> 00:08:40,000
+and the main point is that if you can’t find
+要点是 如果找不到
+
+150
+00:08:40,000 --> 00:08:42,000
+the integral of a function,
+函数的原函数
+
+151
+00:08:42,000 --> 00:08:45,000
+then you certainly can approximate it by various methods.
+那么当然可以通过各种方法对其进行近似
+
+152
+00:08:45,000 --> 00:08:48,000
+There are various techniques available.
+有多种可用的技术
+
+153
+00:08:48,000 --> 00:08:50,000
+You could use left or right approximations.
+可以使用左或右近似
+
+154
+00:08:50,000 --> 00:08:52,000
+You could use the midpoint rule,
+可以使用中点法
+
+155
+00:08:52,000 --> 00:08:54,000
+the trapezoidal rule or Simpson’s rule.
+梯形法 或者 辛普森法
+
+156
+00:08:54,000 --> 00:08:58,000
+You could also use NIntegrate, which is a very powerful function
+也可以调用 NIntegrate 这个强大的函数
+
+157
+00:08:58,000 --> 00:09:00,000
+and will give you the best possible approximation
+将会给你最好的近似
+
+158
+00:09:00,000 --> 00:09:03,000
+that it came up with while finding the integral.
+那是我们积分是想要的
+
+159
+00:09:05,000 --> 00:09:08,000
+Finally, you can use a table of values
+最后 可以使用数值表
+
+160
+00:09:08,000 --> 00:09:11,000
+to compute a numerical approximation.
+计算数值近似值
+
+161
+00:09:11,000 --> 00:09:13,000
+That’s good enough.
+够了
+
+162
+00:09:13,000 --> 00:09:17,000
+In the next lesson, we’ll go over exponential functions.
+在下一课中 我们将介绍指数函数
+
+163
+00:09:17,000 --> 00:09:20,000
+But before doing that, do review today’s topic.
+但是在此之前 请先复习一下今天的主题
+
+164
+00:09:20,000 --> 00:09:23,000
+It’s a very interesting, useful part of calculus
+这是微积分中非常有趣且有用的部分
+
+165
+00:09:23,000 --> 00:09:27,000
+because very often in practice, you cannot find an exact answer.
+因为在实践中 经常得不到确切的答案
+
+166
+00:09:27,000 --> 00:09:31,000
+In that case, a numerical method is the best that you have.
+在这种情况下 数值方法是最好的方法
+
+167
+00:09:31,000 --> 00:09:33,000
+I’ll stop over here. Thank you very much.
+ 本节课到此为止，再见
+

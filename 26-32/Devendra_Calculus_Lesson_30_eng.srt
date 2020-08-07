@@ -1,0 +1,647 @@
+1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 30 of this introduction to calculus with Wolfram U.
+大家好，这里是 Wolfram U的微积分入门，第30课
+
+2
+00:00:06,000 --> 00:00:12,000
+The topic for this lesson is volumes by cylindrical shells.
+本次课程的主题是 柱壳法求体积
+
+3
+00:00:12,000 --> 00:00:16,000
+Let’s begin with a brief overview of the lesson.
+先简单回顾一下上节课
+
+4
+00:00:16,000 --> 00:00:21,000
+In the previous lesson, we learned about the disk and washer methods
+在上一课中 我们学了圆盘法和垫圈法
+
+5
+00:00:21,000 --> 00:00:24,000
+for finding the volumes of solids.
+来计算固体体积
+
+6
+00:00:24,000 --> 00:00:25,000
+As an example of the disk method,
+作为圆盘法的示例
+
+7
+00:00:25,000 --> 00:00:29,000
+let’s say you have the function <i>f</i>[<i>x</i>] = <i>x</i>^2
+假设有函数 <i>f</i>[<i>x</i>] = <i>x</i>^2
+
+8
+00:00:29,000 --> 00:00:34,000
+and you rotate that around the <i>x</i> axis from 1 to 4.
+绕 <i>x</i> 轴旋转后在 1 到 4 之间
+9
+00:00:34,000 --> 00:00:36,000
+You get a solid of this type.
+可以得到这种图形
+
+10
+00:00:36,000 --> 00:00:41,000
+To find the volume, what you do is you break up the solid into disks,
+要算体积 你需要将他分解为圆盘
+
+11
+00:00:41,000 --> 00:00:49,000
+and each disk then has a radius of <i>x</i>^2, the value of <i>f</i>[<i>x</i>],
+每一个圆盘的半径是 <i>x</i>^2 就是 <i>f</i>[<i>x</i>] 的值
+
+12
+00:00:49,000 --> 00:00:57,000
+so the area of this disk is π<i>r</i>^2 times, of course, the height,
+所以这个圆盘的面积 π<i>r</i>^2 乘这个 高
+
+13
+00:00:57,000 --> 00:01:00,000
+which is the infinitesimal volume.
+就是这个有限部分的体积
+
+14
+00:01:00,000 --> 00:01:06,000
+Then you get the integral of that giving you the volume of the solid.
+然后积分算出来这个固体的体积
+
+15
+00:01:06,000 --> 00:01:10,000
+The washer method is very simple and similar
+垫圈法也一样很简单
+
+16
+00:01:10,000 --> 00:01:13,000
+because all you do is instead of working with one disk,
+因为你要做的就是不是只用一个圆盘而是
+
+17
+00:01:13,000 --> 00:01:18,000
+you simply subtract the volume of two disks, the outer and inner.
+很简单的减去两个圆盘的面积 外圈盘和内圆盘
+
+18
+00:01:18,000 --> 00:01:22,000
+Basically it works on washers or rings or annuli
+基本上 他适用于 垫圈 环 或着 奥利奥
+
+19
+00:01:22,000 --> 00:01:24,000
+or whatever you call them.
+或者随你怎么叫
+
+20
+00:01:24,000 --> 00:01:27,000
+Now a slightly harder example.
+现在有一个稍麻烦一点的例子
+
+21
+00:01:27,000 --> 00:01:29,000
+Suppose you have the function shown over here
+假设有一个这里的函数
+
+22
+00:01:29,000 --> 00:01:33,000
+and you want to revolve it around the <i>y</i> axis, not the <i>x</i> axis.
+你想绕 <i>y</i> 轴转 而不是 <i>x</i> 轴
+
+23
+00:01:33,000 --> 00:01:39,000
+Then it’s not clear what one means by the inner and outer radii.
+那么内径和外径就不清楚了
+
+24
+00:01:40,000 --> 00:01:42,000
+The goal of this lesson is to talk about
+这节课的目标就是讨论
+
+25
+00:01:42,000 --> 00:01:45,000
+the so-called cylindrical shell method
+所谓的柱壳法
+
+26
+00:01:45,000 --> 00:01:49,000
+which makes this example and similar examples very simple.
+会使得这个示例和类似示例非常简单
+
+27
+00:01:50,000 --> 00:01:53,000
+Let’s build some intuition for the method.
+我们先建立一些直觉认识
+
+28
+00:01:53,000 --> 00:01:55,000
+Let’s say you want to find the volume of the solid.
+假设要求固体的体积
+
+29
+00:01:55,000 --> 00:01:58,000
+You break it into pieces, but these pieces
+将他打碎 但这些碎片
+
+30
+00:01:58,000 --> 00:02:01,000
+are now going to be shells rather than cross sections.
+现在是个壳 而不是截面
+
+31
+00:02:01,000 --> 00:02:05,000
+Because each cell looks like a cylinder,
+因为每个微元都像一个圆桶
+
+32
+00:02:05,000 --> 00:02:08,000
+it’s called the cylindrical shell method.
+就被称为 柱壳法
+
+33
+00:02:08,000 --> 00:02:10,000
+Here’s a typical cylinder.
+这里有一个圆桶
+
+34
+00:02:10,000 --> 00:02:11,000
+It’s very thin.
+他非常薄
+
+35
+00:02:11,000 --> 00:02:16,000
+It has an outer radius of <i>r</i>2 and an inner radius of <i>r</i>1,
+他的外半径是 <i>r</i>2 内半径 <i>r</i>1
+
+36
+00:02:16,000 --> 00:02:21,000
+so that is the difference in the volumes of outer and inner,
+因此外部和内部有个体积差
+
+37
+00:02:21,000 --> 00:02:25,000
+which will give you the volume of that thin shell.
+这就是薄壳的体积
+
+38
+00:02:25,000 --> 00:02:27,000
+If you factor it a little bit, you could rewrite it as
+如果稍微考虑一下 可以将其重写为
+39
+00:02:27,000 --> 00:02:31,000
+2π<i>h</i> times the average of <i>r</i>1 and <i>r</i>2
+2π<i>h</i> 乘 <i>r</i>1 和 <i>r</i>2 的均值
+
+40
+00:02:31,000 --> 00:02:34,000
+times the difference between <i>r</i>1 and <i>r</i>2 like over here.
+乘 <i>r</i>1 和 <i>r</i>2 的差 像这里
+
+41
+00:02:34,000 --> 00:02:39,000
+Now because it’s very thin, you can let <i>r</i>2 approach <i>r</i>1,
+现在因为他非常薄 我们用 <i>r</i>2 近似 <i>r</i>1
+
+42
+00:02:39,000 --> 00:02:43,000
+in which case the difference over here becomes <i>dr</i>
+这里的差就变为 <i>dr</i>
+
+43
+00:02:43,000 --> 00:02:47,000
+and the average becomes just <i>r</i>1.
+均值就是 <i>r</i>1
+
+44
+00:02:48,000 --> 00:02:53,000
+Now because you only have one <i>r</i> left, you might as well call it <i>r</i>.
+现在就剩一个 <i>r</i> 就将它记为 <i>r</i>
+
+45
+00:02:53,000 --> 00:02:57,000
+The volume now becomes 2π<i>hrdr</i>.
+体积就变为 2π<i>hrdr</i>
+
+46
+00:02:57,000 --> 00:02:59,000
+The question is what’s <i>h</i>?
+问题是 <i>h</i> 是多少
+
+47
+00:02:59,000 --> 00:03:06,000
+Well, <i>h</i> is the value of the function <i>f</i> as a function of <i>r</i>.
+好吧 <i>h</i> 是函数 <i>f</i> 的值 是 <i>r</i> 的函数
+
+48
+00:03:06,000 --> 00:03:10,000
+The height <i>h</i> becomes now <i>f</i>[<i>r</i>],
+高 <i>h</i> 就变为 <i>f</i>[<i>r</i>]
+
+49
+00:03:10,000 --> 00:03:14,000
+so you have a very nice, simple formula for the volume
+所以就有一个非常好的 简单的体积公式
+
+50
+00:03:14,000 --> 00:03:16,000
+by the method of cylindrical shells.
+通过 柱壳法
+
+51
+00:03:18,000 --> 00:03:20,000
+To go back to our example from the introduction,
+回到介绍中我们的示例
+
+52
+00:03:20,000 --> 00:03:25,000
+you have this function, <i>f</i>[<i>x</i>] = 4<i>x</i>^3 – <i>x</i>^4.
+函数为 <i>f</i>[<i>x</i>] = 4<i>x</i>^3 – <i>x</i>^4
+
+53
+00:03:25,000 --> 00:03:29,000
+You want to work out the volume, so you simply do 2π<i>r</i>
+想算体积 只需简单的用 2π<i>r</i>
+
+54
+00:03:29,000 --> 00:03:33,000
+times the value of the function over here times <i>dr</i>.
+乘 这里的函数值 乘 <i>dr</i>
+
+55
+00:03:33,000 --> 00:03:37,000
+You work it out with Integrate, and you get back the result.
+算个积分 就能得到答案
+
+56
+00:03:38,000 --> 00:03:43,000
+Okay. Now the question is which method should you use,
+好 现在的问题是应该使用哪种方法
+
+57
+00:03:43,000 --> 00:03:46,000
+the washer or disk method or the cylindrical shell method?
+垫圈法 圆盘法 还是 柱壳法？
+
+58
+00:03:46,000 --> 00:03:51,000
+Let’s say here’s an example in which you have two curves,
+来看这个示例 有两条曲线
+
+59
+00:03:51,000 --> 00:03:55,000
+<i>x</i>^2 and <i>x</i>^3, but you want to revolve it around the <i>y</i> axis.
+<i>x</i>^2 和 <i>x</i>^3 但是你想他绕 <i>y</i> 轴旋转
+
+60
+00:03:55,000 --> 00:04:00,000
+With the washer method, you could rewrite things
+由垫圈法 可以改写这件事
+
+61
+00:04:00,000 --> 00:04:05,000
+as cube roots and square roots and get the answer,
+为立方根和平方根并且得到答案
+
+62
+00:04:05,000 --> 00:04:08,000
+but in this case, it’s much simpler
+但是这个例子里 会更简单
+
+63
+00:04:08,000 --> 00:04:11,000
+to simply work with the cylindrical shell method,
+要是简单的用一下柱壳法
+
+64
+00:04:11,000 --> 00:04:13,000
+and you get back the same result.
+就能得到同样的答案
+
+65
+00:04:13,000 --> 00:04:16,000
+You do get the same answer, but the question is which one to use.
+你确实得到了一样的答案 但是问题在于用什么方法算
+
+66
+00:04:16,000 --> 00:04:20,000
+That’s up to you, but typically, the cylindrical shell method
+这取决于你 但通常 柱壳法
+
+67
+00:04:20,000 --> 00:04:23,000
+works well when the axis of the cylinder
+效果很好 当圆柱的轴
+
+68
+00:04:23,000 --> 00:04:26,000
+is the same as the rotation axis.
+和旋转轴相同时
+
+69
+00:04:28,000 --> 00:04:32,000
+Okay. Some minor variations.
+好 小小改一下
+
+70
+00:04:32,000 --> 00:04:35,000
+Let’s say you have a function like over here,
+假设有这样一个函数
+
+71
+00:04:35,000 --> 00:04:40,000
+and you want to rotate it around the line <i>x</i> = 6
+你想让他绕直线 <i>x</i> = 6 旋转
+
+72
+00:04:40,000 --> 00:04:43,000
+rather than the <i>y</i> axis, let’s say.
+而不是 <i>y</i> 轴
+
+73
+00:04:43,000 --> 00:04:47,000
+Then what you do first of all is you find the radius.
+然后首先要做的就是找到半径
+
+74
+00:04:47,000 --> 00:04:51,000
+Keep in mind that the radius is now going to be <i>6</i> – x
+记住 现在半径是 <i>6</i> – x
+
+75
+00:04:51,000 --> 00:04:56,000
+because you are counting from <i>x</i> = 6, so that’s the radius.
+因为你是从 <i>x</i> = 6 开始算的 所以这是半径
+
+76
+00:04:56,000 --> 00:05:00,000
+You have 2π times radius times function value,
+用 2π 乘 半径 乘 函数值
+
+77
+00:05:00,000 --> 00:05:03,000
+and you get back the answer with the cylindrical shell method.
+用柱壳法得到答案
+
+78
+00:05:05,000 --> 00:05:09,000
+On the other hand, if you have a negative axis,
+另一方面如果是 负轴
+
+79
+00:05:09,000 --> 00:05:13,000
+so let’s say you have <i>x</i> = –1 over here, and you have this function.
+来看这里 <i>x</i> = –1 有这些函数
+
+80
+00:05:13,000 --> 00:05:19,000
+Now if you if you look at the radius, it’s going to be <i>x</i> + 1.
+现在要是算半径的话 将是 <i>x</i> + 1
+
+81
+00:05:20,000 --> 00:05:22,000
+Your formula is slightly different.
+公式略有不同
+
+82
+00:05:22,000 --> 00:05:25,000
+You have 2π(<i>x</i> + 1)<i>f</i>[<i>x</i>]<i>dx</i>.
+是 2π(<i>x</i> + 1)<i>f</i>[<i>x</i>]<i>dx</i>
+
+83
+00:05:25,000 --> 00:05:30,000
+You work out the answer, and you get back the volume in this case.
+算出答案 得到了这个时候的体积
+
+84
+00:05:33,000 --> 00:05:37,000
+We spoke a little earlier about comparing the two methods,
+我们之前谈到了比较这两种方法，
+
+85
+00:05:37,000 --> 00:05:39,000
+washer/disk and cylinder.
+垫圈/圆盘 和 柱壳
+
+86
+00:05:39,000 --> 00:05:40,000
+Let’s take an example
+来看个例子
+
+87
+00:05:40,000 --> 00:05:44,000
+where the disk or washer method works a little better.
+圆盘或垫圈方法效果更好一点
+
+88
+00:05:44,000 --> 00:05:47,000
+Let’s say you have <i>f</i>[<i>x</i>] = CubeRoot[<i>x</i>].
+假设 <i>f</i>[<i>x</i>] = CubeRoot[<i>x</i>]
+89
+00:05:47,000 --> 00:05:50,000
+You now revolve around the <i>x</i> axis from 0 to 1.
+绕 <i>x</i> 轴旋转 在 0 和 1 之间
+
+90
+00:05:51,000 --> 00:05:54,000
+If you try the cylindrical shell method, things become a bit harder
+如果尝试使用柱壳法 事情会变得有点困难
+
+91
+00:05:54,000 --> 00:06:00,000
+because now the shell height is horizontal rather than vertical.
+因为现在壳的高度是水平的 而不是垂直的
+
+92
+00:06:01,000 --> 00:06:04,000
+If you had to apply the cylindrical shell method,
+如果必须用柱壳法
+
+93
+00:06:04,000 --> 00:06:09,000
+you would first of all rewrite the function as a function of <i>y</i>,
+首先要将函数改写为 <i>y</i> 的函数
+
+94
+00:06:09,000 --> 00:06:15,000
+then work out the shell radius, then work out the integral.
+然后计算出壳半径 然后计算出积分
+
+95
+00:06:16,000 --> 00:06:20,000
+But with the disk method, things are much simpler
+但是使用圆盘法 事情要简单得多
+
+96
+00:06:20,000 --> 00:06:23,000
+because you simply have the cube root of <i>x</i> as the function,
+因为只是将 <i>x</i> 的立方根作为函数
+
+97
+00:06:23,000 --> 00:06:28,000
+so you apply π times <i>r</i>^2<i>dx</i>, integrate from 0 to 1
+所以你因该用 π 乘 <i>r</i>^2<i>dx</i> 再从 0 到 1 积分
+
+98
+00:06:28,000 --> 00:06:31,000
+and you get back the same volume.
+得相同的答案
+
+99
+00:06:31,000 --> 00:06:35,000
+In general, both these methods—
+一般而言 这两个办法
+
+100
+00:06:35,000 --> 00:06:39,000
+the cylindrical shell method and the washer/disk method—
+柱壳法 和 垫圈/圆盘法——
+
+101
+00:06:39,000 --> 00:06:43,000
+have advantages and disadvantages,
+有优点有缺点
+
+102
+00:06:43,000 --> 00:06:47,000
+and you must decide which one is better suited for your problem.
+你必须决定用哪一个更适合解决问题
+
+103
+00:06:49,000 --> 00:06:52,000
+Okay. That brings me to the end of the lesson.
+好 本节课就上到这儿了
+
+104
+00:06:52,000 --> 00:06:55,000
+Basically, what we’ve learned is that the cylindrical shell method
+基本上我们学习了柱壳法
+
+105
+00:06:55,000 --> 00:07:00,000
+is another nice way of finding the volume of solids.
+是另一种求固体体积的方法
+
+106
+00:07:00,000 --> 00:07:05,000
+This method works by breaking up the solid into cylindrical shells.
+此方法通过将固体分解为柱壳来算
+
+107
+00:07:05,000 --> 00:07:11,000
+Those shells are very, very thin, and the height of the shell
+这些柱壳非常薄 并且壳的高度
+
+108
+00:07:11,000 --> 00:07:15,000
+is the value of the function.
+是函数值
+
+109
+00:07:15,000 --> 00:07:20,000
+Sometimes you’ll find that the cylindrical shell method
+有时会发现圆柱壳法
+
+110
+00:07:20,000 --> 00:07:23,000
+is much easier, and it can be very cumbersome or even impossible
+更容易 而且可能非常麻烦甚至不可能
+
+111
+00:07:23,000 --> 00:07:26,000
+to apply the disk/washer method.
+应用圆盘/垫圈法
+
+112
+00:07:26,000 --> 00:07:30,000
+But other times, you might find that the disk/washer method
+但有时 可能会发现圆盘/垫圈法
+
+113
+00:07:30,000 --> 00:07:34,000
+is a lot easier to understand and use, so you might prefer that.
+易于理解和使用 因此你可能更喜欢这种方法
+
+114
+00:07:36,000 --> 00:07:39,000
+Just to review the formulae for the lesson,
+回顾一下本节课的公式
+
+115
+00:07:39,000 --> 00:07:43,000
+first of all if you revolve around the line <i>x</i> = <i>x</i>0
+首先 如果绕线 <i>x</i> = <i>x</i>0 旋转
+
+116
+00:07:43,000 --> 00:07:48,000
+where <i>x</i>0 is positive, then you get <i>x</i>0 – <i>x</i> as the radius,
+其中 <i>x</i>0 为正 那么得半径为 <i>x</i>0 – <i>x</i>
+
+117
+00:07:48,000 --> 00:07:52,000
+so think back to the example involving 6 – <i>x</i>.
+请回想一下涉及  6 – <i>x</i> 的示例
+
+118
+00:07:52,000 --> 00:07:58,000
+On the other hand, if you have a negative or 0 value for <i>x</i>0,
+另一方面 如果 <i>x</i>0 的值为 负 或 0
+
+119
+00:07:58,000 --> 00:08:03,000
+then you’ll have <i>x</i> – <i>x</i>0 over here, so think back to the example
+那么这里有 <i>x</i> – <i>x</i>0 回想一下例子
+
+120
+00:08:03,000 --> 00:08:08,000
+which had an <i>x</i> + 1, which really was an <i>x</i> minus –1.
+有 <i>x</i> + 1 的那个 实际上就是 <i>x</i> 减 –1
+
+121
+00:08:08,000 --> 00:08:13,000
+Those two very simple formulae tell you what you need to do
+这两个非常简单的公式告诉你需要做什么
+
+122
+00:08:13,000 --> 00:08:15,000
+for the cylindrical shell method,
+对于柱壳法
+
+123
+00:08:15,000 --> 00:08:19,000
+and that makes it a very simple method wherever it works.
+无论怎么做 他都是非常简单的方法
+
+124
+00:08:20,000 --> 00:08:22,000
+In the next lesson, we’ll talk about
+下节课 我们将讨论
+
+125
+00:08:22,000 --> 00:08:25,000
+the average value of a function with integration,
+积分下函数的均值
+
+126
+00:08:25,000 --> 00:08:28,000
+but before doing that, do review today’s lesson.
+在此之前 请复习今天的课程
+
+127
+00:08:28,000 --> 00:08:29,000
+It’s a very important lesson.
+这节课非常重要
+
+128
+00:08:29,000 --> 00:08:34,000
+It tells you how to find the volumes of very difficult-looking solids,
+它告诉你如何计算看起来非常困难的固体的体积
+
+129
+00:08:34,000 --> 00:08:37,000
+and it really shows you how powerful calculus is.
+它确实展示了微积分的强大
+
+130
+00:08:37,000 --> 00:08:39,000
+I’ll stop over here. Thank you very much.
+ 本节课到此为止，再见
+
