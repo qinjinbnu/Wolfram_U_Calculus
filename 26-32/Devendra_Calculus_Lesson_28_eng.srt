@@ -1,0 +1,602 @@
+1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 28 of this introduction to calculus with Wolfram U.
+大家好，这里是 Wolfram U的微积分入门，第28课
+
+2
+00:00:06,000 --> 00:00:12,000
+The topic for this lesson is areas between curves.
+本次课程的主题是  曲线间的面积
+
+3
+00:00:12,000 --> 00:00:15,000
+Let’s begin with a brief overview of the topic.
+先简单回顾一下上节课
+
+4
+00:00:15,000 --> 00:00:18,000
+When you calculate an integral, you’re really finding the area
+当你计算积分时 你实际上是在计算面积
+
+5
+00:00:18,000 --> 00:00:22,000
+between the curve of a function and the <i>x</i> axis.
+由函数曲线和 <i>x</i> 所围成
+
+6
+00:00:22,000 --> 00:00:24,000
+For example, here’s a function,
+比如 这个函数
+
+7
+00:00:24,000 --> 00:00:27,000
+and when you compute the integral for that function,
+计算这个函数积分的时候
+
+8
+00:00:27,000 --> 00:00:31,000
+then what you’re really doing is to find the area under the curve.
+实际上是在算曲线下的面积
+
+9
+00:00:31,000 --> 00:00:34,000
+In this case, it’s the area between –1 and 1,
+这个例子中 区域在 -1 和 +1 之间
+
+10
+00:00:34,000 --> 00:00:38,000
+which are the limits for the integral over here.
+-1 和 +1 是这个定积分的上下限
+
+11
+00:00:38,000 --> 00:00:40,000
+The question is what would happen
+问题来了
+
+12
+00:00:40,000 --> 00:00:43,000
+if you want to find the area between two curves?
+如何计算曲线之间的区域面积
+
+13
+00:00:43,000 --> 00:00:44,000
+This lesson will go over
+这节课将会复习
+
+14
+00:00:44,000 --> 00:00:48,000
+several examples of how we can do this using Integrate.
+几个如何使用 Integrate 的例子
+
+15
+00:00:49,000 --> 00:00:52,000
+Okay. Let’s take an example.
+好 来看一个例子
+
+16
+00:00:52,000 --> 00:00:56,000
+Let’s say <i>f</i>[<i>x</i>] = 5 and <i>g</i>[<i>x</i>] = –<i>x</i>^2 + 1.
+假设 <i>f</i>[<i>x</i>] = 5 和 <i>g</i>[<i>x</i>] = –<i>x</i>^2 + 1
+
+17
+00:00:56,000 --> 00:00:59,000
+Now clearly in this case, the function <i>f</i>
+很清楚的 函数 <i>f</i>
+
+18
+00:00:59,000 --> 00:01:04,000
+is greater than the function <i>g</i> because that’s positive
+比函数 <i>g</i> 高 因为 <i>g</i> 在这里是正的
+
+19
+00:01:04,000 --> 00:01:07,000
+and that’s going to be negative for most of the time,
+而 <i>g</i> 大多时候是负的
+
+20
+00:01:07,000 --> 00:01:08,000
+but it won’t go over 1.
+但是 <i>g</i> 不超过1
+
+21
+00:01:08,000 --> 00:01:11,000
+Now when you want to work out the area between them,
+现在当你想算他们之间的面积的时候
+
+22
+00:01:11,000 --> 00:01:14,000
+what you do is look at the Riemann sums.
+你要做的就是看黎曼和
+
+23
+00:01:14,000 --> 00:01:16,000
+Now in this case, the Riemann sums will have
+这里 黎曼和是
+
+24
+00:01:16,000 --> 00:01:20,000
+a height equal to <i>f</i> minus <i>g</i> for each strip,
+每个条带的高度等于 <i>f</i> 减 <i>g</i>
+
+25
+00:01:20,000 --> 00:01:23,000
+and the width will be (<i>b</i> – <i>a</i>)/<i>n</i> where <i>b</i> and <i>a</i>
+宽度为 (<i>b</i> – <i>a</i>)/<i>n</i> 其中 <i>b</i> 和 <i>b</i>
+
+26
+00:01:23,000 --> 00:01:26,000
+are the limits of the integration interval.
+是积分区域的上下限
+
+27
+00:01:26,000 --> 00:01:31,000
+Now the Riemann sum will be the sum of the heights times the widths,
+现在黎曼和就是高度乘以宽度的总和
+
+28
+00:01:31,000 --> 00:01:36,000
+which is the same as the integral of <i>f</i> minus <i>g</i>.
+与 <i>f</i> 减 <i>g</i> 的积分相同
+
+29
+00:01:36,000 --> 00:01:40,000
+Basically, if you want to find the area between the preceding curves,
+基本上 如果要算前面的曲线之间的区域面积
+
+30
+00:01:40,000 --> 00:01:43,000
+then all you go is you work out the integral of <i>f</i> minus <i>g</i>,
+要做的就是计算 <i>f</i> 减 <i>g</i> 的积分
+
+31
+00:01:43,000 --> 00:01:48,000
+and you get back the answer—76/3 in this case.
+得到答案——在这种情况下为 76/3
+
+32
+00:01:48,000 --> 00:01:50,000
+Okay. Now two questions.
+好的 现在有两个问题
+
+33
+00:01:50,000 --> 00:01:52,000
+First question: what would happen if
+首先：如果
+
+34
+00:01:52,000 --> 00:01:55,000
+you didn’t know the limits of integration?
+不知道积分的上下限呢？
+
+35
+00:01:55,000 --> 00:02:00,000
+Secondly, what would happen if you had to actually work out
+其次 会怎么样 当你不得不去实际计算
+
+36
+00:02:00,000 --> 00:02:01,000
+which function, greater or less.
+哪个函数大或小
+
+37
+00:02:01,000 --> 00:02:04,000
+But before that, let’s take a simple example.
+但在此之前 看一个简单的例子。
+
+38
+00:02:04,000 --> 00:02:08,000
+Here are two functions, and you want to work out
+这有两个函数 要算
+
+39
+00:02:08,000 --> 00:02:13,000
+the area between them with <i>x</i> = 1 on the left and <i>x</i> = 5 on the right.
+这个区域在左端 <i>x</i> = 1 和右端 <i>x</i> = 5 之间
+40
+00:02:13,000 --> 00:02:16,000
+In this case, everything is given to you, so we can work out
+这种情况下 一切条件都给你了 所以我们可以算出
+41
+00:02:16,000 --> 00:02:20,000
+the integral of <i>f</i> minus <i>g</i> and get the answer 88.
+<i>f</i> 减 <i>g</i> 的积分 得到答案 88
+
+42
+00:02:20,000 --> 00:02:26,000
+Here is a plot of the area which we just computed.
+这里是我们刚算的区域的图
+
+43
+00:02:26,000 --> 00:02:29,000
+Now back to the question which I asked earlier on.
+现在回到先前提到的问题
+
+44
+00:02:29,000 --> 00:02:34,000
+First question: what happens if you’re not given any endpoints?
+首先没有任何端点怎么办？
+
+45
+00:02:34,000 --> 00:02:37,000
+Let’s say you’ve got two functions, <i>f</i> and <i>g</i>,
+假设有两个函数 <i>f</i> 和 <i>g</i>
+
+46
+00:02:37,000 --> 00:02:41,000
+and you want to find the area enclosed between the curves
+想找到曲线之间的封闭区域
+
+47
+00:02:41,000 --> 00:02:43,000
+given by these functions.
+由这俩函数确定
+
+48
+00:02:43,000 --> 00:02:45,000
+What you do then is you work out
+要做的就是算
+
+49
+00:02:45,000 --> 00:02:49,000
+the points of intersection using Solve.
+交点 用 Solve
+
+50
+00:02:49,000 --> 00:02:56,000
+The curves intersect at –√3 and √3.
+曲线相交于 –√3 和 √3
+51
+00:02:56,000 --> 00:03:02,000
+Here is a plot of the curves between those limits,
+这是在上下限之间的曲线的图
+
+52
+00:03:02,000 --> 00:03:08,000
+and you can see clearly that <i>f</i> is above <i>g</i> in all cases,
+而且可以清楚地看到任何时候 f 都高于 g ，
+
+53
+00:03:08,000 --> 00:03:11,000
+so we can work out the integral of <i>f</i> minus <i>g</i>,
+因此可以计算 <i>f</i> 减 <i>g</i> 的积分
+
+54
+00:03:11,000 --> 00:03:16,000
+and you get the answer with the area enclosed between these curves.
+就得到了曲线间的面积
+
+55
+00:03:17,000 --> 00:03:22,000
+On the other hand, suppose you have the functions Sin[<i>x</i>] and Cos[<i>x</i>].
+另一方面 假设有 Sin[<i>x</i>] 和 Cos[<i>x</i>]
+
+56
+00:03:22,000 --> 00:03:27,000
+You can see that the functions <i>f</i> and <i>g</i> are either
+可以看到函数 <i>f</i> 和 <i>g</i> 
+
+57
+00:03:27,000 --> 00:03:30,000
+above or below each other depending upon where you are.
+彼此之间的高低关系取决你的位置
+
+58
+00:03:30,000 --> 00:03:35,000
+Let’s say you want to find the area between –3π/4 and 5π/4.
+假设要找的区域在 –3π/4 和 5π/4 之间
+
+59
+00:03:35,000 --> 00:03:38,000
+That’s roughly starting over here and ending over there.
+那大概是从这里开始 到那里结束
+
+60
+00:03:38,000 --> 00:03:44,000
+Initially, the cosine function is greater than the sine function,
+开始 余弦函数大于正弦函数
+
+61
+00:03:44,000 --> 00:03:47,000
+and then the sine function is greater than the cosine
+然后正弦大于余弦
+
+62
+00:03:47,000 --> 00:03:48,000
+for the rest of the interval.
+在其余区间里
+
+63
+00:03:48,000 --> 00:03:53,000
+On the first interval, –3π/4 to 5π/4, you have <i>g</i> minus <i>f</i>
+在第一个区间 –3π/4 到 5π/4 之间 有 <i>g</i> 减 <i>f</i>
+
+64
+00:03:53,000 --> 00:03:56,000
+because <i>g</i> is greater than <i>f</i>, and then you do the opposite
+因为 <i>g</i> 比 <i>f</i> 大 然后做相反的事情
+
+65
+00:03:56,000 --> 00:03:59,000
+for the rest of the interval.
+在其他区间里
+
+66
+00:04:00,000 --> 00:04:03,000
+Then you add the two answers, and you get back 4√2.
+然后将两个答案相加 得到4√2
+
+67
+00:04:03,000 --> 00:04:09,000
+The point is you will now need to divide the integration
+关键是现在需要划分区间
+
+68
+00:04:09,000 --> 00:04:13,000
+into two parts depending upon the behavior of <i>f</i> and <i>g</i>.
+分为两个部分 具体取决于 <i>f</i>  和 <i>g</i> 的行为
+
+69
+00:04:13,000 --> 00:04:17,000
+Instead of doing that, what we do is we just call Integrate
+若不这样做 我们只需调用 Integrate
+
+70
+00:04:17,000 --> 00:04:20,000
+with the absolute value function,
+作用在绝对值函数上
+
+71
+00:04:20,000 --> 00:04:24,000
+which will take care of all the difficulties, and you get back
+这将解决所有困难 然后得到
+
+72
+00:04:24,000 --> 00:04:27,000
+just the same answer from Integrate.
+来自 Integrate 的相同答案。
+
+73
+00:04:27,000 --> 00:04:30,000
+Given two functions <i>f</i> and <i>g</i>,
+给两个函数 <i>f</i> 和 <i>g</i>
+
+74
+00:04:30,000 --> 00:04:33,000
+if you do not know which one is greater or less,
+如果不知道哪个更大或更小
+
+75
+00:04:33,000 --> 00:04:37,000
+then you use the absolute value function to find the area.
+然后使用绝对值函数求面积
+
+76
+00:04:39,000 --> 00:04:43,000
+Okay. Let’s now talk about cases where you’ve got a function of <i>y</i>.
+好的 现在 让我们谈谈 <i>y</i> 的函数的情况
+
+77
+00:04:43,000 --> 00:04:47,000
+So <i>x</i> is given as a function of <i>y</i> in these two functions, <i>f</i> and <i>g</i>.
+现在 <i>x</i> 是 <i>y</i> 的函数在这两个函数 <i>f</i> 和 <i>g</i>
+
+78
+00:04:47,000 --> 00:04:52,000
+To find the area in this case, you now need <i>y</i> limits.
+要找到这种情况下的区域，您现在需要 <i>y</i> 的限制
+
+79
+00:04:52,000 --> 00:04:56,000
+Again, you work with Riemann sums, but now you have
+同样 使用黎曼和求和法 现在有
+
+80
+00:04:56,000 --> 00:05:00,000
+Riemann sums with widths given by Δ<i>y</i>.
+黎曼和的权由 Δ<i>y</i> 给出
+
+81
+00:05:00,000 --> 00:05:02,000
+Instead of talking about upper and below,
+与其说上下
+
+82
+00:05:02,000 --> 00:05:08,000
+we talk about rightmost and leftmost functions.
+不如说最左边和最右边
+
+83
+00:05:08,000 --> 00:05:10,000
+In this case, if you plot the functions,
+在这种情况下 如果绘制函数
+
+84
+00:05:10,000 --> 00:05:16,000
+it is clear that the function <i>g</i> is to the right of the function <i>f</i>,
+很明显 函数 <i>g</i> 在函数 <i>f</i> 的右侧
+
+85
+00:05:16,000 --> 00:05:19,000
+so the area will be given by
+所以面积是
+
+86
+00:05:19,000 --> 00:05:24,000
+the integral of <i>g</i> minus <i>f</i> between –5 and 5.
+<i>g</i> 减去 <i>f</i> 在 –5 到 5 之间的积分
+
+87
+00:05:25,000 --> 00:05:29,000
+Okay. Now an example where you might actually need this is
+好 现在 可能实际需要这个的示例是
+
+88
+00:05:29,000 --> 00:05:34,000
+let’s say you’re given <i>y</i> = 3<i>x</i> + 1 and the parabola <i>y</i>^2 = <i>x</i> + 4.
+假设有 <i>y</i> = 3<i>x</i> + 1 和抛物线 <i>y</i>^2 = <i>x</i> + 4
+
+89
+00:05:34,000 --> 00:05:39,000
+In this case, <i>y</i> is not a function of <i>x</i>, so we try and write <i>x</i>
+在这种情况下 <i>y</i> 不是 <i>x</i> 的函数 因此我们尝试将 <i>x</i> 写为
+
+90
+00:05:39,000 --> 00:05:42,000
+as a function of <i>y</i> by solving.
+<i>y</i> 的函数
+
+91
+00:05:42,000 --> 00:05:47,000
+Set up two functions from the first solution over here
+设两个函数 从第一个解中得到的
+
+92
+00:05:47,000 --> 00:05:51,000
+and the second solution over there.
+和第二个解中得到的
+
+93
+00:05:51,000 --> 00:05:53,000
+Then you find out where they intersect.
+然后找出它们的交点
+
+94
+00:05:55,000 --> 00:05:59,000
+Do a parametric plot, and it’s clear that
+做一个参数图 很明显
+
+95
+00:05:59,000 --> 00:06:03,000
+you actually have the function <i>f</i> to the right of <i>g</i>.
+实际上  在 <i>g</i> 的右侧具有函数 <i>f</i>
+
+96
+00:06:03,000 --> 00:06:12,000
+You do Integrate of <i>f</i> minus <i>g</i> between the limits (1 – √133)/6,
+可以在上下限（1 –√133）/ 6 之间对 <i>f</i> 减 <i>g</i> 进行积分
+
+97
+00:06:12,000 --> 00:06:14,000
+et cetera, and you get back the answer
+等一下 就会得到答案
+
+98
+00:06:14,000 --> 00:06:18,000
+for the area between those two curves.
+这两条曲线之间的面积
+
+99
+00:06:18,000 --> 00:06:21,000
+You can either work with <i>x</i> limits or <i>y</i> limits.
+可以使用 <i>x</i> 限制或 <i>y</i> 限制。
+
+100
+00:06:21,000 --> 00:06:23,000
+They both work just fine.
+他们俩都很好
+
+101
+00:06:25,000 --> 00:06:27,000
+It’s now time to summarize the lesson.
+现在该总结课程了
+
+102
+00:06:27,000 --> 00:06:29,000
+Basically, finding the area between curves
+基本上，求曲线之间的区域面积
+
+103
+00:06:29,000 --> 00:06:33,000
+is really easy once you have integrals.
+一旦有了积分 真的很容易
+
+104
+00:06:33,000 --> 00:06:36,000
+In case the function <i>f</i> is greater than the function <i>g</i>,
+如果函数 <i>f</i> 大于 <i>g</i>
+
+105
+00:06:36,000 --> 00:06:39,000
+you simply do the integral of <i>f</i> minus <i>g</i>.
+只需对 <i>f</i> 减去 <i>g</i> 进行积分
+
+106
+00:06:39,000 --> 00:06:41,000
+Now when you don’t have that information,
+现在 当没有这些信息的时候
+
+107
+00:06:41,000 --> 00:06:43,000
+then what you do is you figure out
+那你要做的就是弄清楚
+
+108
+00:06:43,000 --> 00:06:47,000
+where the functions intersect using Solve,
+使用 Solve 解出相交的地方
+
+109
+00:06:47,000 --> 00:06:50,000
+figure out which function is above and which one is below,
+找出哪个函数在上面 哪个在下面
+
+110
+00:06:50,000 --> 00:06:53,000
+and then you find the integral by doing
+然后求得积分 通过做
+
+111
+00:06:53,000 --> 00:06:56,000
+the integral of <i>f</i> minus <i>g</i> or <i>g</i> minus <i>f</i>,
+<i>f</i> 减 <i>g</i> 或者 <i>g</i> 减 <i>f</i> 的积分
+
+112
+00:06:56,000 --> 00:06:59,000
+or simply using the absolute value function.
+或者只是使用绝对值函数
+
+113
+00:06:59,000 --> 00:07:03,000
+Of course if you’re given functions of <i>y</i>,
+当然 如果给的是 <i>y</i> 的函数
+
+114
+00:07:03,000 --> 00:07:05,000
+then you work with <i>y</i> integrals,
+然后对 <i>y</i> 积分
+
+115
+00:07:05,000 --> 00:07:08,000
+so let’s say you might do the integral of <i>f</i> minus <i>g</i>
+因此 假设可以对 <i>f</i> 减 <i>g</i> 做积分
+
+116
+00:07:08,000 --> 00:07:12,000
+in a case where you know that <i>f</i> is to the right of <i>g</i>.
+如果知道 <i>f</i> 在 <i>g</i> 的右侧
+
+117
+00:07:12,000 --> 00:07:15,000
+That brings me to the end of this lesson.
+这次课到此为止
+
+118
+00:07:15,000 --> 00:07:18,000
+In the next lesson, we’ll talk about volume of solids.
+在下一课中 我们将讨论固体体积
+
+119
+00:07:18,000 --> 00:07:21,000
+But before that, do review this topic of area between curves.
+但是在此之前 请务必回顾一下曲线之间的面积这一主题
+
+120
+00:07:21,000 --> 00:07:25,000
+It’s a very important and useful part of calculus.
+这是微积分中非常重要和有用的部分。
+
+121
+00:07:25,000 --> 00:07:28,000
+I’ll stop over here. Thank you very much.
+本节课到此为止，再见
+
