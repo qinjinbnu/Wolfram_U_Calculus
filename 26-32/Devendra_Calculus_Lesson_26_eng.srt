@@ -1,0 +1,530 @@
+1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 26 of this introduction to calculus with Wolfram U.
+大家好，这里是 Wolfram U的微积分入门，第26课
+
+2
+00:00:07,000 --> 00:00:11,000
+The topic for this lesson is indefinite integrals.
+本次课程的主题是  不定积分
+
+3
+00:00:12,000 --> 00:00:15,000
+Let’s begin with a brief overview of the lesson.
+先简单回顾一下上节课
+
+4
+00:00:15,000 --> 00:00:17,000
+In the last lesson we talked about
+上次我们说到
+
+5
+00:00:17,000 --> 00:00:20,000
+the fundamental theorem of calculus,
+这个 微积分基本定理
+
+6
+00:00:20,000 --> 00:00:26,000
+which connects differential calculus and integral calculus.
+它是 微分 和 积分 之间的一座桥梁
+
+7
+00:00:26,000 --> 00:00:33,000
+For example, if I said find the integral of this function, 4<i>x</i>^3,
+例如，假如我说要算  4<i>x</i>^3 的积分
+
+8
+00:00:33,000 --> 00:00:39,000
+from 2 to 3, then the answer is simply 3^4  – 2^4—
+在 2 到 3 之间它的积分 就是 3^4-2^4
+
+9
+00:00:39,000 --> 00:00:42,000
+that’s 65—
+是65
+
+10
+00:00:42,000 --> 00:00:48,000
+and that’s because an antiderivative of 4<i>x</i>^3 is <i>x</i>^4.
+这是因为 4<i>x</i>^3 的 原函数（也称 反导数 ） 是 <i>x</i>^4
+
+11
+00:00:48,000 --> 00:00:50,000
+Let’s just check that with D.
+来让我们用D检查一下
+
+12
+00:00:51,000 --> 00:00:53,000
+If we try the same thing with Integrate
+如果我们用积分干相同的事情
+
+13
+00:00:53,000 --> 00:00:57,000
+but now we tell it to find the integral of the function from 2 to 3,
+但是 让他去算这个函数 2到3 之间的积分
+
+14
+00:00:57,000 --> 00:01:00,000
+you get back just the same answer.
+得到的是相同的答案
+
+15
+00:01:00,000 --> 00:01:04,000
+What we’ve learned is that the antiderivative is, in fact,
+我们刚学的这个 原函数， 事实上
+
+16
+00:01:04,000 --> 00:01:08,000
+a very nice way to do integration.
+是非常好的算积分的一种方法
+
+17
+00:01:08,000 --> 00:01:10,000
+Hence, we give it a special name.
+因此我们给它起个特殊的名字
+
+18
+00:01:10,000 --> 00:01:13,000
+We call it the indefinite integral.
+我们称他为 不定积分
+
+19
+00:01:14,000 --> 00:01:18,000
+The goal of this lesson is to review the indefinite integrals
+这次课我们的目标是复习 不定积分
+
+20
+00:01:18,000 --> 00:01:21,000
+or antiderivatives that you’ve learned so far.
+或者说原函数，统统复习一遍
+
+21
+00:01:23,000 --> 00:01:26,000
+Before going on, just a few notes.
+开始前，注意几点
+
+22
+00:01:26,000 --> 00:01:29,000
+First of all, to repeat myself,
+首先，我再重复一遍
+
+23
+00:01:29,000 --> 00:01:35,000
+the antiderivative will now be referred to as the indefinite integral,
+现在将反导数称为不定积分
+
+24
+00:01:35,000 --> 00:01:39,000
+and sometimes people just say integral.
+有时候简称 积分
+
+25
+00:01:39,000 --> 00:01:46,000
+If you take Integrate and you find Integrate[<i>f</i>[<i>x</i>], <i>x</i>],
+如果选择 积分，并且计算 Integrate[<i>f</i>[<i>x</i>], <i>x</i>]
+
+26
+00:01:46,000 --> 00:01:49,000
+then the answer is <i>x</i>^4 for our example
+对我们的例子而言，答案是 <i>x</i>^4
+
+27
+00:01:49,000 --> 00:01:53,000
+because it’s really computing an indefinite integral
+因为它实际上是在计算不定积分
+
+28
+00:01:53,000 --> 00:01:56,000
+when you do not give it any range.
+当你不给它任何范围的时候
+
+29
+00:01:56,000 --> 00:02:01,000
+Notice one thing: that the answer from Integrate does not include
+注意一件事：Integrate的答案不包含
+
+30
+00:02:01,000 --> 00:02:02,000
+the constant of integration
+积分常数
+
+31
+00:02:02,000 --> 00:02:04,000
+which you would learn in a course on calculus,
+你在积分课上学过的
+
+32
+00:02:04,000 --> 00:02:06,000
+so you must put this in yourself.
+所以得自己手动加
+
+33
+00:02:06,000 --> 00:02:10,000
+So please be careful when you work with indefinite integration.
+所以拜托在做 不定积分 的时候小心一点
+
+34
+00:02:10,000 --> 00:02:13,000
+You will need to put that constant in by hand.
+你必须手动加上常数
+
+35
+00:02:13,000 --> 00:02:16,000
+Now if you want to compute a definite integral,
+现在 我们要是计算 定积分
+
+36
+00:02:16,000 --> 00:02:20,000
+then you must actually put in the lower limit and the upper limit,
+必须 输入 上限 和 下限
+
+37
+00:02:20,000 --> 00:02:23,000
+and then you get back the same answer you did earlier on,
+然后很容易就得到先前的答案了
+
+38
+00:02:23,000 --> 00:02:25,000
+which is 65.
+是 65
+
+39
+00:02:25,000 --> 00:02:30,000
+Here is a plot showing the function and its integral.
+这个图画的的是这个函数和它的不定积分
+
+40
+00:02:31,000 --> 00:02:34,000
+Once again, please note that we’ll set the constant
+重复一遍 注意！我们这个积分常数
+
+41
+00:02:34,000 --> 00:02:37,000
+for the integral to be 0, essentially.
+实际上在这个不定积分里 取的是 0
+
+42
+00:02:38,000 --> 00:02:41,000
+Let’s begin now with some examples.
+现在我们再来点例子
+
+43
+00:02:41,000 --> 00:02:45,000
+If you take a constant function, then the integral of this function
+对于一个  常值函数，它的不定积分
+
+44
+00:02:45,000 --> 00:02:49,000
+is just <i>kx</i> where <i>k</i> is the constant.
+就是  <i>kx</i>， <i>k</i> 是那个常值
+
+45
+00:02:49,000 --> 00:02:53,000
+Again, mentally you must just put in the constant of integration,
+再说一次，注意！ 必须要带积分常数
+
+46
+00:02:53,000 --> 00:02:56,000
+so you get <i>kx</i> + <i>C</i>.
+所以 最终答案是 <i>kx</i> + <i>C</i>
+
+47
+00:02:56,000 --> 00:03:02,000
+For example, if the function is 3, then the integral is 3<i>x</i>.
+例如，如果 函数是 常值3，积分就是3<i>x</i>
+
+48
+00:03:02,000 --> 00:03:08,000
+Here is a picture of the function and its integral.
+这是函数和它的积分的图像
+
+49
+00:03:08,000 --> 00:03:12,000
+Notice that I am putting the evaluate over here inside the plot,
+注意我把值标在图内
+
+50
+00:03:12,000 --> 00:03:17,000
+and that’s because I’d like Integrate to do its work
+是因为我希望先积分
+
+51
+00:03:17,000 --> 00:03:19,000
+before Plot does the plotting.
+再画图
+
+52
+00:03:21,000 --> 00:03:24,000
+Okay. On to a linear function.
+好，那对于线性函数
+
+53
+00:03:24,000 --> 00:03:26,000
+Suppose you have <i>kx</i> + <i>b</i>
+设其为 <i>kx</i> + <i>b</i>
+
+54
+00:03:26,000 --> 00:03:32,000
+Then its integral is <i>kx</i>^2/2 + <i>bx</i> + <i>C</i>.
+那么积分就是 <i>kx</i>^2/2 + <i>bx</i> + <i>C</i>
+
+55
+00:03:32,000 --> 00:03:36,000
+That plus <i>C</i>, again, is coming from the constant in integration.
+再说一遍，加的这个 <i>C</i> 是 积分常数
+
+56
+00:03:36,000 --> 00:03:42,000
+For example, if you have 5<i>x</i> + 4,  then the answer is (5<i>x</i>^2/2) + 4<i>x</i>.
+例如对 5<i>x</i> + 4，答案是  (5<i>x</i>^2/2) + 4<i>x</i>
+
+57
+00:03:42,000 --> 00:03:46,000
+Here’s a plot of both the function and its integral.
+这是函数及其积分的图像
+
+58
+00:03:48,000 --> 00:03:51,000
+Okay. On to power functions.
+再看 幂函数
+
+59
+00:03:51,000 --> 00:04:01,000
+If you have <i>x</i>^<i>a</i>, then its integral is <i>x</i>^(<i>a</i> + 1)/(<i>a</i> + 1).
+<i>x</i>^<i>a</i> 的 积分是  <i>x</i>^(<i>a</i> + 1)/(<i>a</i> + 1)
+
+60
+00:04:01,000 --> 00:04:05,000
+That’s the answer with the constant of integration.
+这是带积分常数的答案。
+
+61
+00:04:05,000 --> 00:04:10,000
+For example, if I give you <i>x</i>^3, then the answer is <i>x</i>^4/4,
+例如，<i>x</i>^3 的结果是 <i>x</i>^4/4
+
+62
+00:04:10,000 --> 00:04:12,000
+which you see in the plot over here.
+图在这儿
+
+63
+00:04:14,000 --> 00:04:16,000
+Okay. On to trigonometric functions now.
+再来看 三角函数
+
+64
+00:04:17,000 --> 00:04:22,000
+If you look at the sine function and the cosine function,
+来看 <i>sin x</i> 和 <i>cos x</i>
+
+65
+00:04:22,000 --> 00:04:26,000
+then the integral of sine is negative cosine
+<i>sin x</i> 的积分是 <i> -cos x</i>
+
+66
+00:04:26,000 --> 00:04:30,000
+because the derivative of negative cosine is sine.
+因为 <i>-cos x</i> 的导数是 <i>sin x</i>
+
+67
+00:04:30,000 --> 00:04:33,000
+The integral of cosine is sine.
+<i>cos x</i> 的积分是 <i>sin x</i>
+
+68
+00:04:34,000 --> 00:04:38,000
+So we have two important indefinite integrals
+我们有了两个重要的 不定积分了
+
+69
+00:04:38,000 --> 00:04:42,000
+for sine and for cosine.
+是关于 <i>sin x</i> 和 <i>cos x</i> 的
+
+70
+00:04:42,000 --> 00:04:45,000
+Here’s a plot of the functions and integrals.
+函数和积分的图在这儿
+
+71
+00:04:47,000 --> 00:04:50,000
+Okay. On to slightly harder examples.
+来看难一点的例子
+
+72
+00:04:50,000 --> 00:04:54,000
+If I give you secant times tangent
+例如  <i>sec x</i> 乘 <i>tan x</i>
+
+73
+00:04:54,000 --> 00:04:57,000
+or negative cosecant times cotangent,
+或者<i>-csc x</i> 乘 <i>cot x</i>
+
+74
+00:04:57,000 --> 00:05:01,000
+then in the first case, the integral is Sec[<i>x</i>]
+第一的积分是  Sec[<i>x</i>]
+
+75
+00:05:01,000 --> 00:05:07,000
+because the derivative of Sec[<i>x</i>] is Sec[<i>x</i>]Tan[<i>x</i>],
+因为 Sec[<i>x</i>] 的导数是 Sec[<i>x</i>]Tan[<i>x</i>]
+
+76
+00:05:07,000 --> 00:05:10,000
+and similarly for the second example.
+第二个例子也是如此
+
+77
+00:05:11,000 --> 00:05:15,000
+We’ve now found two more trig integrals.
+现在我们发现了另外两个三角积分
+
+78
+00:05:15,000 --> 00:05:19,000
+Here’s a plot of all the functions involved over here.
+这里是所涉及的所有的函数的图
+
+79
+00:05:21,000 --> 00:05:26,000
+As my final example, let’s take even harder trig functions.
+最后一个例子，来看一个更难的三角函数
+
+80
+00:05:26,000 --> 00:05:30,000
+If I give you Sec[<i>x</i>]^2 and –Csc[<i>x</i>]^2,
+我给你 Sec[<i>x</i>]^2 和 –Csc[<i>x</i>]^2
+
+81
+00:05:30,000 --> 00:05:34,000
+then the first integral is Tan[<i>x</i>]
+第一个的积分是 Tan[<i>x</i>]
+
+82
+00:05:34,000 --> 00:05:39,000
+because the derivative of Tan[<i>x</i>] is Sec[<i>x</i>]^2,
+因为 Tan[<i>x</i>]  的导数是 Sec[<i>x</i>]^2
+
+83
+00:05:39,000 --> 00:05:46,000
+and similarly, the derivative of Cot[<i>x</i>] is –Csc[<i>x</i>]^2.
+同样，Cot[<i>x</i>] 的导数是 –Csc[<i>x</i>]^2
+
+84
+00:05:46,000 --> 00:05:53,000
+Again, here’s a plot of all the functions and their integrals.
+这是函数和积分的图像
+
+85
+00:05:55,000 --> 00:05:59,000
+Okay. That’s all that there is for today’s lesson.
+好，这是今天的课程的全部内容
+
+86
+00:05:59,000 --> 00:06:01,000
+It’s a short lesson where we’ve talked about
+在今天的短课中我们讨论了
+
+87
+00:06:01,000 --> 00:06:05,000
+the antiderivative of a function and given it a special name,
+函数的原函数并且给了它一个新名字
+
+88
+00:06:05,000 --> 00:06:08,000
+namely, the indefinite integral.
+它叫 不定积分
+
+89
+00:06:08,000 --> 00:06:11,000
+What we have learned is that you can find
+你会发现我们学的是
+
+90
+00:06:11,000 --> 00:06:15,000
+the indefinite integrals of many functions—the constant function,
+很多函数的不定积分——常函数
+
+91
+00:06:15,000 --> 00:06:18,000
+the linear function, the power function
+线性函数和幂函数
+
+92
+00:06:18,000 --> 00:06:22,000
+and several trigonometric functions.
+还有几个三角函数
+
+93
+00:06:22,000 --> 00:06:26,000
+Now in most cases you can simply call the Integrate function
+在大多数情况下 只需调用Integrate函数
+
+94
+00:06:26,000 --> 00:06:29,000
+and it will find the indefinite integral for you,
+它会给你找到 不定积分
+
+95
+00:06:29,000 --> 00:06:31,000
+but make sure you put the constant of integration.
+但是请确认，你加了积分常数
+
+96
+00:06:32,000 --> 00:06:36,000
+That’s really the core of indefinite integration.
+那确实是不定积分的一个核心
+
+97
+00:06:36,000 --> 00:06:39,000
+In the next lesson, we’ll talk about the substitution rule,
+下节课我们讨论换元法
+
+98
+00:06:39,000 --> 00:06:41,000
+which actually makes things easier when you have
+实际上能让你跟容易的去算
+
+99
+00:06:41,000 --> 00:06:43,000
+more difficult examples
+更难的例子
+
+100
+00:06:43,000 --> 00:06:47,000
+and perhaps more interesting examples to talk about.
+也许还有很多更有趣的例子 去讨论
+
+101
+00:06:47,000 --> 00:06:48,000
+I’ll stop over here.
+课程到此为止
+
+102
+00:06:48,000 --> 00:06:50,000
+Do review this very important lesson.
+请下来复习这堂非常重要的课
+
+103
+00:06:50,000 --> 00:06:52,000
+It’s not very difficult, but it’s important
+它不难，但是非常重要
+
+104
+00:06:52,000 --> 00:06:54,000
+and basically everything that follows,
+它是一切的基础
+
+105
+00:06:54,000 --> 00:06:58,000
+and then the next time, we’ll talk about the substitution rule.
+下节课我们将讨论换元法
+
+106
+00:06:58,000 --> 00:07:01,000
+Thank you very much. I’ll stop over here.
+ 本节课到此为止，再见
+
