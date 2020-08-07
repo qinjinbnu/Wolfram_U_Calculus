@@ -827,5 +827,6 @@ In that case, a numerical method is the best that you have.
 167
 00:09:31,000 --> 00:09:33,000
 I’ll stop over here. Thank you very much.
- 本节课到此为止，再见
+本节课到此为止，再见
+翻译：兰州大学 周怀尚
 
