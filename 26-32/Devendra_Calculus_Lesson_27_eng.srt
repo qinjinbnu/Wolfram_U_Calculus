@@ -11,7 +11,7 @@ The topic of this lesson is the substitution rule.
 3
 00:00:12,000 --> 00:00:15,000
 Let’s begin with a brief overview of the lesson.
-先简单回顾一下上节课
+让我们从本课的简要概述开始
 
 4
 00:00:15,000 --> 00:00:17,000
@@ -727,4 +727,4 @@ again and again, and you must have some practice with applying it.
 00:09:33,000 --> 00:09:35,000
 I’ll stop over here. Thank you very much.
 本节课到此为止，再见
-
+翻译：兰州大学 周怀尚
