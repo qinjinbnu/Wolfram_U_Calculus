@@ -11,7 +11,7 @@ The topic for this lesson is indefinite integrals.
 3
 00:00:12,000 --> 00:00:15,000
 Let’s begin with a brief overview of the lesson.
-先简单回顾一下上节课
+让我们从本课的简要概述开始
 
 4
 00:00:15,000 --> 00:00:17,000
@@ -526,5 +526,7 @@ and then the next time, we’ll talk about the substitution rule.
 106
 00:06:58,000 --> 00:07:01,000
 Thank you very much. I’ll stop over here.
- 本节课到此为止，再见
+本节课到此为止，再见
+ 
+ 翻译：兰州大学 周怀尚
 
