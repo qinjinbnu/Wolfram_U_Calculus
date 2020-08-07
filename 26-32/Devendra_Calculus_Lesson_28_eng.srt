@@ -11,7 +11,7 @@ The topic for this lesson is areas between curves.
 3
 00:00:12,000 --> 00:00:15,000
 Let’s begin with a brief overview of the topic.
-先简单回顾一下上节课
+让我们从本课的简要概述开始
 
 4
 00:00:15,000 --> 00:00:18,000
@@ -599,4 +599,4 @@ It’s a very important and useful part of calculus.
 00:07:25,000 --> 00:07:28,000
 I’ll stop over here. Thank you very much.
 本节课到此为止，再见
-
+翻译：兰州大学 周怀尚
