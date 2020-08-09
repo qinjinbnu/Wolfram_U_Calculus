@@ -8,3 +8,5 @@ Sin[<i>x</i>] + <i>n</i> * <i>y</i>/2 应为 Sin[<i>x</i> + <i>n</i> * <i>π</i>
 
 or 应为 over , 意为 x/y 而不是 x 或 y
 
+
+# 测试一下 pr...
