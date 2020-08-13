@@ -1,0 +1,563 @@
+1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Problem Session 2 of this introduction to calculus with Wolfram U.
+您好，欢迎来到 Wolfram U 的微积分课程第 2 部分。
+
+2
+00:00:06,000 --> 00:00:12,000
+Our topic for today is derivatives and continuity. Now being a problem session,
+今天我们的主题是导数和连续性。现在是一个问题讨论环节，
+
+3
+00:00:12,000 --> 00:00:16,000
+we’ll discuss a few problems, but the point will be to try to show you how to solve
+我们将讨论一些问题，但重点是尝试向您展示如何解决
+
+4
+00:00:16,000 --> 00:00:21,000
+real problems in calculus, and also how to review the concepts that you’ve learned earlier
+微积分中的实际问题，以及如何通过查看实际示例来回顾您先前学到的概念。
+
+5
+00:00:21,000 --> 00:00:28,000
+by looking at real examples. Let’s begin with the first problem for today, and that says
+让我们从今天的第一个问题开始，那就是
+
+6
+00:00:28,000 --> 00:00:37,000
+find the limit of <i>x</i> * Sin[<i>x</i>] + Cos[<i>x</i>] as <i>x</i> goes to π. Now keep in mind that <i>x</i> is continuous
+找出当 <i>x</i> 趋近于 π 时 <i>x</i> * Sin[<i>x</i>] + Cos[<i>x</i>] 的极限，因为。 现在请记住，<i>x</i>
+
+7
+00:00:37,000 --> 00:00:42,000
+and so is Sin[<i>x</i>] and so is Cos[<i>x</i>], so the entire expression over here is continuous,
+是连续的，Sin[<i>x</i>] 也是连续的，Cos[<i>x</i>] 也是连续的，因此这里的整个表达式是连续的
+
+8
+00:00:42,000 --> 00:00:48,000
+and hence what you can do is you can simply plug in the value π into it. If you do that,
+因此，您可以做的就是将 π 值简单地代入其中。
+
+9
+00:00:48,000 --> 00:00:54,000
+then the answer is −1. You expect that the limit is going to be −1, and you can compute the limit
+如果这样做，则答案是 -1。 您预计极限将为 -1，并且可以计算极限
+
+10
+00:00:54,000 --> 00:01:04,000
+with the Limit function and get just the same answer. Here’s a plot of the function around π,
+并获得相同的答案。 这是在 π 点附近函数的图像，
+
+11
+00:01:04,000 --> 00:01:08,000
+and you see that the value is actually −1 around there.
+您会看到该值实际为 -1。
+
+12
+00:01:09,000 --> 00:01:18,000
+Okay. Let’s go onto problem 2, which asks you to compute the limit of Sin[<i>x</i>^2 – 3<i>x</i>] as <I>x</i> approaches 3.
+好的。 让我们继续研究问题 2，该问题要求您在 <i>x</i> 接近 3 时计算 Sin[<i>x</i>^2 – 3<i>x</i>] 的极限。
+
+13
+00:01:18,000 --> 00:01:24,000
+Now the point is that sine is a continuous function, so you can basically take the limit
+现在关键是正弦是一个连续函数，因此您基本上可以在此处
+
+14
+00:01:24,000 --> 00:01:31,000
+inside the bracket over here and work out that simple limit, which is just 9 – 9, so that’s 0.
+获得括号内的极限，并计算出这个简单的极限，即 9 – 9，因此为0。
+
+15
+00:01:31,000 --> 00:01:38,000
+You expect the limit is going to be 0 for the entire expression, and you can confirm that with Limit
+您预计整个表达式的极限将为 0，并且可以使用 
+
+16
+00:01:38,000 --> 00:01:45,000
+and get back the same answer, 0. Here is a plot, and the plot shows you
+Limit 函数确认并得到相同的答案 0。这是一个图，该图向您显示
+
+17
+00:01:45,000 --> 00:01:51,000
+that indeed the limit is 0 at <i>x</i> = 3.
+确实在 <i>x</i> = 3 时极限为 0。
+
+18
+00:01:53,000 --> 00:01:59,000
+Okay. Problem 3 asks you to find the limit as <i>x</i> approaches 9 of this function over here.
+好的。 问题 3 要求在 <i>x</i> 趋近 9 时此函数的极限。
+
+19
+00:01:59,000 --> 00:02:05,000
+Now the point is that when <i>x</i> is 9, we have an issue because the denominator becomes 0 at <i>x</i> = 9
+现在的要点是，当 <i>x</i> 为 9 时，我们遇到一个问题，因为在 <i>x</i> = 9
+
+20
+00:02:05,000 --> 00:02:12,000
+because that’s 81 − 81. That’s 0, so you can not evaluate the limit that the quotient law as given to you.
+时分母变为0，因为那是 81-81。也就是 0，所以您不能直接通过商定律求极限。
+
+21
+00:02:12,000 --> 00:02:19,000
+But what you can do is to try and cancel a common factor by first multiplying the top and the bottom
+但是，您可以做的是先试着在分子分母同乘
+
+22
+00:02:19,000 --> 00:02:26,000
+by 3 + √<i>x</i>, and if we do that, you see that we now have the required factor 9 – <i>x</i>,
+3 + √<i>x</i> ，以尝试消除公因子，然后，如果执行此操作，您会看到我们现在有所需的公因数 9 – <i>x</i>，
+
+23
+00:02:26,000 --> 00:02:33,000
+which cancels with the denominator, and if you do that, you can simplify. Then you get back
+该因数与分母相抵消，如果这样做，您可以化简表达式。 你会得到一个
+
+24
+00:02:33,000 --> 00:02:40,000
+an expression which no longer has any problem with computing limits. If you now plug in <i>x</i> = 9,
+不再对计算极限有任何问题的表达式。如果现在代入 <i>x</i> = 9
+
+25
+00:02:40,000 --> 00:02:47,000
+you would expect to get 54 over here, so the answer is 1/54 for this limit.
+那么您会期望得到 54，所以该极限的答案是 1/54。
+
+26
+00:02:47,000 --> 00:02:52,000
+That’s a bit difficult because you had to do some work to get to the answer,
+这有点困难，因为您必须做一些工作才能计算答案，
+
+27
+00:02:52,000 --> 00:02:59,000
+but typically limits of rational functions or rational expressions are a bit more complicated.
+但是通常有理函数或有理表达式的极限要复杂一些。
+
+28
+00:03:00,000 --> 00:03:08,000
+Problem 4 asks you to show that there is a root of this expression over here between 2 and 3.
+问题 4 要求您证明此表达式的根在 2 到 3 之间。
+
+29
+00:03:08,000 --> 00:03:14,000
+Now that should remind you of the intermediate value theorem, which says that
+现在应该使您想起中间值定理，该中间值定理表示
+
+30
+00:03:14,000 --> 00:03:20,000
+the if sign of the expression is different at the two ends, then you actually have a root in the middle.
+表达式的符号在区间两端点处不同，那么实际上根一定在区间内。
+
+31
+00:03:20,000 --> 00:03:31,000
+If you compute the expression at 2 you get −5 point something, and at 3 you get a positive number.
+如果在 2 处计算表达式，则得到 −5 点，在 3 处得到正数。
+
+32
+00:03:31,000 --> 00:03:36,000
+You have a negative value at one end, a positive value at the other end, so there must be
+您在一端有一个负值，在另一端有一个正值，因此在2到3的区间内
+
+33
+00:03:36,000 --> 00:03:43,000
+a root in the interval 2 to 3. You can confirm that with Solve, and actually you compute the value,
+必有一个根。您可以使用 Solve 函数确认这一点，并实际上计算出该值，
+
+34
+00:03:43,000 --> 00:03:53,000
+which is about 2.39. Here’s the plot, and you can see the function does becomes 0 around 2.4,
+大约是 2.39。这是图像，您可以看到该函数在 2.4 周围确实变为 0，因此与 Solve 给出的值一致。
+
+35
+00:03:53,000 --> 00:04:00,000
+so that agrees with the value given by Solve. Like we said earlier on, the intermediate value theorem
+就像我们之前说的，中间值定理
+
+36
+00:04:00,000 --> 00:04:06,000
+is a very powerful tool for identifying roots of functions.
+是函数求根的非常强大的工具。
+
+37
+00:04:08,000 --> 00:04:16,000
+Okay. Problem 5 says find the value of <i>a</i> which will make this piecewise expression continuous,
+好的。 问题 5 表示计算某个 <i>a</i> 的值，使该分段表达式连续，
+
+38
+00:04:16,000 --> 00:04:24,000
+and clearly the only problem is at 1. Now what you need to do is to fit the value of <i>a</i>
+显然唯一的问题是在 1。现在您需要做的就是拟合 <i>a</i> 的值
+
+39
+00:04:24,000 --> 00:04:32,000
+so the function becomes continuous at 1. Now at 1, if you work out the function value it’s 3,
+因此该函数在 1 点变为连续。现在在 1 点，如果计算出该函数的值为 3，
+
+40
+00:04:32,000 --> 00:04:40,000
+and the limit from the right-hand side is also 3 because if you plug in 1 over here,
+并且右极限也是 3，因为如果您在此处代入1，
+
+41
+00:04:40,000 --> 00:04:47,000
+you get back 3, so you need to fit the value of <i>a</i> so that the left-hand limit is 3 as well.
+得到 3，因此您需要拟合 <i>a</i>的值，以使左极限也为 3。
+
+42
+00:04:47,000 --> 00:04:54,000
+You can do that with the Solve function, and get <i>a</i> to be 6. Now once you do that,
+您可以使用 Solve 函数来做到这一点，并将 <i>a</i> 设为 6。现在，一旦完成
+
+43
+00:04:54,000 --> 00:05:01,000
+then the function becomes 6<i>x</i> − 3 instead of 8<i>x</i> − 3 for <i>x</i> less than 1, and if you plot it now,
+在 <i>x</i> 小于一时函数为 6<i>x</i> − 3 而不是 8<i>x</i> − 3，如果现在画出它，
+
+44
+00:05:01,000 --> 00:05:06,000
+it looks nice and continuous—although it does have a corner over here—but there is
+它看起来不错且连续, 尽管这里确实有一个角, 但那里的
+
+45
+00:05:06,000 --> 00:05:16,000
+no problem with the continuity. <i>a</i> = 6 is required for making this expression continuous at 1.
+连续性没有问题。 要使该表达式在1处连续，需要 <i>a</i> = 6。
+
+46
+00:05:18,000 --> 00:05:27,000
+Problem 6 says find the limit of (1/<i>x</i> – 1/3)/(<i>x</i> – 3). Now that’s just a derivative
+问题 6 要计算 (1/<i>x</i> – 1/3)/(<i>x</i> – 3) 的极限。
+
+47
+00:05:27,000 --> 00:05:32,000
+because that’s like a difference quotient. You can work out the answer using D,
+现在这只是一个导数，因为这就像一个差商。 您可以使用 D 算出答案，
+
+48
+00:05:32,000 --> 00:05:39,000
+or you could work out the limit directly and get back the same answer.
+或者您可以直接计算出极限并得到相同的答案。
+
+49
+00:05:39,000 --> 00:05:48,000
+Here is a plot which shows that in fact you do have a tangent line at this point over here.
+这是图像，它表明实际上您在这一点确实有一条切线。
+
+50
+00:05:50,000 --> 00:05:58,000
+Working the limit in this case could be done either by using D or by doing a limit calculation.
+在这种情况下，可以通过使用 D 函数或直接计算来得到极限。
+
+51
+00:06:00,000 --> 00:06:08,000
+Okay. Problem number 7 says compute the left-hand derivative of this expression at 1.
+好的。 问题 7 要求计算此表达式在 1 点的左导数。
+
+52
+00:06:08,000 --> 00:06:15,000
+First we set up the function <i>f</i>[<i>x</i>] with the given expression. You want to find the left-hand derivative,
+首先，我们使用给定的表达式定义函数 <i>f</i>[<i>x</i>]。 您想计算左导数，
+
+53
+00:06:15,000 --> 00:06:21,000
+so you can use DifferenceQuotient with the Direction option. You say FromBelow.
+因此您可以将 DifferenceQuotient 与 Direction 选项一起使用。 设置 Direction 为 FromBelow。
+
+54
+00:06:21,000 --> 00:06:28,000
+You want to go from the left at <i>x</i> = 1, and you get back the answer. Then what you can do is
+左侧趋近 <i>x</i> = 1，然后得到答案。
+
+55
+00:06:28,000 --> 00:06:34,000
+you can use that answer, which is just like the slope, to work out the tangent line,
+然后，您可以做的就是用这个答案, 相当于切线方程的斜率,来计算切线，
+
+56
+00:06:34,000 --> 00:06:39,000
+and you see that indeed you have a tangent line at the required point.
+并且您看到确实在所需点处有一条切线。
+
+57
+00:06:41,000 --> 00:06:47,000
+But notice that you have a problem at 1. This is just going to be the left-hand derivative.
+但是请注意，您在 1 处有一个问题。这只是左导数。
+
+58
+00:06:50,000 --> 00:06:59,000
+Okay. Let’s go on now to find the derivative of this expression at 2. Now because you have
+好的。现在继续在 2 点处计算该表达式的导数。现在，由于您具有
+
+59
+00:06:59,000 --> 00:07:04,000
+an absolute value, what you could do is analyze the expression a bit more
+绝对值，因此您可以做的是对表达式进行更多分析
+
+60
+00:07:04,000 --> 00:07:10,000
+and say that because 2 is less than 3, so the expression becomes 4 * (−<i>x</i> + 3),
+因为 2 小于 3 ，所以表达式变为 4 * (−<i>x</i> + 3),
+
+61
+00:07:10,000 --> 00:07:18,000
+and then work out the derivative of that, which is just −4. Or you can simply use D itself
+然后求出该表达式的导数，即 −4。 或者您可以简单地对原表达式
+
+62
+00:07:18,000 --> 00:07:26,000
+on the original function and get back just the same answer. What you can do finally is
+使用 D 函数, 并获得相同的答案。
+
+63
+00:07:26,000 --> 00:07:33,000
+to plot the derivative and original expression, the tangent line, and what you see over here is that
+最后您可以绘制导数和原始表达式，切线，然后在这可以看到
+
+64
+00:07:33,000 --> 00:07:39,000
+in fact you have a coincidence of tangent line with the function on the left, and that’s very typical of
+实际上，切线与函数左侧重合，这是绝对值函数的
+
+65
+00:07:39,000 --> 00:07:44,000
+of the absolute value function—namely, the tangent line will overlap the graph at some stage.
+典型特征，即切线在某一区间会与函数图像重叠。
+
+66
+00:07:46,000 --> 00:07:51,000
+Okay. Problem number 9 says compute the values of <i>a</i> and <i>b</i> for which this function
+好的。 问题 9 表示计算使该函数可导的 <i>a</i> 和 <i>b</i>
+
+67
+00:07:51,000 --> 00:07:58,000
+becomes differentiable. Now that’s a much a harder problem because you need to check that
+的值。 这是一个更困难的问题，因为您需要检查一下
+
+68
+00:07:58,000 --> 00:08:03,000
+that you actually have the same left-hand and right-hand derivatives, and you also need to
+确实有相同的左导数和右导数，并且您还需要满足
+
+69
+00:08:03,000 --> 00:08:09,000
+some kind of continuity. Okay. We’re talking about derivatives. If you work out
+连续性。 好的。 我们讨论一下导数。 如果算出
+
+70
+00:08:09,000 --> 00:08:16,000
+the derivative on the left. That’s 3<i>x</i>^2 + <i>a</i>, so at 2, the answer is going to be 12 + <i>a</i>.
+左导数。是 3<i>x</i>^2 + <i>a</i>，所以在 2 点，左导数是 12 + <i>a</i>。
+
+71
+00:08:16,000 --> 00:08:24,000
+That must be equal to the derivative that’s over here, which is 2<i>bx</i> – 3, so that must be 4<i>b</i>.
+该值必须等于此处的导数 2<i>bx</i> – 3，因此必须为 4<i>b</i>。
+
+72
+00:08:26,000 --> 00:08:31,000
+If you work out the left-hand limits, then you see over here when you plug in 2, you get 8 + 2<i>a</i>,
+如果算出左极限，那么代入 2 后，您会得到 8 + 2 <i>a</i>，
+
+73
+00:08:31,000 --> 00:08:41,000
+and over there you get 4<i>b</i> – 3. Now both those must be satisfied for getting the values of <i>a</i> and <i>b</i>,
+然后在这一点得到 4<i>b</i> – 3。现在必须满足这两个条件才能获取  <i>a</i> 和 <i>b</i>
+
+74
+00:08:41,000 --> 00:08:50,000
+so you solve the system and you get back <i>a</i>  as 1 and <i>b</i> as 13/4. Once you’ve got those values,
+的值，因此您可以解方程组，您得到 <i>a</i> 为 1，<i>b</i> 为 13/4。 获得这些值后，
+
+75
+00:08:50,000 --> 00:08:58,000
+you can then plot everything and check that in fact you have a nice smooth expression over here.
+然后，您可以把这些都画出来, 并检查您是否在此处有平滑的函数表达式。
+
+76
+00:09:01,000 --> 00:09:09,000
+Okay. Let’s go on now to number 10, which says compute the tangent line of this function at 1.
+好的。 现在继续到第 10 题，计算此函数在 1 处的切线。
+
+77
+00:09:09,000 --> 00:09:16,000
+Now to compute the tangent line, you first of all need to find a value of the function at 1.
+现在，要计算切线，首先需要计算在 1 点的函数值。
+
+78
+00:09:16,000 --> 00:09:26,000
+You need to compute the slope at <i>x</i> = 1. You’ve got both those now. Then the tangent line
+您需要计算在 <i>x</i> = 1 时的斜率。 然后切线
+
+79
+00:09:26,000 --> 00:09:34,000
+is <i>y</i> – <i>y</i>1 equal to slope times (<i>x</i> – <I>x</i>1). That’s the equation of the tangent line,
+方程是 <i>y</i> – <i>y</i>1 等于斜率乘 (<i>x</i> – <I>x</i>1)。这就是切线的方程式，
+
+80
+00:09:34,000 --> 00:09:43,000
+and then you can do that over here to get a plot. You’ve got a plot now which shows clearly
+然后您可以在此处进行此操作以获得图像。现在您已经有了一张图，可以清楚地显示
+
+81
+00:09:43,000 --> 00:09:47,000
+that we’ve got the right tangent line in this case.
+在这种情况下，我们有正确的切线。
+
+82
+00:09:50,000 --> 00:09:58,000
+Okay. Problem 11 says compute the normal line to a function at 4. Now the normal line,
+好的。问题 11 要计算到一个函数在 4 点的法线。现在，请记住，法线垂直于切线。
+
+83
+00:09:58,000 --> 00:10:06,000
+keep in mind, is perpendicular to the tangent line. Of course you first find the value at 4.
+当然，您首先会计算 4 的值。
+
+84
+00:10:08,000 --> 00:10:16,000
+Then you compute the derivative at 4. The answer is −10. Now −10 is the slope of the tangent line,
+然后，您在 4 处计算导数。答案是 -10。
+
+85
+00:10:16,000 --> 00:10:23,000
+so the slope of the normal must be 1/10. Use that information to work out
+现在 -10 是切线的斜率，因此法线的斜率一定是 1/10。使用该条件求
+
+86
+00:10:23,000 --> 00:10:32,000
+the equation of the normal over here, and then finally we plot the original function
+此处的法线方程，最后我们绘制原始函数
+
+87
+00:10:32,000 --> 00:10:40,000
+along with the normal line at 4. You do see that the normal line is perpendicular to
+以及过 4 点的法线。您确实看到法线垂直于
+
+88
+00:10:40,000 --> 00:10:47,000
+the curve at that point, and of course it’s perpendicular to the tangent line at that point.
+该点处的曲线，当然这说的是它垂直于该点的切线。
+
+89
+00:10:49,000 --> 00:10:55,000
+Problem number 12 says that you’re given the position vector of a particle <i>s</i>[<i>t</i>]
+问题12 求粒子 <i>s</i>[<i>t</i>] 的位置矢量
+
+90
+00:10:55,000 --> 00:11:03,000
+and you want to find the acceleration of that particle at a certain time, namely, <i>t</i> = 3π/2.
+并且您想要计算某个时间的那个粒子的加速度，即 <i>t</i> = 3π/2。
+
+91
+00:11:03,000 --> 00:11:13,000
+Now the acceleration is the second derivative of the position, so you compute the second derivative.
+现在，加速度是位置的二阶导数，因此您可以计算二阶导数。
+
+92
+00:11:13,000 --> 00:11:21,000
+That’s the shorthand for the second derivative of the position. Then you plug in the <i>t</i> as 3π/2,
+这是该点的二阶导数的简写。 然后将 <i>t</i> 代入为 3π/2 ，
+
+93
+00:11:21,000 --> 00:11:26,000
+and you get back the value. Then you can use that to actually plot both
+得到二阶导数值。 然后您可以使用它来绘制
+
+94
+00:11:26,000 --> 00:11:34,000
+the position and the acceleration, and that’s the plot of both those functions.
+位置和加速度，这就是这两个函数的图。
+
+95
+00:11:34,000 --> 00:11:40,000
+The accretion is the second time derivative of the position.
+加速度是位置对时间的二阶导数。
+
+96
+00:11:42,000 --> 00:11:48,000
+Problem number 13 says that you’re given a table of values, and from a table of values
+问题 13 表示给定一个值表，并希望从函数
+
+97
+00:11:48,000 --> 00:11:53,000
+for a function <i>f</i>[<i>x</i>], you want to compute the average rate of change of that function
+<i>f</i>[<i>x</i>] 的值表中计算出该函数
+
+98
+00:11:53,000 --> 00:12:01,000
+over the range 6 to 12. Now the average rate simply means the slope of the secant line
+在 6 到 12 之间的平均变化率。现在，平均变化率就是这两点之间的割线的斜率，
+
+99
+00:12:01,000 --> 00:12:08,000
+between those two points, so you work it out. The values are 14 and 10 at those two points.
+因此您可以进行计算。这两个点的函数值分别为 14 和 10。
+
+100
+00:12:08,000 --> 00:12:16,000
+We will divide (14 – 10) by (12 – 6), and you get back the average rate of change.
+我们将 (14 – 10) 除以 (12 – 6)，然后得出平均变化率。
+
+101
+00:12:16,000 --> 00:12:24,000
+Here’s a plot of the points in secant line. Of course secant line is not a very good approximation,
+这是割线上的散点图。
+
+102
+00:12:24,000 --> 00:12:29,000
+but often all that you have is a table of values.
+当然，割线并不是一个很好的近似值，但是通常您所拥有的只是一张值表。
+
+103
+00:12:32,000 --> 00:12:40,000
+And finally, problem 14, which says compute the instantaneous rate of change of <i>z</i>
+最后，问题 14 要求计算 <i>z</i> 
+
+104
+00:12:40,000 --> 00:12:47,000
+with respect to <i>y</i> for this function over here when <i>y</i> is π. Now when we say
+相对于 <i>y</i> 在<i>y</i> 等于 π 点的瞬时变化率
+
+105
+00:12:47,000 --> 00:12:54,000
+instantaneous rate of change, what we mean is the derivative. You simply work out D at that point.
+现在，当我们说瞬时变化率时，我们指的是导数。您只需在那点计算出 D 即可。
+
+106
+00:12:54,000 --> 00:13:02,000
+That’s the instantaneous rate of change, and then using that, you can work out the tangent line.
+这就是瞬时变化率，然后使用它可以计算出切线。
+
+107
+00:13:02,000 --> 00:13:08,000
+When you do that, you actually see that you have the tangent line over here given by
+当您进行此操作时，您实际上看到的是此处的切线，
+
+108
+00:13:08,000 --> 00:13:12,000
+the instantaneous rate of change as its slope.
+该切线由瞬时变化率作为其斜率给出。
+
+109
+00:13:14,000 --> 00:13:19,000
+To summarize, the key concept for this problem was that the instantaneous rate of change
+总而言之，此问题的关键概念是
+
+110
+00:13:19,000 --> 00:13:28,000
+is the slope of the tangent line at that point. This brings me to the end of today’s problem session.
+瞬时变化率是该点处切线的斜率。今天的问题环节结束了。
+
+111
+00:13:28,000 --> 00:13:34,000
+I hope that you have benefited from the discussion. Do review the problems, and then in Lesson 9,
+我希望您从以上讨论中受益。
+
+112
+00:13:34,000 --> 00:13:38,000
+we’ll go on to talking about differentiation rules. But before doing that,
+请复习一下习题，然后在第 9 课中，我们将继续讨论微分规则。但是在那之前
+
+113
+00:13:38,000 --> 00:13:44,000
+there is a small quiz for you to take. Do take Quiz 2, and then you’ll be ready for Lesson 9.

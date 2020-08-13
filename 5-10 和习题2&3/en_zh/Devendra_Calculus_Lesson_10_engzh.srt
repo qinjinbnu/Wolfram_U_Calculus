@@ -1,0 +1,328 @@
+1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 10 of this introduction to calculus with Wolfram U.
+您好，欢迎来到 Wolfram U 的微积分入门课程第 10 课。
+
+2
+00:00:07,000 --> 00:00:13,000
+The topic for this lesson is derivatives of trigonometric functions.
+本课的主题是三角函数的导数。
+
+3
+00:00:13,000 --> 00:00:20,000
+Let’s begin with a brief overview of the lesson. Recall that the trigonometric functions
+让我们从本课的简要概述开始。
+
+4
+00:00:20,000 --> 00:00:26,000
+are oscillatory—so they go up and down like waves. You would expect that their derivatives
+回想一下，三角函数是振荡的，因此它们像波一样上下波动。您会期望它们的导数
+
+5
+00:00:26,000 --> 00:00:31,000
+would oscillatory too. Here’s an example that illustrates that.
+也产生振荡。 这是一个说明这一点的例子。
+
+6
+00:00:31,000 --> 00:00:39,000
+Here’s a function <i>f</i> which is composed of sine and cosine, and if you plot the function along with
+这是一个由正弦和余弦组成的函数 <i>f</i>
+
+7
+00:00:39,000 --> 00:00:47,000
+the derivative, then what you see is they are both oscillatory. The blue graph is <i>f</i>
+，如果您将函数与导数一起绘制，那么您看到的是它们都是振荡的。蓝色的是 <i>f</i>
+
+8
+00:00:47,000 --> 00:00:56,000
+and the orange graph is <i>f</i>', and as <i>f</i> changes in an oscillatory way, so does <i>f</i>'.
+橙色是 <i>f</i>'，并且 <i>f</i>' 以振荡方式变化，<i>f</i>' 也是如此。
+
+9
+00:00:56,000 --> 00:01:03,000
+But of course I haven’t told you how to find the derivative of <i>f</i>, and that’s the goal of today’s lesson.
+但是，我当然没有告诉您如何找到 <i>f</i> 的导数，这是今天课程的目标。
+
+10
+00:01:03,000 --> 00:01:10,000
+The goal of this lesson is to develop a table of derivatives for trigonometric functions.
+本课程的目的是为三角函数建立一个导数表。
+
+11
+00:01:10,000 --> 00:01:18,000
+Let’s begin with the sine function. Here’s the sine function, and to find the derivative,
+让我们从正弦函数开始。 这是正弦函数，要找到导数，
+
+12
+00:01:18,000 --> 00:01:25,000
+we simply apply the definition—namely, it’s the limit of the difference quotient as <i>h</i> approaches 0—
+我们只需应用定义-即 <i>h</i> 接近 0 时的差商的极限，
+
+13
+00:01:25,000 --> 00:01:32,000
+and you get back Cos[<i>x</i>].That says that the derivative of sine is cosine.
+然后得到 Cos[<i>x</i>]。这表示正弦的导数是余弦。
+
+14
+00:01:32,000 --> 00:01:41,000
+Let’s confirm that with D. Here’s a plot of both the functions sine and cosine.
+让我们用 D 确认。这是正弦和余弦函数的图。
+
+15
+00:01:41,000 --> 00:01:45,000
+Sine is the function and cosine is the derivative of the function.
+正弦是函数，余弦是函数的导数。
+
+16
+00:01:45,000 --> 00:01:54,000
+Let’s go on now to the cosine function. Once again, we apply the definition, and what you get back
+现在继续来看余弦函数。
+
+17
+00:01:54,000 --> 00:01:59,000
+this time is the negative of the sine. That’s important: the derivative of cosine
+再一次，我们应用该定义，这次您得到的是负的正弦。这很重要：余弦的导数
+
+18
+00:01:59,000 --> 00:02:05,000
+is the negative of the sine function. Let’s confirm that with D.
+是负的正弦函数。 让我们用 D 确认。
+
+19
+00:02:05,000 --> 00:02:15,000
+You get back −Sin[<i>x</i>]. Here is a plot of both the functions Cos[<i>x</i>] and its derivative −Sin[<i>x</i>].
+您得到 −Sin[<i>x</i>]。 这是函数 Cos[<i>x</i>] 及其导数 −Sin[<i>x</i>] 的图像。
+
+20
+00:02:15,000 --> 00:02:27,000
+Let’s go on further to the tangent function. Here’s <i>f</I> = Tan[<i>x</i>]. Work out the derivative with the definition
+让我们继续来看正切函数。这里有 <i>f</i> = Tan[<i>x</i>]。 使用定义计算出导数，
+
+21
+00:02:27,000 --> 00:02:36,000
+and you get back Sec^2[<i>x</i>]—so that’s to be remembered, that the derivative of Tan[<i>x</i>] is Sec^2[<i>x</i>].
+然后得到 Sec^2[<i>x</i>], 记住，Tan [<i> x</i>] 的导数为 Sec^2[<i>x</i>]。
+
+22
+00:02:36,000 --> 00:02:42,000
+Let’s confirm that with D, and the question is why is there is a square in the answer?
+让我们用 D 确认，问题是为什么答案中有一个平方？
+
+23
+00:02:42,000 --> 00:02:50,000
+Well, when you plot <i>f</i> and the derivative, you see that the tangent function is always increasing,
+好吧，当绘制 <i>f</i> 及其导数时，您会发现切线函数总是在增加，
+
+24
+00:02:50,000 --> 00:02:57,000
+so the derivative, as the slope of tangent is always non-negative—and that’s why the derivative
+所以导数，因为切线的斜率总是非负的，这就是为什么导数
+
+25
+00:02:57,000 --> 00:03:02,000
+has got a square in it. So Sec^2 lies above the <i>x</i> axis.
+有一个平方号。 所以 Sec^2 位于 <i>x</i> 轴上方。
+
+26
+00:03:02,000 --> 00:03:10,000
+Okay. Now we go on to the reciprocals. The secant function has derivative
+好的。 现在，我们继续来看余弦函数的倒数, 正割函数。 正割函数具有导数
+
+27
+00:03:10,000 --> 00:03:21,000
+Sec[<i>x</i>] * Tan[<i>x</i>], and here’s a confirmation with D. Let’s plot them both, and there you are.
+Sec[<i>x</i>] * Tan[<i>x</i>]，这是用 D 的确认。让我们同时绘制它们，就可以了。
+
+28
+00:03:23,000 --> 00:03:28,000
+Next we go on to the cosecant function. That’s the reciprocal of sine,
+接下来，我们继续看余割函数。
+
+29
+00:03:28,000 --> 00:03:38,000
+and its derivative is negative of cotangent times cosecant. Confirm that with D,
+那是正弦的倒数，它的导数是负的余切乘以余割。 用 D 确认，
+
+30
+00:03:38,000 --> 00:03:46,000
+and once again we can plot it to get the function and its derivative.
+再一次可以绘制它以获得函数及其导数。
+
+31
+00:03:48,000 --> 00:03:58,000
+Finally we got on to the cotangent function. Now its derivative turns out to be −Csc^2[<i>x</i>].
+最后，我们进入了余切函数。 现在，它的导数变为 −Csc^2[<i>x</i>]。
+
+32
+00:03:58,000 --> 00:04:06,000
+You can confirm that with D, and the question is why is there a negative sign?
+您可以使用 D 确认这一点，问题是为什么会有负号？
+
+33
+00:04:06,000 --> 00:04:13,000
+Well, the point is that unlike the tangent, the cotangent is always decreasing,
+好吧，关键是与正切函数不同，余切函数始终在减小，
+
+34
+00:04:13,000 --> 00:04:17,000
+and so its derivative is always negative.
+因此其导数始终为负。
+
+35
+00:04:19,000 --> 00:04:26,000
+Okay. Let’s summarize a bit. Here you have the six functions that we just spoke about—
+好的。 让我们总结一下。 在这里，您有我们刚才谈到的六个函数-
+
+36
+00:04:26,000 --> 00:04:34,000
+sine, cosine, tangent, secant, cosecant, cotanget—and here are their derivatives.
+正弦，余弦，正切，正割，余割，余切, 这是它们的导数。
+
+37
+00:04:34,000 --> 00:04:43,000
+That says that the derivative of sine is cosine, et cetera, and that small table is well worth memorizing
+也就是说，正弦的导数是余弦, 等等，并且这个表格值得您记住。
+
+38
+00:04:43,000 --> 00:04:53,000
+for all your future work. Let’s plot them, and you see that you have all the functions
+让我们对其进行绘制，您会看到具有所有函数
+
+39
+00:04:53,000 --> 00:04:59,000
+and their derivatives in just one picture, with the top three being sine, cosine, tangent,
+和它们的导数在一张图中，上面三个是正弦，余弦，正切，
+
+40
+00:04:59,000 --> 00:05:03,000
+and the bottom being secant, cosecant and cotangent.
+而下面三个是正割，余割和余切。
+
+41
+00:05:04,000 --> 00:05:09,000
+Okay. Just a little bit about the higher derivatives of the trigonometric functions.
+好的。 我们来谈一点关于三角函数的高阶导数。
+
+42
+00:05:09,000 --> 00:05:15,000
+We know that the trigonometric functions have a cyclical nature. You would expect that
+我们知道三角函数具有周期性。
+
+43
+00:05:15,000 --> 00:05:21,000
+there’s some kind of interesting pattern in their derivatives, and indeed that’s what happens.
+您会期望它们的导数中有一种有趣的模式，而事实确实如此。
+
+44
+00:05:21,000 --> 00:05:33,000
+Here is a table of the first four derivatives of sine. You’ve got Sin[<i>x</i>]. Its derivative is Cos[<i>x</i>].
+这是正弦的前四个导数的表。 你有 Sin[<i>x</i>]。 它的导数是 Cos[<i>x</i>]。
+
+45
+00:05:33,000 --> 00:05:39,000
+Its derivative is −Sin[<i>x</i>], then −Cos[<i>x</i>] and then Sin[<i>x</i>]. You see that you’re back to Sin[<i>x</i>]
+再次求导是 −Sin[<i>x</i>]，然后是 −Cos[<i>x</i>]，然后是 Sin[<i>x</i>]。 您会发现您回到了 Sin[<i>x</i>]
+
+46
+00:05:39,000 --> 00:05:45,000
+after a cycle of four derivatives, and that says that, for example, if I ask you
+在一个由四个导数组成的循环之后，也就是说，例如，如果我问您
+
+47
+00:05:45,000 --> 00:05:52,000
+what is the 1,001st derivative of the sine function, you will say, oh yes, if we divide by 4
+正弦函数的第 1,001 个导数是什么，您会说，是的，如果我们除以4
+
+48
+00:05:52,000 --> 00:06:00,000
+we just get 1 as the remainder, so the answer is Cos[<i>x</i>]. In fact, there is a very nice formula for
+我们只得到1作为余数，所以答案是 Cos[<i>x</i>]。 实际上，对于正弦函数的第<i> n</i>
+
+49
+00:06:00,000 --> 00:06:09,000
+the <i>n</i>th derivative of the sine function. It’s just Sin[<i>x</i> + <i>n</i> * <i>π</i>/2], and you can check that
+个导数，有一个很好的公式。 就是 Sin[<i>x</i> + <i>n</i> * <i>π</i>/2]，您可以检查一下
+
+50
+00:06:09,000 --> 00:06:16,000
+that gives you the correct answers when you plug in the values of <i>n</i> as 1, 2, 3, 4, et cetera.
+当您将 <i>n</i> 的值代入为 1, 2, 3, 4, 等时，可以为您提供正确的答案。
+
+51
+00:06:16,000 --> 00:06:27,000
+Finally here is a plot of all the derivatives of Sin[<i>x</i>], and you see quite clearly that
+最后，这是 Sin[<i>x</i>] 的所有导数的图，您可以很清楚地看到，
+
+52
+00:06:27,000 --> 00:06:33,000
+you start off at sine, then you go to cosine, then you go to negative sine,
+您从正弦开始，然后得到余弦，然后得到负正弦，
+
+53
+00:06:33,000 --> 00:06:36,000
+then you go to negative cosine, then you come back to sine.
+然后得到负余弦，最后你回到正弦。
+
+54
+00:06:37,000 --> 00:06:46,000
+That is the end of today’s lesson, but let’s summarize. Because the trig functions are periodic,
+今天的课程到此结束，让我们总结一下。
+
+55
+00:06:46,000 --> 00:06:52,000
+then so are their derivatives. The derivative of sine is cosine.
+因为三角函数是周期性的，所以它们的导数也是如此。正弦的导数是余弦。
+
+56
+00:06:53,000 --> 00:07:00,000
+The derivative of cosine is negative sine. The derivative of tangent is secant squared.
+余弦的导数为负正弦。 正切的导数为正割的平方。
+
+57
+00:07:00,000 --> 00:07:04,000
+The derivative of secant is secant times tangent.
+正割的导数是正割乘以正切。
+
+58
+00:07:04,000 --> 00:07:10,000
+The derivative of cosecant is negative cosecant times cotangent.
+余割的导数是负的余割乘以余切。
+
+59
+00:07:10,000 --> 00:07:18,000
+The derivative of cotangent is negative cosecant squared. That short list should be enough
+余切的导数为负的余割平方。该简短列表对于大多数应用足够了。
+
+60
+00:07:18,000 --> 00:07:23,000
+for most applications. Now this is a very short lesson, but it’s a very useful lesson
+这是一个很短的课程，但这是一个非常有用的课程
+
+61
+00:07:23,000 --> 00:07:29,000
+and it’s a very important lesson because the trig functions appear in all kinds of applications,
+这是非常重要的一课，因为三角函数出现在各种应用中，
+
+62
+00:07:29,000 --> 00:07:36,000
+starting from the motions of particles around circles to the electric currents
+从粒子的圆周运动到导线里电流, 等等
+
+63
+00:07:36,000 --> 00:07:42,000
+that flow through wires, et cetera. Knowing the derivatives for these functions is a great step
+了解三角函数的导数是学习微积分过程
+
+64
+00:07:42,000 --> 00:07:49,000
+in your knowledge of calculus. In the next lesson, we’ll talk about the so-called chain rule,
+中的的重要一步 在下一课中，我们将讨论所谓的链式法则，
+
+65
+00:07:49,000 --> 00:07:54,000
+which deals with compositions of functions. But before then, do revise this lesson and make sure
+它可以用来计算复合函数的导数。但是在此之前，请复习本课，并确保
+
+66
+00:07:54,000 --> 00:07:58,000
+you understand the trig function derivatives. I’ll stop over here.

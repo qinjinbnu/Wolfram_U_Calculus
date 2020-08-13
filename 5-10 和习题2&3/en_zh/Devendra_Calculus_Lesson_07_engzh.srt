@@ -1,0 +1,588 @@
+1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 7 of this introduction to calculus with Wolfram U.
+您好，欢迎来到Wolfram U的微积分入门课程第7课。
+
+2
+00:00:06,000 --> 00:00:11,000
+Our topic for today is derivatives and rates of change.
+今天我们的主题是导数工具和变化率。
+
+3
+00:00:11,000 --> 00:00:16,000
+Let’s begin with a brief overview of today’s lesson. At the start, we said that
+让我们从今天课程的简要概述开始。
+
+4
+00:00:16,000 --> 00:00:22,000
+calculus is the science of change. The primary goal of calculus is to study change.
+首先，我们说微积分是变化的科学。 微积分的主要目标是研究变化。
+
+5
+00:00:22,000 --> 00:00:28,000
+Now there is one way to study change, and that’s to use functions. Functions tell us
+现在有一种研究变化的方法，那就是使用函数。
+
+6
+00:00:28,000 --> 00:00:35,000
+how one quantity changes with respect to other quantities. For example, here’s a function
+函数告诉我们一个数量相对于其他数量如何变化。 例如，这是一个函数
+
+7
+00:00:35,000 --> 00:00:44,000
+which relates <i>x</i> to <i>f</i>[<i>x</i>] or <i>y</i>, and that’s the plot of the function. That tells you
+将 <i>x</i> 与 <i>f</i>[<i>x</i>] 或 <i>y</i> 关联起来，这是函数图。
+
+8
+00:00:44,000 --> 00:00:49,000
+how <i>y</i> changes with respect to <i>x</i>, but of course we need more than that often.
+图像告诉您 <i>y</i> 对于 <i>x</i> 如何变化，但是我们当然需要的比这更多。
+
+9
+00:00:49,000 --> 00:00:55,000
+We need to know how the function changes with point to point. We need the rate of change,
+我们需要知道函数点到点的变化。可以这么说，我们需要变化率。
+
+10
+00:00:55,000 --> 00:01:00,000
+so to speak. If you have a straight line, that’s simple; you simply find the slope.
+如果您有一条直线，那很简单, 您只需找到斜率即可。
+
+11
+00:01:00,000 --> 00:01:06,000
+Here’s a straight line, the slope is 3, and that’s a very nice measure of
+这是一条直线，斜率是3，这是对该函数变化率的很好衡量。
+
+12
+00:01:06,000 --> 00:01:12,000
+the rate of change of that function. In this lesson, we’ll show you how to do that
+在本课程中，我们将向您展示如何对更多的函数
+
+13
+00:01:12,000 --> 00:01:17,000
+for more general functions. In other words, we’ll try and generalize the idea of slope
+做到这一点, 换句话说，我们将尝试使用所谓的导数来概括斜率的概念。
+
+14
+00:01:17,000 --> 00:01:25,000
+using what are known as derivatives. That’s the theme for today, derivatives and rates of change.
+这就是今天的主题，导数工具和变化率。
+
+15
+00:01:27,000 --> 00:01:34,000
+Let’s begin with the notion of a derivative. The derivative is a special kind of limit, and that limit,
+让我们从导数概念开始。
+
+16
+00:01:34,000 --> 00:01:41,000
+roughly speaking, is linked to the tangent to a curve. I haven’t told exactly how,
+导数是一种特殊的极限，从广义上讲，该极限与曲线的切线相关。我还没说清楚
+
+17
+00:01:41,000 --> 00:01:46,000
+but we’ll see that later. For example, if you have a straight line, the simplest kind of curve,
+但我们稍后会看到。例如，如果您有一条直线（最简单的曲线）
+
+18
+00:01:46,000 --> 00:01:55,000
+then the slope of the straight line is rise over run. That’s difference in <i>y</i> over difference in <i>x</i>,
+则直线的斜率是 Rise 比 Run。分别是 <i>y</i> 与 <i>x</i> 的变化值，
+
+19
+00:01:55,000 --> 00:02:02,000
+and in the <i>f</i> notation, that’s <i>f</i>(<i>x</i>) − <i>f</i>(<i>a</i>) over <i>x</i> − <i>a</i>. The question is,
+在一般函数 <i>f</i> 中，它是 <i>f</i>(<i>x</i>) − <i>f</i>(<i>a</i>) 比 <i>x</i> − <i>a</i>
+
+20
+00:02:02,000 --> 00:02:08,000
+is that good enough for a general function <i>f</i>, and the answer is no. This only gives you
+问题是，对于一般函数 <i>f</i> 这个比值是否足够好，答案是否定的。 这只会给你
+
+21
+00:02:08,000 --> 00:02:13,000
+the slope of the secant line for an arbitrary function <i>f</i>. Let’s see that.
+函数 <i>f</i> 的割线的斜率。 让我们看看。
+
+22
+00:02:13,000 --> 00:02:23,000
+Here’s a function <i>f</i>[<i>x</i>] = 1/<i>x</i>, a very simple function, and let’s take two points on it, (1/2, 2) and (3, 1/3),
+这是一个函数 <i>f</i>[<i>x</i>] = 1/<i>x</i>，这是一个非常简单的函数，让我们对它取两点，(1/2, 2) 和 (3, 1/3),
+
+23
+00:02:23,000 --> 00:02:29,000
+and work out the slope of the secant line between those two points. That’s −2/3.
+并计算出这两点之间的割线斜率。 是 −2/3。
+
+24
+00:02:29,000 --> 00:02:35,000
+Now if you draw the graph of the function and that secant line, you see it’s not quite what we need.
+现在，如果您绘制函数图和该割线，就会发现它并不是我们所需要的。
+
+25
+00:02:35,000 --> 00:02:42,000
+It’s just a little too far off to be useful. What’s missing over here is that the two points
+它还缺乏实用性。这里欠缺的是，
+
+26
+00:02:42,000 --> 00:02:51,000
+need to be really close by, and so really what we need is the notion of limits that we studied earlier on.
+这两个点需要非常接近，因此我们真正需要的是我们先前研究的极限的概念。
+
+27
+00:02:55,000 --> 00:03:03,000
+To find the tangent line to a curve at a point, you really need to take the limit of secant lines.
+要找到一条曲线的切线，您确实需要采用割线的极限。
+
+28
+00:03:03,000 --> 00:03:08,000
+To be more precise, you need to find the difference in <i>f</i> between <i>x</i> and <i>a</i>
+更准确地说，您需要找到 <i>x</i> 和 <i>a</i> 之间的函数值 <i>f</i> 的差值
+
+29
+00:03:08,000 --> 00:03:15,000
+over the difference in <i>x</i> itself, and then take the limit as <i>x</i> approaches the given point <i>a</i>.
+与 <i>x</i> 差值的比值，然后取 <i>x</i> 在给定点 <i>a</i> 处的极限。
+
+30
+00:03:15,000 --> 00:03:23,000
+This is what will give you the slope of the tangent line that goes through the required point (<i>a</i>, <i>f</i>[<i>a</i>]).
+这将给出过一给定点 (<i>a</i>, <i>f</i>[<i>a</i>]) 的切线的斜率
+
+31
+00:03:23,000 --> 00:03:28,000
+Here’s an example to show you that you have a secant line over here, and then as you let
+这是一个示例，向您展示在这里有一条割线，
+
+32
+00:03:28,000 --> 00:03:33,000
+the points come closer and closer, you will then get the tangent line.
+然后随着点越来越近，您将得到切线。
+
+33
+00:03:33,000 --> 00:03:40,000
+It’s only in the limit that you actually get the tangent line starting from a secant line.
+实际上只有从割线出发求极限才能真正得到切线。
+
+34
+00:03:41,000 --> 00:03:50,000
+Okay. As an example of a tangent line, let’s take the curve of <i>f</i>[<i>x</i>] = <i>x</i>^3, and here’s a slope of
+好的。 作为一个切线的例子，让我们以曲线 <i>f</i>[<i>x</i>] = <i>x</i>^3
+
+35
+00:03:50,000 --> 00:03:57,000
+the secant line through the point (1, 1) and the limit, and that’s the slope of the tangent.
+为例，这是过点 (1, 1) 的割线的斜率极其极限值，也就是切线的斜率。
+
+36
+00:03:57,000 --> 00:04:08,000
+If the slope is 3, then the equation is <i>y</i> − <i>y</i>1 equal to slope times (<i>x</i> − <i>x</i>1), and if you plot that,
+如果斜率是 3，则方程为 <i>y</i> − <i>y</i>1 = 斜率乘 (<i>x</i> − <i>x</i>1)
+
+37
+00:04:08,000 --> 00:04:17,000
+you surely do get the tangent line to the curve <i>x</i>^3 at this point (1, 1). Just to summarize,
+画图，就可以确定在点（1，1）处与曲线 <i>x</i>^3 的切线。 总结一下，
+
+38
+00:04:17,000 --> 00:04:24,000
+given a point on a curve, what you do first is you work out the limit of this quotient over here.
+给定曲线上的一个点，首先要做的是在此计算商的极限。
+
+39
+00:04:24,000 --> 00:04:31,000
+You get the slope. That slope can be used to find the equation of the line, and that line
+你得到了斜率。 该斜率可用于确定一条直线的方程，然后该直线就是切线。
+
+40
+00:04:31,000 --> 00:04:38,000
+is then the tangent line. It’s slope times (<i>x</i> − <i>x</i>1) + <i>y</i>1 in this plot over here.
+在此图中，它是斜率乘 (<i>x</i> − <i>x</i>1) + <i>y</i>1。
+
+41
+00:04:40,000 --> 00:04:46,000
+Okay. In practice, of course, we use something called the difference quotient to find derivatives.
+好的。 当然，实际上，我们使用所谓的差商来计算导数。
+
+42
+00:04:46,000 --> 00:04:52,000
+Here’s the difference quotient, but it says you want the limit as this number <i>h</i> approaches 0
+这是差商，但它表示在 <i>h</i> 趋于 0 时, 
+
+43
+00:04:52,000 --> 00:04:59,000
+of the difference between <i>f</i> at a nearby point and at the given point over <i>h</i>.
+在给定点 <i>f</i> 的函数值与相邻近一点的函数值的差与 <i>h</i> 的比值的极限
+
+44
+00:04:59,000 --> 00:05:06,000
+It’s still a slope, but it’s a slope in a slightly different form. As an example, suppose <i>f</i>[<i>x</i>] = 1/<i>x</i>.
+它仍然是斜率，但形式略有不同。 例如，假设 <i>f</i>[<i>x</i>] = 1/<i>x</i>。
+
+45
+00:05:06,000 --> 00:05:15,000
+Work out the slope over here, and you get −1. Now once you’ve got the slope, what you can do is
+算出这里的斜率，则得-1。现在，一旦有了斜率，您可以做的
+
+46
+00:05:15,000 --> 00:05:20,000
+you can plug in and find the equation of the tangent line, and here you are.
+就是代入并找到切线的方程式，就可以了。
+
+47
+00:05:20,000 --> 00:05:23,000
+That is the correct tangent line at the point.
+那是该点的正确切线。
+
+48
+00:05:23,000 --> 00:05:29,000
+Okay. Now a couple of places where you might find this notion. First of all, the idea of velocity.
+好的。 现在在几个地方可以有这个概念的对应。 首先是速度的概念。
+
+49
+00:05:29,000 --> 00:05:37,000
+The instantaneous velocity of a position function is given by the slope of a tangent line
+位置函数的瞬时速度由切线的斜率给出。
+
+50
+00:05:37,000 --> 00:05:41,000
+to the positional curve. If a particle is changing position and you want to find
+如果粒子正在改变位置，而您想找到
+
+51
+00:05:41,000 --> 00:05:47,000
+the speed or the velocity at a particular time, then all you do is you work out the tangent line
+一段时间的平均速度大小或特定时间点的速度，那么您要做的就是在该点上绘制曲线的切线。
+
+52
+00:05:47,000 --> 00:05:56,000
+to the curve at that point. For example, suppose that the position is this very simple function <i>s</i>[<i>t</i>] = 5<i>t</i>.
+例如，假设位置函数是这个非常简单的函数 <i>s</i>[<i>t</i>] = 5 <i>t</i>。
+
+53
+00:05:56,000 --> 00:06:02,000
+You work out the velocity by doing the difference quotient calculation we did earlier on,
+您通过执行我们之前做的差商计算出速度，
+
+54
+00:06:02,000 --> 00:06:09,000
+and then you find out that in fact the position is, in this case, a linear function
+然后发现实际上在这种情况下位置是线性函数
+
+55
+00:06:09,000 --> 00:06:14,000
+while the velocity is constant, which of course we could have guessed from earlier work
+虽然速度是恒定的，我们当然可以从早期
+
+56
+00:06:14,000 --> 00:06:27,000
+in your class on physics or other subjects. This is the notion of velocity as the derivative of position.
+的物理或其他学科课程的知识中猜到。 这是速度的概念，它是位移的导数。
+
+57
+00:06:27,000 --> 00:06:34,000
+Okay. A slightly harder problem. Suppose a ball is dropped from a building 100 m above the ground,
+好的。 一个稍微困难的问题。 假设有一个球从地面上方 100m
+
+58
+00:06:34,000 --> 00:06:38,000
+and you want to find the velocity of the ball after two seconds, let’s say,
+的建筑物上掉下来，而您想两秒钟后求出球的速度，
+
+59
+00:06:38,000 --> 00:06:43,000
+and you want to find out how fast it’s going when the ball hits the ground.
+并且您想找出当球击中地面时的速度。
+
+60
+00:06:43,000 --> 00:06:47,000
+There are two problems over here. You want to find what the velocity is after two seconds
+这里有两个问题。
+
+61
+00:06:47,000 --> 00:06:52,000
+and you want to find out how fast it is going, the ball is going, when it hits the ground.
+您想知道两秒钟后球的速度，想知道当球撞击地面时球的运动速度。
+
+62
+00:06:52,000 --> 00:07:00,000
+Now, you can work out the equation of motion as 100, the initial height, minus 4.9<i>t</i>^2—
+现在，您可以写出运动方程为 初始高度为100 减去 4.9<i>t</i>^2，
+
+63
+00:07:00,000 --> 00:07:05,000
+that comes from the acceleration of gravity—and then what you can do is you can work out
+它来自重力加速度，然后您可以做的是，可以使用差商计算出时间 
+
+64
+00:07:05,000 --> 00:07:12,000
+the speed at time <i>t</i> = 2 by using the difference quotient calculation. Now the question is
+<i>t</i> = 2 时的速度。 现在的问题是
+
+65
+00:07:12,000 --> 00:07:20,000
+why is it negative? It’s negative because the ball is going down. If you plot the position
+为什么是负的？ 因为球正在下降。
+
+66
+00:07:20,000 --> 00:07:28,000
+and the tangent equation we saw just now, that’s the velocity over here. Okay. The question now is
+如果您绘制位移函数和切线方程，就得到了速度。好的。 现在的问题是
+
+67
+00:07:28,000 --> 00:07:34,000
+what happens when the ball hits the ground? When the ball hits the ground, the displacement is 0.
+当球撞击地面时会发生什么？ 当球撞击地面时，位移为 0。
+
+68
+00:07:34,000 --> 00:07:44,000
+You solve that equation, which just says that the displacement is 0 when the time is about 4.517.
+您可以解该方程式，该方程式仅表示时间约为 4.517 时位移为 0。
+
+69
+00:07:44,000 --> 00:07:55,000
+Now you can plug into the derivative the speed, and you get back −44.2719.
+现在您可以将速度带入导数，然后返回−44.2719。
+
+70
+00:07:55,000 --> 00:08:02,000
+That’s the way to find out what happens to the ball when it hits the ground, what the speed is.
+这是找出球撞击地面时会发生什么情况，也就是求速度的方法。
+
+71
+00:08:04,000 --> 00:08:12,000
+Okay. Now the question is what is the slope of the tangent line at a point?
+好的。 现在的问题是切线在一点处的斜率是多少？
+
+72
+00:08:12,000 --> 00:08:17,000
+Well, it is the derivative at that point. When people say derivative at a point, what they really mean is
+是那时的导数。当人们在某一点说导数时，它们的真正含义是
+
+73
+00:08:17,000 --> 00:08:22,000
+the slope of the tangent line and vice versa. Now we have a shorthand for it.
+切线的斜率，反之亦然。现在我们有一个简写。
+
+74
+00:08:22,000 --> 00:08:29,000
+We use the notation <i>f</i>'[<i>x</i>] over there. If you say <i>f</i>[<i>x</i>] = <i>x</i>^3, then in the Wolfram Language,
+我们使用符号 <i>f</i>'[<i>x</i>]。 如果您定义 <i>f</i>[<i>x</i>] = <i>x</i>^3，那么在Wolfram语言中，
+
+75
+00:08:29,000 --> 00:08:39,000
+<i>f</i>'[1] is the derivative at <i>x</i> = 1. The derivative of <i>x</i>^3 at (1, 1) is 3.
+<i>f</i>'[1] 是 <i>x</i> = 1 的导数。<i>x</i>^3 在 (1, 1) 点的导数是3。
+
+76
+00:08:39,000 --> 00:08:45,000
+You can plot that and check that it in fact is the correct answer.
+您可以对其进行绘图，并检查它是否确实是正确的答案。
+
+77
+00:08:45,000 --> 00:08:50,000
+A couple of more concepts over here. First of all, we have a notion of a tangent line
+这里还有另外两个概念。
+
+78
+00:08:50,000 --> 00:08:54,000
+to a more general curve like over here. You’ve got the tangent line to a parabola,
+首先，我们有一条切线与更一般的曲线相切的概念。你有一条抛物线的切线，
+
+79
+00:08:54,000 --> 00:09:01,000
+and you want to work out a tangent equation for that parabola. What you do is
+并且您想为该抛物线求切线方程。 你要做的是
+
+80
+00:09:01,000 --> 00:09:09,000
+you set up an equation, which is <i>y</i> equal to slope, the derivative, times <i>x</i> − <i>x</i>1 plus <i>y</i>1,
+您定义一个函数，该函数是 <i>y</i> 等于斜率, 或者说是导数乘以  <i>x</i> − <i>x</i>1 加 <i>y</i>1
+
+81
+00:09:09,000 --> 00:09:19,000
+and you work it out. Then you get actually the required plot of the parabola
+回车运行。然后，您实际上得到了所需的抛物线图
+
+82
+00:09:19,000 --> 00:09:22,000
+with the tangent line at <i>x</i> = 2.
+以及抛物线在 <i>x</i> = 2 处的切线图像。
+
+83
+00:09:23,000 --> 00:09:31,000
+Now sometimes people talk about the average rate of change. Suppose you’ve got a function <i>y</i>[<i>x</i>],
+有时人们会讨论平均变化率。假设您有一个函数 <i>y</i>[<i>x</i>]，令 <i>x</i>
+
+84
+00:09:31,000 --> 00:09:39,000
+and let’s say <i>x</i> changes from <i>x</i>1 to <i>x</i>2. Naturally <i>y</i> changes from some <i>y</i>1 to <i>y</i>2.
+从 <i>x</i>1 变化到 <i>x</i>2。自然，<i>y</i> 从 <i>y</i>1 变为 <i>y</i>2。
+
+85
+00:09:39,000 --> 00:09:47,000
+The increment over here means that change in <i>x</i>, and the increment over there means the change in <i>y</i>,
+此处的增量表示 <i>x</i>的变化，而那里的增量表示<i>y</i>
+
+86
+00:09:47,000 --> 00:09:54,000
+so you’ve got Δ<i>x</i> and Δ<i>y</i> telling you what the change in <i>x</i> and the change in <i>y</i> are.
+的变化，因此您得到了Δ<i>x</i> 和 Δ<i>y</i> 表示 <i>x</i> 的变化和 <i>y</i>的变化。
+
+87
+00:09:54,000 --> 00:10:05,000
+Their ratio is what is called the average rate of change of <i>y</i> with respect to <i>x</i>, as you go from <i>x</i>1 to <i>x</i>2.
+它们的比值就是所谓的 <i>y</i> 相对于 <i>x</i> 的平均变化率。
+
+88
+00:10:05,000 --> 00:10:12,000
+This average rate of change is exactly the slope of the secant line between the two points.
+该平均变化率恰好是两点之间的割线的斜率。
+
+89
+00:10:12,000 --> 00:10:18,000
+For example, if you want to find the average rate of change over this interval, you simply find
+例如，如果要查找此时间间隔内的平均变化率，则只需用
+
+90
+00:10:18,000 --> 00:10:23,000
+the difference in the function values divided by the difference in the <i>x</i> values, and you get back
+函数值的差除以 <i>x</i>值的差，即可得到平均变化率。
+
+91
+00:10:23,000 --> 00:10:29,000
+the average rate. Here is a plot of the secant line along with the original curve.
+这是割线和原始曲线的图像。
+
+92
+00:10:33,000 --> 00:10:40,000
+As the secant line goes closer to the point, then of course we get the instantaneous rate of change.
+随着割线越来越接近该点，我们当然可以得到瞬时变化率。
+
+93
+00:10:40,000 --> 00:10:46,000
+The instantaneous rate of change is the change that you get when Δ<i>x</i>, the change in <i>x</i>, goes to 0.
+瞬时变化率是当 <i>x</i> 的变化 Δ<i>x</i> 变为 0 时获得的变化。
+
+94
+00:10:46,000 --> 00:10:54,000
+That is exactly the slope of the tangent line at that point. In our case,
+那就是该点处切线的斜率。
+
+95
+00:10:54,000 --> 00:11:02,000
+if we take the limit in the calculation, then you get back the tangent line at the point.
+在我们的例子中，如果我们在计算中取极限，那么您将获得该点的切线。
+
+96
+00:11:02,000 --> 00:11:07,000
+The instantaneous rate of change is exactly the derivative of <i>y</i> at <i>x</i>.
+瞬时变化率恰好是 <i>y</i> 在 <i>x</i> 处的导数。
+
+97
+00:11:10,000 --> 00:11:20,000
+Finally, an example involving tables. Here is the table showing the US national debt in billions
+最后，一个涉及列表的示例。
+
+98
+00:11:20,000 --> 00:11:28,000
+between 1980 and 2015, measured at 5 year increments. Here’s a plot.
+列表显示了 1980 年至 2015 年之间以 10 年为增量单位的十亿美元的美国国债。这是图像。
+
+99
+00:11:28,000 --> 00:11:37,000
+It’s clearly going up. The question is can you estimate the instantaneous rate of change at the year 2010?
+函数显然上升了。 问题是您可以估计 2010 年的瞬时变化率吗？
+
+100
+00:11:37,000 --> 00:11:43,000
+As a first step, what you do is you make a piecewise function from it, because that lets you
+第一步，您要做的是从中创建一个分段函数，因为这使您
+
+101
+00:11:43,000 --> 00:11:49,000
+you build the function starting from the data. You want to find the derivative,
+可以从数据开始构建函数。您想要求导数，
+
+102
+00:11:49,000 --> 00:11:54,000
+so you set up the quotient like we did earlier on. You want to find 2010,
+因此您像我们之前那样定义了差商。
+
+103
+00:11:54,000 --> 00:12:01,000
+so that’s where that comes from. Then you can kind of interpolate—in other words,
+您想找到 2010，也就是我们所给定的点。然后，您可以进行插值-换句话说，
+
+104
+00:12:01,000 --> 00:12:08,000
+in other words, find an average of the values between 2005 and 2015, and that, roughly speaking,
+求出2005年至2015年之间的平均价值，
+
+105
+00:12:08,000 --> 00:12:17,000
+is the instantaneous rate of change at 2010. Roughly speaking, the rate of increase of debt
+大致来说，这是 2010 年的瞬时变化率。大致来说，债务的增长率是
+
+106
+00:12:17,000 --> 00:12:22,000
+is about 1.1 trillion dollars in the year 2010.
+在 2010 年约为1.1万亿美元。
+
+107
+00:12:25,000 --> 00:12:31,000
+Okay. That brings me to the end of today’s lesson, and the point is that the derivative of a function
+好的。我们到了今天的课程结尾，重点是函数的导数
+
+108
+00:12:31,000 --> 00:12:40,000
+is simply the slope of the function at that point. You can think of this derivative as being
+简单地是函数在该点的斜率。您可以认为导数是
+
+109
+00:12:40,000 --> 00:12:45,000
+the limit of the slopes of secant lines. You start a secant line, then you take the limit,
+割线斜率的极限。开始一条割线，然后取极限，然后得到切线的导数。
+
+110
+00:12:45,000 --> 00:12:53,000
+then you get the derivative of the tangent line. Now the derivative idea is very useful
+现在导数的思想在很多地方非常有用
+
+111
+00:12:53,000 --> 00:12:59,000
+in lots of places, like we saw for speed and that kind of thing in physics, and also for calculating,
+比如我们看到的速度和物理学中的一些概念，以及在计算方面, 
+
+112
+00:12:59,000 --> 00:13:06,000
+let’s say, debt in economics. Often the only data you have is a table of values, in which case
+比如说, 经济学中的债务。通常，您仅有的数据是值表，在这种情况下
+
+113
+00:13:06,000 --> 00:13:13,000
+you can approximate the derivative. The idea is that starting with a table of values,
+您可以近似导数。这个想法是从一个值表开始, 
+
+114
+00:13:13,000 --> 00:13:17,000
+you can find the approximate value, but of course you cannot calculate
+您可以找到一个近似值，但是您当然不能计算
+
+115
+00:13:17,000 --> 00:13:23,000
+the exact value of the derivative. That’s the idea for today, the idea of a derivative
+导数的确切值。 这就是今天的想法，导数的思想和变化率的概念。
+
+116
+00:13:23,000 --> 00:13:29,000
+and the notion of rate of change. In the next lesson, we’ll talk about the derivative itself
+在下一课中，我们将讨论作为函数的
+
+117
+00:13:29,000 --> 00:13:35,000
+as being a function just like function that you start with. I’ll stop over here.
+导数概念, 就像您一开始时使用的普通函数一样。 我在这结束本节课了。
+
+118
+00:13:35,000 --> 00:13:40,000
+Do go over today’s lesson, try the exercises and you should be in good shape for the next lesson,
