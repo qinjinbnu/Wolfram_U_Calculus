@@ -6,10 +6,7 @@ from itertools import cycle
 
 Open = partial(open, encoding='utf-8')
 with Open(中) as 中文文件, Open(英) as 英文文件, Open(输出, 'w') as f:
-    def newfile():
-        for i, 英文, 中文 in zip(cycle(range(4)), 英文文件, 中文文件):
-            yield 英文
-            if i == 2:
-                yield 中文
-    for k in newfile():
-        f.write(k)
+    for i, 英文, 中文 in zip(cycle(range(4)), 英文文件, 中文文件):
+        f.write(英文)
+        if i == 2:
+            f.write(中文)
