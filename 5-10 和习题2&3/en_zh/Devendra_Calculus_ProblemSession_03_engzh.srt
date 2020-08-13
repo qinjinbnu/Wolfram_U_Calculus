@@ -1,7 +1,7 @@
 1
 00:00:00,000 --> 00:00:07,000
 Hello, and welcome to Problem Session 3 of this introduction to calculus with Wolfram U.
-您好，欢迎来到 Wolfram U 的微积分课程问题部分第 3 课。
+您好，欢迎来到 Wolfram U 的微积分课程第 3 题。
 
 2
 00:00:07,000 --> 00:00:15,000
@@ -506,3 +506,11 @@ which is about rates of change, but before we do that, do make sure that you und
 102
 00:13:55,000 --> 00:14:01,000
 today’s problem session quite well and do practice a lot before we go on to the next topic.
+理解得很好，并且在进行下一个主题之前要进行很多练习。
+
+103
+00:14:01,000 --> 00:14:03,000
+Thank you. I’ll stop over here.
+谢谢。 我会在这里停下来。
+
+(翻译: 秦晋 北京师范大学)

@@ -486,4 +486,3 @@ go over the examples, the exercises and try and figure out how you might proceed
 00:14:35,000 --> 00:14:43,000
 by trying things on your own and mastering the area. Thank you very much. I’ll stop here.
 
-

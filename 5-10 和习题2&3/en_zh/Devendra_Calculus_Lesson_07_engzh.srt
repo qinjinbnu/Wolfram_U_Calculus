@@ -586,3 +586,11 @@ as being a function just like function that you start with. I’ll stop over her
 118
 00:13:35,000 --> 00:13:40,000
 Do go over today’s lesson, try the exercises and you should be in good shape for the next lesson,
+请仔细阅读今天的课程，尝试练习，您应该在下一课中保持良好状态。
+
+119
+00:13:40,000 --> 00:13:43,000
+which is lesson number 8. Thank you.
+下节课是第八课。谢谢。
+
+(翻译: 秦晋 北京师范大学)

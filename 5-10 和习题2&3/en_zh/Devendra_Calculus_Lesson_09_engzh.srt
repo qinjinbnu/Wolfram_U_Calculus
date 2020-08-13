@@ -361,3 +361,11 @@ I’ll stop over here. I hope you found this lesson really useful. This is where
 73
 00:08:29,000 --> 00:08:35,000
 where it becomes a very algebraic kind of process and becomes easy to apply in practice.
+从此微积分的计算成为一种非常代数化的过程，并且易于在实践中应用。
+
+74
+00:08:35,000 --> 00:08:37,000
+Thank you very much. I’ll stop over here.
+非常感谢你。 我在这里停下来。
+
+(翻译: 秦晋 北京师范大学)
