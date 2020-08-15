@@ -446,7 +446,7 @@ That’s a jump at a single point, but of course things can get much worse.
 90
 00:10:38,000 --> 00:10:47,000
 Here is the so-called floor function. The floor function will calculate the greatest integer
-这是所谓的阶梯函数 阶梯函数给出最大的整数值对于
+这是所谓的下取整函数 下取整函数给出小于等于 <i>x</i> 
 
 91
 00:10:47,000 --> 00:10:55,000
