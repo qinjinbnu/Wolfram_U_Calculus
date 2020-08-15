@@ -571,7 +571,7 @@ but it is somewhat harder to find the limits of rational functions which can bec
 115
 00:13:47,000 --> 00:13:54,000
 in the denominator at some point or piecewise functions where things can go quite wrong, et cetera.
-出现在分母上在某些点处 或者对一些分段函数甚至会更加糟糕 等等 
+的分母可以为0 或者对一些分段函数甚至会更加糟糕 等等 
 
 116
 00:13:55,000 --> 00:14:02,000
