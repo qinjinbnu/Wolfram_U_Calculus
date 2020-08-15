@@ -601,3 +601,11 @@ to discuss various problems which relate to the material covered so far. Do revi
 121
 00:14:28,000 --> 00:14:35,000
 go over the examples, the exercises and try and figure out how you might proceed
+复习一下例子和练习，并试着 
+
+122
+00:14:35,000 --> 00:14:43,000
+by trying things on your own and mastering the area. Thank you very much. I’ll stop here.
+自己试验并掌握这些知识 非常感谢 我就讲到这里 
+
+(翻译: 秦晋 北京师范大学)

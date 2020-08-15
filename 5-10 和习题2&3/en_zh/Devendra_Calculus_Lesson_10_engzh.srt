@@ -326,3 +326,11 @@ which deals with compositions of functions. But before then, do revise this less
 66
 00:07:54,000 --> 00:07:58,000
 you understand the trig function derivatives. I’ll stop over here.
+您理解三角函数的导数。我在这里停下来。
+
+67
+00:07:58,000 --> 00:08:01,000
+Thank you very much. I hope you enjoyed the lesson.
+非常感谢你。 希望您喜欢这个课程。
+
+(翻译: 秦晋 北京师范大学)

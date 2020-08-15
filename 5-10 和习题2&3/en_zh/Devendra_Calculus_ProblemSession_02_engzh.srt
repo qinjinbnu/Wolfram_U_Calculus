@@ -561,3 +561,11 @@ we’ll go on to talking about differentiation rules. But before doing that,
 113
 00:13:38,000 --> 00:13:44,000
 there is a small quiz for you to take. Do take Quiz 2, and then you’ll be ready for Lesson 9.
+有一个小测验供您完成。 完成测验 2，然后就可以开始第 9 课了。
+
+114
+00:13:44,000 --> 00:13:49,000
+Thank you very much. I hope that you’ve enjoyed today’s lesson. I’ll stop over here.
+非常感谢你。 希望您喜欢今天的课程。 我会在这里停下来。
+
+(翻译: 秦晋 北京师范大学)

@@ -1,0 +1,769 @@
+1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Problem Session 8 of this introduction to calculus with Wolfram U.
+大家好 这是 Wolfram U 微积分入门的习题课 8
+
+2
+00:00:06,000 --> 00:00:12,000
+The topic for this session is area between curves and volume.
+本次习题课的主题是曲线间的面积和体积
+
+3
+00:00:12,000 --> 00:00:15,000
+The first few problems are about areas,
+前几个是关于面积的
+
+4
+00:00:15,000 --> 00:00:18,000
+and the next few problems are about volumes.
+后几个是关于体积的
+
+5
+00:00:18,000 --> 00:00:20,000
+Let’s begin with problem number 1,
+从问题 1 开始
+
+6
+00:00:20,000 --> 00:00:25,000
+which says compute the area between the curves <i>f</i> and <i>g</i>
+计算 <i>f</i> 和 <i>g</i> 之间的区域面积
+
+7
+00:00:25,000 --> 00:00:33,000
+given by <i>x</i>^2 – 2 and <i>x</i>^3 + <i>x</i> + 7 between the limits –1 and 3 for <i>x</i>.
+函数关于 <i>x</i> 是 <i>x</i>^2 – 2 和 <i>x</i>^3 + <i>x</i> + 7 在 -1 与 3 之间
+
+8
+00:00:33,000 --> 00:00:36,000
+Here is a plot of the functions,
+这儿是函数的图像
+
+9
+00:00:36,000 --> 00:00:39,000
+and it’s clear that the orange line is above,
+很明显橙色线在上面
+
+10
+00:00:39,000 --> 00:00:44,000
+but that corresponds to <i>g</i>, so <I>g</I> is greater than <i>f</i> in the region.
+但是他是 <i>g</i> 的线 所以 <I>g</I> 比 <i>f</i> 高 在该区域上
+
+11
+00:00:44,000 --> 00:00:49,000
+The area would be the integral of <i>g</i> minus <i>f</i> from –1 to 3.
+面积是 <i>g</i> 减 <i>f</i> 在 –1 到 3 间的积分
+
+12
+00:00:49,000 --> 00:00:54,000
+Simplify a bit, and that is the answer for the area.
+化简后 这个答案就是面积
+
+13
+00:00:54,000 --> 00:00:59,000
+Problem number 2 says find the area
+问题 2 来计算面积
+
+14
+00:00:59,000 --> 00:01:02,000
+enclosed by these two curves over here.
+被这两条曲线包围
+
+15
+00:01:02,000 --> 00:01:06,000
+Again the functions are given to you,
+函数给你了
+
+16
+00:01:06,000 --> 00:01:07,000
+but you’re not given the points of intersection,
+但是没有给出交点
+
+17
+00:01:07,000 --> 00:01:10,000
+so let’s find them with Solve.
+所以我们要用 Solve 来算
+
+18
+00:01:10,000 --> 00:01:13,000
+Those are the intersection points.
+这俩是交点
+
+19
+00:01:13,000 --> 00:01:17,000
+Next you plot to get a geometrical picture,
+然后你画一个图
+
+20
+00:01:17,000 --> 00:01:23,000
+and it’s clear now that the –<i>x</i>^2 – 2 is the one that’s dominating,
+很明显现在 –<i>x</i>^2 – 2 是主要的那个
+
+21
+00:01:23,000 --> 00:01:28,000
+so <i>f</i> is greater than <i>g</i>, so you must do <i>f</i> minus <i>g</i> in the integral.
+所以 <i>f</i> 比 <i>g</i> 大 所以在积分里必须是 <i>f</i> 减 <i>g</i>
+
+22
+00:01:28,000 --> 00:01:30,000
+You do that for the given limits,
+按算的积分限做
+
+23
+00:01:30,000 --> 00:01:33,000
+and then you get the answer for the integral.
+然后就能得到积分的答案
+
+24
+00:01:35,000 --> 00:01:38,000
+Problem number 3 is the same kind of thing,
+问题 3 差不多
+
+25
+00:01:38,000 --> 00:01:41,000
+but now with <i>x</i> in terms of <i>y</i>.
+但是把 <i>x</i> 换成了 <i>y</i>
+
+26
+00:01:41,000 --> 00:01:45,000
+You’ve got two functions of <i>y</i>, 2<I>y</i> + 4 and <i>y</i>^3 – <i>y</i>,
+有两个 <i>y</i> 的函数 2<I>y</i> + 4 和 <i>y</i>^3 – <i>y</i>
+
+27
+00:01:45,000 --> 00:01:48,000
+between the limits –2 and 2.
+在 -2 到 2 之间
+
+28
+00:01:48,000 --> 00:01:52,000
+You need to use ParametricPlot to get the correct picture,
+需要用 ParametricPlot 来画正确的图像
+
+29
+00:01:52,000 --> 00:01:57,000
+and when you do that, it’s clear that <i>f</i> is greater than <i>g</i>
+并且当这么做时 显然 <i>f</i> 大于 <i>g</i>
+
+30
+00:01:57,000 --> 00:02:01,000
+because <i>f</i> is to the right of <I>g</i>.
+是因为 <i>f</i> 在 <I>g</i> 右边
+
+31
+00:02:01,000 --> 00:02:05,000
+You work out <i>f</i> minus <i>g</i> between the limits,
+计算上下限之间 <i>f</i> 减 <i>g</i> 的积分
+
+32
+00:02:05,000 --> 00:02:08,000
+and here is the answer for the integral.
+这是积出来的结果
+
+33
+00:02:10,000 --> 00:02:14,000
+Problem number 4 is about two functions of <i>y</i>,
+问题 4 是两个关于 <i>y</i> 的函数
+ 
+34
+00:02:14,000 --> 00:02:17,000
+but again this time you’re not given the points of intersection,
+但是依然没给出交点
+
+35
+00:02:17,000 --> 00:02:19,000
+so you want to find the area enclosed between them.
+然后你想要找到他们之间的封闭区域
+
+36
+00:02:19,000 --> 00:02:22,000
+You use the Solve function to find where they intersect.
+用 Solve 算出他们的交点
+
+37
+00:02:22,000 --> 00:02:26,000
+Here is a parametric plot showing you what happens,
+这是一个参数图 显示怎么样了
+
+38
+00:02:26,000 --> 00:02:30,000
+and it’s clear that <i>g</i> this time is greater than <i>f</i>,
+显然 这次 <i>g</i> 比 <i>f</i> 大
+
+39
+00:02:30,000 --> 00:02:35,000
+so you do <i>g</I> minus <i>f</i> and compute the integral,
+所以做的是 <i>g</I> 减 <i>f</i> 的积分
+
+40
+00:02:35,000 --> 00:02:39,000
+and you get back the answer for the area between those two curves.
+然后得到两条曲线间的面积
+
+41
+00:02:41,000 --> 00:02:44,000
+Number 5. Now we’re on to volumes.
+问题 5 现在是体积的问题
+
+42
+00:02:44,000 --> 00:02:48,000
+You’re given a solid with hexagonal cross sections,
+这有一个具有六边形横截面的固体
+
+43
+00:02:48,000 --> 00:02:52,000
+and you’re told that the area of those cross sections
+截面面积给你了
+
+44
+00:02:52,000 --> 00:02:54,000
+is given by 6√3<i>x</i>^2.
+是 6√3<i>x</i>^2
+
+45
+00:02:54,000 --> 00:02:58,000
+The question is to find the volume of the solid from 0 to 5.
+问题是这个固体在 0 到 5 之间的体积
+
+46
+00:02:58,000 --> 00:03:02,000
+Here’s a plot, but it doesn’t really matter what the details are;
+这是示意图 细节不重要
+
+47
+00:03:02,000 --> 00:03:04,000
+the main point is you have a formula for the volume
+关键是你有计算体积的公式
+
+48
+00:03:04,000 --> 00:03:08,000
+as the integral from <i>a</i> to <i>b</I> of the area.
+是这个面积从 <i>a</i> 到 <i>b</I> 的积分
+
+49
+00:03:08,000 --> 00:03:12,000
+In this case, you have 0 to 5 of the area,
+这里 是 0 到 5 之间的面积
+
+50
+00:03:12,000 --> 00:03:15,000
+and that’s easy to compute,
+很容易算出
+
+51
+00:03:15,000 --> 00:03:19,000
+so you get back the volume in this example.
+这个例子的体积
+
+52
+00:03:21,000 --> 00:03:25,000
+On to number 6, where you’re asked to find the volume
+问题 6 计算体积
+
+53
+00:03:25,000 --> 00:03:27,000
+of this rather difficult-looking solid
+这个看起来很难的固体
+
+54
+00:03:27,000 --> 00:03:31,000
+which has a base which is a semicircle.
+他的地面是半圆
+
+55
+00:03:31,000 --> 00:03:33,000
+You can see it over here.
+可以在这看到他
+
+56
+00:03:34,000 --> 00:03:38,000
+You want to compute the volume for this solid
+要算这个固体的体积
+
+57
+00:03:38,000 --> 00:03:43,000
+when the cross sections are equilateral triangles.
+他的横截面是等边三角形
+
+58
+00:03:43,000 --> 00:03:45,000
+Now that’s the difficult part.
+现在这里很难
+
+59
+00:03:45,000 --> 00:03:49,000
+How do you compute the area of each cross section?
+怎么算每个横截面的面积
+
+60
+00:03:49,000 --> 00:03:53,000
+Well, the area for an equilateral triangle is <i>x</i>^2(√3/4),
+好吧 等边三角形的面积是 <i>x</i>^2(√3/4)
+
+61
+00:03:53,000 --> 00:04:00,000
+but <i>x</i> in this case is just the semicircle function over here,
+但是 <i>x</i> 在这里是半圆的函数
+
+62
+00:04:00,000 --> 00:04:03,000
+so the area is (36 – <i>x</i>^2)(√3/4).
+所以面积是 (36 – <i>x</i>^2)(√3/4)
+
+63
+00:04:03,000 --> 00:04:05,000
+Work out the limits, but those are the limits
+算上下限 然后这些是上下限
+
+64
+00:04:05,000 --> 00:04:10,000
+where the semicircle cuts the <I>x</i> axis, which are –6 and 6,
+半圆切割了 <I>x</i> 轴 即在 –6 和 6之间
+65
+00:04:10,000 --> 00:04:12,000
+so that’s the area to compute.
+这就是要计算的区域
+
+66
+00:04:12,000 --> 00:04:15,000
+Work it out and you get the required volume.
+算出来就能得到体积
+
+67
+00:04:17,000 --> 00:04:22,000
+Okay. On to number 7, which says compute the volume of the solid
+好 问题 7 计算这个固体的体积
+
+68
+00:04:22,000 --> 00:04:24,000
+which is created when the region bounded by
+创建的区域收到边界限制
+
+69
+00:04:24,000 --> 00:04:29,000
+this function and the <i>x</i> axis is revolved around the <i>x</i> axis.
+由这个函数 并且绕 <i>x</i> 轴旋转
+
+70
+00:04:29,000 --> 00:04:34,000
+That’s the plot of the solid, and the point over here is that
+这是固体的图 重点是
+
+71
+00:04:34,000 --> 00:04:39,000
+you have a semicircle of radius 2, so the endpoints of the integral
+你有一个半径为 2 的半圆 所以积分的端点
+
+72
+00:04:39,000 --> 00:04:40,000
+will be –2 and 2 because that’s where
+是 -2 和 2 因为这是
+
+73
+00:04:40,000 --> 00:04:43,000
+the semicircle intersects the <i>x</i> axis.
+半圆和 <i>x</i> 轴的交点
+
+74
+00:04:43,000 --> 00:04:48,000
+Now apply the disk method, so you chop the solid up into small disks,
+现在用圆盘法 将固体切为小圆盘
+
+75
+00:04:48,000 --> 00:04:54,000
+and each disk has the √(4 – <i>x</I>^2) as the radius, so it’s π<i>r</i>^2.
+每个圆盘的半径是 √(4 – <i>x</I>^2) 所以面积是 π<i>r</i>^2
+
+76
+00:04:54,000 --> 00:04:59,000
+Work out the volume with the disk method, and that’s the answer.
+用圆盘法计算 这就是答案
+
+77
+00:04:59,000 --> 00:05:03,000
+Now of course in this simple case, you have a ball with a radius 2,
+当然 简单的时候 当球半径是 2 的时候
+
+78
+00:05:03,000 --> 00:05:07,000
+so its volume is 4(<i>r</i>^3)π/3.
+他的体积是 4(<i>r</i>^3)π/3
+
+79
+00:05:07,000 --> 00:05:09,000
+That’s just the same result that we got
+这和我们的结果一样
+
+80
+00:05:09,000 --> 00:05:12,000
+a little while ago using Integrate.
+前一阵子用 Integrate 算过
+
+81
+00:05:13,000 --> 00:05:18,000
+On to number 8, which says find the volume of the solid created
+问题 8 求这个固体体积 他是这样构造的
+
+82
+00:05:18,000 --> 00:05:20,000
+between this function over here
+由这个函数生成
+
+83
+00:05:20,000 --> 00:05:25,000
+and the <i>x</i> axis-bounded rotate from –π to π.
+绕 <i>x</i> 轴旋转 在 –π 到 π 之间
+
+84
+00:05:25,000 --> 00:05:28,000
+Okay. Again over here use the disk method.
+好 再次使用圆盘法
+
+85
+00:05:28,000 --> 00:05:32,000
+When you use the disk method, you see that each cross section
+在用圆盘法的时候 会看到每个横截面
+
+86
+00:05:32,000 --> 00:05:35,000
+has got radius (<i>x</i>Sin[<i>x</i>])^2,
+的半径是 (<i>x</i>Sin[<i>x</i>])^2
+
+87
+00:05:35,000 --> 00:05:39,000
+so you work out the volume with the disk method in this case.
+所以你可以用圆盘法来计算这个体积
+
+88
+00:05:41,000 --> 00:05:47,000
+Okay. On to a similar kind of calculation, but now for <i>y</i> functions.
+好的 算个差不多的 但现是 <i>y</i> 的函数
+
+89
+00:05:47,000 --> 00:05:52,000
+You have a region that’s bounded by 2<i>y</I>^2 on the <i>y</i> axis,
+你在 <i>y</i> 轴上有一个以 2<i>y</I>^2 为边界的有界区域
+
+90
+00:05:52,000 --> 00:05:59,000
+and you want to work out the volume of the solid from <i>y</i> = 1 to <i>y</i> = 3.
+然后要计算 <i>y</i> = 1 到 <i>y</i> = 3 之间的体积
+
+91
+00:05:59,000 --> 00:06:02,000
+That’s the picture of the solid.
+这是固体的图像
+
+92
+00:06:02,000 --> 00:06:06,000
+Apply the disk method, but this time the radius is 2<i>y</i>^2.
+由圆盘法 这次的半径是 2<i>y</i>^2
+
+93
+00:06:06,000 --> 00:06:09,000
+Use the formula for the disk method,
+利用圆盘法的公式
+
+94
+00:06:09,000 --> 00:06:11,000
+and you get back the volume.
+就能得到体积
+
+95
+00:06:12,000 --> 00:06:17,000
+Okay. On to number 10, which says compute the volume of the solid
+问题 10 计算这个体积
+
+96
+00:06:17,000 --> 00:06:21,000
+created when the region bounded by 2<i>x</i> and (<i>x</i>^2)/3
+由这个在 2<i>x</i> 和 (<i>x</i>^2)/3 之间的有界区域生成
+
+97
+00:06:21,000 --> 00:06:27,000
+from <i>x</I> = 0 to <i>x</i> = 6 is revolved around the <i>x</i> axis.
+从 <i>x</I> = 0 到 <i>x</i> = 6 绕 <i>x</i> 轴旋转
+
+98
+00:06:27,000 --> 00:06:29,000
+Now there are two functions over here.
+这儿有两个函数
+
+99
+00:06:29,000 --> 00:06:32,000
+When you plot over here, you see you’ve got a region
+画出来 你就能看到这个区域
+
+100
+00:06:32,000 --> 00:06:34,000
+bounded by two functions,
+被这两个函数包围
+
+101
+00:06:34,000 --> 00:06:38,000
+and that’s a good case to apply the washer method to.
+这是个很好的使用垫圈法的例子
+
+102
+00:06:38,000 --> 00:06:39,000
+We apply the washer method.
+用垫圈法
+
+103
+00:06:39,000 --> 00:06:42,000
+The outer radius is 2<i>x</i> from here.
+外半径是 2<i>x</i>
+
+104
+00:06:42,000 --> 00:06:44,000
+The inner radius is (<i>x</i>^2)/3.
+内半径是 (<i>x</i>^2)/3
+
+105
+00:06:44,000 --> 00:06:50,000
+You simply apply a difference of the radii square over here,
+简单的将半径做差
+
+106
+00:06:50,000 --> 00:06:53,000
+so you get π times the outer radius squared
+然后得到 π 乘 这个外半径方
+
+107
+00:06:53,000 --> 00:06:56,000
+minus the inner radius squared and work out the volume
+减内半径方 得到体积
+
+108
+00:06:56,000 --> 00:06:58,000
+with the washer method.
+用垫圈法
+
+109
+00:07:00,000 --> 00:07:05,000
+On to number 11, which talks about find the volume created
+问题 11 算这个体积 这样构造的
+
+110
+00:07:05,000 --> 00:07:10,000
+when the region bounded by (<i>y</i>^4)/8 and 2<i>y</i>^2 from those two limits
+有界区域被 (<i>y</i>^4)/8 和 2<i>y</i>^2 这两个函数限制
+
+111
+00:07:10,000 --> 00:07:12,000
+is revolved around the <i>y</i> axis.
+绕 <i>y</i> 轴旋转
+
+112
+00:07:12,000 --> 00:07:13,000
+Here’s a plot.
+这是图
+
+113
+00:07:13,000 --> 00:07:16,000
+Once again, what you need to do is to apply the washer method
+还是 你要做的就是应用垫圈法
+
+114
+00:07:16,000 --> 00:07:18,000
+because you’ve got two functions.
+因为你有两个函数
+
+115
+00:07:18,000 --> 00:07:21,000
+Apply the washer method, compute the volume
+用垫圈法 算体积
+
+116
+00:07:21,000 --> 00:07:25,000
+by doing π times the difference of the squares of the radii,
+通过 π 去乘 半径平方的差
+
+117
+00:07:25,000 --> 00:07:29,000
+and that gives the answer for the volume.
+得到这个答案
+
+118
+00:07:30,000 --> 00:07:35,000
+Okay. On to number 12, and that’s about computing the volume
+好 问题 12 计算这个体积
+
+119
+00:07:35,000 --> 00:07:39,000
+of the solid created when the region bounded by this function
+由这个函数下的区域生成
+
+120
+00:07:39,000 --> 00:07:42,000
+and the <i>x</i> axis and the lines given over here
+给出 <i>x</i> 轴和这条线
+
+121
+00:07:42,000 --> 00:07:44,000
+is revolved around the <i>y</i> axis.
+绕 <i>y</i> 轴旋转
+
+122
+00:07:44,000 --> 00:07:46,000
+Now the point here is the <i>y</i> axis,
+现在这点是 <i>y</i> 轴
+
+123
+00:07:46,000 --> 00:07:50,000
+so you need to apply the cylindrical shell method.
+因此你需要用柱壳法
+
+124
+00:07:50,000 --> 00:07:53,000
+Okay. That’s the solid over here.
+好 这就是固体
+
+125
+00:07:53,000 --> 00:07:55,000
+You break it up into small cylinders, and keep in mind that
+把他分解成小圆柱 并且记住
+
+126
+00:07:55,000 --> 00:07:59,000
+for a cylinder method, you have to have 2π<i>rh</i>
+对于柱壳法 必须有 2π<i>rh</i>
+
+127
+00:07:59,000 --> 00:08:02,000
+where <i>h</i> is the function definition.
+这里 <i>h</i> 是函数高
+
+128
+00:08:02,000 --> 00:08:04,000
+So you do that and you get the volume back,
+这样你就可以得到体积
+
+129
+00:08:04,000 --> 00:08:07,000
+but this time using the cylindrical shell method
+但是这次使用柱壳法
+
+130
+00:08:07,000 --> 00:08:11,000
+because you are revolving around the <i>y</i> axis, not the <I>x</i> axis.
+因为你是绕 <i>y</i> 轴 而不是 <I>x</i> 轴
+
+131
+00:08:13,000 --> 00:08:17,000
+Number 13 says find the volume of the solid created
+问题 13 算这个体积他是构造出来的
+
+132
+00:08:17,000 --> 00:08:20,000
+when the region bounded by this, the <i>y</i> axis
+有界区域是这样的 <i>y</i> 轴
+
+133
+00:08:20,000 --> 00:08:24,000
+and the two values given over here is revolved around the <i>x</i> axis.
+和这儿给的两个值之间 绕 <i>x</i> 轴旋转
+
+134
+00:08:24,000 --> 00:08:30,000
+Once again, that’s the plot, but apply the cylindrical shell method
+再说一次 这是图像 但是要用柱壳法
+
+135
+00:08:30,000 --> 00:08:35,000
+because you have revolving around the <i>x</i> rather than the <i>y</i> axis.
+因为你是绕 <i>x</i> 轴而不是 <i>y</i> 轴旋转
+
+136
+00:08:35,000 --> 00:08:43,000
+You do 2π<i>rh</i> where <i>r</i> is <i>y</i> and <i>h</i> is the function expression.
+用 2π<i>rh</i> 这里 <i>r</i> 是 <i>y</i> <i>h</i> 是 函数值
+
+137
+00:08:44,000 --> 00:08:47,000
+Apply that and you get back the volume
+用完后 就能算得体积
+
+138
+00:08:47,000 --> 00:08:49,000
+using the cylindrical shell method.
+用柱壳法
+
+139
+00:08:51,000 --> 00:08:53,000
+Finally, on to number 14.
+最后 问题 14
+
+140
+00:08:53,000 --> 00:08:57,000
+That says compute the volume of the solid created
+算这个体积 这样构造的
+
+141
+00:08:57,000 --> 00:09:01,000
+when the region bounded by –<i>x</i>^2 + 2 and the <i>x</i> axis
+区域在 –<i>x</i>^2 + 2 和 <i>x</i> 轴之间
+
+142
+00:09:01,000 --> 00:09:04,000
+is revolved around the line <i>y</i> = 4.
+绕 <i>y</i> = 4 轴旋转
+
+143
+00:09:04,000 --> 00:09:06,000
+If you think about it, we’ll apply the disk method,
+如果你思考一下 那么将用圆盘法
+
+144
+00:09:06,000 --> 00:09:09,000
+but this time the radii will be obtained
+但是这次半径将
+
+145
+00:09:09,000 --> 00:09:14,000
+by subtracting the function value from 4
+是 4 减去 函数值
+
+146
+00:09:14,000 --> 00:09:19,000
+because 4 is the line around which you are rotating, <i>y</i> = 4.
+因为是绕 4 旋转的 所以 <i>y</i> = 4
+
+147
+00:09:19,000 --> 00:09:25,000
+Then you work out the endpoints, get the integral over here.
+然后算出端点 得到积分
+
+148
+00:09:25,000 --> 00:09:29,000
+That’s π<i>r</i>^2<i>dx</i>.
+就是 π<i>r</i>^2<i>dx</i>
+
+149
+00:09:29,000 --> 00:09:31,000
+Put in the limits, and you get back
+给定上下限 就能得到
+
+150
+00:09:31,000 --> 00:09:34,000
+the answer for the volume in the disk method.
+圆盘法下的体积
+
+151
+00:09:35,000 --> 00:09:38,000
+That brings me to the end of this problem session.
+习题课到此结束
+
+152
+00:09:38,000 --> 00:09:42,000
+I hope you have learned these very important ideas,
+我希望你能理解这些重要的思路
+
+153
+00:09:42,000 --> 00:09:44,000
+and I’ll see you next time.
+我们下次见
+
+154
+00:09:44,000 --> 00:09:45,000
+Thank you.
+再见
+翻译：兰州大学 周怀尚

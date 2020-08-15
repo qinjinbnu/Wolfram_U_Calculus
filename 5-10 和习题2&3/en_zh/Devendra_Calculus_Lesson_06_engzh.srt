@@ -596,3 +596,11 @@ we start looking deeper into calculus, but before doing that, do review today’
 120
 00:13:17,000 --> 00:13:23,000
 try and solve the exercises and be ready for the next time. It was great to present this to you.
+尝试解决这些问题，并为下一次做好准备。很高兴向您介绍这个。
+
+121
+00:13:23,000 --> 00:13:24,000
+Thank you very much.
+非常感谢你。
+
+(翻译: 秦晋 北京师范大学)
