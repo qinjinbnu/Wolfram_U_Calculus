@@ -521,7 +521,7 @@ and if you plot them, you see that <i>g</i> is tightly squeezed between <i>f</i>
 105
 00:12:44,000 --> 00:12:51,000
 <i>g</i> is this wiggly function over here, and it’s very tightly squeezed. The squeeze theorem says that
-<i>g</i> 是这儿的弯曲的函数 并且紧密的夹在中间 两边夹定理说
+<i>g</i> 是这儿的上下波动的函数 并且紧密的夹在中间 两边夹定理说
 
 106
 00:12:51,000 --> 00:12:57,000
