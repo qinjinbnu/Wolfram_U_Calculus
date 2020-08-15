@@ -528,5 +528,5 @@ and then the next time, we’ll talk about the substitution rule.
 Thank you very much. I’ll stop over here.
 本节课到此为止，再见
  
- 翻译：兰州大学 周怀尚
+(翻译：周怀尚 兰州大学)
 
