@@ -321,7 +321,7 @@ we cannot use a direct computation, so what we do is we factor the numerator
 65
 00:07:38,000 --> 00:07:46,000
 and check that, in fact, we have a common factor of 1 + <i>x</i>. To cancel this common factor,
-观察一下 事实上 我们有公因式 1 + <i>x</i> 消去公因子
+观察一下 事实上 我们有公因式 1 + <i>x</i> 消去公因式
 
 66
 00:07:46,000 --> 00:07:52,000
