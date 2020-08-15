@@ -1,0 +1,344 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11933,        336]
+NotebookOptionsPosition[     11132,        315]
+NotebookOutlinePosition[     11568,        332]
+CellTagsIndexPosition[     11525,        329]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"zhname", "=", 
+     RowBox[{
+     "\"\</home/qinjin/Wolfram_U_Calculus/5-10 \
+\:548c\:4e60\:98982&3/Devendra_Calculus_Lesson_0\>\"", "<>", 
+      RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<_eng.zh.srt\>\""}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"enname", "=", 
+     RowBox[{
+     "\"\</home/qinjin/Wolfram_U_Calculus/5-10 \
+\:548c\:4e60\:98982&3/Devendra_Calculus_Lesson_0\>\"", "<>", 
+      RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<_eng.srt\>\""}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"zh", "=", 
+     RowBox[{"Import", "[", 
+      RowBox[{"zhname", ",", "\"\<Text\>\""}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"en", "=", 
+     RowBox[{"Import", "[", 
+      RowBox[{"enname", ",", "\"\<Text\>\""}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"ori", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"StringSplit", "[", 
+           RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], "@", "zh"}], 
+        ")"}], "\[LeftDoubleBracket]", 
+       RowBox[{"3", ";;", ";;", "4"}], "\[RightDoubleBracket]"}], "~", "Join",
+       "~", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"StringSplit", "[", 
+            RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], "@", "zh"}], 
+         ")"}], "\[LeftDoubleBracket]", 
+        RowBox[{"-", "1"}], "\[RightDoubleBracket]"}], "}"}]}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"des", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"StringSplit", "[", 
+           RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], "@", "en"}], 
+        ")"}], "~", "Join", "~", 
+       RowBox[{"{", "\"\<\>\"", "}"}]}], "//", 
+      RowBox[{
+       RowBox[{"Partition", "[", 
+        RowBox[{"#", ",", "4"}], "]"}], "&"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"Riffle", "[", 
+          RowBox[{"des", ",", "ori"}], "]"}], "~", "Join", "~", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"ori", "\[LeftDoubleBracket]", 
+            RowBox[{"-", "2"}], "\[RightDoubleBracket]"}], ",", 
+           RowBox[{"ori", "\[LeftDoubleBracket]", 
+            RowBox[{"-", "1"}], "\[RightDoubleBracket]"}]}], "}"}]}], "//", 
+        "Flatten"}], "//", 
+       RowBox[{
+        RowBox[{"#", "/.", 
+         RowBox[{"\"\<\>\"", "\[Rule]", "Nothing"}]}], "&"}]}], "//", 
+      RowBox[{
+       RowBox[{"Riffle", "[", 
+        RowBox[{"#", ",", "\"\<\>\"", ",", "5"}], "]"}], "&"}]}], "//", 
+     RowBox[{
+      RowBox[{"Export", "[", 
+       RowBox[{
+        RowBox[{
+        "\"\</home/qinjin/Wolfram_U_Calculus/5-10 \
+\:548c\:4e60\:98982&3/en_zh/Devendra_Calculus_Lesson_0\>\"", "<>", 
+         RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<_engzh.txt\>\""}], 
+        ",", "#"}], "]"}], "&"}]}]}], "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "5", ",", "9"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.806311558176203*^9, 3.806311604376952*^9}, {
+   3.806312322384222*^9, 3.8063123469137707`*^9}, {3.8063161892754593`*^9, 
+   3.806316385187554*^9}, {3.80631644463512*^9, 3.806316458653541*^9}, 
+   3.806327539418337*^9},ExpressionUUID->"bb51d999-00db-4c0f-9ab3-\
+7be400ea7ecc"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+  "zhname", "=", 
+   "\"\</home/qinjin/Wolfram_U_Calculus/5-10 \
+\:548c\:4e60\:98982&3/Devendra_Calculus_Lesson_10_eng.zh.srt\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+   "enname", "=", 
+    "\"\</home/qinjin/Wolfram_U_Calculus/5-10 \
+\:548c\:4e60\:98982&3/Devendra_Calculus_Lesson_10_eng.srt\>\""}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"zh", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"zhname", ",", "\"\<Text\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"en", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"enname", ",", "\"\<Text\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ori", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"StringSplit", "[", 
+         RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], "@", "zh"}], ")"}], 
+     "\[LeftDoubleBracket]", 
+     RowBox[{"3", ";;", ";;", "4"}], "\[RightDoubleBracket]"}], "~", "Join", 
+    "~", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"StringSplit", "[", 
+          RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], "@", "zh"}], ")"}],
+       "\[LeftDoubleBracket]", 
+      RowBox[{"-", "1"}], "\[RightDoubleBracket]"}], "}"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"des", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"StringSplit", "[", 
+         RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], "@", "en"}], ")"}], 
+     "~", "Join", "~", 
+     RowBox[{"{", "\"\<\>\"", "}"}]}], "//", 
+    RowBox[{
+     RowBox[{"Partition", "[", 
+      RowBox[{"#", ",", "4"}], "]"}], "&"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"Riffle", "[", 
+       RowBox[{"des", ",", "ori"}], "]"}], "~", "Join", "~", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"ori", "\[LeftDoubleBracket]", 
+         RowBox[{"-", "2"}], "\[RightDoubleBracket]"}], ",", 
+        RowBox[{"ori", "\[LeftDoubleBracket]", 
+         RowBox[{"-", "1"}], "\[RightDoubleBracket]"}]}], "}"}]}], "//", 
+     "Flatten"}], "//", 
+    RowBox[{
+     RowBox[{"#", "/.", 
+      RowBox[{"\"\<\>\"", "\[Rule]", "Nothing"}]}], "&"}]}], "//", 
+   RowBox[{
+    RowBox[{"Riffle", "[", 
+     RowBox[{"#", ",", "\"\<\>\"", ",", "5"}], "]"}], "&"}]}], "//", 
+  RowBox[{
+   RowBox[{"Export", "[", 
+    RowBox[{
+    "\"\</home/qinjin/Wolfram_U_Calculus/5-10 \
+\:548c\:4e60\:98982&3/en_zh/Devendra_Calculus_Lesson_10_engzh.txt\>\"", ",", 
+     "#"}], "]"}], "&"}]}]}], "Input",
+ CellChangeTimes->{{3.8063116080429153`*^9, 3.806311617115498*^9}, 
+   3.8063161877669077`*^9, {3.806316498831037*^9, 3.8063165395465517`*^9}, {
+   3.806327158948214*^9, 3.806327176104828*^9}, {3.806327233323514*^9, 
+   3.806327243985821*^9}, {3.806327315782383*^9, 3.806327332835463*^9}, {
+   3.80632746521317*^9, 3.8063274831109324`*^9}},
+ CellLabel->"In[26]:=",ExpressionUUID->"94f0d928-7839-431e-b51a-f41fc954c71e"],
+
+Cell[BoxData["\<\"/home/qinjin/Wolfram_U_Calculus/5-10 \
+\:548c\:4e60\:98982&3/en_zh/Devendra_Calculus_Lesson_10_engzh.txt\"\>"], \
+"Output",
+ CellChangeTimes->{3.806316546100728*^9, 3.806327072544712*^9, 
+  3.806327244738112*^9, 3.806327483846842*^9},
+ CellLabel->"Out[32]=",ExpressionUUID->"6ac8457d-9bb9-441e-8d17-54c845b7533f"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Devendra_Calculus", "_ProblemSession", "_", "02", "_eng"}]], "Input",
+ CellChangeTimes->{{3.806316668417995*^9, 
+  3.806316668419598*^9}},ExpressionUUID->"b99ea483-0253-483b-b24a-\
+a73697936411"],
+
+Cell[BoxData[
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"zhname", "=", 
+     RowBox[{
+     "\"\</home/qinjin/Wolfram_U_Calculus/5-10 \
+\:548c\:4e60\:98982&3/Devendra_Calculus_ProblemSession_0\>\"", "<>", 
+      RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<_eng.zh.srt\>\""}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"enname", "=", 
+     RowBox[{
+     "\"\</home/qinjin/Wolfram_U_Calculus/5-10 \
+\:548c\:4e60\:98982&3/Devendra_Calculus_ProblemSession_0\>\"", "<>", 
+      RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<_eng.srt\>\""}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"zh", "=", 
+     RowBox[{"Import", "[", 
+      RowBox[{"zhname", ",", "\"\<Text\>\""}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"en", "=", 
+     RowBox[{"Import", "[", 
+      RowBox[{"enname", ",", "\"\<Text\>\""}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"ori", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"StringSplit", "[", 
+           RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], "@", "zh"}], 
+        ")"}], "\[LeftDoubleBracket]", 
+       RowBox[{"3", ";;", ";;", "4"}], "\[RightDoubleBracket]"}], "~", "Join",
+       "~", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"StringSplit", "[", 
+            RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], "@", "zh"}], 
+         ")"}], "\[LeftDoubleBracket]", 
+        RowBox[{"-", "1"}], "\[RightDoubleBracket]"}], "}"}]}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"des", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"StringSplit", "[", 
+           RowBox[{"#", ",", "\"\<\\n\>\""}], "]"}], "&"}], "@", "en"}], 
+        ")"}], "~", "Join", "~", 
+       RowBox[{"{", "\"\<\>\"", "}"}]}], "//", 
+      RowBox[{
+       RowBox[{"Partition", "[", 
+        RowBox[{"#", ",", "4"}], "]"}], "&"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"Riffle", "[", 
+          RowBox[{"des", ",", "ori"}], "]"}], "~", "Join", "~", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"ori", "\[LeftDoubleBracket]", 
+            RowBox[{"-", "2"}], "\[RightDoubleBracket]"}], ",", 
+           RowBox[{"ori", "\[LeftDoubleBracket]", 
+            RowBox[{"-", "1"}], "\[RightDoubleBracket]"}]}], "}"}]}], "//", 
+        "Flatten"}], "//", 
+       RowBox[{
+        RowBox[{"#", "/.", 
+         RowBox[{"\"\<\>\"", "\[Rule]", "Nothing"}]}], "&"}]}], "//", 
+      RowBox[{
+       RowBox[{"Riffle", "[", 
+        RowBox[{"#", ",", "\"\<\>\"", ",", "5"}], "]"}], "&"}]}], "//", 
+     RowBox[{
+      RowBox[{"Export", "[", 
+       RowBox[{
+        RowBox[{
+        "\"\</home/qinjin/Wolfram_U_Calculus/5-10 \
+\:548c\:4e60\:98982&3/en_zh/Devendra_Calculus_ProblemSession_0\>\"", "<>", 
+         RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<_engzh.txt\>\""}], 
+        ",", "#"}], "]"}], "&"}]}]}], "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "2", ",", "3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.806316675484579*^9, 3.80631670755555*^9}, 
+   3.806327552655278*^9},ExpressionUUID->"fc036467-f562-4e89-82d2-\
+833f1582d6ad"]
+},
+WindowSize->{1024.5, 552.75},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+Magnification:>1.2 Inherited,
+FrontEndVersion->"12.1 for Linux x86 (64-bit) (2020\:5e743\:670818\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4a2e0753-d739-40a2-845a-2c9d8eb9cd93"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3494, 92, 574, "Input",ExpressionUUID->"bb51d999-00db-4c0f-9ab3-7be400ea7ecc"],
+Cell[CellGroupData[{
+Cell[4077, 116, 3112, 91, 387, "Input",ExpressionUUID->"94f0d928-7839-431e-b51a-f41fc954c71e"],
+Cell[7192, 209, 331, 5, 39, "Output",ExpressionUUID->"6ac8457d-9bb9-441e-8d17-54c845b7533f"]
+}, Open  ]],
+Cell[7538, 217, 219, 4, 35, "Input",ExpressionUUID->"b99ea483-0253-483b-b24a-a73697936411"],
+Cell[7760, 223, 3368, 90, 574, "Input",ExpressionUUID->"fc036467-f562-4e89-82d2-833f1582d6ad"]
+}
+]
+*)
+
