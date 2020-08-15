@@ -246,7 +246,7 @@ then you can work out the limit of any polynomial. For example, if you want to w
 50
 00:05:55,000 --> 00:06:03,000
 the limit of 2<i>x</i>^2 − 4<i>x</i> + 3, you simply plug in the values over there, and you get back
-2<i>x</i>^2 − 4<i>x</i> + 3 在某一点的极限 只需简单的取多项式在那一点的值 就会得到 
+2<i>x</i>^2 − 4<i>x</i> + 3 在某一点的极限 只需简单地取多项式在那一点的值 就会得到 
 
 51
 00:06:03,000 --> 00:06:05,000
