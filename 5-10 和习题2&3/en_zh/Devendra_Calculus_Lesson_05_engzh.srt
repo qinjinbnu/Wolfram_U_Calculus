@@ -451,7 +451,7 @@ Here is the so-called floor function. The floor function will calculate the grea
 91
 00:10:47,000 --> 00:10:55,000
 less than or equal to <i>x</i>. The problem is to find where the limit does not exist
-对于小于等于 <i>x</i> 问题是找出在哪些点极限不存在 
+的最大整数值 问题是找出在那些点极限不存在 
 
 92
 00:10:55,000 --> 00:11:04,000
