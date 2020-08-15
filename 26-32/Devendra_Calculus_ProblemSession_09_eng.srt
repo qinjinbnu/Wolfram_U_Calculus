@@ -1,0 +1,666 @@
+1
+00:00:00,000 --> 00:00:04,000
+Hello, and welcome to Problem Session 9
+大家好 这是习题课 9
+
+2
+00:00:04,000 --> 00:00:07,000
+of this introduction to calculus with Wolfram U.
+配套于 Wolfram U 微积分入门
+
+3
+00:00:07,000 --> 00:00:12,000
+The topic for this session is numerical approximation of integrals,
+本节的主题是关于积分的数值近似
+
+4
+00:00:12,000 --> 00:00:19,000
+average value of a function, exponentials and logarithms.
+函数的均值 以及指数和对数
+
+5
+00:00:19,000 --> 00:00:23,000
+Let’s begin with the first problem on the session.
+来从第一个问题开始
+
+6
+00:00:23,000 --> 00:00:30,000
+The first problem says compute the derivative of 2<i>e</i>^<i>x</i>.
+问题 1 计算 2<i>e</i>^<i>x</i> 的导数
+
+7
+00:00:30,000 --> 00:00:33,000
+Now the derivative of <i>e</I>^<i>x</i> is itself,
+看 <i>e</I>^<i>x</i> 的导数就是他自己
+
+8
+00:00:33,000 --> 00:00:37,000
+so the required derivative is 2<i>e</I>^<i>x</i>.
+因此需要的导数是 2<i>e</I>^<i>x</i>
+
+9
+00:00:37,000 --> 00:00:40,000
+Let’s confirm that with D.
+我们用 D 确认一下
+
+10
+00:00:40,000 --> 00:00:45,000
+Here is a plot of the derivative.
+这是导数的图像
+
+11
+00:00:46,000 --> 00:00:53,000
+On to number 2, which says compute the indefinite integral of 3^<i>x</i>.
+问题 2 计算 3^<i>x</i> 的不定积分
+
+12
+00:00:53,000 --> 00:00:58,000
+The answer is simply 3^<i>x</i>/Log[3].
+很简单答案是 3^<i>x</i>/Log[3]
+
+13
+00:00:58,000 --> 00:01:00,000
+Let’s check that with Integrate.
+用 Integrate 核实一下
+
+14
+00:01:00,000 --> 00:01:02,000
+That’s correct.
+是对的
+
+15
+00:01:02,000 --> 00:01:06,000
+Let’s plot both the function and integral, and of course
+画出函数图像 当然
+
+16
+00:01:06,000 --> 00:01:10,000
+they just differ by a scale factor of Log[3].
+他和 Log[3] 就差乘一个常数
+
+17
+00:01:11,000 --> 00:01:17,000
+On to number 3, which says compute the derivative of 2^<i>x</i>^2.
+问题 3 计算 2^<i>x</i>^2 的导数
+
+18
+00:01:17,000 --> 00:01:21,000
+Now that’s a bit harder and requires the chain rule.
+现在有点难了 要用链式法则
+
+19
+00:01:21,000 --> 00:01:28,000
+You work out the as 2^<i>x</I>^2Log[2] times the derivative of <i>x</i>^2,
+用 2^<i>x</I>^2Log[2] 乘 <i>x</i>^2 的导数
+
+20
+00:01:28,000 --> 00:01:30,000
+which is 2<i>x</i>.
+他是 2<i>x</i>
+
+21
+00:01:30,000 --> 00:01:32,000
+You can check that with D.
+可以用 D 检查
+
+22
+00:01:32,000 --> 00:01:35,000
+Notice there’s a 2^(1 + <i>x</i>^2) over here.
+注意到这的 2^(1 + <i>x</i>^2)、
+
+23
+00:01:35,000 --> 00:01:38,000
+That’s where the extra 2 goes.
+这里就是多了 2 的地方
+
+24
+00:01:38,000 --> 00:01:41,000
+Let’s plot the function and the derivative.
+画函数的图像和导数的图像
+
+25
+00:01:41,000 --> 00:01:46,000
+You can see over here that the 2 occurs right over here.
+你可以看到 2 就在这里发生
+
+26
+00:01:46,000 --> 00:01:49,000
+Okay. On to number 4, which says
+好 问题 4
+
+27
+00:01:49,000 --> 00:01:55,000
+compute the integral from 0 to π/2 of Cos[<i>x</i>]<i>e</i>^Sin[<i>x</i>].
+计算从 0 到 π/2 的积分 Cos[<i>x</i>]<i>e</i>^Sin[<i>x</i>]
+
+28
+00:01:55,000 --> 00:01:58,000
+You make a small substitution.
+做个代换
+
+29
+00:01:58,000 --> 00:02:00,000
+You let <i>u</i> = Sin[<i>x</i>].
+令 Sin[<i>x</i>] = <i>u</i>
+
+30
+00:02:00,000 --> 00:02:05,000
+The <i>du</i> = Cos[<i>x</i>]<i>dx</i>, the derivative of Sin[<i>x</i>].
+那么 <i>du</i> = Cos[<i>x</i>]<i>dx</i> 就是 Sin[<i>x</i>] 的导数
+
+31
+00:02:06,000 --> 00:02:08,000
+Then you get a very simple integral
+然后得到一个非常简单的积分
+
+32
+00:02:08,000 --> 00:02:14,000
+because the limits become 0 to 1 when <i>x</I> is 0.
+因为当 <i>x</I> 是 0 的时候上下限变为 0
+
+33
+00:02:14,000 --> 00:02:16,000
+Then Sin[<i>x</I>] is 0.
+Sin[<i>x</I>] 是 0
+
+34
+00:02:16,000 --> 00:02:21,000
+When <i>x</i> is π/2, Sin[<i>x</i>] is 1, so you get <i>e</i>^<i>u</i> from 0 to 1,
+当 <i>x</i> 是 π/2 时 Sin[<i>x</i>] 是 1 所以有 <i>e</i>^<i>u</i> 从 0 到 1
+
+35
+00:02:21,000 --> 00:02:25,000
+which is—Integrate gives you <i>e</i> – 1.
+他的积分 Integrate 算的是 <i>e</i> – 1
+
+36
+00:02:25,000 --> 00:02:27,000
+Let’s check the answer with Integrate,
+用 Integrate 检查一下
+
+37
+00:02:27,000 --> 00:02:30,000
+and you get back the same answer.
+得到相同的答案
+
+38
+00:02:30,000 --> 00:02:33,000
+Now let’s plot the region being integrated,
+绘制被积区域的图像
+
+39
+00:02:33,000 --> 00:02:35,000
+and that’s the required plot.
+这是我们的图
+
+40
+00:02:37,000 --> 00:02:44,000
+On to number 5, which says compute the derivative of 4Log[3<i>x</i>].
+问题 5 计算 4Log[3<i>x</i>] 的导数
+
+41
+00:02:44,000 --> 00:02:48,000
+The answer is going to be 4 times the derivative of Log[3<i>x</i>],
+答案是 Log[3<i>x</i>] 的导数的 4 倍
+
+42
+00:02:48,000 --> 00:02:56,000
+which will be 1/3<i>x</i>, times 3 by the chain rule, so the answer is 4/<i>x</i>.
+他是 1/3<i>x</i> 通过链式法则乘 3 所以答案是 4/<i>x</i>
+
+43
+00:02:56,000 --> 00:02:59,000
+Let’s confirm that with D, and you do get back 4/<i>x</i>.
+用 D 验证 得到 4/<i>x</i>
+
+44
+00:02:59,000 --> 00:03:05,000
+Here is a plot of the function and its derivative.
+这是函数和他的导数的图像
+
+45
+00:03:07,000 --> 00:03:10,000
+On to number 6, which says compute the integral
+问题 6 计算积分
+
+46
+00:03:10,000 --> 00:03:15,000
+of <i>x</i>/(<i>x</i>^2 + 2) from –1 to 3.
+ <i>x</i>/(<i>x</i>^2 + 2) 在 -1 到 3 之间
+
+47
+00:03:15,000 --> 00:03:16,000
+Make a small substitution.
+用一个小替换
+
+48
+00:03:16,000 --> 00:03:24,000
+Let <i>u</i> be <I>x</i>^2 + 2, so <i>du</i> is 2<i>xdx</i>, the derivative of <i>x</i>^2 + 2.
+让 <i>u</i> 是 <I>x</i>^2 + 2 所以 <i>du</i> 是 2<i>xdx</i> 是 <i>x</i>^2 + 2 的导数
+
+49
+00:03:24,000 --> 00:03:29,000
+Now when <i>x</i> is –1, then <i>u</i> is 3.
+当 <i>x</i> 是 -1 时 <i>u</i> 是 3
+
+50
+00:03:29,000 --> 00:03:35,000
+When <i>x</i> is 3, then 3^2 + 2 is 11, so <I>u</i> is 11.
+当 <i>x</i> 是 3 时 3^2 + 2 是 11 所以 <I>u</i> is 11
+
+51
+00:03:35,000 --> 00:03:41,000
+You get back a much simpler integral which requires the Log function
+得到一个更简单的积分 他需要用 Log 函数
+
+52
+00:03:41,000 --> 00:03:45,000
+and the answer is 1/2Log[11/3].
+答案是 1/2Log[11/3]
+
+53
+00:03:45,000 --> 00:03:49,000
+Let’s check with Integrate, and you do get back the same answer.
+用 Integrate 检查 得到相同的答案
+
+54
+00:03:49,000 --> 00:03:55,000
+Here is a plot of the region that we just integrated.
+这是我们刚刚积分的区域图像
+
+55
+00:03:57,000 --> 00:03:59,000
+On to number 7, which says find
+问题 7 计算
+
+56
+00:03:59,000 --> 00:04:03,000
+the derivative of Log[<i>x</i>] to the base 5.
+以 5 为底 Log[<i>x</i>] 的导数
+57
+00:04:03,000 --> 00:04:06,000
+Well, that’s just going to be 1/<i>x</i>Log[5]
+好吧 他就是 1/<i>x</i>Log[5]
+58
+00:04:06,000 --> 00:04:12,000
+because you can rewrite the input as Log[<i>x</i>]/Log[5].
+因为你可以将输入改写为 Log[<i>x</i>]/Log[5]
+
+59
+00:04:12,000 --> 00:04:14,000
+Let’s check the answer with D,
+用 D 检查答案
+
+60
+00:04:14,000 --> 00:04:19,000
+and here is a plot of the function and its derivative.
+这是函数和他的导数的图像
+
+61
+00:04:22,000 --> 00:04:28,000
+On to number 8, which says compute the indefinite integral of Log[2<i>x</i>].
+问题 8 计算不定积分 Log[2<i>x</i>]
+
+62
+00:04:28,000 --> 00:04:30,000
+Well, we need a small substitution.
+做一个小替换
+
+63
+00:04:30,000 --> 00:04:33,000
+Let <i>u</i> be 2<i>x</i>, so <i>du</i> is 2<i>dx</i>.
+让 <i>u</i> 是 2<i>x</i> 所以 <i>du</i> 是 2<i>dx</i>
+
+64
+00:04:33,000 --> 00:04:38,000
+Then you get the integral of Log[<i>u</i>]<i>du</i>/2.
+然后得到积分 Log[<i>u</i>]<i>du</i>/2
+
+65
+00:04:38,000 --> 00:04:44,000
+Remember that the integral of Log[<i>u</i>] is <i>u</i>Log[<i>u</i>] – <i>u</i>,
+记住 Log[<i>u</i>] 的积分是 <i>u</i>Log[<i>u</i>] – <i>u</i>
+
+66
+00:04:44,000 --> 00:04:49,000
+so the answer is <i>x</i>Log[2<i>x</i>] – <i>x</i> + <i>C</i>.
+所以答案是 <i>x</i>Log[2<i>x</i>] – <i>x</i> + <i>C</i>
+
+67
+00:04:49,000 --> 00:04:53,000
+Here’s the same answer from Integrate minus the constant <i>C</i>,
+这是  Integrate 的答案减了  <i>C</i>
+
+68
+00:04:53,000 --> 00:05:00,000
+and here is a plot of the function and its integral when <i>C</i> is 0.
+这是 <i>C</i> 是 0 的时候的函数及其积分的图
+
+69
+00:05:03,000 --> 00:05:06,000
+On to number 9, which says compute the average value
+问题 9 计算均值
+
+70
+00:05:06,000 --> 00:05:11,000
+of the cubed root of <i>x</i> from 1 to 27.
+<i>x</i> 的立方根 从 1 到 27
+
+71
+00:05:11,000 --> 00:05:13,000
+Now the average value formula is
+现在的均值公式里
+
+72
+00:05:13,000 --> 00:05:15,000
+1 over the upper limit minus the lower limit—
+上限 27 减去下限
+
+73
+00:05:15,000 --> 00:05:17,000
+that’s the length of the interval—
+这是区间长度
+
+74
+00:05:17,000 --> 00:05:21,000
+times the integral of the function over that integral.
+乘函数在区域上的积分
+
+75
+00:05:21,000 --> 00:05:25,000
+Compute with Integrate and you get back 30/13,
+用 Integrate 得 30/13
+
+76
+00:05:25,000 --> 00:05:28,000
+and here is a plot of the function
+这是函数图像
+
+77
+00:05:28,000 --> 00:05:32,000
+and its average value on the same integral.
+这是他在同一个区域上的均值
+
+78
+00:05:34,000 --> 00:05:38,000
+On to number 10, which says find the point at which
+问题 10 找到这一点
+
+79
+00:05:38,000 --> 00:05:42,000
+the average value of this function over a certain interval
+函数在确定区域内的均值
+
+80
+00:05:42,000 --> 00:05:45,000
+equals the function value.
+等于这个函数值
+
+81
+00:05:45,000 --> 00:05:47,000
+Now that equals suggests that
+现在等于表明
+
+82
+00:05:47,000 --> 00:05:50,000
+you want to apply the mean value theorem.
+你应用均值定理
+
+83
+00:05:50,000 --> 00:05:51,000
+Let’s do that.
+来做
+
+84
+00:05:51,000 --> 00:05:56,000
+We solve the equation function value at a point <i>c</i>
+我们解方程 函数在 <i>c</i> 处的值
+
+85
+00:05:56,000 --> 00:06:04,000
+equal to the main value, and you get back that <i>c</i> is about 0.785.
+等于均值 你得到 <i>c</i> 大概是 0.785
+
+86
+00:06:04,000 --> 00:06:09,000
+Here is a plot of the function and its average value.
+这是函数及其均值的图
+
+87
+00:06:11,000 --> 00:06:18,000
+On to number 11, which says compute the average value of <i>e</i>^(<i>x</i>/2)
+问题 11 计算 <i>e</i>^(<i>x</i>/2) 的均值
+
+88
+00:06:18,000 --> 00:06:20,000
+over the interval 3 to 5.
+在 3 到 5 之间
+
+89
+00:06:20,000 --> 00:06:22,000
+That’s just a computation.
+这只是一个计算
+
+90
+00:06:22,000 --> 00:06:27,000
+It’s 1/(5 – 3) times the integral of the function over the interval.
+1/(5 – 3) 乘函数在区间上的积分
+
+91
+00:06:27,000 --> 00:06:30,000
+Here is the average value.
+这是均值
+
+92
+00:06:30,000 --> 00:06:34,000
+Then finally we have a plot of the function and the average value.
+最后我们画函数和他均值的图像
+
+93
+00:06:37,000 --> 00:06:41,000
+On to number 12,  which says use the midpoint rule
+问题 12 用中点法
+
+94
+00:06:41,000 --> 00:06:48,000
+with eight rectangles to compute the numerical approximation
+以 8 个矩形做数值近似
+
+95
+00:06:48,000 --> 00:06:51,000
+for this integral over here.
+对这个积分
+
+96
+00:06:51,000 --> 00:06:54,000
+For the midpoint rule, you take the midpoints
+对于中点法 取中点
+
+97
+00:06:54,000 --> 00:06:58,000
+as the points of the rectangles touch the curve,
+是矩形和曲线接触的点
+
+98
+00:06:58,000 --> 00:07:02,000
+so the width of each rectangle of course is just π/24
+当然每个矩形的宽是 π/24
+
+99
+00:07:02,000 --> 00:07:07,000
+because you have eight rectangles, and you want the sample points
+因为你有 8 个矩形 然后采样点
+100
+00:07:07,000 --> 00:07:11,000
+to be the midpoints of each subinterval.
+就是每个子区间的中点
+
+101
+00:07:12,000 --> 00:07:15,000
+The sum is going to be the sum from 1 to 8
+求和是从 1 加到 8
+
+102
+00:07:15,000 --> 00:07:18,000
+of the width of each rectangle
+没个矩形的宽
+
+103
+00:07:18,000 --> 00:07:21,000
+times the value of the function at the midpoint.
+乘重点处的函数值
+
+104
+00:07:21,000 --> 00:07:23,000
+Compute it with Sum.
+计算和式
+
+105
+00:07:23,000 --> 00:07:28,000
+You get back 0.7895 approximately.
+得到近似值是 0.7895
+
+106
+00:07:28,000 --> 00:07:32,000
+Check with NIntegrate, the built-in numerical integrator,
+用 NIntegrate 验算 这个内置数值积分器
+
+107
+00:07:32,000 --> 00:07:35,000
+and your values agree quite nicely because
+和你算的非常一致 因为
+
+108
+00:07:35,000 --> 00:07:39,000
+the midpoint rule is quite a powerful rule for approximation.
+中点法是非常强大的近似方法
+
+109
+00:07:42,000 --> 00:07:46,000
+On to number 13, which says use the trapezoidal rule
+问题 13 用梯形法
+
+110
+00:07:46,000 --> 00:07:49,000
+to estimate the integral over here.
+近似这个积分
+
+111
+00:07:49,000 --> 00:07:54,000
+Now for the trapezoidal rule, of course you’ll take the height to be
+对于梯形法 当然将高设为
+
+112
+00:07:54,000 --> 00:07:56,000
+just the width of these subintervals.
+子区间的宽度
+
+113
+00:07:56,000 --> 00:08:00,000
+That’s (2π – <i>e</i>)/5 because you want five trapezoids.
+是 (2π – <i>e</i>)/5 因为你想用 5 个梯形
+
+114
+00:08:00,000 --> 00:08:04,000
+Then you multiply that by the average, so to speak,
+然后将其乘以均值 可以说
+
+115
+00:08:04,000 --> 00:08:06,000
+of the values at the two endpoints,
+两个端点的均值
+
+116
+00:08:06,000 --> 00:08:09,000
+and you get back the approximation.
+然后你得到这个近似
+
+117
+00:08:09,000 --> 00:08:13,000
+In this case, the approximation is not very good
+这里 这个近似不是非常好
+
+118
+00:08:13,000 --> 00:08:18,000
+because the trapezoidal rule is typically not very accurate.
+因为梯形法通常不是非常精确
+
+119
+00:08:19,000 --> 00:08:21,000
+On to number 14.
+问题 14
+
+120
+00:08:21,000 --> 00:08:23,000
+How about Simpson’s rule?
+辛普森法如何？
+
+121
+00:08:23,000 --> 00:08:27,000
+You want to apply Simpson’s rule with 10 subsections
+用 10 个子区间的辛普森法
+
+122
+00:08:27,000 --> 00:08:31,000
+to compute the integral of Sin[Sin[<i>x</i>]] from 0 to π/2.
+计算积分 Sin[Sin[<i>x</i>]] 从 0 到 π/2
+
+123
+00:08:31,000 --> 00:08:33,000
+That’s a very difficult integral,
+这是个非常复杂的积分
+
+124
+00:08:33,000 --> 00:08:36,000
+but Simpson’s rule works really well over here.
+但是辛普森法的效果很好
+
+125
+00:08:36,000 --> 00:08:40,000
+The first step is you break up the integral into 10 subsections
+第一步是将区间划分为 10 个子区间
+
+126
+00:08:40,000 --> 00:08:43,000
+and you get π/20 for each of them as the length.
+每个区间长度是  π/20
+
+127
+00:08:43,000 --> 00:08:47,000
+Then apply the rule, which is basically you want to use
+应用方法 基本上你用
+128
+00:08:47,000 --> 00:08:57,000
+the rule 1, 4, 1—the values at f[2<i>i</i> – 2], f[2<i>i</i> – 1] and f[2<i>i</i>].
+这个方法 1 4 1 在 f[2<i>i</i> – 2] f[2<i>i</i> – 1] 和 f[2<i>i</i>] 处的函数值
+
+129
+00:08:57,000 --> 00:09:00,000
+Compute the approximation from Simpson’s rule,
+根据辛普森法计算近似值
+
+130
+00:09:00,000 --> 00:09:05,000
+and it agrees quite well with the actual answer.
+他和实际答案吻合的很好
+
+131
+00:09:06,000 --> 00:09:09,000
+That brings me to the end of this problem session.
+本节课到此为止
+
+132
+00:09:09,000 --> 00:09:13,000
+I hope you have learned a lot about average values
+我希望大家都能足够了解函数的均值
+
+133
+00:09:13,000 --> 00:09:16,000
+and approximations and exponentials and logs by now.
+近似值 还有指数和对数
+
+134
+00:09:16,000 --> 00:09:18,000
+I’ll stop over here. Thank you very much.
+下课 再见
+翻译：兰州大学 周怀尚
