@@ -566,7 +566,7 @@ you can work out the law of finding limits for any polynomial. That’s really s
 114
 00:13:41,000 --> 00:13:47,000
 but it is somewhat harder to find the limits of rational functions which can become 0
-但是会遇到一些困难在算有理函数的极限时 他会有 0 
+但是在计算有理函数的极限时会更难 某些有理函数
 
 115
 00:13:47,000 --> 00:13:54,000
