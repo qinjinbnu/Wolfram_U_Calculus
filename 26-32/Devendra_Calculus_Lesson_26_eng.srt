@@ -51,7 +51,7 @@ and that’s because an antiderivative of 4<i>x</i>^3 is <i>x</i>^4.
 11
 00:00:48,000 --> 00:00:50,000
 Let’s just check that with D.
-来让我们用D检查一下
+来让我们用 D 检查一下
 
 12
 00:00:51,000 --> 00:00:53,000
@@ -61,7 +61,7 @@ If we try the same thing with Integrate
 13
 00:00:53,000 --> 00:00:57,000
 but now we tell it to find the integral of the function from 2 to 3,
-但是 让他去算这个函数 2到3 之间的积分
+但是 让他去算这个函数 2 到 3 之间的积分
 
 14
 00:00:57,000 --> 00:01:00,000
@@ -111,7 +111,7 @@ First of all, to repeat myself,
 23
 00:01:29,000 --> 00:01:35,000
 the antiderivative will now be referred to as the indefinite integral,
-现在将反导数称为不定积分
+现在将原函数称为不定积分
 
 24
 00:01:35,000 --> 00:01:39,000
@@ -141,7 +141,7 @@ when you do not give it any range.
 29
 00:01:56,000 --> 00:02:01,000
 Notice one thing: that the answer from Integrate does not include
-注意一件事：Integrate的答案不包含
+注意一件事：Integrate 的答案不包含
 
 30
 00:02:01,000 --> 00:02:02,000
@@ -151,7 +151,7 @@ the constant of integration
 31
 00:02:02,000 --> 00:02:04,000
 which you would learn in a course on calculus,
-你在积分课上学过的
+它是你在微积分课上会学到的
 
 32
 00:02:04,000 --> 00:02:06,000
@@ -161,7 +161,7 @@ so you must put this in yourself.
 33
 00:02:06,000 --> 00:02:10,000
 So please be careful when you work with indefinite integration.
-所以拜托在做 不定积分 的时候小心一点
+所以请在计算 不定积分 的时候小心一点
 
 34
 00:02:10,000 --> 00:02:13,000
@@ -176,7 +176,7 @@ Now if you want to compute a definite integral,
 36
 00:02:16,000 --> 00:02:20,000
 then you must actually put in the lower limit and the upper limit,
-必须 输入 上限 和 下限
+必须 输入 积分上限 和 积分下限
 
 37
 00:02:20,000 --> 00:02:23,000
@@ -196,12 +196,12 @@ Here is a plot showing the function and its integral.
 40
 00:02:31,000 --> 00:02:34,000
 Once again, please note that we’ll set the constant
-重复一遍 注意！我们这个积分常数
+重复一遍 注意！这里的积分常数
 
 41
 00:02:34,000 --> 00:02:37,000
 for the integral to be 0, essentially.
-实际上在这个不定积分里 取的是 0
+在这个不定积分里 取的实际上是 0
 
 42
 00:02:38,000 --> 00:02:41,000
@@ -231,7 +231,7 @@ so you get <i>kx</i> + <i>C</i>.
 47
 00:02:56,000 --> 00:03:02,000
 For example, if the function is 3, then the integral is 3<i>x</i>.
-例如，如果 函数是 常值3，积分就是3<i>x</i>
+例如，如果 函数是 常值 3，积分就是 3<i>x</i>
 
 48
 00:03:02,000 --> 00:03:08,000
@@ -241,7 +241,7 @@ Here is a picture of the function and its integral.
 49
 00:03:08,000 --> 00:03:12,000
 Notice that I am putting the evaluate over here inside the plot,
-注意我把值标在图内
+注意我把 Evaluate 函数写在 Plot 函数内
 
 50
 00:03:12,000 --> 00:03:17,000
@@ -251,7 +251,7 @@ and that’s because I’d like Integrate to do its work
 51
 00:03:17,000 --> 00:03:19,000
 before Plot does the plotting.
-再画图
+再令 Plot 函数进行绘图
 
 52
 00:03:21,000 --> 00:03:24,000
@@ -366,7 +366,7 @@ or negative cosecant times cotangent,
 74
 00:04:57,000 --> 00:05:01,000
 then in the first case, the integral is Sec[<i>x</i>]
-第一的积分是  Sec[<i>x</i>]
+第一个函数的积分是  Sec[<i>x</i>]
 
 75
 00:05:01,000 --> 00:05:07,000
@@ -386,7 +386,7 @@ We’ve now found two more trig integrals.
 78
 00:05:15,000 --> 00:05:19,000
 Here’s a plot of all the functions involved over here.
-这里是所涉及的所有的函数的图
+这是涉及到的所有函数的图
 
 79
 00:05:21,000 --> 00:05:26,000
@@ -436,12 +436,12 @@ the antiderivative of a function and given it a special name,
 88
 00:06:05,000 --> 00:06:08,000
 namely, the indefinite integral.
-它叫 不定积分
+即 不定积分
 
 89
 00:06:08,000 --> 00:06:11,000
 What we have learned is that you can find
-你会发现我们学的是
+你会发现我们学到的是
 
 90
 00:06:11,000 --> 00:06:15,000
@@ -461,12 +461,12 @@ and several trigonometric functions.
 93
 00:06:22,000 --> 00:06:26,000
 Now in most cases you can simply call the Integrate function
-在大多数情况下 只需调用Integrate函数
+在大多数情况下 只需调用 Integrate 函数
 
 94
 00:06:26,000 --> 00:06:29,000
 and it will find the indefinite integral for you,
-它会给你找到 不定积分
+它会计算出 不定积分
 
 95
 00:06:29,000 --> 00:06:31,000
@@ -476,7 +476,7 @@ but make sure you put the constant of integration.
 96
 00:06:32,000 --> 00:06:36,000
 That’s really the core of indefinite integration.
-那确实是不定积分的一个核心
+那确实是不定积分的一个核心点
 
 97
 00:06:36,000 --> 00:06:39,000
@@ -486,7 +486,7 @@ In the next lesson, we’ll talk about the substitution rule,
 98
 00:06:39,000 --> 00:06:41,000
 which actually makes things easier when you have
-实际上能让你跟容易的去算
+实际上能让你更容易地计算
 
 99
 00:06:41,000 --> 00:06:43,000
@@ -496,7 +496,7 @@ more difficult examples
 100
 00:06:43,000 --> 00:06:47,000
 and perhaps more interesting examples to talk about.
-也许还有很多更有趣的例子 去讨论
+也许会讨论一些更加有趣的例子
 
 101
 00:06:47,000 --> 00:06:48,000
@@ -506,7 +506,7 @@ I’ll stop over here.
 102
 00:06:48,000 --> 00:06:50,000
 Do review this very important lesson.
-请下来复习这堂非常重要的课
+请务必复习这堂非常重要的课
 
 103
 00:06:50,000 --> 00:06:52,000
@@ -526,7 +526,8 @@ and then the next time, we’ll talk about the substitution rule.
 106
 00:06:58,000 --> 00:07:01,000
 Thank you very much. I’ll stop over here.
-本节课到此为止，再见
+谢谢观看 本节课到此为止，再见
  
- 翻译：兰州大学 周怀尚
+(翻译：周怀尚 兰州大学)
+(校对：秦晋 北京师范大学)
 
