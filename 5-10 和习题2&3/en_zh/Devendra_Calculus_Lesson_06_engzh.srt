@@ -1,0 +1,606 @@
+1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 6 of this introduction to calculus with Wolfram U.
+您好，欢迎来到Wolfram U的微积分入门课程第6课。
+
+2
+00:00:06,000 --> 00:00:14,000
+Our topic for today is continuity. Let’s begin with a brief overview of the idea for today’s lesson.
+今天我们的主题是连续性。 首先，简要概述一下本课的内容。
+
+3
+00:00:14,000 --> 00:00:21,000
+Begin by recalling if you have a polynomial like this one over here, then its limit at a point
+首先回想一下对于一个多项式，那么它在某一点的极限就是该点处多项式的函数值。
+
+4
+00:00:21,000 --> 00:00:26,000
+is simply the value of the polynomial at that point. If you look at the polynomial <i>f</i>[<i>x</i>],
+如果您查看多项式 <i>f</i>[<i>x</i>]，
+
+5
+00:00:26,000 --> 00:00:34,000
+then I simply replace <i>x</i> by <i>a</i>, and I get the limit of <i>f</i>[<i>x</i>] as <i>x</i> approaches <i>a</i>.
+然后我将 <i>x</i> 替换为 <i>a</i>，便得到 <i>x</i>　趋近　<i>a</i>　时 <i>f</i>[<i>x</i>] 的极限。
+
+6
+00:00:34,000 --> 00:00:41,000
+That’s a very special property of polynomials and similar functions—namely, that their limit
+这是多项式和类似函数的一个非常特殊的属性，即，它们在任何时候的极限
+
+7
+00:00:41,000 --> 00:00:50,000
+at any point is just the value of those functions at that point, and such functions are called continuous.
+都只是这些函数的函数值，这种函数称为连续函数。
+
+8
+00:00:50,000 --> 00:00:58,000
+A continuous function is one for which the limit at a point and the function value agree.
+连续函数是一点的极限与函数值一致的函数。
+
+9
+00:00:58,000 --> 00:01:05,000
+This lesson will give examples of continuous functions, functions that are not continuous,
+本课将提供连续函数和不连续的一些函数的示例，
+
+10
+00:01:05,000 --> 00:01:11,000
+so-called discontinuous functions, and we’ll also give a nice application of continuity.
+即，不连续函数，我们还将很好地应用连续性。
+
+11
+00:01:11,000 --> 00:01:17,000
+Let’s begin with the definition of continuous functions in a formal way.
+让我们以正式的方式开始定义连续函数。
+
+12
+00:01:17,000 --> 00:01:25,000
+A function is continuous at a point <i>a</i> if the value at <i>a</i> is equal to the limit of <i>f</i> at <i>a</i>.
+如果　<i>a</i>　处的值等于　<i>a</i> 处 <i>f</i> 的极限，则函数在点 <i>a</i> 处连续。
+
+13
+00:01:25,000 --> 00:01:34,000
+For a function to be continuous, three things must happen. First of all, it must be defined at that point.
+为了使函数连续，必须满足三个条件。 首先，必须在一点定义它。
+
+14
+00:01:34,000 --> 00:01:41,000
+The limit must exist at that point, and that’s not enough; the limit must be equal to
+在这一点函数必须有极限值，这还不够；
+
+15
+00:01:41,000 --> 00:01:47,000
+the value of the function at that point. The equality is a very important condition for continuity.
+极限必须等于该点的函数值。 极限与函数值相等是连续性的重要条件。
+
+16
+00:01:49,000 --> 00:01:56,000
+Very informally, a continuous function should have no gaps or breaks in its graph.
+用不是特别严谨的话说，连续函数在其图形中不应有间隙或中断。
+
+17
+00:01:56,000 --> 00:02:01,000
+If you draw the graph of a function and it looks continuous—it has no gaps or breaks—
+如果您绘制的函数图看起来连续，也就是没有任何间隙或中断，
+
+18
+00:02:01,000 --> 00:02:05,000
+then in fact that’s very likely to be a continuous function. For example,
+那么这个函数很可能就是连续函数。 例如，
+
+19
+00:02:05,000 --> 00:02:12,000
+here is a function of <i>x</i> as a polynomial, and its value at 1 is the same as the limit.
+这里有一个以　<i>x</i> 为自变量的多项式函数，并且其函数值在 1 点与极限相同。
+
+20
+00:02:12,000 --> 00:02:20,000
+You plot it, and sure enough, there is no break in the graph, so that is a continuous function.
+对其进行绘制，并且可以肯定的是，图中没有中断，因此这是一个连续函数。
+
+21
+00:02:20,000 --> 00:02:24,000
+That’s just a simple way to tell if a function is continuous or not.
+这只是判断一个函数是否连续的一种简单方法。
+
+22
+00:02:26,000 --> 00:02:31,000
+Okay. Some simple examples. Polynomials and rational functions are continuous
+好的。 一些简单的例子。 多项式和有理函数在任何有定义的区间上是连续的
+
+23
+00:02:31,000 --> 00:02:39,000
+wherever they are defined. Here’s a polynomial <i>f</i>[<i>x</i>] and a rational function <i>g</i>[<i>x</i>].
+这是多项式函数 <i>f</i>[<i>x</i>] 和有理函数 <i>g</i>[<i>x</i>]。
+
+24
+00:02:39,000 --> 00:02:49,000
+<i>f</i> is of course continuous at every point, but <i>g</i> is continuous everywhere except at −1,
+<i>f</i> 当然在每个点上都是连续的，但是 <i>g</i> 在所有地方都是连续的，除了在 −1 处（分母为0，所以未定义）。
+
+25
+00:02:49,000 --> 00:02:57,000
+where the denominator is 0, so it’s not defined. Here’s a plot of <i>f</i>[<i>x</i>], nice and continuous,
+这是一个 <i>f</i>[ <i>x ]</i> 的图像，很不错并且连续，
+
+26
+00:02:57,000 --> 00:03:04,000
+and a plot of <i>g</i>[<i>x</i>], which has a problem, a discontinuity at −1.
+以及 <i>g</i>[<i>x</i>] 的图，该图有个问题，即在 -1 处不连续。
+
+27
+00:03:05,000 --> 00:03:12,000
+Okay. Next let’s talk about functions which are not continuous. A function that is not continuous
+好的。 接下来让我们讨论不连续的函数。不连续函数被认为是在某一点有间断的函数。
+
+28
+00:03:12,000 --> 00:03:20,000
+is said to be discontinuous at that point. Here are two examples, <i>f</i>[<i>x</i>] and <i>g</i>[<i>x</i>].
+这是两个示例，<i>f</i>[<i>x</i>] 和 <i>g</i>[<i>x</i>]。
+
+29
+00:03:20,000 --> 00:03:27,000
+Now if you think about <i>f</i>[<i>x</i>], there’s a problem at 1. If you find the value at 1, sure enough,
+现在，如果您考虑 <i>f</i>[<i>x</i>]，那么问题就出在1上了。如果您去找 <i>x</i> = 1 点的函数值，
+
+30
+00:03:27,000 --> 00:03:34,000
+the answer is indeterminate. That function has a discontinuity at <i>x</i> = 1.
+那么答案是不确定的。该函数在 <i>x</i> = 1 处不连续。
+
+31
+00:03:34,000 --> 00:03:40,000
+Now what’s happened with <i>g</i> is that we’ve chained the value at 1 hoping to fix the problem,
+现在 <i>g</i> 发生的事情是，我们将函数在 <i>x</i> = 1 点的值以分段函数的形式链接起来以解决问题，
+
+32
+00:03:40,000 --> 00:03:49,000
+but that’s still not good enough because the limit as you approach 1 is −3, while the value is −2.
+但这仍然不够好，因为当您接近1时，极限是 -3 ，而值是 -2 。
+
+33
+00:03:51,000 --> 00:03:57,000
+If you plot the functions, you see that <i>f</i> has a problem at 1, which you can’t really see over here,
+如果绘制函数，您会发现 <i>f</i> 在 <i>x</i> = 1 处有问题，您实际上无法在此处看到
+
+34
+00:03:57,000 --> 00:04:00,000
+but that’s the fact from the definition, whereas <i>g</i>
+，但这是定义中的事实，而 <i>g</i>
+
+35
+00:04:00,000 --> 00:04:06,000
+did not quite fix it because you chose the wrong value at that discontinuity.
+并没有完全解决它，因为您在该不连续处选择了错误的值。
+
+36
+00:04:06,000 --> 00:04:09,000
+Of course you’ve got to fix it, but the whole point is to construct examples
+当然，您必须对其进行修复，但重点是构建一些示例
+
+37
+00:04:09,000 --> 00:04:13,000
+where things can go wrong for continuity.
+，以确保连续性。
+
+38
+00:04:14,000 --> 00:04:20,000
+Okay. A second class of examples here is a piecewise function <i>f</i>[<i>x</i>],
+好的。 此处的第二类示例是分段函数 <i>f</i>[<i>x</i>]
+
+39
+00:04:20,000 --> 00:04:25,000
+and clearly that’s problematic at 0 because you’re dividing by 0.
+，显然，这是 0 的问题，因为您要除以 0 。
+
+40
+00:04:25,000 --> 00:04:33,000
+That’s the floor function <i>g</i>[<i>x</i>], so <i>f</i> clearly has a discontinuity at 0.
+这是下限函数 <i>g</i>[<i>x</i>]，因此 <i>f</i> 显然在 0 处具有不连续性。
+
+41
+00:04:33,000 --> 00:04:41,000
+You can see that. You’ve got ∞ over here and 0 over there, whereas <i>g</i> is a bit more complicated.
+您可以看到。 极限为 ∞ ，而函数值为 0 ，而 <i>g</i> 则有点复杂。
+
+42
+00:04:41,000 --> 00:04:47,000
+It’s got discontinuities at all integers. For example, at 0 it’s indeterminate,
+所有整数都不连续。例如，在 <i>x</i> = 0 处它的极限值不确定
+
+43
+00:04:47,000 --> 00:04:55,000
+the limit, and the value at 0 itself is 0, so clearly there’s a problem at that point. Here are the functions.
+，在 0 点的函数值是 0 ，因此显然在那一点上存在问题。这里是函数图像。
+
+44
+00:04:55,000 --> 00:05:03,000
+<i>f</i> only has a problem at 0, while <i>g</i> seems to have many more problems in its graph.
+<i>f</i> 仅在 0 处有问题，而 <i>g</i> 在其图中似乎还有更多问题。
+
+45
+00:05:06,000 --> 00:05:13,000
+Okay. Although the floor function is discontinuous, it does have one nice property,
+好的。 尽管floor函数是不连续的，但它确实具有一个不错的特性，
+
+46
+00:05:13,000 --> 00:05:20,000
+namely that if you approach it from the right, then things are okay, but they are not from the left.
+也就是说，如果您从右侧接近，则一切正常，但不是从左侧开始。
+
+47
+00:05:20,000 --> 00:05:25,000
+Let’s see that for the floor function. If you try and find the limit from the right,
+让我们看看下限函数。如果您尝试从右侧趋近求极限
+
+48
+00:05:25,000 --> 00:05:30,000
+from above for the floor function at 0, then it’s okay. You get back True.
+，设置 Direction 属性为 FromAbove，那么就可以了。你得了到正确结果
+
+49
+00:05:30,000 --> 00:05:40,000
+But if you try and find it from the left, it is not okay. The plot clearly says that we have issues at
+但是，如果您尝试从左侧找到它，那就不好了。该图清楚地表明
+
+50
+00:05:40,000 --> 00:05:44,000
+all the integers, but in fact you have a function, the floor function,
+我们在所有整数点上都有问题，但实际上下限函数，
+
+51
+00:05:44,000 --> 00:05:50,000
+which is continuous from the right at every integer, but not from the left.
+在每个整数点处从右趋近是连续的，但从左侧趋近是不连续的。
+
+52
+00:05:52,000 --> 00:05:58,000
+Okay. Root functions are also very similar to polynomials because they’re continuous
+好的。根式函数也与多项式非常相似，因为它们在其定义域中的
+
+53
+00:05:58,000 --> 00:06:02,000
+everywhere in their domains. Wherever they are defined, you are okay.
+任何地方都是连续的。在所有有定义的点，都是连续的。
+
+54
+00:06:02,000 --> 00:06:07,000
+Here’s a square root function <i>f</i>[<i>x</i>], and that’s continuous wherever it is defined,
+这是平方根函数 <i>f</i>[<i>x</i>]，无论定义在哪里，它都是连续的，
+
+55
+00:06:07,000 --> 00:06:15,000
+namely, when <i>x</i> is non-negative. But at −1, it’s got an imaginary value <i>i</i>,
+也就是说，当 <i>x</i> 为非负数时。 但是在 −1 处有一个虚数值 <i>i</i>，
+
+56
+00:06:15,000 --> 00:06:21,000
+so one cannot really talk about continuity at that point. Here’s a graph,
+因此，那时人们真的不能谈论连续性。这是一张图
+
+57
+00:06:21,000 --> 00:06:28,000
+and as long as the function is defined, there is no problem at all; it is continuous.
+只要定义了函数，就完全没有问题 它是连续的。
+
+58
+00:06:30,000 --> 00:06:37,000
+Okay. Trigonometric functions are pretty simple. The sine function and the cosine function
+好的。 三角函数非常简单。 正弦函数和余弦函数
+
+59
+00:06:37,000 --> 00:06:45,000
+are both continuous at 0, and in fact, they are continuous at every point. Here’s a graph of
+都在0处连续，实际上，它们在每个点处都是连续的。
+
+60
+00:06:45,000 --> 00:06:51,000
+each of these functions. They are clearly continuous—there are no breaks—and one way to prove that
+这是每个函数的图表。 它们显然是连续的-没有间断-并且一种证明
+
+61
+00:06:51,000 --> 00:06:57,000
+might be to use the addition formulae from algebra, from trigonometry, which can be used
+可能是使用来自三角函数的代数公式，这些公式可以用来
+
+62
+00:06:57,000 --> 00:07:02,000
+to show that these functions are actually continuous at every point. On the other hand,
+表明这些函数实际上在每个点都是连续的。另一方面，
+
+63
+00:07:02,000 --> 00:07:07,000
+the tangent function has a problem because the denominator has cosine, so it is not continuous
+tan 函数有一个问题，因为分母实际是余弦函数，
+
+64
+00:07:07,000 --> 00:07:13,000
+whenever the cosine is 0. You can see the problems over here at every place where
+所以每当余弦为 0 时它就不是连续的。您可以在这里看到余弦在
+
+65
+00:07:13,000 --> 00:07:18,000
+cosine becomes 0 like π/2, et cetera, there are problems with the tangent function.
+π/2 等点变为 0 ，在这些点处 tan 函数不连续。
+
+66
+00:07:20,000 --> 00:07:28,000
+Okay. If you want to go further, then one needs the laws of continuity. Just like you have
+好的。 如果您想走的更远，那么就需要连续性定律。
+
+67
+00:07:28,000 --> 00:07:33,000
+the laws for limits, you also have the laws for continuity. You have the sum law, which says that
+就像您有极限法则一样，您也有连续性法则。 我们有加法定律，它说
+
+68
+00:07:33,000 --> 00:07:38,000
+if <i>f</i> and <i>g</i> are continuous, then so is <i>f</i> + <i>g</i>. You have the difference law,
+如果 <i>f</i> 和 <i>g</i> 是连续的，则 <i>f</i> + <i>g</i> 也是如此。
+
+69
+00:07:38,000 --> 00:07:45,000
+which says that <i>f</i> − <i>g</i> is also continuous if <i>f</i> and <i>g</i> are so; the scalar multiplication law,
+减法定律，即如果 <i>f</i>和 <i>g</i> 如此，<i>f</i> − <i>g</i> 也是连续的； 标量乘法定律，
+
+70
+00:07:45,000 --> 00:07:52,000
+which says you can multiply by constants and still get continuity; the product law for products;
+这表示您可以用连续函数乘常数，但仍可以保持连续性, 乘法定律,
+
+71
+00:07:52,000 --> 00:07:58,000
+and the quotient law for quotients. Together they give you a nice way of showing that
+和商定律, 它们在一起为您提供了一种很好的方式来证明相当复杂的函数实际上是连续的。
+
+72
+00:07:58,000 --> 00:08:04,000
+fairly complicated functions are in fact continuous. Here’s a function <i>f</i>.
+这是 <i>f</i>函数。
+
+73
+00:08:04,000 --> 00:08:10,000
+It looks pretty complicated, but then you can think about it and say oh yes, cosine is continuous,
+它看起来很复杂，但是您可以考虑一下，然后说，是的，余弦是连续的，
+
+74
+00:08:10,000 --> 00:08:16,000
+so is sine; now you are dividing over here, you are adding there, et cetera,
+正弦也是连续的。现在您在这里除，在这里加,等等
+
+75
+00:08:16,000 --> 00:08:24,000
+so by the laws of continuity, this function is continuous. If you find the value at π, the answer is
+因此，根据连续性定律，此函数是连续的。如果在 π 处找到该函数值，则答案与在 π 处的极限相同。
+
+76
+00:08:24,000 --> 00:08:31,000
+the same as the limit at π. That’s a powerful way of showing that a function is continuous,
+这是一种强有力的方式来表明一个函数是连续的，
+
+77
+00:08:31,000 --> 00:08:37,000
+namely, to apply the laws of continuity just like one could apply the laws of limits.
+就是说，应用连续性定律就像可以应用极限定律一样。
+
+78
+00:08:40,000 --> 00:08:46,000
+Okay. A slightly harder problem is what happens if a function is a composition,
+好的。一个稍微棘手的问题是，如果一个函数是一个组合，会发生什么，
+
+79
+00:08:46,000 --> 00:08:57,000
+so it’s <i>f</i>[<i>g</i>[<i>x</i>]]. Well, in that case you simply let the limit go, so to speak, inside the bracket,
+比如 <i>f</i>[<i>g</i>[<i>x</i>]]。好吧，在那种情况下，您只需要先在括号内求极限，
+
+80
+00:08:57,000 --> 00:09:04,000
+and if you still get the same answers then you’re okay, and that’s exactly what’s happening over here
+如果您仍然得到相同的答案，那么您就可以了，这就是这里正在发生的事情
+
+81
+00:09:04,000 --> 00:09:12,000
+in this case. Basically you have <i>f</i>[<i>x</i>] defined as cosine of a polynomial, but cosine is continuous;
+在这种情况下。 基本上，您将 <i>f</i>[<i>x</i>] 定义为多项式的余弦，但余弦是连续的；
+
+82
+00:09:12,000 --> 00:09:20,000
+so is a polynomial. This function is a composition of trigs and polynomials. If you look at the graphs,
+多项式也是 此函数由多项式和多项式组成。
+
+83
+00:09:20,000 --> 00:09:28,000
+everything looks fine, and in fact the function is continuous. The point is that
+如果您查看图表，那么一切看起来都很好，实际上，该函数是连续的。关键是
+
+84
+00:09:28,000 --> 00:09:32,000
+given a composition of functions, you can basically ensure they’re continuous
+给定函数的组合，基本上可以通过分别查看每个部分来确保它们是连续的。
+
+85
+00:09:32,000 --> 00:09:37,000
+by looking at each piece separately. In this case, you looked at <i>x</i>^2 − 7<i>x</i> + 10,
+在这种情况下，您查看了<i>x</i>^2 − 7<i>x</i> + 10，
+
+86
+00:09:37,000 --> 00:09:41,000
+and we looked at cosine and then we were done.
+然后我们看着余弦，然后就完成了。
+
+87
+00:09:43,000 --> 00:09:50,000
+Okay. We are almost done with today’s lesson, but one last important theme is that
+好的。今天的课程差不多完成了，但是最后一个重要主题
+
+88
+00:09:50,000 --> 00:09:55,000
+you can actually apply the idea of continuity in practice to find roots.
+是您可以在实践中实际应用连续性的想法来找到根源。
+
+89
+00:09:56,000 --> 00:10:01,000
+The theorem that helps to do that is the intermediate value theorem. That means
+有助于做到这一点的定理是中间值定理。
+
+90
+00:10:01,000 --> 00:10:08,000
+the theorem for the values between two values. What it says is that
+这意味着两个值之间的值定理。 它说的是
+
+91
+00:10:08,000 --> 00:10:15,000
+if you have a continuous function <i>f</i> on an interval <i>a</i> to <i>b</i> and you have any number <i>n</i>
+如果您在 <i>a</i> 到 <i>b</i> 的区间上具有连续函数 <i>f</i>，并且您有任意函数值 <i>n</i>
+
+92
+00:10:15,000 --> 00:10:22,000
+between <i>f</i>[<i>a</i>] and <i>f</i>[<i>b</i>], then you will have a value somewhere in the middle.
+介于 <i>f</i>[<i>a</i>] 和 <i>f</i>[<i>b</i>] 之间，则在区间内一定可以在 区间内找到一点 <i>c</i>
+
+93
+00:10:22,000 --> 00:10:29,000
+That <i>f</i>[<i>c</i>] is equal to <i>n</i>. Basically a continuous function will take every value
+使得 <i>f</i>[<i>c</i>] 等于 <i>n</i> 基本上，一个连续函数可以取到其任意两个函数值之间的每个值。
+
+94
+00:10:29,000 --> 00:10:37,000
+between any two of its values. Of course one must assume that they are distinct
+当然，必须假定这两个函数值是不同的
+
+95
+00:10:37,000 --> 00:10:43,000
+to get some kind of interesting behavior, but basically you can assume for continuous functions
+以便使讨论比较有意义，但基本上，您可以为连续函数假设它们采用
+
+96
+00:10:43,000 --> 00:10:51,000
+that they take every value between any two of their values. Let’s try and find the root of
+任意两个值之间的每个值。让我们尝试求根
+
+97
+00:10:51,000 --> 00:10:57,000
+this rather complicated looking polynomial <i>f</i>[<i>x</i>]. It’s a cubic polynomial. Now you want to find
+这个相当复杂的多项式 <i>f</i>[<i>x</i>] 这是三次多项式。
+
+98
+00:10:57,000 --> 00:11:05,000
+the root between 1 and 2, so what you do is you first of all evaluate at 1 and 2.
+现在您想找到 1 到 2 之间的根，所以您要做的就是首先求 1 和 2 点处的函数值。
+
+99
+00:11:05,000 --> 00:11:12,000
+You find that it’s negative here, it’s positive there, so because the function is continuous,
+您会发现 1 点的函数值是负数，2 点的函数值是正数，因此，由于函数是连续的，
+
+100
+00:11:12,000 --> 00:11:19,000
+and because 0 lies between those two numbers over here, then there must be a root in the interval.
+并且因为 0 在这两个数字之间，所以区间中必须有一个根。
+
+101
+00:11:19,000 --> 00:11:25,000
+Using the intermediate value theorem, you can now check by the plot of my Solve
+使用中间值定理，您现在可以通过图来检查所求的根，
+
+102
+00:11:25,000 --> 00:11:32,000
+that now there is in fact actually a root, and that root in this case is about 1.63334.
+这里确实有一个根，在这种情况下，该根约为1.63334。
+
+103
+00:11:32,000 --> 00:11:41,000
+People who try and solve equations will often apply this theorem to try and find a root of a function.
+尝试求解方程式的人们通常会应用该定理来尝试寻找函数的根。
+
+104
+00:11:41,000 --> 00:11:47,000
+That’s a very powerful application of continuity. It’s not just a theoretical concept,
+这是连续性非常强大的应用。
+
+105
+00:11:47,000 --> 00:11:51,000
+it’s a very powerful practical concept.
+它不仅是一个理论概念，而且是一个非常有力的实践概念。
+
+106
+00:11:53,000 --> 00:11:57,000
+Okay. We are done for today’s lesson. Let’s summarize. Basically, continuous functions
+好的。 今天的课程我们已经完成。 让我们总结一下。
+
+107
+00:11:57,000 --> 00:12:03,000
+are very common in the real world, and in fact, most functions you’ll meet are going to be continuous.
+基本上，连续函数在现实世界中非常普遍，实际上，您将遇到的大多数函数都是连续的。
+
+108
+00:12:03,000 --> 00:12:08,000
+There really is no problem at all. We did see some examples, but they were somewhat artificial
+这完全没有问题。我们确实看到了一些不连续函数的示例，但是某种意义上它们是人为的
+
+109
+00:12:08,000 --> 00:12:12,000
+in some cases, and you don’t need to worry about them mostly.
+，因此您不必大为担心。
+
+110
+00:12:12,000 --> 00:12:21,000
+Informally, a continuous function has no gaps or breaks in its graph. If you look at
+不那么严谨的表述为，连续函数在其图形中没有间隙或中断。
+
+111
+00:12:21,000 --> 00:12:25,000
+polynomials’ root functions, they are continuous wherever they are defined.
+如果您查看多项式的根函数，则无论它们定义在哪里，它们都是连续的。
+
+112
+00:12:25,000 --> 00:12:29,000
+That’s no issue for polynomials, but for root functions like the square root, you do need
+对于多项式来说这不是问题，但是对于平方根之类的根函数，
+
+113
+00:12:29,000 --> 00:12:36,000
+to worry about where they are defined. Now rational functions and trigs are slightly harder.
+您确实需要担心它们的定义位置。有理函数和三角函数要难一些。
+
+114
+00:12:36,000 --> 00:12:41,000
+They may or may not be continuous. That depends upon the kind of way that they are being set up.
+它们可能是连续的，也可能不是连续的。 这取决于它们的具体形式。
+
+115
+00:12:43,000 --> 00:12:52,000
+Finally, the intermediate value theorem is a very powerful way to find the roots of functions.
+最后，中间值定理是求根的一种非常有效的方法。
+
+116
+00:12:52,000 --> 00:12:58,000
+That’s the end of the discussion of continuity for today, and in the next lesson,
+今天的连续性讨论到此结束，在下一课中，
+
+117
+00:12:58,000 --> 00:13:05,000
+we’ll begin discussing differential calculus by using limits to define so-called derivatives.
+我们将通过使用极限定义的所谓的导数来讨论微积分。
+
+118
+00:13:05,000 --> 00:13:11,000
+That’s where calculus really becomes useful in a very profound way. Next lesson is a time
+这就是微积分真正以非常深刻的方式变得有用的地方。 下节课
+
+119
+00:13:11,000 --> 00:13:17,000
+we start looking deeper into calculus, but before doing that, do review today’s lesson,
+我们开始更深入地研究微积分，但在进行此操作之前，请仔细复习今天的课程，
+
+120
+00:13:17,000 --> 00:13:23,000
+try and solve the exercises and be ready for the next time. It was great to present this to you.
+尝试解决这些问题，并为下一次做好准备。很高兴向您介绍这个。
+
+121
+00:13:23,000 --> 00:13:24,000
+Thank you very much.
+非常感谢你。
+
+(翻译: 秦晋 北京师范大学)

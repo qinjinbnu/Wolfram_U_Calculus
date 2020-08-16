@@ -1,0 +1,474 @@
+1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Problem Session 1 of this introduction to calculus with Wolfram U.
+大家好 欢迎来到本次与 Wolfram U 一起介绍微积分的问题环节1 
+
+2
+00:00:06,000 --> 00:00:14,000
+Our topic for today is limits and functions. Now before I go on, I just want to say that
+我们今天的主题是极限和函数 在我继续之前 我想说的是
+
+3
+00:00:14,000 --> 00:00:20,000
+we’ll have several problem sessions, and the idea would be to try and solve problems,
+我们会有几个问题环节 想法是尝试解决问题 
+
+4
+00:00:20,000 --> 00:00:25,000
+but also to review the concepts done in the last few lessons. We will talk about limits,
+但也是为了复习上几节课所做的概念 我们将讨论极限问题 
+
+5
+00:00:25,000 --> 00:00:31,000
+which is kind of a fundamental topic for calculus, and also we’ll talk about functions,
+它是微积分的基本话题 同时我们也会讨论函数 
+
+6
+00:00:31,000 --> 00:00:37,000
+which were talked about early on in the course. Let’s begin with problem number 1.
+它们在课程中很早就讲过的 让我们从问题 1 开始 
+
+7
+00:00:37,000 --> 00:00:45,000
+You want to find a limit of <i>x</i>^2 + 2 as <i>x</i> approaches 5. Now this is just a polynomial,
+你想找到 <i>x</i>^2+2 的极限 因为 <i>x</i> 接近 5 现在这只是一个多项式 
+
+8
+00:00:45,000 --> 00:00:54,000
+so you can plug in <i>x</i> = 5. 5^2 + 2 = 27, and you can check the answer with Limit.
+所以你可以插入 <i>x</i>=5 5^2+2=27 你可以用 Limit 检查答案 
+
+9
+00:00:54,000 --> 00:00:59,000
+The answer is 27. Finally, you can do a plot and make sure that
+答案是 27 最后 你可以画图 确保
+
+10
+00:00:59,000 --> 00:01:03,000
+the value actually looks like it is 27. That’s a 27 over there.
+该值实际上看起来像它是 27 在那里是一个 27
+
+11
+00:01:05,000 --> 00:01:12,000
+On problem 2, you want to find the limit of Sin[2<i>x</i> − 1] as <i>x</i> approaches π/6.
+关于问题 2 你想找到 Sin[2<i>x</i>-1] 的极限 因为 <i>x</i> 接近 π/6 
+
+12
+00:01:12,000 --> 00:01:16,000
+Now just as a review and also to check things carefully, let’s first look at
+现在只是作为一个复习 也是为了仔细检查 让我们先来看看 
+
+13
+00:01:16,000 --> 00:01:26,000
+the left-hand limit from below, and the answer is √3/2 − 1. You get the same answer for
+从下面的左极限 答案是 √3/2 - 1 你可以得到同样的答案
+
+14
+00:01:26,000 --> 00:01:32,000
+the right-hand limit, and in fact Limit tells you that the answer is exactly what we got early on.
+右极限 其实Limit告诉你 答案正是我们早期得到的 
+
+15
+00:01:32,000 --> 00:01:41,000
+Here’s a plot, and the numerical answer is around −0.2.
+这是一张图 数字答案是 -0.2左右 
+
+16
+00:01:42,000 --> 00:01:49,000
+Okay. Problem number 3. You want to find the limit of the Log[<i>x</i>] to the base 2 minus <i>e</i>^5<i>x</i>,
+好吧 问题三 你想求以 2 为底 [<i>x</i>] 的对数减去 <i>e</i>^5<i>x</i> 的极限
+
+17
+00:01:49,000 --> 00:01:56,000
+and if you work it out with the left-hand limit, you get the answer 3 − <i>e</i>^40.
+如果你用左极限来计算 你得到的答案是 3 - <i>e</i>^40 
+
+18
+00:01:56,000 --> 00:02:04,000
+That’s a large negative number. You get the same answer with the right-hand limit.
+这是一个很大的负数 右极限答案一样
+
+19
+00:02:04,000 --> 00:02:09,000
+Notice I’m using FullSimplify to make it a little simpler. You get the same answer with Limit,
+注意我是用 FullSimplify 让它更简单一点 你用 Limit 也能得到同样的答案 
+
+20
+00:02:09,000 --> 00:02:16,000
+so that’s the answer for the limit. The numerical value is about 10^17 with a negative sign.
+所以这就是极限的答案 数值约为 -10^17
+
+21
+00:02:17,000 --> 00:02:21,000
+You can check the answer on the plot, and there it is.
+你可以在图上查看答案 图在这儿
+
+22
+00:02:21,000 --> 00:02:26,000
+The answer is about −2.35, to be more precise, times 10^17.
+答案大约是 -2.35 更准确地说 是乘以 10^17 
+
+23
+00:02:28,000 --> 00:02:35,000
+Okay. Now we go on to an example where things go wrong. You want to find the limit of 3/<i>x</i>
+好了 现在我们继续讲一个出错的例子 你想找到 3/<i>x</i> 的极限 
+
+24
+00:02:35,000 --> 00:02:39,000
+as <i>x</i> approaches 0, and clearly there’s a problem because when <i>x</i> is 0,
+当 <i>x</i> 接近 0 时 显然有问题 因为当 <i>x</i> 为 0 时 
+
+25
+00:02:39,000 --> 00:02:46,000
+then the denominator becomes 0. If you find the left-hand limit, the answer is −∞.
+那么分母就变成了 0 如果找到左极限 答案就是 -∞ 
+
+26
+00:02:47,000 --> 00:02:56,000
+The right-hand limit is ∞, so clearly the limit does not exist, and the answer is actually indeterminate.
+右极限是 ∞ 所以显然极限不存在 答案其实是不确定的 
+
+27
+00:02:57,000 --> 00:03:05,000
+Here’s a plot which shows that indeed the function approaches ∞ as you go to 0 from the right
+下面是一张图 它显示了当你从右边到0时 函数确实接近于 ∞ 
+
+28
+00:03:05,000 --> 00:03:09,000
+and −∞ when you go to 0 from the left, so that’s the answer.
+当你从左边走到 0 的时候 接近于 -∞ 所以这就是答案 
+
+29
+00:03:09,000 --> 00:03:14,000
+The answer of the limit is just indeterminate; it does not exist.
+极限的答案只是不确定的 它不存在 
+
+30
+00:03:15,000 --> 00:03:22,000
+Okay. Number 5. Now we have a rational function. The problem over here is that if you look at
+好吧 第5题 现在我们有一个有理函数 这里的问题是 如果你看一下 
+
+31
+00:03:22,000 --> 00:03:30,000
+the denominator over here, it’s <i>x</i>^2 − 7<i>x</i> + 10, but at 2, the denominator is 0,
+这边的分母 是 <i>x</i>^2 - 7<i>x</i>+10 但在2处 分母是0 
+
+32
+00:03:30,000 --> 00:03:35,000
+so we cannot apply the quotient law for limits directly. What you should do first
+所以我们不能直接运用极限的商运算法则 你应该先做的是
+
+33
+00:03:35,000 --> 00:03:42,000
+is to simplify the function—in this case, factor it. Simplify will do that for you,
+简化函数--本例中是因式分解 Simplify 会帮你做到这一点 
+
+34
+00:03:42,000 --> 00:03:50,000
+and then when you plug in the value <i>x</i> = 2, you get back the answer −1, and that’s exactly the limit
+然后当你插入<i>x</i>=2时 你得到答案 -1 这正是
+
+35
+00:03:50,000 --> 00:03:57,000
+for the function at 2. Namely, it’s −1. You can check the answer with the plot,
+即函数在2处的极限是 -1 你可以用图来检验答案 
+
+36
+00:03:57,000 --> 00:04:03,000
+and you do get the answer −1 with the plot as well. For rational functions,
+而你也确实可以通过绘图得到答案-1 对于有理函数 
+
+37
+00:04:03,000 --> 00:04:08,000
+you may need to do a bit of simplification before you actually find the limit.
+在你真正找到极限之前 你可能需要做一点简化 
+
+38
+00:04:10,000 --> 00:04:17,000
+Problem number 6. You are given a rational function, but this time things are a bit simpler
+问题六：你会得到一个有理函数 但这次的问题更简单一些 
+
+39
+00:04:17,000 --> 00:04:23,000
+because the numerator has limit 17 on plugging in, the denominator has 20 on plugging in
+因为分子对插入的限制是17 分母对插入的限制是20 
+
+40
+00:04:23,000 --> 00:04:29,000
+and you can therefore use a quotient law to get the limit by simple division.
+因此可以用商法用简单的除法得到极限 
+
+41
+00:04:29,000 --> 00:04:34,000
+Here’s the answer from Limit, which is exactly the same. You can plot the function,
+这是Limit的答案 完全一样 你可以绘制函数 
+
+42
+00:04:34,000 --> 00:04:38,000
+and it does look like that’s the correct answer.
+而且看起来确实是正确答案 
+
+43
+00:04:41,000 --> 00:04:47,000
+Okay. Now Let’s go on to talking about things that are more complicated. You want to find
+好了 现在我们继续讨论更复杂的事情 现在让我们继续讨论更复杂的事情 你想找到
+
+44
+00:04:47,000 --> 00:04:55,000
+the left-hand limit of <i>x</i> over its absolute value when <i>x</i> approaches 0 from the left-hand side.
+当<i>x</i>从左手边接近0时 <i>x</i>的左极限超过其绝对值 
+
+45
+00:04:55,000 --> 00:05:02,000
+Now when <i>x</i> is negative, of course, that over here is negative <i>x</i>. You would expect that
+现在 当<i>x</i>是负数时 当然 这里是负数<i>x</i> 你会期望
+
+46
+00:05:02,000 --> 00:05:10,000
+the answer is −1. You can confirm the answer with Limit. You get −1.
+答案是-1 你可以用 Limit 来确认答案 你得到的是-1 
+
+47
+00:05:10,000 --> 00:05:15,000
+You can check the answer over here, and the answer is indeed −1.
+你可以在这边查看答案 答案确实是-1 
+
+48
+00:05:15,000 --> 00:05:20,000
+If you approach from the left the answer is −1, and from the right it is 1.
+如果你从左边接近 答案是-1 从右边接近则是1 
+
+49
+00:05:23,000 --> 00:05:32,000
+Question number 8. You want to find the limit of <i>x</i> * <i>e</i>^1/(<i>x</i> − 4) when <i>x</i> approaches 4 from the right.
+第8个问题 你想求<i>x</i>*<i>e</i>^1/(<i>x</i>-4)从右边接近4时的极限 
+
+50
+00:05:32,000 --> 00:05:39,000
+Now what happens over there is when <i>x</i> is slightly larger than 4, that’s a very small positive number,
+现在那边的情况是 当<i>x</i>略大于4时 那是一个很小的正数 
+
+51
+00:05:39,000 --> 00:05:44,000
+so you get a very large number over here. That’s what the table tells you:
+所以你在这里得到一个非常大的数字 这就是表格告诉你的 
+
+52
+00:05:44,000 --> 00:05:49,000
+that the answer’s probably going to be ∞. Those are very, very large numbers.
+答案可能是∞ 这些都是非常非常大的数字 
+
+53
+00:05:49,000 --> 00:05:59,000
+You can confirm the answer with Limit and get ∞. This right-hand limit is actually ∞,
+你可以用Limit确认答案 得到∞ 这个右边的极限其实就是∞ 
+
+54
+00:05:59,000 --> 00:06:06,000
+and you can check the answer with a plot. Indeed it is ∞.
+而你可以用图来检查答案 的确是∞ 
+
+55
+00:06:08,000 --> 00:06:15,000
+Okay. Moving on now, let’s take piecewise limits. Here you have got a piecewise function,
+好了 现在继续 让我们来看看分段的极限 在这里 你已经得到了一个分段函数 
+
+56
+00:06:15,000 --> 00:06:22,000
+but it’s only different at a single point, so that’s not going to affect the limit.
+但它只是在一个点上有所不同 所以不会影响到极限 
+
+57
+00:06:22,000 --> 00:06:27,000
+Here’s the function in Mathematica form, the Wolfram Language form,
+这是Mathematica形式的函数 Wolfram语言形式 
+
+58
+00:06:27,000 --> 00:06:35,000
+and the left-hand limit is 4. If we just plug in the values, the right-hand limit is also 4,
+而左极限是4 如果我们只代入数值 右极限也是4 
+
+59
+00:06:35,000 --> 00:06:43,000
+and together, the limit is again 4. For a piecewise function, there is no difficulty
+并合起来 极限又是4 对于一个分段函数来说 不存在以下困难
+
+60
+00:06:43,000 --> 00:06:50,000
+if it’s only different at a single point, and the plot confirms that. Surely the value
+如果它只是在一个点上有所不同 而图上也证实了这一点 当然 这个值
+
+61
+00:06:50,000 --> 00:06:57,000
+is different at 2 itself, but around 2, near 2, there is a nice, smooth behavior.
+在2处本身是不一样的 但是在 2附近 表现很好， 平稳 
+
+62
+00:07:00,000 --> 00:07:06,000
+Okay. Things go slightly wrong in the next example because now we have got a piecewise function
+好吧 在下一个例子中 事情出了点小问题 因为现在我们得到了一个
+
+63
+00:07:06,000 --> 00:07:19,000
+with two large pieces. If you are at −3, then on the left you use that expression over there to get −8;
+有两个大段的分段函数 如果你在 -3 的时候 那么在左边你用那边的表达方式就可以得到 -8 
+
+64
+00:07:19,000 --> 00:07:27,000
+on the right, use the second expression and you get 6. You’ve got a left-hand limit of −8,
+在右边 使用第二个表达式 你得到 6 你得到左极限 -8 
+
+65
+00:07:27,000 --> 00:07:34,000
+a right-hand limit of 6, and together they tell you that the limit does not exist.
+右极限为 6 它们共同告诉你 极限不存在 
+
+66
+00:07:36,000 --> 00:07:43,000
+We can confirm that with a plot. You have two pieces, but at the point of interest, they actually have
+我们可以用画图来证实 你有两块 但在交点上 实际上它们的
+
+67
+00:07:43,000 --> 00:07:50,000
+a very different limit from the right and from the left, so the answer is indeterminate.
+右边和左边的界限截然不同 所以答案是不确定的 
+
+68
+00:07:52,000 --> 00:07:58,000
+Okay. Now the last few questions are about domains and ranges of our functions.
+好了 现在最后几个问题是关于我们函数的定义域和值域
+
+69
+00:07:58,000 --> 00:08:03,000
+The question is to find the domain of this function. Well, it’s very simple because
+问题是要找到这个函数的定义域 嗯 这很简单 因为
+
+70
+00:08:03,000 --> 00:08:08,000
+the Cos function is defined everywhere, 2<i>x</i> is defined everywhere,
+Cos 函数处处都有定义 2<i>x</i> 处处都有定义
+
+71
+00:08:08,000 --> 00:08:14,000
+so together they give you the function domain as being everything, the whole real line.
+所以它们一起给你的函数定义域是一切实数 整个实轴 
+
+72
+00:08:14,000 --> 00:08:21,000
+FunctionDomain says True, which means that the function is defined everywhere. If you plot it,
+FunctionDomain 说 True 这意味着函数处处都有定义 如果你绘制它 
+
+73
+00:08:21,000 --> 00:08:28,000
+then indeed there is no problem at all. This function has domain equal to the set of real numbers.
+那么的确是一点问题都没有 这个函数的定义域等于实数集 
+
+74
+00:08:31,000 --> 00:08:36,000
+Going a step further, let’s try and find the domain of (<i>x</i>^2 − 2)/(<i>x</i>^2 − 4),
+再进一步 让我们试着找出 (<i>x</i>^2 - 2)/(<i>x</i>^2 - 4) 的定义域
+
+75
+00:08:36,000 --> 00:08:46,000
+and clearly the problem is only when the denominator is 0. Now <i>x</i>^2 − 4 is 0 when <i>x</i> is either 2 or −2.
+显然当 <i>x</i> 是 2 或 -2 时 <i>x</i>^2 - 4 是 0 
+
+76
+00:08:46,000 --> 00:08:55,000
+You can check that with Factor or with Solve. The only problematic points are 2 and −2,
+你可以用 Factor 或者 Solve 检查 唯二有问题的点是 2 和 -2 
+
+77
+00:08:55,000 --> 00:09:04,000
+so it looks like the domain is either to the left of 2 or between −2 and 2 or between 2 and ∞.
+所以看起来定义域要么在 2 的左边 要么在 -2 和 2 之间 要么在 2 和 ∞ 之间 
+
+78
+00:09:04,000 --> 00:09:12,000
+You can check that function domain, which says that the domain is either <i>x</i> less than −2,
+你可以检查那个函数定义域 它说定义域要么是<i>x</i>小于-2 
+
+79
+00:09:12,000 --> 00:09:19,000
+or <i>x</i> lying between −2 and 2, or <i>x</i> to the right of 2. Here’s a plot,
+或<i>x</i>在-2和2之间 或<i>x</i>在2的右边 这是一个图 
+
+80
+00:09:19,000 --> 00:09:27,000
+and quite clearly there are three pieces: one to the left of −2, one between −2 and 2
+很明显有三块：一块在 -2 的左边 一块在 -2 和 2 之间 
+
+81
+00:09:27,000 --> 00:09:29,000
+and one to the right of 2.
+和 2 的右边一个 
+
+82
+00:09:33,000 --> 00:09:39,000
+Okay. Now on to ranges. The question is compute the range of <i>x</i>^3. Well, <i>x</i>^3 is an odd polynomial,
+好了 现在说说值域 问题是计算<i>x</i>^3的值域 嗯 <i>x</i>^3是一个奇数多项式 
+
+83
+00:09:39,000 --> 00:09:47,000
+so its range is all real numbers. You can confirm that with the function Range, which says True.
+所以它的值域是所有实数 你可以用函数 Range 来确认 它返回真 
+
+84
+00:09:47,000 --> 00:09:53,000
+The plot says that in fact you can cover everything below and above,
+图上显示 其实你可以覆盖下面和上面的一切 
+
+85
+00:09:53,000 --> 00:09:57,000
+so the range is all real the numbers.
+所以值域是所有实数 
+
+86
+00:09:58,000 --> 00:10:07,000
+On to the last problem, which is to do the range of Sec[<i>x</i>]. Now because secant is the reciprocal of cosine
+最后一个问题 就是计算 Sec[<i>x</i>] 的值域 现在因为 secant 是余弦的倒数
+
+87
+00:10:07,000 --> 00:10:14,000
+and because cosine goes between 1 and −1—here’s a plot to confirm that—
+因为余弦在 1 和 -1 之间--这里有一个图来证实这一点 
+
+88
+00:10:14,000 --> 00:10:23,000
+then clearly the range of secant must be to the left of −1, the right of 1 and of course we can have
+那么显然 secant 的范围一定是在 -1 的左边 1 的右边 当然我们也可以有
+
+89
+00:10:23,000 --> 00:10:32,000
+both the values over here included. The function range is either <i>y</i> less than or equal to −1
+包括这里的两个值 函数值域是 <i>y</i> 小于或等于 -1 
+
+90
+00:10:32,000 --> 00:10:41,000
+or <i>y</i> greater than or equal to 1. Here’s a plot which confirms that, and you leave out
+或 <i>y</i> 大于或等于 1 .下面的图证实了这一点 你忽略了
+
+91
+00:10:41,000 --> 00:10:46,000
+everything between −1 and 1 on the <i>y</i> axis, and the rest are all okay.
+在 <i>y</i> 轴上介于 -1 和 1 之间的所有东西 其余的都没问题 
+
+92
+00:10:48,000 --> 00:10:54,000
+This brings me to the end of today’s problem session. I hope you have had a nice review for concepts.
+今天的习题课就到此结束了 希望大家好好复习概念
+
+93
+00:10:54,000 --> 00:11:03,000
+Next time, in Lesson 6, we go on to continuity, but before that, do try the short quiz, Quiz 1,
+下一次 在第 6 课中 我们将继续讨论连续性 但在此之前 请尝试一下小测验 测验1 
+
+94
+00:11:03,000 --> 00:11:07,000
+which deals with the first few lessons. Review what you’ve learned so far,
+其中涉及到前几节课的内容 复习一下目前所学的内容 
+
+95
+00:11:07,000 --> 00:11:14,000
+and next time we’ll go on to continuity in Lesson 6. Thank you.
+下一次我们将在第六课中继续学习连续性 谢谢大家

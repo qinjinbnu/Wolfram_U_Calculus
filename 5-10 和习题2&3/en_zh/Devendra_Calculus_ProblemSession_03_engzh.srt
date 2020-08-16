@@ -1,0 +1,516 @@
+1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Problem Session 3 of this introduction to calculus with Wolfram U.
+您好，欢迎来到 Wolfram U 的微积分课程第 3 题。
+
+2
+00:00:07,000 --> 00:00:15,000
+The topic for this session is special derivatives, and what we’ll do is to take up several examples
+本课程的主题是特殊导数，我们要做的是拿几个例子来
+
+3
+00:00:15,000 --> 00:00:20,000
+to review the rules for derivatives and also get some extra practice on this topic.
+回顾导数规则，并获得有关此主题的一些额外实践。
+
+4
+00:00:20,000 --> 00:00:28,000
+Let’s begin with problem number 1, which says compute the derivative of 7<i>x</i>^3 − 2.
+让我们从问题 1 开始，该问题要求 7<i>x</i>^3 − 2 的导数。
+
+5
+00:00:28,000 --> 00:00:33,000
+Now that is a polynomial, so things are quite simple. What you do is you apply
+这是一个多项式，所以事情很简单。 您要做的是
+
+6
+00:00:33,000 --> 00:00:43,000
+the power rule to 7<i>x</i>^3, and the answer is 21<i>x</i>^2. That’s a constant, −2, so the derivative is 0.
+将幂规则应用于 7<i>x</i>^3，答案是 21<i>x</i>^2。第二项是一个常数 -2，所以它导数是 0。
+
+7
+00:00:43,000 --> 00:00:48,000
+You can confirm the answer with D and check that it’s actually 21<i>x</i>^2.
+您可以使用 D 确认答案，并确认它实际上是 21<i>x</i>^2。
+
+8
+00:00:49,000 --> 00:00:55,000
+Here is a plot of the function and the derivative. The blue part is the function
+这是函数和导数的图。 蓝色部分是函数，橙色部分是导数。
+
+9
+00:00:55,000 --> 00:01:00,000
+and the orange part is the derivative. You can see that the function is increasing,
+您会看到该函数正在增加，
+
+10
+00:01:00,000 --> 00:01:05,000
+so the derivative stays non-negative all the time.
+因此导数始终保持非负数。
+
+11
+00:01:06,000 --> 00:01:15,000
+Problem number 2 says compute the derivative of Sin[<i>x</i>]/<i>x</i>^2. Now this requires the quotient rule,
+问题 2 要计算 Sin[<i>x</i>]/<i>x</i>^2 的导数。现在这需要导数的商规则，
+
+12
+00:01:15,000 --> 00:01:22,000
+so what you do is you do denominator times derivative of numerator minus numerator
+所以你要做的是分母乘以分子的导数减去
+
+13
+00:01:22,000 --> 00:01:27,000
+times derivative of denominator over denominator squared. When you do that,
+分子乘以分母的导数再除以分母的平方。当你这样做的时候 
+
+14
+00:01:27,000 --> 00:01:36,000
+you get (<i>x</i>Cos[<i>x</i>] − 2Sin[<i>x</i>])/<i>x</i>^3. You can check the answer with D, and you get back
+您得到 (<i>x</i>Cos[<i>x</i>] − 2Sin[<i>x</i>])/<i>x</i>^3。您可以使用 D 来查看答案，然后得到
+
+15
+00:01:36,000 --> 00:01:41,000
+almost the same thing, except that you might need to take an <i>x</i> here to get both of them
+几乎相同的答案，只是您可能需要在第一项分子分母同乘 <i>x</i> 来使两个
+
+16
+00:01:41,000 --> 00:01:49,000
+to agree exactly. Here’s a plot of the function and its derivative. Let’s go on to number 3.
+结果完全一致。 这是函数及其导数图。 让我们继续第 3 题。
+
+17
+00:01:49,000 --> 00:02:01,000
+It says find the derivative of <i>x</i>Sec[<i>x</i>] − 2<i>x</i>^2. Now for the first term over here, <i>x</i>Sec[<i>x</i>],
+要求 <i>x</i>Sec[<i>x</i>] − 2<i>x</i>^2 的导数。 现在，对于这里的第一项<i>x</i>Sec[<i>x</i>] 
+
+18
+00:02:01,000 --> 00:02:05,000
+what you do is you work out the derivative with the product rule, so you get
+您要做的是使用乘积规则求出导数，这样就得到
+
+19
+00:02:05,000 --> 00:02:16,000
+<i>x</i> * Sec[<i>x</i>]' + Sec[<i>x</i>] * (<i>x</i>)', and that’s the answer over here. You can check the answer with D.
+<i>x</i> * Sec[<i>x</i>]' + Sec[<i>x</i>] * (<i>x</i>)'，这就是答案 在这里 您可以使用 D 检查答案。
+
+20
+00:02:19,000 --> 00:02:28,000
+And then for the 2<i>x</i>^2, the derivative is 4<i>x</i> by the power rule. Then you combine them with
+然后对于 2<i>x</i>^2，根据幂定律，导数为 4<i>x</i>。
+
+21
+00:02:28,000 --> 00:02:34,000
+the difference rule, and you get the answer. You can confirm that with D to check that it’s correct,
+然后将它们与差规则结合起来，即可得到答案。您可以通过 D 确认是否正确，
+
+22
+00:02:34,000 --> 00:02:41,000
+and finally, here is a plot of the function and its derivative.
+最后，这是函数及其导数的图。
+
+23
+00:02:43,000 --> 00:02:49,000
+On to number 4, which says compute the derivative of √Csc(<i>x</i>).
+问题4，要计算 √Csc(<i>x</i>) 的导数。
+
+24
+00:02:49,000 --> 00:02:54,000
+Over here apply the chain rule, which says that you have the derivative being
+在此处应用链式规则，该规则计算出导数为
+
+25
+00:02:54,000 --> 00:03:10,000
+1/2 * Csc(<i>x</i>)^(−1/2) * Csc(<i>x</i>)'. You do a bit of work and you get back −1/2Cot[<i>x</i>]√Csc[<i>x</i>].
+1/2 * Csc(<i>x</i>)^(−1/2) * Csc(<i>x</i>)'。 您可以化简一下，然后得到−1/2Cot[<i>x</i>]√Csc[<i>x</i>]。
+
+26
+00:03:10,000 --> 00:03:14,000
+You can check the answer with D, and you get back almost the same thing except that
+您可以使用 D 来检查答案，然后除了得到几乎相同的结果外，
+
+27
+00:03:14,000 --> 00:03:24,000
+D has simplified a bit more and replaced the cotangent over here by cosine over sine. You can then
+D 函数对结果进行了更多简化，并用余弦比正弦代替了此处的余切。
+
+28
+00:03:24,000 --> 00:03:31,000
+plot the derivative and the function and get this nice visual for the whole problem.
+然后，您可以绘制导数和函数，并获得整个问题的良好视觉效果。
+
+29
+00:03:33,000 --> 00:03:43,000
+Okay. On to number 5, which says find the derivative of 4 * (3)√6 − Sin[5<i>x</i>]. This is a composition,
+好的。 题 5 要求 4 * (3)√6 − Sin[5<i>x</i>] 的导数。
+
+30
+00:03:43,000 --> 00:03:57,000
+so you need to be a bit careful. What you do is you do constant 4 * 1/3(6 − Sin[5<i>x</i>])^(−2/3).
+这是一个复合函数，因此您需要小心一点。您得到的结果是 4 * 1/3(6 − Sin[5<i>x</i>])^(−2/3)。
+
+31
+00:03:57,000 --> 00:04:08,000
+That’s 1 − 1/3^−1, and then you get the derivative over here of 6 − Sin[5<i>x</i>]', which is −5Cos[5<i>x</i>].
+即 1 − 1/3^−1，然后得到 6 − Sin[5<i>x</i>]' 的导数，即 −5Cos[5<i>x</i>]。
+
+32
+00:04:08,000 --> 00:04:16,000
+That’s the final answer over here. You can check it with D, and you get back the same result.
+那是这里的最终答案。 您可以使用 D 进行检查，并得到相同的结果。
+
+33
+00:04:16,000 --> 00:04:23,000
+Then you can plot the function derivative and get back a plot of the whole problem.
+然后，您可以绘制函数导数并获得整个问题的图。
+
+34
+00:04:25,000 --> 00:04:32,000
+Okay. On to number 6, which says find the second derivative—so this time,
+好的。题6，该题要计算二阶导数，这一次，
+
+35
+00:04:32,000 --> 00:04:41,000
+it’s the second derivative of this quotient. It’s a quotient, (2<i>x</i> + 3)/(8<i>x</i> − 1), so you apply
+它是该商的二阶导数。这是一个商，(2<i>x</i> + 3)/(8<i>x</i> − 1)，因此您应用
+
+36
+00:04:41,000 --> 00:04:47,000
+the quotient rule. It’s, again, denominator times derivative of numerator minus numerator
+商规则。同样，用分母乘以分子的导数减去分子乘以分母的导数再除以分母的平方，
+
+37
+00:04:47,000 --> 00:04:53,000
+times derivative of denominator, and you get back a result. You can check the answer with D
+您将得到一个结果。你可以用 D 检查答案
+
+38
+00:04:53,000 --> 00:05:03,000
+for the first derivative. Then apply the power rule to the answer and you get back the second derivative.
+对于得到的一阶导数 然后将幂规则应用于答案，您将获得二阶导数。
+
+39
+00:05:03,000 --> 00:05:10,000
+You can confirm the answer with D and check that you get the same result.
+您可以用 D 确认答案，并检查是否得到相同的结果。
+
+40
+00:05:11,000 --> 00:05:16,000
+Here’s a plot of the function and its derivative.
+这是函数及其导数图。
+
+41
+00:05:18,000 --> 00:05:26,000
+Let’s go on to number 7, which says find the second derivative of this product.
+让我们继续第 7 题，它要求这个积的二阶导数。
+
+42
+00:05:26,000 --> 00:05:33,000
+You apply the product rule: first function times derivative of second plus second function
+您应用乘积规则：第一个函数的导数乘第二个函数加上第二个函数的导数乘第一个函数。
+
+43
+00:05:33,000 --> 00:05:41,000
+times derivative of first. Get the answer with D to check. Then you need to apply two rules:
+得到答案并用 ​​D 进行检查。 然后，您需要应用两个规则：
+
+44
+00:05:41,000 --> 00:05:49,000
+the product rule over here for each of these parts separately, and then the sum rule.
+此处分别针对每个部分的乘积规则，然后是求和规则。
+
+45
+00:05:49,000 --> 00:05:56,000
+After we do some work, you get the answer over here by hand. You can confirm with D
+完成一些化简后，得到手动计算的答案。
+
+46
+00:05:56,000 --> 00:06:06,000
+and check that the answer is correct, and then finally, we plot the function and derivative.
+您可以用 D 确认答案正确，然后最后绘制函数和导数。
+
+47
+00:06:06,000 --> 00:06:10,000
+Notice we are talking about the second derivative over here, and it turns out that in this case,
+请注意，我们在这里谈论的是二阶导数，事实证明，在这种情况下，
+
+48
+00:06:10,000 --> 00:06:15,000
+this second derivative is all non-negative.
+这个二阶导数是非负的。
+
+49
+00:06:17,000 --> 00:06:26,000
+Okay. Let’s go on now to problem number 8, which says find the third derivative of Sin[<i>x</i>^2].
+好的。 现在让我们继续第 8 个问题，该问题要计算 Sin[<i>x</i>^2] 的三阶导数。
+
+50
+00:06:26,000 --> 00:06:35,000
+You apply the chain rule to get the first derivative. That’s going to be Cos[<i>x</i>^2] * 2<i>x</i>.
+您应用链式规则来获取一阶导数。 是 Cos[<i>x</i>^2] * 2<i>x</i>。
+
+51
+00:06:35,000 --> 00:06:43,000
+That’s from the <i>x</i>^2 over here. Check the answer with D. Apply the chain rule
+那是来自 <i>x</i>^2 的。请在 D 处检查答案。在这里应用链式规则
+
+52
+00:06:43,000 --> 00:06:50,000
+and the product rule over here, so you get 2<i>x</i> times the derivative of the second factor, et cetera,
+和乘积规则，这样就可以得到 2<i>x</i> 乘第二个因数的导数，等等。
+
+53
+00:06:50,000 --> 00:07:01,000
+and check the answer with D. Then finally you can apply three rules—the chain rule,
+然后使用 D 来检查答案。最后，您可以应用三个规则, 链式规则
+
+54
+00:07:01,000 --> 00:07:09,000
+the product rule and the difference rule—to find the third derivative, and confirm the answer with D.
+，乘积规则和差规则来查找三阶导数，并用 D 确认答案。
+
+55
+00:07:12,000 --> 00:07:16,000
+Here’s a plot of the function and the third derivative.
+这是函数和三阶导数的图。
+
+56
+00:07:18,000 --> 00:07:27,000
+On to problem number 9, which says find the third derivative of 4<i>x</i>^3 − 1/<i>x</i>.
+在第 9 个问题上，要求 4<i>x</i>^3 − 1/<i>x</i> 的三阶导数。
+
+57
+00:07:27,000 --> 00:07:34,000
+For the first derivative you can apply the power rule and the difference rule, so you get 12<i>x</i>^2
+对于一阶导数，您可以应用幂规则和差规则，因此您可以从 4<i>x</i>^3 得到
+
+58
+00:07:34,000 --> 00:07:43,000
+from the 4<i>x</i>^3 and 1/<i>x</i>^2 from the −1/<i>x</i>. Check the answer. Apply the same rule again,
+12<i>x</i>^2, 从 −1/<i>x</i> 得到 1/<i>x</i>^2 检查答案。 再次应用相同的规则，
+
+59
+00:07:43,000 --> 00:07:51,000
+so you get 24<i>x</i> − 2/<i>x</i>^3. Check the answer with D. Then find the third derivative,
+所以得到 24<i>x</i> − 2/<i>x</i>^3。
+
+60
+00:07:51,000 --> 00:07:58,000
+which would be 24 from here and plus 6/<i>x</i>^4 from there, and you get back
+用 D 检验答案。然后计算三阶导数，从这的第二项得到 24，从第一项得到 6/<i>x</i>^4，然后用
+
+61
+00:07:58,000 --> 00:08:07,000
+the same result from D. Finally you plot the function and the third derivative.
+函数 D 计算得到相同的结果。最后绘制函数和三阶导数。
+
+62
+00:08:10,000 --> 00:08:19,000
+Okay. On to problem number 10. Now this is about the topic of implicit differentiation,
+好的。关于第10个问题，现在这是关于隐式导数的主题，
+
+63
+00:08:19,000 --> 00:08:30,000
+so keep in mind that the derivative of <i>y</i> is going to be <i>y</i>'. The equation is <i>y</i> Cot[<i>x</i>] = Cos[<i>y</i>]
+因此请记住，<i>y</i> 的导数是 <i>y</i>'。 方程为 <i>y</i> Cot[<i>x</i>] = Cos[<i>y</i>]
+
+64
+00:08:30,000 --> 00:08:40,000
+and you want to find the derivative at (π/2, π/2), so <i>x</i> and <i>y</i> are both π/2. When you apply the rule,
+并且要在 (π/2, π/2) 点计算导数，因此 <i>x</i> 和 <i>y</i> 均为 π/2。 应用该规则时，
+
+65
+00:08:40,000 --> 00:08:49,000
+you get <i>y</i> times the derivative of cotangent, which is −Csc[<i>x</i>]^2, plus Cot[<i>x</i>] times <i>y</i>',
+得到 <i>y</i> 乘以余切的导数，即 −Csc[<i>x</i>]^2 加上 Cot[<i>x</i>] 乘<i>y</i>'，
+
+66
+00:08:49,000 --> 00:08:55,000
+and on the right-hand side you get −Sin[<i>y</i>] times <i>y</i>'. Check the answer with D.
+在右侧，您得到 −Sin[<i>y</i>] 乘 <i>y</i>'。 用 D 检查答案。
+
+67
+00:08:55,000 --> 00:09:07,000
+Then you solve for <i>y</i>'[<i>x</i>] like I’ve done over here, and finally you plug in the value of <i>x</i> and <i>y</i>,
+然后像我在这里一样解 <i>y</i>'[<i>x</i>]，最后代入 <i>x</i> 和 <i>y</i> 的值，
+
+68
+00:09:07,000 --> 00:09:17,000
+and you get back π/2 as the derivative at that point. Once we have the derivative,
+此时您会得到那点的导数值为 π/2。 一旦有了导数，
+
+69
+00:09:17,000 --> 00:09:29,000
+you can compute the tangent line, <i>y</i> = π/2 + π/2(<i>x</i> − π/2). Plot the curve and the derivative,
+您可以计算出切线 <i>y</i> = π/2 + π/2(<i>x</i> − π/2) 绘制曲线和导数，
+
+70
+00:09:29,000 --> 00:09:33,000
+and you get back this beautiful plot over here.
+您将在此处获得一张漂亮的图。
+
+71
+00:09:35,000 --> 00:09:42,000
+On to number 11, which says compute the derivative for this implicit function.
+问题11，该题要计算此隐式函数的导数。
+
+72
+00:09:42,000 --> 00:09:54,000
+You have a <i>y</i>^2 over there, so you get 2<i>y</i> * <i>y</i>' = 6<i>x</i> − 1 for the derivative. Check that with D.
+左边是 <i>y</i>^2，因此得到 2<i>y</i> * <i>y</i>' = 6<i>x</i> − 1。 用 D 确认。
+
+73
+00:09:54,000 --> 00:10:06,000
+Solve for <i>y</i>'. You get back the answer. Plug in the values 1/2 and 1/2 for <i>x</i> and <i>y</i>, and you get back 2 as
+解出 <i>y</i>'。您会得到答案。 代入 <i>x</i> 和 <i>y</i> 的值 1/2 和 1/2，您将得到
+
+74
+00:10:06,000 --> 00:10:12,000
+the slope of the derivative. You plot the tangent line like I’ve done over here,
+代表斜率的导数值 2。您可以像我在这里一样绘制切线，
+
+75
+00:10:12,000 --> 00:10:17,000
+and you get back the curve and the tangent line at the given point.
+然后得到给定点的函数曲线和切线。
+
+76
+00:10:19,000 --> 00:10:29,000
+Okay. On to number 12, which says find the normal line to this curve at (1, 1).
+好的。 问题12，该题要计算该曲线在 (1, 1) 的法线。
+
+77
+00:10:31,000 --> 00:10:38,000
+The normal line is perpendicular to the tangent line, so you must first find the slope of the tangent
+法线与切线垂直，因此您必须先计算切线的斜率，然后算出法线的斜率。
+
+78
+00:10:38,000 --> 00:10:43,000
+and then work out the slope of the normal. If you find the derivative over here,
+如果您在这里计算导数，
+
+79
+00:10:43,000 --> 00:10:53,000
+you get 8<i>x</i> + 4<i>y</i> + 4<i>xy</i>'—that’s from this middle term over here—plus 2<i>y</i> * <i>y</i>' = 0.
+您得到 8<i>x</i> + 4<i>y</i> + 4<i>xy</i>', 这里是从中间项得到的, 再加上	2<i>y</i> * <i>y</i>' = 0 
+
+80
+00:10:53,000 --> 00:11:05,000
+Check with D. Solve for <i>y</i>'. You notice that you get back this −2, and we’ll see why this is
+用 D 确认。求解 <i>y</i>'。您会注意到，您得到了−2 的答案，我们一会儿将看到为什么
+
+81
+00:11:05,000 --> 00:11:10,000
+the case in a minute. The slope of the normal line will of course be 1/2 because it is
+会出现这种情况。法线的斜率当然是 1/2，因为它
+
+82
+00:11:10,000 --> 00:11:18,000
+perpendicular to the tangent line. That’s the equation of the normal. Then you can plot the curve
+垂直于切线。 这是法线方程。然后可以绘制函数曲线
+
+83
+00:11:18,000 --> 00:11:26,000
+and the normal, and in fact, this curve is just a pair of straight lines, and that’s why you have
+和法线，实际上，这条曲线只是一对直线，这就是为什么
+
+84
+00:11:26,000 --> 00:11:34,000
+a constant slope for the curve. The normal line of course is perpendicular to the curve,
+会得到一个常数斜率。 当然，法线是垂直于曲线 (切线) 的线，
+
+85
+00:11:34,000 --> 00:11:37,000
+so that’s the normal line.
+所以这就是法线。
+
+86
+00:11:39,000 --> 00:11:46,000
+Okay. On to number 13, which says find the second derivative for this implicit equation.
+好的。 问题 13，该题要计算该隐式方程的二阶导数。
+
+87
+00:11:46,000 --> 00:11:54,000
+If you find the derivative, you get 2<i>y</i> * <i>y</i>' − 2<i>x</i> = 0. Check the answer with D.
+如果两边求导数，则得到 2<i>y</i> * <i>y</i>' − 2<i>x</i> = 0。用 D 检验答案。
+
+88
+00:11:54,000 --> 00:12:04,000
+Solve for the derivative, and you get back <i>x</i>/<i>y</i> basically. Now work out the second derivative
+求解导数，可以得到 <i>x</i>/<i>y</i>。
+
+89
+00:12:04,000 --> 00:12:11,000
+starting from the equation we got earlier on over here, and you get back a simple result.
+现在，从我们之前获得的方程式开始计算二阶导数，您将获得一个简单的结果。
+
+90
+00:12:11,000 --> 00:12:24,000
+You get back 2<i>y</i> * <i>y</i>'' + (<i>y</i>')^2 − 2 = 0. Check with D. Solve for <i>y</i>'', and then you notice that
+您得到 2<i>y</i> * <i>y</i>'' + (<i>y</i>')^2 − 2 = 0。用 D 检验。求解 <i>y</i>''，然后您注意到答案中仍然有
+
+91
+00:12:24,000 --> 00:12:33,000
+you still have a <i>y</i>' inside the answer, so you plug in <i>y</i>'[<i>x</i>] equal to <i>x</i> over <i>y</i> like I have done over here,
+<i>y</i>'，因此您代入了 <i>y</i>'[<i>x</i>] 等于 <i>x</i> 比 <i>y</i>，就像我在这里所做的那样，
+
+92
+00:12:33,000 --> 00:12:37,000
+and you get back the final result for <i>y</i>''.
+然后您得到 <i>y</i> 的最终结果。
+
+93
+00:12:40,000 --> 00:12:50,000
+And finally, we go on to number 14, which says find the second derivative of this implicit equation.
+最后，我们继续来看题 14，即计算该隐式方程的二阶导数。
+
+94
+00:12:50,000 --> 00:13:00,000
+We’ve got Sin[<i>y</i>] = Tan[<i>x</i>]. Work out the derivative on both the sides. Check the answer with D.
+我们已知 Sin[<i>y</i>] = Tan[<i>x</i>]。 方程两侧求导数。 用 D 检查答案。
+
+95
+00:13:02,000 --> 00:13:11,000
+Solve for <i>y</i>'. Take a second derivative starting from the equation over here, so we get
+解出 <i>y</i>'。从此处的方程开始取二阶导数，
+
+96
+00:13:11,000 --> 00:13:22,000
+the expression over there. Check the answer with D again. Solve for <i>y</i>''.
+因此我们获得了这个表达式。再次用 D 确认。 解出 <i>y</i>''。
+
+97
+00:13:22,000 --> 00:13:32,000
+Then you still have a <i>y</i>'[<i>x</i>] inside the result, so you plug in <i>y</i>'[<i>x</i>] as Sec[<i>x</i>]^2Sec[<i>y</i>]
+然后，结果中仍然有 <i>y</i>'[<i>x</i>]，因此您代入 <i>y</i>'[<i>x</i>], 即 Sec[<i>x</i>]^2Sec[<i>y</i>]
+
+98
+00:13:32,000 --> 00:13:36,000
+and you get back the result for the second derivative.
+然后得到二阶导数的结果。
+
+99
+00:13:38,000 --> 00:13:43,000
+This brings me to the end of today’s problem session. I hope you have learned something
+我们到了今天的问题环节结束的时候。
+
+100
+00:13:43,000 --> 00:13:51,000
+about how to compute derivatives of all kinds. We’ll then go on to Lesson 13,
+希望您对如何计算各种导数有所了解。 然后，我们继续第 13 课
+
+101
+00:13:51,000 --> 00:13:55,000
+which is about rates of change, but before we do that, do make sure that you understand
+是关于变化率的内容，但是在我们这样做之前，请确保您对当前的问题环节
+
+102
+00:13:55,000 --> 00:14:01,000
+today’s problem session quite well and do practice a lot before we go on to the next topic.
+理解得很好，并且在进行下一个主题之前要进行很多练习。
+
+103
+00:14:01,000 --> 00:14:03,000
+Thank you. I’ll stop over here.
+谢谢。 我会在这里停下来。
+
+(翻译: 秦晋 北京师范大学)
