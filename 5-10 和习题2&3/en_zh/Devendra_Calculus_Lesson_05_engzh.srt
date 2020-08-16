@@ -608,5 +608,5 @@ go over the examples, the exercises and try and figure out how you might proceed
 by trying things on your own and mastering the area. Thank you very much. I’ll stop here.
 自己试验并掌握这些知识 非常感谢 我就讲到这里 
 
-(翻译: 秦晋 北京师范大学)
+(翻译: 秦晋 北京师范大学 suggestion changes 怎么用啊 好多按钮啊)
 (校对: 周怀尚 兰州大学）
