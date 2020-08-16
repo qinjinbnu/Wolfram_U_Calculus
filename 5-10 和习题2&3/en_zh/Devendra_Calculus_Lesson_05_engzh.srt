@@ -16,12 +16,12 @@ of today’s lesson. We learned in the previous lesson that using tables to find
 4
 00:00:19,000 --> 00:00:26,000
 can be very tedious work. What we’ll do today is to set up some laws for limits
-这是十分乏味的工作 今天我们将建立一些关于极限的定律 
+这是十分乏味的工作 今天我们将建立一些关于极限的法则
 
 5
 00:00:26,000 --> 00:00:31,000
 which will let us compute the same limits quite easily. To do that,
-这些定律会使极限的计算变得十分简单 为了做到这一点 
+这些法则会使极限的计算变得十分简单 为了做到这一点 
 
 6
 00:00:31,000 --> 00:00:38,000
@@ -36,23 +36,23 @@ I’m going to use two example functions. The first one is called <i>f</i>. The 
 8
 00:00:46,000 --> 00:00:54,000
 our example functions in the first part of the lesson. Here are the plots of the functions.
-课程的第一部分作为我们的范例函数 这是函数的图像 
+课程的第一部分作为我们的示例函数 这是函数的图像 
 
 9
 00:00:54,000 --> 00:01:03,000
 <i>f</i> is of course just a linear function, while <i>g</i> is a trigonometric function. Now if you look at the plots,
-显然 <i>f</i> 是一个线性函数 而 <i>g</i> 是一个三角函数 现在如果你观察一下这些图像 
+显然 <i>f</i> 是一个线性函数 而 <i>g</i> 是一个三角函数 如果观察一下这些图像 
 
 10
 00:01:03,000 --> 00:01:12,000
 it’s clear that the limit of <i>f</i> is going to be 2 at 0, and the limit of <i>g</i> is going to be 3/2.
-会发现 <i>f</i> 在 0 处的极限为 2 <i>g</i> 在 0 处的极限为 3/2 
+就会发现 <i>f</i> 在 0 处的极限为 2 <i>g</i> 在 0 处的极限为 3/2 
 
 11
 00:01:12,000 --> 00:01:20,000
 Let’s confirm that with the Limit function. The limits are 2 and 3/2. You need to bear in mind
-让我们确认一下极限函数 极限是 2 和 3/2 你需要记住 
-
+让我们用 Limit 函数确认一下 极限是 2 和 3/2 你需要记住 
+ 
 12
 00:01:20,000 --> 00:01:25,000
 throughout today that <i>f</i> is this linear function, <i>g</i> is a trigonometric function
@@ -66,7 +66,7 @@ and the limits are 2 and 3/2. With just that small piece of baggage,
 14
 00:01:31,000 --> 00:01:35,000
 we can now begin our discussion of the laws of limits, and the first law called the sum law.
-我们就可以开始关于极限定律的讨论 第一个定律是极限的加法定律 
+我们就可以开始关于极限法则的讨论 第一个法则是极限的加法法则
 
 15
 00:01:35,000 --> 00:01:42,000
@@ -76,62 +76,62 @@ It says that the limit of a sum is the sum of the limits. For example, if you wa
 16
 00:01:42,000 --> 00:01:50,000
 of <i>f</i> + <i>g</i>, you simply add 2 and 3/2 and get 7/2, and you can check that with the Limit function
-<i>f</i> + <i>g</i> 的极限 你只需要简单的把 2 和 3/2 相加得到 7/2 你可以用极限函数检查一下 
+<i>f</i> + <i>g</i> 的极限 只需要简单的把 2 和 3/2 相加得到 7/2 你可以用 Limit 函数检查一下 
 
 17
 00:01:50,000 --> 00:01:58,000
 and get back just the same result. Here’s a plot of all three functions, <i>f</i>, <i>g</i> and <i>f</i> + <i>g</i>,
-你会得到相同的结果 这是三个函数 <i>f</i>, <i>g</i> 和 <i>f</i> + <i>g</i> 的图像 
+会得到相同的结果 这是三个函数 <i>f</i> <i>g</i> 和 <i>f</i> + <i>g</i> 的图像 
 
 18
 00:01:58,000 --> 00:02:04,000
 and you can see quite clearly that <i>f</i> + <i>g</i>, which is right over here, has got the limit 7/2
-你可以十分清楚地看到 <i>f</i> + <i>g</i> 就在这里 当 <i>x</i> 趋于 0 时 
+可以十分清楚地看到 <i>f</i> + <i>g</i> 就在这儿 当 <i>x</i> 趋于 0 时 
 
 19
 00:02:04,000 --> 00:02:11,000
 as <i>x</i> approaches 0. Now along with that, you can also say that the limit of a difference
-取得极限值 7/2 你也可以说函数差的极限 
+取得极限值 7/2 你也可以说 函数差的极限 
 
 20
 00:02:11,000 --> 00:02:17,000
 is going to be the difference of the limits. In our case, it’s going to be 2 − 3/2. That’s 1/2.
-等于函数极限的差 在我们的案例中 函数极限的差为 2 − 3/2 即 1/2 
+等于函数极限的差 在我们的例子中 函数极限的差为 2 − 3/2 即 1/2 
 
 21
 00:02:17,000 --> 00:02:25,000
 You also have a scalar multiplication law, which let you multiply a constant by a function,
-还有标量乘法定律 当你想求常数与一个函数乘积的极限 
+还有数乘法则 当你想求常数与一个函数乘积的极限 
 
 22
 00:02:25,000 --> 00:02:30,000
 and then you simply do the limit of the function times that constant. If you want to find
-你只需要简单地把函数的极限与该常数相乘 例如如果你想求 
+只需要简单地把函数的极限与该常数相乘 例如想算
 
 23
 00:02:30,000 --> 00:02:40,000
 the limit of 3 * <i>f</i>[<i>x</i>], it’s just going to be 3 times the limit of <i>f</i>[<i>x</i>], so that’s 3 * 2 is 6, in this case.
-3 * <i>f</i>[<i>x</i>] 的极限 只需用 3 乘 <i>f</i>[<i>x</i>] 的极限 那么就是 3 * 2 等于 6 在这个案例中 
+3 * <i>f</i>[<i>x</i>] 的极限 只需用 3 乘 <i>f</i>[<i>x</i>] 的极限 那么就是 3 * 2 等于 6 在这个例子里 
 
 24
 00:02:40,000 --> 00:02:45,000
 You’ve got the sum law, the difference law and the scalar multiplication law so far,
-目前为止你已经有了极限的加法定律 减法定律和标量乘法定律 
+目前为止你已经有了极限的加法法则 减法法则和数乘法则
 
 25
 00:02:45,000 --> 00:02:53,000
 and to go on, let’s talk now about the product law, which says that the limit of a product
-继续 让我们来讨论一下乘法定律 该定律表述为 函数乘积的极限 
+继续 让我们来讨论一下乘法法则 该定律表述为 函数乘积的极限 
 
 26
 00:02:53,000 --> 00:03:00,000
 is the product of the limits. For example, if you want to find the limit of <i>f</I>  *<i>g</i>,
-等于函数极限的乘积 举个例子 如果你想求 <i>f</I>  *<i>g</i> 的极限 
+等于函数极限的乘积 举个例子 如果想求 <i>f</I>  *<i>g</i> 的极限 
 
 27
 00:03:00,000 --> 00:03:08,000
 it’s just going to be 2 * 3/2. That’s 3. You can check that with Limit and get back
-只需把 2 与 3 相乘 即 3/2 你可以检查一下这与直接对函数的乘积求极限的结果 
+只需把 2 与 3/2 相乘 得 3 你可以用 Limit 检查一下 结果
 
 28
 00:03:08,000 --> 00:03:15,000
@@ -146,7 +146,7 @@ and you can see quite clearly that the limit of <i>f</i> * <i>g</i> is 3, exactl
 30
 00:03:23,000 --> 00:03:27,000
 Along with the product law, we also have the power law, which says that if you want to find
-除了乘法定律 我们还有极限的幂定律 表述为 函数幂的极限 
+除了乘法法则 我们还有极限的幂法则 表述为 函数幂的极限 
 
 31
 00:03:27,000 --> 00:03:38,000
@@ -156,17 +156,17 @@ the limit for a power, then it is the power of the limit. For example, the limit
 32
 00:03:38,000 --> 00:03:45,000
 is the cube of the limit of <i>f</i>, so 2^3 is 8, and therefore you get back 8 as the answer.
-是 <i>f</i> 极限的立方 也就是 2^3 等于 8 因此 8 就是我们要的答案 
+是 <i>f</i> 极限的立方 也就是 2^3 等于 8 因此 8 就是答案 
 
 33
 00:03:45,000 --> 00:03:50,000
 Now you’ve got the sum law, the difference law, the scalar multiplication law,
-现在你已经获得了加法定律 减法定律 标量乘法定律 
+现在你已经获得了加法法则 减法法则 数乘法则 
 
 34
 00:03:50,000 --> 00:03:58,000
 the product law and the power law. As the next law for us, we take up the quotient law.
-乘法定律以及幂定律 下一个定律是商定律 
+乘法法则以及幂法则 下一个法则是商法则 
 
 35
 00:03:58,000 --> 00:04:06,000
@@ -181,7 +181,7 @@ the quotient of the limits, provided that the denominator does not have a limit 
 37
 00:04:13,000 --> 00:04:24,000
 In our case, <i>f</i> and <i>g</i>, you have the limit of <i>f</i>/<i>g</i> is just 4/3 because 2/(3/2) is 4/3.
-我么的案例中 <i>f</i>/<i>g</i> 的极限就是 4/3 因为 2/(3/2) 是4/3 
+我么的例子里 <i>f</i>/<i>g</i> 的极限就是 4/3 因为 2/(3/2) 是 4/3 
 
 38
 00:04:24,000 --> 00:04:33,000
@@ -201,27 +201,27 @@ because the value of <i>g</i> at π/2 is 0. Then we are in trouble because the l
 41
 00:04:49,000 --> 00:04:58,000
 at that point is just indeterminate. The quotient law is almost true, and it’s not true
-在这一点是不确定的 商定律在大多数情况是正确的 但是 
+在这一点是不确定的 商法则在大多数情况是正确的 但是 
 
 42
 00:04:58,000 --> 00:05:02,000
 when the denominator is becoming 0 in any way.
-当作为分母的函数极限为 0 时商定律就不再正确了 
+当作为分母的函数极限为 0 时商法则就不再正确了 
 
 43
 00:05:05,000 --> 00:05:10,000
 Okay. Some examples now of limits. If you have a polynomial, then you can quite easily
-好吧 现在来看一些极限的例子 如果你有一个多项式 那么你可以很容易地 
+好吧 现在来看一些极限的例子 如果有一个多项式 那么可以很容易地 
 
 44
 00:05:10,000 --> 00:05:17,000
 compute its limit, but to do that we need to access some facts. First of all, fact 1:
-计算它的极限 但要做到这一点 我们需要了解一些事实 首先是事实1 
+计算它的极限 但要做到这一点 我们需要了解一些事实 首先是事实 1： 
 
 45
 00:05:17,000 --> 00:05:27,000
 the limit of a constant is a constant. Let’s check that. The limit of 5 will be 5,
-常数的极限是一个常数 让我们来检查一下 5 的极限是 5 
+常数的极限是一个常数 让我们来检验一下 5 的极限是 5 
 
 46
 00:05:27,000 --> 00:05:32,000
@@ -236,17 +236,17 @@ and the other fact is that the limit of the simple function <i>x</i> as <i>x</i>
 48
 00:05:41,000 --> 00:05:47,000
 You just plug in <i>a</i> and get back the answer. Okay. Once you have just those two facts,
-你只需要取函数值 <i>a</i> 作为极限值即可 好了 一旦你有了这两个事实 
+只需要取函数值 <i>a</i> 作为极限值即可 好 一旦你有了这两个事实 
 
 49
 00:05:47,000 --> 00:05:55,000
 then you can work out the limit of any polynomial. For example, if you want to work out
-你就可以得到多项式的极限 例如 如果你想得到 
+就可以计算多项式的极限 例如 你想算
 
 50
 00:05:55,000 --> 00:06:03,000
 the limit of 2<i>x</i>^2 − 4<i>x</i> + 3, you simply plug in the values over there, and you get back
-2<i>x</i>^2 − 4<i>x</i> + 3 在某一点的极限 你只需要取多项式函数在那一点的值 你就会得到 
+2<i>x</i>^2 − 4<i>x</i> + 3 在某一点的极限 只需简单地取多项式在那一点的值 就会得到 
 
 51
 00:06:03,000 --> 00:06:05,000
@@ -256,17 +256,17 @@ the answer at 4, for example.
 52
 00:06:07,000 --> 00:06:12,000
 Okay. We now worked out the limit of a polynomial by substitution, and the question is
-好了 我们通过代换得到了多项式的极限 
+好了 我们通过代换得到了多项式的极限 问题是
 
 53
 00:06:12,000 --> 00:06:15,000
 what happens when you have a rational function?
-那么 当你遇到有理函数的时候呢?
+当你遇到有理函数的时候呢?
 
 54
 00:06:17,000 --> 00:06:25,000
 Here is a rational function, and you want to find the limit of this function when <i>x</i> approaches −2.
-这是有一个有理函数 并且你想找到自变量 <i>x</i> 趋近于 -2 时的函数极限 
+这是有一个有理函数 并且你想算自变量 <i>x</i> 趋近于 -2 时的函数极限 
 
 55
 00:06:25,000 --> 00:06:32,000
@@ -276,12 +276,12 @@ Now when <i>x</i> is −2, there is no problem at all because the denominator is
 56
 00:06:32,000 --> 00:06:43,000
 Here you have <i>g</i> is the numerator, <i>h</i> is the denominator of the rational function, and to find
-这里 <i>g</i> 和 <i>h</i> 分别是有理函数的分子和分母 为了 
+这里 <i>g</i> 是有理函数的分子 <i>h</i> 是分母 为了 
 
 57
 00:06:43,000 --> 00:06:50,000
 the limit of <i>f</i> as <i>x</i> approaches −2, you simply divide the limits of numerator and denominator,
-为了得到当 <i>x</i> 趋近于 -2 时 <i>f</i> 的极限值 你可以简单地用分子的极限除以分母的极限 
+为了得到当 <i>x</i> 趋近于 -2 时 <i>f</i> 的极限值 可以简单地用分子的极限除以分母的极限 
 
 58
 00:06:50,000 --> 00:06:58,000
@@ -296,7 +296,7 @@ by taking a quotient, like over here, or you simply work out a value of the func
 60
 00:07:06,000 --> 00:07:15,000
 Rational functions are almost as easy as polynomials in most cases. But to go on,
-有理函数在大多数情况下几乎像多项式函数一样简单 不过让我们继续 
+有理函数在大多数情况下几乎像多项式函数一样简单 不过接下来
 
 61
 00:07:15,000 --> 00:07:20,000
@@ -306,12 +306,12 @@ I’ll give an example where things can go wrong. Here’s an example of a ratio
 62
 00:07:20,000 --> 00:07:26,000
 but you want to find the limit at −1, and sure enough, there’s an issue over here
-不过这次你想取函数在 -1 点的极限值 十分确定的是 这里是有问题的 
+不过这次你想求函数在 -1 点的极限值 十分确定的是 这里是有问题的 
 
 63
 00:07:26,000 --> 00:07:31,000
 because the denominator becomes 0. The denominator is 0 over here;
-因为分母为 0 因为分母为 0 
+因为分母为 0 由于分母为 0 
 
 64
 00:07:31,000 --> 00:07:38,000
@@ -321,17 +321,17 @@ we cannot use a direct computation, so what we do is we factor the numerator
 65
 00:07:38,000 --> 00:07:46,000
 and check that, in fact, we have a common factor of 1 + <i>x</i>. To cancel this common factor,
-观察一下 事实上 我们有公因数 1 + <i>x</i> 消掉这一项 
+观察一下 事实上 我们有公因式 1 + <i>x</i> 消去公因式
 
 66
 00:07:46,000 --> 00:07:52,000
 we can use several functions. I’ll use Simplify over here, and that’ll get the function down to
-我们可以使用多种函数 这里我简化一下 得到函数的 
+我们可以调用多种函数 这里我用 Simplify 简化一下 得到函数的 
 
 67
 00:07:52,000 --> 00:07:57,000
 its simplest possible form in which you can plug in the values, and you can see quite clearly
-可能的最简形式 你可以直接使用这种形式取值 你可以十分清楚地看到 
+可能的最简形式 你可以直接使用这种形式取值 且十分清楚地看到 
 
 68
 00:07:57,000 --> 00:08:04,000
@@ -341,7 +341,7 @@ that the limit is −1 − 1. That’s −2, and that’s confirmed by the Limit
 69
 00:08:06,000 --> 00:08:12,000
 Okay. That’s about rational functions, and now to go a step further, let’s talk about difference quotients,
-好 这是关于有理函数 让我们现在更进一步 讨论一下差商 
+好 这是关于有理函数的 现在更进一步 讨论一下差商 
 
 70
 00:08:12,000 --> 00:08:18,000
@@ -351,7 +351,7 @@ which are very closely related to all the previous ideas. Here is the difference
 71
 00:08:18,000 --> 00:08:27,000
 a rational function, and what you see over here is if you plot it, then it’s just a straight line.
-你可以看到 如果你将这个差商画出来 只是一条直线 
+你可以看到 如果将这个差商画出来 就是一条直线 
 
 72
 00:08:27,000 --> 00:08:34,000
@@ -361,7 +361,7 @@ What’s happening? Well, what’s happening is that although the <i>h</i> over 
 73
 00:08:34,000 --> 00:08:40,000
 there is a common factor, and to find the common factor, you can do an expansion
-然而这里存在公因数 为了找到这个公因数 你可以将其展开 
+然而分子分母有公因式 为了找到这个公因式 你可以将其展开 
 
 74
 00:08:40,000 --> 00:08:47,000
@@ -371,7 +371,7 @@ and then do a kind of factoring and get the function down to its simplest possib
 75
 00:08:47,000 --> 00:08:54,000
 That function over there <i>f</i>, which looked difficult, is in fact just 4 + <i>h</i>.
-所以这个看起来很复杂的函数 <i>f</i> 实际上只是  4 + <i>h</i> 
+所以这个函数 <i>f</i> 看起来很复杂 实际上就是 4 + <i>h</i> 
 
 76
 00:08:55,000 --> 00:09:02,000
@@ -391,7 +391,7 @@ Okay. Next, how about things like the absolute value function? Here’s the abso
 79
 00:09:19,000 --> 00:09:29,000
 If I plot it, it’s kind of got a V shape, and when you are at 0 over here, then it’s clear that the limit is 0
-如果我把它画出来 它是一种 V 形 并且函数值在 0 处显然为 0 
+如果我把它画出来 它是 V 形的 并且函数值在 0 处显然为 0 
 
 80
 00:09:29,000 --> 00:09:35,000
@@ -411,7 +411,7 @@ You get back 0 and 0 whether you go from the left or right, and Limit itself als
 83
 00:09:50,000 --> 00:09:55,000
 so there’s no problem over here. Although you do have kind of a piecewise function,
-所以 这里没有问题 尽管这是一种分段函数 
+所以 这里没有问题 尽管这是一类分段函数 
 
 84
 00:09:55,000 --> 00:10:00,000
@@ -441,7 +441,7 @@ The left-hand limit is −1, the right-hand limit is 1, and hence the limit does
 89
 00:10:33,000 --> 00:10:38,000
 That’s a jump at a single point, but of course things can get much worse.
-这是函数在单点的跳跃 然而情况可以变得更糟 
+函数在单点发生跳跃 然而情况可以变得更糟 
 
 90
 00:10:38,000 --> 00:10:47,000
@@ -456,52 +456,52 @@ less than or equal to <i>x</i>. The problem is to find where the limit does not 
 92
 00:10:55,000 --> 00:11:04,000
 in the range from −2 to 2. Here’s a plot, and it’s clear that you have an issue at all the integers.
-在区间 −2 到 2  你可以从图中看出在所有整数值处都是有问题的 
+在区间 −2 到 2 可以从图中看出在所有整数点处都是有问题的 
 
 93
 00:11:04,000 --> 00:11:13,000
 They jump at every place. For example, at 0 you have the left-hand limit is −1
-所有整数值处函数都有跳跃 例如 在 0 点左极限为 -1 
+所有整数点处函数都有跳跃 例如 在 0 点左极限为 -1 
 
 94
 00:11:13,000 --> 00:11:21,000
 and the right-hand limit is 0, so the limit does not exist. In fact, I can confirm that
-而右极限为 0 所以极限不存在 事实上我可以证明 
+而右极限为 0 所以极限不存在 事实上可以证明 
 
 95
 00:11:21,000 --> 00:11:30,000
 at every integer between −2 and 2, you have no limit existing. All the limits are indeterminate.
-在 -2 到 2 之间的所有整数值处 极限都是不存在的 所有这些点的极限都是不确定的 
+在 -2 到 2 之间的所有整数点处 极限都是不存在的 所有这些点的极限都是不确定的 
 
 96
 00:11:30,000 --> 00:11:38,000
 The floor function is an example of a function which has no limit at an infinite number of points.
-下取整函数是一个函数在无穷多点极限不存在的例子 
+阶梯函数是一个函数在无穷多点极限不存在的例子 
 
 97
 00:11:40,000 --> 00:11:45,000
 Now in practice, if we have a very complicated function like the one over here,
-现在练习一下 如果我们有一个非常复杂的函数 
+现在实践中 如果我们有一个非常复杂的函数 
 
 98
 00:11:45,000 --> 00:11:53,000
 then what you can try and do is to kind of squeeze the function between two simpler functions.
-你可以试着将它限制在两个更简单的函数中 
+你可以试着将它限制在两个更简单的函数中间
 
 99
 00:11:53,000 --> 00:12:01,000
 A little more abstractly, if you have a function <i>g</i> and that function <i>g</i> lies between <i>f</i> and <i>h</i>
-更抽象一点 如果你有一个在 <i>f</i> 和 <i>h</i> 之间的函数  <i>g</i> 
+更抽象一点 如果你有一个在 <i>f</i> 和 <i>h</i> 之间的函数 <i>g</i> 
 
 100
 00:12:01,000 --> 00:12:07,000
 and you know the limits of both <i>f</i> and <i>h</i>, then you also know the limit of <i>g</i>.
-并且 <i>f</i> 和 <i>h</i> 的极限都已知 那么你也就得到了 <i>g</i> 的函数值 
+并且 <i>f</i> 和 <i>h</i> 的极限都已知 那么你也就得到了 <i>g</i> 的极限
 
 101
 00:12:08,000 --> 00:12:15,000
 With the function over here, you can see quite clearly that the cosine is going to go
-对于这个函数 你可以看到 cosine 处于 
+对于这个函数 你可以看到余弦函数处于 
 
 102
 00:12:15,000 --> 00:12:23,000
@@ -511,22 +511,22 @@ between −1 and 1, so you could pick <i>f</i> to be <i>x</i>^2 and pick <i>h</i
 103
 00:12:23,000 --> 00:12:34,000
 That’s going between −1 and 1. You’ve got <i>f</i>, you’ve got <i>g</i> and you’ve got <i>h</i>. <i>g</i> is the complicated one,
-介于 -1 和 1 之间 已知 <i>f</i> <i>g</i> 和 <i>h</i> <i>g</i> 是最复杂的 
+介于 -1 和 1 之间 已知 <i>f</i> <i>g</i> 和 <i>h</i>. <i>g</i> 是最复杂的 
 
 104
 00:12:34,000 --> 00:12:44,000
 and if you plot them, you see that <i>g</i> is tightly squeezed between <i>f</i> and <i>h</i> near 0.
-如果把它们全部绘制出来 你可以看到 <i>g</i> 在 0 附近严格地限制在 <i>f</i> 和 <i>h</i> 之间 
+如果把它们全部绘制出来 你可以看到 <i>g</i> 在 0 附近严格地被夹在 <i>f</i> 和 <i>h</i> 之间 
 
 105
 00:12:44,000 --> 00:12:51,000
 <i>g</i> is this wiggly function over here, and it’s very tightly squeezed. The squeeze theorem says that
-<i>g</i> 是这儿的弯曲的函数 并且被限制地十分严格 夹逼定理说明 
+<i>g</i> 是这儿的上下波动的函数 并且紧密的夹在中间 两边夹定理说
 
 106
 00:12:51,000 --> 00:12:57,000
 you can work out the limit of <i>g</i> provided that you can find the limits of <i>f</i> and <i>h</i>.
-如果你可以找到函数 <i>f</i> 和 <i>h</i> 的极限 那么 <i>g</i> 的极限就可以得到 
+如果你能得到函数 <i>f</i> 和 <i>h</i> 的极限 那么 <i>g</i> 的极限就能得到 
 
 107
 00:12:57,000 --> 00:13:01,000
@@ -546,37 +546,37 @@ Okay. That brings me to the end of today’s lesson, and I’ll summarize by say
 110
 00:13:15,000 --> 00:13:19,000
 the limit laws give us a way to find the limits of functions mathematically.
-极限定律给了我们一种数学上求函数极限的方法 
+极限法则给了我们一种数学上求函数极限的方法 
 
 111
 00:13:19,000 --> 00:13:27,000
 You can use tables for sure, but the limit laws are the best ways to get the limits of functions.
-你当然可以使用极限表 但是极限定律是计算函数极限的最好方式 
+你当然可以使用极限表 但是极限法则是计算函数极限的最好方式 
 
 112
 00:13:27,000 --> 00:13:36,000
 There are laws for sums, for differences, for products and for quotients. Now from these laws,
-从和 差 积 商 的极限定律 
+从和 差 积 商 的极限法则 
 
 113
 00:13:36,000 --> 00:13:41,000
 you can work out the law of finding limits for any polynomial. That’s really simple,
-你可以得到多项式的极限定律 
+你可以得到多项式的极限法则
 
 114
 00:13:41,000 --> 00:13:47,000
 but it is somewhat harder to find the limits of rational functions which can become 0
-但是当你求一些分母在某些点商为 0  的有理函数时就会更难一些 
+但是在计算有理函数的极限时会更难 某些有理函数
 
 115
 00:13:47,000 --> 00:13:54,000
 in the denominator at some point or piecewise functions where things can go quite wrong, et cetera.
-一些分段函数甚至会更加糟糕 等等 
+的分母可以为0 或者对一些分段函数甚至会更加糟糕 等等 
 
 116
 00:13:55,000 --> 00:14:02,000
 Finally, the squeeze theorem is a great way to find limits when you are given difficult functions
-最后 当你遇到一些求极限比较困难的函数时 夹逼定理是求极限的一种好方法 
+最后 当你遇到一些求极限比较困难的函数时 两边夹定理是求极限的一种好方法 
 
 117
 00:14:02,000 --> 00:14:10,000
@@ -591,12 +591,12 @@ and the next lesson, we’ll cover continuous functions, which will make life mu
 119
 00:14:15,000 --> 00:14:20,000
 as far as finding limits are concerned. But before that, we will have a problem session
-不过在此之前 我们会有一个问题模块
+不过在此之前 我们会有一个习题课
 
 120
 00:14:20,000 --> 00:14:28,000
 to discuss various problems which relate to the material covered so far. Do review today’s lesson,
-来讨论一些与已经讲过的内容相关的问题 一定要复习今天的课程 
+来讨论一些与已经讲过的内容相关的问题 务必复习今天的课程 
 
 121
 00:14:28,000 --> 00:14:35,000
@@ -607,5 +607,6 @@ go over the examples, the exercises and try and figure out how you might proceed
 00:14:35,000 --> 00:14:43,000
 by trying things on your own and mastering the area. Thank you very much. I’ll stop here.
 自己试验并掌握这些知识 非常感谢 我就讲到这里 
-
+再测试一下
 (翻译: 秦晋 北京师范大学)
+(校对: 周怀尚 兰州大学）
