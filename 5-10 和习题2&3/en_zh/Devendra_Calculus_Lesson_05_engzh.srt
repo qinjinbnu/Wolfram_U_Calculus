@@ -6,7 +6,7 @@ Hello, and welcome to Lesson 5 of this introduction to calculus with Wolfram U.
 2
 00:00:06,000 --> 00:00:13,000
 Our topic for today is the laws of limits. Let’s begin with a brief overview
-我们今天的主题是极限定律 让我们从一个简短的课程概述开始 
+我们今天的主题是极限法则 让我们从一个简短的课程概述开始 
 
 3
 00:00:13,000 --> 00:00:19,000
@@ -607,6 +607,6 @@ go over the examples, the exercises and try and figure out how you might proceed
 00:14:35,000 --> 00:14:43,000
 by trying things on your own and mastering the area. Thank you very much. I’ll stop here.
 自己试验并掌握这些知识 非常感谢 我就讲到这里 
-再测试一下
+
 (翻译: 秦晋 北京师范大学)
 (校对: 周怀尚 兰州大学）
