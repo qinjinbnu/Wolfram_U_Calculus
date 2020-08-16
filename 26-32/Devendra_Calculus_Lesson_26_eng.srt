@@ -111,7 +111,7 @@ First of all, to repeat myself,
 23
 00:01:29,000 --> 00:01:35,000
 the antiderivative will now be referred to as the indefinite integral,
-现在将原函数称为不定积分
+现在将反导数称为不定积分
 
 24
 00:01:35,000 --> 00:01:39,000
@@ -201,7 +201,7 @@ Once again, please note that we’ll set the constant
 41
 00:02:34,000 --> 00:02:37,000
 for the integral to be 0, essentially.
-在这个不定积分里 取的实际上是 0
+实际上在这个不定积分里 取的是 0
 
 42
 00:02:38,000 --> 00:02:41,000
@@ -240,7 +240,7 @@ Here is a picture of the function and its integral.
 
 49
 00:03:08,000 --> 00:03:12,000
-Notice that I am putting the evaluate over here inside the plot,
+Notice that I am putting the Evaluate over here inside the plot,
 注意我把 Evaluate 函数写在 Plot 函数内
 
 50
@@ -530,4 +530,3 @@ Thank you very much. I’ll stop over here.
  
 (翻译：周怀尚 兰州大学)
 (校对：秦晋 北京师范大学)
-
